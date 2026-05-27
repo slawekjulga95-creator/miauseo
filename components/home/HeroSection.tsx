@@ -108,6 +108,11 @@ export default function HeroSection() {
         <img src="/logo.png" alt="" aria-hidden="true" className="w-full opacity-[0.06]" />
       </div>
 
+      {/* Logo watermark – desktop left column */}
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[44%] pointer-events-none select-none hidden lg:flex items-center justify-center">
+        <img src="/logo.png" alt="" aria-hidden="true" className="w-[460px] opacity-[0.18]" />
+      </div>
+
       {/* Content – left side */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 min-h-screen flex items-center">
         <div className="w-full lg:max-w-[500px] py-28">
