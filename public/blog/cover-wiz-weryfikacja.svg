@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#155e75"/><stop offset="100%" stop-color="#042f2e"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.06" stroke="white" stroke-width="1"><line x1="0" y1="105" x2="1200" y2="105"/><line x1="0" y1="210" x2="1200" y2="210"/><line x1="0" y1="315" x2="1200" y2="315"/><line x1="0" y1="420" x2="1200" y2="420"/><line x1="0" y1="525" x2="1200" y2="525"/><line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/></g>
+  <circle cx="120" cy="120" r="180" fill="white" opacity="0.04"/><circle cx="1100" cy="520" r="220" fill="white" opacity="0.04"/>
+  <!-- Shield with checkmark -->
+  <path d="M600 120 L780 160 L780 320 C780 420 600 480 600 480 C600 480 420 420 420 320 L420 160 Z" fill="white" opacity="0.2"/>
+  <path d="M600 145 L760 180 L760 318 C760 405 600 458 600 458 C600 458 440 405 440 318 L440 180 Z" fill="white" opacity="0.12"/>
+  <!-- Big checkmark -->
+  <polyline points="510,295 570,355 700,225" stroke="white" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <!-- Verified badge -->
+  <circle cx="820" cy="420" r="55" fill="#22c55e" opacity="0.9"/>
+  <polyline points="798,420 812,434 842,404" stroke="white" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · GOOGLE BUSINESS PROFILE · WERYFIKACJA</text>
+</svg>

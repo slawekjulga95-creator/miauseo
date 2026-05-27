@@ -3,6 +3,694 @@ import Link from "next/link";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     WIZYTÓWKA: Kategorie
+  ───────────────────────────────────────────────────────────────────────── */
+  "kategorie-wizytowka-google": (
+    <>
+      <h2>Dlaczego kategoria główna to najważniejszy wybór w GBP?</h2>
+      <p>
+        Algorytm Google Local Pack w pierwszej kolejności sprawdza, czy kategoria główna wizytówki pasuje do zapytania użytkownika. Firma z kategorią „Restauracja" nigdy nie pojawi się na frazę „dentysta" — nawet jeśli w opisie wspomina o gabinecie. Kategoria główna to filtr, który Google stosuje zanim w ogóle sprawdzi pozostałe sygnały rankingowe.
+      </p>
+      <p>
+        W praktyce oznacza to, że zła kategoria główna może całkowicie wykluczyć Cię z widoczności na kluczowe frazy — niezależnie od liczby opinii, jakości zdjęć czy wypełnienia pozostałych pól. To błąd, który trudno wykryć samodzielnie, bo wizytówka pozornie „działa".
+      </p>
+
+      <h2>Kategoria główna vs kategorie dodatkowe — jak to działa</h2>
+      <p>
+        Google Business Profile pozwala dodać <strong>1 kategorię główną</strong> i do <strong>9 kategorii dodatkowych</strong>. Mają fundamentalnie inną wagę:
+      </p>
+      <ul>
+        <li><strong>Kategoria główna</strong> — określa, na jakie zapytania ogólne (bez lokalizacji) Twoja firma może się pojawić. Ma największy wpływ na ranking. Wybieraj ją z perspektywy „co robimy najczęściej" lub „za co płacą nam najwięcej klientów".</li>
+        <li><strong>Kategorie dodatkowe</strong> — rozszerzają widoczność na poboczne usługi. Dentysta może dodać „Ortodonta" jako dodatkową, jeśli rzeczywiście oferuje ortodoncję. Nie wpisuj kategorii usług, których nie wykonujesz — Google to weryfikuje przez opinie, zdjęcia i czas spędzany na stronie.</li>
+      </ul>
+      <p>
+        Maksymalna liczba 9 kategorii dodatkowych nie oznacza, że powinieneś je wszystkie wypełnić. Lepiej 3 trafne niż 9 naciągniętych — rozmyte sygnały obniżają pozycję na wszystkich frazach zamiast ją podnosić.
+      </p>
+
+      <h2>Jak znaleźć właściwą kategorię — krok po kroku</h2>
+      <p>
+        Google ma ponad 4 000 kategorii GBP, ale nie udostępnia ich pełnej listy bezpośrednio. Sprawdzony sposób na znalezienie właściwej:
+      </p>
+      <ul>
+        <li><strong>Wyszukaj konkurentów</strong> — wpisz w Google frazę, na którą chcesz się pojawiać (np. „dentysta Kraków") i sprawdź kategorie główne firm z top 3 w Mapach Google. Kliknij wizytówkę → Informacje → sekcja Kategorie.</li>
+        <li><strong>Zacznij wpisywać w GBP</strong> — panel sugeruje kategorie podczas wpisywania. Wpisz ogólne słowo (np. „gabinet", „salon", „sklep") i przejrzyj sugestie.</li>
+        <li><strong>Sprawdź placeresearch.app</strong> — nieoficjalna baza kategorii GBP z możliwością wyszukiwania i filtrowania po krajach.</li>
+      </ul>
+
+      <h2>Najczęstsze błędy przy wyborze kategorii</h2>
+      <ul>
+        <li><strong>Za szeroka kategoria</strong> — „Sklep" zamiast „Sklep z akcesoriami do jogi". Im węższa kategoria, tym mniejsza konkurencja i wyższe pozycje dla trafnych fraz.</li>
+        <li><strong>Kategoria aspiracyjna zamiast faktycznej</strong> — wybieranie kategorii pasującej do tego, czym firma chce być, zamiast tego, czym jest. Google porównuje kategorię z opiniami i zachowaniem użytkowników.</li>
+        <li><strong>Ignorowanie nowych kategorii</strong> — Google regularnie dodaje nowe, bardziej szczegółowe kategorie. Raz w kwartale warto sprawdzić, czy pojawiła się trafniejsza opcja.</li>
+        <li><strong>Kopiowanie kategorii konkurencji bez analizy</strong> — jeśli konkurent jest źle skategoryzowany i mimo to wyświetla się wysoko, ma inne silne sygnały rankingowe. Skopiowanie błędu nie da Ci jego pozycji.</li>
+      </ul>
+
+      <h2>Czy zmiana kategorii wpłynie negatywnie na ranking?</h2>
+      <p>
+        Zmiana kategorii głównej to interwencja w jeden z najsilniejszych sygnałów GBP — może wywołać tymczasowe wahnięcia pozycji w obie strony. W praktyce poprawna zmiana (z błędnej na trafną) poprawia pozycje w ciągu 2–4 tygodni. Nie zmieniaj kategorii eksperymentalnie — każda zmiana powinna być przemyślana i oparta na analizie konkurencji.
+      </p>
+      <p>
+        Więcej o tym, jak kategoria wpływa na cały algorytm rankingowy, przeczytasz w artykule{" "}
+        <Link href="/blog/czynniki-rankingowe-wizytowki-google-2026">czynniki rankingowe wizytówki Google w 2026</Link>.
+        Jeśli dopiero tworzysz wizytówkę lub konfigurujesz ją od nowa, sprawdź też{" "}
+        <Link href="/blog/sekcja-informacje-wizytowka-google">kompletny przewodnik po sekcji Informacje w GBP</Link>, żeby nie pominąć żadnego ważnego pola.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
+          <li><Link href="/blog/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
+          <li><Link href="/blog/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026</Link></li>
+          <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WIZYTÓWKA: Godziny otwarcia
+  ───────────────────────────────────────────────────────────────────────── */
+  "godziny-otwarcia-wizytowka-google": (
+    <>
+      <h2>Dlaczego godziny otwarcia są ważniejsze niż myślisz</h2>
+      <p>
+        Google Maps i wyniki lokalne pokazują użytkownikom informację „Otwarte teraz" lub „Zamknięte" w czasie rzeczywistym. Firmy oznaczone jako otwarte mają statystycznie wyższy CTR — klienci rzadziej klikają miejsca, które są aktualnie zamknięte. Ponadto Google może obniżyć pozycję wizytówki, jeśli użytkownicy regularnie zgłaszają, że godziny otwarcia są niepoprawne.
+      </p>
+      <p>
+        Nieaktualne godziny to też jeden z najczęstszych powodów negatywnych opinii 1-gwiazdkowych — „Przyjechałem a firma była zamknięta mimo że Google pokazywał że jest otwarta". Taką opinię trudno usunąć i trudno zrównoważyć.
+      </p>
+
+      <h2>Godziny regularne — jak je poprawnie ustawić</h2>
+      <p>
+        W panelu GBP (business.google.com) przejdź do sekcji <strong>Informacje → Godziny</strong>. Dla każdego dnia tygodnia możesz ustawić:
+      </p>
+      <ul>
+        <li><strong>Otwarte z przerwą</strong> — np. 8:00–12:00 i 14:00–18:00 (dodaj drugi zakres godzin dla tego samego dnia)</li>
+        <li><strong>Cały dzień (24h)</strong> — przydatne dla pogotowia, dyzuru, sklepów nocnych</li>
+        <li><strong>Zamknięte</strong> — zaznacz jeśli firma jest nieczynna w danym dniu</li>
+      </ul>
+      <p>
+        <strong>Ważna zasada:</strong> wpisuj godziny kiedy <em>klient może się z Tobą skontaktować lub odwiedzić firmę</em>, a nie kiedy jesteś fizycznie w pracy. Jeśli przyjmujesz klientów tylko po umówieniu, a telefon odbierasz od 9 do 17 — wpisz właśnie 9–17.
+      </p>
+
+      <h2>Godziny specjalne i świąteczne — o tym zapomina 90% firm</h2>
+      <p>
+        Google Business Profile ma dedykowaną funkcję <strong>Godziny specjalne</strong>, pozwalającą ustawić wyjątki dla konkretnych dat: świąt, długich weekendów, urlopów, eventów specjalnych.
+      </p>
+      <p>
+        Jak to zrobić: w sekcji Godziny kliknij <strong>„Godziny specjalne"</strong> → Dodaj datę → Wybierz czy w tym dniu firma jest zamknięta, czynna ze zmienionymi godzinami, lub czynna całą dobę.
+      </p>
+      <p>
+        Google często sam sugeruje aktualizację godzin specjalnych przed większymi świętami (Boże Narodzenie, Nowy Rok, Wielkanoc). Warto reagować na te powiadomienia — firma która potwierdziła godziny świąteczne dostaje wizualny wyróżnik w wynikach Google Maps.
+      </p>
+
+      <h2>Godziny „Więcej godzin" — dla specyficznych usług</h2>
+      <p>
+        Dla niektórych branż Google oferuje dodatkowe sekcje godzin, np.:
+      </p>
+      <ul>
+        <li>Godziny przyjęć online (teleporady)</li>
+        <li>Godziny dostawy</li>
+        <li>Godziny drive-through</li>
+        <li>Godziny kuchni (dla restauracji)</li>
+        <li>Godziny recepcji</li>
+      </ul>
+      <p>
+        Te dodatkowe sekcje pojawiają się tylko jeśli kategoria Twojej firmy je obsługuje. Jeśli ich nie widzisz — Twoja kategoria ich nie ma lub nie są dostępne w Polsce dla tej branży.
+      </p>
+
+      <h2>Co zrobić gdy godziny się zmieniają sezonowo?</h2>
+      <p>
+        Wiele firm (hotele, restauracje, atrakcje turystyczne) ma inne godziny latem i zimą. Najlepsze rozwiązanie: ustaw aktualny sezon jako godziny regularne, a na kilka dni przed zmianą zaktualizuj. Nie zostawiaj starych godzin „bo większość klientów i tak wie" — Google tego nie wie, i karze za niezgodność.
+      </p>
+      <p>
+        Godziny otwarcia są jednym z elementów omówionych szczegółowo w{" "}
+        <Link href="/blog/sekcja-informacje-wizytowka-google">kompletnym przewodniku po sekcji Informacje w GBP</Link>.
+        Warto też uzupełnić{" "}
+        <Link href="/blog/atrybuty-wizytowka-google">atrybuty wizytówki</Link>, które informują klientów o dostępnych udogodnieniach — często decydują o tym, czy klient w ogóle odwiedzi firmę.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
+          <li><Link href="/blog/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
+          <li><Link href="/blog/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026</Link></li>
+          <li><Link href="/blog/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak skonfigurować?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WIZYTÓWKA: Atrybuty
+  ───────────────────────────────────────────────────────────────────────── */
+  "atrybuty-wizytowka-google": (
+    <>
+      <h2>Czym są atrybuty w wizytówce Google?</h2>
+      <p>
+        Atrybuty GBP to krótkie informacje opisujące cechy charakterystyczne Twojej firmy — dostępne udogodnienia, metody płatności, opcje obsługi, środowisko. Wyświetlają się bezpośrednio w panelu wiedzy (Knowledge Panel) Twojej firmy w Google Maps i wyszukiwarce.
+      </p>
+      <p>
+        Użytkownik szukający restauracji może filtrować wyniki po atrybutach: „z miejscem dla wózków", „z WiFi", „dostawa do domu". Firma bez uzupełnionych atrybutów nie pojawi się w tych filtrach — niezależnie od pozycji w wynikach organicznych.
+      </p>
+
+      <h2>Typy atrybutów w GBP</h2>
+      <p>
+        Google dzieli atrybuty na kilka kategorii, dostępność zależy od branży i lokalizacji:
+      </p>
+      <ul>
+        <li><strong>Dostępność</strong> — wejście dla wózków inwalidzkich, parking dla niepełnosprawnych, toaleta dostępna dla niepełnosprawnych, wejście bez schodów</li>
+        <li><strong>Oferta usług</strong> — dostawa do domu, odbiór osobisty, catering, rezerwacja online, usługi mobilne (dojazd do klienta)</li>
+        <li><strong>Płatności</strong> — płatność gotówką, kartą, BLIK, Google Pay, Apple Pay, płatności online</li>
+        <li><strong>Środowisko</strong> — miejsce przyjazne dzieciom, miejsce przyjazne LGBTQ+, zwierzęta mile widziane, miejsce dla palących na zewnątrz</li>
+        <li><strong>Usługi zdrowotne i bezpieczeństwo</strong> — maseczki obowiązkowe, rezerwacja wymagana, temperatury mierzone przy wejściu (atrybuty COVID nadal dostępne w niektórych branżach)</li>
+        <li><strong>Rozrywka i jedzenie</strong> (dla restauracji/barów) — na żywo muzyka, happy hour, tylko dla dorosłych, bar, menu dla wegan</li>
+      </ul>
+
+      <h2>Jak dodać atrybuty do wizytówki Google?</h2>
+      <p>
+        W panelu GBP (business.google.com) przejdź do sekcji <strong>Informacje → Atrybuty</strong>. Lista dostępnych atrybutów zależy od wybranej kategorii głównej — to kolejny powód, dla którego{" "}
+        <Link href="/blog/kategorie-wizytowka-google">właściwy wybór kategorii</Link> jest tak ważny.
+      </p>
+      <p>
+        Atrybuty dzielą się na dwa typy:
+      </p>
+      <ul>
+        <li><strong>Atrybuty subiektywne</strong> — które Ty sam zaznaczasz (np. „WiFi dostępne", „dla wózków"). Masz pełną kontrolę.</li>
+        <li><strong>Atrybuty weryfikowane przez użytkowników</strong> — Google zbiera opinie użytkowników i sam dodaje atrybuty na podstawie odpowiedzi w ankietach po wizycie. Np. „Zazwyczaj spokojne miejsce", „Zazwyczaj szybka obsługa". Tych nie możesz edytować.</li>
+      </ul>
+
+      <h2>Które atrybuty mają największy wpływ na widoczność?</h2>
+      <p>
+        Bezpośredni wpływ na ranking jest trudny do zmierzenia, ale atrybuty wpływają na CTR (klikalność) — a wysoki CTR jest sygnałem dla Google że wizytówka jest dopasowana do zapytania.
+      </p>
+      <p>
+        Najważniejsze z perspektywy klientów:
+      </p>
+      <ul>
+        <li><strong>Metody płatności</strong> — klient przed wizytą sprawdza czy może zapłacić kartą. Brak tej informacji to realna strata klientów.</li>
+        <li><strong>Dostępność dla osób z niepełnosprawnościami</strong> — istotne dla starszych klientów i rodziców z wózkami, a wyszukiwania z tymi filtrami rosną.</li>
+        <li><strong>Dostawa i odbiór</strong> — kluczowe dla branży food, ale też dla sklepów lokalnych po zmianie nawyków po pandemii.</li>
+        <li><strong>Rezerwacja online</strong> — firmy z możliwością rezerwacji online mają wyższy współczynnik konwersji niż te wymagające kontaktu telefonicznego.</li>
+      </ul>
+      <p>
+        Atrybuty to jedno z pól omówionych w{" "}
+        <Link href="/blog/sekcja-informacje-wizytowka-google">pełnym przewodniku po sekcji Informacje GBP</Link>.
+        Jeśli dopiero uzupełniasz wizytówkę,{" "}
+        <Link href="/blog/godziny-otwarcia-wizytowka-google">ustaw też poprawnie godziny otwarcia</Link> — to kolejny element, który klienci sprawdzają przed wizytą.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
+          <li><Link href="/blog/godziny-otwarcia-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Godziny otwarcia w wizytówce Google – jak ustawić poprawnie?</Link></li>
+          <li><Link href="/blog/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
+          <li><Link href="/blog/uslugi-wizytowka-google-business" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Usługi w wizytówce Google Business Profile</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WIZYTÓWKA: Usługi
+  ───────────────────────────────────────────────────────────────────────── */
+  "uslugi-wizytowka-google-business": (
+    <>
+      <h2>Sekcja Usługi w GBP — niedoceniany element wizytówki</h2>
+      <p>
+        Większość firm wypełnia opis firmy i dodaje zdjęcia, ale ignoruje sekcję Usługi. To błąd — sekcja Usługi wyświetla się bezpośrednio w panelu wiedzy (Knowledge Panel) Twojej firmy, zanim użytkownik odwiedzi stronę internetową. Dla niektórych branż może to być pierwsza i jedyna interakcja klienta z ofertą.
+      </p>
+      <p>
+        Co ważne: tekst wpisany w opisach usług jest indeksowany przez Google i może wpływać na widoczność na frazy long-tail. To bezpłatna przestrzeń na treść SEO, bezpośrednio w profilu firmy.
+      </p>
+
+      <h2>Jak dodać usługi do wizytówki Google?</h2>
+      <p>
+        W panelu GBP przejdź do <strong>Informacje → Usługi</strong>. Możesz:
+      </p>
+      <ul>
+        <li>Skorzystać z sugerowanych usług dla Twojej kategorii (Google proponuje popularne usługi w Twojej branży)</li>
+        <li>Dodać własne usługi — kliknij „Dodaj niestandardowe usługi"</li>
+        <li>Pogrupować usługi w sekcje (np. „Zabiegi pielęgnacyjne", „Manicure", „Stylizacja brwi")</li>
+      </ul>
+      <p>
+        Dla każdej usługi możesz uzupełnić:
+      </p>
+      <ul>
+        <li><strong>Nazwa usługi</strong> — zwięzła, jak klient by jej szukał</li>
+        <li><strong>Cena</strong> — opcjonalnie: dokładna, od–do, lub „Cena ustalana indywidualnie"</li>
+        <li><strong>Opis</strong> — maksymalnie 300 znaków, opisz co zawiera usługa i kto z niej skorzysta</li>
+      </ul>
+
+      <h2>Jak pisać opisy usług żeby przyciągały klientów?</h2>
+      <p>
+        300 znaków to mało, ale wystarczy żeby odpowiedzieć na najważniejsze pytania klienta. Schemat który działa:
+      </p>
+      <ul>
+        <li><strong>Co obejmuje</strong> — np. „Kompleksowe czyszczenie zębów: skaling, piaskowanie, polerowanie i fluoryzacja"</li>
+        <li><strong>Dla kogo</strong> — np. „Dla osób z wrażliwym uzębieniem i pierwszorazowych pacjentów"</li>
+        <li><strong>Wynik/korzyść</strong> — np. „Po zabiegu zęby są o 1–2 tony jaśniejsze i chronione przed kamieniem przez 6 miesięcy"</li>
+      </ul>
+      <p>
+        Unikaj ogólnych opisów typu „Profesjonalna obsługa w świetnych cenach" — nic nie mówią klientowi i nie pomagają w SEO.
+      </p>
+
+      <h2>Usługi vs Produkty — kiedy używać czego?</h2>
+      <p>
+        GBP ma zarówno sekcję Usługi jak i Produkty. Różnica jest prosta: Usługi to działania, które wykonujesz (strzyżenie, naprawa, konsultacja). Produkty to rzeczy fizyczne lub cyfrowe, które sprzedajesz.
+      </p>
+      <p>
+        Gabinet stomatologiczny powinien używać Usług. Sklep z kosmetykami — Produktów. Salon fryzjerski — obu: Usług (strzyżenie, koloryzacja) i Produktów (szampony, odżywki, które sprzedaje przy kasie).
+      </p>
+      <p>
+        Więcej o katalogu produktów znajdziesz w artykule{" "}
+        <Link href="/blog/produkty-wizytowka-google-business">Produkty w wizytówce Google Business Profile</Link>.
+        Pamiętaj też o{" "}
+        <Link href="/blog/opis-firmy-google-business-profile-jak-napisac">opisie firmy</Link> — sekcja Usługi go nie zastępuje, oba elementy pełnią różne funkcje.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/produkty-wizytowka-google-business" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Produkty w wizytówce Google Business Profile</Link></li>
+          <li><Link href="/blog/opis-firmy-google-business-profile-jak-napisac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opis firmy w Google Business Profile – jak napisać go skutecznie?</Link></li>
+          <li><Link href="/blog/posty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Google Posts – jak tworzyć posty w wizytówce?</Link></li>
+          <li><Link href="/blog/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WIZYTÓWKA: Posty Google
+  ───────────────────────────────────────────────────────────────────────── */
+  "posty-wizytowka-google": (
+    <>
+      <h2>Czym są Google Posts i dlaczego większość firm je ignoruje?</h2>
+      <p>
+        Google Posts to funkcja GBP pozwalająca publikować krótkie posty — aktualności, oferty, wydarzenia, produkty — które wyświetlają się bezpośrednio w Twoim panelu wiedzy w wyszukiwarce i Google Maps. Użytkownik widzi je jeszcze przed wejściem na stronę internetową.
+      </p>
+      <p>
+        Większość firm nie korzysta z tej funkcji albo publikuje sporadycznie, bo efekty są trudne do zmierzenia. Tymczasem regularne posty mają mierzalny wpływ na CTR wizytówki — im więcej aktywności w profilu, tym częściej Google uznaje go za wartościowy i aktywny.
+      </p>
+
+      <h2>Rodzaje postów w GBP</h2>
+      <ul>
+        <li><strong>Aktualności</strong> — ogólne informacje o firmie, nowości, zmiany. Widoczne przez 7 dni, potem automatycznie archiwizowane (ale dostępne w profilu).</li>
+        <li><strong>Oferty</strong> — promocje i zniżki z datą ważności. Wyświetlają się z wyróżnionym przyciskiem i tagiem „Oferta". Najskuteczniejszy typ pod kątem konwersji.</li>
+        <li><strong>Wydarzenia</strong> — nadchodzące wydarzenia z datą i godziną. Mogą pojawić się w Google Events.</li>
+        <li><strong>Produkty</strong> — prezentacja konkretnego produktu ze zdjęciem, nazwą i ceną. Połączone z sekcją Produkty w GBP.</li>
+      </ul>
+
+      <h2>Jak pisać posty, które przynoszą klientów?</h2>
+      <p>
+        Limit znaków na post to 1500 — ale Google wyświetla w podglądzie pierwsze 100–150 znaków. Kluczowy komunikat musi być na początku.
+      </p>
+      <ul>
+        <li><strong>Zacznij od korzyści lub oferty</strong> — np. „-20% na wszystkie zabiegi twarzowe przez cały czerwiec" działa lepiej niż „Z okazji lata przygotowaliśmy dla Was..."</li>
+        <li><strong>Dodaj CTA (Call to Action)</strong> — każdy post może mieć przycisk: Zadzwoń, Zarezerwuj, Zamów online, Kup, Dowiedz się więcej. Zawsze go dodawaj.</li>
+        <li><strong>Dodaj zdjęcie</strong> — posty ze zdjęciem mają wyższy CTR. Optymalne wymiary: 1200×900px (format 4:3). Unikaj stockowych zdjęć — oryginalne fotografie Twojej firmy są bardziej wiarygodne.</li>
+        <li><strong>Lokalne słowa kluczowe</strong> — wspominaj miasto lub dzielnicę jeśli to naturalne. Pomaga przy widoczności na frazy lokalne.</li>
+      </ul>
+
+      <h2>Jak często publikować?</h2>
+      <p>
+        Minimum 1 post tygodniowo — taka częstotliwość jest wystarczająca żeby algorytm Google uznał profil za aktywny. Jeśli masz zasoby — 2–3 posty tygodniowo to optimum.
+      </p>
+      <p>
+        Posty Aktualności wygasają po 7 dniach, więc przy rzadszej publikacji wizytówka przez część czasu nie ma żadnego aktywnego posta. Posty Oferty i Wydarzenie wygasają po dacie zakończenia.
+      </p>
+
+      <h2>Google Posts a inne elementy wizytówki</h2>
+      <p>
+        Posty świetnie współpracują z innymi elementami GBP. Ofertę możesz powiązać z{" "}
+        <Link href="/blog/uslugi-wizytowka-google-business">konkretną usługą z sekcji Usługi</Link>.
+        Aktualności możesz pisać odpowiadając na{" "}
+        <Link href="/blog/pytania-odpowiedzi-wizytowka-google">najczęstsze pytania z sekcji Q&A</Link>.
+        Zdjęcia w postach wzmacniają efekt{" "}
+        <Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja">profesjonalnych zdjęć w wizytówce</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/uslugi-wizytowka-google-business" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Usługi w wizytówce Google Business Profile</Link></li>
+          <li><Link href="/blog/pytania-odpowiedzi-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Q&A w wizytówce Google – jak zarządzać pytaniami?</Link></li>
+          <li><Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zdjęcia w wizytówce Google – które wpływają na pozycję?</Link></li>
+          <li><Link href="/blog/opinie-google-jak-zdobywac-skutecznie" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opinie w Google – jak zbierać bez nachalnego proszenia?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WIZYTÓWKA: Q&A
+  ───────────────────────────────────────────────────────────────────────── */
+  "pytania-odpowiedzi-wizytowka-google": (
+    <>
+      <h2>Czym jest sekcja Q&A w wizytówce Google i dlaczego jest ryzykowna?</h2>
+      <p>
+        Sekcja Pytania i odpowiedzi (Q&A) w GBP to publiczne forum pod wizytówką Twojej firmy — każdy zalogowany użytkownik Google może zadać pytanie i każdy może udzielić odpowiedzi. W tym Twoja konkurencja, niezadowoleni klienci, a nawet boty spamujące.
+      </p>
+      <p>
+        Google nie powiadamia właścicieli wizytówek o nowych pytaniach domyślnie (chyba że masz włączone powiadomienia w GBP). W efekcie wiele firm ma w Q&A pytania bez odpowiedzi od miesięcy — lub co gorsza, odpowiedzi udzielone przez nieznanych użytkowników z błędnymi informacjami.
+      </p>
+
+      <h2>Jak włączyć powiadomienia o nowych pytaniach?</h2>
+      <p>
+        W aplikacji Google Maps na telefonie: otwórz swoją wizytówkę → zakładka Aktualizacje → upewnij się że powiadomienia push są włączone. W panelu GBP na komputerze: Ustawienia → Powiadomienia → zaznacz „Pytania i odpowiedzi".
+      </p>
+      <p>
+        Alternatywnie: zainstaluj aplikację <strong>Google Business Profile</strong> na smartfonie — automatycznie wysyła powiadomienia o nowych pytaniach i umożliwia szybką odpowiedź bezpośrednio z telefonu.
+      </p>
+
+      <h2>Jak odpowiadać na pytania w Q&A?</h2>
+      <p>
+        Odpowiedź właściciela wizytówki jest wyróżniona i oznaczona jako „Odpowiedź właściciela" — ma wyższy autorytet niż odpowiedzi innych użytkowników. Kilka zasad:
+      </p>
+      <ul>
+        <li><strong>Odpowiadaj szybko</strong> — klient który czeka na odpowiedź tydzień, prawdopodobnie już wybrał konkurencję</li>
+        <li><strong>Odpowiadaj wyczerpująco</strong> — jeśli pytanie brzmi „Czy przyjmujecie dzieci?", odpowiedz: „Tak, przyjmujemy dzieci od 3 roku życia. Mamy specjalne fotele i zestaw zabawek w poczekalni."</li>
+        <li><strong>Używaj słów kluczowych naturalnie</strong> — odpowiedzi są indeksowane przez Google. Wzmianka o lokalizacji i usłudze pomaga widoczności.</li>
+        <li><strong>Nie bądź defensywny</strong> — nawet jeśli pytanie jest złośliwe lub oparte na błędnej informacji, odpowiadaj spokojnie i rzeczowo</li>
+      </ul>
+
+      <h2>Strategia: zadawaj pytania samodzielnie</h2>
+      <p>
+        Możesz sam — przez inne konto Google (nie właściciela) — zadawać pytania, które Twoi klienci często pytają telefonicznie. Następnie odpowiadasz na nie jako właściciel. To legalna i skuteczna metoda budowania sekcji Q&A z przydatnymi informacjami.
+      </p>
+      <p>
+        Pytania które warto zadać sobie samemu: cennik, godziny otwarcia (choć to dubluje inne informacje), parking, czas oczekiwania, sposoby płatności, polityka anulowania rezerwacji.
+      </p>
+
+      <h2>Jak usunąć fałszywe lub szkodliwe pytania?</h2>
+      <p>
+        Jeśli w Q&A pojawi się pytanie zawierające fałszywe informacje, spam lub treści reklamowe — możesz je zgłosić do Google przez przycisk „Zgłoś". Google moderuje Q&A, ale proces trwa kilka dni. W tym czasie warto udzielić odpowiedzi prostującej fakty — żeby inne osoby widziały prawdę.
+      </p>
+      <p>
+        Sekcja Q&A działa podobnie do{" "}
+        <Link href="/blog/negatywna-opinia-google-co-zrobic">obsługi negatywnych opinii</Link> — w obu przypadkach publiczna, spokojna odpowiedź właściciela robi lepsze wrażenie niż brak reakcji. Zarządzanie Q&A jest też częścią aktywności w GBP, która wpływa na sygnały{" "}
+        <Link href="/blog/czynniki-rankingowe-wizytowki-google-2026">rankingowe wizytówki</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/posty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Google Posts – jak tworzyć posty w wizytówce?</Link></li>
+          <li><Link href="/blog/negatywna-opinia-google-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Dostałem negatywną opinię na wizytówce – co teraz?</Link></li>
+          <li><Link href="/blog/opinie-google-jak-zdobywac-skutecznie" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opinie w Google – jak zbierać bez nachalnego proszenia?</Link></li>
+          <li><Link href="/blog/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WIZYTÓWKA: Produkty
+  ───────────────────────────────────────────────────────────────────────── */
+  "produkty-wizytowka-google-business": (
+    <>
+      <h2>Czym jest katalog produktów w GBP i kto powinien go używać?</h2>
+      <p>
+        Sekcja Produkty w Google Business Profile to wbudowany mini-sklep w wizytówce — pozwala wylistować produkty ze zdjęciami, opisami, cenami i przyciskiem CTA. Wyświetla się w zakładce „Produkty" bezpośrednio w profilu firmy w Google Maps i wyszukiwarce.
+      </p>
+      <p>
+        Produkty w GBP są idealne dla:
+      </p>
+      <ul>
+        <li>Sklepów detalicznych (odzież, elektronika, artykuły sportowe)</li>
+        <li>Salonów urody sprzedających produkty pielęgnacyjne</li>
+        <li>Restauracji z menu do wglądu</li>
+        <li>Firm B2B prezentujących swoje rozwiązania produktowe</li>
+        <li>Sklepów online z odbiorem lokalnym</li>
+      </ul>
+      <p>
+        Firmy usługowe bez fizycznych produktów powinny korzystać z{" "}
+        <Link href="/blog/uslugi-wizytowka-google-business">sekcji Usługi</Link>, a nie Produkty.
+      </p>
+
+      <h2>Jak dodać produkty do wizytówki Google?</h2>
+      <p>
+        W panelu GBP przejdź do <strong>Produkty → Dodaj produkt</strong>. Dla każdego produktu możesz uzupełnić:
+      </p>
+      <ul>
+        <li><strong>Zdjęcie produktu</strong> — minimum 1, maksymalnie kilka. Kwadratowe lub poziome, minimum 250×250px. Zdjęcia własne konwertują lepiej niż stockowe.</li>
+        <li><strong>Nazwa produktu</strong> — taka jak klient szukałby w Google</li>
+        <li><strong>Kategoria</strong> — grupuje produkty w zakładce (tworzysz własne kategorie)</li>
+        <li><strong>Cena</strong> — dokładna lub zakres (od–do)</li>
+        <li><strong>Opis</strong> — do 1000 znaków, opisz produkt jak na karcie produktu w sklepie</li>
+        <li><strong>Przycisk CTA</strong> — „Zamów online", „Kup", „Dowiedz się więcej" z linkiem do strony produktu</li>
+      </ul>
+
+      <h2>Jak organizować produkty w kategorie?</h2>
+      <p>
+        Google pozwala grupować produkty w niestandardowe kategorie — tworzysz je sam podczas dodawania produktu. Zasady dobrego podziału:
+      </p>
+      <ul>
+        <li>Maksymalnie 5–8 kategorii — więcej jest nieczytelne</li>
+        <li>Nazwy kategorii jak w sklepie stacjonarnym (np. „Kawa i herbata", „Akcesoria kuchenne")</li>
+        <li>Każda kategoria powinna mieć minimum 3 produkty, żeby sekcja wyglądała pełnie</li>
+        <li>Produkty bestsellerowe i sezonowe umieszczaj w pierwszej kategorii — wyświetla się domyślnie</li>
+      </ul>
+
+      <h2>Produkty w GBP a Google Shopping</h2>
+      <p>
+        Katalog produktów w GBP to nie Google Shopping — nie pojawia się w zakładce Zakupy ani w reklamach. To wyłącznie prezentacja w obrębie wizytówki firmy. Jeśli prowadzisz sklep internetowy, warto mieć oba: produkty w GBP dla klientów lokalnych i Google Shopping dla klientów online.
+      </p>
+      <p>
+        Zarządzanie produktami warto połączyć z regularnymi{" "}
+        <Link href="/blog/posty-wizytowka-google">Google Posts o nowościach i promocjach</Link>.
+        Nowy produkt w katalogu + post o jego premierze to podwójny sygnał aktywności dla algorytmu Google.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/uslugi-wizytowka-google-business" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Usługi w wizytówce Google Business Profile</Link></li>
+          <li><Link href="/blog/posty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Google Posts – jak tworzyć posty w wizytówce?</Link></li>
+          <li><Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zdjęcia w wizytówce Google – które wpływają na pozycję?</Link></li>
+          <li><Link href="/blog/opis-firmy-google-business-profile-jak-napisac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opis firmy w Google Business Profile – jak napisać skutecznie?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WIZYTÓWKA: Weryfikacja
+  ───────────────────────────────────────────────────────────────────────── */
+  "weryfikacja-wizytowki-google": (
+    <>
+      <h2>Dlaczego weryfikacja jest obowiązkowa i co się stanie bez niej?</h2>
+      <p>
+        Niezweryfikowana wizytówka Google nie wyświetla się w Google Maps ani w wynikach lokalnych. Możesz ją stworzyć, uzupełnić i ozdobić zdjęciami — ale dopóki Google nie potwierdzi, że firma rzeczywiście istnieje pod podanym adresem, profil pozostaje niewidoczny dla klientów.
+      </p>
+      <p>
+        Weryfikacja chroni też przed przejęciem wizytówki przez osoby trzecie — bez weryfikacji każdy mógłby się podać za właściciela.
+      </p>
+
+      <h2>Metoda 1 – Pocztówka (najczęstsza)</h2>
+      <p>
+        Google wysyła pocztówkę z 5-cyfrowym kodem na adres fizyczny firmy. Czas dostawy: zazwyczaj 5–14 dni roboczych w Polsce. Kod ważny jest przez 30 dni.
+      </p>
+      <p>
+        <strong>Jak wpisać kod:</strong> zaloguj się do GBP → kliknij „Zweryfikuj teraz" → wpisz 5-cyfrowy kod z pocztówki. Jeśli kod wygasł lub pocztówka nie dotarła, możesz zamówić nową (maksymalnie 3 razy).
+      </p>
+      <p>
+        <strong>Ważne:</strong> nie zmieniaj adresu firmy po wysłaniu pocztówki — kod jest przypisany do konkretnego adresu i jeśli go zmienisz, pocztówka trafi na stary adres.
+      </p>
+
+      <h2>Metoda 2 – Telefon lub SMS</h2>
+      <p>
+        Google wysyła kod jednorazowy SMS-em lub rozmową głosową na numer telefonu podany w wizytówce. Metoda dostępna tylko dla firm z numerem telefonicznym weryfikowalnym przez Google — nie jest dostępna dla wszystkich typów firm.
+      </p>
+      <p>
+        Jeśli opcja pojawia się w panelu — wybierz ją jako pierwszą. Weryfikacja trwa minuty zamiast tygodni.
+      </p>
+
+      <h2>Metoda 3 – E-mail</h2>
+      <p>
+        Google wysyła link weryfikacyjny na adres e-mail w domenie firmy (np. kontakt@twojafirma.pl). Weryfikacja przez e-mail jest dostępna rzadko i tylko gdy Google uzna, że adres e-mail jest zaufany.
+      </p>
+
+      <h2>Metoda 4 – Wideo (coraz częstsza)</h2>
+      <p>
+        Od 2023 roku Google coraz częściej wymaga weryfikacji przez nagranie wideo. Musisz nagrać film pokazujący:
+      </p>
+      <ul>
+        <li>Okolicę firmy (ulica, budynek, szyld)</li>
+        <li>Wnętrze firmy z oznakowaniem lub wyposażeniem typowym dla branży</li>
+        <li>Dowód że masz do firmy dostęp (klucze, otwierasz drzwi)</li>
+      </ul>
+      <p>
+        Nagranie trwa 2–5 minut i jest przeglądane przez pracownika Google (lub AI). Weryfikacja może trwać od kilku godzin do kilku dni. Film nie jest publicznie udostępniany.
+      </p>
+
+      <h2>Metoda 5 – Natychmiastowa (Instant Verification)</h2>
+      <p>
+        Jeśli Twoja strona internetowa jest zweryfikowana w Google Search Console i konto GBP jest powiązane z tym samym adresem e-mail — możesz otrzymać weryfikację natychmiastową bez żadnych kodów. To najszybsza metoda, ale dostępna tylko przy spełnieniu powyższych warunków.
+      </p>
+
+      <h2>Co po weryfikacji?</h2>
+      <p>
+        Po weryfikacji wizytówka staje się widoczna w wynikach lokalnych. Teraz czas na optymalizację: uzupełnij{" "}
+        <Link href="/blog/sekcja-informacje-wizytowka-google">wszystkie pola sekcji Informacje</Link>,
+        dodaj{" "}
+        <Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja">profesjonalne zdjęcia</Link>,
+        skonfiguruj{" "}
+        <Link href="/blog/kategorie-wizytowka-google">właściwe kategorie</Link> i zacznij zbierać opinie.
+        Jeśli kiedyś stracisz dostęp do wizytówki, sprawdź{" "}
+        <Link href="/blog/jak-odzyskac-dostep-do-wizytowki-google">jak odzyskać dostęp do wizytówki Google</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
+          <li><Link href="/blog/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
+          <li><Link href="/blog/jak-odzyskac-dostep-do-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak odzyskać dostęp do wizytówki Google?</Link></li>
+          <li><Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zdjęcia w wizytówce Google – które wpływają na pozycję?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WIZYTÓWKA: Sekcja Informacje
+  ───────────────────────────────────────────────────────────────────────── */
+  "sekcja-informacje-wizytowka-google": (
+    <>
+      <h2>Dlaczego warto wypełnić każde pole w sekcji Informacje?</h2>
+      <p>
+        Sekcja Informacje w GBP to centrum zarządzania wszystkimi danymi o firmie. Każde wypełnione pole to dodatkowy sygnał dla algorytmu Google i dodatkowa informacja dla potencjalnego klienta. Profil kompletny w 100% ma statystycznie wyższy ranking niż profil wypełniony w 50% — nawet przy tej samej liczbie opinii.
+      </p>
+
+      <h2>Nazwa firmy — zasady których nie można łamać</h2>
+      <p>
+        Nazwa w GBP musi być identyczna z nazwą używaną w szyldzie, na stronie internetowej i w innych miejscach online. Nie wolno dodawać do nazwy słów kluczowych, lokalizacji ani opisów usług — np. „Salon Kosmetyczny Kraków Anna Nowak" jest naruszeniem regulaminu Google, jeśli oficjalna nazwa firmy to „Salon Kosmetyczny Anna Nowak".
+      </p>
+      <p>
+        Dodawanie słów kluczowych do nazwy to taktyka stosowana przez wielu właścicieli firm, ale Google aktywnie to zwalcza. Zgłoszenie przez konkurencję może skutkować tymczasowym zawieszeniem wizytówki i koniecznością weryfikacji.
+      </p>
+
+      <h2>Adres — NAP i spójność w internecie</h2>
+      <p>
+        Adres w GBP musi być zgodny z adresem na stronie internetowej, w KRS/CEIDG i we wszystkich katalogach firm. Niespójność NAP (Name, Address, Phone) to jeden z najczęstszych powodów słabego rankingu lokalnego. Szczegółowo opisujemy to w artykule{" "}
+        <Link href="/blog/nap-wizytowka-google-co-to-jest">czym jest NAP i jak go skonfigurować</Link>.
+      </p>
+
+      <h2>Numer telefonu — który wpisać?</h2>
+      <p>
+        Wpisuj numer, pod którym faktycznie odbierasz telefony od klientów. Jeśli masz kilka numerów, jako główny ustaw ten najważniejszy — wyświetla się go na wizytówce z przyciskiem „Zadzwoń". Możesz dodać numer dodatkowy w polu „Telefon dodatkowy".
+      </p>
+      <p>
+        Numery 0-800 i 0-801 są dozwolone, ale numery zagraniczne jako jedyne dla polskiej firmy mogą budzić wątpliwości algorytmu. Numer stacjonarny z numerem kierunkowym miasta (np. 12 dla Krakowa) wzmacnia sygnał lokalny.
+      </p>
+
+      <h2>Strona internetowa — co wpisać jeśli masz kilka podstron?</h2>
+      <p>
+        Wpisz adres strony głównej lub strony landing page dedykowanej lokalizacji — nie podstrony konkretnej usługi. Jeśli masz wiele lokalizacji, każda wizytówka powinna linkować do podstrony dedykowanej tej lokalizacji (np. /warszawa, /krakow) — nie do strony głównej.
+      </p>
+
+      <h2>Opis firmy — 750 znaków które muszą pracować podwójnie</h2>
+      <p>
+        Opis w sekcji Informacje to nie to samo co sekcja Usługi. Opis powinien opisywać firmę jako całość — jej misję, unikalną wartość, historię i podejście do klienta. Unikaj list usług — od tego jest sekcja Usługi. Szczegółowo o pisaniu opisu piszemy w artykule{" "}
+        <Link href="/blog/opis-firmy-google-business-profile-jak-napisac">jak napisać opis firmy w GBP</Link>.
+      </p>
+
+      <h2>Pozostałe ważne pola</h2>
+      <ul>
+        <li><strong>Rok założenia</strong> — starsze firmy budzą więcej zaufania. Wypełnij jeśli firma istnieje od kilku lat.</li>
+        <li><strong>Link do rezerwacji online</strong> — jeśli korzystasz z systemu rezerwacji (Booksy, Calendly, własny system), wpisz bezpośredni link. Pojawia się jako przycisk „Zarezerwuj" w wizytówce.</li>
+        <li><strong>Produkty i usługi</strong> — powiązane z osobnymi sekcjami omówionymi w artykułach{" "}<Link href="/blog/uslugi-wizytowka-google-business">o usługach</Link> i{" "}<Link href="/blog/produkty-wizytowka-google-business">produktach</Link>.</li>
+        <li><strong>Kategorie</strong> — omówione szczegółowo w artykule{" "}<Link href="/blog/kategorie-wizytowka-google">o kategoriach GBP</Link>.</li>
+        <li><strong>Atrybuty</strong> — omówione w artykule{" "}<Link href="/blog/atrybuty-wizytowka-google">o atrybutach wizytówki</Link>.</li>
+      </ul>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak skonfigurować?</Link></li>
+          <li><Link href="/blog/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
+          <li><Link href="/blog/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
+          <li><Link href="/blog/opis-firmy-google-business-profile-jak-napisac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opis firmy w Google Business Profile – jak napisać skutecznie?</Link></li>
+          <li><Link href="/blog/godziny-otwarcia-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Godziny otwarcia w wizytówce Google – jak ustawić poprawnie?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WIZYTÓWKA: Wiele lokalizacji
+  ───────────────────────────────────────────────────────────────────────── */
+  "wiele-lokalizacji-google-business-profile": (
+    <>
+      <h2>Jeden profil czy wiele wizytówek — kiedy zakładać osobne?</h2>
+      <p>
+        Zasada jest prosta: każda fizyczna lokalizacja, pod którą klienci mogą przyjść lub zadzwonić, powinna mieć <strong>osobną wizytówkę GBP</strong>. Restauracja z 3 lokalami = 3 wizytówki. Kancelaria z biurami w Warszawie i Krakowie = 2 wizytówki.
+      </p>
+      <p>
+        Jedna wizytówka z kilkoma adresami nie istnieje w GBP — Google nie dopuszcza takiej formy. Próba wpisania kilku adresów w jednym profilu może skutkować zawieszeniem wizytówki.
+      </p>
+
+      <h2>Jak zorganizować konto dla wielu lokalizacji?</h2>
+      <p>
+        Google Business Profile oferuje <strong>Business Profile Manager</strong> — panel do zarządzania wieloma wizytówkami z jednego konta. Aby go aktywować, musisz mieć minimum 10 lokalizacji przypisanych do jednego konta (dla mniejszej liczby wystarczy zwykły panel GBP).
+      </p>
+      <p>
+        Dla firm z 10+ lokalizacjami dostępna jest też <strong>weryfikacja zbiorcza (bulk verification)</strong> — zamiast weryfikować każdą wizytówkę osobno, Google weryfikuje cały łańcuch lokalizacji jednocześnie po przesłaniu pliku Excel z danymi. Wymaga spełnienia warunków: wszystkie lokalizacje muszą należeć do tej samej firmy i branży.
+      </p>
+
+      <h2>Spójność NAP między lokalizacjami — najczęstszy błąd</h2>
+      <p>
+        Każda wizytówka musi mieć unikalny adres i numer telefonu dla danej lokalizacji. Błąd, który popełnia wiele firm: używanie tego samego numeru telefonu (centrali) dla wszystkich lokalizacji. Google traktuje to jako sygnał że to jedna firma w wielu miejscach — może obniżyć widoczność wszystkich wizytówek.
+      </p>
+      <p>
+        Każda lokalizacja powinna mieć:
+      </p>
+      <ul>
+        <li>Unikalny adres fizyczny</li>
+        <li>Własny numer telefonu (lub przynajmniej numer z przekierowaniem lokalnym)</li>
+        <li>Własną podstronę na stronie internetowej (np. /lokalizacje/warszawa)</li>
+        <li>Własne godziny otwarcia — mogą się różnić między lokalizacjami</li>
+      </ul>
+
+      <h2>Nazwy wizytówek dla wielu lokalizacji</h2>
+      <p>
+        Gdy firma ma wiele lokalizacji, dopuszcza się dodanie nazwy lokalizacji do nazwy firmy — ale tylko jeśli firma faktycznie tak się nazywa lub wyróżnia lokalizacje w oficjalnych materiałach. Np. „Restauracja Złota Kaczka – Mokotów" jest akceptowalne, jeśli firma używa takiego oznaczenia.
+      </p>
+      <p>
+        Nie dodawaj nazwy miasta wyłącznie dla SEO (np. „Salon Piękności Kraków") jeśli oficjalna nazwa nie zawiera nazwy miasta.
+      </p>
+
+      <h2>Monitorowanie wielu wizytówek</h2>
+      <p>
+        Im więcej wizytówek, tym większa szansa że jedna z nich zostanie zmodyfikowana przez użytkowników, dostanie negatywną opinię bez Twojej wiedzy lub zostanie zduplikowana przez Google. Ustaw powiadomienia dla każdej wizytówki i regularnie sprawdzaj panel Business Profile Manager.
+      </p>
+      <p>
+        Przed założeniem wielu wizytówek upewnij się, że{" "}
+        <Link href="/blog/weryfikacja-wizytowki-google">wiesz jak przebiega weryfikacja</Link> — dla wielu lokalizacji to wąskie gardło, które często opóźnia uruchomienie.
+        Każda wizytówka powinna też mieć wypełnioną{" "}
+        <Link href="/blog/sekcja-informacje-wizytowka-google">sekcję Informacje</Link> z danymi właściwymi dla danej lokalizacji, nie skopiowanymi z innej wizytówki.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/weryfikacja-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Weryfikacja wizytówki Google – wszystkie metody krok po kroku</Link></li>
+          <li><Link href="/blog/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
+          <li><Link href="/blog/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak skonfigurować?</Link></li>
+          <li><Link href="/blog/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
+          <li><Link href="/blog/siedziba-mala-miejscowosc-local-seo" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Siedziba w małej miejscowości – jak zdobyć klientów z dużego miasta?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+
+  /* ─────────────────────────────────────────────────────────────────────────
      Jak dobierać słowa kluczowe do pozycjonowania
   ───────────────────────────────────────────────────────────────────────── */
   "jak-dobierac-slowa-kluczowe-do-pozycjonowania": (

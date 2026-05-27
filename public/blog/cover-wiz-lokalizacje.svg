@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0369a1"/><stop offset="100%" stop-color="#0c2340"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.06" stroke="white" stroke-width="1"><line x1="0" y1="105" x2="1200" y2="105"/><line x1="0" y1="210" x2="1200" y2="210"/><line x1="0" y1="315" x2="1200" y2="315"/><line x1="0" y1="420" x2="1200" y2="420"/><line x1="0" y1="525" x2="1200" y2="525"/><line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/></g>
+  <circle cx="120" cy="120" r="180" fill="white" opacity="0.04"/><circle cx="1100" cy="520" r="220" fill="white" opacity="0.04"/>
+  <!-- Map pins - multiple locations -->
+  <path d="M400 140 C360 140 320 175 320 220 C320 278 400 350 400 350 C400 350 480 278 480 220 C480 175 440 140 400 140 Z" fill="white" opacity="0.9"/>
+  <circle cx="400" cy="215" r="28" fill="#0369a1"/>
+  <path d="M650 200 C618 200 588 228 588 262 C588 308 650 365 650 365 C650 365 712 308 712 262 C712 228 682 200 650 200 Z" fill="white" opacity="0.7"/>
+  <circle cx="650" cy="258" r="22" fill="#0369a1"/>
+  <path d="M860 160 C832 160 806 184 806 214 C806 254 860 305 860 305 C860 305 914 254 914 214 C914 184 888 160 860 160 Z" fill="white" opacity="0.5"/>
+  <circle cx="860" cy="210" r="18" fill="#0369a1"/>
+  <!-- Connecting lines -->
+  <line x1="480" y1="220" x2="588" y2="262" stroke="white" stroke-width="3" stroke-dasharray="8,6" opacity="0.4"/>
+  <line x1="712" y1="262" x2="806" y2="214" stroke="white" stroke-width="3" stroke-dasharray="8,6" opacity="0.4"/>
+  <!-- Count badge -->
+  <circle cx="400" cy="420" r="40" fill="white" opacity="0.9"/>
+  <text x="400" y="434" font-family="system-ui,sans-serif" font-size="32" font-weight="900" fill="#0369a1" text-anchor="middle">3</text>
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · GOOGLE BUSINESS PROFILE · LOKALIZACJE</text>
+</svg>
