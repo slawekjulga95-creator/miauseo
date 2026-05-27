@@ -16,7 +16,7 @@ const cases: {
   paragraphs: ReactNode[];
   good: string[];
   hard: string[];
-  photo: null;
+  photo: string | null;
   reverse: boolean;
 }[] = [
   {
@@ -38,7 +38,7 @@ const cases: {
       "Silna konkurencja franczyzowa z ogromnymi budżetami SEO wymusiła dłuższy czas oczekiwania na efekty",
       "Pierwsze 3 miesiące bez widocznych wzrostów — trudny okres wymagający cierpliwości z obu stron",
     ],
-    photo: null,
+    photo: "/referencje/1.png",
     reverse: false,
   },
   {
@@ -60,7 +60,7 @@ const cases: {
       "Branża medyczna ma ograniczenia w pewnych formach promocji — wymagała ostrożności w doborze słów w opisach",
       "Sezonowość — wakacje spowalniały pozyskiwanie nowych opinii",
     ],
-    photo: null,
+    photo: "/referencje/2.png",
     reverse: true,
   },
   {
@@ -82,7 +82,7 @@ const cases: {
       "Mała liczba startowych opinii sprawiła, że pierwsze tygodnie były mało widoczne w wynikach",
       "Konieczność edukacji na temat tego, że SEO to proces — nie jednorazowe działanie",
     ],
-    photo: null,
+    photo: "/referencje/3.png",
     reverse: false,
   },
 ];
@@ -162,22 +162,29 @@ export default function ReferencjePage() {
                 ))}
               </div>
 
-              {/* Photo placeholder */}
+              {/* Photo */}
               <div className="lg:w-1/2">
                 <div className="relative">
-                  <div className="rounded-2xl overflow-hidden bg-zinc-100 h-72 lg:h-full min-h-[280px] flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-16 h-16 rounded-full bg-brand/10 flex items-center justify-center mx-auto mb-3">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                          <rect x="3" y="3" width="18" height="18" rx="2" />
-                          <circle cx="8.5" cy="8.5" r="1.5" />
-                          <polyline points="21 15 16 10 5 21" />
-                        </svg>
+                  <div className="rounded-2xl overflow-hidden bg-zinc-100 min-h-[280px] flex items-center justify-center">
+                    {item.photo ? (
+                      <img
+                        src={item.photo}
+                        alt={`Wyniki ${item.company}`}
+                        className="w-full h-full object-cover rounded-2xl"
+                      />
+                    ) : (
+                      <div className="text-center p-8">
+                        <div className="w-16 h-16 rounded-full bg-brand/10 flex items-center justify-center mx-auto mb-3">
+                          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <polyline points="21 15 16 10 5 21" />
+                          </svg>
+                        </div>
+                        <p className="text-zinc-400 text-sm">Zdjęcie klienta</p>
                       </div>
-                      <p className="text-zinc-400 text-sm">Zdjęcie klienta</p>
-                    </div>
+                    )}
                   </div>
-                  {/* 3D accent */}
                   <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl bg-brand/15 -z-10" />
                 </div>
               </div>
