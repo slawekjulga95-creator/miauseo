@@ -91,7 +91,7 @@ export default function HeroSection() {
       {/* Photo – right side */}
       <div className="absolute right-0 top-0 bottom-0 w-full lg:w-[58%] hidden lg:block">
         <img
-          src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1000&q=85&fit=crop&crop=top"
+          src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1400&q=90&fit=crop&crop=top"
           alt="Specjalista MiauSEO"
           className="w-full h-full object-cover object-top"
         />
