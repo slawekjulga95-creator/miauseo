@@ -118,7 +118,7 @@ export default function HeroSection() {
         <div className="w-full lg:max-w-[500px] py-28">
 
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-6 animate-fade-up">
-            Małe i Średnie Firmy
+            Pozycjonowanie lokalne | Kampanie Leadowe
           </span>
 
           <h1 className="text-4xl sm:text-5xl lg:text-[3.4rem] font-bold tracking-tight text-ink leading-[1.15] mb-6 animate-fade-up [animation-delay:100ms]">
