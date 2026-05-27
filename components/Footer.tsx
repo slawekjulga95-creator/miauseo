@@ -73,14 +73,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
 
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 flex flex-col items-center text-center lg:items-start lg:text-left">
             <Link href="/" className="inline-flex items-center mb-5">
               <Image src="/logo.png" alt="MiauSEO logo" width={180} height={52} className="h-12 w-auto brightness-0 invert" />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed">
               Agencja local SEO i kampanii reklamowych dla małych i średnich firm. Specjalizujemy się w pozycjonowaniu wizytówki Google Business Profile.
             </p>
-            <div className="flex gap-3 mt-6">
+            <div className="flex gap-3 mt-6 justify-center lg:justify-start">
               {socialLinks.map((s) => (
                 <a
                   key={s.label}
@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
 
           {/* Usługi */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-semibold text-xs uppercase tracking-widest text-white/40 mb-5">
               Usługi
             </h3>
@@ -116,7 +116,7 @@ export default function Footer() {
           </div>
 
           {/* Firma */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-semibold text-xs uppercase tracking-widest text-white/40 mb-5">
               Firma
             </h3>
@@ -135,7 +135,7 @@ export default function Footer() {
           </div>
 
           {/* Narzędzia */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-semibold text-xs uppercase tracking-widest text-white/40 mb-5">
               Darmowe narzędzia
             </h3>
