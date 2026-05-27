@@ -379,7 +379,7 @@ export default function Navbar() {
           </ul>
 
           {/* CTA + socials + hamburger */}
-          <div className="flex items-center gap-3 justify-end">
+          <div className="flex items-center gap-3 ml-auto justify-end">
             <Link
               href="/kursy"
               className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-brand text-white text-sm font-semibold rounded-xl hover:bg-brand-dark transition-colors duration-150"
