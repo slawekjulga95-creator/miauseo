@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80"/><stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.06" fill="white">
+    <circle cx="100" cy="100" r="3"/><circle cx="250" cy="100" r="3"/><circle cx="400" cy="100" r="3"/><circle cx="550" cy="100" r="3"/><circle cx="700" cy="100" r="3"/><circle cx="850" cy="100" r="3"/><circle cx="1000" cy="100" r="3"/><circle cx="1150" cy="100" r="3"/>
+    <circle cx="100" cy="250" r="3"/><circle cx="250" cy="250" r="3"/><circle cx="400" cy="250" r="3"/><circle cx="550" cy="250" r="3"/><circle cx="700" cy="250" r="3"/><circle cx="850" cy="250" r="3"/><circle cx="1000" cy="250" r="3"/><circle cx="1150" cy="250" r="3"/>
+    <circle cx="100" cy="400" r="3"/><circle cx="250" cy="400" r="3"/><circle cx="400" cy="400" r="3"/><circle cx="550" cy="400" r="3"/><circle cx="700" cy="400" r="3"/><circle cx="850" cy="400" r="3"/><circle cx="1000" cy="400" r="3"/><circle cx="1150" cy="400" r="3"/>
+    <circle cx="100" cy="550" r="3"/><circle cx="250" cy="550" r="3"/><circle cx="400" cy="550" r="3"/><circle cx="550" cy="550" r="3"/><circle cx="700" cy="550" r="3"/><circle cx="850" cy="550" r="3"/><circle cx="1000" cy="550" r="3"/><circle cx="1150" cy="550" r="3"/>
+  </g>
+  <!-- Calculator body -->
+  <rect x="230" y="130" width="300" height="400" rx="24" fill="white" opacity="0.85"/>
+  <!-- Screen -->
+  <rect x="252" y="155" width="256" height="100" rx="10" fill="#14532d" opacity="0.15"/>
+  <text x="380" y="215" font-family="system-ui,sans-serif" font-size="36" font-weight="900" fill="#14532d" text-anchor="middle">SEO</text>
+  <!-- Calculator buttons -->
+  <g fill="#14532d" opacity="0.35">
+    <rect x="258" y="275" width="56" height="42" rx="8"/>
+    <rect x="326" y="275" width="56" height="42" rx="8"/>
+    <rect x="394" y="275" width="56" height="42" rx="8"/>
+    <rect x="462" y="275" width="56" height="42" rx="8"/>
+    <rect x="258" y="328" width="56" height="42" rx="8"/>
+    <rect x="326" y="328" width="56" height="42" rx="8"/>
+    <rect x="394" y="328" width="56" height="42" rx="8"/>
+    <rect x="462" y="328" width="56" height="42" rx="8"/>
+    <rect x="258" y="381" width="56" height="42" rx="8"/>
+    <rect x="326" y="381" width="56" height="42" rx="8"/>
+    <rect x="394" y="381" width="56" height="42" rx="8"/>
+    <rect x="462" y="381" width="56" height="42" rx="8"/>
+    <rect x="258" y="434" width="124" height="42" rx="8"/>
+    <rect x="394" y="434" width="56" height="42" rx="8"/>
+    <rect x="462" y="434" width="56" height="42" rx="8"/>
+  </g>
+  <!-- Price range bars on right -->
+  <text x="700" y="165" font-family="system-ui,sans-serif" font-size="22" font-weight="800" fill="white" opacity="0.9">Freelancer</text>
+  <rect x="700" y="180" width="240" height="36" rx="8" fill="white" opacity="0.3"/>
+  <text x="850" y="204" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="white" text-anchor="middle">800–2 000 zł/m</text>
+  <text x="700" y="250" font-family="system-ui,sans-serif" font-size="22" font-weight="800" fill="white" opacity="0.9">Agencja SEO</text>
+  <rect x="700" y="265" width="310" height="36" rx="8" fill="white" opacity="0.3"/>
+  <text x="855" y="289" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="white" text-anchor="middle">2 000–8 000 zł/m</text>
+  <text x="700" y="340" font-family="system-ui,sans-serif" font-size="22" font-weight="800" fill="white" opacity="0.9">Tylko GBP</text>
+  <rect x="700" y="355" width="220" height="36" rx="8" fill="white" opacity="0.3"/>
+  <text x="810" y="379" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="white" text-anchor="middle">300–1 500 zł/m</text>
+  <text x="700" y="430" font-family="system-ui,sans-serif" font-size="22" font-weight="800" fill="white" opacity="0.9">DIY</text>
+  <rect x="700" y="445" width="120" height="36" rx="8" fill="white" opacity="0.3"/>
+  <text x="760" y="469" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="white" text-anchor="middle">0 zł</text>
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · KOSZT SEO · POZYCJONOWANIE</text>
+</svg>

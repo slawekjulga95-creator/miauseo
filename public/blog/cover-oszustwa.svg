@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Diagonal warning stripes subtle -->
+  <g opacity="0.05" stroke="white" stroke-width="40">
+    <line x1="-100" y1="0" x2="300" y2="800"/>
+    <line x1="100" y1="0" x2="500" y2="800"/>
+    <line x1="300" y1="0" x2="700" y2="800"/>
+    <line x1="500" y1="0" x2="900" y2="800"/>
+    <line x1="700" y1="0" x2="1100" y2="800"/>
+    <line x1="900" y1="0" x2="1300" y2="800"/>
+  </g>
+  <!-- Big warning triangle -->
+  <polygon points="600,110 850,490 350,490" fill="white" opacity="0.12"/>
+  <polygon points="600,155 820,465 380,465" fill="none" stroke="white" stroke-width="8" opacity="0.5"/>
+  <!-- ! inside triangle -->
+  <rect x="584" y="240" width="32" height="130" rx="12" fill="white" opacity="0.9"/>
+  <circle cx="600" cy="418" r="20" fill="white" opacity="0.9"/>
+  <!-- Magnifying glass overlay -->
+  <circle cx="870" cy="200" r="100" fill="none" stroke="white" stroke-width="12" opacity="0.6"/>
+  <circle cx="870" cy="200" r="70" fill="white" opacity="0.08"/>
+  <line x1="943" y1="273" x2="1000" y2="340" stroke="white" stroke-width="14" stroke-linecap="round" opacity="0.6"/>
+  <!-- Fake text inside magnifier -->
+  <text x="870" y="185" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle" opacity="0.7">GOOGLE</text>
+  <text x="870" y="215" font-family="system-ui,sans-serif" font-size="14" fill="white" text-anchor="middle" opacity="0.5">❌ FAKE</text>
+  <!-- Small shield with X -->
+  <rect x="150" y="160" width="120" height="140" rx="20" fill="white" opacity="0.12"/>
+  <path d="M210 185 L210 270 Q175 255 160 235 L160 185 Z" fill="white" opacity="0.2"/>
+  <path d="M210 185 L210 270 Q245 255 260 235 L260 185 Z" fill="white" opacity="0.2"/>
+  <line x1="180" y1="210" x2="240" y2="270" stroke="white" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+  <line x1="240" y1="210" x2="180" y2="270" stroke="white" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+  <!-- Label -->
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · OSZUSTWA · GOOGLE BUSINESS PROFILE</text>
+</svg>

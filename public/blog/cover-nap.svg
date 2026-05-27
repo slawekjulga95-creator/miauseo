@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#4338ca"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Grid dots -->
+  <g opacity="0.07" fill="white">
+    <circle cx="100" cy="100" r="3"/><circle cx="250" cy="100" r="3"/><circle cx="400" cy="100" r="3"/>
+    <circle cx="550" cy="100" r="3"/><circle cx="700" cy="100" r="3"/><circle cx="850" cy="100" r="3"/>
+    <circle cx="1000" cy="100" r="3"/><circle cx="1150" cy="100" r="3"/>
+    <circle cx="100" cy="250" r="3"/><circle cx="250" cy="250" r="3"/><circle cx="400" cy="250" r="3"/>
+    <circle cx="550" cy="250" r="3"/><circle cx="700" cy="250" r="3"/><circle cx="850" cy="250" r="3"/>
+    <circle cx="1000" cy="250" r="3"/><circle cx="1150" cy="250" r="3"/>
+    <circle cx="100" cy="400" r="3"/><circle cx="250" cy="400" r="3"/><circle cx="400" cy="400" r="3"/>
+    <circle cx="550" cy="400" r="3"/><circle cx="700" cy="400" r="3"/><circle cx="850" cy="400" r="3"/>
+    <circle cx="1000" cy="400" r="3"/><circle cx="1150" cy="400" r="3"/>
+    <circle cx="100" cy="550" r="3"/><circle cx="250" cy="550" r="3"/><circle cx="400" cy="550" r="3"/>
+    <circle cx="550" cy="550" r="3"/><circle cx="700" cy="550" r="3"/><circle cx="850" cy="550" r="3"/>
+    <circle cx="1000" cy="550" r="3"/><circle cx="1150" cy="550" r="3"/>
+  </g>
+  <!-- Big NAP letters -->
+  <text x="600" y="340" font-family="system-ui,sans-serif" font-size="240" font-weight="900"
+    fill="white" opacity="0.12" text-anchor="middle" letter-spacing="-10">NAP</text>
+  <!-- Three rows: Name / Address / Phone -->
+  <!-- Row 1: Name -->
+  <rect x="200" y="155" width="80" height="80" rx="16" fill="white" opacity="0.15"/>
+  <text x="240" y="208" font-family="system-ui,sans-serif" font-size="40" font-weight="800" fill="white" text-anchor="middle">N</text>
+  <rect x="300" y="172" width="500" height="18" rx="6" fill="white" opacity="0.5"/>
+  <rect x="300" y="202" width="340" height="14" rx="5" fill="white" opacity="0.25"/>
+  <!-- Checkmark 1 -->
+  <circle cx="870" cy="195" r="28" fill="white" opacity="0.2"/>
+  <polyline points="857,195 868,207 885,183" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Row 2: Address -->
+  <rect x="200" y="270" width="80" height="80" rx="16" fill="white" opacity="0.15"/>
+  <text x="240" y="323" font-family="system-ui,sans-serif" font-size="40" font-weight="800" fill="white" text-anchor="middle">A</text>
+  <rect x="300" y="287" width="460" height="18" rx="6" fill="white" opacity="0.5"/>
+  <rect x="300" y="317" width="310" height="14" rx="5" fill="white" opacity="0.25"/>
+  <!-- Checkmark 2 -->
+  <circle cx="870" cy="310" r="28" fill="white" opacity="0.2"/>
+  <polyline points="857,310 868,322 885,298" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Row 3: Phone -->
+  <rect x="200" y="385" width="80" height="80" rx="16" fill="white" opacity="0.15"/>
+  <text x="240" y="438" font-family="system-ui,sans-serif" font-size="40" font-weight="800" fill="white" text-anchor="middle">P</text>
+  <rect x="300" y="402" width="380" height="18" rx="6" fill="white" opacity="0.5"/>
+  <rect x="300" y="432" width="260" height="14" rx="5" fill="white" opacity="0.25"/>
+  <!-- Checkmark 3 -->
+  <circle cx="870" cy="425" r="28" fill="white" opacity="0.2"/>
+  <polyline points="857,425 868,437 885,413" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Equals = consistent label -->
+  <rect x="940" y="270" width="180" height="80" rx="16" fill="white" opacity="0.12"/>
+  <text x="1030" y="321" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="white" text-anchor="middle" opacity="0.8">= SPÓJNOŚĆ</text>
+  <!-- Label -->
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · NAP · LOCAL SEO · SPÓJNOŚĆ DANYCH</text>
+</svg>

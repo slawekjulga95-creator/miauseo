@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#065f46"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.06" stroke="white" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/><line x1="0" y1="210" x2="1200" y2="210"/><line x1="0" y1="315" x2="1200" y2="315"/><line x1="0" y1="420" x2="1200" y2="420"/><line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  <!-- Big FREE badge / price tag -->
+  <!-- Price tag shape -->
+  <path d="M280 160 L660 160 L740 315 L660 470 L280 470 L280 160 Z" fill="white" opacity="0.15"/>
+  <path d="M280 160 L660 160 L740 315 L660 470 L280 470 L280 160 Z" fill="none" stroke="white" stroke-width="6" opacity="0.5"/>
+  <!-- Hole in tag -->
+  <circle cx="310" cy="315" r="24" fill="white" opacity="0.3"/>
+  <!-- "0 zł" text -->
+  <text x="490" y="340" font-family="system-ui,sans-serif" font-size="120" font-weight="900" fill="white" text-anchor="middle" opacity="0.9">0 zł</text>
+  <!-- Strikethrough on price (paid version crossed out) -->
+  <!-- Comparison boxes -->
+  <!-- GBP box -->
+  <rect x="820" y="150" width="280" height="120" rx="16" fill="white" opacity="0.15"/>
+  <text x="960" y="200" font-family="system-ui,sans-serif" font-size="22" font-weight="800" fill="white" text-anchor="middle">Google Business</text>
+  <text x="960" y="230" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#34d399" text-anchor="middle">BEZPŁATNE</text>
+  <text x="960" y="252" font-family="system-ui,sans-serif" font-size="14" fill="white" text-anchor="middle" opacity="0.6">zawsze, bez limitu</text>
+  <!-- Google Ads box -->
+  <rect x="820" y="290" width="280" height="100" rx="16" fill="white" opacity="0.1"/>
+  <text x="960" y="330" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle" opacity="0.7">Google Ads</text>
+  <text x="960" y="358" font-family="system-ui,sans-serif" font-size="20" font-weight="800" fill="white" text-anchor="middle" opacity="0.7">płatne (CPC)</text>
+  <!-- FB Ads box -->
+  <rect x="820" y="410" width="280" height="100" rx="16" fill="white" opacity="0.1"/>
+  <text x="960" y="450" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle" opacity="0.7">Facebook Ads</text>
+  <text x="960" y="478" font-family="system-ui,sans-serif" font-size="20" font-weight="800" fill="white" text-anchor="middle" opacity="0.7">płatne (CPM/CPC)</text>
+  <!-- Checkmark on GBP -->
+  <circle cx="1080" cy="215" r="24" fill="#34d399" opacity="0.8"/>
+  <polyline points="1068,215 1076,224 1092,206" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · BEZPŁATNA WIZYTÓWKA · GOOGLE BUSINESS PROFILE</text>
+</svg>

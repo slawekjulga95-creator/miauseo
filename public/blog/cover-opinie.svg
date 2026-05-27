@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#0f7a30"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Dot pattern -->
+  <g opacity="0.07" fill="white">
+    <circle cx="75" cy="75" r="4"/><circle cx="225" cy="75" r="4"/><circle cx="375" cy="75" r="4"/>
+    <circle cx="525" cy="75" r="4"/><circle cx="675" cy="75" r="4"/><circle cx="825" cy="75" r="4"/>
+    <circle cx="975" cy="75" r="4"/><circle cx="1125" cy="75" r="4"/>
+    <circle cx="75" cy="225" r="4"/><circle cx="225" cy="225" r="4"/><circle cx="375" cy="225" r="4"/>
+    <circle cx="525" cy="225" r="4"/><circle cx="675" cy="225" r="4"/><circle cx="825" cy="225" r="4"/>
+    <circle cx="975" cy="225" r="4"/><circle cx="1125" cy="225" r="4"/>
+    <circle cx="75" cy="375" r="4"/><circle cx="225" cy="375" r="4"/><circle cx="375" cy="375" r="4"/>
+    <circle cx="525" cy="375" r="4"/><circle cx="675" cy="375" r="4"/><circle cx="825" cy="375" r="4"/>
+    <circle cx="975" cy="375" r="4"/><circle cx="1125" cy="375" r="4"/>
+    <circle cx="75" cy="525" r="4"/><circle cx="225" cy="525" r="4"/><circle cx="375" cy="525" r="4"/>
+    <circle cx="525" cy="525" r="4"/><circle cx="675" cy="525" r="4"/><circle cx="825" cy="525" r="4"/>
+    <circle cx="975" cy="525" r="4"/><circle cx="1125" cy="525" r="4"/>
+  </g>
+  <!-- Decorative circles -->
+  <circle cx="100" cy="530" r="200" fill="white" opacity="0.04"/>
+  <circle cx="1100" cy="100" r="200" fill="white" opacity="0.04"/>
+  <!-- Chat bubble background -->
+  <rect x="220" y="140" width="760" height="300" rx="40" fill="white" opacity="0.12"/>
+  <polygon points="380,440 340,500 440,440" fill="white" opacity="0.12"/>
+  <!-- 5 Stars -->
+  <!-- Star 1 -->
+  <polygon points="300,290 316,240 332,290 284,258 348,258" fill="white"/>
+  <!-- Star 2 -->
+  <polygon points="420,290 436,240 452,290 404,258 468,258" fill="white"/>
+  <!-- Star 3 -->
+  <polygon points="540,290 556,240 572,290 524,258 588,258" fill="white"/>
+  <!-- Star 4 -->
+  <polygon points="660,290 676,240 692,290 644,258 708,258" fill="white"/>
+  <!-- Star 5 -->
+  <polygon points="780,290 796,240 812,290 764,258 828,258" fill="white"/>
+  <!-- "5.0" text -->
+  <text x="600" y="390" font-family="system-ui,sans-serif" font-size="52" font-weight="800" fill="white" text-anchor="middle" opacity="0.9">5,0 · 128 opinii</text>
+  <!-- Label -->
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · OPINIE GOOGLE · LOCAL SEO</text>
+</svg>

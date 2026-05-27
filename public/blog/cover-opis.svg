@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#be185d"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Diagonal lines pattern -->
+  <g opacity="0.06" stroke="white" stroke-width="2">
+    <line x1="-100" y1="200" x2="300" y2="-100"/>
+    <line x1="0" y1="400" x2="500" y2="-100"/>
+    <line x1="100" y1="630" x2="700" y2="-100"/>
+    <line x1="300" y1="730" x2="900" y2="-100"/>
+    <line x1="600" y1="730" x2="1100" y2="-100"/>
+    <line x1="900" y1="730" x2="1300" y2="-100"/>
+  </g>
+  <!-- Decorative circles -->
+  <circle cx="1100" cy="500" r="250" fill="white" opacity="0.04"/>
+  <circle cx="100" cy="100" r="150" fill="white" opacity="0.04"/>
+  <!-- Document shadow -->
+  <rect x="338" y="138" width="380" height="470" rx="20" fill="white" opacity="0.1"/>
+  <!-- Document body -->
+  <rect x="320" y="120" width="380" height="470" rx="20" fill="white" opacity="0.9"/>
+  <!-- Dog-ear fold -->
+  <polygon points="620,120 700,120 700,200" fill="#ec4899" opacity="0.35"/>
+  <!-- Text lines on document -->
+  <rect x="360" y="170" width="200" height="18" rx="4" fill="#ec4899" opacity="0.5"/>
+  <rect x="360" y="220" width="300" height="12" rx="3" fill="#ec4899" opacity="0.2"/>
+  <rect x="360" y="244" width="280" height="12" rx="3" fill="#ec4899" opacity="0.2"/>
+  <rect x="360" y="268" width="260" height="12" rx="3" fill="#ec4899" opacity="0.2"/>
+  <rect x="360" y="310" width="180" height="14" rx="3" fill="#ec4899" opacity="0.35"/>
+  <rect x="360" y="340" width="300" height="12" rx="3" fill="#ec4899" opacity="0.2"/>
+  <rect x="360" y="364" width="240" height="12" rx="3" fill="#ec4899" opacity="0.2"/>
+  <rect x="360" y="388" width="290" height="12" rx="3" fill="#ec4899" opacity="0.2"/>
+  <rect x="360" y="430" width="160" height="14" rx="3" fill="#ec4899" opacity="0.35"/>
+  <rect x="360" y="460" width="300" height="12" rx="3" fill="#ec4899" opacity="0.2"/>
+  <rect x="360" y="484" width="200" height="12" rx="3" fill="#ec4899" opacity="0.2"/>
+  <!-- Pencil -->
+  <g transform="rotate(-35 800 350)">
+    <rect x="750" y="200" width="50" height="220" rx="6" fill="white" opacity="0.9"/>
+    <polygon points="750,420 800,420 775,480" fill="#fbbf24" opacity="0.9"/>
+    <rect x="750" y="200" width="50" height="30" rx="4" fill="#ec4899" opacity="0.5"/>
+    <rect x="755" y="198" width="40" height="6" rx="2" fill="white" opacity="0.4"/>
+    <line x1="775" y1="420" x2="775" y2="480" stroke="#6b7280" stroke-width="3" opacity="0.5"/>
+  </g>
+  <!-- "750" badge -->
+  <rect x="800" y="160" width="150" height="80" rx="16" fill="white" opacity="0.18"/>
+  <text x="875" y="213" font-family="system-ui,sans-serif" font-size="36" font-weight="800" fill="white" text-anchor="middle">750</text>
+  <text x="875" y="234" font-family="system-ui,sans-serif" font-size="14" fill="white" text-anchor="middle" opacity="0.7">znaków</text>
+  <!-- Label -->
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · OPIS FIRMY · GOOGLE BUSINESS PROFILE</text>
+</svg>

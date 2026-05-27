@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#3730a3"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Dot grid -->
+  <g opacity="0.06" fill="white">
+    <circle cx="75" cy="75" r="3.5"/><circle cx="225" cy="75" r="3.5"/><circle cx="375" cy="75" r="3.5"/><circle cx="525" cy="75" r="3.5"/><circle cx="675" cy="75" r="3.5"/><circle cx="825" cy="75" r="3.5"/><circle cx="975" cy="75" r="3.5"/><circle cx="1125" cy="75" r="3.5"/>
+    <circle cx="75" cy="225" r="3.5"/><circle cx="225" cy="225" r="3.5"/><circle cx="375" cy="225" r="3.5"/><circle cx="525" cy="225" r="3.5"/><circle cx="675" cy="225" r="3.5"/><circle cx="825" cy="225" r="3.5"/><circle cx="975" cy="225" r="3.5"/><circle cx="1125" cy="225" r="3.5"/>
+    <circle cx="75" cy="375" r="3.5"/><circle cx="225" cy="375" r="3.5"/><circle cx="375" cy="375" r="3.5"/><circle cx="525" cy="375" r="3.5"/><circle cx="675" cy="375" r="3.5"/><circle cx="825" cy="375" r="3.5"/><circle cx="975" cy="375" r="3.5"/><circle cx="1125" cy="375" r="3.5"/>
+    <circle cx="75" cy="525" r="3.5"/><circle cx="225" cy="525" r="3.5"/><circle cx="375" cy="525" r="3.5"/><circle cx="525" cy="525" r="3.5"/><circle cx="675" cy="525" r="3.5"/><circle cx="825" cy="525" r="3.5"/><circle cx="975" cy="525" r="3.5"/><circle cx="1125" cy="525" r="3.5"/>
+  </g>
+
+  <!-- JSON-LD code card -->
+  <rect x="80" y="90" width="620" height="430" rx="20" fill="url(#card)" stroke="white" stroke-opacity="0.12" stroke-width="1.5"/>
+
+  <!-- Code window dots -->
+  <circle cx="118" cy="126" r="7" fill="#ef4444" opacity="0.7"/>
+  <circle cx="142" cy="126" r="7" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="166" cy="126" r="7" fill="#22c55e" opacity="0.7"/>
+  <line x1="80" y1="145" x2="700" y2="145" stroke="white" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Code lines -->
+  <g font-family="'Courier New',Courier,monospace" font-size="15">
+    <text x="108" y="178" fill="#a5b4fc">&#123;</text>
+    <text x="128" y="206" fill="#7dd3fc">"@context"</text><text x="246" y="206" fill="white" opacity="0.5">:</text><text x="258" y="206" fill="#86efac">"https://schema.org"</text><text x="484" y="206" fill="white" opacity="0.4">,</text>
+    <text x="128" y="234" fill="#7dd3fc">"@type"</text><text x="206" y="234" fill="white" opacity="0.5">:</text><text x="218" y="234" fill="#86efac">"LocalBusiness"</text><text x="378" y="234" fill="white" opacity="0.4">,</text>
+    <text x="128" y="262" fill="#7dd3fc">"name"</text><text x="196" y="262" fill="white" opacity="0.5">:</text><text x="208" y="262" fill="#86efac">"Twoja Firma"</text><text x="336" y="262" fill="white" opacity="0.4">,</text>
+    <text x="128" y="290" fill="#7dd3fc">"address"</text><text x="224" y="290" fill="white" opacity="0.5">:</text><text x="236" y="290" fill="white" opacity="0.4">&#123;</text>
+    <text x="148" y="318" fill="#7dd3fc">"@type"</text><text x="226" y="318" fill="white" opacity="0.5">:</text><text x="238" y="318" fill="#86efac">"PostalAddress"</text><text x="398" y="318" fill="white" opacity="0.4">,</text>
+    <text x="148" y="346" fill="#7dd3fc">"streetAddress"</text><text x="304" y="346" fill="white" opacity="0.5">:</text><text x="316" y="346" fill="#86efac">"ul. Główna 10"</text>
+    <text x="148" y="374" fill="#7dd3fc">"addressLocality"</text><text x="334" y="374" fill="white" opacity="0.5">:</text><text x="346" y="374" fill="#86efac">"Warszawa"</text>
+    <text x="148" y="402" fill="#7dd3fc">"postalCode"</text><text x="274" y="402" fill="white" opacity="0.5">:</text><text x="286" y="402" fill="#86efac">"00-001"</text>
+    <text x="128" y="430" fill="white" opacity="0.4">&#125;</text><text x="140" y="430" fill="white" opacity="0.4">,</text>
+    <text x="128" y="458" fill="#7dd3fc">"telephone"</text><text x="242" y="458" fill="white" opacity="0.5">:</text><text x="254" y="458" fill="#86efac">"+48 123 456 789"</text>
+    <text x="108" y="490" fill="#a5b4fc">&#125;</text>
+  </g>
+
+  <!-- Right side — icons -->
+  <!-- Schema.org badge -->
+  <rect x="760" y="100" width="360" height="80" rx="16" fill="white" opacity="0.1"/>
+  <text x="940" y="136" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="white" text-anchor="middle" opacity="0.6">schema.org · JSON-LD</text>
+  <text x="940" y="160" font-family="system-ui,sans-serif" font-size="20" font-weight="900" fill="white" text-anchor="middle">LocalBusiness Markup</text>
+
+  <!-- Location pin -->
+  <g transform="translate(840, 230)">
+    <path d="M80 10 C110 10 134 34 134 64 C134 96 80 150 80 150 C80 150 26 96 26 64 C26 34 50 10 80 10Z"
+      fill="white" opacity="0.15" stroke="white" stroke-width="2" stroke-opacity="0.3"/>
+    <circle cx="80" cy="62" r="26" fill="white" opacity="0.85"/>
+    <text x="80" y="72" font-family="system-ui,sans-serif" font-size="22" font-weight="900" fill="#6366f1" text-anchor="middle">📍</text>
+  </g>
+
+  <!-- Rich result preview box -->
+  <rect x="760" y="410" width="360" height="120" rx="16" fill="white" opacity="0.1" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="780" y="438" font-family="system-ui,sans-serif" font-size="11" fill="white" opacity="0.4">Rich result preview</text>
+  <text x="780" y="462" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#818cf8">Twoja Firma · Warszawa</text>
+  <text x="780" y="484" font-family="system-ui,sans-serif" font-size="12" fill="white" opacity="0.5">ul. Główna 10, 00-001 Warszawa</text>
+  <text x="780" y="504" font-family="system-ui,sans-serif" font-size="12" fill="white" opacity="0.5">+48 123 456 789</text>
+  <!-- Star rating mock -->
+  <text x="780" y="524" font-family="system-ui,sans-serif" font-size="13" fill="#fbbf24">★★★★★</text>
+  <text x="854" y="524" font-family="system-ui,sans-serif" font-size="12" fill="white" opacity="0.4">4.9 · 127 opinii</text>
+
+  <!-- Bottom label -->
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="21" font-weight="700" fill="white" opacity="0.3" letter-spacing="5">MIAUSEO · LOCAL SCHEMA MARKUP · SEO</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f87171"/><stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.05" stroke="white" stroke-width="40"><line x1="-100" y1="0" x2="300" y2="800"/><line x1="100" y1="0" x2="500" y2="800"/><line x1="300" y1="0" x2="700" y2="800"/><line x1="500" y1="0" x2="900" y2="800"/><line x1="700" y1="0" x2="1100" y2="800"/><line x1="900" y1="0" x2="1300" y2="800"/></g>
+  <!-- Large star (slightly faded) -->
+  <polygon points="480,120 516,240 640,240 544,312 580,432 480,360 380,432 416,312 320,240 444,240" fill="white" opacity="0.2"/>
+  <!-- Star outline -->
+  <polygon points="480,120 516,240 640,240 544,312 580,432 480,360 380,432 416,312 320,240 444,240" fill="none" stroke="white" stroke-width="6" opacity="0.5"/>
+  <!-- Big X over star -->
+  <line x1="300" y1="120" x2="660" y2="450" stroke="white" stroke-width="24" stroke-linecap="round" opacity="0.9"/>
+  <line x1="660" y1="120" x2="300" y2="450" stroke="white" stroke-width="24" stroke-linecap="round" opacity="0.9"/>
+  <!-- Eraser on right -->
+  <g transform="rotate(-25 880 320)">
+    <rect x="800" y="260" width="180" height="80" rx="10" fill="white" opacity="0.8"/>
+    <rect x="800" y="260" width="70" height="80" rx="10" fill="white" opacity="0.5"/>
+    <rect x="796" y="256" width="188" height="16" rx="4" fill="white" opacity="0.6"/>
+  </g>
+  <!-- Erased lines (what was erased) -->
+  <g opacity="0.15" stroke="white" stroke-width="10" stroke-linecap="round">
+    <line x1="780" y1="350" x2="1000" y2="350"/>
+    <line x1="780" y1="390" x2="960" y2="390"/>
+    <line x1="780" y1="430" x2="980" y2="430"/>
+  </g>
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · USUNIĘCIE OPINII · GOOGLE BUSINESS PROFILE</text>
+</svg>

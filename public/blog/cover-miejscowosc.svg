@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Subtle concentric circles (radar/map style) -->
+  <g opacity="0.08" stroke="white" stroke-width="2" fill="none">
+    <circle cx="540" cy="340" r="80"/>
+    <circle cx="540" cy="340" r="160"/>
+    <circle cx="540" cy="340" r="240"/>
+    <circle cx="540" cy="340" r="320"/>
+    <circle cx="540" cy="340" r="400"/>
+  </g>
+  <!-- Map lines (roads) -->
+  <g opacity="0.12" stroke="white" stroke-width="3" fill="none">
+    <path d="M200 340 Q380 290 540 340 Q700 390 900 320"/>
+    <path d="M540 100 Q560 220 540 340 Q520 460 560 560"/>
+    <path d="M300 150 Q420 250 540 340 Q660 430 800 500"/>
+    <path d="M800 150 Q660 250 540 340 Q420 430 300 530"/>
+  </g>
+  <!-- Main pin (home/base - small town) -->
+  <path d="M540 220 C500 220 468 252 468 295 C468 345 540 410 540 410 C540 410 612 345 612 295 C612 252 580 220 540 220 Z" fill="white" opacity="0.9"/>
+  <circle cx="540" cy="290" r="28" fill="#0d9488"/>
+  <!-- Secondary pins (target cities) -->
+  <!-- Pin top-right -->
+  <path d="M830 155 C814 155 800 169 800 187 C800 210 830 240 830 240 C830 240 860 210 860 187 C860 169 846 155 830 155 Z" fill="white" opacity="0.65"/>
+  <circle cx="830" cy="184" r="14" fill="#0d9488"/>
+  <!-- Pin right -->
+  <path d="M960 310 C944 310 930 324 930 342 C930 365 960 395 960 395 C960 395 990 365 990 342 C990 324 976 310 960 310 Z" fill="white" opacity="0.65"/>
+  <circle cx="960" cy="339" r="14" fill="#0d9488"/>
+  <!-- Pin top-left -->
+  <path d="M290 180 C274 180 260 194 260 212 C260 235 290 265 290 265 C290 265 320 235 320 212 C320 194 306 180 290 180 Z" fill="white" opacity="0.65"/>
+  <circle cx="290" cy="209" r="14" fill="#0d9488"/>
+  <!-- Pin bottom-right -->
+  <path d="M760 440 C744 440 730 454 730 472 C730 495 760 525 760 525 C760 525 790 495 790 472 C790 454 776 440 760 440 Z" fill="white" opacity="0.65"/>
+  <circle cx="760" cy="469" r="14" fill="#0d9488"/>
+  <!-- Dashed lines from main pin to secondary -->
+  <g stroke="white" stroke-width="3" stroke-dasharray="10,8" opacity="0.35" fill="none">
+    <line x1="540" y1="340" x2="830" y2="187"/>
+    <line x1="540" y1="340" x2="960" y2="339"/>
+    <line x1="540" y1="340" x2="290" y2="209"/>
+    <line x1="540" y1="340" x2="760" y2="469"/>
+  </g>
+  <!-- Location subpage labels -->
+  <rect x="860" y="155" width="200" height="36" rx="8" fill="white" opacity="0.15"/>
+  <text x="960" y="179" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="white" text-anchor="middle">/uslugi/warszawa</text>
+  <rect x="1000" y="302" width="190" height="36" rx="8" fill="white" opacity="0.15"/>
+  <text x="1095" y="326" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="white" text-anchor="middle">/uslugi/krakow</text>
+  <!-- Label -->
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · MAŁA MIEJSCOWOŚĆ · LOCAL SEO</text>
+</svg>

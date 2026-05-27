@@ -1,0 +1,277 @@
+// Źródło danych bloga — docelowo zastąpić fetchemz CMS (Sanity / Contentful / Payload)
+// Struktura posta musi odpowiadać schematowi CMS
+
+export type Category = "SEO" | "Opinie" | "Poradnik" | "Wizytówka" | "Reklamy";
+
+export type Post = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: Category;
+  date: string;         // ISO: "2025-05-10"
+  readTime: number;     // minuty
+  coverColor: string;   // kolor placeholdera zanim będzie prawdziwe zdjęcie
+  coverImage?: string;  // ścieżka do obrazka w /public
+  published: boolean;
+};
+
+export const posts: Post[] = [
+  {
+    slug: "czynniki-rankingowe-wizytowki-google-2026",
+    title: "Czynniki rankingowe wizytówki Google w 2026 — pełna lista z oceną ważności",
+    excerpt: "34 czynniki rankingowe Google Business Profile sklasyfikowane od A (krytyczne) do E (marginalne). Kompletna tabela z opisem każdego sygnału i wskazówkami wdrożeniowymi.",
+    category: "SEO",
+    date: "2026-05-27",
+    readTime: 14,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-czynniki-rankingowe.svg",
+    published: true,
+  },
+  {
+    slug: "jak-dobierac-slowa-kluczowe-do-pozycjonowania",
+    title: "Jak dobierać słowa kluczowe do pozycjonowania — kompletny przewodnik",
+    excerpt: "Dobór słów kluczowych to fundament każdej strategii SEO. Jak analizować intencję wyszukiwania, korzystać z narzędzi i budować listę fraz, które realnie przyciągają klientów — nie tylko ruch.",
+    category: "SEO",
+    date: "2026-05-27",
+    readTime: 12,
+    coverColor: "#059669",
+    coverImage: "/blog/cover-slowa-kluczowe.svg",
+    published: true,
+  },
+  {
+    slug: "jak-dodac-local-schema-do-strony",
+    title: "Jak dodać local schema markup do swojej strony — kompletny przewodnik",
+    excerpt: "Schema markup LocalBusiness to jeden z najskuteczniejszych sygnałów lokalnego SEO, który większość firm ignoruje. Pokażemy Ci jak go poprawnie wdrożyć w każdym środowisku — z gotowym kodem JSON-LD.",
+    category: "SEO",
+    date: "2026-05-27",
+    readTime: 10,
+    coverColor: "#6366f1",
+    coverImage: "/blog/cover-local-schema.svg",
+    published: true,
+  },
+  {
+    slug: "jak-odzyskac-dostep-do-wizytowki-google",
+    title: "Jak odzyskać dostęp do wizytówki Google? Krok po kroku",
+    excerpt: "Zgubiłeś dostęp do profilu Google Business? Pracownik odszedł z kluczami do konta? Firma zmieniła właściciela? Jest kilka sposobów na odzyskanie kontroli — bez płacenia komukolwiek.",
+    category: "Poradnik",
+    date: "2026-05-15",
+    readTime: 6,
+    coverColor: "#3b82f6",
+    coverImage: "/blog/cover-odzyskaj.svg",
+    published: true,
+  },
+  {
+    slug: "pozycjonowanie-wizytowki-google-hotel",
+    title: "Pozycjonowanie wizytówki Google dla hoteli – co naprawdę działa?",
+    excerpt: "Hotele mają w GBP funkcje, których nie ma żadna inna branża: kategorie pokoi, udogodnienia, integracje z booking. Sprawdź, jak to w pełni wykorzystać.",
+    category: "SEO",
+    date: "2026-05-03",
+    readTime: 8,
+    coverColor: "#7c3aed",
+    coverImage: "/blog/cover-hotel.svg",
+    published: true,
+  },
+  {
+    slug: "jak-usunac-negatywne-opinie-z-google",
+    title: "Jak usunąć negatywne opinie z Google? Co możesz, a czego nie",
+    excerpt: "Nie możesz usunąć każdej złej recenzji — ale część możesz zgłosić i usunąć legalnie. Dowiedz się, które opinie naruszają zasady Google i jak skutecznie je zgłosić.",
+    category: "Opinie",
+    date: "2026-04-28",
+    readTime: 6,
+    coverColor: "#dc2626",
+    coverImage: "/blog/cover-usun-opinie.svg",
+    published: true,
+  },
+  {
+    slug: "negatywna-opinia-google-co-zrobic",
+    title: "Dostałem negatywną opinię na wizytówce Google – co teraz?",
+    excerpt: "Negatywna recenzja to nie wyrok. Jak na nią reagujesz publicznie, mówi klientom więcej o Twojej firmie niż sama treść opinii. Oto plan działania krok po kroku.",
+    category: "Opinie",
+    date: "2026-04-14",
+    readTime: 5,
+    coverColor: "#f97316",
+    coverImage: "/blog/cover-negatywna-opinia.svg",
+    published: true,
+  },
+  {
+    slug: "czy-wizytowka-google-jest-platna",
+    title: "Czy wizytówka Google jest płatna? Porównanie z Facebook i reklamami",
+    excerpt: "Google Business Profile jest w 100% bezpłatny i takim pozostanie. Ale jak wypada w porównaniu z płatnym zasięgiem na Facebooku czy Google Ads? Zrobimy to uczciwie.",
+    category: "Poradnik",
+    date: "2026-03-30",
+    readTime: 5,
+    coverColor: "#10b981",
+    coverImage: "/blog/cover-platna.svg",
+    published: true,
+  },
+  {
+    slug: "oplata-administracyjna-wizytowka-google",
+    title: "Opłata administracyjna za wizytówkę Google – to jest oszustwo",
+    excerpt: "Przyszła faktura za 'opłatę administracyjną' za wizytówkę Google? To przekręt. Nie istnieje żadna opłata tego rodzaju. Wyjaśniamy schemat i co zrobić, jeśli już zapłaciłeś.",
+    category: "Poradnik",
+    date: "2026-03-10",
+    readTime: 4,
+    coverColor: "#9333ea",
+    coverImage: "/blog/cover-oplata-admin.svg",
+    published: true,
+  },
+  {
+    slug: "linki-do-wizytowki-google",
+    title: "Gdzie pozyskiwać linki do wizytówki Google i po co to robić?",
+    excerpt: "Linki prowadzące do profilu GBP wzmacniają sygnały widoczności w wynikach lokalnych. Oto 8 miejsc, gdzie warto je umieszczać — i dlaczego to nic nie kosztuje.",
+    category: "SEO",
+    date: "2026-02-24",
+    readTime: 5,
+    coverColor: "#0284c7",
+    coverImage: "/blog/cover-linki.svg",
+    published: true,
+  },
+  {
+    slug: "ile-kosztuje-pozycjonowanie-strony-internetowej",
+    title: "Ile kosztuje pozycjonowanie strony internetowej w 2026 roku?",
+    excerpt: "Od 500 do 20 000 zł miesięcznie — i obie kwoty mogą być uczciwe. Dowiedz się, za co płacisz, czego unikać i jak wyliczyć ROI z SEO zanim podpiszesz umowę.",
+    category: "Poradnik",
+    date: "2026-02-10",
+    readTime: 7,
+    coverColor: "#059669",
+    coverImage: "/blog/cover-koszt-seo.svg",
+    published: true,
+  },
+  {
+    slug: "reklama-kancelarii-adwokackiej-google",
+    title: "Reklama kancelarii adwokackiej w Google – co wolno, co działa",
+    excerpt: "Adwokaci i radcowie mogą reklamować się w Google, ale obowiązują ich zasady etyki zawodowej. Sprawdź, jak prowadzić skuteczny marketing prawniczy w granicach przepisów.",
+    category: "Reklamy",
+    date: "2026-01-28",
+    readTime: 7,
+    coverColor: "#1e40af",
+    coverImage: "/blog/cover-kancelaria.svg",
+    published: true,
+  },
+  {
+    slug: "jak-promowac-warsztat-samochodowy-google",
+    title: "Jak promować warsztat samochodowy w Google? Wizytówka i reklamy",
+    excerpt: "Warsztat samochodowy to jedna z branż, gdzie klient szuka w ostatniej chwili i lokalnie. Google Business Profile i Google Ads to Twoje najważniejsze narzędzia.",
+    category: "SEO",
+    date: "2026-01-14",
+    readTime: 6,
+    coverColor: "#b45309",
+    coverImage: "/blog/cover-warsztat.svg",
+    published: true,
+  },
+  {
+    slug: "salon-kosmetyczny-facebook-ads",
+    title: "Salon kosmetyczny i Facebook Ads – jak zarabiać na reklamach Meta?",
+    excerpt: "Salon piękności to idealne miejsce dla reklam na Facebooku i Instagramie. Zdjęcia przed/po, targetowanie kobiet z okolicy, retargeting — oto konkretna strategia.",
+    category: "Reklamy",
+    date: "2025-12-20",
+    readTime: 7,
+    coverColor: "#db2777",
+    coverImage: "/blog/cover-salon.svg",
+    published: true,
+  },
+  {
+    slug: "jak-pozycjonowac-wizytowke-google-2026",
+    title: "Jak pozycjonować wizytówkę Google w 2026 roku?",
+    excerpt: "Algorytm Local Pack zmienił się. Sprawdź, które czynniki rankingowe mają dziś największe znaczenie i co możesz poprawić samodzielnie.",
+    category: "SEO",
+    date: "2026-05-10",
+    readTime: 7,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-seo.svg",
+    published: true,
+  },
+  {
+    slug: "opinie-google-jak-zdobywac-skutecznie",
+    title: "Opinie w Google – jak zbierać je bez nachalnego proszenia?",
+    excerpt: "Klienci rzadko wystawiają opinie z własnej inicjatywy. Poznaj sprawdzone metody, które zwiększają liczbę recenzji bez spamowania.",
+    category: "Opinie",
+    date: "2025-04-22",
+    readTime: 5,
+    coverColor: "#16a34a",
+    coverImage: "/blog/cover-opinie.svg",
+    published: true,
+  },
+  {
+    slug: "zdjecia-w-wizytowce-google-ktore-dzialaja",
+    title: "Zdjęcia w wizytówce Google – które naprawdę wpływają na pozycję?",
+    excerpt: "Nie każde zdjęcie pomaga. Sprawdź, jakie formaty, rozmiary i treści Google premiuje — i których unikać, żeby nie zaszkodzić profilowi.",
+    category: "Wizytówka",
+    date: "2025-03-05",
+    readTime: 5,
+    coverColor: "#0ea5e9",
+    coverImage: "/blog/cover-zdjecia.svg",
+    published: true,
+  },
+  {
+    slug: "nap-wizytowka-google-co-to-jest",
+    title: "NAP w wizytówce Google – czym jest i jak poprawnie ją skonfigurować?",
+    excerpt: "Nazwa, adres, telefon — trzy dane, które muszą być identyczne w każdym miejscu w sieci. Dowiedz się, czym jest NAP, dlaczego to fundament local SEO i jak przeprowadzić audyt spójności.",
+    category: "SEO",
+    date: "2026-05-08",
+    readTime: 6,
+    coverColor: "#6366f1",
+    coverImage: "/blog/cover-nap.svg",
+    published: true,
+  },
+  {
+    slug: "wizytowka-google-popularne-oszustwa",
+    title: "Wizytówka Google – najpopularniejsze oszustwa, na które uważaj",
+    excerpt: "Od fałszywych faktur za 'odnowienie' po kupowanie recenzji — oszustwa związane z Google Business Profile psują rynek i mogą skończyć się zawieszeniem profilu.",
+    category: "Poradnik",
+    date: "2026-04-20",
+    readTime: 7,
+    coverColor: "#ef4444",
+    coverImage: "/blog/cover-oszustwa.svg",
+    published: true,
+  },
+  {
+    slug: "siedziba-mala-miejscowosc-local-seo",
+    title: "Siedziba w małej miejscowości – jak zdobyć klientów z dużego miasta?",
+    excerpt: "Firma zarejestrowana w małej wsi, ale klientów szukasz w pobliskim mieście? Strategia NAP, podstrony lokalizacyjne i area service to Twoje główne narzędzia.",
+    category: "SEO",
+    date: "2026-04-05",
+    readTime: 8,
+    coverColor: "#14b8a6",
+    coverImage: "/blog/cover-miejscowosc.svg",
+    published: true,
+  },
+  {
+    slug: "wizytowka-google-nie-wygasa-oszustwo",
+    title: "Czy wizytówka Google wygasa? Nie — to oszustwo działające od lat",
+    excerpt: "Od ponad dekady firmy podszywają się pod Google i straszą właścicieli wygaśnięciem wizytówki. Google Business Profile nigdy nie wygasa i jest bezpłatny. Dowiedz się, jak rozpoznać ten przekręt.",
+    category: "Poradnik",
+    date: "2026-03-18",
+    readTime: 5,
+    coverColor: "#f59e0b",
+    coverImage: "/blog/cover-wygasa.svg",
+    published: true,
+  },
+  {
+    slug: "opis-firmy-google-business-profile-jak-napisac",
+    title: "Opis firmy w Google Business Profile – jak napisać go skutecznie?",
+    excerpt: "750 znaków, które muszą przekonać i klienta, i algorytm. Pokazujemy strukturę opisu, który działa — z przykładami dla różnych branż.",
+    category: "Wizytówka",
+    date: "2025-02-18",
+    readTime: 6,
+    coverColor: "#ec4899",
+    coverImage: "/blog/cover-opis.svg",
+    published: true,
+  },
+];
+
+export function getPublishedPosts(): Post[] {
+  return posts.filter((p) => p.published).sort((a, b) => b.date.localeCompare(a.date));
+}
+
+export function getPostBySlug(slug: string): Post | undefined {
+  return posts.find((p) => p.slug === slug && p.published);
+}
+
+export function formatDate(iso: string): string {
+  return new Date(iso).toLocaleDateString("pl-PL", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}

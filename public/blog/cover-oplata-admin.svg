@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/><stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.06" stroke="white" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/><line x1="0" y1="210" x2="1200" y2="210"/><line x1="0" y1="315" x2="1200" y2="315"/><line x1="0" y1="420" x2="1200" y2="420"/><line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/><line x1="400" y1="0" x2="400" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/><line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <!-- Invoice/document -->
+  <rect x="260" y="120" width="400" height="380" rx="20" fill="white" opacity="0.9"/>
+  <!-- Invoice header -->
+  <rect x="260" y="120" width="400" height="80" rx="20" fill="#7c3aed" opacity="0.5"/>
+  <text x="460" y="168" font-family="system-ui,sans-serif" font-size="24" font-weight="800" fill="white" text-anchor="middle">FAKTURA</text>
+  <!-- Fake Google logo area -->
+  <rect x="280" y="215" width="120" height="30" rx="6" fill="#e9d5ff" opacity="0.6"/>
+  <text x="340" y="236" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#4c1d95" text-anchor="middle">Google*</text>
+  <!-- Line items -->
+  <rect x="280" y="265" width="360" height="14" rx="3" fill="#e9d5ff" opacity="0.4"/>
+  <rect x="280" y="290" width="280" height="14" rx="3" fill="#e9d5ff" opacity="0.4"/>
+  <rect x="280" y="315" width="320" height="14" rx="3" fill="#e9d5ff" opacity="0.4"/>
+  <!-- Total line -->
+  <line x1="280" y1="350" x2="640" y2="350" stroke="#7c3aed" stroke-width="2" opacity="0.4"/>
+  <text x="560" y="380" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#4c1d95" text-anchor="middle">850 zł</text>
+  <text x="560" y="406" font-family="system-ui,sans-serif" font-size="14" fill="#7c3aed" text-anchor="middle">Termin: 14 dni</text>
+  <!-- Huge red X stamp -->
+  <line x1="280" y1="140" x2="640" y2="480" stroke="#dc2626" stroke-width="28" stroke-linecap="round" opacity="0.85"/>
+  <line x1="640" y1="140" x2="280" y2="480" stroke="#dc2626" stroke-width="28" stroke-linecap="round" opacity="0.85"/>
+  <!-- OSZUSTWO badge -->
+  <rect x="740" y="220" width="360" height="100" rx="20" fill="white" opacity="0.2"/>
+  <text x="920" y="283" font-family="system-ui,sans-serif" font-size="48" font-weight="900" fill="white" text-anchor="middle">OSZUSTWO</text>
+  <!-- Warning triangle small -->
+  <polygon points="920,150 970,240 870,240" fill="white" opacity="0.4"/>
+  <text x="920" y="228" font-family="system-ui,sans-serif" font-size="40" font-weight="900" fill="white" text-anchor="middle">!</text>
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · OPŁATA ADMINISTRACYJNA · UWAGA</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.06" fill="white">
+    <circle cx="100" cy="100" r="3"/><circle cx="250" cy="100" r="3"/><circle cx="400" cy="100" r="3"/><circle cx="550" cy="100" r="3"/><circle cx="700" cy="100" r="3"/><circle cx="850" cy="100" r="3"/><circle cx="1000" cy="100" r="3"/><circle cx="1150" cy="100" r="3"/>
+    <circle cx="100" cy="250" r="3"/><circle cx="250" cy="250" r="3"/><circle cx="400" cy="250" r="3"/><circle cx="550" cy="250" r="3"/><circle cx="700" cy="250" r="3"/><circle cx="850" cy="250" r="3"/><circle cx="1000" cy="250" r="3"/><circle cx="1150" cy="250" r="3"/>
+    <circle cx="100" cy="400" r="3"/><circle cx="250" cy="400" r="3"/><circle cx="400" cy="400" r="3"/><circle cx="550" cy="400" r="3"/><circle cx="700" cy="400" r="3"/><circle cx="850" cy="400" r="3"/><circle cx="1000" cy="400" r="3"/><circle cx="1150" cy="400" r="3"/>
+    <circle cx="100" cy="550" r="3"/><circle cx="250" cy="550" r="3"/><circle cx="400" cy="550" r="3"/><circle cx="550" cy="550" r="3"/><circle cx="700" cy="550" r="3"/><circle cx="850" cy="550" r="3"/><circle cx="1000" cy="550" r="3"/><circle cx="1150" cy="550" r="3"/>
+  </g>
+  <!-- Hotel building -->
+  <rect x="300" y="160" width="440" height="350" rx="8" fill="white" opacity="0.15"/>
+  <!-- Main entrance -->
+  <rect x="460" y="400" width="120" height="110" rx="6" fill="white" opacity="0.3"/>
+  <!-- Windows grid -->
+  <g fill="white" opacity="0.5">
+    <rect x="330" y="195" width="55" height="45" rx="4"/>
+    <rect x="405" y="195" width="55" height="45" rx="4"/>
+    <rect x="480" y="195" width="55" height="45" rx="4"/>
+    <rect x="555" y="195" width="55" height="45" rx="4"/>
+    <rect x="630" y="195" width="55" height="45" rx="4"/>
+    <rect x="330" y="260" width="55" height="45" rx="4"/>
+    <rect x="405" y="260" width="55" height="45" rx="4"/>
+    <rect x="480" y="260" width="55" height="45" rx="4"/>
+    <rect x="555" y="260" width="55" height="45" rx="4"/>
+    <rect x="630" y="260" width="55" height="45" rx="4"/>
+    <rect x="330" y="325" width="55" height="45" rx="4"/>
+    <rect x="405" y="325" width="55" height="45" rx="4"/>
+    <rect x="555" y="325" width="55" height="45" rx="4"/>
+    <rect x="630" y="325" width="55" height="45" rx="4"/>
+  </g>
+  <!-- Roof line / top decoration -->
+  <rect x="280" y="148" width="480" height="20" rx="4" fill="white" opacity="0.4"/>
+  <!-- Flag -->
+  <line x1="520" y1="80" x2="520" y2="150" stroke="white" stroke-width="6" opacity="0.6"/>
+  <polygon points="520,80 580,100 520,120" fill="white" opacity="0.7"/>
+  <!-- 5 stars below building -->
+  <g fill="#fbbf24">
+    <polygon points="400,530 410,500 420,530 392,510 428,510"/>
+    <polygon points="450,530 460,500 470,530 442,510 478,510"/>
+    <polygon points="500,530 510,500 520,530 492,510 528,510"/>
+    <polygon points="550,530 560,500 570,530 542,510 578,510"/>
+    <polygon points="600,530 610,500 620,530 592,510 628,510"/>
+  </g>
+  <!-- GBP badge -->
+  <rect x="820" y="200" width="200" height="80" rx="16" fill="white" opacity="0.15"/>
+  <text x="920" y="248" font-family="system-ui,sans-serif" font-size="22" font-weight="800" fill="white" text-anchor="middle">LOCAL SEO</text>
+  <text x="920" y="268" font-family="system-ui,sans-serif" font-size="14" fill="white" text-anchor="middle" opacity="0.7">dla hoteli</text>
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · HOTEL · GOOGLE BUSINESS PROFILE</text>
+</svg>

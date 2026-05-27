@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/><stop offset="100%" stop-color="#9a3412"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.07" fill="white">
+    <circle cx="75" cy="75" r="4"/><circle cx="225" cy="75" r="4"/><circle cx="375" cy="75" r="4"/><circle cx="525" cy="75" r="4"/><circle cx="675" cy="75" r="4"/><circle cx="825" cy="75" r="4"/><circle cx="975" cy="75" r="4"/><circle cx="1125" cy="75" r="4"/>
+    <circle cx="75" cy="225" r="4"/><circle cx="225" cy="225" r="4"/><circle cx="375" cy="225" r="4"/><circle cx="525" cy="225" r="4"/><circle cx="675" cy="225" r="4"/><circle cx="825" cy="225" r="4"/><circle cx="975" cy="225" r="4"/><circle cx="1125" cy="225" r="4"/>
+    <circle cx="75" cy="375" r="4"/><circle cx="225" cy="375" r="4"/><circle cx="375" cy="375" r="4"/><circle cx="525" cy="375" r="4"/><circle cx="675" cy="375" r="4"/><circle cx="825" cy="375" r="4"/><circle cx="975" cy="375" r="4"/><circle cx="1125" cy="375" r="4"/>
+    <circle cx="75" cy="525" r="4"/><circle cx="225" cy="525" r="4"/><circle cx="375" cy="525" r="4"/><circle cx="525" cy="525" r="4"/><circle cx="675" cy="525" r="4"/><circle cx="825" cy="525" r="4"/><circle cx="975" cy="525" r="4"/><circle cx="1125" cy="525" r="4"/>
+  </g>
+  <!-- Speech bubble main -->
+  <rect x="220" y="140" width="560" height="320" rx="36" fill="white" opacity="0.18"/>
+  <!-- Bubble tail -->
+  <polygon points="320,460 280,530 420,460" fill="white" opacity="0.18"/>
+  <!-- 1 star (bad review) -->
+  <polygon points="480,220 492,258 532,258 500,280 512,318 480,296 448,318 460,280 428,258 468,258" fill="white" opacity="0.9"/>
+  <!-- Other 4 stars empty -->
+  <polygon points="560,240 568,264 594,264 574,278 582,302 560,288 538,302 546,278 526,264 552,264" fill="none" stroke="white" stroke-width="4" opacity="0.4"/>
+  <polygon points="620,240 628,264 654,264 634,278 642,302 620,288 598,302 606,278 586,264 612,264" fill="none" stroke="white" stroke-width="4" opacity="0.4"/>
+  <polygon points="680,240 688,264 714,264 694,278 702,302 680,288 658,302 666,278 646,264 672,264" fill="none" stroke="white" stroke-width="4" opacity="0.4"/>
+  <polygon points="740,240 748,264 774,264 754,278 762,302 740,288 718,302 726,278 706,264 732,264" fill="none" stroke="white" stroke-width="4" opacity="0.4"/>
+  <!-- Text lines in bubble -->
+  <rect x="260" y="345" width="480" height="14" rx="4" fill="white" opacity="0.3"/>
+  <rect x="260" y="373" width="380" height="14" rx="4" fill="white" opacity="0.3"/>
+  <rect x="260" y="401" width="420" height="14" rx="4" fill="white" opacity="0.3"/>
+  <!-- Response arrow + bubble (right side) -->
+  <rect x="840" y="280" width="260" height="160" rx="24" fill="white" opacity="0.15"/>
+  <polygon points="860,440 880,490 940,440" fill="white" opacity="0.15"/>
+  <rect x="860" y="306" width="200" height="12" rx="4" fill="white" opacity="0.35"/>
+  <rect x="860" y="330" width="160" height="12" rx="4" fill="white" opacity="0.35"/>
+  <rect x="860" y="354" width="180" height="12" rx="4" fill="white" opacity="0.35"/>
+  <text x="970" y="270" font-family="system-ui,sans-serif" font-size="18" fill="white" text-anchor="middle" opacity="0.6">Odpowiedz</text>
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · NEGATYWNA OPINIA · CO ZROBIĆ</text>
+</svg>

@@ -1,0 +1,536 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
+
+const navLinks = [
+  { href: "/", label: "Strona główna" },
+];
+
+const oNasLinks = [
+  {
+    href: "/o-nas/zespol",
+    label: "Zespół",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </svg>
+    ),
+  },
+  {
+    href: "/referencje",
+    label: "Referencje",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+      </svg>
+    ),
+  },
+  {
+    href: "/o-nas/dlaczego-warto",
+    label: "Dlaczego warto",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="8" r="6" />
+        <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+      </svg>
+    ),
+  },
+];
+
+const serviceGroups = [
+  {
+    heading: "Rynek lokalny",
+    items: [
+      {
+        href: "/uslugi/wizytowka-google",
+        label: "Wizytówka Google",
+        desc: "Pozycjonowanie GBP w Mapach",
+        icon: (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+        ),
+      },
+      {
+        href: "/uslugi/pozycjonowanie-strony",
+        label: "Pozycjonowanie strony",
+        desc: "SEO organiczne w Google",
+        icon: (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        ),
+      },
+    ],
+  },
+  {
+    heading: "Pozyskiwanie leadów",
+    items: [
+      {
+        href: "/uslugi/google-ads",
+        label: "Google Ads",
+        desc: "Kampanie w wyszukiwarce Google",
+        icon: (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+            <polyline points="17 6 23 6 23 12" />
+          </svg>
+        ),
+      },
+      {
+        href: "/uslugi/meta-ads",
+        label: "Facebook Ads",
+        desc: "Reklamy na Facebooku i Instagramie",
+        icon: (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5z" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+        ),
+      },
+      {
+        href: "/uslugi/tiktok-ads",
+        label: "TikTok Ads",
+        desc: "Kampanie wideo na TikToku",
+        icon: (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z" />
+          </svg>
+        ),
+      },
+    ],
+  },
+  {
+    heading: "Darmowe narzędzia",
+    items: [
+      {
+        href: "/gbp-score",
+        label: "Audyt wizytówki Google",
+        desc: "Sprawdź wynik optymalizacji GBP",
+        icon: (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"/>
+            <line x1="12" y1="20" x2="12" y2="4"/>
+            <line x1="6" y1="20" x2="6" y2="14"/>
+            <line x1="2" y1="20" x2="22" y2="20"/>
+          </svg>
+        ),
+      },
+      {
+        href: "/checklista-wizytowki-google",
+        label: "Checklista pozycjonowania",
+        desc: "28 punktów kontrolnych GBP",
+        icon: (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 11l3 3L22 4" />
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+          </svg>
+        ),
+      },
+    ],
+  },
+];
+
+const socialLinks = [
+  {
+    href: "https://facebook.com",
+    label: "Facebook",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+      </svg>
+    ),
+  },
+  {
+    href: "https://tiktok.com",
+    label: "TikTok",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z" />
+      </svg>
+    ),
+  },
+  {
+    href: "https://youtube.com",
+    label: "YouTube",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+        <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white" />
+      </svg>
+    ),
+  },
+  {
+    href: "https://linkedin.com",
+    label: "LinkedIn",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+        <rect x="2" y="9" width="4" height="12" />
+        <circle cx="4" cy="4" r="2" />
+      </svg>
+    ),
+  },
+];
+
+export default function Navbar() {
+  const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [open, setOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [oNasOpen, setONasOpen] = useState(false);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const [mobileONasOpen, setMobileONasOpen] = useState(false);
+  const dropdownRef = useRef<HTMLLIElement>(null);
+  const oNasRef = useRef<HTMLLIElement>(null);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const scrollTop = window.scrollY;
+      setScrolled(scrollTop > 20);
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(docHeight > 0 ? Math.min((scrollTop / docHeight) * 100, 100) : 0);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [open]);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setDropdownOpen(false);
+      }
+      if (oNasRef.current && !oNasRef.current.contains(e.target as Node)) {
+        setONasOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  useEffect(() => { setDropdownOpen(false); setONasOpen(false); }, [pathname]);
+
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
+  };
+  const isServicesActive = pathname.startsWith("/uslugi");
+
+  return (
+    <>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-shadow duration-300 bg-white ${scrolled ? "shadow-md" : "shadow-sm"}`}>
+        <div className="absolute top-0 left-0 h-[2px] bg-brand transition-[width] duration-150 ease-out z-10" style={{ width: `${progress}%` }} />
+
+        <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center h-20 gap-8">
+          {/* Logo */}
+          <Link href="/" className="flex items-center shrink-0">
+            <Image src="/logo.png" alt="MiauSEO logo" width={280} height={80} className="h-16 w-auto" />
+          </Link>
+
+          {/* Desktop nav */}
+          <ul className="hidden lg:flex items-center gap-1 flex-1 justify-center">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className={`px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
+                    isActive(link.href) ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+
+            {/* O nas dropdown */}
+            <li
+              ref={oNasRef}
+              className="relative"
+              onMouseEnter={() => setONasOpen(true)}
+              onMouseLeave={() => setONasOpen(false)}
+            >
+              <Link
+                href="/o-nas"
+                className={`flex items-center gap-1 px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
+                  pathname.startsWith("/o-nas") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
+                }`}
+              >
+                O nas
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                  className={`transition-transform duration-200 ${oNasOpen ? "rotate-180" : ""}`}>
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </Link>
+              <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-1 w-56 bg-white rounded-2xl shadow-xl border border-border py-2 z-50 transition-all duration-200 origin-top ${
+                oNasOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
+              }`}>
+                {oNasLinks.map((sl) => (
+                  <Link
+                    key={sl.href}
+                    href={sl.href}
+                    onClick={() => setONasOpen(false)}
+                    className={`flex items-center gap-3 px-4 py-2.5 text-sm font-semibold transition-colors duration-100 ${
+                      pathname === sl.href ? "text-brand bg-brand/5" : "text-zinc-700 hover:text-brand hover:bg-surface"
+                    }`}
+                  >
+                    <span className="w-8 h-8 rounded-lg bg-brand/10 text-brand flex items-center justify-center shrink-0">
+                      {sl.icon}
+                    </span>
+                    {sl.label}
+                  </Link>
+                ))}
+              </div>
+            </li>
+
+            {/* Zakres usług dropdown */}
+            <li
+              ref={dropdownRef}
+              className="relative"
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <Link
+                href="/uslugi"
+                className={`flex items-center gap-1 px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
+                  isServicesActive ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
+                }`}
+              >
+                Zakres usług
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                  className={`transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`}>
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </Link>
+
+              {/* Mega menu */}
+              <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-1 bg-white rounded-2xl shadow-2xl border border-border z-50 transition-all duration-200 origin-top ${
+                dropdownOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
+              }`} style={{ width: "640px" }}>
+                <div className="grid grid-cols-3 divide-x divide-border">
+                  {serviceGroups.map((group) => (
+                    <div key={group.heading} className="py-5 px-5">
+                      <p className="text-[11px] font-bold uppercase tracking-widest text-zinc-400 mb-3 px-1">{group.heading}</p>
+                      <div className="space-y-0.5">
+                        {group.items.map((sl) => (
+                          <Link
+                            key={sl.href}
+                            href={sl.href}
+                            onClick={() => setDropdownOpen(false)}
+                            className={`flex items-start gap-3 px-2 py-2.5 rounded-xl transition-colors duration-100 group ${
+                              pathname === sl.href ? "bg-brand/5" : "hover:bg-surface"
+                            }`}
+                          >
+                            <span className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5 transition-colors ${
+                              pathname === sl.href ? "bg-brand text-white" : "bg-brand/10 text-brand"
+                            }`}>
+                              {sl.icon}
+                            </span>
+                            <span>
+                              <span className={`block text-sm font-semibold leading-tight ${pathname === sl.href ? "text-brand" : "text-zinc-800 group-hover:text-brand"}`}>
+                                {sl.label}
+                              </span>
+                              <span className="block text-xs text-zinc-400 mt-0.5 leading-tight">{sl.desc}</span>
+                            </span>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <Link
+                href="/pytania"
+                className={`px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
+                  isActive("/pytania") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
+                }`}
+              >
+                FAQ
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="/blog"
+                className={`px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
+                  isActive("/blog") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
+                }`}
+              >
+                Blog
+              </Link>
+            </li>
+          </ul>
+
+          {/* CTA + socials + hamburger */}
+          <div className="flex items-center gap-3 justify-end">
+            <Link
+              href="/kursy"
+              className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-brand text-white text-sm font-semibold rounded-xl hover:bg-brand-dark transition-colors duration-150"
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+              Kursy
+            </Link>
+
+            <Link
+              href="/kontakt"
+              className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-brand text-white text-sm font-semibold rounded-xl hover:bg-brand-dark transition-colors duration-150"
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              Kontakt
+            </Link>
+
+            <div className="hidden lg:flex items-center gap-1 pl-3 border-l border-border">
+              {socialLinks.map((s) => (
+                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
+                  className="w-9 h-9 flex items-center justify-center rounded-md text-zinc-400 hover:text-brand hover:bg-surface transition-colors duration-150">
+                  {s.icon}
+                </a>
+              ))}
+            </div>
+
+            <button
+              onClick={() => setOpen(!open)}
+              className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-md hover:bg-surface transition-colors"
+              aria-label={open ? "Zamknij menu" : "Otwórz menu"}
+            >
+              <span className={`block w-5 h-0.5 bg-ink transition-all duration-300 ${open ? "rotate-45 translate-y-2" : ""}`} />
+              <span className={`block w-5 h-0.5 bg-ink transition-all duration-300 ${open ? "opacity-0" : ""}`} />
+              <span className={`block w-5 h-0.5 bg-ink transition-all duration-300 ${open ? "-rotate-45 -translate-y-2" : ""}`} />
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      {/* Mobile overlay */}
+      <div className={`fixed inset-0 z-40 bg-white flex flex-col transition-all duration-300 lg:hidden ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
+        <div className="h-20" />
+        <nav className="flex-1 flex flex-col justify-center px-8 gap-1 overflow-y-auto py-6">
+          {navLinks.map((link, i) => (
+            <Link key={link.href} href={link.href} onClick={() => setOpen(false)}
+              className={`text-2xl font-semibold py-3 border-b border-border transition-colors duration-150 ${isActive(link.href) ? "text-brand" : "text-ink hover:text-brand"}`}
+              style={{ transitionDelay: open ? `${i * 40}ms` : "0ms" }}>
+              {link.label}
+            </Link>
+          ))}
+
+          {/* Mobile O nas accordion */}
+          <div className="border-b border-border">
+            <button
+              onClick={() => setMobileONasOpen((v) => !v)}
+              className={`w-full flex items-center justify-between text-2xl font-semibold py-3 transition-colors ${pathname.startsWith("/o-nas") ? "text-brand" : "text-ink"}`}
+            >
+              O nas
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                className={`transition-transform duration-200 ${mobileONasOpen ? "rotate-180" : ""}`}>
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            {mobileONasOpen && (
+              <div className="pb-3 pl-1 space-y-1">
+                {oNasLinks.map((sl) => (
+                  <Link key={sl.href} href={sl.href} onClick={() => setOpen(false)}
+                    className="flex items-center gap-3 py-2 text-lg text-zinc-500 hover:text-brand transition-colors">
+                    <span className="w-7 h-7 rounded-lg bg-brand/10 text-brand flex items-center justify-center shrink-0">
+                      {sl.icon}
+                    </span>
+                    {sl.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Mobile services accordion */}
+          <div className="border-b border-border">
+            <button
+              onClick={() => setMobileDropdownOpen((v) => !v)}
+              className={`w-full flex items-center justify-between text-2xl font-semibold py-3 transition-colors ${isServicesActive ? "text-brand" : "text-ink"}`}
+            >
+              Zakres usług
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                className={`transition-transform duration-200 ${mobileDropdownOpen ? "rotate-180" : ""}`}>
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            {mobileDropdownOpen && (
+              <div className="pb-3 pl-1 space-y-3">
+                {serviceGroups.map((group) => (
+                  <div key={group.heading}>
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 px-1 mb-1 mt-2">{group.heading}</p>
+                    {group.items.map((sl) => (
+                      <Link key={sl.href} href={sl.href} onClick={() => setOpen(false)}
+                        className="flex items-center gap-3 py-2 text-lg text-zinc-500 hover:text-brand transition-colors">
+                        <span className="w-7 h-7 rounded-lg bg-brand/10 text-brand flex items-center justify-center shrink-0">
+                          {sl.icon}
+                        </span>
+                        {sl.label}
+                      </Link>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <Link href="/pytania" onClick={() => setOpen(false)}
+            className={`text-2xl font-semibold py-3 border-b border-border transition-colors duration-150 ${isActive("/pytania") ? "text-brand" : "text-ink hover:text-brand"}`}>
+            FAQ
+          </Link>
+
+          <Link href="/blog" onClick={() => setOpen(false)}
+            className={`text-2xl font-semibold py-3 border-b border-border transition-colors duration-150 ${isActive("/blog") ? "text-brand" : "text-ink hover:text-brand"}`}>
+            Blog
+          </Link>
+
+          <Link href="/kursy" onClick={() => setOpen(false)}
+            className="mt-6 text-center px-6 py-4 bg-brand text-white font-semibold rounded-xl text-lg hover:bg-brand-dark transition-colors flex items-center justify-center gap-2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+            Kursy
+          </Link>
+
+          <Link href="/kontakt" onClick={() => setOpen(false)}
+            className="mt-3 text-center px-6 py-4 bg-brand text-white font-semibold rounded-xl text-lg hover:bg-brand-dark transition-colors">
+            Kontakt
+          </Link>
+
+          <div className="flex items-center justify-center gap-4 mt-6 pt-6 border-t border-border">
+            {socialLinks.map((s) => (
+              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
+                className="w-10 h-10 flex items-center justify-center rounded-xl bg-surface text-zinc-500 hover:text-brand hover:bg-brand/5 transition-colors duration-150">
+                {s.icon}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </div>
+    </>
+  );
+}
