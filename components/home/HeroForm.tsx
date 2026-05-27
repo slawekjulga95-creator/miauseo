@@ -38,16 +38,24 @@ export default function HeroForm() {
 
         <div className="p-6">
           <div className="flex items-start justify-between mb-5">
-            <div>
-              <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-green-50 text-green-600 px-2.5 py-1 rounded-full mb-2">
-                Bezpłatne
-              </span>
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/logo.png" alt="MiauSEO" className="h-6 w-auto" />
+                <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-green-50 text-green-600 px-2.5 py-1 rounded-full">
+                  Bezpłatne
+                </span>
+              </div>
               <h3 className="text-base font-bold text-ink leading-snug">
                 Umów konsultację
               </h3>
               <p className="text-xs text-zinc-400 mt-0.5">
                 Sprawdzimy Twoją wizytówkę i powiemy co poprawić.
               </p>
+              <div className="flex items-center gap-1.5 mt-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                <span className="text-[11px] text-zinc-500 font-medium">Średni czas odpowiedzi: <strong className="text-ink">15 minut</strong></span>
+              </div>
             </div>
             <button
               onClick={() => setClosed(true)}
