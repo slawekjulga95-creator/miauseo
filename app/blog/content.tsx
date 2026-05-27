@@ -4044,4 +4044,750 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </ul>
     </>
   ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WORDPRESS: Zawirusowana strona
+  ───────────────────────────────────────────────────────────────────────── */
+  "zawirusowana-strona-wordpress-co-zrobic": (
+    <>
+      <h2>Jak poznać, że strona WordPress została zawirusowana?</h2>
+      <p>
+        Włamanie na stronę WordPress rzadko wygląda jak w filmie — hakerzy zazwyczaj nie chcą, żebyś wiedział o ich obecności tak długo, jak to możliwe. Objawy bywają subtelne i mylące. Oto najczęstsze sygnały, że coś jest nie tak:
+      </p>
+      <ul>
+        <li><strong>Przekierowania na zewnętrzne strony</strong> — użytkownicy lądują na stronach z reklamami, phishingiem albo treściami dla dorosłych zamiast na Twojej witrynie.</li>
+        <li><strong>Obcy kod w stopce lub nagłówku</strong> — podejrzane skrypty JavaScript, iframe'y, ukryte linki do obcych domen.</li>
+        <li><strong>Ostrzeżenie Google</strong> — „Ta strona może być niebezpieczna" lub „Witryna zawiera szkodliwe programy" w wynikach wyszukiwania.</li>
+        <li><strong>Spam w Google Search Console</strong> — nowe podstrony z obcymi słowami kluczowymi (często japońskimi, chińskimi lub farmaceutycznymi).</li>
+        <li><strong>Powolne ładowanie lub awarie</strong> — złośliwy kod generuje obciążenie serwera i wysyła spam e-mail przez Twój hosting.</li>
+        <li><strong>Nieznane konta administratora</strong> — w panelu WordPress pojawiają się użytkownicy, których nie zakładałeś.</li>
+        <li><strong>Hosting zablokował konto</strong> — dobry hosting wykrywa masowe wysyłanie spamu i zawiesza konto z komunikatem o naruszeniu regulaminu.</li>
+      </ul>
+      <p>
+        Jeśli widzisz którykolwiek z tych objawów — działaj natychmiast. Każda godzina zwłoki to czas, w którym hakerzy mogą pogłębiać szkody, a Google obniża zaufanie do Twojej domeny.
+      </p>
+
+      <h2>Krok 1 – Zrób backup i wejdź w tryb maintenance</h2>
+      <p>
+        Zanim cokolwiek zmienisz, zrób kopię zapasową obecnego stanu — nawet zawirusowanego. Może się przydać przy analizie wektora ataku. Następnie włącz tryb konserwacji (maintenance mode), żeby chronić odwiedzających. Możesz to zrobić przez plik <code>.htaccess</code> lub wtyczkę.
+      </p>
+      <p>
+        Jeśli Twój hosting ma panel (cPanel, Plesk, Hetzner), pobierz pełną kopię plików i bazy danych przez menedżer plików lub FTP. Nie polegaj wyłącznie na wtyczkach do backupów — złośliwy kod mógł je zainfekować.
+      </p>
+
+      <h2>Krok 2 – Zeskanuj stronę narzędziami do wykrywania malware</h2>
+      <p>
+        Istnieje kilka narzędzi, które pomogą Ci zlokalizować zainfekowane pliki:
+      </p>
+      <ul>
+        <li><strong>Wordfence Security</strong> — darmowa wtyczka z rozbudowanym skanerem. Po instalacji uruchom „Threat Scan" i sprawdź listę wykrytych plików.</li>
+        <li><strong>Sucuri SiteCheck</strong> — skaner online. Wystarczy wpisać adres strony na sucuri.net/website-antivirus.</li>
+        <li><strong>MalCare</strong> — alternatywa dla Wordfence, dobra przy dużych stronach WooCommerce.</li>
+        <li><strong>Serwer FTP + narzędzie grep</strong> — jeśli masz dostęp SSH, możesz ręcznie szukać podejrzanego kodu: <code>grep -r "eval(base64_decode" /public_html/</code></li>
+      </ul>
+      <p>
+        Zanotuj wszystkie zainfekowane pliki. Najczęściej złośliwy kod pojawia się w <code>wp-config.php</code>, plikach motywu, wtyczkach i pliku <code>index.php</code> w katalogu głównym.
+      </p>
+
+      <h2>Krok 3 – Usuń złośliwy kod i przywróć czyste pliki</h2>
+      <p>
+        Dla plików WordPressa (core) — pobierz świeżą kopię tej samej wersji WordPress ze strony wordpress.org i zastąp wszystkie pliki w <code>wp-admin/</code> i <code>wp-includes/</code>. Nigdy nie edytuj plików core ręcznie.
+      </p>
+      <p>
+        Dla zainfekowanych wtyczek i motywów — usuń je całkowicie i zainstaluj od nowa z oficjalnych repozytoriów. Jeśli używasz premium motywu lub wtyczki, pobierz czystą wersję z konta zakupu.
+      </p>
+      <p>
+        <strong>Nigdy nie usuwaj samego złośliwego kodu ręcznie bez zastąpienia całego pliku czystą wersją.</strong> Hakerzy często zostawiają kilka warstw backdoorów. Usunięcie jednej nie gwarantuje bezpieczeństwa.
+      </p>
+
+      <h2>Krok 4 – Zmień wszystkie hasła i klucze bezpieczeństwa</h2>
+      <p>
+        Po wyczyszczeniu plików natychmiast:
+      </p>
+      <ul>
+        <li>Zmień hasło do konta administratora WordPress (i wszystkich innych użytkowników)</li>
+        <li>Zmień hasło do bazy danych w <code>wp-config.php</code> i w panelu hostingu</li>
+        <li>Zmień hasło do panelu hostingu i FTP</li>
+        <li>Wygeneruj nowe klucze bezpieczeństwa WordPress (sekcja <code>AUTH_KEY</code> w <code>wp-config.php</code>) — możesz je wygenerować na api.wordpress.org/secret-key/1.1/salt/</li>
+        <li>Usuń wszystkich nieznanych użytkowników administratora</li>
+      </ul>
+
+      <h2>Krok 5 – Zabezpiecz stronę przed kolejnym atakiem</h2>
+      <p>
+        Sama naprawa to połowa sukcesu. Jeśli nie usuniesz przyczyny włamania, hakerzy wrócą w ciągu kilku dni. Najczęstsze wektory ataku:
+      </p>
+      <ul>
+        <li><strong>Przestarzałe wtyczki lub motyw</strong> — aktualizuj wszystko natychmiast po pojawieniu się nowych wersji</li>
+        <li><strong>Słabe hasło</strong> — używaj hasła minimum 16 znaków, włącz 2FA (np. przez wtyczkę Google Authenticator for WP)</li>
+        <li><strong>Nullowane premium wtyczki</strong> — pirackie wersje płatnych wtyczek zawierają celowo wbudowane backdoory</li>
+        <li><strong>Brak ochrony wp-login.php</strong> — ogranicz dostęp do panelu logowania przez IP lub zainstaluj Limit Login Attempts Reloaded</li>
+        <li><strong>Stare konto FTP</strong> — usuń nieużywane konta FTP w panelu hostingu</li>
+      </ul>
+      <p>
+        Po przywróceniu strony zgłoś ją do Google przez Search Console (sekcja „Zabezpieczenia i działania ręczne" → „Poproś o sprawdzenie"). Google usunie ostrzeżenie po weryfikacji, zazwyczaj w ciągu 24–72 godzin.
+      </p>
+
+      <h2>Kiedy skorzystać z pomocy specjalisty?</h2>
+      <p>
+        Jeśli nie masz dostępu do FTP, nie znasz się na strukturze WordPressa lub złośliwy kod pojawia się ponownie po wyczyszczeniu — skontaktuj się ze specjalistą. Koszt profesjonalnego czyszczenia strony (100–500 zł) jest wielokrotnie niższy niż straty wynikające z długotrwałego zablokowania przez Google lub utraty danych klientów.
+      </p>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WORDPRESS: Biały ekran (WSOD)
+  ───────────────────────────────────────────────────────────────────────── */
+  "bialy-ekran-wordpress-jak-naprawic": (
+    <>
+      <h2>Czym jest White Screen of Death w WordPress?</h2>
+      <p>
+        White Screen of Death (WSOD) to potoczna nazwa problemu, kiedy strona WordPress wyświetla tylko pustą, białą stronę — bez żadnego komunikatu błędu, bez treści, bez paska admina. Problem może dotyczyć całej strony, tylko frontendu albo tylko panelu administracyjnego.
+      </p>
+      <p>
+        Dobra wiadomość: WSOD prawie zawsze jest naprawialny bez utraty danych. Zła: musisz działać po ciemku, bo WordPress nie mówi Ci co się stało. Poniżej znajdziesz wszystkie możliwe przyczyny i ich rozwiązania — sprawdzaj je po kolei.
+      </p>
+
+      <h2>Przyczyna 1 – Błąd w wtyczce lub motywie (najczęstsza)</h2>
+      <p>
+        Nowo zainstalowana lub zaktualizowana wtyczka albo motyw zawiera błąd PHP, który zatrzymuje działanie całego WordPressa. To zdecydowanie najczęstsza przyczyna białego ekranu.
+      </p>
+      <p>
+        <strong>Rozwiązanie przez FTP/menedżer plików:</strong> Wejdź na serwer przez FTP lub panel hostingu. Przejdź do katalogu <code>wp-content/plugins/</code> i zmień nazwę folderu ostatnio zainstalowanej lub zaktualizowanej wtyczki (np. dodaj <code>-disabled</code> na końcu). Jeśli strona wróci — znalazłeś winowajcę. Możesz też zmienić nazwę całego folderu <code>plugins/</code> na <code>plugins-disabled/</code>, żeby dezaktywować wszystkie naraz.
+      </p>
+      <p>
+        <strong>Rozwiązanie dla motywu:</strong> W katalogu <code>wp-content/themes/</code> zmień nazwę aktywnego motywu. WordPress automatycznie przełączy się na domyślny motyw (Twenty Twenty-Four).
+      </p>
+
+      <h2>Przyczyna 2 – Wyczerpany limit pamięci PHP</h2>
+      <p>
+        WordPress ma domyślnie ustawiony limit pamięci PHP (zazwyczaj 32 MB lub 64 MB), który jest za mały dla dużych stron z wieloma wtyczkami. Kiedy skrypt przekroczy limit, PHP kończy działanie bez komunikatu błędu — stąd biały ekran.
+      </p>
+      <p>
+        <strong>Rozwiązanie:</strong> Dodaj lub zmodyfikuj linię w pliku <code>wp-config.php</code>:
+      </p>
+      <pre><code>define( 'WP_MEMORY_LIMIT', '256M' );</code></pre>
+      <p>
+        Jeśli to nie wystarczy, podnieś limit również po stronie serwera w pliku <code>php.ini</code> lub przez panel hostingu (szukaj opcji „PHP Memory Limit"). Standardowo 256 MB powinno wystarczyć dla większości stron.
+      </p>
+
+      <h2>Przyczyna 3 – Uszkodzony plik wp-config.php lub .htaccess</h2>
+      <p>
+        Przypadkowe usunięcie znaku, błędna edycja lub złośliwy kod w <code>wp-config.php</code> może wywołać biały ekran już na etapie ładowania WordPressa. Podobnie błędny <code>.htaccess</code> powoduje problemy z routingiem.
+      </p>
+      <p>
+        <strong>Rozwiązanie dla .htaccess:</strong> Zmień nazwę pliku <code>.htaccess</code> na <code>.htaccess-backup</code> i sprawdź czy strona wróci. Jeśli tak — wygeneruj nowy plik przez panel WordPress (Ustawienia → Bezpośrednie odnośniki → Zapisz zmiany).
+      </p>
+      <p>
+        <strong>Rozwiązanie dla wp-config.php:</strong> Pobierz świeżą kopię pliku <code>wp-config-sample.php</code> z oficjalnej paczki WordPress i porównaj ze swoim plikiem. Szczególnie sprawdź czy nie ma zbędnych znaków przed <code>&lt;?php</code> lub po ostatniej linii.
+      </p>
+
+      <h2>Przyczyna 4 – Błąd składni w functions.php</h2>
+      <p>
+        Edycja pliku <code>functions.php</code> motywu przez Panel → Edytor plików (lub ręcznie przez FTP) przy przypadkowym błędzie składni PHP natychmiast wywoła biały ekran. Nawet jeden brakujący średnik wystarczy.
+      </p>
+      <p>
+        <strong>Rozwiązanie:</strong> Przez FTP otwórz <code>wp-content/themes/[nazwa-motywu]/functions.php</code> i cofnij ostatnią zmianę. Jeśli nie wiesz co zmieniłeś, pobierz czystą kopię motywu i zastąp plik.
+      </p>
+
+      <h2>Przyczyna 5 – Włącz tryb debugowania, żeby zobaczyć błąd</h2>
+      <p>
+        Jeśli żadna z powyższych metod nie pomogła, włącz debugowanie WordPress, żeby zobaczyć konkretny komunikat błędu. W pliku <code>wp-config.php</code> znajdź i zmień:
+      </p>
+      <pre><code>define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );</code></pre>
+      <p>
+        Błędy zostaną zapisane w pliku <code>wp-content/debug.log</code>. Otwórz go i znajdź ostatni wpis — zazwyczaj od razu wskażuje konkretny plik i linię kodu, gdzie wystąpił problem. Po rozwiązaniu koniecznie wyłącz debugowanie (<code>WP_DEBUG false</code>).
+      </p>
+
+      <h2>Przyczyna 6 – Problem z bazą danych</h2>
+      <p>
+        Jeśli widzisz komunikat „Error establishing a database connection" zamiast białego ekranu — problem leży w połączeniu z bazą danych. Sprawdź dane dostępowe w <code>wp-config.php</code> (nazwa bazy, użytkownik, hasło, host) i porównaj z danymi w panelu hostingu.
+      </p>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WORDPRESS: Odzyskiwanie dostępu do logowania
+  ───────────────────────────────────────────────────────────────────────── */
+  "nie-moge-zalogowac-sie-do-wordpressa": (
+    <>
+      <h2>Nie pamiętasz hasła do WordPressa – najprostsza metoda</h2>
+      <p>
+        Zanim sięgniesz po FTP i bazę danych — sprawdź najprostsze rozwiązanie. Na stronie logowania (<code>twojadomena.pl/wp-login.php</code>) kliknij <strong>„Nie pamiętasz hasła?"</strong>. WordPress wyśle link resetujący na adres e-mail przypisany do konta.
+      </p>
+      <p>
+        Jeśli mail nie dociera — sprawdź folder spam. Jeśli hosting blokuje wysyłkę maili z WordPressa, link i tak zostaje zapisany w bazie danych na 24 godziny. Możesz też spróbować przez phpMyAdmin (opisujemy poniżej).
+      </p>
+
+      <h2>Nie masz dostępu do e-maila – resetowanie przez phpMyAdmin</h2>
+      <p>
+        To najskuteczniejsza metoda, gdy nie masz dostępu do e-maila lub gdy resetowanie hasłem nie działa. Wymaga dostępu do panelu hostingu (cPanel, Plesk lub podobny).
+      </p>
+      <p>
+        <strong>Krok 1:</strong> Zaloguj się do panelu hostingu i otwórz phpMyAdmin (zwykle w sekcji „Bazy danych").
+      </p>
+      <p>
+        <strong>Krok 2:</strong> Wybierz bazę danych swojej strony WordPress. Kliknij tabelę <code>wp_users</code> (prefix może być inny niż <code>wp_</code>).
+      </p>
+      <p>
+        <strong>Krok 3:</strong> Znajdź wiersz z Twoim kontem administratora i kliknij „Edytuj". W polu <code>user_pass</code> wpisz nowe hasło. W kolumnie „Funkcja" wybierz <code>MD5</code> z listy. Kliknij „Zapisz".
+      </p>
+      <p>
+        <strong>Krok 4:</strong> Wróć do <code>wp-login.php</code> i zaloguj się nowym hasłem. Działa natychmiast — bez potrzeby wysyłania maila.
+      </p>
+
+      <h2>Konto zablokowane po ataku brute-force</h2>
+      <p>
+        Jeśli Twoja strona ma zainstalowaną wtyczkę do ochrony logowania (Wordfence, Limit Login Attempts, iThemes Security), może ona tymczasowo zablokować Twoje IP po zbyt wielu nieudanych próbach. Dzieje się to też automatycznie na niektórych hostingach.
+      </p>
+      <p>
+        <strong>Rozwiązanie 1:</strong> Zaczekaj 15–60 minut — większość blokad IP wygasa automatycznie.
+      </p>
+      <p>
+        <strong>Rozwiązanie 2:</strong> Spróbuj zalogować się z innego adresu IP (telefon na LTE zamiast WiFi, VPN lub inna sieć).
+      </p>
+      <p>
+        <strong>Rozwiązanie 3:</strong> Przez FTP lub panel hostingu dezaktywuj wtyczkę bezpieczeństwa — zmień nazwę jej folderu w <code>wp-content/plugins/</code>. Po zalogowaniu możesz ją ponownie aktywować i odblokować swoje IP w ustawieniach.
+      </p>
+
+      <h2>Utracony dostęp do e-maila i brak dostępu do phpMyAdmin</h2>
+      <p>
+        W najgorszym scenariuszu — gdy nie masz ani dostępu do maila, ani do panelu hostingu — jedyną opcją jest kontakt z pomocą techniczną hostingu. Po weryfikacji tożsamości (zwykle wystarczy dowód rejestracji domeny lub ostatnia faktura) hosting może zresetować hasło do panelu lub bezpośrednio do bazy danych.
+      </p>
+
+      <h2>Resetowanie przez WP-CLI (dla zaawansowanych)</h2>
+      <p>
+        Jeśli masz dostęp SSH do serwera, możesz zresetować hasło jedną komendą przez WP-CLI:
+      </p>
+      <pre><code>wp user update admin --user_pass=NoweHaslo123! --path=/public_html</code></pre>
+      <p>
+        Zastąp <code>admin</code> loginem użytkownika i <code>/public_html</code> ścieżką do instalacji WordPress. WP-CLI jest dostępne na większości hostingów VPS i dedykowanych.
+      </p>
+
+      <h2>Jak zabezpieczyć się na przyszłość?</h2>
+      <p>
+        Po odzyskaniu dostępu wdróż co najmniej trzy środki bezpieczeństwa:
+      </p>
+      <ul>
+        <li><strong>Uwierzytelnianie dwuskładnikowe (2FA)</strong> — wtyczka np. WP 2FA lub Google Authenticator for WP</li>
+        <li><strong>Limit prób logowania</strong> — wtyczka Limit Login Attempts Reloaded (darmowa)</li>
+        <li><strong>Zmiana URL panelu logowania</strong> — zamiast domyślnego <code>/wp-login.php</code> ustaw unikalny adres przez WPS Hide Login</li>
+        <li><strong>Silne hasło</strong> — minimum 16 znaków, wielkie i małe litery, cyfry, znaki specjalne. Używaj menedżera haseł.</li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WORDPRESS: Błąd 500
+  ───────────────────────────────────────────────────────────────────────── */
+  "wordpress-blad-500-internal-server-error": (
+    <>
+      <h2>Czym jest błąd 500 i dlaczego WordPress go ukrywa?</h2>
+      <p>
+        HTTP 500 Internal Server Error oznacza, że serwer napotkał nieoczekiwany błąd i nie może obsłużyć żądania. Problem leży po stronie serwera (lub aplikacji), nie przeglądarki użytkownika. W WordPress ten błąd bywa szczególnie frustrujący, bo domyślna konfiguracja ukrywa szczegóły — widać tylko pustą stronę lub ogólny komunikat.
+      </p>
+      <p>
+        Dobra wiadomość: błąd 500 ma zawsze konkretną przyczynę. Poniżej znajdziesz wszystkie najczęstsze — sprawdzaj je od góry do dołu, bo są uszeregowane od najczęstszych do najrzadszych.
+      </p>
+
+      <h2>Krok 1 – Włącz wyświetlanie błędów PHP</h2>
+      <p>
+        Zanim cokolwiek naprawiasz, musisz wiedzieć co się dzieje. W <code>wp-config.php</code> zmień:
+      </p>
+      <pre><code>define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_DISPLAY', true );
+define( 'WP_DEBUG_LOG', true );</code></pre>
+      <p>
+        Odśwież stronę — powinieneś teraz zobaczyć konkretny komunikat błędu z nazwą pliku i numerem linii. To od razu wskazuje gdzie leży problem. Pamiętaj, żeby wyłączyć debug po naprawie!
+      </p>
+
+      <h2>Krok 2 – Sprawdź i napraw plik .htaccess</h2>
+      <p>
+        Uszkodzony <code>.htaccess</code> to jedna z najczęstszych przyczyn błędu 500. Przez FTP lub menedżer plików zmień nazwę pliku <code>.htaccess</code> na <code>.htaccess-stary</code> i odśwież stronę.
+      </p>
+      <p>
+        Jeśli błąd zniknie — Twój <code>.htaccess</code> był uszkodzony. Wygeneruj nowy, idąc w panelu WordPress do: <strong>Ustawienia → Bezpośrednie odnośniki → Zapisz zmiany</strong>. WordPress automatycznie stworzy poprawny plik.
+      </p>
+
+      <h2>Krok 3 – Dezaktywuj wszystkie wtyczki</h2>
+      <p>
+        Przez FTP wejdź do <code>wp-content/plugins/</code> i zmień nazwę całego folderu na <code>plugins-disabled</code>. Odśwież stronę — jeśli błąd zniknie, winowajcą jest jedna z wtyczek.
+      </p>
+      <p>
+        Przywróć oryginalną nazwę folderu (<code>plugins</code>), a następnie wejdź do panelu WordPress i aktywuj wtyczki po jednej, za każdym razem odświeżając stronę. Gdy błąd wróci — właśnie znalazłeś problematyczną wtyczkę.
+      </p>
+
+      <h2>Krok 4 – Zwiększ limit pamięci PHP i limit czasu wykonania</h2>
+      <p>
+        W <code>wp-config.php</code> dodaj przed linią <code>/* That's all, stop editing! */</code>:
+      </p>
+      <pre><code>define( 'WP_MEMORY_LIMIT', '256M' );
+define( 'WP_MAX_MEMORY_LIMIT', '512M' );</code></pre>
+      <p>
+        Możesz też zwiększyć limit przez <code>php.ini</code> (jeśli masz do niego dostęp) lub przez <code>.htaccess</code>:
+      </p>
+      <pre><code>php_value memory_limit 256M
+php_value max_execution_time 300</code></pre>
+
+      <h2>Krok 5 – Przywróć pliki core WordPress</h2>
+      <p>
+        Jeśli uszkodzony jest plik należący do rdzenia WordPress (wp-admin, wp-includes), pobierz świeżą paczkę WordPress w tej samej wersji co Twoja instalacja (sprawdź w panelu → Pulpit → Aktualizacje). Rozpakuj i przez FTP nadpisz foldery <code>wp-admin/</code> i <code>wp-includes/</code>. <strong>Nie usuwaj folderu wp-content</strong> — tam są Twoje wtyczki, motywy i media.
+      </p>
+
+      <h2>Krok 6 – Sprawdź logi serwera</h2>
+      <p>
+        Hosting zazwyczaj przechowuje szczegółowe logi błędów PHP i Apache/Nginx. W cPanel znajdziesz je w sekcji „Logi błędów" lub w pliku <code>/home/uzytkownik/logs/error_log</code>. Szukaj wierszy z datą i godziną wystąpienia błędu — zawierają dokładny opis problemu, w tym nazwę pliku i numer linii.
+      </p>
+
+      <h2>Kiedy błąd 500 jest po stronie hostingu?</h2>
+      <p>
+        Zdarza się, że błąd 500 pojawia się na wielu stronach jednocześnie na tym samym serwerze współdzielonym — wtedy problem leży po stronie hostingu (przeciążony serwer, awaria usług). Sprawdź status strony swojego hostingu lub skontaktuj się z supportem. Możesz też tymczasowo przetestować stronę na innym serwerze lub środowisku lokalnym, żeby potwierdzić że problem jest serwerowy, nie w kodzie.
+      </p>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WORDPRESS: Wolna strona
+  ───────────────────────────────────────────────────────────────────────── */
+  "wordpress-dziala-wolno-jak-przyspieszyc": (
+    <>
+      <h2>Dlaczego czas ładowania strony WordPress ma tak duże znaczenie?</h2>
+      <p>
+        Każda sekunda opóźnienia ładowania strony kosztuje Cię mierzalnie: według badań Google, strona ładująca się 3 sekundy traci 53% użytkowników mobilnych zanim w ogóle się załaduje. Core Web Vitals — sygnał rankingowy Google od 2021 roku — bezpośrednio premiuje szybkie strony w wynikach wyszukiwania.
+      </p>
+      <p>
+        Poniżej znajdziesz listę optymalizacji uszeregowaną według wpływu na czas ładowania — od największego do najmniejszego.
+      </p>
+
+      <h2>1. Wybierz lepszy hosting (największy wpływ)</h2>
+      <p>
+        Jeśli Twoja strona jest na tanim hostingu współdzielonym za 10–20 zł miesięcznie, żadna optymalizacja nie pomoże na tyle, co zmiana serwera. Serwery współdzielone dzielą zasoby między setki stron — gdy ktoś inny generuje ruch, Twoja strona zwalnia.
+      </p>
+      <p>
+        Dla stron biznesowych w 2026 roku minimum to hosting z <strong>PHP 8.2+, SSD NVMe i serwerem w Polsce lub środkowej Europie</strong>. Dobrzy dostawcy: Cyber_Folks (SSD), home.pl (Business), LH.pl, Hetzner (VPS). Czas odpowiedzi serwera poniżej 200 ms (TTFB) to cel minimum.
+      </p>
+
+      <h2>2. Zainstaluj wtyczkę cache</h2>
+      <p>
+        WordPress domyślnie generuje każdą stronę dynamicznie — odpytuje bazę danych i wykonuje PHP przy każdym wejściu. Cache zapisuje gotowy HTML i serwuje go bezpośrednio, omijając PHP i bazę danych. Zysk czasowy: 50–90%.
+      </p>
+      <ul>
+        <li><strong>WP Rocket</strong> — płatny (ok. 59 EUR/rok), najlepszy w swojej klasie, zero konfiguracji</li>
+        <li><strong>LiteSpeed Cache</strong> — darmowy, idealny jeśli hosting korzysta z serwera LiteSpeed</li>
+        <li><strong>W3 Total Cache</strong> lub <strong>WP Super Cache</strong> — darmowe alternatywy, wymagają więcej konfiguracji</li>
+      </ul>
+
+      <h2>3. Zoptymalizuj obrazy</h2>
+      <p>
+        Nieskompresowane obrazy to najczęstszy powód wolnego ładowania. Zasady:
+      </p>
+      <ul>
+        <li>Używaj formatu <strong>WebP</strong> zamiast JPEG/PNG — mniejszy rozmiar przy tej samej jakości</li>
+        <li>Nigdy nie wgrywaj zdjęcia w wyższej rozdzielczości niż potrzebuje strona (2000px szerokości wystarczy nawet na sekcję hero)</li>
+        <li>Zainstaluj <strong>Smush</strong> lub <strong>ShortPixel</strong> — automatycznie kompresują obrazy przy wgrywaniu</li>
+        <li>Włącz <strong>lazy loading</strong> — obrazy poza widocznym obszarem ładują się dopiero gdy użytkownik do nich dotrze</li>
+      </ul>
+
+      <h2>4. Ogranicz liczbę wtyczek i wybieraj lekkie motywy</h2>
+      <p>
+        Każda aktywna wtyczka dodaje do strony JavaScript, CSS i zapytania do bazy danych. Przejrzyj listę wtyczek i usuń te, których naprawdę nie używasz. Sprawdź też ile zapytań do bazy danych generuje Twój motyw — użyj wtyczki Query Monitor (darmowa), która pokaże Ci szczegółowe statystyki.
+      </p>
+      <p>
+        Ciężkie page buildery (Divi, Avada, WPBakery) generują dziesiątki plików CSS i JS na każdej stronie. Jeśli Twoja strona jest prosta, rozważ zamianę na lżejszy motyw (Astra, GeneratePress, Kadence) z Gutenbergiem.
+      </p>
+
+      <h2>5. Włącz CDN i Gzip/Brotli</h2>
+      <p>
+        <strong>CDN (Content Delivery Network)</strong> serwuje statyczne pliki (obrazy, CSS, JS) z serwera geograficznie najbliższego użytkownikowi. Dla stron z ruchem spoza Polski różnica jest odczuwalna. Cloudflare (darmowy plan) to najłatwiejszy wybór — wystarczy zmienić nameservery domeny.
+      </p>
+      <p>
+        <strong>Kompresja Gzip/Brotli</strong> zmniejsza rozmiar plików HTML, CSS i JS przesyłanych przez serwer o 60–80%. Większość hostingów ma ją domyślnie włączoną. Sprawdź przez GTmetrix lub PageSpeed Insights czy jest aktywna.
+      </p>
+
+      <h2>6. Zoptymalizuj bazę danych</h2>
+      <p>
+        Po latach użytkowania baza danych WordPress wypełnia się zbędnymi danymi: rewizjami postów, transientami, usuniętymi komentarzami, logami wtyczek. Wtyczka <strong>WP-Optimize</strong> (darmowa) czyści bazę jednym kliknięciem i może zmniejszyć jej rozmiar nawet o kilkadziesiąt procent. Rób backup przed czyszczeniem.
+      </p>
+
+      <h2>Jak mierzyć wyniki?</h2>
+      <p>
+        Przed i po każdej optymalizacji mierz wyniki tymi samymi narzędziami:
+      </p>
+      <ul>
+        <li><strong>Google PageSpeed Insights</strong> — pokazuje Core Web Vitals i konkretne sugestie</li>
+        <li><strong>GTmetrix</strong> — szczegółowy waterfall ładowania zasobów</li>
+        <li><strong>WebPageTest.org</strong> — możliwość testowania z różnych lokalizacji i urządzeń</li>
+      </ul>
+      <p>
+        Cel to wynik powyżej 90/100 dla urządzeń mobilnych i LCP (Largest Contentful Paint) poniżej 2,5 sekundy.
+      </p>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WORDPRESS: Aktualizacja zepsuła stronę
+  ───────────────────────────────────────────────────────────────────────── */
+  "aktualizacja-wordpress-zepsuta-strone-co-zrobic": (
+    <>
+      <h2>Dlaczego aktualizacje WordPress psują strony?</h2>
+      <p>
+        WordPress jest systemem opartym na wtyczkach i motywach tworzonych przez tysiące niezależnych deweloperów. Każda aktualizacja rdzenia, wtyczki lub motywu może wprowadzić zmiany niekompatybilne z innymi elementami Twojej strony. To nie jest błąd projektu — to cena ekosystemu otwartego źródła z ponad 60 000 wtyczek.
+      </p>
+      <p>
+        Najczęstsze scenariusze po nieudanej aktualizacji: biały ekran, błąd 500, zepsuty wygląd strony, nieprawidłowe działanie formularzy lub WooCommerce, lub znikające treści.
+      </p>
+
+      <h2>Krok 1 – Sprawdź czy masz backup (i jak go przywrócić)</h2>
+      <p>
+        Jeśli masz backup sprzed aktualizacji — jesteś uratowany. Większość dobrych hostingów robi automatyczne kopie dzienne lub cotygodniowe. Sprawdź w panelu hostingu sekcję „Kopie zapasowe" lub „Backup".
+      </p>
+      <p>
+        Jeśli używasz wtyczek do backupów (UpdraftPlus, BackupBuddy), znajdź kopię w ustawieniach wtyczki lub w wyznaczonej lokalizacji (Google Drive, Dropbox, Amazon S3). Przywróć ją — to najszybsze rozwiązanie i powinno być pierwszym krokiem.
+      </p>
+      <p>
+        <strong>Uwaga:</strong> Po przywróceniu backupu natychmiast zaktualizuj problematyczną wtyczkę/motyw. Stare wersje często zawierają luki bezpieczeństwa.
+      </p>
+
+      <h2>Krok 2 – Bez backupu: cofnij aktualizację ręcznie</h2>
+      <p>
+        WordPress nie ma wbudowanej opcji cofania aktualizacji, ale możesz to zrobić ręcznie:
+      </p>
+      <p>
+        <strong>Dla wtyczki:</strong>
+      </p>
+      <ul>
+        <li>Wejdź na wordpress.org/plugins/[nazwa-wtyczki]/advanced/ i pobierz poprzednią wersję</li>
+        <li>Przez FTP usuń folder wtyczki z <code>wp-content/plugins/</code></li>
+        <li>Wgraj i rozpakuj pobraną starą wersję</li>
+        <li>Aktywuj wtyczkę w panelu WordPress</li>
+      </ul>
+      <p>
+        <strong>Dla rdzenia WordPress:</strong>
+      </p>
+      <ul>
+        <li>Pobierz poprzednią wersję ze strony wordpress.org/download/releases/</li>
+        <li>Przez FTP nadpisz foldery <code>wp-admin/</code> i <code>wp-includes/</code></li>
+        <li>W <code>wp-config.php</code> możesz tymczasowo dodać <code>define('AUTOMATIC_UPDATER_DISABLED', true);</code> żeby zapobiec automatycznej aktualizacji z powrotem</li>
+      </ul>
+
+      <h2>Krok 3 – Zidentyfikuj problematyczną wtyczkę metodą bisekcji</h2>
+      <p>
+        Jeśli aktualizowałeś wiele wtyczek jednocześnie, musisz znaleźć tę winną. Metoda bisekcji:
+      </p>
+      <ul>
+        <li>Dezaktywuj połowę zaktualizowanych wtyczek — sprawdź czy błąd znikł</li>
+        <li>Jeśli znikł — problem jest w dezaktywowanej połowie. Aktywuj połowę z tej grupy i sprawdź ponownie</li>
+        <li>Jeśli nie znikł — problem jest w aktywnej połowie. Dezaktywuj połowę z tej grupy</li>
+        <li>Powtarzaj aż do znalezienia jednej winnej wtyczki</li>
+      </ul>
+
+      <h2>Jak aktualizować bezpiecznie w przyszłości?</h2>
+      <p>
+        Nauczona przykrym doświadczeniem zasada numer jeden: <strong>zawsze rób backup przed każdą aktualizacją</strong>. Oto pełna procedura bezpiecznego aktualizowania:
+      </p>
+      <ul>
+        <li><strong>Środowisko testowe (staging)</strong> — większość hostingów oferuje subdomenę testową. Aktualizuj najpierw tam, sprawdź stronę, a dopiero po potwierdzeniu że wszystko działa — aktualizuj produkcję.</li>
+        <li><strong>Aktualizuj pojedynczo</strong> — nie klikaj „Zaktualizuj wszystko" jednocześnie. Aktualizuj jedną wtyczkę, sprawdź stronę, przejdź do następnej.</li>
+        <li><strong>Wyłącz automatyczne aktualizacje</strong> — dla wtyczek premium lub stron e-commerce to ryzykowna opcja. Kontroluj aktualizacje ręcznie.</li>
+        <li><strong>Monitoruj stronę</strong> — użyj narzędzia jak UptimeRobot (darmowy), które powiadomi Cię SMS-em jeśli strona przestanie działać.</li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WORDPRESS: Formularz nie wysyła maili
+  ───────────────────────────────────────────────────────────────────────── */
+  "formularz-kontaktowy-wordpress-nie-wysyla-maili": (
+    <>
+      <h2>Dlaczego formularze WordPress przestają wysyłać maile?</h2>
+      <p>
+        Większość popularnych wtyczek formularzy (Contact Form 7, WPForms, Gravity Forms, Ninja Forms) do wysyłania maili używa funkcji PHP <code>mail()</code>. Problem w tym, że ta funkcja zależy od konfiguracji serwera pocztowego hostingu — i wiele hostingów celowo ją ogranicza lub blokuje, żeby zapobiegać wysyłaniu spamu.
+      </p>
+      <p>
+        Wynik jest paradoksalny: formularz działa poprawnie (dane są zapisywane), ale mail nigdy nie dociera do skrzynki. Lub trafia do folderu spam.
+      </p>
+
+      <h2>Krok 1 – Sprawdź folder spam</h2>
+      <p>
+        To banalne, ale często pomijane. Sprawdź folder spam w swojej skrzynce. Wiele filtrów antyspamowych (szczególnie Gmail i Outlook) klasyfikuje maile wysyłane przez <code>mail()</code> z hostingu jako spam, bo nie przechodzą weryfikacji SPF/DKIM.
+      </p>
+      <p>
+        Jeśli mail trafia do spamu — to sygnał, że Twój hosting nie jest prawidłowo skonfigurowany pod kątem wysyłki. Rozwiązaniem jest SMTP (opisujemy poniżej).
+      </p>
+
+      <h2>Krok 2 – Zainstaluj wtyczkę diagnostyczną</h2>
+      <p>
+        Zainstaluj darmową wtyczkę <strong>Check & Log Email</strong>. Pozwala wysłać testową wiadomość bezpośrednio z WordPress i sprawdzić czy funkcja mail() w ogóle działa. Pokazuje też logi wszystkich prób wysyłki z czasem i wynikiem.
+      </p>
+      <p>
+        Jeśli testowy mail nie dociera — potwierdzasz, że problem leży w konfiguracji wysyłki, nie w samej wtyczce formularzy.
+      </p>
+
+      <h2>Krok 3 – Skonfiguruj SMTP (rozwiązanie docelowe)</h2>
+      <p>
+        SMTP (Simple Mail Transfer Protocol) to protokół wysyłki maili przez zewnętrzny serwer pocztowy — np. Gmail, Outlook, Zoho Mail lub dedykowany serwer hostingu. Zamiast używać słabej funkcji <code>mail()</code>, WordPress wysyła maile przez prawdziwe konto e-mail z autoryzacją.
+      </p>
+      <p>
+        <strong>Najpopularniejsze wtyczki SMTP:</strong>
+      </p>
+      <ul>
+        <li><strong>WP Mail SMTP</strong> (darmowa) — najpopularniejsza, obsługuje Gmail, Outlook, SendGrid, Mailgun i inne</li>
+        <li><strong>FluentSMTP</strong> (darmowa) — dobra alternatywa, obsługuje wiele kont jednocześnie</li>
+        <li><strong>Post SMTP</strong> (darmowa) — ze szczegółowym logowaniem maili</li>
+      </ul>
+      <p>
+        <strong>Konfiguracja z kontem Gmail (najprostsze):</strong>
+      </p>
+      <ul>
+        <li>Zainstaluj WP Mail SMTP</li>
+        <li>W ustawieniach wybierz „Google / Gmail" jako mailer</li>
+        <li>Postępuj zgodnie z instrukcją tworzenia Google OAuth — wymaga chwilowego dostępu do Google Cloud Console (WP Mail SMTP Pro ma uproszczony kreator)</li>
+        <li>Alternatywa: użyj hasła aplikacyjnego Google (wymaga włączonego 2FA na koncie Google)</li>
+      </ul>
+
+      <h2>Krok 4 – Skonfiguruj SPF i DKIM dla domeny</h2>
+      <p>
+        Nawet z SMTP, jeśli Twoja domena nie ma poprawnych rekordów SPF i DKIM, część maili będzie trafiać do spamu. SPF i DKIM to mechanizmy uwierzytelniania e-mail, które potwierdzają że mail wysyłany z Twojej domeny rzeczywiście pochodzi od Ciebie.
+      </p>
+      <p>
+        Rekordy SPF i DKIM konfiguruje się w strefie DNS domeny. Dokładne wartości dostarcza Twój dostawca poczty (hosting, Google Workspace, Zoho). Większość paneli DNS prowadzi przez ten proces krok po kroku.
+      </p>
+
+      <h2>Formularz działa, ale wiadomości znikają — sprawdź też te rzeczy</h2>
+      <ul>
+        <li><strong>Adres e-mail administratora</strong> — w Ustawieniach → Ogólne sprawdź czy adres e-mail administratora WordPress jest poprawny i aktywny</li>
+        <li><strong>Konfiguracja wtyczki formularza</strong> — w Contact Form 7 sprawdź zakładkę „Mail" i upewnij się że „Do" (adresat) jest ustawiony poprawnie</li>
+        <li><strong>Konflikty wtyczek</strong> — niektóre wtyczki bezpieczeństwa lub cache mogą blokować wysyłkę. Sprawdź czy problem znika po ich dezaktywacji.</li>
+        <li><strong>Filtr antyspamowy w skrzynce</strong> — reguły w Outlooku lub Gmail mogą automatycznie usuwać lub archiwizować przychodzące maile z formularzy</li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WORDPRESS: Technical Difficulties
+  ───────────────────────────────────────────────────────────────────────── */
+  "wordpress-this-site-is-experiencing-technical-difficulties": (
+    <>
+      <h2>Co oznacza komunikat „This site is experiencing technical difficulties"?</h2>
+      <p>
+        Od wersji WordPress 5.2 istnieje mechanizm zwany <strong>fatal error protection</strong>. Zamiast pokazywać użytkownikom biały ekran lub techniczny komunikat błędu PHP, WordPress wyświetla przyjazną wiadomość: „This site is experiencing technical difficulties."
+      </p>
+      <p>
+        Jednocześnie WordPress wysyła na adres e-mail administratora maila z dokładnym opisem błędu i linkiem do specjalnego trybu odzyskiwania. To ogromne ułatwienie w porównaniu z klasycznym WSOD.
+      </p>
+
+      <h2>Krok 1 – Sprawdź pocztę administratora</h2>
+      <p>
+        WordPress automatycznie wysyła mail na adres podany w Ustawieniach → Ogólne → E-mail administratora. Mail zawiera:
+      </p>
+      <ul>
+        <li>Nazwę pliku i numer linii gdzie wystąpił błąd</li>
+        <li>Rodzaj błędu (np. Fatal error, Parse error, Class not found)</li>
+        <li>Unikalny link do trybu odzyskiwania — pozwala zalogować się do panelu WordPress i dezaktywować problematyczną wtyczkę <strong>bez naprawiania błędu w kodzie</strong></li>
+      </ul>
+      <p>
+        Kliknij link z maila, zaloguj się i dezaktywuj wskazaną wtyczkę lub motyw. Strona powinna wrócić do działania.
+      </p>
+
+      <h2>Krok 2 – Jeśli mail nie dotarł</h2>
+      <p>
+        Jeśli hosting blokuje wysyłkę PHP mail() (co jest częste) lub adres administratora jest niepoprawny, mail z linkiem odzyskiwania nie dotrze. W takim przypadku:
+      </p>
+      <p>
+        Wejdź bezpośrednio w tryb odzyskiwania wpisując w przeglądarce:
+      </p>
+      <pre><code>https://twojadomena.pl/wp-login.php?action=recovery_mode&rm_token=TOKEN</code></pre>
+      <p>
+        Token recovery mode jest zapisany w bazie danych w opcji <code>recovery_mode_email</code>. Możesz go odczytać przez phpMyAdmin (tabela <code>wp_options</code>).
+      </p>
+      <p>
+        Alternatywnie — przez FTP dezaktywuj problematyczną wtyczkę zmieniając nazwę jej folderu w <code>wp-content/plugins/</code>.
+      </p>
+
+      <h2>Krok 3 – Zdiagnozuj konkretny błąd</h2>
+      <p>
+        Komunikat w mailu mówi Ci co się stało. Najczęstsze typy błędów:
+      </p>
+      <ul>
+        <li><strong>Fatal error: Class 'NazwaKlasy' not found</strong> — wtyczka próbuje użyć funkcji lub klasy z innej wtyczki, która nie jest aktywna lub ma inną wersję. Sprawdź zależności wtyczki.</li>
+        <li><strong>Fatal error: Call to undefined function</strong> — podobna przyczyna — brakująca funkcja z innej wtyczki lub nieaktualna wersja PHP.</li>
+        <li><strong>PHP Fatal error: Allowed memory size exhausted</strong> — zwiększ limit pamięci PHP (opisujemy w artykule o WSOD).</li>
+        <li><strong>Parse error: syntax error</strong> — błąd składni w kodzie PHP, zazwyczaj wynik ręcznej edycji pliku. Cofnij ostatnią zmianę.</li>
+      </ul>
+
+      <h2>Krok 4 – Sprawdź wersję PHP</h2>
+      <p>
+        Częstą przyczyną tego komunikatu po aktualizacji wtyczki jest <strong>niekompatybilność z wersją PHP na serwerze</strong>. Nowe wersje wtyczek często wymagają PHP 8.0 lub 8.1, podczas gdy hosting może mieć skonfigurowane PHP 7.4.
+      </p>
+      <p>
+        Sprawdź wymaganą wersję PHP na stronie wtyczki w wordpress.org. Jeśli Twój hosting ma starszą wersję, zmień ją w panelu (cPanel → PHP Selector lub PHP Version). Aktualizacja PHP wymaga ostrożności — sprawdź najpierw kompatybilność całej strony z nową wersją.
+      </p>
+
+      <h2>Jak zapobiegać temu problemowi?</h2>
+      <ul>
+        <li>Zawsze aktualizuj wtyczki pojedynczo, nie wszystkie naraz</li>
+        <li>Sprawdzaj changelog przed aktualizacją — czy nie ma informacji o zmianie wymagań PHP lub zależnościach</li>
+        <li>Używaj środowiska staging do testowania aktualizacji przed wdrożeniem na produkcję</li>
+        <li>Upewnij się że adres e-mail administratora WordPress jest aktywny i odbiera maile</li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WORDPRESS: Strona po migracji
+  ───────────────────────────────────────────────────────────────────────── */
+  "wordpress-nie-wyswietla-sie-po-migracji-hosting": (
+    <>
+      <h2>Dlaczego migracja WordPress jest pułapką dla początkujących?</h2>
+      <p>
+        Przeniesienie strony WordPress na nowy hosting wydaje się proste: skopiuj pliki, przenieś bazę danych, zmień ustawienia. W praktyce każdy z tych kroków ma pułapki, które mogą sprawić, że strona przestanie działać lub wyświetla stary adres.
+      </p>
+      <p>
+        Poniżej znajdziesz diagnostykę typowych problemów po migracji — oraz jak każdy z nich naprawić.
+      </p>
+
+      <h2>Problem 1 – Strona wyświetla stary adres lub „Error 404"</h2>
+      <p>
+        <strong>Przyczyna:</strong> W bazie danych WordPress zapisany jest stary adres URL (np. stara domena lub stary serwer). WordPress używa go do generowania wszystkich linków.
+      </p>
+      <p>
+        <strong>Rozwiązanie:</strong> Musisz zaktualizować adresy URL w bazie danych. Najlepsze narzędzie to <strong>Better Search Replace</strong> (wtyczka darmowa) lub skrypt <strong>Search-Replace-DB</strong> wgrany przez FTP.
+      </p>
+      <p>
+        W Better Search Replace wpisz stary adres (np. <code>https://stara-domena.pl</code>) w polu „Search for" i nowy adres (np. <code>https://nowa-domena.pl</code>) w „Replace with". Zaznacz wszystkie tabele i kliknij „Run Search/Replace". <strong>Odznacz „Run as dry run"</strong> żeby faktycznie wprowadzić zmiany.
+      </p>
+
+      <h2>Problem 2 – Biały ekran lub błąd 500 po migracji</h2>
+      <p>
+        <strong>Sprawdź wp-config.php:</strong> Dane dostępowe do bazy danych (nazwa, użytkownik, hasło, host) muszą odpowiadać nowej bazie na nowym hostingu. Najczęstszy błąd to pozostawienie danych z poprzedniego serwera.
+      </p>
+      <pre><code>define( 'DB_NAME', 'nazwa_nowej_bazy' );
+define( 'DB_USER', 'uzytkownik_nowej_bazy' );
+define( 'DB_PASSWORD', 'haslo_nowej_bazy' );
+define( 'DB_HOST', 'localhost' );</code></pre>
+      <p>
+        <strong>Sprawdź uprawnienia plików:</strong> Po przesłaniu przez FTP pliki mogą mieć niepoprawne uprawnienia. Standardowo: katalogi 755, pliki PHP 644, <code>wp-config.php</code> 600. Zmień przez panel hostingu lub FTP komendy <code>chmod</code>.
+      </p>
+
+      <h2>Problem 3 – Strona wyświetla się poprawnie, ale linki nie działają (Error 404)</h2>
+      <p>
+        <strong>Przyczyna:</strong> Brakuje pliku <code>.htaccess</code> lub moduł mod_rewrite nie jest włączony na nowym serwerze.
+      </p>
+      <p>
+        <strong>Rozwiązanie:</strong> Zaloguj się do panelu WordPress i przejdź do Ustawienia → Bezpośrednie odnośniki. Kliknij „Zapisz zmiany" — WordPress wygeneruje nowy plik <code>.htaccess</code>. Jeśli to nie pomoże, upewnij się w panelu hostingu że <code>mod_rewrite</code> jest włączony (jest wymagany przez WordPress do działania bezpośrednich odnośników).
+      </p>
+
+      <h2>Problem 4 – Propagacja DNS — strona wyświetla stary serwer</h2>
+      <p>
+        Po zmianie nameserverów lub rekordów DNS zmiana propaguje się na serwery DNS na całym świecie przez 24–72 godziny. W tym czasie część użytkowników widzi starą stronę, część nową.
+      </p>
+      <p>
+        Sprawdź aktualny stan propagacji na <strong>whatsmydns.net</strong> — wpisz swoją domenę i sprawdź czy różne serwery DNS na świecie już wskazują na nowy adres IP. W swoim systemie możesz wymusić nowe DNS edytując plik <code>/etc/hosts</code> (Linux/Mac) lub <code>C:\Windows\System32\drivers\etc\hosts</code> (Windows) dodając linię: <code>nowe.ip.serwera twojadomena.pl</code>.
+      </p>
+
+      <h2>Problem 5 – Brakujące obrazy i media po migracji</h2>
+      <p>
+        Jeśli treść wyświetla się poprawnie, ale brakuje zdjęć — folder <code>wp-content/uploads/</code> nie został przeniesiony w całości. Sprawdź czy wszystkie podfoldery (zazwyczaj podzielone na rok/miesiąc) są obecne na nowym serwerze. Skopiuj folder przez FTP lub użyj Rsync przez SSH jeśli masz dostęp.
+      </p>
+
+      <h2>Checklista przed i po migracji</h2>
+      <ul>
+        <li>Backup pełny (pliki + baza danych) przed migracją</li>
+        <li>Poprawne dane bazy w wp-config.php na nowym serwerze</li>
+        <li>Podmiana URL przez Search Replace DB</li>
+        <li>Wygenerowanie nowego .htaccess</li>
+        <li>Sprawdzenie propagacji DNS</li>
+        <li>Test wszystkich formularzy i funkcji po migracji</li>
+        <li>Sprawdzenie certyfikatu SSL na nowej domenie/serwerze</li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     WORDPRESS: Konflikt wtyczek
+  ───────────────────────────────────────────────────────────────────────── */
+  "konflikt-wtyczek-wordpress-jak-zdiagnozowac": (
+    <>
+      <h2>Czym jest konflikt wtyczek i jak powstaje?</h2>
+      <p>
+        WordPress ładuje każdą aktywną wtyczkę przy każdym żądaniu do strony. Wtyczki mogą wchodzić w konflikt na kilka sposobów:
+      </p>
+      <ul>
+        <li><strong>Konflikty JavaScript</strong> — dwie wtyczki ładują różne wersje tej samej biblioteki (np. jQuery), która się nawzajem nadpisuje</li>
+        <li><strong>Konflikty CSS</strong> — style jednej wtyczki nadpisują style drugiej, psując wygląd elementów</li>
+        <li><strong>Konflikty funkcji PHP</strong> — dwie wtyczki definiują funkcję o tej samej nazwie, co generuje fatal error</li>
+        <li><strong>Konflikty bazy danych</strong> — wtyczki zapisują dane w tych samych opcjach lub tabelach</li>
+        <li><strong>Konflikty kolejności ładowania (hooks)</strong> — wtyczka A nadpisuje wynik wtyczki B przez system hooków WordPress</li>
+      </ul>
+
+      <h2>Metoda bisekcji — szybka diagnostyka w 5 krokach</h2>
+      <p>
+        Metoda bisekcji (binary search) pozwala znaleźć problematyczną wtyczkę spośród dziesiątek aktywnych w logarytmicznym czasie — zamiast sprawdzać każdą z osobna.
+      </p>
+      <ul>
+        <li><strong>Krok 1:</strong> Zrób listę wszystkich aktywnych wtyczek (np. screenshot)</li>
+        <li><strong>Krok 2:</strong> Dezaktywuj połowę wtyczek. Sprawdź czy problem nadal występuje.</li>
+        <li><strong>Krok 3 (jeśli problem znikł):</strong> Problem jest w dezaktywowanej połowie. Aktywuj połowę z tej grupy. Sprawdź.</li>
+        <li><strong>Krok 3 (jeśli problem trwa):</strong> Problem jest w aktywnej połowie. Dezaktywuj połowę z tej grupy. Sprawdź.</li>
+        <li><strong>Krok 4:</strong> Powtarzaj aż zostanie jedna wtyczka — to winowajca.</li>
+      </ul>
+      <p>
+        Przykład: masz 20 wtyczek → dezaktyrujesz 10 → problem znikł → aktywujesz 5 z dezaktywowanych → problem wrócił → dezaktyrujesz 2–3 z tych 5 → znajdziesz winowajcę maksymalnie w 4–5 krokach zamiast 20.
+      </p>
+
+      <h2>Diagnoza przez Query Monitor</h2>
+      <p>
+        Wtyczka <strong>Query Monitor</strong> (darmowa) to developer toolbar dla WordPress. Pokazuje:
+      </p>
+      <ul>
+        <li>Wszystkie błędy PHP (E_NOTICE, E_WARNING, E_ERROR) z nazwą pliku i linią</li>
+        <li>Konflikty skryptów i styli JavaScript/CSS</li>
+        <li>Zapytania do bazy danych — ile ich jest i które są wolne</li>
+        <li>Hooki i filtry WordPress — jakie wartości przekazują</li>
+      </ul>
+      <p>
+        Po aktywacji Query Monitor pojawi się pasek narzędzi administratora na górze strony. Zakładka „PHP Errors" często od razu wskazuje winowajcę konfliktu.
+      </p>
+
+      <h2>Najczęstsze typy konfliktów i jak je rozwiązać</h2>
+
+      <h3>Konflikt z page builderem</h3>
+      <p>
+        Elementor, Beaver Builder, Divi i WPBakery mają własne systemy zarządzania JavaScriptem i CSS. Wtyczki słabo zintegrowane z page builderami często powodują konflikty wizualne lub błędy JavaScript.
+      </p>
+      <p>
+        Rozwiązanie: sprawdź w ustawieniach problematycznej wtyczki czy ma opcję „Wyłącz w edytorze" lub „Kompatybilność z page builderem". Alternatywnie poszukaj oficjalnych addonów do używanego page buildera.
+      </p>
+
+      <h3>Konflikt z wtyczką cache</h3>
+      <p>
+        Wtyczki cache (WP Rocket, W3 Total Cache, LiteSpeed Cache) agresywnie optymalizują JavaScript i CSS, co może psuć działanie innych wtyczek. Objawy: slider nie działa, formularze nie działają, galeria się sypie — ale tylko na froncie, nie w panelu admina.
+      </p>
+      <p>
+        Rozwiązanie: w ustawieniach wtyczki cache wyklucz JavaScript konkretnej wtyczki z minifikacji/łączenia. W WP Rocket zrób to w zakładce „Plik" → pole wykluczeń JS.
+      </p>
+
+      <h3>Konflikt z wtyczką bezpieczeństwa</h3>
+      <p>
+        Wordfence, iThemes Security i Sucuri mogą blokować żądania AJAX, które są potrzebne do działania innych wtyczek (szczególnie formularzy, koszyków WooCommerce, live search).
+      </p>
+      <p>
+        Rozwiązanie: sprawdź logi wtyczki bezpieczeństwa — czy nie blokuje żądań z konkretnych wtyczek. Dodaj wyjątek dla blokowanych URL.
+      </p>
+
+      <h2>Kiedy konflikt jest nie do rozwiązania?</h2>
+      <p>
+        Niekiedy dwie wtyczki są fundamentalnie niekompatybilne i żadna konfiguracja tego nie zmieni. W takiej sytuacji masz trzy wyjścia:
+      </p>
+      <ul>
+        <li>Zamień jedną z wtyczek na alternatywę</li>
+        <li>Zamów customowe rozwiązanie u dewelopera WordPress który połączy funkcjonalności</li>
+        <li>Rezygnuj z funkcjonalności mniej ważnej z dwóch kolidujących</li>
+      </ul>
+      <p>
+        Regularny przegląd listy wtyczek i usuwanie nieużywanych to najlepsza profilaktyka. Reguła: jeśli wtyczka nie była używana od miesiąca — usuń ją, nie tylko dezaktywuj (dezaktywowane wtyczki nadal zajmują miejsce na serwerze i mogą zawierać luki bezpieczeństwa).
+      </p>
+    </>
+  ),
 };

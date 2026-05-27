@@ -30,7 +30,7 @@ const categoryStyle: Record<Category, string> = {
   "Opinie":    "bg-green-100 text-green-700",
   "Poradnik":  "bg-violet-100 text-violet-700",
   "Wizytówka": "bg-sky-100 text-sky-700",
-  "Reklamy":   "bg-pink-100 text-pink-700",
+  "WordPress": "bg-blue-100 text-blue-700",
 };
 
 export default async function BlogPostPage({ params }: Props) {
@@ -206,7 +206,7 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="border border-border rounded-2xl p-5">
                 <p className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-4">Kategorie</p>
                 <div className="flex flex-wrap gap-2">
-                  {(["SEO", "Opinie", "Poradnik", "Wizytówka", "Reklamy"] as Category[]).map((cat) => (
+                  {(["SEO", "Opinie", "Poradnik", "Wizytówka", "WordPress"] as Category[]).map((cat) => (
                     <span key={cat} className={`text-xs font-semibold px-2.5 py-1 rounded-full ${categoryStyle[cat]}`}>
                       {cat}
                     </span>
