@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
+import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
   title: "Kontakt – MiauSEO | Bezpłatna konsultacja",
@@ -107,6 +108,7 @@ export default function KontaktPage() {
 
       {/* ── Hero ── */}
       <section className="bg-ink py-20 px-6 relative overflow-hidden">
+        <CatWatermark />
         {/* decorative circles */}
         <div className="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-brand/5 pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-64 h-64 rounded-full bg-brand/5 pointer-events-none" />

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
   title: "Zespół – MiauSEO",
@@ -48,7 +49,8 @@ export default function ZespolPage() {
     <main className="pt-20">
 
       {/* ── Hero ── */}
-      <section className="bg-white py-20 px-6">
+      <section className="relative overflow-hidden bg-white py-20 px-6">
+        <CatWatermark />
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-end gap-8 lg:gap-20">
             <div className="lg:w-5/12 shrink-0">

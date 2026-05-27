@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import CatWatermark from "@/components/ui/CatWatermark";
 
 interface CheckItem {
   id: number;
@@ -117,7 +118,8 @@ export default function ChecklistaPage() {
     <main className="pt-20">
 
       {/* ── Hero ── */}
-      <section className="bg-white py-20 px-6">
+      <section className="relative overflow-hidden bg-white py-20 px-6">
+        <CatWatermark />
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">Bezpłatne narzędzie</p>
           <h1 className="text-4xl md:text-5xl font-bold text-ink leading-tight mb-6">

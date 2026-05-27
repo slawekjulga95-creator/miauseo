@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getPublishedPosts, formatDate } from "./posts";
 import type { Category } from "./posts";
+import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
   title: "Blog – MiauSEO | Wiedza o wizytówce Google i local SEO",
@@ -24,7 +25,8 @@ export default function BlogPage() {
   return (
     <main className="pt-24 pb-24">
       {/* Hero */}
-      <section className="bg-white border-b border-border py-16 px-6">
+      <section className="bg-white border-b border-border py-16 px-6 relative overflow-hidden">
+        <CatWatermark />
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row lg:items-end justify-between gap-8">
           <div>
             <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">Blog</p>

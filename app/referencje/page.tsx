@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import LightboxImage from "@/components/ui/LightboxImage";
+import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
   title: "Referencje – MiauSEO | Szczere opinie ze współpracy",
@@ -92,7 +93,8 @@ export default function ReferencjePage() {
   return (
     <main className="pt-24">
       {/* Intro */}
-      <section className="bg-white py-20 px-6">
+      <section className="relative overflow-hidden bg-white py-20 px-6">
+        <CatWatermark />
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-20">
             {/* Left — heading */}

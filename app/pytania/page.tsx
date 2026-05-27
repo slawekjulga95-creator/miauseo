@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { categories, questions } from "./questions";
+import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
   title: "Pytania o wizytówkę Google – baza wiedzy MiauSEO",
@@ -20,7 +21,8 @@ export default function PytaniaPage() {
   return (
     <main className="pt-24 pb-24">
       {/* Hero */}
-      <section className="bg-white py-16 px-6 border-b border-border">
+      <section className="bg-white py-16 px-6 border-b border-border relative overflow-hidden">
+        <CatWatermark />
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row lg:items-end gap-8 lg:gap-20">
           <div className="lg:w-1/2">
             <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">Baza wiedzy</p>

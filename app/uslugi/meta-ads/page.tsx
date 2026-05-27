@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
   title: "Meta Ads – reklamy Facebook i Instagram | MiauSEO",
@@ -107,7 +108,8 @@ export default function MetaAdsPage() {
     <main className="pt-20">
 
       {/* ── Hero ── */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
+        <CatWatermark />
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>

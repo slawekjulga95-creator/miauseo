@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
   title: "TikTok Ads – reklamy na TikToku | MiauSEO",
@@ -71,7 +72,8 @@ export default function TikTokAdsPage() {
     <main className="pt-20">
 
       {/* ── Hero ── */}
-      <section className="bg-white py-20 px-6">
+      <section className="relative overflow-hidden bg-white py-20 px-6">
+        <CatWatermark />
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-20">
             {/* Left — heading */}

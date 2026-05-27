@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import WizytowkaForm from "@/components/WizytowkaForm";
+import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
   title: "Pozycjonowanie wizytówki Google – MiauSEO | Od 500 zł/mies.",
@@ -107,6 +108,7 @@ export default function WizytowkaGooglePage() {
 
       {/* ── Hero ── */}
       <section className="relative py-20 bg-white overflow-hidden">
+        <CatWatermark />
         <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle, #d4d4d4 1.2px, transparent 1.2px)", backgroundSize: "28px 28px", opacity: 0.4 }} />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
