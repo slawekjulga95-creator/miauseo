@@ -1,7 +1,7 @@
 // Źródło danych bloga — docelowo zastąpić fetchemz CMS (Sanity / Contentful / Payload)
 // Struktura posta musi odpowiadać schematowi CMS
 
-export type Category = "SEO" | "Opinie" | "Poradnik" | "Wizytówka" | "Reklamy";
+export type Category = "SEO" | "Opinie" | "Poradnik" | "Wizytówka";
 
 export type Post = {
   slug: string;
@@ -141,7 +141,7 @@ export const posts: Post[] = [
     slug: "reklama-kancelarii-adwokackiej-google",
     title: "Reklama kancelarii adwokackiej w Google – co wolno, co działa",
     excerpt: "Adwokaci i radcowie mogą reklamować się w Google, ale obowiązują ich zasady etyki zawodowej. Sprawdź, jak prowadzić skuteczny marketing prawniczy w granicach przepisów.",
-    category: "Reklamy",
+    category: "Poradnik",
     date: "2026-01-28",
     readTime: 7,
     coverColor: "#1e40af",
@@ -163,7 +163,7 @@ export const posts: Post[] = [
     slug: "salon-kosmetyczny-facebook-ads",
     title: "Salon kosmetyczny i Facebook Ads – jak zarabiać na reklamach Meta?",
     excerpt: "Salon piękności to idealne miejsce dla reklam na Facebooku i Instagramie. Zdjęcia przed/po, targetowanie kobiet z okolicy, retargeting — oto konkretna strategia.",
-    category: "Reklamy",
+    category: "Poradnik",
     date: "2025-12-20",
     readTime: 7,
     coverColor: "#db2777",
