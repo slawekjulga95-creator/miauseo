@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.06" stroke="white" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/><line x1="0" y1="210" x2="1200" y2="210"/><line x1="0" y1="315" x2="1200" y2="315"/><line x1="0" y1="420" x2="1200" y2="420"/><line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  <circle cx="120" cy="120" r="180" fill="white" opacity="0.04"/>
+  <circle cx="1100" cy="520" r="220" fill="white" opacity="0.04"/>
+  <!-- Plug body -->
+  <rect x="500" y="290" width="200" height="150" rx="16" fill="white" opacity="0.9"/>
+  <!-- Plug pins -->
+  <rect x="545" y="240" width="28" height="55" rx="8" fill="white" opacity="0.9"/>
+  <rect x="627" y="240" width="28" height="55" rx="8" fill="white" opacity="0.9"/>
+  <!-- Plug cord -->
+  <path d="M600 440 Q600 500 650 520 Q700 540 700 490" fill="none" stroke="white" stroke-width="16" stroke-linecap="round" opacity="0.7"/>
+  <!-- Socket -->
+  <rect x="700" y="380" width="200" height="150" rx="16" fill="white" opacity="0.2"/>
+  <circle cx="762" cy="445" r="18" fill="#4f46e5"/>
+  <circle cx="838" cy="445" r="18" fill="#4f46e5"/>
+  <!-- X - conflict -->
+  <line x1="660" y1="330" x2="710" y2="370" stroke="#ef4444" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+  <line x1="710" y1="330" x2="660" y2="370" stroke="#ef4444" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · WORDPRESS · WTYCZKI</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.06" stroke="white" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/><line x1="0" y1="210" x2="1200" y2="210"/><line x1="0" y1="315" x2="1200" y2="315"/><line x1="0" y1="420" x2="1200" y2="420"/><line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  <circle cx="120" cy="120" r="180" fill="white" opacity="0.04"/>
+  <circle cx="1100" cy="520" r="220" fill="white" opacity="0.04"/>
+  <!-- Shield -->
+  <path d="M420 140 L600 170 L780 140 L780 320 C780 430 600 490 600 490 C600 490 420 430 420 320 Z" fill="white" opacity="0.15"/>
+  <path d="M450 158 L600 184 L750 158 L750 318 C750 410 600 464 600 464 C600 464 450 410 450 318 Z" fill="white" opacity="0.12"/>
+  <!-- Bug body -->
+  <ellipse cx="600" cy="310" rx="60" ry="75" fill="white" opacity="0.9"/>
+  <!-- Bug head -->
+  <circle cx="600" cy="230" r="35" fill="white" opacity="0.9"/>
+  <!-- Bug eyes -->
+  <circle cx="585" cy="222" r="8" fill="#dc2626"/>
+  <circle cx="615" cy="222" r="8" fill="#dc2626"/>
+  <!-- Bug legs -->
+  <line x1="540" y1="270" x2="490" y2="250" stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="540" y1="310" x2="480" y2="310" stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="540" y1="350" x2="490" y2="370" stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="660" y1="270" x2="710" y2="250" stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="660" y1="310" x2="720" y2="310" stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="660" y1="350" x2="710" y2="370" stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <!-- Warning X on shield -->
+  <line x1="575" y1="290" x2="625" y2="340" stroke="#dc2626" stroke-width="8" stroke-linecap="round"/>
+  <line x1="625" y1="290" x2="575" y2="340" stroke="#dc2626" stroke-width="8" stroke-linecap="round"/>
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="6">MIAUSEO · WORDPRESS · BEZPIECZEŃSTWO</text>
+</svg>
