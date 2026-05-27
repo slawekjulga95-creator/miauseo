@@ -4131,6 +4131,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <p>
         Jeśli nie masz dostępu do FTP, nie znasz się na strukturze WordPressa lub złośliwy kod pojawia się ponownie po wyczyszczeniu — skontaktuj się ze specjalistą. Koszt profesjonalnego czyszczenia strony (100–500 zł) jest wielokrotnie niższy niż straty wynikające z długotrwałego zablokowania przez Google lub utraty danych klientów.
       </p>
+      <p>
+        Warto też wiedzieć, że zawirusowana strona może powodować inne objawy: jeśli po wyczyszczeniu widzisz pusty ekran, przeczytaj{" "}
+        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">jak naprawić biały ekran WordPress</Link>. Jeśli masz problem z zalogowaniem się do panelu, sprawdź{" "}
+        <Link href="/blog/nie-moge-zalogowac-sie-do-wordpressa">jak odzyskać dostęp do WordPressa</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/blog/nie-moge-zalogowac-sie-do-wordpressa" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Nie mogę się zalogować do WordPressa – jak odzyskać dostęp?</Link></li>
+          <li><Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
+          <li><Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
+        </ul>
+      </div>
     </>
   ),
 
@@ -4202,8 +4217,24 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
 
       <h2>Przyczyna 6 – Problem z bazą danych</h2>
       <p>
-        Jeśli widzisz komunikat „Error establishing a database connection" zamiast białego ekranu — problem leży w połączeniu z bazą danych. Sprawdź dane dostępowe w <code>wp-config.php</code> (nazwa bazy, użytkownik, hasło, host) i porównaj z danymi w panelu hostingu.
+        Jeśli widzisz komunikat „Error establishing a database connection" zamiast białego ekranu — problem leży w połączeniu z bazą danych. Sprawdź dane dostępowe w <code>wp-config.php</code> (nazwa bazy, użytkownik, hasło, host) i porównaj z danymi w panelu hostingu. Ten błąd jest szczególnie częsty{" "}
+        <Link href="/blog/wordpress-nie-wyswietla-sie-po-migracji-hosting">po migracji strony na nowy hosting</Link>.
       </p>
+      <p>
+        Jeśli mimo wszystkich kroków strona nadal nie działa, sprawdź też{" "}
+        <Link href="/blog/wordpress-blad-500-internal-server-error">jak naprawić błąd 500 w WordPress</Link> — objawy bywają podobne, przyczyny różne. Jeśli strona została zaatakowana,{" "}
+        <Link href="/blog/zawirusowana-strona-wordpress-co-zrobic">przeczytaj nasz przewodnik po odwirusowaniu WordPressa</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
+          <li><Link href="/blog/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić?</Link></li>
+          <li><Link href="/blog/wordpress-nie-wyswietla-sie-po-migracji-hosting" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Strona WordPress nie wyświetla się po migracji na nowy hosting</Link></li>
+        </ul>
+      </div>
     </>
   ),
 
@@ -4275,6 +4306,21 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
         <li><strong>Zmiana URL panelu logowania</strong> — zamiast domyślnego <code>/wp-login.php</code> ustaw unikalny adres przez WPS Hide Login</li>
         <li><strong>Silne hasło</strong> — minimum 16 znaków, wielkie i małe litery, cyfry, znaki specjalne. Używaj menedżera haseł.</li>
       </ul>
+      <p>
+        Jeśli powodem braku dostępu było włamanie, sprawdź koniecznie{" "}
+        <Link href="/blog/zawirusowana-strona-wordpress-co-zrobic">jak sprawdzić i wyczyścić zawirusowaną stronę WordPress</Link>.
+        Przy okazji warto też wiedzieć, że brak dostępu do panelu może być objawem{" "}
+        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">białego ekranu (WSOD)</Link> — sprawdź ten artykuł jeśli panel admin też nie działa.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić?</Link></li>
+          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+        </ul>
+      </div>
     </>
   ),
 
@@ -4344,6 +4390,24 @@ php_value max_execution_time 300</code></pre>
       <p>
         Zdarza się, że błąd 500 pojawia się na wielu stronach jednocześnie na tym samym serwerze współdzielonym — wtedy problem leży po stronie hostingu (przeciążony serwer, awaria usług). Sprawdź status strony swojego hostingu lub skontaktuj się z supportem. Możesz też tymczasowo przetestować stronę na innym serwerze lub środowisku lokalnym, żeby potwierdzić że problem jest serwerowy, nie w kodzie.
       </p>
+      <p>
+        Błąd 500 często pojawia się razem z innymi symptomami. Jeśli zamiast błędu widzisz biały ekran, przeczytaj{" "}
+        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">artykuł o białym ekranie w WordPress</Link>.
+        Jeśli problem pojawił się po aktualizacji,{" "}
+        <Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic">sprawdź jak cofnąć aktualizację WordPress</Link>.
+        Błąd 500 jest też częstym problemem{" "}
+        <Link href="/blog/wordpress-nie-wyswietla-sie-po-migracji-hosting">po migracji strony na nowy hosting</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
+          <li><Link href="/blog/wordpress-this-site-is-experiencing-technical-difficulties" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress: „This site is experiencing technical difficulties"</Link></li>
+          <li><Link href="/blog/wordpress-nie-wyswietla-sie-po-migracji-hosting" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Strona WordPress nie wyświetla się po migracji na nowy hosting</Link></li>
+        </ul>
+      </div>
     </>
   ),
 
@@ -4422,6 +4486,20 @@ php_value max_execution_time 300</code></pre>
       <p>
         Cel to wynik powyżej 90/100 dla urządzeń mobilnych i LCP (Largest Contentful Paint) poniżej 2,5 sekundy.
       </p>
+      <p>
+        Szybka strona to też lepsza widoczność w lokalnych wynikach Google. Jeśli prowadzisz firmę lokalną, sprawdź{" "}
+        <Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">jak pozycjonować wizytówkę Google w 2026 roku</Link> — Core Web Vitals są jednym z sygnałów rankingowych. Warto też zadbać o{" "}
+        <Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac">regularne sprawdzanie konfliktów między wtyczkami</Link>, które potrafią drastycznie spowalniać stronę.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
+          <li><Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
+          <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
+        </ul>
+      </div>
     </>
   ),
 
@@ -4492,6 +4570,25 @@ php_value max_execution_time 300</code></pre>
         <li><strong>Wyłącz automatyczne aktualizacje</strong> — dla wtyczek premium lub stron e-commerce to ryzykowna opcja. Kontroluj aktualizacje ręcznie.</li>
         <li><strong>Monitoruj stronę</strong> — użyj narzędzia jak UptimeRobot (darmowy), które powiadomi Cię SMS-em jeśli strona przestanie działać.</li>
       </ul>
+      <p>
+        Aktualizacje to nie jedyne źródło problemów. Zainstalowanie nowych wtyczek może powodować{" "}
+        <Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac">konflikty między wtyczkami</Link>, które dają podobne objawy.
+        Jeśli po przywróceniu backupu widzisz biały ekran,{" "}
+        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">sprawdź nasz przewodnik po białym ekranie WordPress</Link>.
+        Błąd po aktualizacji może też manifestować się jako{" "}
+        <Link href="/blog/wordpress-blad-500-internal-server-error">błąd 500</Link> lub komunikat{" "}
+        <Link href="/blog/wordpress-this-site-is-experiencing-technical-difficulties">„This site is experiencing technical difficulties"</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
+          <li><Link href="/blog/wordpress-this-site-is-experiencing-technical-difficulties" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress: „This site is experiencing technical difficulties"</Link></li>
+        </ul>
+      </div>
     </>
   ),
 
@@ -4561,6 +4658,20 @@ php_value max_execution_time 300</code></pre>
         <li><strong>Konflikty wtyczek</strong> — niektóre wtyczki bezpieczeństwa lub cache mogą blokować wysyłkę. Sprawdź czy problem znika po ich dezaktywacji.</li>
         <li><strong>Filtr antyspamowy w skrzynce</strong> — reguły w Outlooku lub Gmail mogą automatycznie usuwać lub archiwizować przychodzące maile z formularzy</li>
       </ul>
+      <p>
+        Problem z formularzem może być też objawem głębszego problemu z konfiguracją serwera. Jeśli strona ma też inne nieprawidłowości, sprawdź{" "}
+        <Link href="/blog/wordpress-blad-500-internal-server-error">jak diagnozować błąd 500</Link> oraz czy nie masz{" "}
+        <Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac">konfliktu między wtyczkami</Link> — szczególnie między wtyczką formularza a wtyczką cache lub bezpieczeństwa.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
+          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/blog/wordpress-this-site-is-experiencing-technical-difficulties" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress: „This site is experiencing technical difficulties"</Link></li>
+        </ul>
+      </div>
     </>
   ),
 
@@ -4631,6 +4742,24 @@ php_value max_execution_time 300</code></pre>
         <li>Używaj środowiska staging do testowania aktualizacji przed wdrożeniem na produkcję</li>
         <li>Upewnij się że adres e-mail administratora WordPress jest aktywny i odbiera maile</li>
       </ul>
+      <p>
+        Ten komunikat to ulepszona wersja{" "}
+        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">białego ekranu WordPress (WSOD)</Link> — jeśli widzisz biały ekran zamiast komunikatu „technical difficulties", Twoja instalacja ma starszą wersję WordPressa lub inne ustawienia.
+        Zazwyczaj błąd pojawia się po nieudanej aktualizacji — sprawdź{" "}
+        <Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic">co zrobić gdy aktualizacja zepsuje stronę</Link>.
+        Objaw może być też podobny do{" "}
+        <Link href="/blog/wordpress-blad-500-internal-server-error">błędu 500</Link> — warto sprawdzić oba artykuły.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
+          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
+        </ul>
+      </div>
     </>
   ),
 
@@ -4701,6 +4830,23 @@ define( 'DB_HOST', 'localhost' );</code></pre>
         <li>Test wszystkich formularzy i funkcji po migracji</li>
         <li>Sprawdzenie certyfikatu SSL na nowej domenie/serwerze</li>
       </ul>
+      <p>
+        Problemy po migracji często nakładają się — biały ekran, błąd 500 i problemy z DNS mogą występować jednocześnie. Jeśli masz{" "}
+        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">biały ekran</Link> lub{" "}
+        <Link href="/blog/wordpress-blad-500-internal-server-error">błąd 500</Link>, sprawdź te artykuły równolegle z diagnostyką migracji.
+        Migracja to też dobry moment by zadbać o bezpieczeństwo — po przeniesieniu sprawdź{" "}
+        <Link href="/blog/zawirusowana-strona-wordpress-co-zrobic">czy strona nie nosi śladów wcześniejszego włamania</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/blog/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić?</Link></li>
+          <li><Link href="/blog/wordpress-dziala-wolno-jak-przyspieszyc" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress działa wolno – jak przyspieszyć stronę?</Link></li>
+        </ul>
+      </div>
     </>
   ),
 
@@ -4788,6 +4934,26 @@ define( 'DB_HOST', 'localhost' );</code></pre>
       <p>
         Regularny przegląd listy wtyczek i usuwanie nieużywanych to najlepsza profilaktyka. Reguła: jeśli wtyczka nie była używana od miesiąca — usuń ją, nie tylko dezaktywuj (dezaktywowane wtyczki nadal zajmują miejsce na serwerze i mogą zawierać luki bezpieczeństwa).
       </p>
+      <p>
+        Konflikty wtyczek często objawiają się podobnie jak inne problemy WordPress. Sprawdź też:
+        jeśli widzisz{" "}
+        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">biały ekran</Link> lub{" "}
+        <Link href="/blog/wordpress-blad-500-internal-server-error">błąd 500</Link> — wtyczka to pierwsza rzecz do sprawdzenia.
+        Konflikt może też pojawić się po{" "}
+        <Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic">aktualizacji WordPressa lub wtyczek</Link>.
+        W najgorszym scenariuszu — backdoor w nullowanej wtyczce może prowadzić do{" "}
+        <Link href="/blog/zawirusowana-strona-wordpress-co-zrobic">zawirusowania strony</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
+          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/blog/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić?</Link></li>
+        </ul>
+      </div>
     </>
   ),
 };
