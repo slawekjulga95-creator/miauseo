@@ -184,7 +184,7 @@ export default function HeroSection() {
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in [animation-delay:1200ms]">
         <Link href="#sekret" className="flex flex-col items-center gap-2 text-zinc-400 hover:text-brand transition-colors">
-          <span className="text-xs font-medium tracking-widest uppercase">Scroll</span>
+          <span className="text-xs font-medium tracking-widest uppercase">Przewiń</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-bounce">
             <path d="M12 5v14M5 12l7 7 7-7" />
           </svg>
