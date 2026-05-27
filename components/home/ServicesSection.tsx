@@ -84,7 +84,8 @@ function GBPScoreCTA() {
   return (
     <div className="py-10 bg-surface border-y border-brand/15">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 border-2 border-dashed border-brand/30 rounded-2xl p-8 bg-brand/5">
+        <div className="relative flex flex-col lg:flex-row items-center justify-between gap-8 border-2 border-dashed border-brand/30 rounded-2xl p-8 bg-brand/5">
+          <img src="/logo.png" alt="" aria-hidden="true" className="pointer-events-none select-none absolute top-4 right-5 h-7 w-auto" />
           <div className="flex items-start gap-5">
             <div className="w-14 h-14 rounded-2xl bg-brand/10 text-brand flex items-center justify-center shrink-0">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
