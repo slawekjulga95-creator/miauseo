@@ -9,19 +9,6 @@ const navLinks = [
   { href: "/", label: "Strona główna" },
 ];
 
-const oNasLinks = [
-  {
-    href: "/o-nas/dlaczego-warto",
-    label: "Dlaczego warto",
-    icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="8" r="6" />
-        <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
-      </svg>
-    ),
-  },
-];
-
 const serviceGroups = [
   {
     heading: "Rynek lokalny",
@@ -167,11 +154,8 @@ export default function Navbar() {
   const [progress, setProgress] = useState(0);
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [oNasOpen, setONasOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
-  const [mobileONasOpen, setMobileONasOpen] = useState(false);
   const dropdownRef = useRef<HTMLLIElement>(null);
-  const oNasRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     const onScroll = () => {
@@ -194,15 +178,12 @@ export default function Navbar() {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setDropdownOpen(false);
       }
-      if (oNasRef.current && !oNasRef.current.contains(e.target as Node)) {
-        setONasOpen(false);
-      }
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  useEffect(() => { setDropdownOpen(false); setONasOpen(false); }, [pathname]);
+  useEffect(() => { setDropdownOpen(false); }, [pathname]);
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
@@ -236,44 +217,15 @@ export default function Navbar() {
               </li>
             ))}
 
-            {/* O nas dropdown */}
-            <li
-              ref={oNasRef}
-              className="relative"
-              onMouseEnter={() => setONasOpen(true)}
-              onMouseLeave={() => setONasOpen(false)}
-            >
+            <li>
               <Link
                 href="/o-nas"
-                className={`flex items-center gap-1 px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
-                  pathname.startsWith("/o-nas") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
+                className={`px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
+                  isActive("/o-nas") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
                 }`}
               >
                 O nas
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
-                  className={`transition-transform duration-200 ${oNasOpen ? "rotate-180" : ""}`}>
-                  <polyline points="6 9 12 15 18 9" />
-                </svg>
               </Link>
-              <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-1 w-56 bg-white rounded-2xl shadow-xl border border-border py-2 z-50 transition-all duration-200 origin-top ${
-                oNasOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
-              }`}>
-                {oNasLinks.map((sl) => (
-                  <Link
-                    key={sl.href}
-                    href={sl.href}
-                    onClick={() => setONasOpen(false)}
-                    className={`flex items-center gap-3 px-4 py-2.5 text-sm font-semibold transition-colors duration-100 ${
-                      pathname === sl.href ? "text-brand bg-brand/5" : "text-zinc-700 hover:text-brand hover:bg-surface"
-                    }`}
-                  >
-                    <span className="w-8 h-8 rounded-lg bg-brand/10 text-brand flex items-center justify-center shrink-0">
-                      {sl.icon}
-                    </span>
-                    {sl.label}
-                  </Link>
-                ))}
-              </div>
             </li>
 
             {/* Zakres usług dropdown */}
@@ -347,23 +299,23 @@ export default function Navbar() {
 
             <li>
               <Link
-                href="/blog"
-                className={`px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
-                  isActive("/blog") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
-                }`}
-              >
-                Blog
-              </Link>
-            </li>
-
-            <li>
-              <Link
                 href="/referencje"
                 className={`px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
                   isActive("/referencje") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
                 }`}
               >
                 Referencje
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="/blog"
+                className={`px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
+                  isActive("/blog") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
+                }`}
+              >
+                Blog
               </Link>
             </li>
           </ul>
@@ -427,32 +379,10 @@ export default function Navbar() {
             </Link>
           ))}
 
-          {/* Mobile O nas accordion */}
-          <div className="border-b border-border">
-            <button
-              onClick={() => setMobileONasOpen((v) => !v)}
-              className={`w-full flex items-center justify-between text-2xl font-semibold py-3 transition-colors ${pathname.startsWith("/o-nas") ? "text-brand" : "text-ink"}`}
-            >
-              O nas
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
-                className={`transition-transform duration-200 ${mobileONasOpen ? "rotate-180" : ""}`}>
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </button>
-            {mobileONasOpen && (
-              <div className="pb-3 pl-1 space-y-1">
-                {oNasLinks.map((sl) => (
-                  <Link key={sl.href} href={sl.href} onClick={() => setOpen(false)}
-                    className="flex items-center gap-3 py-2 text-lg text-zinc-500 hover:text-brand transition-colors">
-                    <span className="w-7 h-7 rounded-lg bg-brand/10 text-brand flex items-center justify-center shrink-0">
-                      {sl.icon}
-                    </span>
-                    {sl.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
+          <Link href="/o-nas" onClick={() => setOpen(false)}
+            className={`text-2xl font-semibold py-3 border-b border-border transition-colors duration-150 ${isActive("/o-nas") ? "text-brand" : "text-ink hover:text-brand"}`}>
+            O nas
+          </Link>
 
           {/* Mobile services accordion */}
           <div className="border-b border-border">
@@ -491,14 +421,14 @@ export default function Navbar() {
             FAQ
           </Link>
 
-          <Link href="/blog" onClick={() => setOpen(false)}
-            className={`text-2xl font-semibold py-3 border-b border-border transition-colors duration-150 ${isActive("/blog") ? "text-brand" : "text-ink hover:text-brand"}`}>
-            Blog
-          </Link>
-
           <Link href="/referencje" onClick={() => setOpen(false)}
             className={`text-2xl font-semibold py-3 border-b border-border transition-colors duration-150 ${isActive("/referencje") ? "text-brand" : "text-ink hover:text-brand"}`}>
             Referencje
+          </Link>
+
+          <Link href="/blog" onClick={() => setOpen(false)}
+            className={`text-2xl font-semibold py-3 border-b border-border transition-colors duration-150 ${isActive("/blog") ? "text-brand" : "text-ink hover:text-brand"}`}>
+            Blog
           </Link>
 
           <Link href="/kursy" onClick={() => setOpen(false)}
