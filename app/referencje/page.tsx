@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
+import LightboxImage from "@/components/ui/LightboxImage";
 
 export const metadata: Metadata = {
   title: "Referencje – MiauSEO | Szczere opinie ze współpracy",
@@ -154,23 +155,23 @@ export default function ReferencjePage() {
             </div>
 
             {/* Main 2-col */}
-            <div className={`flex flex-col ${item.reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-12 mb-12`}>
+            <div className={`flex flex-col ${item.reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-12 mb-12 items-center`}>
               {/* Text */}
-              <div className="lg:w-1/2 space-y-5">
+              <div className="lg:w-1/2 flex flex-col justify-center space-y-5">
                 {item.paragraphs.map((p, j) => (
-                  <p key={j} className="text-zinc-600 leading-relaxed text-[15px]">{p}</p>
+                  <p key={j} className="text-zinc-600 leading-relaxed text-[15px] border-l-2 border-brand/20 pl-4">{p}</p>
                 ))}
               </div>
 
               {/* Photo */}
-              <div className="lg:w-1/2">
+              <div className={`lg:w-1/2 ${item.id === "01" ? "lg:w-[55%]" : ""}`}>
                 <div className="relative">
-                  <div className="rounded-2xl overflow-hidden bg-zinc-100 min-h-[280px] flex items-center justify-center">
+                  <div className={`rounded-2xl overflow-hidden bg-zinc-100 flex items-center justify-center ${item.id === "01" ? "min-h-[320px]" : "min-h-[280px]"}`}>
                     {item.photo ? (
-                      <img
+                      <LightboxImage
                         src={item.photo}
                         alt={`Wyniki ${item.company}`}
-                        className="w-full h-full object-cover rounded-2xl"
+                        className="w-full h-full object-contain rounded-2xl"
                       />
                     ) : (
                       <div className="text-center p-8">
@@ -186,6 +187,15 @@ export default function ReferencjePage() {
                     )}
                   </div>
                   <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl bg-brand/15 -z-10" />
+                  {item.photo && (
+                    <div className="absolute bottom-3 right-3 bg-black/50 text-white text-xs px-2.5 py-1 rounded-lg flex items-center gap-1.5 pointer-events-none">
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                      </svg>
+                      Kliknij aby powiększyć
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
