@@ -32,13 +32,13 @@ export default function ProcessSection() {
               Baza wiedzy
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-ink leading-snug mb-4">
-              Ucz się od{" "}
+              Kot nie dzieli się jedzeniem.{" "}
               <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">
-                praktyków.
+                My dzielimy się wiedzą.
               </span>
             </h2>
             <p className="text-zinc-400 text-sm mb-10">
-              Bezpłatne materiały wideo – bez lania wody, tylko konkretna wiedza z kampanii.
+              Bezpłatne materiały wideo bez lania wody. Tylko konkretna wiedza z kampanii, które prowadzimy.
             </p>
 
             <div className="space-y-6">
