@@ -133,10 +133,9 @@ export default function HeroSection() {
                 <ellipse cx="51" cy="30" rx="7" ry="9" fill="white" />
               </svg>
             </span>
+            {" "}agencję.
             <br />
-            doświadczenia.
-            <br />
-            <span className="text-brand">Pora na nowe.</span>
+            <span className="text-brand">Nie każdy efekty.</span>
           </h1>
 
           <p className="text-lg text-zinc-500 leading-relaxed mb-8 animate-fade-up [animation-delay:200ms]">
