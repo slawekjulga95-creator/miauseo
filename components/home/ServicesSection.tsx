@@ -33,7 +33,6 @@ const items = [
     title: ["Zero", " ukrytych kosztów"],
     paragraphs: [
       <>
-      <>
         Kot nigdy nie ukryje, że jest głodny. My też nic nie ukrywamy.{" "}
         <strong className="font-semibold text-ink">Znasz cenę zanim podpiszesz cokolwiek.</strong> Żadnych
         niespodziewanych faktur, ukrytych opłat ani kosztów, o których dowiadujesz się po czasie.
