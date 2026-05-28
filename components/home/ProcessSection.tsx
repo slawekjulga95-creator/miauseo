@@ -58,6 +58,34 @@ export default function ProcessSection() {
               ))}
             </div>
 
+            {/* Dashed arrows pointing to video */}
+            <div className="hidden lg:flex flex-col gap-1.5 my-8 overflow-hidden">
+              {[0, 1, 2].map((i) => (
+                <svg key={i} width="100%" height="20" viewBox="0 0 340 20" preserveAspectRatio="none" className="w-full">
+                  <line
+                    x1={i * 28}
+                    y1="10"
+                    x2="318"
+                    y2="10"
+                    stroke="#FF6A00"
+                    strokeWidth="2"
+                    strokeDasharray="10 6"
+                    strokeLinecap="round"
+                    opacity={0.35 + i * 0.2}
+                  />
+                  <polyline
+                    points="312,4 324,10 312,16"
+                    stroke="#FF6A00"
+                    strokeWidth="2"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    opacity={0.35 + i * 0.2}
+                  />
+                </svg>
+              ))}
+            </div>
+
             <a
               href="https://www.youtube.com/@miauseo"
               target="_blank"
