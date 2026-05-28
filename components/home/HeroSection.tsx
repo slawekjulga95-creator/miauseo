@@ -143,7 +143,7 @@ export default function HeroSection() {
             <br />
             Tak samo z klientami.
             <br />
-            Nie obiecujemy. Pokazujemy. Konkretne działania, realne wyniki, zero ściemy.
+            Nie obiecujemy. Pokazujemy. Konkretne działania, realne wyniki, <strong className="font-semibold text-ink">zero ściemy.</strong>
           </p>
 
           <Link
