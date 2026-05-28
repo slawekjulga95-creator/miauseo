@@ -59,20 +59,20 @@ const items = [
     title: ["Cykliczny", " kontakt"],
     paragraphs: [
       <>
-        Masz dedykowanego opiekuna, do którego możesz napisać lub zadzwonić.{" "}
-        <strong className="font-semibold text-ink">Nie przeskakujesz między konsultantami</strong>,
-        nie tłumaczysz swojej sytuacji od nowa przy każdym kontakcie.
+        Koty mają swojego człowieka. Ty też masz swojego opiekuna.{" "}
+        <strong className="font-semibold text-ink">Jeden kontakt, jedno numer, jedna osoba</strong> która
+        zna Twoją sytuację od pierwszej rozmowy. Bez przerzucania między konsultantami i tłumaczenia
+        wszystkiego od nowa.
       </>,
       <>
-        Co tydzień raport z wyników. Co miesiąc omówienie strategii i planów na kolejny okres.
-        Żadnego <strong className="font-semibold text-ink">czekania tygodniami</strong> na odpowiedź
-        i żadnych ogólnych podsumowań — tylko{" "}
-        <strong className="font-semibold text-ink">konkretne liczby i wnioski</strong>.
+        Raporty nie są po to, żeby zaśmiecić skrzynkę.{" "}
+        <strong className="font-semibold text-ink">Dostajesz konkretne liczby i wnioski</strong> — co
+        zadziałało, co nie i co robimy dalej. Żadnych ogólnikowych podsumowań, które nic nie mówią.
       </>,
       <>
-        Jeśli coś się zmienia w algorytmie Google albo pojawia się szansa do wykorzystania —{" "}
-        <strong className="font-semibold text-ink">informujemy Cię jako pierwsi</strong>, nie czekamy
-        aż sam zapytasz. Proaktywna komunikacja to nasz standard.
+        Zmiana w algorytmie Google, nowa szansa do wykorzystania, coś wartego Twojej uwagi?{" "}
+        <strong className="font-semibold text-ink">Piszemy pierwsi</strong>. Nie czekamy aż zapytasz.
+        To nie jest standard w branży. U nas jest.
       </>,
     ],
     photo: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80&fit=crop&crop=center",
