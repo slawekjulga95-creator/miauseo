@@ -98,7 +98,8 @@ export default function ProblemSection() {
             </span>
           </h2>
           <p className="text-zinc-500 mt-4 max-w-xl mx-auto">
-            To najczestsze problemy z wizytowka Google, przez ktore tracisz klientow kazdego dnia.
+            To najczęstsze problemy z wizytówką Google, przez które{" "}
+            <strong className="font-semibold text-ink">tracisz klientów każdego dnia.</strong>
           </p>
         </ScrollReveal>
 
