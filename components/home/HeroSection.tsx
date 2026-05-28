@@ -139,10 +139,8 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-lg text-zinc-500 leading-relaxed mb-8 animate-fade-up [animation-delay:200ms]">
-            Kot wyczuje tabletkę w jedzeniu z kilometra –{" "}
-            <strong className="font-semibold text-ink">zaufania nie da się odbudować</strong>, gdy raz zawiedzie.
-            Żadnych sztuczek, żadnych obietnic bez pokrycia – tylko{" "}
-            <strong className="font-semibold text-ink">realni klienci z Twojej okolicy</strong>.
+            <strong className="font-semibold text-ink">Zaufanie kota zdobywa się latami. Traci w sekundę.</strong>{" "}
+            Tak samo z klientami. Dlatego nie obiecujemy. Pokazujemy. Konkretne działania, realne wyniki, zero ściemy.
           </p>
 
           <Link
