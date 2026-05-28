@@ -184,7 +184,7 @@ export default function HeroSection() {
               </div>
               <div>
                 <p className="text-sm font-bold text-ink">Elastyczna umowa</p>
-                <p className="text-xs text-zinc-400 mt-0.5">Miesiąc do miesiąca.</p>
+                <p className="text-xs text-zinc-400 mt-0.5">Specjalne warianty.</p>
               </div>
             </div>
           </div>
