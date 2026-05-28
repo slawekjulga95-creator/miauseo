@@ -58,39 +58,11 @@ export default function ProcessSection() {
               ))}
             </div>
 
-            {/* Dashed arrows pointing to video */}
-            <div className="hidden lg:flex flex-col items-center gap-2 my-8">
-              {[0, 1, 2].map((i) => (
-                <svg key={i} width="260" height="18" viewBox="0 0 260 18">
-                  <line
-                    x1={i * 20}
-                    y1="9"
-                    x2="242"
-                    y2="9"
-                    stroke="#FF6A00"
-                    strokeWidth="2"
-                    strokeDasharray="10 6"
-                    strokeLinecap="round"
-                    opacity={0.3 + i * 0.25}
-                  />
-                  <polyline
-                    points="236,3 248,9 236,15"
-                    stroke="#FF6A00"
-                    strokeWidth="2"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    opacity={0.3 + i * 0.25}
-                  />
-                </svg>
-              ))}
-            </div>
-
             <a
               href="https://www.youtube.com/@miauseo"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 mt-10 bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3.5 rounded-xl transition-colors duration-200 text-sm"
+              className="inline-flex items-center gap-2.5 mt-8 bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3.5 rounded-xl transition-colors duration-200 text-sm"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="#FF6A00">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -100,6 +72,16 @@ export default function ProcessSection() {
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </a>
+
+            {/* Dashed arrows pointing to video */}
+            <div className="hidden lg:flex flex-col items-center gap-2 mt-8">
+              {[0, 1, 2].map((i) => (
+                <svg key={i} width="260" height="18" viewBox="0 0 260 18">
+                  <line x1={i * 20} y1="9" x2="242" y2="9" stroke="#FF6A00" strokeWidth="2" strokeDasharray="10 6" strokeLinecap="round" opacity={0.3 + i * 0.25} />
+                  <polyline points="236,3 248,9 236,15" stroke="#FF6A00" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={0.3 + i * 0.25} />
+                </svg>
+              ))}
+            </div>
           </ScrollReveal>
 
           {/* Right – YouTube embed placeholder */}
