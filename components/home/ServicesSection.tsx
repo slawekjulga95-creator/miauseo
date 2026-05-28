@@ -7,20 +7,20 @@ const items = [
     title: ["Elastyczna", " umowa"],
     paragraphs: [
       <>
-        Nie wierzymy w <strong className="font-semibold text-ink">wieloletnie kontrakty</strong>, które
-        trzymają Cię przy agencji bez względu na wyniki. U nas działamy w modelu{" "}
-        <strong className="font-semibold text-ink">miesiąc do miesiąca</strong> — możesz zakończyć
-        współpracę w każdej chwili, bez kar umownych i bez wyjaśnień.
+        Kot nie da się przekonać na siłę. Zaufanie buduje się powoli, na własnych zasadach.
+        Dlatego przygotowaliśmy <strong className="font-semibold text-ink">specjalne warianty współpracy</strong>,
+        dzięki którym nie musisz od razu wiązać się na 12 miesięcy lub dłużej. Zacznij od mniejszego kroku.
       </>,
       <>
-        To my musimy <strong className="font-semibold text-ink">zasłużyć na Twoje zaufanie</strong> każdego
-        miesiąca. Właśnie dlatego skupiamy się na wynikach, a nie na utrzymaniu klienta przy pomocy
-        biurokratycznych zapisów.
+        Najpierw <strong className="font-semibold text-ink">poznajmy się</strong>. Zobaczysz jak pracujemy,
+        co raportujemy i jakie wyniki potrafimy osiągać. Jeśli poczujesz, że warto, rozszerzymy współpracę.
+        Jeśli nie, rozstajemy się bez żalu i{" "}
+        <strong className="font-semibold text-ink">bez kar umownych</strong>.
       </>,
       <>
-        Elastyczność to też <strong className="font-semibold text-ink">skalowalność</strong> — możesz
-        zwiększyć zakres współpracy gdy wyniki rosną, albo przyhamować gdy sezon zwalnia.{" "}
-        <strong className="font-semibold text-ink">Ty decydujesz</strong>.
+        Elastyczność to też <strong className="font-semibold text-ink">skalowalność</strong>. Gdy wyniki rosną,
+        zwiększamy zakres. Gdy sezon zwalnia, przyhamujesz.{" "}
+        <strong className="font-semibold text-ink">Ty decydujesz</strong>, my dowozimy.
       </>,
     ],
     photo: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80&fit=crop&crop=center",
