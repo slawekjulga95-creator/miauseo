@@ -33,18 +33,21 @@ const items = [
     title: ["Zero", " ukrytych kosztów"],
     paragraphs: [
       <>
-        Znasz cenę zanim podpiszesz umowę. Żadnych <strong className="font-semibold text-ink">niespodziewanych faktur</strong>,
-        ukrytych opłat za raportowanie ani dodatkowych kosztów za narzędzia, których używamy po
-        naszej stronie.
+      <>
+        Kot nigdy nie ukryje, że jest głodny. My też nic nie ukrywamy.{" "}
+        <strong className="font-semibold text-ink">Znasz cenę zanim podpiszesz cokolwiek.</strong> Żadnych
+        niespodziewanych faktur, ukrytych opłat ani kosztów, o których dowiadujesz się po czasie.
       </>,
       <>
-        Każda złotówka jest opisana. Wiesz dokładnie{" "}
-        <strong className="font-semibold text-ink">ile płacisz za obsługę</strong>, ile idzie na budżet
-        reklamowy i co z tego wychodzi. <strong className="font-semibold text-ink">Pełna przejrzystość</strong> — bez domysłów.
+        Masz pytanie, dzwonisz. Chcesz wiedzieć co się dzieje z budżetem, piszesz.{" "}
+        <strong className="font-semibold text-ink">Odpowiadamy szybko i mówimy wprost.</strong> Bez agencyjnego
+        żargonu, bez czekania tygodniami na raport. Jesteś w kontakcie z człowiekiem, który faktycznie
+        prowadzi Twoje konto.
       </>,
       <>
-        Dostęp do kont reklamowych masz <strong className="font-semibold text-ink">zawsze po Twojej stronie</strong>.
-        Konta należą do Ciebie — nie do agencji. Jeśli zdecydujesz się odejść, zabierasz wszystko ze sobą.
+        Konta reklamowe należą do Ciebie, nie do nas.{" "}
+        <strong className="font-semibold text-ink">Dostęp masz zawsze, do wszystkiego.</strong> Jeśli
+        odejdziesz, zabierasz historię kampanii, dane i wyniki. Zero uzależnienia od agencji.
       </>,
     ],
     photo: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80&fit=crop&crop=center",
