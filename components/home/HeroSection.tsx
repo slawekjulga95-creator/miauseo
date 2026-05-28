@@ -139,7 +139,8 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-lg text-zinc-500 leading-relaxed mb-8 animate-fade-up [animation-delay:200ms]">
-            <strong className="font-semibold text-ink">Zaufanie kota zdobywa się latami. Traci w sekundę.</strong>{" "}
+            <strong className="font-semibold text-ink">Zaufanie kota zdobywa się latami. Traci w sekundę.</strong>
+            <br />
             Tak samo z klientami. Dlatego nie obiecujemy. Pokazujemy. Konkretne działania, realne wyniki, zero ściemy.
           </p>
 
