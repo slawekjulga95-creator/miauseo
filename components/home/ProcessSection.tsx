@@ -59,28 +59,28 @@ export default function ProcessSection() {
             </div>
 
             {/* Dashed arrows pointing to video */}
-            <div className="hidden lg:flex flex-col gap-1.5 my-8 overflow-hidden">
+            <div className="hidden lg:flex flex-col items-center gap-2 my-8">
               {[0, 1, 2].map((i) => (
-                <svg key={i} width="100%" height="20" viewBox="0 0 340 20" preserveAspectRatio="none" className="w-full">
+                <svg key={i} width="260" height="18" viewBox="0 0 260 18">
                   <line
-                    x1={i * 28}
-                    y1="10"
-                    x2="318"
-                    y2="10"
+                    x1={i * 20}
+                    y1="9"
+                    x2="242"
+                    y2="9"
                     stroke="#FF6A00"
                     strokeWidth="2"
                     strokeDasharray="10 6"
                     strokeLinecap="round"
-                    opacity={0.35 + i * 0.2}
+                    opacity={0.3 + i * 0.25}
                   />
                   <polyline
-                    points="312,4 324,10 312,16"
+                    points="236,3 248,9 236,15"
                     stroke="#FF6A00"
                     strokeWidth="2"
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    opacity={0.35 + i * 0.2}
+                    opacity={0.3 + i * 0.25}
                   />
                 </svg>
               ))}
