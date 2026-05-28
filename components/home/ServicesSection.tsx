@@ -72,7 +72,7 @@ const items = [
       <>
         Zmiana w algorytmie Google, nowa szansa do wykorzystania, coś wartego Twojej uwagi?{" "}
         <strong className="font-semibold text-ink">Piszemy pierwsi</strong>. Nie czekamy aż zapytasz.
-        To nie jest standard w branży. U nas jest.
+        To nie jest standard w branży.
       </>,
     ],
     photo: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80&fit=crop&crop=center",
