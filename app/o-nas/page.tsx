@@ -36,44 +36,45 @@ export default function ONasPage() {
     <main className="pt-20">
 
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden bg-white py-20 px-6">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
         <CatWatermark />
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-20">
-            {/* Left — heading */}
-            <div className="lg:w-5/12 shrink-0">
-              <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">O firmie</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-ink leading-tight mb-8">
-                <span className="bg-brand text-white px-2 py-0.5 rounded-md">Poznaj</span> ludzi<br />
-                <span className="text-brand">za MiauSEO.</span>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">O firmie</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
+                Poznaj ludzi za MiauSEO.{" "}
+                <span className="text-brand">11 lat w marketingu lokalnym.</span>
               </h1>
+              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
+                Nazwa MiauSEO nie jest przypadkowa. Pochodzi z zamiłowania do kotów — zwierząt niezależnych, inteligentnych i odpornych na sztuczki. Dokładnie tak podchodzimy do pracy z klientami: żadnych trików, tylko realne wyniki.
+              </p>
               <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/kontakt"
-                  className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200"
-                >
+                <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
                   Porozmawiajmy o Twoim biznesie
                 </Link>
-                <Link
-                  href="/uslugi/wizytowka-google"
-                  className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200"
-                >
+                <Link href="/uslugi/wizytowka-google" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
                   Sprawdź ofertę
                 </Link>
               </div>
             </div>
-
-            {/* Right — text */}
-            <div className="lg:w-7/12 space-y-5 text-zinc-600 text-[17px] leading-relaxed border-l-0 lg:border-l-2 lg:border-brand/20 lg:pl-14">
-              <p>
-                Nazwa MiauSEO nie jest przypadkowa. Pochodzi z <strong className="text-ink font-semibold">zamiłowania do kotów</strong> — zwierząt niezależnych, inteligentnych i odpornych na sztuczki. Dokładnie tak podchodzimy do pracy z klientami: żadnych trików, tylko realne wyniki.
-              </p>
-              <p>
-                Mam za sobą <strong className="text-ink font-semibold">11 lat doświadczenia w marketingu lokalnym</strong> i kampaniach reklamowych. Przez ten czas pracowałem z setkami firm — od jednoosobowych działalności po rozbudowane sieci lokalizacji.
-              </p>
-              <p>
-                Najważniejsza jest dla mnie <strong className="text-ink font-semibold">rozmowa o Twojej firmie</strong> — zanim cokolwiek zaproponuję. Każdy biznes jest inny i każda współpraca zaczyna się od zrozumienia, gdzie jesteś teraz i dokąd chcesz dotrzeć.
-              </p>
+            <div className="bg-surface rounded-3xl p-8 border border-border">
+              <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-6">Dlaczego MiauSEO?</p>
+              <div className="space-y-5">
+                {[
+                  { bold: "11 lat doświadczenia", rest: " w marketingu lokalnym i kampaniach reklamowych. Setki firm, od jednoosobowych po sieci lokalizacji." },
+                  { bold: "Żadnych rocznych umów", rest: " — współpraca miesiąc do miesiąca. Efekty albo rezygnujesz. Proste zasady." },
+                  { bold: "Rozmowa przed ofertą", rest: " — najpierw rozumiem Twój biznes, potem proponuję rozwiązanie. Nie odwrotnie." },
+                  { bold: "Pełna transparentność", rest: " — wiesz za co płacisz, co robimy i jakie wyniki to przynosi. Bez marketingowego języka." },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-3 items-start">
+                    <div className="shrink-0 w-5 h-5 rounded-full bg-brand/10 flex items-center justify-center mt-0.5">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <p className="text-sm text-zinc-600 leading-relaxed"><strong className="text-ink">{item.bold}</strong>{item.rest}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
