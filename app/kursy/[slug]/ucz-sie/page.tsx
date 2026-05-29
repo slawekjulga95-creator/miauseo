@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import LessonPlayer from "@/components/kursy/LessonPlayer";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -10,16 +11,18 @@ export default async function UczSiePage({ params }: Props) {
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect(`/logowanie?next=/kursy/${slug}/ucz-sie`);
 
-  const { data: course, error: courseError } = await supabase
+  const { data: course } = await supabase
     .from("courses")
     .select("id, title, slug")
     .eq("slug", slug)
     .single();
 
+  if (!course) return <div className="p-10">Nie znaleziono kursu.</div>;
+
   const { data: lessons } = await supabase
     .from("lessons")
     .select("*")
-    .eq("course_id", course?.id ?? "")
+    .eq("course_id", course.id)
     .order("order");
 
   const { data: purchase } = await supabase
@@ -28,14 +31,27 @@ export default async function UczSiePage({ params }: Props) {
     .eq("user_id", user.id)
     .maybeSingle();
 
+  if (!purchase) redirect(`/kursy/${slug}`);
+
+  if (!lessons || lessons.length === 0) {
+    return <div className="p-10">Kurs nie ma jeszcze lekcji.</div>;
+  }
+
+  const { data: progress } = await supabase
+    .from("lesson_progress")
+    .select("lesson_id")
+    .eq("user_id", user.id);
+
+  const completedIds = new Set(progress?.map((p: { lesson_id: string }) => p.lesson_id) ?? []);
+  const firstIncomplete = lessons.find((l: { id: string }) => !completedIds.has(l.id)) ?? lessons[0];
+
   return (
-    <div className="p-10">
-      <h1 className="text-2xl font-bold mb-4">Debug</h1>
-      <p>User: {user.email}</p>
-      <p>Slug: {slug}</p>
-      <p>Course: {course ? course.title : `BRAK (${courseError?.message})`}</p>
-      <p>Lekcje: {lessons?.length ?? 0}</p>
-      <p>Purchase: {purchase ? "TAK" : "BRAK"}</p>
-    </div>
+    <LessonPlayer
+      course={course}
+      lessons={lessons}
+      currentLesson={firstIncomplete}
+      completedIds={Array.from(completedIds) as string[]}
+      userId={user.id}
+    />
   );
 }
