@@ -21,34 +21,46 @@ export default function PytaniaPage() {
   return (
     <main className="pt-24 pb-24">
       {/* Hero */}
-      <section className="bg-white py-16 px-6 border-b border-border relative overflow-hidden">
+      <section className="py-24 px-6 bg-white relative overflow-hidden border-b border-border">
         <CatWatermark />
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row lg:items-end gap-8 lg:gap-20">
-          <div className="lg:w-1/2">
-            <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">Baza wiedzy</p>
-            <h1 className="text-4xl md:text-5xl font-bold text-ink leading-tight mb-5">
-              <span className="bg-brand text-white px-2 py-0.5 rounded-md">Najczęstsze</span> pytania<br />
-              <span className="text-brand">o wizytówkę Google</span>
-            </h1>
-            <p className="text-zinc-500 text-lg leading-relaxed">
-              50 pytań, które klienci wpisują w Google. Klikaj w każde — trafiasz do pełnej odpowiedzi. Nowe wpisy dodajemy regularnie.
-            </p>
-          </div>
-          {/* Stats */}
-          <div className="lg:w-1/2 grid grid-cols-3 gap-4">
-            {categories.map((cat) => {
-              const c = colorMap[cat.color];
-              const count = questions.filter((q) => q.categoryId === cat.id).length;
-              return (
-                <div key={cat.id} className="bg-surface rounded-2xl p-4 text-center">
-                  <p className="text-2xl font-bold text-ink">{count}</p>
-                  <p className={`text-xs font-semibold mt-1 px-2 py-0.5 rounded-full inline-block ${c.badge}`}>{cat.badge}</p>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">Baza wiedzy</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
+                Najczęstsze pytania o wizytówkę Google.{" "}
+                <span className="text-brand">Konkretne odpowiedzi.</span>
+              </h1>
+              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
+                50 pytań, które klienci wpisują w Google. Klikaj w każde — trafiasz do pełnej odpowiedzi. Nowe wpisy dodajemy regularnie.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
+                  Bezpłatna konsultacja
+                </Link>
+                <Link href="#pytania" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
+                  Przeglądaj pytania
+                </Link>
+              </div>
+            </div>
+            <div className="bg-surface rounded-3xl p-8 border border-border">
+              <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-6">Tematy w bazie wiedzy</p>
+              <div className="grid grid-cols-2 gap-3">
+                {categories.map((cat) => {
+                  const c = colorMap[cat.color];
+                  const count = questions.filter((q) => q.categoryId === cat.id).length;
+                  return (
+                    <div key={cat.id} className="bg-white rounded-2xl p-4 border border-border text-center">
+                      <p className="text-2xl font-bold text-ink">{count}</p>
+                      <p className={`text-xs font-semibold mt-1 px-2 py-0.5 rounded-full inline-block ${c.badge}`}>{cat.badge}</p>
+                    </div>
+                  );
+                })}
+                <div className="bg-ink rounded-2xl p-4 border border-ink text-center">
+                  <p className="text-2xl font-bold text-white">50</p>
+                  <p className="text-xs font-semibold mt-1 px-2 py-0.5 rounded-full inline-block bg-white/10 text-white">Razem</p>
                 </div>
-              );
-            })}
-            <div className="bg-ink rounded-2xl p-4 text-center">
-              <p className="text-2xl font-bold text-white">50</p>
-              <p className="text-xs font-semibold mt-1 px-2 py-0.5 rounded-full inline-block bg-white/10 text-white">Razem</p>
+              </div>
             </div>
           </div>
         </div>
