@@ -85,7 +85,7 @@ export default function BlogFilter({ posts }: { posts: Post[] }) {
               {filtered.map((post) => (
                 <Link
                   key={post.slug}
-                  href={`/blog/${post.slug}`}
+                  href={`/${post.slug}`}
                   className="group flex flex-col bg-white border border-border rounded-2xl overflow-hidden hover:border-brand/30 hover:shadow-lg transition-all duration-200"
                 >
                   <div className="relative w-full aspect-[3/2] overflow-hidden bg-zinc-100 shrink-0">

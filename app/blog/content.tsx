@@ -51,18 +51,18 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
       <p>
         Więcej o tym, jak kategoria wpływa na cały algorytm rankingowy, przeczytasz w artykule{" "}
-        <Link href="/blog/czynniki-rankingowe-wizytowki-google-2026">czynniki rankingowe wizytówki Google w 2026</Link>.
+        <Link href="/czynniki-rankingowe-wizytowki-google-2026">czynniki rankingowe wizytówki Google w 2026</Link>.
         Jeśli dopiero tworzysz wizytówkę lub konfigurujesz ją od nowa, sprawdź też{" "}
-        <Link href="/blog/sekcja-informacje-wizytowka-google">kompletny przewodnik po sekcji Informacje w GBP</Link>, żeby nie pominąć żadnego ważnego pola.
+        <Link href="/sekcja-informacje-wizytowka-google">kompletny przewodnik po sekcji Informacje w GBP</Link>, żeby nie pominąć żadnego ważnego pola.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
-          <li><Link href="/blog/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
-          <li><Link href="/blog/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026</Link></li>
-          <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
+          <li><Link href="/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
+          <li><Link href="/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
+          <li><Link href="/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026</Link></li>
+          <li><Link href="/jak-pozycjonowac-wizytowke-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
         </ul>
       </div>
     </>
@@ -126,18 +126,18 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
       <p>
         Godziny otwarcia są jednym z elementów omówionych szczegółowo w{" "}
-        <Link href="/blog/sekcja-informacje-wizytowka-google">kompletnym przewodniku po sekcji Informacje w GBP</Link>.
+        <Link href="/sekcja-informacje-wizytowka-google">kompletnym przewodniku po sekcji Informacje w GBP</Link>.
         Warto też uzupełnić{" "}
-        <Link href="/blog/atrybuty-wizytowka-google">atrybuty wizytówki</Link>, które informują klientów o dostępnych udogodnieniach — często decydują o tym, czy klient w ogóle odwiedzi firmę.
+        <Link href="/atrybuty-wizytowka-google">atrybuty wizytówki</Link>, które informują klientów o dostępnych udogodnieniach — często decydują o tym, czy klient w ogóle odwiedzi firmę.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
-          <li><Link href="/blog/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
-          <li><Link href="/blog/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026</Link></li>
-          <li><Link href="/blog/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak skonfigurować?</Link></li>
+          <li><Link href="/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
+          <li><Link href="/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
+          <li><Link href="/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026</Link></li>
+          <li><Link href="/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak skonfigurować?</Link></li>
         </ul>
       </div>
     </>
@@ -172,7 +172,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       <h2>Jak dodać atrybuty do wizytówki Google?</h2>
       <p>
         W panelu GBP (business.google.com) przejdź do sekcji <strong>Informacje → Atrybuty</strong>. Lista dostępnych atrybutów zależy od wybranej kategorii głównej — to kolejny powód, dla którego{" "}
-        <Link href="/blog/kategorie-wizytowka-google">właściwy wybór kategorii</Link> jest tak ważny.
+        <Link href="/kategorie-wizytowka-google">właściwy wybór kategorii</Link> jest tak ważny.
       </p>
       <p>
         Atrybuty dzielą się na dwa typy:
@@ -197,18 +197,18 @@ export const articleContent: Record<string, React.ReactNode> = {
       </ul>
       <p>
         Atrybuty to jedno z pól omówionych w{" "}
-        <Link href="/blog/sekcja-informacje-wizytowka-google">pełnym przewodniku po sekcji Informacje GBP</Link>.
+        <Link href="/sekcja-informacje-wizytowka-google">pełnym przewodniku po sekcji Informacje GBP</Link>.
         Jeśli dopiero uzupełniasz wizytówkę,{" "}
-        <Link href="/blog/godziny-otwarcia-wizytowka-google">ustaw też poprawnie godziny otwarcia</Link> — to kolejny element, który klienci sprawdzają przed wizytą.
+        <Link href="/godziny-otwarcia-wizytowka-google">ustaw też poprawnie godziny otwarcia</Link> — to kolejny element, który klienci sprawdzają przed wizytą.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
-          <li><Link href="/blog/godziny-otwarcia-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Godziny otwarcia w wizytówce Google – jak ustawić poprawnie?</Link></li>
-          <li><Link href="/blog/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
-          <li><Link href="/blog/uslugi-wizytowka-google-business" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Usługi w wizytówce Google Business Profile</Link></li>
+          <li><Link href="/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
+          <li><Link href="/godziny-otwarcia-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Godziny otwarcia w wizytówce Google – jak ustawić poprawnie?</Link></li>
+          <li><Link href="/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
+          <li><Link href="/uslugi-wizytowka-google-business" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Usługi w wizytówce Google Business Profile</Link></li>
         </ul>
       </div>
     </>
@@ -267,18 +267,18 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
       <p>
         Więcej o katalogu produktów znajdziesz w artykule{" "}
-        <Link href="/blog/produkty-wizytowka-google-business">Produkty w wizytówce Google Business Profile</Link>.
+        <Link href="/produkty-wizytowka-google-business">Produkty w wizytówce Google Business Profile</Link>.
         Pamiętaj też o{" "}
-        <Link href="/blog/opis-firmy-google-business-profile-jak-napisac">opisie firmy</Link> — sekcja Usługi go nie zastępuje, oba elementy pełnią różne funkcje.
+        <Link href="/opis-firmy-google-business-profile-jak-napisac">opisie firmy</Link> — sekcja Usługi go nie zastępuje, oba elementy pełnią różne funkcje.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/produkty-wizytowka-google-business" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Produkty w wizytówce Google Business Profile</Link></li>
-          <li><Link href="/blog/opis-firmy-google-business-profile-jak-napisac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opis firmy w Google Business Profile – jak napisać go skutecznie?</Link></li>
-          <li><Link href="/blog/posty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Google Posts – jak tworzyć posty w wizytówce?</Link></li>
-          <li><Link href="/blog/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
+          <li><Link href="/produkty-wizytowka-google-business" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Produkty w wizytówce Google Business Profile</Link></li>
+          <li><Link href="/opis-firmy-google-business-profile-jak-napisac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opis firmy w Google Business Profile – jak napisać go skutecznie?</Link></li>
+          <li><Link href="/posty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Google Posts – jak tworzyć posty w wizytówce?</Link></li>
+          <li><Link href="/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
         </ul>
       </div>
     </>
@@ -327,20 +327,20 @@ export const articleContent: Record<string, React.ReactNode> = {
       <h2>Google Posts a inne elementy wizytówki</h2>
       <p>
         Posty świetnie współpracują z innymi elementami GBP. Ofertę możesz powiązać z{" "}
-        <Link href="/blog/uslugi-wizytowka-google-business">konkretną usługą z sekcji Usługi</Link>.
+        <Link href="/uslugi-wizytowka-google-business">konkretną usługą z sekcji Usługi</Link>.
         Aktualności możesz pisać odpowiadając na{" "}
-        <Link href="/blog/pytania-odpowiedzi-wizytowka-google">najczęstsze pytania z sekcji Q&A</Link>.
+        <Link href="/pytania-odpowiedzi-wizytowka-google">najczęstsze pytania z sekcji Q&A</Link>.
         Zdjęcia w postach wzmacniają efekt{" "}
-        <Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja">profesjonalnych zdjęć w wizytówce</Link>.
+        <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">profesjonalnych zdjęć w wizytówce</Link>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/uslugi-wizytowka-google-business" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Usługi w wizytówce Google Business Profile</Link></li>
-          <li><Link href="/blog/pytania-odpowiedzi-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Q&A w wizytówce Google – jak zarządzać pytaniami?</Link></li>
-          <li><Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zdjęcia w wizytówce Google – które wpływają na pozycję?</Link></li>
-          <li><Link href="/blog/opinie-google-jak-zdobywac-skutecznie" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opinie w Google – jak zbierać bez nachalnego proszenia?</Link></li>
+          <li><Link href="/uslugi-wizytowka-google-business" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Usługi w wizytówce Google Business Profile</Link></li>
+          <li><Link href="/pytania-odpowiedzi-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Q&A w wizytówce Google – jak zarządzać pytaniami?</Link></li>
+          <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zdjęcia w wizytówce Google – które wpływają na pozycję?</Link></li>
+          <li><Link href="/opinie-google-jak-zdobywac-skutecznie" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opinie w Google – jak zbierać bez nachalnego proszenia?</Link></li>
         </ul>
       </div>
     </>
@@ -392,17 +392,17 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
       <p>
         Sekcja Q&A działa podobnie do{" "}
-        <Link href="/blog/negatywna-opinia-google-co-zrobic">obsługi negatywnych opinii</Link> — w obu przypadkach publiczna, spokojna odpowiedź właściciela robi lepsze wrażenie niż brak reakcji. Zarządzanie Q&A jest też częścią aktywności w GBP, która wpływa na sygnały{" "}
-        <Link href="/blog/czynniki-rankingowe-wizytowki-google-2026">rankingowe wizytówki</Link>.
+        <Link href="/negatywna-opinia-google-co-zrobic">obsługi negatywnych opinii</Link> — w obu przypadkach publiczna, spokojna odpowiedź właściciela robi lepsze wrażenie niż brak reakcji. Zarządzanie Q&A jest też częścią aktywności w GBP, która wpływa na sygnały{" "}
+        <Link href="/czynniki-rankingowe-wizytowki-google-2026">rankingowe wizytówki</Link>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/posty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Google Posts – jak tworzyć posty w wizytówce?</Link></li>
-          <li><Link href="/blog/negatywna-opinia-google-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Dostałem negatywną opinię na wizytówce – co teraz?</Link></li>
-          <li><Link href="/blog/opinie-google-jak-zdobywac-skutecznie" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opinie w Google – jak zbierać bez nachalnego proszenia?</Link></li>
-          <li><Link href="/blog/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026</Link></li>
+          <li><Link href="/posty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Google Posts – jak tworzyć posty w wizytówce?</Link></li>
+          <li><Link href="/negatywna-opinia-google-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Dostałem negatywną opinię na wizytówce – co teraz?</Link></li>
+          <li><Link href="/opinie-google-jak-zdobywac-skutecznie" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opinie w Google – jak zbierać bez nachalnego proszenia?</Link></li>
+          <li><Link href="/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026</Link></li>
         </ul>
       </div>
     </>
@@ -429,7 +429,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       </ul>
       <p>
         Firmy usługowe bez fizycznych produktów powinny korzystać z{" "}
-        <Link href="/blog/uslugi-wizytowka-google-business">sekcji Usługi</Link>, a nie Produkty.
+        <Link href="/uslugi-wizytowka-google-business">sekcji Usługi</Link>, a nie Produkty.
       </p>
 
       <h2>Jak dodać produkty do wizytówki Google?</h2>
@@ -462,17 +462,17 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
       <p>
         Zarządzanie produktami warto połączyć z regularnymi{" "}
-        <Link href="/blog/posty-wizytowka-google">Google Posts o nowościach i promocjach</Link>.
+        <Link href="/posty-wizytowka-google">Google Posts o nowościach i promocjach</Link>.
         Nowy produkt w katalogu + post o jego premierze to podwójny sygnał aktywności dla algorytmu Google.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/uslugi-wizytowka-google-business" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Usługi w wizytówce Google Business Profile</Link></li>
-          <li><Link href="/blog/posty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Google Posts – jak tworzyć posty w wizytówce?</Link></li>
-          <li><Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zdjęcia w wizytówce Google – które wpływają na pozycję?</Link></li>
-          <li><Link href="/blog/opis-firmy-google-business-profile-jak-napisac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opis firmy w Google Business Profile – jak napisać skutecznie?</Link></li>
+          <li><Link href="/uslugi-wizytowka-google-business" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Usługi w wizytówce Google Business Profile</Link></li>
+          <li><Link href="/posty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Google Posts – jak tworzyć posty w wizytówce?</Link></li>
+          <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zdjęcia w wizytówce Google – które wpływają na pozycję?</Link></li>
+          <li><Link href="/opis-firmy-google-business-profile-jak-napisac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opis firmy w Google Business Profile – jak napisać skutecznie?</Link></li>
         </ul>
       </div>
     </>
@@ -536,22 +536,22 @@ export const articleContent: Record<string, React.ReactNode> = {
       <h2>Co po weryfikacji?</h2>
       <p>
         Po weryfikacji wizytówka staje się widoczna w wynikach lokalnych. Teraz czas na optymalizację: uzupełnij{" "}
-        <Link href="/blog/sekcja-informacje-wizytowka-google">wszystkie pola sekcji Informacje</Link>,
+        <Link href="/sekcja-informacje-wizytowka-google">wszystkie pola sekcji Informacje</Link>,
         dodaj{" "}
-        <Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja">profesjonalne zdjęcia</Link>,
+        <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">profesjonalne zdjęcia</Link>,
         skonfiguruj{" "}
-        <Link href="/blog/kategorie-wizytowka-google">właściwe kategorie</Link> i zacznij zbierać opinie.
+        <Link href="/kategorie-wizytowka-google">właściwe kategorie</Link> i zacznij zbierać opinie.
         Jeśli kiedyś stracisz dostęp do wizytówki, sprawdź{" "}
-        <Link href="/blog/jak-odzyskac-dostep-do-wizytowki-google">jak odzyskać dostęp do wizytówki Google</Link>.
+        <Link href="/jak-odzyskac-dostep-do-wizytowki-google">jak odzyskać dostęp do wizytówki Google</Link>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
-          <li><Link href="/blog/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
-          <li><Link href="/blog/jak-odzyskac-dostep-do-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak odzyskać dostęp do wizytówki Google?</Link></li>
-          <li><Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zdjęcia w wizytówce Google – które wpływają na pozycję?</Link></li>
+          <li><Link href="/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
+          <li><Link href="/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
+          <li><Link href="/jak-odzyskac-dostep-do-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak odzyskać dostęp do wizytówki Google?</Link></li>
+          <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zdjęcia w wizytówce Google – które wpływają na pozycję?</Link></li>
         </ul>
       </div>
     </>
@@ -578,7 +578,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       <h2>Adres — NAP i spójność w internecie</h2>
       <p>
         Adres w GBP musi być zgodny z adresem na stronie internetowej, w KRS/CEIDG i we wszystkich katalogach firm. Niespójność NAP (Name, Address, Phone) to jeden z najczęstszych powodów słabego rankingu lokalnego. Szczegółowo opisujemy to w artykule{" "}
-        <Link href="/blog/nap-wizytowka-google-co-to-jest">czym jest NAP i jak go skonfigurować</Link>.
+        <Link href="/nap-wizytowka-google-co-to-jest">czym jest NAP i jak go skonfigurować</Link>.
       </p>
 
       <h2>Numer telefonu — który wpisać?</h2>
@@ -597,26 +597,26 @@ export const articleContent: Record<string, React.ReactNode> = {
       <h2>Opis firmy — 750 znaków które muszą pracować podwójnie</h2>
       <p>
         Opis w sekcji Informacje to nie to samo co sekcja Usługi. Opis powinien opisywać firmę jako całość — jej misję, unikalną wartość, historię i podejście do klienta. Unikaj list usług — od tego jest sekcja Usługi. Szczegółowo o pisaniu opisu piszemy w artykule{" "}
-        <Link href="/blog/opis-firmy-google-business-profile-jak-napisac">jak napisać opis firmy w GBP</Link>.
+        <Link href="/opis-firmy-google-business-profile-jak-napisac">jak napisać opis firmy w GBP</Link>.
       </p>
 
       <h2>Pozostałe ważne pola</h2>
       <ul>
         <li><strong>Rok założenia</strong> — starsze firmy budzą więcej zaufania. Wypełnij jeśli firma istnieje od kilku lat.</li>
         <li><strong>Link do rezerwacji online</strong> — jeśli korzystasz z systemu rezerwacji (Booksy, Calendly, własny system), wpisz bezpośredni link. Pojawia się jako przycisk „Zarezerwuj" w wizytówce.</li>
-        <li><strong>Produkty i usługi</strong> — powiązane z osobnymi sekcjami omówionymi w artykułach{" "}<Link href="/blog/uslugi-wizytowka-google-business">o usługach</Link> i{" "}<Link href="/blog/produkty-wizytowka-google-business">produktach</Link>.</li>
-        <li><strong>Kategorie</strong> — omówione szczegółowo w artykule{" "}<Link href="/blog/kategorie-wizytowka-google">o kategoriach GBP</Link>.</li>
-        <li><strong>Atrybuty</strong> — omówione w artykule{" "}<Link href="/blog/atrybuty-wizytowka-google">o atrybutach wizytówki</Link>.</li>
+        <li><strong>Produkty i usługi</strong> — powiązane z osobnymi sekcjami omówionymi w artykułach{" "}<Link href="/uslugi-wizytowka-google-business">o usługach</Link> i{" "}<Link href="/produkty-wizytowka-google-business">produktach</Link>.</li>
+        <li><strong>Kategorie</strong> — omówione szczegółowo w artykule{" "}<Link href="/kategorie-wizytowka-google">o kategoriach GBP</Link>.</li>
+        <li><strong>Atrybuty</strong> — omówione w artykule{" "}<Link href="/atrybuty-wizytowka-google">o atrybutach wizytówki</Link>.</li>
       </ul>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak skonfigurować?</Link></li>
-          <li><Link href="/blog/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
-          <li><Link href="/blog/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
-          <li><Link href="/blog/opis-firmy-google-business-profile-jak-napisac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opis firmy w Google Business Profile – jak napisać skutecznie?</Link></li>
-          <li><Link href="/blog/godziny-otwarcia-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Godziny otwarcia w wizytówce Google – jak ustawić poprawnie?</Link></li>
+          <li><Link href="/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak skonfigurować?</Link></li>
+          <li><Link href="/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
+          <li><Link href="/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
+          <li><Link href="/opis-firmy-google-business-profile-jak-napisac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opis firmy w Google Business Profile – jak napisać skutecznie?</Link></li>
+          <li><Link href="/godziny-otwarcia-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Godziny otwarcia w wizytówce Google – jak ustawić poprawnie?</Link></li>
         </ul>
       </div>
     </>
@@ -671,19 +671,19 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
       <p>
         Przed założeniem wielu wizytówek upewnij się, że{" "}
-        <Link href="/blog/weryfikacja-wizytowki-google">wiesz jak przebiega weryfikacja</Link> — dla wielu lokalizacji to wąskie gardło, które często opóźnia uruchomienie.
+        <Link href="/weryfikacja-wizytowki-google">wiesz jak przebiega weryfikacja</Link> — dla wielu lokalizacji to wąskie gardło, które często opóźnia uruchomienie.
         Każda wizytówka powinna też mieć wypełnioną{" "}
-        <Link href="/blog/sekcja-informacje-wizytowka-google">sekcję Informacje</Link> z danymi właściwymi dla danej lokalizacji, nie skopiowanymi z innej wizytówki.
+        <Link href="/sekcja-informacje-wizytowka-google">sekcję Informacje</Link> z danymi właściwymi dla danej lokalizacji, nie skopiowanymi z innej wizytówki.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/weryfikacja-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Weryfikacja wizytówki Google – wszystkie metody krok po kroku</Link></li>
-          <li><Link href="/blog/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
-          <li><Link href="/blog/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak skonfigurować?</Link></li>
-          <li><Link href="/blog/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
-          <li><Link href="/blog/siedziba-mala-miejscowosc-local-seo" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Siedziba w małej miejscowości – jak zdobyć klientów z dużego miasta?</Link></li>
+          <li><Link href="/weryfikacja-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Weryfikacja wizytówki Google – wszystkie metody krok po kroku</Link></li>
+          <li><Link href="/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
+          <li><Link href="/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak skonfigurować?</Link></li>
+          <li><Link href="/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
+          <li><Link href="/siedziba-mala-miejscowosc-local-seo" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Siedziba w małej miejscowości – jak zdobyć klientów z dużego miasta?</Link></li>
         </ul>
       </div>
     </>
@@ -1021,7 +1021,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Google często rozpoznaje intencję lokalną i wyświetla Local Pack z firmami w pobliżu —
         bez podania miasta. W takim przypadku kluczowe jest pozycjonowanie wizytówki Google,
         a nie tylko strony www. Przeczytaj więcej w artykule o{" "}
-        <Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">pozycjonowaniu wizytówki Google</Link>.
+        <Link href="/jak-pozycjonowac-wizytowke-google-2026">pozycjonowaniu wizytówki Google</Link>.
       </p>
 
       <h3>Frazy „near me"</h3>
@@ -1039,7 +1039,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         dla każdego miasta: <code>/hydraulik-wroclaw</code>, <code>/hydraulik-olesnica</code>.
         Każda powinna mieć unikalną treść — nie kopiuj tekstu zmieniając tylko nazwę miasta.
         Więcej o tej strategii w artykule o{" "}
-        <Link href="/blog/siedziba-mala-miejscowosc-local-seo">firmie z małej miejscowości szukającej klientów z miasta</Link>.
+        <Link href="/siedziba-mala-miejscowosc-local-seo">firmie z małej miejscowości szukającej klientów z miasta</Link>.
       </p>
 
       <h2>Grupowanie słów kluczowych (keyword clustering)</h2>
@@ -1156,10 +1156,10 @@ export const articleContent: Record<string, React.ReactNode> = {
         Gdy masz już listę słów kluczowych, kolejny krok to ich implementacja:
       </p>
       <ul>
-        <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google — sygnały lokalne w 2026 roku</Link></li>
-        <li><Link href="/blog/jak-dodac-local-schema-do-strony">Jak dodać local schema markup — wzmocnij sygnały SEO strukturą danych</Link></li>
-        <li><Link href="/blog/ile-kosztuje-pozycjonowanie-strony-internetowej">Ile kosztuje pozycjonowanie strony — jak liczyć ROI z SEO</Link></li>
-        <li><Link href="/blog/siedziba-mala-miejscowosc-local-seo">Firma z małej miejscowości — strategia słów lokalnych dla dużego miasta</Link></li>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google — sygnały lokalne w 2026 roku</Link></li>
+        <li><Link href="/jak-dodac-local-schema-do-strony">Jak dodać local schema markup — wzmocnij sygnały SEO strukturą danych</Link></li>
+        <li><Link href="/ile-kosztuje-pozycjonowanie-strony-internetowej">Ile kosztuje pozycjonowanie strony — jak liczyć ROI z SEO</Link></li>
+        <li><Link href="/siedziba-mala-miejscowosc-local-seo">Firma z małej miejscowości — strategia słów lokalnych dla dużego miasta</Link></li>
       </ul>
     </>
   ),
@@ -1622,7 +1622,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         i w każdym innym miejscu w internecie. Nawet drobna różnica (np. „ul. Główna 10"
         vs „Główna 10") to sygnał niespójności, który osłabia cały profil lokalny.
         Przeczytaj więcej o tym w artykule o{" "}
-        <Link href="/blog/nap-wizytowka-google-co-to-jest">NAP w wizytówce Google</Link>.
+        <Link href="/nap-wizytowka-google-co-to-jest">NAP w wizytówce Google</Link>.
       </p>
 
       <h3>Błąd 2 — aggregateRating z fałszywymi danymi</h3>
@@ -1703,9 +1703,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         połącz schema markup z silnym profilem GBP:
       </p>
       <ul>
-        <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik</Link></li>
-        <li><Link href="/blog/nap-wizytowka-google-co-to-jest">NAP w wizytówce Google — czym jest i jak zadbać o spójność danych</Link></li>
-        <li><Link href="/blog/siedziba-mala-miejscowosc-local-seo">Siedziba w małej miejscowości — jak zdobyć klientów z dużego miasta</Link></li>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik</Link></li>
+        <li><Link href="/nap-wizytowka-google-co-to-jest">NAP w wizytówce Google — czym jest i jak zadbać o spójność danych</Link></li>
+        <li><Link href="/siedziba-mala-miejscowosc-local-seo">Siedziba w małej miejscowości — jak zdobyć klientów z dużego miasta</Link></li>
       </ul>
     </>
   ),
@@ -1816,8 +1816,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         Gdy odzyskasz dostęp, od razu zadbaj o bezpieczeństwo profilu i zacznij go rozwijać:
       </p>
       <ul>
-        <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
-        <li><Link href="/blog/nap-wizytowka-google-co-to-jest">NAP — fundament każdego profilu GBP</Link></li>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
+        <li><Link href="/nap-wizytowka-google-co-to-jest">NAP — fundament każdego profilu GBP</Link></li>
       </ul>
     </>
   ),
@@ -1902,7 +1902,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <p>
         Strategia dla hoteli: wyślij prośbę o opinię przez PMS (Property Management System)
         automatycznie po wymeldowaniu. Email powinien być wysłany 24–48h po wyjeździe gościa,
-        kiedy emocje są jeszcze świeże. <Link href="/blog/opinie-google-jak-zdobywac-skutecznie">Więcej o zbieraniu opinii bez nachalnego proszenia.</Link>
+        kiedy emocje są jeszcze świeże. <Link href="/opinie-google-jak-zdobywac-skutecznie">Więcej o zbieraniu opinii bez nachalnego proszenia.</Link>
       </p>
       <p>
         Odpowiadaj na każdą opinię — zarówno pozytywną, jak i negatywną. W odpowiedzi na
@@ -1924,8 +1924,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         które może zmniejszyć zależność od pośredników pobierających prowizje.
       </p>
       <ul>
-        <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik</Link></li>
-        <li><Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja">Jakie zdjęcia w wizytówce Google naprawdę pomagają?</Link></li>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik</Link></li>
+        <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">Jakie zdjęcia w wizytówce Google naprawdę pomagają?</Link></li>
       </ul>
     </>
   ),
@@ -2006,7 +2006,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <li>
           <strong>Odpowiedz profesjonalnie</strong> — jeśli opinia nie zostanie usunięta,
           najlepsza strategia to odpowiedź, która pokazuje Twoją stronę historii.
-          <Link href="/blog/negatywna-opinia-google-co-zrobic">Jak odpowiadać na negatywne opinie — krok po kroku.</Link>
+          <Link href="/negatywna-opinia-google-co-zrobic">Jak odpowiadać na negatywne opinie — krok po kroku.</Link>
         </li>
       </ul>
 
@@ -2037,8 +2037,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         i budowanie bazy pozytywnych recenzji, które zepchnęły tę jedną złą na dalsze miejsce.
       </p>
       <ul>
-        <li><Link href="/blog/negatywna-opinia-google-co-zrobic">Dostałem negatywną opinię — co teraz? Plan działania</Link></li>
-        <li><Link href="/blog/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google bez nachalnego proszenia</Link></li>
+        <li><Link href="/negatywna-opinia-google-co-zrobic">Dostałem negatywną opinię — co teraz? Plan działania</Link></li>
+        <li><Link href="/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google bez nachalnego proszenia</Link></li>
       </ul>
     </>
   ),
@@ -2074,7 +2074,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <p>
         Jeśli opinia wygląda na fałszywą (osoba nie jest Twoim klientem, konto bez historii,
         treść niespójna z rzeczywistością) — najpierw spróbuj ją zgłosić.{" "}
-        <Link href="/blog/jak-usunac-negatywne-opinie-z-google">Jak zgłaszać opinie do usunięcia — szczegółowy poradnik.</Link>
+        <Link href="/jak-usunac-negatywne-opinie-z-google">Jak zgłaszać opinie do usunięcia — szczegółowy poradnik.</Link>
       </p>
 
       <h2>Krok 2 – Poczekaj co najmniej godzinę przed odpowiedzią</h2>
@@ -2137,8 +2137,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         Najlepszą odpowiedzią na negatywną opinię jest <strong>budowanie bazy pozytywnych recenzji</strong>.
       </p>
       <ul>
-        <li><Link href="/blog/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google bez nachalnego proszenia klientów</Link></li>
-        <li><Link href="/blog/jak-usunac-negatywne-opinie-z-google">Kiedy i jak usunąć negatywną opinię z Google?</Link></li>
+        <li><Link href="/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google bez nachalnego proszenia klientów</Link></li>
+        <li><Link href="/jak-usunac-negatywne-opinie-z-google">Kiedy i jak usunąć negatywną opinię z Google?</Link></li>
       </ul>
     </>
   ),
@@ -2158,7 +2158,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <p>
         Jeśli ktoś próbuje Ci sprzedać „pakiet GBP", „odnowienie wizytówki" albo „płatną
         weryfikację Google" — to oszustwo. Więcej o tym schemacie w artykule:{" "}
-        <Link href="/blog/wizytowka-google-nie-wygasa-oszustwo">Czy wizytówka Google wygasa? NIE — to oszustwo.</Link>
+        <Link href="/wizytowka-google-nie-wygasa-oszustwo">Czy wizytówka Google wygasa? NIE — to oszustwo.</Link>
       </p>
 
       <h2>Za co naprawdę płacisz w ekosystemie Google?</h2>
@@ -2237,8 +2237,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         dla lokalnych firm — niezależnie od budżetu. Jeśli chcesz wycisnąć z niego maksimum:
       </p>
       <ul>
-        <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
-        <li><Link href="/blog/opis-firmy-google-business-profile-jak-napisac">Jak napisać opis firmy w GBP, który przyciąga klientów?</Link></li>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
+        <li><Link href="/opis-firmy-google-business-profile-jak-napisac">Jak napisać opis firmy w GBP, który przyciąga klientów?</Link></li>
       </ul>
     </>
   ),
@@ -2329,9 +2329,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         bez ukrytych kosztów, bez dat wygaśnięcia. Więcej o bezpieczeństwie profilu GBP:
       </p>
       <ul>
-        <li><Link href="/blog/wizytowka-google-nie-wygasa-oszustwo">Czy wizytówka Google wygasa? Nie — to oszustwo działające od lat</Link></li>
-        <li><Link href="/blog/wizytowka-google-popularne-oszustwa">Inne popularne oszustwa związane z GBP</Link></li>
-        <li><Link href="/blog/czy-wizytowka-google-jest-platna">Czy wizytówka Google jest płatna? Szczegółowe porównanie</Link></li>
+        <li><Link href="/wizytowka-google-nie-wygasa-oszustwo">Czy wizytówka Google wygasa? Nie — to oszustwo działające od lat</Link></li>
+        <li><Link href="/wizytowka-google-popularne-oszustwa">Inne popularne oszustwa związane z GBP</Link></li>
+        <li><Link href="/czy-wizytowka-google-jest-platna">Czy wizytówka Google jest płatna? Szczegółowe porównanie</Link></li>
       </ul>
     </>
   ),
@@ -2426,7 +2426,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         Bezpośredni link do strony opinii wysłany SMS-em lub WhatsApp po zakończeniu usługi.
         Link możesz skrócić przez bit.ly. To najskuteczniejszy kanał zbierania opinii —
         klient jest w miejscu i czasie, gdy emocje z usługi są najświeższe.
-        <Link href="/blog/opinie-google-jak-zdobywac-skutecznie"> Więcej o zbieraniu opinii przez SMS i WhatsApp.</Link>
+        <Link href="/opinie-google-jak-zdobywac-skutecznie"> Więcej o zbieraniu opinii przez SMS i WhatsApp.</Link>
       </p>
 
       <h2>Jak znaleźć swój link do profilu GBP?</h2>
@@ -2442,8 +2442,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         Skonfiguruj te 8 źródeł raz — i będą pracować za Ciebie przez długi czas.
       </p>
       <ul>
-        <li><Link href="/blog/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google bez nachalnego proszenia</Link></li>
-        <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google bez nachalnego proszenia</Link></li>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
       </ul>
     </>
   ),
@@ -2541,7 +2541,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <h2>SEO wizytówki Google vs SEO strony — co najpierw?</h2>
       <p>
         Dla lokalnych firm odpowiedź jest prosta: najpierw{" "}
-        <Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">optymalizacja wizytówki Google</Link>{" "}
+        <Link href="/jak-pozycjonowac-wizytowke-google-2026">optymalizacja wizytówki Google</Link>{" "}
         (bezpłatna, szybsze efekty), potem SEO strony www (płatne, długoterminowe). GBP
         przynosi klientów lokalnych bez budżetu. SEO strony skaluje widoczność na szerszy rynek.
       </p>
@@ -2553,8 +2553,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         co robi i pokazać rzeczywiste efekty poprzednich projektów.
       </p>
       <ul>
-        <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google — bezpłatny punkt startowy</Link></li>
-        <li><Link href="/blog/siedziba-mala-miejscowosc-local-seo">Local SEO dla firm z siedzibą poza dużym miastem</Link></li>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google — bezpłatny punkt startowy</Link></li>
+        <li><Link href="/siedziba-mala-miejscowosc-local-seo">Local SEO dla firm z siedzibą poza dużym miastem</Link></li>
       </ul>
     </>
   ),
@@ -2637,8 +2637,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         wartości klienta.
       </p>
       <ul>
-        <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google — podstawy dla każdej branży</Link></li>
-        <li><Link href="/blog/opis-firmy-google-business-profile-jak-napisac">Jak napisać opis kancelarii w GBP zgodnie z zasadami etyki</Link></li>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google — podstawy dla każdej branży</Link></li>
+        <li><Link href="/opis-firmy-google-business-profile-jak-napisac">Jak napisać opis kancelarii w GBP zgodnie z zasadami etyki</Link></li>
       </ul>
     </>
   ),
@@ -2731,9 +2731,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         żeby wejść do Local Pack i odbierać klientów bez kosztów reklamowych.
       </p>
       <ul>
-        <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
-        <li><Link href="/blog/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google skutecznie</Link></li>
-        <li><Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja">Jakie zdjęcia w GBP naprawdę pomagają?</Link></li>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google skutecznie</Link></li>
+        <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">Jakie zdjęcia w GBP naprawdę pomagają?</Link></li>
       </ul>
     </>
   ),
@@ -2847,8 +2847,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         profil Google:
       </p>
       <ul>
-        <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google — dla salonów i usług lokalnych</Link></li>
-        <li><Link href="/blog/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google od klientek salonu?</Link></li>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google — dla salonów i usług lokalnych</Link></li>
+        <li><Link href="/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google od klientek salonu?</Link></li>
       </ul>
     </>
   ),
@@ -2972,7 +2972,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         area). W tym przypadku NAP opiera się głównie na nazwie i telefonie. To szczególnie ważne,
         jeśli Twoja firma chce być widoczna w wielu miastach — o tej strategii piszemy szerzej
         w artykule o{" "}
-        <Link href="/blog/siedziba-mala-miejscowosc-local-seo">
+        <Link href="/siedziba-mala-miejscowosc-local-seo">
           firmach z siedzibą w małej miejscowości.
         </Link>
       </p>
@@ -2986,17 +2986,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
             Pełny przewodnik po pozycjonowaniu wizytówki Google w 2026 roku
           </Link>
         </li>
         <li>
-          <Link href="/blog/opis-firmy-google-business-profile-jak-napisac">
+          <Link href="/opis-firmy-google-business-profile-jak-napisac">
             Jak napisać opis firmy w Google Business Profile, który działa?
           </Link>
         </li>
         <li>
-          <Link href="/blog/siedziba-mala-miejscowosc-local-seo">
+          <Link href="/siedziba-mala-miejscowosc-local-seo">
             Siedziba w małej miejscowości — jak zdobyć klientów z dużego miasta?
           </Link>
         </li>
@@ -3033,7 +3033,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <strong>Fakty:</strong> Google nigdy nie dzwoni proaktywnie do właścicieli profili GBP
         w sprawie płatności ani weryfikacji. Google Business Profile jest i zawsze był bezpłatny.
         Więcej o tym schemacie piszemy szczegółowo w artykule{" "}
-        <Link href="/blog/wizytowka-google-nie-wygasa-oszustwo">
+        <Link href="/wizytowka-google-nie-wygasa-oszustwo">
           „Czy wizytówka Google wygasa?"
         </Link>
         .
@@ -3131,17 +3131,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </ul>
       <ul>
         <li>
-          <Link href="/blog/wizytowka-google-nie-wygasa-oszustwo">
+          <Link href="/wizytowka-google-nie-wygasa-oszustwo">
             Czy wizytówka Google wygasa? Nie — to oszustwo działające od lat
           </Link>
         </li>
         <li>
-          <Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
             Jak pozycjonować wizytówkę Google w 2026 roku — uczciwy przewodnik
           </Link>
         </li>
         <li>
-          <Link href="/blog/opinie-google-jak-zdobywac-skutecznie">
+          <Link href="/opinie-google-jak-zdobywac-skutecznie">
             Jak zbierać opinie Google bez nachalnego proszenia
           </Link>
         </li>
@@ -3214,7 +3214,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       <h2>Krok 3 – Spójność NAP dla każdego obszaru</h2>
       <p>
-        <Link href="/blog/nap-wizytowka-google-co-to-jest">Spójność danych NAP</Link> jest
+        <Link href="/nap-wizytowka-google-co-to-jest">Spójność danych NAP</Link> jest
         kluczowa szczególnie dla firm wielolokalizacyjnych. Jeśli tworzysz podstrony dla różnych
         miast, zadbaj o to, żeby:
       </p>
@@ -3280,17 +3280,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/blog/nap-wizytowka-google-co-to-jest">
+          <Link href="/nap-wizytowka-google-co-to-jest">
             NAP w wizytówce Google — jak zachować spójność danych w sieci
           </Link>
         </li>
         <li>
-          <Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
             Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik
           </Link>
         </li>
         <li>
-          <Link href="/blog/opis-firmy-google-business-profile-jak-napisac">
+          <Link href="/opis-firmy-google-business-profile-jak-napisac">
             Opis firmy w Google Business Profile — jak napisać go skutecznie?
           </Link>
         </li>
@@ -3436,17 +3436,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
             Jak pozycjonować wizytówkę Google w 2026 roku — uczciwy przewodnik
           </Link>
         </li>
         <li>
-          <Link href="/blog/wizytowka-google-popularne-oszustwa">
+          <Link href="/wizytowka-google-popularne-oszustwa">
             Wizytówka Google — inne popularne oszustwa, na które warto uważać
           </Link>
         </li>
         <li>
-          <Link href="/blog/nap-wizytowka-google-co-to-jest">
+          <Link href="/nap-wizytowka-google-co-to-jest">
             NAP w wizytówce Google — fundament, od którego zaczynają wszyscy
           </Link>
         </li>
@@ -3483,7 +3483,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <h3>Trafność (relevance) – czy profil pasuje do zapytania?</h3>
       <p>
         Google sprawdza, czy Twoja wizytówka odpowiada na to, czego szuka użytkownik. Im dokładniej
-        wypełnisz kategorie, usługi, <Link href="/blog/opis-firmy-google-business-profile-jak-napisac">opis firmy</Link> i atrybuty —
+        wypełnisz kategorie, usługi, <Link href="/opis-firmy-google-business-profile-jak-napisac">opis firmy</Link> i atrybuty —
         tym wyżej pojawisz się przy trafnych zapytaniach. Nie chodzi o upychanie słów kluczowych,
         ale o precyzyjne opisanie tego, czym naprawdę się zajmujesz.
       </p>
@@ -3497,7 +3497,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       <h3>Pozycja (prominence) – jak ważna jest firma w sieci?</h3>
       <p>
-        To najszerszy sygnał. Google bierze pod uwagę: liczbę i jakość <Link href="/blog/opinie-google-jak-zdobywac-skutecznie">opinii Google</Link>,
+        To najszerszy sygnał. Google bierze pod uwagę: liczbę i jakość <Link href="/opinie-google-jak-zdobywac-skutecznie">opinii Google</Link>,
         wzmianki o firmie na innych stronach (cytowania), jakość Twojej strony www oraz aktywność
         na samym profilu GBP. Im bardziej „widoczna" firma w internecie, tym wyżej w Local Pack.
       </p>
@@ -3516,7 +3516,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <strong>Opinie — liczba i średnia ocena</strong> — profile z ponad 50 opiniami i oceną powyżej
           4,5 mają wyraźną przewagę. Ważna jest też regularność: nowe opinie pojawiające się co tydzień
           sygnalizują aktywność.{" "}
-          <Link href="/blog/opinie-google-jak-zdobywac-skutecznie">
+          <Link href="/opinie-google-jak-zdobywac-skutecznie">
             Przeczytaj, jak zbierać opinie bez nachalnego proszenia.
           </Link>
         </li>
@@ -3527,7 +3527,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <li>
           <strong>Zdjęcia dodawane regularnie</strong> — statycznie wgrane zdjęcia sprzed 2 lat pomagają
           mniej niż świeże fotografie. Dodawaj przynajmniej 2–3 nowe co miesiąc.{" "}
-          <Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja">
+          <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">
             Dowiedz się, które zdjęcia Google naprawdę premiuje.
           </Link>
         </li>
@@ -3538,7 +3538,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <li>
           <strong>Opis firmy z słowami kluczowymi</strong> — 750 znaków, które mogą zdecydowanie poprawić
           trafność profilu. To Twoja szansa na naturalne umieszczenie fraz, na które chcesz być widoczny.{" "}
-          <Link href="/blog/opis-firmy-google-business-profile-jak-napisac">
+          <Link href="/opis-firmy-google-business-profile-jak-napisac">
             Sprawdź, jak napisać opis firmy, który działa.
           </Link>
         </li>
@@ -3597,17 +3597,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/blog/opis-firmy-google-business-profile-jak-napisac">
+          <Link href="/opis-firmy-google-business-profile-jak-napisac">
             Napisz opis firmy, który działa na klientów i algorytm
           </Link>
         </li>
         <li>
-          <Link href="/blog/opinie-google-jak-zdobywac-skutecznie">
+          <Link href="/opinie-google-jak-zdobywac-skutecznie">
             Zbieraj opinie Google skutecznie, bez nachalnego proszenia
           </Link>
         </li>
         <li>
-          <Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja">
+          <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">
             Dodaj zdjęcia, które Google naprawdę premiuje
           </Link>
         </li>
@@ -3737,12 +3737,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
             Kompletny przewodnik po pozycjonowaniu wizytówki Google w 2026 roku
           </Link>
         </li>
         <li>
-          <Link href="/blog/opis-firmy-google-business-profile-jak-napisac">
+          <Link href="/opis-firmy-google-business-profile-jak-napisac">
             Jak napisać opis firmy w GBP, który przyciąga klientów i poprawia SEO
           </Link>
         </li>
@@ -3851,12 +3851,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
             Pełny przewodnik po pozycjonowaniu wizytówki Google w 2026 roku
           </Link>
         </li>
         <li>
-          <Link href="/blog/opis-firmy-google-business-profile-jak-napisac">
+          <Link href="/opis-firmy-google-business-profile-jak-napisac">
             Jak napisać opis firmy w Google Business Profile, który działa?
           </Link>
         </li>
@@ -3999,17 +3999,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
             Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik
           </Link>
         </li>
         <li>
-          <Link href="/blog/opinie-google-jak-zdobywac-skutecznie">
+          <Link href="/opinie-google-jak-zdobywac-skutecznie">
             Jak zbierać opinie Google bez nachalnego proszenia klientów
           </Link>
         </li>
         <li>
-          <Link href="/blog/zdjecia-w-wizytowce-google-ktore-dzialaja">
+          <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">
             Jakie zdjęcia w wizytówce Google naprawdę pomagają w pozycjonowaniu?
           </Link>
         </li>
@@ -4710,22 +4710,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
             Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik
           </Link>
         </li>
         <li>
-          <Link href="/blog/opinie-google-jak-zdobywac-skutecznie">
+          <Link href="/opinie-google-jak-zdobywac-skutecznie">
             Jak zbierać opinie Google bez nachalnego proszenia klientów
           </Link>
         </li>
         <li>
-          <Link href="/blog/nap-wizytowka-google-co-to-jest">
+          <Link href="/nap-wizytowka-google-co-to-jest">
             NAP w wizytówce Google — czym jest i jak przeprowadzić audyt
           </Link>
         </li>
         <li>
-          <Link href="/blog/jak-dodac-local-schema-do-strony">
+          <Link href="/jak-dodac-local-schema-do-strony">
             Jak dodać Local Schema markup do strony — z gotowym kodem JSON-LD
           </Link>
         </li>
@@ -4821,17 +4821,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <p>
         Warto też wiedzieć, że zawirusowana strona może powodować inne objawy: jeśli po wyczyszczeniu widzisz pusty ekran, przeczytaj{" "}
-        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">jak naprawić biały ekran WordPress</Link>. Jeśli masz problem z zalogowaniem się do panelu, sprawdź{" "}
-        <Link href="/blog/nie-moge-zalogowac-sie-do-wordpressa">jak odzyskać dostęp do WordPressa</Link>.
+        <Link href="/bialy-ekran-wordpress-jak-naprawic">jak naprawić biały ekran WordPress</Link>. Jeśli masz problem z zalogowaniem się do panelu, sprawdź{" "}
+        <Link href="/nie-moge-zalogowac-sie-do-wordpressa">jak odzyskać dostęp do WordPressa</Link>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
-          <li><Link href="/blog/nie-moge-zalogowac-sie-do-wordpressa" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Nie mogę się zalogować do WordPressa – jak odzyskać dostęp?</Link></li>
-          <li><Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
-          <li><Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
+          <li><Link href="/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/nie-moge-zalogowac-sie-do-wordpressa" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Nie mogę się zalogować do WordPressa – jak odzyskać dostęp?</Link></li>
+          <li><Link href="/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
+          <li><Link href="/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
         </ul>
       </div>
     </>
@@ -4906,21 +4906,21 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
       <h2>Przyczyna 6 – Problem z bazą danych</h2>
       <p>
         Jeśli widzisz komunikat „Error establishing a database connection" zamiast białego ekranu — problem leży w połączeniu z bazą danych. Sprawdź dane dostępowe w <code>wp-config.php</code> (nazwa bazy, użytkownik, hasło, host) i porównaj z danymi w panelu hostingu. Ten błąd jest szczególnie częsty{" "}
-        <Link href="/blog/wordpress-nie-wyswietla-sie-po-migracji-hosting">po migracji strony na nowy hosting</Link>.
+        <Link href="/wordpress-nie-wyswietla-sie-po-migracji-hosting">po migracji strony na nowy hosting</Link>.
       </p>
       <p>
         Jeśli mimo wszystkich kroków strona nadal nie działa, sprawdź też{" "}
-        <Link href="/blog/wordpress-blad-500-internal-server-error">jak naprawić błąd 500 w WordPress</Link> — objawy bywają podobne, przyczyny różne. Jeśli strona została zaatakowana,{" "}
-        <Link href="/blog/zawirusowana-strona-wordpress-co-zrobic">przeczytaj nasz przewodnik po odwirusowaniu WordPressa</Link>.
+        <Link href="/wordpress-blad-500-internal-server-error">jak naprawić błąd 500 w WordPress</Link> — objawy bywają podobne, przyczyny różne. Jeśli strona została zaatakowana,{" "}
+        <Link href="/zawirusowana-strona-wordpress-co-zrobic">przeczytaj nasz przewodnik po odwirusowaniu WordPressa</Link>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
-          <li><Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
-          <li><Link href="/blog/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić?</Link></li>
-          <li><Link href="/blog/wordpress-nie-wyswietla-sie-po-migracji-hosting" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Strona WordPress nie wyświetla się po migracji na nowy hosting</Link></li>
+          <li><Link href="/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
+          <li><Link href="/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić?</Link></li>
+          <li><Link href="/wordpress-nie-wyswietla-sie-po-migracji-hosting" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Strona WordPress nie wyświetla się po migracji na nowy hosting</Link></li>
         </ul>
       </div>
     </>
@@ -4996,17 +4996,17 @@ define( 'WP_DEBUG_DISPLAY', false );</code></pre>
       </ul>
       <p>
         Jeśli powodem braku dostępu było włamanie, sprawdź koniecznie{" "}
-        <Link href="/blog/zawirusowana-strona-wordpress-co-zrobic">jak sprawdzić i wyczyścić zawirusowaną stronę WordPress</Link>.
+        <Link href="/zawirusowana-strona-wordpress-co-zrobic">jak sprawdzić i wyczyścić zawirusowaną stronę WordPress</Link>.
         Przy okazji warto też wiedzieć, że brak dostępu do panelu może być objawem{" "}
-        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">białego ekranu (WSOD)</Link> — sprawdź ten artykuł jeśli panel admin też nie działa.
+        <Link href="/bialy-ekran-wordpress-jak-naprawic">białego ekranu (WSOD)</Link> — sprawdź ten artykuł jeśli panel admin też nie działa.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić?</Link></li>
-          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
-          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić?</Link></li>
+          <li><Link href="/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
         </ul>
       </div>
     </>
@@ -5080,20 +5080,20 @@ php_value max_execution_time 300</code></pre>
       </p>
       <p>
         Błąd 500 często pojawia się razem z innymi symptomami. Jeśli zamiast błędu widzisz biały ekran, przeczytaj{" "}
-        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">artykuł o białym ekranie w WordPress</Link>.
+        <Link href="/bialy-ekran-wordpress-jak-naprawic">artykuł o białym ekranie w WordPress</Link>.
         Jeśli problem pojawił się po aktualizacji,{" "}
-        <Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic">sprawdź jak cofnąć aktualizację WordPress</Link>.
+        <Link href="/aktualizacja-wordpress-zepsuta-strone-co-zrobic">sprawdź jak cofnąć aktualizację WordPress</Link>.
         Błąd 500 jest też częstym problemem{" "}
-        <Link href="/blog/wordpress-nie-wyswietla-sie-po-migracji-hosting">po migracji strony na nowy hosting</Link>.
+        <Link href="/wordpress-nie-wyswietla-sie-po-migracji-hosting">po migracji strony na nowy hosting</Link>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
-          <li><Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
-          <li><Link href="/blog/wordpress-this-site-is-experiencing-technical-difficulties" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress: „This site is experiencing technical difficulties"</Link></li>
-          <li><Link href="/blog/wordpress-nie-wyswietla-sie-po-migracji-hosting" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Strona WordPress nie wyświetla się po migracji na nowy hosting</Link></li>
+          <li><Link href="/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
+          <li><Link href="/wordpress-this-site-is-experiencing-technical-difficulties" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress: „This site is experiencing technical difficulties"</Link></li>
+          <li><Link href="/wordpress-nie-wyswietla-sie-po-migracji-hosting" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Strona WordPress nie wyświetla się po migracji na nowy hosting</Link></li>
         </ul>
       </div>
     </>
@@ -5176,16 +5176,16 @@ php_value max_execution_time 300</code></pre>
       </p>
       <p>
         Szybka strona to też lepsza widoczność w lokalnych wynikach Google. Jeśli prowadzisz firmę lokalną, sprawdź{" "}
-        <Link href="/blog/jak-pozycjonowac-wizytowke-google-2026">jak pozycjonować wizytówkę Google w 2026 roku</Link> — Core Web Vitals są jednym z sygnałów rankingowych. Warto też zadbać o{" "}
-        <Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac">regularne sprawdzanie konfliktów między wtyczkami</Link>, które potrafią drastycznie spowalniać stronę.
+        <Link href="/jak-pozycjonowac-wizytowke-google-2026">jak pozycjonować wizytówkę Google w 2026 roku</Link> — Core Web Vitals są jednym z sygnałów rankingowych. Warto też zadbać o{" "}
+        <Link href="/konflikt-wtyczek-wordpress-jak-zdiagnozowac">regularne sprawdzanie konfliktów między wtyczkami</Link>, które potrafią drastycznie spowalniać stronę.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
-          <li><Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
-          <li><Link href="/blog/jak-pozycjonowac-wizytowke-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
+          <li><Link href="/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
+          <li><Link href="/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
+          <li><Link href="/jak-pozycjonowac-wizytowke-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
         </ul>
       </div>
     </>
@@ -5260,21 +5260,21 @@ php_value max_execution_time 300</code></pre>
       </ul>
       <p>
         Aktualizacje to nie jedyne źródło problemów. Zainstalowanie nowych wtyczek może powodować{" "}
-        <Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac">konflikty między wtyczkami</Link>, które dają podobne objawy.
+        <Link href="/konflikt-wtyczek-wordpress-jak-zdiagnozowac">konflikty między wtyczkami</Link>, które dają podobne objawy.
         Jeśli po przywróceniu backupu widzisz biały ekran,{" "}
-        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">sprawdź nasz przewodnik po białym ekranie WordPress</Link>.
+        <Link href="/bialy-ekran-wordpress-jak-naprawic">sprawdź nasz przewodnik po białym ekranie WordPress</Link>.
         Błąd po aktualizacji może też manifestować się jako{" "}
-        <Link href="/blog/wordpress-blad-500-internal-server-error">błąd 500</Link> lub komunikat{" "}
-        <Link href="/blog/wordpress-this-site-is-experiencing-technical-difficulties">„This site is experiencing technical difficulties"</Link>.
+        <Link href="/wordpress-blad-500-internal-server-error">błąd 500</Link> lub komunikat{" "}
+        <Link href="/wordpress-this-site-is-experiencing-technical-difficulties">„This site is experiencing technical difficulties"</Link>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
-          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
-          <li><Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
-          <li><Link href="/blog/wordpress-this-site-is-experiencing-technical-difficulties" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress: „This site is experiencing technical difficulties"</Link></li>
+          <li><Link href="/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
+          <li><Link href="/wordpress-this-site-is-experiencing-technical-difficulties" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress: „This site is experiencing technical difficulties"</Link></li>
         </ul>
       </div>
     </>
@@ -5348,16 +5348,16 @@ php_value max_execution_time 300</code></pre>
       </ul>
       <p>
         Problem z formularzem może być też objawem głębszego problemu z konfiguracją serwera. Jeśli strona ma też inne nieprawidłowości, sprawdź{" "}
-        <Link href="/blog/wordpress-blad-500-internal-server-error">jak diagnozować błąd 500</Link> oraz czy nie masz{" "}
-        <Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac">konfliktu między wtyczkami</Link> — szczególnie między wtyczką formularza a wtyczką cache lub bezpieczeństwa.
+        <Link href="/wordpress-blad-500-internal-server-error">jak diagnozować błąd 500</Link> oraz czy nie masz{" "}
+        <Link href="/konflikt-wtyczek-wordpress-jak-zdiagnozowac">konfliktu między wtyczkami</Link> — szczególnie między wtyczką formularza a wtyczką cache lub bezpieczeństwa.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
-          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
-          <li><Link href="/blog/wordpress-this-site-is-experiencing-technical-difficulties" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress: „This site is experiencing technical difficulties"</Link></li>
+          <li><Link href="/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
+          <li><Link href="/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/wordpress-this-site-is-experiencing-technical-difficulties" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress: „This site is experiencing technical difficulties"</Link></li>
         </ul>
       </div>
     </>
@@ -5432,20 +5432,20 @@ php_value max_execution_time 300</code></pre>
       </ul>
       <p>
         Ten komunikat to ulepszona wersja{" "}
-        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">białego ekranu WordPress (WSOD)</Link> — jeśli widzisz biały ekran zamiast komunikatu „technical difficulties", Twoja instalacja ma starszą wersję WordPressa lub inne ustawienia.
+        <Link href="/bialy-ekran-wordpress-jak-naprawic">białego ekranu WordPress (WSOD)</Link> — jeśli widzisz biały ekran zamiast komunikatu „technical difficulties", Twoja instalacja ma starszą wersję WordPressa lub inne ustawienia.
         Zazwyczaj błąd pojawia się po nieudanej aktualizacji — sprawdź{" "}
-        <Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic">co zrobić gdy aktualizacja zepsuje stronę</Link>.
+        <Link href="/aktualizacja-wordpress-zepsuta-strone-co-zrobic">co zrobić gdy aktualizacja zepsuje stronę</Link>.
         Objaw może być też podobny do{" "}
-        <Link href="/blog/wordpress-blad-500-internal-server-error">błędu 500</Link> — warto sprawdzić oba artykuły.
+        <Link href="/wordpress-blad-500-internal-server-error">błędu 500</Link> — warto sprawdzić oba artykuły.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
-          <li><Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
-          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
-          <li><Link href="/blog/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
+          <li><Link href="/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
+          <li><Link href="/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
         </ul>
       </div>
     </>
@@ -5520,19 +5520,19 @@ define( 'DB_HOST', 'localhost' );</code></pre>
       </ul>
       <p>
         Problemy po migracji często nakładają się — biały ekran, błąd 500 i problemy z DNS mogą występować jednocześnie. Jeśli masz{" "}
-        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">biały ekran</Link> lub{" "}
-        <Link href="/blog/wordpress-blad-500-internal-server-error">błąd 500</Link>, sprawdź te artykuły równolegle z diagnostyką migracji.
+        <Link href="/bialy-ekran-wordpress-jak-naprawic">biały ekran</Link> lub{" "}
+        <Link href="/wordpress-blad-500-internal-server-error">błąd 500</Link>, sprawdź te artykuły równolegle z diagnostyką migracji.
         Migracja to też dobry moment by zadbać o bezpieczeństwo — po przeniesieniu sprawdź{" "}
-        <Link href="/blog/zawirusowana-strona-wordpress-co-zrobic">czy strona nie nosi śladów wcześniejszego włamania</Link>.
+        <Link href="/zawirusowana-strona-wordpress-co-zrobic">czy strona nie nosi śladów wcześniejszego włamania</Link>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
-          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
-          <li><Link href="/blog/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić?</Link></li>
-          <li><Link href="/blog/wordpress-dziala-wolno-jak-przyspieszyc" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress działa wolno – jak przyspieszyć stronę?</Link></li>
+          <li><Link href="/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić?</Link></li>
+          <li><Link href="/wordpress-dziala-wolno-jak-przyspieszyc" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress działa wolno – jak przyspieszyć stronę?</Link></li>
         </ul>
       </div>
     </>
@@ -5625,21 +5625,21 @@ define( 'DB_HOST', 'localhost' );</code></pre>
       <p>
         Konflikty wtyczek często objawiają się podobnie jak inne problemy WordPress. Sprawdź też:
         jeśli widzisz{" "}
-        <Link href="/blog/bialy-ekran-wordpress-jak-naprawic">biały ekran</Link> lub{" "}
-        <Link href="/blog/wordpress-blad-500-internal-server-error">błąd 500</Link> — wtyczka to pierwsza rzecz do sprawdzenia.
+        <Link href="/bialy-ekran-wordpress-jak-naprawic">biały ekran</Link> lub{" "}
+        <Link href="/wordpress-blad-500-internal-server-error">błąd 500</Link> — wtyczka to pierwsza rzecz do sprawdzenia.
         Konflikt może też pojawić się po{" "}
-        <Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic">aktualizacji WordPressa lub wtyczek</Link>.
+        <Link href="/aktualizacja-wordpress-zepsuta-strone-co-zrobic">aktualizacji WordPressa lub wtyczek</Link>.
         W najgorszym scenariuszu — backdoor w nullowanej wtyczce może prowadzić do{" "}
-        <Link href="/blog/zawirusowana-strona-wordpress-co-zrobic">zawirusowania strony</Link>.
+        <Link href="/zawirusowana-strona-wordpress-co-zrobic">zawirusowania strony</Link>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
         <ul className="space-y-2">
-          <li><Link href="/blog/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
-          <li><Link href="/blog/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
-          <li><Link href="/blog/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
-          <li><Link href="/blog/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić?</Link></li>
+          <li><Link href="/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
+          <li><Link href="/bialy-ekran-wordpress-jak-naprawic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Biały ekran WordPress (White Screen of Death) – jak naprawić?</Link></li>
+          <li><Link href="/wordpress-blad-500-internal-server-error" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress błąd 500 – przyczyny i naprawa</Link></li>
+          <li><Link href="/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić?</Link></li>
         </ul>
       </div>
     </>
