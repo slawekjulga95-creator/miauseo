@@ -72,44 +72,45 @@ export default function TikTokAdsPage() {
     <main className="pt-20">
 
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden bg-white py-20 px-6">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
         <CatWatermark />
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-20">
-            {/* Left — heading */}
-            <div className="lg:w-5/12 shrink-0">
-              <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">TikTok Ads</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-ink leading-tight mb-8">
-                <span className="bg-brand text-white px-2 py-0.5 rounded-md">Twoi klienci</span> są<br />
-                na TikToku. <span className="text-brand">Zacznij pierwszy.</span>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">TikTok Ads</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
+                Twoi klienci są na TikToku.{" "}
+                <span className="text-brand">Zacznij zanim zrobi to konkurencja.</span>
               </h1>
+              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
+                TikTok to najszybciej rosnąca platforma reklamowa świata. CPM jest tu wciąż niższy niż na Meta i Google — bo platforma jest mniej zatłoczona reklamodawcami. To okno się zamknie.
+              </p>
               <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/kontakt"
-                  className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200"
-                >
+                <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
                   Porozmawiajmy o TikToku
                 </Link>
-                <Link
-                  href="#formaty"
-                  className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200"
-                >
+                <Link href="#formaty" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
                   Formaty reklamowe
                 </Link>
               </div>
             </div>
-
-            {/* Right — text */}
-            <div className="lg:w-7/12 space-y-5 text-zinc-600 text-[17px] leading-relaxed border-l-0 lg:border-l-2 lg:border-brand/20 lg:pl-14">
-              <p>
-                TikTok to <strong className="text-ink font-semibold">najszybciej rosnąca platforma reklamowa</strong> na świecie. CPM jest tu wciąż niższy niż na Meta i Google, bo platforma jest mniej zatłoczona reklamodawcami. To okno się zamknie.
-              </p>
-              <p>
-                Twoi klienci już tu są — niezależnie od branży. <strong className="text-ink font-semibold">Średni wiek użytkownika TikToka w Polsce to 27–34 lata</strong>. Prawnicy, dentyści, warsztaty i hotele budują tu audytorium i generują leady.
-              </p>
-              <p>
-                Tworzymy kampanie dopasowane do algorytmu TikToka — od briefu kreacji po <strong className="text-ink font-semibold">Pixel i śledzenie konwersji</strong>. Wiesz za każdą złotówkę, co przynosi efekt.
-              </p>
+            <div className="bg-surface rounded-3xl p-8 border border-border">
+              <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-6">Dlaczego TikTok Ads teraz?</p>
+              <div className="space-y-5">
+                {[
+                  { bold: "Niższy CPM niż Meta i Google", rest: " — platforma jest mniej zatłoczona reklamodawcami. Im szybciej wejdziesz, tym taniej kupisz uwagę." },
+                  { bold: "Średni wiek użytkownika 27–34 lata", rest: " — to nie tylko nastolatki. Prawnicy, dentyści i firmy B2B generują tu leady." },
+                  { bold: "Algorytm faworyzuje autentyczność,", rest: " nie budżet. Dobre wideo bez wielkiej produkcji bije drogie reklamy." },
+                  { bold: "Pixel i pełne śledzenie konwersji", rest: " — wiesz za każdą złotówkę co przynosi efekt. Bez zgadywania." },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-3 items-start">
+                    <div className="shrink-0 w-5 h-5 rounded-full bg-brand/10 flex items-center justify-center mt-0.5">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <p className="text-sm text-zinc-600 leading-relaxed"><strong className="text-ink">{item.bold}</strong>{item.rest}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -68,44 +68,44 @@ export default function GoogleAdsPage() {
     <main className="pt-20">
 
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden bg-white py-20 px-6">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
         <CatWatermark />
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-20">
-            {/* Left — heading */}
-            <div className="lg:w-5/12 shrink-0">
-              <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">Google Ads</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-ink leading-tight mb-8">
-                <span className="bg-brand text-white px-2 py-0.5 rounded-md">Reklamy Google,</span><br />
-                które <span className="text-brand">sprzedają.</span>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">Google Ads</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
+                Reklamy Google, które <span className="text-brand">zamieniają kliknięcia w klientów.</span>
               </h1>
+              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
+                Google Ads to nie przepalanie budżetu na przypadkowy ruch. To precyzyjne docieranie do osób, które aktywnie szukają tego co oferujesz — w momencie gdy mają portfel w ręku.
+              </p>
               <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/kontakt"
-                  className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200"
-                >
+                <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
                   Bezpłatna konsultacja
                 </Link>
-                <Link
-                  href="#etapy"
-                  className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200"
-                >
+                <Link href="#etapy" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
                   Jak działamy
                 </Link>
               </div>
             </div>
-
-            {/* Right — text */}
-            <div className="lg:w-7/12 space-y-5 text-zinc-600 text-[17px] leading-relaxed border-l-0 lg:border-l-2 lg:border-brand/20 lg:pl-14">
-              <p>
-                Płacisz za każde kliknięcie — sens ma tylko wtedy, gdy kliknięcie zamienia się w klienta. Budujemy kampanie oparte na <strong className="text-ink font-semibold">intencji zakupowej</strong>, nie na samym ruchu.
-              </p>
-              <p>
-                Zanim wydasz złotówkę, sprawdzamy co robi konkurencja i ile realnie kosztuje kliknięcie od gotowego do zakupu użytkownika. <strong className="text-ink font-semibold">Budżet trafia bezpośrednio do Google</strong> — bez prowizji od wydatków.
-              </p>
-              <p>
-                Elastyczna umowa miesięczna, <strong className="text-ink font-semibold">pełne śledzenie konwersji</strong> i miesięczny raport z konkretnymi liczbami. Wiesz dokładnie, co przynosi efekt — bez marketingowego języka.
-              </p>
+            <div className="bg-surface rounded-3xl p-8 border border-border">
+              <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-6">Dlaczego Google Ads z MiauSEO?</p>
+              <div className="space-y-5">
+                {[
+                  { bold: "Intencja zakupowa,", rest: " nie przypadkowy ruch. Docieramy do osób które wpisują dokładnie to, co oferujesz." },
+                  { bold: "Budżet trafia bezpośrednio do Google", rest: " — bez prowizji od wydatków. Pełna transparentność kosztów." },
+                  { bold: "Pełne śledzenie konwersji", rest: " — telefony, formularze, zakupy. Wiesz dokładnie co przynosi efekt." },
+                  { bold: "Elastyczna umowa miesięczna", rest: " — bez rocznych kontraktów. Efekty albo rezygnujesz." },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-3 items-start">
+                    <div className="shrink-0 w-5 h-5 rounded-full bg-brand/10 flex items-center justify-center mt-0.5">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <p className="text-sm text-zinc-600 leading-relaxed"><strong className="text-ink">{item.bold}</strong>{item.rest}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
