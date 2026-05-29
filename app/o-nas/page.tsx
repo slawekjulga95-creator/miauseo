@@ -63,7 +63,7 @@ export default function ONasPage() {
               <div className="space-y-5">
                 {[
                   { bold: "11 lat doświadczenia", rest: " w marketingu lokalnym i kampaniach reklamowych. Setki firm, od jednoosobowych po sieci lokalizacji." },
-                  { bold: "Żadnych rocznych umów", rest: " — współpraca miesiąc do miesiąca. Efekty albo rezygnujesz. Proste zasady." },
+                  { bold: "Bez długich umów", rest: " — elastyczne warunki współpracy dopasowane do Twoich potrzeb. Bez wiązania na lata." },
                   { bold: "Rozmowa przed ofertą", rest: " — najpierw rozumiem Twój biznes, potem proponuję rozwiązanie. Nie odwrotnie." },
                   { bold: "Pełna transparentność", rest: " — wiesz za co płacisz, co robimy i jakie wyniki to przynosi. Bez marketingowego języka." },
                 ].map((item, i) => (
