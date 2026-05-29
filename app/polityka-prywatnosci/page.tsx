@@ -11,7 +11,7 @@ const sections = [
     id: "administrator",
     title: "Administrator danych osobowych",
     content: [
-      'Administratorem Twoich danych osobowych jest MiauSEO Sławomir Jułga, prowadzący działalność gospodarczą na terytorium Rzeczypospolitej Polskiej (dalej: „Administrator" lub „MiauSEO").',
+      'Administratorem Twoich danych osobowych jest MiauSEO, prowadzące działalność gospodarczą na terytorium Rzeczypospolitej Polskiej (dalej: „Administrator" lub „MiauSEO").',
       "Kontakt z Administratorem jest możliwy pod adresem e-mail: kontakt@miauseo.pl lub telefonicznie: +48 600 000 000.",
     ],
   },
