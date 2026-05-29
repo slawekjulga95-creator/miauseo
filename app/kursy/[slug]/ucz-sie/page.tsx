@@ -1,4 +1,4 @@
-import { redirect, notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import LessonPlayer from "@/components/kursy/LessonPlayer";
 
@@ -11,25 +11,43 @@ export default async function UczSiePage({ params }: Props) {
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect(`/logowanie?next=/kursy/${slug}/ucz-sie`);
 
-  const { data: course } = await supabase
+  const { data: course, error: courseError } = await supabase
     .from("courses")
-    .select("*, lessons(*)")
+    .select("id, title, slug")
     .eq("slug", slug)
     .single();
 
-  if (!course) notFound();
+  if (courseError || !course) {
+    return <div className="p-10 text-red-500">Błąd kursu: {courseError?.message ?? "nie znaleziono"}</div>;
+  }
 
-  const { data: purchase } = await supabase
+  const { data: lessons, error: lessonsError } = await supabase
+    .from("lessons")
+    .select("*")
+    .eq("course_id", course.id)
+    .order("order");
+
+  if (lessonsError) {
+    return <div className="p-10 text-red-500">Błąd lekcji: {lessonsError.message}</div>;
+  }
+
+  const { data: purchase, error: purchaseError } = await supabase
     .from("purchases")
     .select("id")
     .eq("user_id", user.id)
-    .or(`course_id.eq.${course.id},all_access.eq.true`)
     .maybeSingle();
 
-  if (!purchase) redirect(`/kursy/${slug}`);
+  if (purchaseError) {
+    return <div className="p-10 text-red-500">Błąd zakupu: {purchaseError.message}</div>;
+  }
 
-  const lessons = (course.lessons ?? []).sort((a: { order: number }, b: { order: number }) => a.order - b.order);
-  if (lessons.length === 0) notFound();
+  if (!purchase) {
+    return <div className="p-10 text-red-500">Brak dostępu — brak wpisu w purchases dla user: {user.id}</div>;
+  }
+
+  if (!lessons || lessons.length === 0) {
+    return <div className="p-10 text-yellow-500">Kurs nie ma jeszcze lekcji.</div>;
+  }
 
   const { data: progress } = await supabase
     .from("lesson_progress")
