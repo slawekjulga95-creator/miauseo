@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, DM_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -39,6 +40,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className={`${syne.variable} ${dmSans.variable} h-full antialiased`}>
+      <head>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-JV3ZRB7G8G" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-JV3ZRB7G8G');
+        `}</Script>
+      </head>
       <body className="min-h-full flex flex-col font-sans text-ink bg-white">
         <Navbar />
         <main className="flex-1">{children}</main>
