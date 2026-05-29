@@ -1,4 +1,9 @@
+import type { Metadata } from "next";
 import HeroSection from "@/components/home/HeroSection";
+
+export const metadata: Metadata = {
+  title: "MiauSEO.pl - Agencja marketingowa | Pozycjonowanie | Kampanie leadowe",
+};
 import ProblemSection from "@/components/home/ProblemSection";
 import ServicesSection from "@/components/home/ServicesSection";
 import ProcessSection from "@/components/home/ProcessSection";
