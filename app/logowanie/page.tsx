@@ -21,7 +21,7 @@ function LoginForm() {
     setError("");
     const { error } = await supabase.auth.signInWithPassword(form);
     if (error) {
-      setError("Nieprawidłowy email lub hasło.");
+      setError(error.message);
       setLoading(false);
     } else {
       router.push(next);
