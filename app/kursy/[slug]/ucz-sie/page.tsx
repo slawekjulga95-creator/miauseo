@@ -12,35 +12,27 @@ export default async function UczSiePage({ params }: Props) {
   if (!user) redirect(`/logowanie?next=/kursy/${slug}/ucz-sie`);
 
   const { data: course } = await supabase
-    .from("courses")
-    .select("id, title, slug")
-    .eq("slug", slug)
-    .single();
+    .from("courses").select("id, title, slug").eq("slug", slug).single();
 
   if (!course) return <div className="p-10">Nie znaleziono kursu.</div>;
 
-  const { data: lessons } = await supabase
-    .from("lessons")
-    .select("*")
-    .eq("course_id", course.id)
-    .order("order");
-
   const { data: purchase } = await supabase
-    .from("purchases")
-    .select("id")
-    .eq("user_id", user.id)
-    .maybeSingle();
+    .from("purchases").select("id").eq("user_id", user.id).maybeSingle();
 
   if (!purchase) redirect(`/kursy/${slug}`);
+
+  const { data: lessons } = await supabase
+    .from("lessons").select("*").eq("course_id", course.id).order("order");
+
+  const { data: sections } = await supabase
+    .from("sections").select("*").eq("course_id", course.id).order("order");
 
   if (!lessons || lessons.length === 0) {
     return <div className="p-10">Kurs nie ma jeszcze lekcji.</div>;
   }
 
   const { data: progress } = await supabase
-    .from("lesson_progress")
-    .select("lesson_id")
-    .eq("user_id", user.id);
+    .from("lesson_progress").select("lesson_id").eq("user_id", user.id);
 
   const completedIds = new Set(progress?.map((p: { lesson_id: string }) => p.lesson_id) ?? []);
   const firstIncomplete = lessons.find((l: { id: string }) => !completedIds.has(l.id)) ?? lessons[0];
@@ -49,6 +41,7 @@ export default async function UczSiePage({ params }: Props) {
     <LessonPlayer
       course={course}
       lessons={lessons}
+      sections={sections ?? []}
       currentLesson={firstIncomplete}
       completedIds={Array.from(completedIds) as string[]}
       userId={user.id}
