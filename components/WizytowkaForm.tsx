@@ -1,14 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function WizytowkaForm() {
   const [sent, setSent] = useState(false);
+  const router = useRouter();
   const [form, setForm] = useState({ name: "", company: "", phone: "", message: "", consent: false });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSent(true);
+    router.push("/dziekujemy");
   };
 
   if (sent) {

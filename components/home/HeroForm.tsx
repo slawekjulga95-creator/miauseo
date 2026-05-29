@@ -1,11 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function HeroForm() {
   const [visible, setVisible] = useState(false);
   const [closed, setClosed] = useState(false);
   const [sent, setSent] = useState(false);
+  const router = useRouter();
   const [form, setForm] = useState({
     name: "",
     company: "",
@@ -25,6 +27,7 @@ export default function HeroForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSent(true);
+    router.push("/dziekujemy");
   };
 
   return (

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 type Field = {
   name: string;
@@ -22,6 +23,7 @@ const services = [
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
+  const router = useRouter();
   const [form, setForm] = useState<Field>({
     name: "", company: "", email: "", phone: "", service: "", message: "", consent: false,
   });
@@ -56,7 +58,7 @@ export default function ContactForm() {
     "w-full px-4 py-3 rounded-xl border border-border bg-white text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition";
 
   return (
-    <form onSubmit={(e) => { e.preventDefault(); setSent(true); }} className="space-y-4">
+    <form onSubmit={(e) => { e.preventDefault(); setSent(true); router.push("/dziekujemy"); }} className="space-y-4">
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Imię i nazwisko *</label>
