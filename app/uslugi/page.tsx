@@ -158,44 +158,45 @@ export default function ServicesPage() {
   return (
     <main className="pt-20">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-white py-20 px-6">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
         <CatWatermark />
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-20">
-            {/* Left — heading */}
-            <div className="lg:w-5/12 shrink-0">
-              <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">Zakres usług</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-ink leading-tight mb-8">
-                <span className="bg-brand text-white px-2 py-0.5 rounded-md">Wszystko</span>, czego<br />
-                potrzebuje <span className="text-brand">Twoja firma.</span>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">Zakres usług</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
+                Wszystko czego potrzebuje Twoja firma.{" "}
+                <span className="text-brand">Dobrane do celu, nie do oferty.</span>
               </h1>
+              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
+                Pomagamy małym i średnim firmom rosnąć w Google — od wizytówki Google Business Profile po kampanie na TikToku. Każda współpraca zaczyna się od bezpłatnej konsultacji.
+              </p>
               <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/kontakt"
-                  className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200"
-                >
+                <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
                   Bezpłatna konsultacja
                 </Link>
-                <Link
-                  href="/blog"
-                  className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200"
-                >
+                <Link href="/blog" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
                   Czytaj blog
                 </Link>
               </div>
             </div>
-
-            {/* Right — text */}
-            <div className="lg:w-7/12 space-y-5 text-zinc-600 text-[17px] leading-relaxed border-l-0 lg:border-l-2 lg:border-brand/20 lg:pl-14">
-              <p>
-                Pomagamy małym i średnim firmom <strong className="text-ink font-semibold">rosnąć w Google</strong> — od wizytówki Google Business Profile po kampanie wideo na TikToku. Dobieramy narzędzia do Twoich celów i budżetu.
-              </p>
-              <p>
-                Mamy za sobą <strong className="text-ink font-semibold">11 lat doświadczenia w marketingu lokalnym</strong>. Wiemy, co działa dla fryzjera, warsztatu, kancelarii i hotelu — i co sprawdza się tylko na papierze.
-              </p>
-              <p>
-                Każda współpraca zaczyna się od <strong className="text-ink font-semibold">bezpłatnej konsultacji</strong>. Analizujemy, gdzie tracisz klientów i proponujemy konkretny plan — bez zbędnych obietnic i długoletnich umów.
-              </p>
+            <div className="bg-surface rounded-3xl p-8 border border-border">
+              <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-6">Dlaczego MiauSEO?</p>
+              <div className="space-y-5">
+                {[
+                  { bold: "11 lat doświadczenia", rest: " w marketingu lokalnym. Wiemy co działa dla fryzjera, warsztatu, kancelarii i hotelu." },
+                  { bold: "Bez długich umów", rest: " — elastyczne warunki dopasowane do Twoich potrzeb i budżetu." },
+                  { bold: "Narzędzia dobrane do celu,", rest: " nie do naszego cennika. Proponujemy to co ma sens dla Twojego biznesu." },
+                  { bold: "Pełna transparentność", rest: " — wiesz za co płacisz, co robimy i jakie wyniki to przynosi." },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-3 items-start">
+                    <div className="shrink-0 w-5 h-5 rounded-full bg-brand/10 flex items-center justify-center mt-0.5">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <p className="text-sm text-zinc-600 leading-relaxed"><strong className="text-ink">{item.bold}</strong>{item.rest}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
