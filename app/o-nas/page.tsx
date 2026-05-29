@@ -47,7 +47,7 @@ export default function ONasPage() {
                 <span className="text-brand">11 lat w marketingu lokalnym.</span>
               </h1>
               <p className="text-zinc-500 text-lg leading-relaxed mb-8">
-                Nazwa MiauSEO nie jest przypadkowa. Pochodzi z zamiłowania do kotów — zwierząt niezależnych, inteligentnych i odpornych na sztuczki. Dokładnie tak podchodzimy do pracy z klientami: żadnych trików, tylko realne wyniki.
+                Nazwa MiauSEO nie jest przypadkowa. Pochodzi z zamiłowania do kotów: zwierząt <strong className="text-ink font-semibold">niezależnych, inteligentnych</strong> i odpornych na sztuczki. Dokładnie tak podchodzimy do pracy z klientami: <strong className="text-ink font-semibold">żadnych trików, tylko realne wyniki.</strong>
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
