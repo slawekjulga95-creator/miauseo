@@ -232,7 +232,7 @@ export default function KursWizytowkaPage() {
               </div>
               <p className="text-zinc-400 text-sm mb-8">brutto (z VAT) · jednorazowo</p>
               <a
-                href="#"
+                href="/kursy/wizytowka-stoi-w-miejscu/kup"
                 className="w-full inline-flex items-center justify-center gap-2.5 bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200 text-lg"
               >
                 Kup kurs
