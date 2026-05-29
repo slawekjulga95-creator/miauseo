@@ -25,7 +25,7 @@ export default function KupPage() {
     name: "",
     email: "",
     password: "",
-    company: "",
+    nip: "",
     consent: false,
   });
   const [error, setError] = useState("");
@@ -45,7 +45,7 @@ export default function KupPage() {
     const { data: signUpData, error: signUpError } = await supabase.auth.signUp({
       email: form.email,
       password: form.password,
-      options: { data: { full_name: form.name, company: form.company } },
+      options: { data: { full_name: form.name, nip: form.nip } },
     });
 
     if (signUpError && signUpError.message !== "User already registered") {
@@ -92,9 +92,9 @@ export default function KupPage() {
                     onChange={(e) => setForm({ ...form, name: e.target.value })} className={input} />
                 </div>
                 <div>
-                  <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Firma (opcjonalnie)</label>
-                  <input type="text" placeholder="Kowalski SEO" value={form.company}
-                    onChange={(e) => setForm({ ...form, company: e.target.value })} className={input} />
+                  <label className="block text-xs font-semibold text-zinc-500 mb-1.5">NIP *</label>
+                  <input type="text" required placeholder="1234567890" value={form.nip}
+                    onChange={(e) => setForm({ ...form, nip: e.target.value })} className={input} />
                 </div>
               </div>
 
