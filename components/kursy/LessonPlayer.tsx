@@ -29,7 +29,7 @@ export default function LessonPlayer({ course, lessons, currentLesson, completed
   const progress = Math.round((completed.size / lessons.length) * 100);
 
   return (
-    <div className="fixed inset-0 z-50 bg-ink text-white flex flex-col overflow-hidden">
+    <div className="fixed inset-0 z-[100] bg-ink text-white flex flex-col overflow-hidden">
 
       {/* Top bar */}
       <header className="border-b border-white/10 px-6 py-4 flex items-center justify-between">
