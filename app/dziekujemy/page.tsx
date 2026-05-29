@@ -29,16 +29,30 @@ export default function DziekujemyPage() {
         {/* Info boxes */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
           {[
-            { icon: "⚡", label: "Czas odpowiedzi", value: "Do 15 minut" },
-            { icon: "📞", label: "Preferowany kontakt", value: "Email lub telefon" },
-            { icon: "🎯", label: "Pierwszy krok", value: "Bezpłatna konsultacja" },
+            { label: "Czas odpowiedzi", value: "Do 15 minut" },
+            { label: "Preferowany kontakt", value: "Email lub telefon" },
+            { label: "Pierwszy krok", value: "Bezpłatna konsultacja" },
           ].map((item) => (
             <div key={item.label} className="bg-surface rounded-2xl p-4 border border-border">
-              <p className="text-2xl mb-1">{item.icon}</p>
               <p className="text-xs text-zinc-400 font-semibold uppercase tracking-widest mb-1">{item.label}</p>
               <p className="text-sm font-bold text-ink">{item.value}</p>
             </div>
           ))}
+        </div>
+
+        {/* Kursy promo */}
+        <div className="bg-surface rounded-2xl p-6 border border-border mb-10 text-left">
+          <p className="text-xs font-bold tracking-widest uppercase text-brand mb-3">Działasz samemu?</p>
+          <p className="text-ink font-semibold mb-1">Sprawdź nasze kursy</p>
+          <p className="text-sm text-zinc-500 leading-relaxed mb-4">
+            Wpisz kod <strong className="text-ink font-bold">Maniek</strong> i otrzymaj <strong className="text-ink font-bold">10% rabatu</strong> na dowolny kurs.
+          </p>
+          <Link
+            href="/kursy"
+            className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-6 py-3 rounded-xl transition-colors duration-200 text-sm"
+          >
+            Zobacz kursy
+          </Link>
         </div>
 
         {/* CTA */}
