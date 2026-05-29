@@ -110,30 +110,27 @@ export default function PozycjonowanieStronyPage() {
     <main className="pt-20">
 
       {/* ── Hero ── */}
-      <section className="relative py-20 bg-white overflow-hidden">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
         <CatWatermark />
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle, #d4d4d4 1.2px, transparent 1.2px)", backgroundSize: "28px 28px", opacity: 0.4 }} />
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-            <div className="py-8">
-              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">Usługa</span>
+            <div>
+              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">Pozycjonowanie stron</span>
               <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
-                Pozycjonowanie{" "}
-                <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">strony internetowej</span>
+                Twoja strona wysoko w Google.{" "}
+                <span className="text-brand">Trwały ruch bez płacenia za kliknięcia.</span>
               </h1>
-              <p className="text-lg text-zinc-500 leading-relaxed mb-8">
-                Twoja strona pojawia się wysoko w Google, gdy klienci szukają Twoich usług.
-                <strong className="font-semibold text-ink"> Trwały ruch organiczny</strong> bez płacenia
-                za każde kliknięcie — zbudowany raz, pracujący miesiącami.
+              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
+                SEO to inwestycja która pracuje miesiącami. Budujemy widoczność organiczną opartą na audycie, optymalizacji technicznej i treściach — nie na skrótach które Google karze.
               </p>
               <div className="flex flex-wrap gap-4">
-                {["Pierwsze efekty po 2–4 miesiącach", "Umowa miesiąc do miesiąca", "Raport tygodniowy"].map((t) => (
-                  <div key={t} className="flex items-center gap-2 text-sm text-zinc-500">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                    {t}
-                  </div>
-                ))}
+                <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
+                  Bezpłatna konsultacja
+                </Link>
+                <Link href="#zakres" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
+                  Zakres usługi
+                </Link>
               </div>
             </div>
 

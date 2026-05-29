@@ -107,41 +107,30 @@ export default function WizytowkaGooglePage() {
     <main className="pt-20">
 
       {/* ── Hero ── */}
-      <section className="relative py-20 bg-white overflow-hidden">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
         <CatWatermark />
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle, #d4d4d4 1.2px, transparent 1.2px)", backgroundSize: "28px 28px", opacity: 0.4 }} />
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
 
             {/* Left */}
-            <div className="py-8">
-              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
-                Usługa
+            <div>
+              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">
+                Wizytówka Google
               </span>
               <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
-                Pozycjonowanie{" "}
-                <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">
-                  wizytówki Google
-                </span>
+                Top 3 w Mapach Google.{" "}
+                <span className="text-brand">Więcej klientów bez płatnych reklam.</span>
               </h1>
-              <p className="text-lg text-zinc-500 leading-relaxed mb-8">
-                Twoja firma pojawia się w <strong className="font-semibold text-ink">top 3 Mapy Google</strong>,
-                gdy klienci szukają lokalnie. Więcej połączeń, więcej wizyt, więcej klientów —
-                bez płatnych reklam.
+              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
+                Twoja firma pojawia się gdy klienci szukają lokalnie — zanim spojrzą na konkurencję. Pozycjonowanie wizytówki Google to najszybsza droga do klientów z Twojej okolicy.
               </p>
               <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 text-sm text-zinc-500">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                  Pierwsze efekty po 2–4 tygodniach
-                </div>
-                <div className="flex items-center gap-2 text-sm text-zinc-500">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                  Umowa miesiąc do miesiąca
-                </div>
-                <div className="flex items-center gap-2 text-sm text-zinc-500">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                  Raport tygodniowy
-                </div>
+                <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
+                  Bezpłatna konsultacja
+                </Link>
+                <Link href="#zakres" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
+                  Zakres usługi
+                </Link>
               </div>
             </div>
 
