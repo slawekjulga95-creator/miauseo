@@ -36,30 +36,52 @@ export default function KursyPage() {
     <main className="pt-20">
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-white py-20 px-6">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
         <CatWatermark />
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row lg:items-end gap-8 lg:gap-20">
-            <div className="lg:w-5/12 shrink-0">
-              <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">Kursy online</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-ink leading-tight">
-                <span className="bg-brand text-white px-2 py-0.5 rounded-md">Wiedza</span>{" "}
-                która działa.
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">Kursy online</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
+                Wiedza która działa.{" "}
+                <span className="text-brand">Konkretne działania, nie teoria.</span>
               </h1>
-            </div>
-            <div className="lg:w-7/12 lg:border-l-2 lg:border-brand/20 lg:pl-14 pb-1">
-              <p className="text-zinc-600 text-[17px] leading-relaxed">
-                Nie teoria, nie ogólniki. Kursy MiauSEO to{" "}
-                <strong className="text-ink font-semibold">konkretne działania i gotowe plany</strong> — tak żebyś wychodził z lekcji wiedząc{" "}
-                <strong className="text-ink font-semibold">co zrobić następnego dnia</strong>.
+              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
+                Kursy MiauSEO to gotowe plany działania — tak żebyś wychodził z każdej lekcji wiedząc co zrobić następnego dnia. Bez ogólników.
               </p>
+              <div className="flex flex-wrap gap-4">
+                <Link href="#kursy" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
+                  Zobacz kursy
+                </Link>
+                <Link href="/kontakt" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
+                  Masz pytania?
+                </Link>
+              </div>
+            </div>
+            <div className="bg-surface rounded-3xl p-8 border border-border">
+              <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-6">Dlaczego kursy MiauSEO?</p>
+              <div className="space-y-5">
+                {[
+                  { bold: "Zero teorii,", rest: " tylko konkretne działania. Każda lekcja kończy się gotową listą kroków do wdrożenia." },
+                  { bold: "Dostęp nielimitowany", rest: " — wracasz kiedy chcesz, materiał nie wygasa." },
+                  { bold: "Aktualizacje w cenie", rest: " — kurs rośnie razem z algorytmem Google. Raz kupujesz, zawsze aktualny." },
+                  { bold: "Wiedza prosto od praktyka", rest: " — 11 lat w marketingu lokalnym, nie od kogoś kto tylko pisze o SEO." },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-3 items-start">
+                    <div className="shrink-0 w-5 h-5 rounded-full bg-brand/10 flex items-center justify-center mt-0.5">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <p className="text-sm text-zinc-600 leading-relaxed"><strong className="text-ink">{item.bold}</strong>{item.rest}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Siatka kursów */}
-      <section className="py-20 px-6 bg-surface">
+      <section id="kursy" className="py-20 px-6 bg-surface">
         <div className="max-w-6xl mx-auto">
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
             {courses.map((course) => (
