@@ -93,44 +93,45 @@ export default function ReferencjePage() {
   return (
     <main className="pt-24">
       {/* Intro */}
-      <section className="relative overflow-hidden bg-white py-20 px-6">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
         <CatWatermark />
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-20">
-            {/* Left — heading */}
-            <div className="lg:w-5/12 shrink-0">
-              <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">Referencje</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-ink leading-tight mb-8">
-                <span className="bg-brand text-white px-2 py-0.5 rounded-md">Zależy</span> mi na rozmowie<br />
-                <span className="text-brand">o Twojej firmie.</span>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">Referencje</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
+                Zależy mi na rozmowie o Twojej firmie.{" "}
+                <span className="text-brand">Nie na liście logo.</span>
               </h1>
+              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
+                Mam trzech klientów, z którymi mogę porozmawiać otwarcie — co poszło dobrze, co było trudne i czego nie powtórzymy. Nie ma tu setki logo dla wrażenia. Jest konkret.
+              </p>
               <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/kontakt"
-                  className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200"
-                >
+                <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
                   Porozmawiajmy o Twoim biznesie
                 </Link>
-                <Link
-                  href="/uslugi/wizytowka-google"
-                  className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200"
-                >
+                <Link href="/uslugi/wizytowka-google" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
                   Sprawdź ofertę
                 </Link>
               </div>
             </div>
-
-            {/* Right — text */}
-            <div className="lg:w-7/12 space-y-5 text-zinc-600 text-[17px] leading-relaxed border-l-0 lg:border-l-2 lg:border-brand/20 lg:pl-14">
-              <p>
-                Większość agencji pokazuje dziesiątki logo klientów i screenshoty z wykresami rosnącymi w górę. Potem okazuje się, że wyniki dotyczyły jednego miesiąca, albo były mierzone w sposób, który wygodnie ukrywa brak realnych efektów.
-              </p>
-              <p>
-                Ja robię to inaczej. Mam <strong className="text-ink font-bold">trzech klientów, z którymi mogę porozmawiać otwarcie</strong> — co poszło dobrze, co było trudne i czego nie powtórzymy. Nie ma tu setki logo dla wrażenia. Jest konkret.
-              </p>
-              <p>
-                Najważniejsza jest dla mnie rozmowa o Twojej firmie — zanim cokolwiek zaproponuję. Każdy biznes jest inny i każda współpraca zaczyna się od zrozumienia, gdzie jesteś teraz i dokąd chcesz dotrzeć.
-              </p>
+            <div className="bg-surface rounded-3xl p-8 border border-border">
+              <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-6">Jak podchodzę do referencji</p>
+              <div className="space-y-5">
+                {[
+                  { bold: "Żadnych wykresów z jednego miesiąca,", rest: " które wyglądają imponująco ale ukrywają brak realnych efektów." },
+                  { bold: "Konkretne rozmowy z klientami", rest: " — możesz zapytać co poszło dobrze, co było trudne i czego nie powtórzymy." },
+                  { bold: "Transparentność przed podpisaniem umowy", rest: " — najpierw rozmawiamy o Twojej firmie, potem proponuję rozwiązanie." },
+                  { bold: "Każdy biznes jest inny", rest: " — nie stosuję szablonowych rozwiązań. Strategia zawsze zaczyna się od Twojej sytuacji." },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-3 items-start">
+                    <div className="shrink-0 w-5 h-5 rounded-full bg-brand/10 flex items-center justify-center mt-0.5">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <p className="text-sm text-zinc-600 leading-relaxed"><strong className="text-ink">{item.bold}</strong>{item.rest}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
