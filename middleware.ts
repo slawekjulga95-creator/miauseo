@@ -34,9 +34,14 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
+  const isAdmin = request.nextUrl.pathname.startsWith("/admin");
+  if (isAdmin && user?.email !== "slawekjulga95@gmail.com") {
+    return NextResponse.redirect(new URL("/", request.url));
+  }
+
   return supabaseResponse;
 }
 
 export const config = {
-  matcher: ["/konto/:path*", "/kursy/:path*/ucz-sie/:path*"],
+  matcher: ["/konto/:path*", "/kursy/:path*/ucz-sie/:path*", "/admin/:path*"],
 };
