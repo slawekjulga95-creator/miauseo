@@ -217,7 +217,7 @@ export default function HeroSection() {
               agencję{" "}
               <span style={{ fontSize: "0.72em", lineHeight: 1 }} aria-hidden="true">🐾</span>
             </span>
-            {"."}<br />
+            <br />
             <span style={{ color: "var(--color-brand)" }}>Nie każdy efekty.</span>
           </h1>
 
