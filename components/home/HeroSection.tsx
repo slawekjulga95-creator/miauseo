@@ -108,12 +108,6 @@ export default function HeroSection() {
         ))}
       </div>
 
-      {/* Logo watermark – desktop left column (CSS background – not LCP candidate) */}
-      <div
-        aria-hidden="true"
-        className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-none select-none hidden lg:block"
-        style={{ width: "460px", aspectRatio: "625/399", backgroundImage: "url('/logo.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat", opacity: 0.18 }}
-      />
 
       {/* Content – left side */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 min-h-screen flex items-center">

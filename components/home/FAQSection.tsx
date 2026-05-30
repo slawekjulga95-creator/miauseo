@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const faqs = [
@@ -27,8 +24,6 @@ const faqs = [
 ];
 
 export default function FAQSection() {
-  const [open, setOpen] = useState<number | null>(0);
-
   return (
     <section className="py-24 bg-surface">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
@@ -50,39 +45,24 @@ export default function FAQSection() {
         <div className="space-y-3">
           {faqs.map((faq, i) => (
             <ScrollReveal key={i} delay={i * 80}>
-              <div className="bg-white rounded-2xl border border-border overflow-hidden">
-                <button
-                  onClick={() => setOpen(open === i ? null : i)}
-                  className="w-full flex items-center justify-between gap-4 px-7 py-5 text-left"
-                >
+              <details className="group bg-white rounded-2xl border border-border overflow-hidden">
+                <summary className="flex items-center justify-between gap-4 px-7 py-5 cursor-pointer list-none">
                   <span className="font-semibold text-ink text-base leading-snug">{faq.q}</span>
-                  <div className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-colors duration-200 ${open === i ? "bg-brand text-white" : "bg-brand/10 text-brand"}`}>
+                  <div className="shrink-0 w-7 h-7 rounded-full bg-brand/10 text-brand flex items-center justify-center group-open:bg-brand group-open:text-white transition-colors duration-200">
                     <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className={`transition-transform duration-300 ${open === i ? "rotate-45" : ""}`}
+                      width="14" height="14" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                      className="transition-transform duration-300 group-open:rotate-45"
                     >
                       <line x1="12" y1="5" x2="12" y2="19" />
                       <line x1="5" y1="12" x2="19" y2="12" />
                     </svg>
                   </div>
-                </button>
-
-                <div
-                  className="overflow-hidden transition-all duration-300 ease-in-out"
-                  style={{ maxHeight: open === i ? "500px" : "0px" }}
-                >
-                  <p className="px-7 pb-6 text-zinc-500 leading-relaxed text-sm border-t border-border pt-4">
-                    {faq.a}
-                  </p>
-                </div>
-              </div>
+                </summary>
+                <p className="px-7 pb-6 text-zinc-500 leading-relaxed text-sm border-t border-border pt-4">
+                  {faq.a}
+                </p>
+              </details>
             </ScrollReveal>
           ))}
         </div>
