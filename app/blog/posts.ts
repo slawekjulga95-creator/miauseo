@@ -17,6 +17,17 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "pozycjonowanie-wizytowki-google",
+    title: "Pozycjonowanie wizytówki Google – kompletny przewodnik 2026",
+    excerpt: "Czym jest pozycjonowanie wizytówki Google, jak działa algorytm Local Pack i co zrobić, żeby Twoja firma znalazła się w top 3 Google Maps? Praktyczny przewodnik eksperta – bez lania wody.",
+    category: "SEO",
+    date: "2026-05-30",
+    readTime: 16,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-pozycjonowanie-wizytowki.svg",
+    published: true,
+  },
+  {
     slug: "czynniki-rankingowe-wizytowki-google-2026",
     title: "Czynniki rankingowe wizytówki Google w 2026 — pełna lista z oceną ważności",
     excerpt: "34 czynniki rankingowe Google Business Profile sklasyfikowane od A (krytyczne) do E (marginalne). Kompletna tabela z opisem każdego sygnału i wskazówkami wdrożeniowymi.",

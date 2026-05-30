@@ -5644,4 +5644,546 @@ define( 'DB_HOST', 'localhost' );</code></pre>
       </div>
     </>
   ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google – kompletny przewodnik 2026
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google": (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Pozycjonowanie wizytówki Google – kompletny przewodnik 2026",
+            "description": "Czym jest pozycjonowanie wizytówki Google, jak działa algorytm Local Pack i co zrobić, żeby Twoja firma znalazła się w top 3 Google Maps?",
+            "author": { "@type": "Organization", "name": "MiauSEO", "url": "https://miauseo.pl" },
+            "publisher": { "@type": "Organization", "name": "MiauSEO", "url": "https://miauseo.pl" },
+            "datePublished": "2026-05-30",
+            "dateModified": "2026-05-30",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://miauseo.pl/pozycjonowanie-wizytowki-google" }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Czym jest pozycjonowanie wizytówki Google?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Pozycjonowanie wizytówki Google to zestaw działań SEO mających na celu poprawę pozycji firmy w Google Maps i Local Pack – bloku z 3 firmami pojawiającym się nad wynikami organicznymi. Obejmuje optymalizację profilu GBP, zbieranie opinii, budowanie cytowań i lokalne link building." }
+              },
+              {
+                "@type": "Question",
+                "name": "Ile trwa pozycjonowanie wizytówki Google?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Pierwsze efekty widać zwykle po 4–8 tygodniach od wdrożenia optymalizacji. Pełna poprawa pozycji w konkurencyjnych branżach zajmuje od 3 do 6 miesięcy, a w bardzo konkurencyjnych lokalizacjach nawet 12 miesięcy." }
+              },
+              {
+                "@type": "Question",
+                "name": "Ile kosztuje pozycjonowanie wizytówki Google?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Jednorazowa optymalizacja profilu GBP kosztuje od 500 do 2000 zł. Miesięczna opieka local SEO to wydatek od 300 do 1500 zł, w zależności od zakresu działań i konkurencji w branży." }
+              },
+              {
+                "@type": "Question",
+                "name": "Co to jest Local Pack w Google?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Local Pack (Map Pack) to wyróżniony blok z mapą i listą 3 firm lokalnych, który Google wyświetla nad wynikami organicznymi dla zapytań lokalnych. Pozycja w Local Pack generuje od 30% do 50% wszystkich kliknięć dla fraz lokalnych." }
+              },
+              {
+                "@type": "Question",
+                "name": "Czy można samodzielnie pozycjonować wizytówkę Google?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Tak – uzupełnienie profilu, dodawanie zdjęć, publikowanie postów i odpowiadanie na opinie można robić samodzielnie. Jednak budowanie cytowań, link building lokalny i analiza konkurencji wymagają doświadczenia i specjalistycznych narzędzi SEO." }
+              },
+              {
+                "@type": "Question",
+                "name": "Co to jest NAP w local SEO?",
+                "acceptedAnswer": { "@type": "Answer", "text": "NAP to skrót od Name, Address, Phone – nazwa firmy, adres i numer telefonu. Google porównuje te dane we wszystkich źródłach w sieci. Niespójne dane NAP obniżają pozycję wizytówki w Google Maps." }
+              },
+              {
+                "@type": "Question",
+                "name": "Czy pozycja w Google Maps zależy od strony internetowej?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Tak – strona internetowa jest silnym sygnałem rankingowym dla wizytówki GBP. Google analizuje autorytet domeny, lokalne słowa kluczowe i schema markup LocalBusiness. Firma bez strony lub ze słabą stroną traci w rankingu wobec konkurentów z dobrą witryną." }
+              },
+              {
+                "@type": "Question",
+                "name": "Jak działają AI Overviews w lokalnym SEO?",
+                "acceptedAnswer": { "@type": "Answer", "text": "AI Overviews w Google coraz częściej rekomendują konkretne firmy w odpowiedzi na lokalne zapytania. Profile z kompletem informacji, aktywnymi postami i dobrymi opiniami mają największą szansę na wyróżnienie. W 2026 roku widoczność w AI Overviews staje się nowym wskaźnikiem skuteczności local SEO." }
+              }
+            ]
+          })
+        }}
+      />
+
+      <h2>Czym jest pozycjonowanie wizytówki Google?</h2>
+      <p>
+        Gdy ktoś wpisuje w Google „hydraulik Warszawa" albo „fryzjer na Mokotowie", nie widzi tylko listy stron internetowych. Na górze ekranu pojawia się mapa z pinezkami i trzy wyróżnione firmy — to właśnie <strong>Local Pack</strong>, zwany też Map Pack. Ten blok generuje od 30 do 50% wszystkich kliknięć dla fraz lokalnych. Walka o te trzy miejsca to właśnie pozycjonowanie wizytówki Google.
+      </p>
+      <p>
+        W odróżnieniu od klasycznego SEO stron internetowych, tutaj pracujesz przede wszystkim z <strong>Profilem Firmy w Google</strong> — dawniej Google Moja Firma, dziś Google Business Profile (GBP). To bezpłatny profil, który Google udostępnia każdej firmie. Im bardziej kompletny, aktywny i wiarygodny, tym wyżej algorytm go pozycjonuje w wynikach lokalnych i Google Maps.
+      </p>
+      <p>
+        Pozycjonowanie lokalne w Google Maps to kilka warstw działań: optymalizacja samego profilu GBP, systematyczne zbieranie i zarządzanie opiniami, budowanie spójności danych w sieci, praca nad stroną internetową i zdobywanie sygnałów lokalnego autorytetu. Razem tworzą strategię SEO lokalnego, która decyduje, czy klient znajdzie Ciebie — czy Twoją konkurencję.
+      </p>
+
+      <h2>Profil Firmy w Google (Google Business Profile) — co to jest i co zawiera?</h2>
+      <p>
+        Google Business Profile to bezpłatny panel, w którym firma zarządza swoją obecnością w Google. Po weryfikacji profilu wizytówka pojawia się jako <strong>Knowledge Panel</strong> po prawej stronie wyników oraz jako pin na Google Maps. To często pierwsza rzecz, jaką potencjalny klient widzi o Twojej firmie — jeszcze przed wejściem na stronę internetową.
+      </p>
+      <p>W profilu GBP zarządzasz:</p>
+      <ul>
+        <li>nazwą firmy, adresem i numerem telefonu (NAP)</li>
+        <li>godzinami otwarcia — regularnymi, świątecznymi i specjalnymi</li>
+        <li>kategorią główną i kategoriami dodatkowymi działalności</li>
+        <li>opisem firmy (do 750 znaków) z frazami kluczowymi</li>
+        <li>zdjęciami lokalu, zespołu i realizacji oraz materiałami wideo</li>
+        <li>listą usług i produktów z opisami i cenami</li>
+        <li>postami i aktualnościami (Google Posts)</li>
+        <li>sekcją pytań i odpowiedzi (Q&amp;A) dostępną publicznie</li>
+        <li>atrybutami firmy (płatność kartą, WiFi, dostęp dla wózków itp.)</li>
+      </ul>
+      <p>
+        Każde z tych pól to sygnał dla algorytmu rankingowego. Firma, która wypełnia tylko podstawowe dane, ma znacznie mniejszą szansę na top 3 w porównaniu z konkurentem, który aktywnie zarządza pełnym profilem i regularnie go aktualizuje.
+      </p>
+
+      <h2>Jak działa lokalny algorytm Google?</h2>
+      <p>
+        Google oficjalnie wskazuje trzy główne czynniki decydujące o pozycji wizytówki w wynikach lokalnych. Zrozumienie ich jest punktem wyjścia do skutecznej strategii pozycjonowania map Google.
+      </p>
+
+      <h3>Trafność (Relevance)</h3>
+      <p>
+        Google sprawdza, jak dobrze profil firmy pasuje do intencji zapytania. Decyduje tu przede wszystkim kategoria główna, słowa kluczowe w opisie i sekcji usług, a także treść połączonej strony internetowej. Firma z kategorią „Dentysta" nigdy nie pojawi się na frazę „hydraulik" — nawet jeśli działa przy tej samej ulicy.
+      </p>
+
+      <h3>Odległość (Distance)</h3>
+      <p>
+        Im bliżej użytkownika jest firma, tym wyżej rankuje dla zapytań bez określonej lokalizacji (np. „pizza" wpisana ze smartfona). Odległość jest obliczana od urządzenia użytkownika lub miejsca podanego w zapytaniu. Nie masz wpływu na to, gdzie jest klient — ale możesz pracować na trafność i renomę, żeby wygrywać z firmami bliżej centrum mimo peryferyjnej siedziby.
+      </p>
+
+      <h3>Renoma (Prominence)</h3>
+      <p>
+        To sygnał wiarygodności i popularności marki w sieci. Google bierze pod uwagę liczbę i jakość opinii, linki prowadzące do strony internetowej, obecność w katalogach i serwisach lokalnych, aktywność profilu oraz ogólną rozpoznawalność. Firmy znane offline mają naturalną przewagę — ale nawet mała firma może budować renomę online krok po kroku.
+      </p>
+      <p>
+        W 2026 roku dochodzi nowy wymiar: <strong>AI Overviews</strong>. Google AI coraz częściej wstawia rekomendacje firm lokalnych bezpośrednio w odpowiedziach generowanych przez sztuczną inteligencję. Profil z kompletem informacji, aktywnymi postami i dobrymi opiniami ma największą szansę na wyróżnienie w tym nowym formacie — to nowy front Google Maps SEO, który warto brać pod uwagę od zaraz.
+      </p>
+
+      <h2>Czynniki rankingowe wizytówek Google w 2026 roku</h2>
+      <p>
+        Na podstawie badań branżowych i obserwacji z dziesiątek projektów pozycjonowania lokalnego — poniżej najważniejsze sygnały rankingowe GBP w 2026 roku:
+      </p>
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr className="bg-surface">
+              <th className="text-left p-3 border border-border font-bold text-ink">Czynnik rankingowy</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Waga</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Co zrobić w praktyce</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-3 border border-border">Kategoria główna GBP</td>
+              <td className="p-3 border border-border text-brand font-semibold">Krytyczna</td>
+              <td className="p-3 border border-border">Wybierz jak najbardziej szczegółową kategorię pasującą do głównej działalności</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Opinie (liczba, ocena, regularność)</td>
+              <td className="p-3 border border-border text-brand font-semibold">Bardzo wysoka</td>
+              <td className="p-3 border border-border">Systematycznie proś klientów o recenzje, odpowiadaj na każdą</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border">Spójność NAP w sieci</td>
+              <td className="p-3 border border-border text-orange-600 font-semibold">Wysoka</td>
+              <td className="p-3 border border-border">Identyczna nazwa, adres i telefon w GBP, na stronie i we wszystkich katalogach</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Sygnały strony internetowej</td>
+              <td className="p-3 border border-border text-orange-600 font-semibold">Wysoka</td>
+              <td className="p-3 border border-border">Lokalne słowa kluczowe, schema LocalBusiness, szybkość strony (Core Web Vitals)</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border">Kompletność profilu GBP</td>
+              <td className="p-3 border border-border text-orange-600 font-semibold">Wysoka</td>
+              <td className="p-3 border border-border">Wszystkie pola wypełnione: opis, usługi, atrybuty, godziny specjalne</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Aktywność profilu (posty, zdjęcia)</td>
+              <td className="p-3 border border-border text-yellow-600 font-semibold">Średnia</td>
+              <td className="p-3 border border-border">Minimum 1–2 posty tygodniowo, 2–3 nowe zdjęcia miesięcznie</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border">Cytowania lokalne</td>
+              <td className="p-3 border border-border text-yellow-600 font-semibold">Średnia</td>
+              <td className="p-3 border border-border">Wpisy w Panoramie Firm, Facebook, Yelp, branżowych katalogach</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Linki do strony internetowej</td>
+              <td className="p-3 border border-border text-yellow-600 font-semibold">Średnia</td>
+              <td className="p-3 border border-border">Jakość linków z lokalnych serwisów ważniejsza niż ilość</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border">Zachowania użytkowników (CTR, połączenia, trasy)</td>
+              <td className="p-3 border border-border text-yellow-600 font-semibold">Rosnąca</td>
+              <td className="p-3 border border-border">Atrakcyjne zdjęcie okładkowe i aktualne godziny zwiększają CTR</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Zdjęcia i wideo (regularność, autentyczność)</td>
+              <td className="p-3 border border-border text-yellow-600 font-semibold">Rosnąca</td>
+              <td className="p-3 border border-border">Własne zdjęcia z geolokalizacją, nie stockowe</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Pełną listę 34 czynników rankingowych z oceną ważności znajdziesz w artykule{" "}
+        <Link href="/czynniki-rankingowe-wizytowki-google-2026">czynniki rankingowe wizytówki Google w 2026</Link>.
+      </p>
+
+      <h2>Opinie Google – najsilniejszy sygnał rankingowy</h2>
+      <p>
+        Recenzje to jednocześnie czynnik rankingowy i element, który decyduje, czy klient kliknie Twoją wizytówkę, czy pójdzie do konkurencji. Z perspektywy algorytmu liczą się trzy rzeczy:
+      </p>
+      <ul>
+        <li><strong>Liczba opinii</strong> — więcej recenzji to silniejszy sygnał wiarygodności. Minimum 20–30 opinii to próg, od którego firma zaczyna być traktowana poważnie przez algorytm. Dla konkurencyjnych branż w dużych miastach — 100+ to nowe minimum.</li>
+        <li><strong>Średnia ocena</strong> — firma z oceną poniżej 4,0 traci w rankingu i w zaufaniu potencjalnych klientów. Docelowo celuj w 4,5 gwiazdki i więcej.</li>
+        <li><strong>Regularność napływu nowych recenzji</strong> — 50 opinii zdobytych 3 lata temu waży mniej niż 20 z ostatnich 6 miesięcy. Świeżość sygnałów ma dla algorytmu kluczowe znaczenie.</li>
+      </ul>
+      <p>
+        Praktyczny sposób na systematyczne zbieranie opinii: wysyłaj link do wystawienia recenzji przez SMS lub WhatsApp zaraz po zakończeniu usługi — gdy klient jest w najwyższym punkcie satysfakcji. Skrócony link GBP (g.page/[twoja-firma]/review) możesz nakleić na fakturę, umieścić w stopce maila lub wydrukować jako QR kod w lokalu.
+      </p>
+      <p>
+        Równie ważna jest <strong>odpowiedź na każdą opinię</strong> — zarówno pozytywną, jak i negatywną. Google bierze aktywność właściciela pod uwagę przy ocenie profilu. Firmy odpowiadające na recenzje budują też zaufanie przyszłych klientów, którzy czytają sposób reakcji na problem, zanim zdecydują się skorzystać z usługi.
+      </p>
+      <p>
+        Skuteczne strategie zbierania recenzji opisujemy w artykule{" "}
+        <Link href="/opinie-google-jak-zdobywac-skutecznie">jak zbierać opinie w Google bez nachalnego proszenia</Link>.
+        Jeśli otrzymałeś negatywną recenzję, sprawdź{" "}
+        <Link href="/negatywna-opinia-google-co-zrobic">co zrobić gdy dostaniesz negatywną opinię na wizytówce Google</Link>.
+      </p>
+
+      <h2>Optymalizacja kategorii i opisu firmy</h2>
+      <p>
+        Kategoria główna GBP to filtr, który Google stosuje jako pierwszy. Zanim algorytm sprawdzi odległość czy opinie — patrzy, czy kategoria firmy pasuje do zapytania. Błędna lub zbyt ogólna kategoria może wykluczyć Cię z widoczności na kluczowe frazy, nawet jeśli wszystkie inne sygnały są mocne.
+      </p>
+      <p>Zasady doboru kategorii w Google Business Profile:</p>
+      <ul>
+        <li><strong>Kategoria główna</strong> = to, za co klienci płacą Ci najczęściej lub co generuje największy przychód firmy</li>
+        <li><strong>Kategorie dodatkowe</strong> (do 9) = uzupełniające usługi, które faktycznie oferujesz — nie te, które chciałbyś oferować</li>
+        <li>Unikaj kategorii aspiracyjnych — wpisuj to, czym firma jest, nie czym chce być za rok</li>
+        <li>Raz na kwartał sprawdzaj, czy Google dodał bardziej szczegółową kategorię pasującą do Twojej branży</li>
+        <li>Analizuj kategorie top 3 konkurentów dla Twoich kluczowych fraz — to najszybszy sposób na znalezienie właściwego wyboru</li>
+      </ul>
+      <p>
+        <strong>Opis firmy (750 znaków)</strong> powinien naturalnie zawierać frazę główną i frazy semantyczne, ale pisz go przede wszystkim dla klienta — co firma robi, dla kogo i co ją wyróżnia. Keyword stuffing w opisie GBP nie pomaga, a może sygnalizować niską jakość profilu. Opis ma przekonać człowieka, nie algorytm.
+      </p>
+      <p>
+        Szczegółowy przewodnik po wyborze kategorii znajdziesz w artykule{" "}
+        <Link href="/kategorie-wizytowka-google">kategorie w wizytówce Google – jak wybrać właściwe</Link>.
+        Jak napisać skuteczny opis firmy wyjaśniamy w artykule{" "}
+        <Link href="/opis-firmy-google-business-profile-jak-napisac">opis firmy w Google Business Profile</Link>.
+      </p>
+
+      <h2>Zdjęcia i materiały wideo w Google Business Profile</h2>
+      <p>
+        Zdjęcia mają podwójne znaczenie dla rankingu wizytówki Google: bezpośrednio wpływają na aktywność profilu (sygnał dla algorytmu) i pośrednio — przez wyższy współczynnik klikalności (CTR). Wizytówka z atrakcyjnymi zdjęciami jest klikana statystycznie 2–3 razy częściej niż ta z domyślną grafiką Google.
+      </p>
+      <p>Rodzaje zdjęć warte dodania do profilu GBP:</p>
+      <ul>
+        <li><strong>Zdjęcie profilowe i okładkowe</strong> — logo lub rozpoznawalny element wizualny marki, zdjęcie wejścia lub wnętrza lokalu</li>
+        <li><strong>Zdjęcia wnętrza i zewnętrza</strong> — pomagają klientom rozpoznać lokal na miejscu i budują poczucie bezpieczeństwa przed pierwszą wizytą</li>
+        <li><strong>Zdjęcia pracowników i zespołu</strong> — humanizują markę i budują zaufanie, szczególnie ważne w usługach</li>
+        <li><strong>Zdjęcia realizacji, produktów i usług</strong> — kluczowe dla rzemieślników, restauracji, salonów kosmetycznych, warsztatów</li>
+        <li><strong>Materiały wideo (do 30 sekund)</strong> — coraz silniejszy sygnał aktywności; Google premiuje profile z wideo w rankingu Google Maps</li>
+      </ul>
+      <p>
+        Kluczowa zasada: <strong>regularność ponad ilość</strong>. Firma dodająca 2–3 autentyczne zdjęcia miesięcznie sygnalizuje Google aktywny, aktualizowany profil. Nie wrzucaj 100 zdjęć jednorazowo i nie znikaj na pół roku. Stały rytm wygrywa z akcyjnymi kampaniami.
+      </p>
+      <p>
+        Co warto wiedzieć o zdjęciach w GBP i które formaty premiuje Google — sprawdź w artykule{" "}
+        <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">zdjęcia w wizytówce Google – które naprawdę wpływają na pozycję</Link>.
+      </p>
+
+      <h2>Publikowanie postów w wizytówce – Google Posts</h2>
+      <p>
+        Google Posts to funkcja, którą większość firm ignoruje — a która daje realną przewagę konkurencyjną. Posty pojawiają się bezpośrednio w wynikach wyszukiwania, w panelu wizytówki i coraz częściej w AI Overviews. Wyróżniają Cię na tle firm, które w ogóle nie korzystają z tej opcji.
+      </p>
+      <p>Dostępne rodzaje postów w GBP:</p>
+      <ul>
+        <li><strong>Aktualności</strong> — informacje o firmie, porady, nowości (widoczne 7 dni, zostają w historii)</li>
+        <li><strong>Oferty</strong> — promocje z datą ważności, kod rabatowy i warunki skorzystania</li>
+        <li><strong>Wydarzenia</strong> — zaproszenia na warsztaty, targi, dni otwarte, szkolenia</li>
+        <li><strong>Produkty</strong> — prezentacja konkretnych produktów ze zdjęciem i ceną</li>
+      </ul>
+      <p>
+        Z perspektywy SEO lokalnego posty to sygnał aktywności profilu i świeżości treści. Firma publikująca regularnie komunikuje algorytmowi: „jesteśmy czynni, nasza oferta jest aktualna". W praktyce 1–2 posty tygodniowo to optimum. Mniej niż jeden wpis miesięcznie to sygnał zaniedbania profilu.
+      </p>
+      <p>
+        Jak tworzyć posty, które faktycznie przyciągają klientów, opisujemy w artykule{" "}
+        <Link href="/posty-wizytowka-google">Google Posts – jak tworzyć posty w wizytówce, które przyciągają klientów</Link>.
+      </p>
+
+      <h2>NAP, cytowania lokalne i spójność danych w sieci</h2>
+
+      <h3>Czym jest NAP w local SEO?</h3>
+      <p>
+        NAP (Name, Address, Phone) to trójka najważniejszych danych firmowych w pozycjonowaniu lokalnym. Google porównuje te informacje we wszystkich miejscach w sieci, gdzie firma jest wymieniona: w GBP, na stronie internetowej, w katalogach, mediach społecznościowych, mapach Apple i mediach lokalnych.
+      </p>
+      <p>
+        Każda niespójność — inne literowanie nazwy, skrócony adres, nieaktualny numer telefonu, brakujący kod pocztowy — to sygnał braku wiarygodności. Algorytm traktuje to jako sprzeczne informacje i obniża pozycję firmy, która „mówi różne rzeczy w różnych miejscach w internecie".
+      </p>
+
+      <h3>Cytowania lokalne – gdzie je budować?</h3>
+      <p>
+        Cytowanie (citation) to każde miejsce w sieci, gdzie pojawia się NAP Twojej firmy. Budowanie cytowań lokalnych to jeden z filarów lokalnego SEO i pozycjonowania wizytówki Google. Zacznij od priorytetowych źródeł:
+      </p>
+      <ul>
+        <li>Panorama Firm (panoramafirm.pl) — najważniejszy polski katalog lokalny</li>
+        <li>Facebook — zakładka Informacje na profilu firmowym</li>
+        <li>Yelp — duże znaczenie dla algorytmu GBP</li>
+        <li>Apple Maps i Bing Places for Business</li>
+        <li>Katalogi branżowe: Znany Lekarz, Booksy, Treatwell, Fixly, OLX Praca</li>
+        <li>Lokalne portale miejskie i informacyjne</li>
+        <li>Izby gospodarcze i stowarzyszenia branżowe</li>
+        <li>Branżowe portale z katalogiem firm (np. e-firmy.eu, aleo.com)</li>
+      </ul>
+      <p>
+        Liczy się nie tylko ilość cytowań, ale ich spójność. Jeden wpis z błędnym adresem w popularnym katalogu może zaszkodzić bardziej niż brak 10 wpisów w mało znanych serwisach.
+      </p>
+      <p>
+        Szczegółowy przewodnik po audycie NAP i budowaniu cytowań znajdziesz w artykule{" "}
+        <Link href="/nap-wizytowka-google-co-to-jest">NAP w wizytówce Google – co to jest i jak poprawnie skonfigurować</Link>.
+      </p>
+
+      <h2>Znaczenie strony internetowej dla pozycji wizytówki Google</h2>
+      <p>
+        Wielu właścicieli firm traktuje stronę internetową i wizytówkę GBP jako oddzielne kanały. W rzeczywistości Google ocenia je razem — strona jest jednym z silniejszych sygnałów pozycji w rankingu Google Maps.
+      </p>
+      <p>Kluczowe sygnały strony dla local SEO i pozycjonowania wizytówki:</p>
+      <ul>
+        <li><strong>Lokalne słowa kluczowe na stronie</strong> — frazy z nazwą miasta, dzielnicy i regionu w nagłówkach H1/H2, meta tytule i treści (np. „Kancelaria prawna Kraków Śródmieście")</li>
+        <li><strong>Schema markup LocalBusiness</strong> — dane strukturalne JSON-LD informujące Google o typie firmy, adresie, godzinach otwarcia i danych kontaktowych; jeden z najskuteczniejszych, a zarazem najrzadziej wdrażanych sygnałów local SEO</li>
+        <li><strong>Spójność NAP na stronie</strong> — dane kontaktowe na stronie muszą być co do znaku identyczne z tymi w GBP</li>
+        <li><strong>Szybkość strony i Core Web Vitals</strong> — wolna strona traci w rankingu zarówno organicznym, jak i lokalnym</li>
+        <li><strong>Autorytet domeny</strong> — strony z silnym profilem linków zewnętrznych pośrednio wspierają pozycję wizytówki GBP</li>
+      </ul>
+      <p>
+        Praktyczna rada: stwórz dedykowaną podstronę lądowania z lokalnymi słowami kluczowymi (np. „Usługi elektryczne Warszawa Wola") i linkuj ją bezpośrednio z profilu GBP w polu „Strona internetowa". To jedna z najbardziej efektywnych, a zarazem najrzadziej stosowanych technik SEO lokalnego dla małych firm.
+      </p>
+      <p>
+        Jak wdrożyć schema markup LocalBusiness w każdym środowisku — z gotowym kodem JSON-LD — opisujemy w artykule{" "}
+        <Link href="/jak-dodac-local-schema-do-strony">jak dodać local schema markup do swojej strony</Link>.
+      </p>
+
+      <h2>Lokalne link building i budowanie autorytetu</h2>
+      <p>
+        Linki zewnętrzne do strony internetowej firmy pozostają ważnym sygnałem rankingowym — zarówno dla SEO organicznego, jak i dla pozycji wizytówki w Google Maps. W local SEO chodzi jednak o <strong>jakość lokalną</strong>, nie ilość globalną.
+      </p>
+      <p>Najskuteczniejsze źródła lokalnych linków:</p>
+      <ul>
+        <li><strong>Lokalne media i portale informacyjne</strong> — artykuły sponsorowane, wywiady, relacje z wydarzeń</li>
+        <li><strong>Partnerzy biznesowi</strong> — wzajemne linki z firmami uzupełniającymi Twoją działalność (np. architekt ↔ firma budowlana)</li>
+        <li><strong>Izby gospodarcze i organizacje branżowe</strong> — profil w katalogu członków z linkiem do strony</li>
+        <li><strong>Lokalne eventy i sponsoring</strong> — wzmianka z linkiem na stronie organizatora lub sponsorowanej drużyny</li>
+        <li><strong>Uczelnie i instytucje publiczne</strong> — staże, współpraca, warsztaty</li>
+        <li><strong>Linki bezpośrednio do profilu GBP</strong> — wzmacniają sygnały widoczności w wynikach lokalnych</li>
+      </ul>
+      <p>
+        Gdzie pozyskiwać linki do wizytówki Google i dlaczego to nic nie kosztuje — dowiesz się w artykule{" "}
+        <Link href="/linki-do-wizytowki-google">gdzie pozyskiwać linki do wizytówki Google i po co to robić</Link>.
+      </p>
+
+      <h2>Zachowania użytkowników jako sygnał rankingowy</h2>
+      <p>
+        Google coraz uważniej obserwuje, co użytkownicy robią po wyświetleniu wyników lokalnych. Sygnały behawioralne korelują silnie z pozycjami w Local Pack i w 2026 roku są traktowane jako coraz ważniejszy wskaźnik jakości profilu:
+      </p>
+      <ul>
+        <li><strong>CTR (click-through rate)</strong> — jak często użytkownicy klikają Twoją wizytówkę w stosunku do konkurentów na tej samej stronie wyników</li>
+        <li><strong>Kliknięcia „Zadzwoń"</strong> — liczba połączeń inicjowanych bezpośrednio z wizytówki GBP</li>
+        <li><strong>Kliknięcia „Wyznacz trasę"</strong> — silny sygnał realnego zainteresowania wizytą fizyczną</li>
+        <li><strong>Kliknięcia „Strona internetowa"</strong> — przejścia na stronę z poziomu GBP</li>
+        <li><strong>Wyszukiwania brandowane</strong> — gdy użytkownicy szukają bezpośrednio nazwy Twojej firmy, to sygnał rozpoznawalności</li>
+      </ul>
+      <p>
+        Co możesz zrobić, żeby poprawić sygnały behawioralne? Przede wszystkim: atrakcyjne zdjęcie okładkowe (to ono decyduje o pierwszym wrażeniu i CTR w wynikach map), aktualne godziny otwarcia z wyróżnieniem „Otwarte teraz" oraz kompletny opis usług, który odpowiada na pytanie klienta przed kliknięciem.
+      </p>
+
+      <h2>Najczęstsze błędy właścicieli firm przy pozycjonowaniu wizytówki</h2>
+      <p>
+        Z doświadczenia przy dziesiątkach audytów GBP — te błędy pojawiają się najczęściej i kosztują firmy widoczność w Google Maps:
+      </p>
+      <ul>
+        <li><strong>Porzucony profil po weryfikacji</strong> — firma weryfikuje wizytówkę i nigdy do niej nie wraca. Pusty profil bez aktywności to przepis na niewidoczność w wynikach lokalnych.</li>
+        <li><strong>Zła lub zbyt ogólna kategoria główna</strong> — np. „Firma usługowa" zamiast „Hydraulik" albo „Kancelaria adwokacka". Każdy stopień ogólności kosztuje pozycje.</li>
+        <li><strong>Ignorowanie negatywnych opinii</strong> — brak odpowiedzi na złą recenzję komunikuje przyszłym klientom, że firma nie reaguje na problemy. To często bardziej szkodliwe niż sama recenzja.</li>
+        <li><strong>Niespójne dane NAP</strong> — różne numery telefonów lub wersje adresu na stronie, Facebooku, w Panoramie Firm i GBP obniżają wiarygodność sygnałów lokalnych.</li>
+        <li><strong>Kupowanie lub generowanie sztucznych opinii</strong> — Google wykrywa fałszywe recenzje i usuwa je. W skrajnych przypadkach zawiesza cały profil firmowy.</li>
+        <li><strong>Brak monitorowania sekcji Q&amp;A</strong> — każdy może zadać pytanie i każdy może odpowiedzieć — w tym Twoja bezpośrednia konkurencja. Nieodpowiadane pytania zapraszają do manipulacji.</li>
+        <li><strong>Stockowe fotografie zamiast własnych zdjęć</strong> — Google faworyzuje autentyczne zdjęcia z danymi geolokalizacyjnymi. Stockowe fotografie mogą być penalizowane.</li>
+        <li><strong>Brak regularności</strong> — jednorazowe wdrożenie i zero aktywności przez rok. Algorytm GBP premiuje profile, które żyją i są aktualizowane.</li>
+      </ul>
+
+      <h2>Ile trwa pozycjonowanie wizytówki Google?</h2>
+      <p>
+        Odpowiedź zależy od branży, lokalizacji i aktualnej siły konkurencji. Poniżej realistyczny harmonogram dla typowej firmy lokalnej:
+      </p>
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr className="bg-surface">
+              <th className="text-left p-3 border border-border font-bold text-ink">Etap</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Timeframe</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Co się dzieje</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-3 border border-border">Wdrożenie optymalizacji profilu</td>
+              <td className="p-3 border border-border font-semibold">Tydzień 1–2</td>
+              <td className="p-3 border border-border">Kompletowanie GBP, korekta NAP, zdjęcia, opis, kategorie, usługi, atrybuty</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Pierwsze widoczne efekty</td>
+              <td className="p-3 border border-border font-semibold">Tydzień 4–8</td>
+              <td className="p-3 border border-border">Poprawa widoczności dla mniej konkurencyjnych fraz, wzrost wyświetleń profilu</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border">Stabilna poprawa pozycji</td>
+              <td className="p-3 border border-border font-semibold">Miesiąc 3–6</td>
+              <td className="p-3 border border-border">Wejście do top 5–10 dla głównych fraz, wzrost połączeń i wejść na stronę</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Top 3 w Local Pack</td>
+              <td className="p-3 border border-border font-semibold">Miesiąc 6–12+</td>
+              <td className="p-3 border border-border">W branżach o dużej konkurencji wymaga stałego budowania autorytetu i cytowań</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Hydraulicy i elektrycy w małych miastach mogą zobaczyć efekty po 4–6 tygodniach. Prawnicy, lekarze czy hotele w dużych miastach — po 6–12 miesiącach intensywnych działań. Kluczowe: nie przerywaj. Profile, które regularnie rozwijają aktywność, budują przewagę, która z czasem staje się trudna do nadgonienia przez konkurencję.
+      </p>
+
+      <h2>Ile kosztuje pozycjonowanie wizytówki Google?</h2>
+      <p>
+        Rynek usług local SEO w Polsce jest mocno zróżnicowany. Oto realistyczny przegląd cen w 2026 roku:
+      </p>
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr className="bg-surface">
+              <th className="text-left p-3 border border-border font-bold text-ink">Model współpracy</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Zakres cenowy</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Dla kogo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-3 border border-border">Jednorazowa optymalizacja profilu GBP</td>
+              <td className="p-3 border border-border font-semibold">500–2 000 zł</td>
+              <td className="p-3 border border-border">Małe firmy z mało konkurencyjną branżą i lokalizacją</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Opieka miesięczna (zakres podstawowy)</td>
+              <td className="p-3 border border-border font-semibold">300–600 zł/mies.</td>
+              <td className="p-3 border border-border">Posty, odpowiedzi na opinie, aktualizacja danych, podstawowe zdjęcia</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border">Opieka miesięczna (pełen local SEO)</td>
+              <td className="p-3 border border-border font-semibold">700–1 500 zł/mies.</td>
+              <td className="p-3 border border-border">Posty, zdjęcia, budowanie cytowań, link building lokalny, raportowanie KPI</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Agencja, duże miasto, konkurencyjna branża</td>
+              <td className="p-3 border border-border font-semibold">1 500–3 500 zł/mies.</td>
+              <td className="p-3 border border-border">Intensywna rywalizacja (dentyści w Warszawie, prawnicy w Krakowie, hotele)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Uważaj na oferty poniżej 200 zł miesięcznie — zazwyczaj oznaczają brak realnych działań lub automatyczne generowanie niskiej jakości treści, które mogą obniżyć jakość profilu. Pytaj o konkretne działania, raportowanie i dostęp do panelu statystyk GBP.
+      </p>
+      <p>
+        Kontekst cenowy dla całościowej strategii SEO znajdziesz w artykule{" "}
+        <Link href="/ile-kosztuje-pozycjonowanie-strony-internetowej">ile kosztuje pozycjonowanie strony internetowej w 2026 roku</Link>.
+      </p>
+
+      <h2>Kiedy warto zlecić pozycjonowanie wizytówki agencji SEO?</h2>
+      <p>
+        Część działań możesz robić samodzielnie: uzupełnić profil, dodawać zdjęcia, odpowiadać na opinie, publikować posty. Ale są sytuacje, w których warto zainwestować w specjalistę:
+      </p>
+      <ul>
+        <li><strong>Konkurencyjna lokalizacja lub branża</strong> — jeśli konkurenci mają profesjonalnie prowadzone profile z setkami recenzji, samodzielne działania będą zbyt wolne.</li>
+        <li><strong>Brak czasu na regularność</strong> — systematyczność jest kluczem do sukcesu w local SEO. Jeśli nie możesz poświęcić 2–3 godzin tygodniowo na profil, lepiej zlecić specjaliście.</li>
+        <li><strong>Zawieszony, zduplikowany lub zhakowany profil</strong> — naprawa tych sytuacji wymaga doświadczenia w kontaktach z pomocą techniczną Google.</li>
+        <li><strong>Szybki wzrost jest priorytetem biznesowym</strong> — agencja z narzędziami i bazą cytowań może osiągnąć efekty 2–3 razy szybciej niż działania samodzielne.</li>
+        <li><strong>Firma z wieloma lokalizacjami</strong> — zarządzanie kilkoma profilami GBP bez zorganizowanego systemu i narzędzi to przepis na chaos i niespójność NAP.</li>
+      </ul>
+      <p>
+        Dobra agencja local SEO powinna transparentnie raportować wyniki (wyświetlenia, kliknięcia, połączenia, wyznaczenia tras), mieć doświadczenie w Twojej branży i nie obiecywać „gwarancji pierwszego miejsca". Takie gwarancje nie istnieją — algorytm Google nie jest pod niczyją kontrolą, a każde takie obietnice powinny wzbudzić Twoją czujność.
+      </p>
+
+      <h2>Często zadawane pytania o pozycjonowanie wizytówki Google</h2>
+
+      <h3>Czym różni się pozycjonowanie wizytówki od pozycjonowania strony internetowej?</h3>
+      <p>
+        Pozycjonowanie strony (SEO organiczne) skupia się na poprawie pozycji w wynikach organicznych — niebieskich linkach. Pozycjonowanie wizytówki Google dotyczy wyników lokalnych — Local Packa z mapą i 3 firmami nad wynikami organicznymi. Oba podejścia działają synergicznie: silna strona pomaga w rankingu GBP, a wysoka pozycja wizytówki zwiększa ruch na stronie. Optymalna strategia marketingu lokalnego łączy oba kanały.
+      </p>
+
+      <h3>Czy firma bez fizycznej siedziby może mieć wizytówkę Google?</h3>
+      <p>
+        Tak — Google umożliwia tworzenie profilu bez podawania publicznego adresu dla firm działających w modelu Service Area Business (SAB). Fryzjer wyjazdowy, hydraulik wyjazdowy czy firma sprzątająca mogą zdefiniować obszar obsługi zamiast konkretnego adresu. Ważne: nie używaj jako adresu skrytki pocztowej ani wirtualnego biura — to narusza zasady GBP i może skutkować zawieszeniem profilu.
+      </p>
+
+      <h3>Jak sprawdzić, na które frazy wyświetla się moja wizytówka Google?</h3>
+      <p>
+        W panelu Google Business Profile przejdź do <strong>Statystyki → Jak klienci Cię znajdą</strong>. Zobaczysz wyszukiwane frazy, które doprowadziły do wyświetlenia Twojego profilu. Do głębszej analizy używaj Google Search Console lub narzędzi zewnętrznych jak BrightLocal, Whitespark lub Semrush Local.
+      </p>
+
+      <h3>Czy zmiana nazwy firmy wpłynie negatywnie na pozycję wizytówki?</h3>
+      <p>
+        Tak — każda modyfikacja nazwy w GBP może wywołać tymczasowe wahnięcie pozycji i wymagać ponownej weryfikacji przez Google. Jeśli musisz zmienić nazwę, nie zmieniaj jednocześnie innych kluczowych danych. Działaj etapami i monitoruj pozycje przez 4–6 tygodni po zmianie.
+      </p>
+
+      <h3>Czy można mieć wizytówkę Google dla firmy zarejestrowanej w małej miejscowości, ale obsługującej duże miasto?</h3>
+      <p>
+        Tak, ale z ograniczeniami. Wizytówka będzie rankować najsilniej w obrębie 15–30 km od adresu. Dla szerszego zasięgu warto stosować strategię podstron lokalizacyjnych na stronie internetowej, dedykowanych każdemu docelowemu miastu. Jak to zrobić opisujemy w artykule{" "}
+        <Link href="/siedziba-mala-miejscowosc-local-seo">siedziba w małej miejscowości – jak zdobyć klientów z dużego miasta</Link>.
+      </p>
+
+      <h3>Jak długo efekty pozycjonowania utrzymują się po zakończeniu współpracy z agencją?</h3>
+      <p>
+        To zależy od tego, co zostało zbudowane. Jeśli agencja pracowała wyłącznie na aktywności profilu (posty, zdjęcia), efekty zaczną zanikać po 2–3 miesiącach bez aktywności. Jeśli zbudowano trwałe cytowania, linki i opinie — te sygnały zostają i nadal wspierają pozycję wizytówki. Pozycjonowanie wizytówki Google to inwestycja wymagająca ciągłości, nie jednorazowy projekt z datą ważności.
+      </p>
+
+      <h3>Czy liczba zdjęć w GBP bezpośrednio wpływa na ranking?</h3>
+      <p>
+        Pośrednio tak — ale przez aktywność profilu i wyższy CTR, nie przez samą liczbę. 200 stockowych zdjęć wgranych jednorazowo nie przewyższy profilu, który dodaje 3 autentyczne zdjęcia co tydzień. Regularność i oryginalność są ważniejsze niż ilość.
+      </p>
+
+      <h3>Co zrobić gdy konkurencja ma fałszywe opinie Google?</h3>
+      <p>
+        Podejrzane recenzje (wiele 5-gwiazdkowych bez treści, z kont bez historii, dodanych w krótkim czasie) możesz zgłaszać w panelu GBP jako naruszające zasady Google. Poza zgłaszaniem — skoncentruj się na systematycznym zbieraniu własnych autentycznych recenzji. Algorytm długofalowo faworyzuje naturalny wzrost nad jednorazowe skoki. Jak usunąć fałszywe lub szkodliwe opinie wyjaśniamy w artykule{" "}
+        <Link href="/jak-usunac-negatywne-opinie-z-google">jak usunąć negatywne opinie z Google</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026 – pełna lista z oceną ważności</Link></li>
+          <li><Link href="/opinie-google-jak-zdobywac-skutecznie" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opinie w Google – jak zbierać je bez nachalnego proszenia?</Link></li>
+          <li><Link href="/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak poprawnie skonfigurować?</Link></li>
+          <li><Link href="/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe i dlaczego to kluczowe?</Link></li>
+          <li><Link href="/jak-pozycjonowac-wizytowke-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
+          <li><Link href="/jak-dodac-local-schema-do-strony" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak dodać local schema markup do swojej strony?</Link></li>
+          <li><Link href="/linki-do-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Gdzie pozyskiwać linki do wizytówki Google i po co to robić?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
 };
