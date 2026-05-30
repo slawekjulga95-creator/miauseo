@@ -104,7 +104,7 @@ export default function ReferencjePage() {
                 <span className="text-brand">Nie na liście logo.</span>
               </h1>
               <p className="text-zinc-500 text-lg leading-relaxed mb-8">
-                Mam trzech klientów, z którymi mogę porozmawiać otwarcie — co poszło dobrze, co było trudne i czego nie powtórzymy. Nie ma tu setki logo dla wrażenia. Jest konkret.
+                Poniżej przedstawiam firmy, z którymi współpracowałem — co poszło dobrze, co było trudne i czego nie powtórzymy. Nie ma tu setki logo dla wrażenia. Jest konkret.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
