@@ -42,7 +42,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className={`${syne.variable} ${dmSans.variable} h-full antialiased`}>
-      <head>
+      <body className="min-h-full flex flex-col font-sans text-ink bg-white">
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-JV3ZRB7G8G" strategy="afterInteractive" />
         <Script id="gtag-init" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
@@ -50,11 +53,6 @@ export default function RootLayout({
           gtag('js', new Date());
           gtag('config', 'G-JV3ZRB7G8G');
         `}</Script>
-      </head>
-      <body className="min-h-full flex flex-col font-sans text-ink bg-white">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
       </body>
     </html>
   );

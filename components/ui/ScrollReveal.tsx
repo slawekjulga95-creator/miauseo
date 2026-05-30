@@ -12,6 +12,9 @@ export default function ScrollReveal({ children, className = "", delay = 0 }: Pr
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Mark body as JS-ready so .reveal animation kicks in
+    document.body.classList.add("js-ready");
+
     const el = ref.current;
     if (!el) return;
 

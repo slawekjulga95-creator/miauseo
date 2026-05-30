@@ -65,13 +65,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-syne), sans-serif;
 }
 
-/* Scroll-triggered reveal */
+/* Scroll-triggered reveal — progressive enhancement: visible without JS */
 .reveal {
-  opacity: 0;
-  transform: translateY(28px);
   transition: opacity 0.65s ease-out, transform 0.65s ease-out;
 }
-.reveal.in-view {
+.js-ready .reveal {
+  opacity: 0;
+  transform: translateY(28px);
+}
+.js-ready .reveal.in-view {
   opacity: 1;
   transform: translateY(0);
 }
