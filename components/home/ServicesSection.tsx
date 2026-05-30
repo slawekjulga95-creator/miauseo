@@ -163,13 +163,6 @@ export default function ServicesSection() {
           <div
             className={`relative py-20 overflow-hidden ${i % 2 === 1 ? "bg-surface" : "bg-white"}`}
           >
-            {(i === 0 || i === 2) && (
-              <div
-                aria-hidden="true"
-                className="pointer-events-none select-none absolute top-1/2 -translate-y-1/2 grayscale"
-                style={{ left: "calc(-4% + 100px)", width: "480px", aspectRatio: "625/399", backgroundImage: "url('/logo.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat", opacity: 0.04 }}
-              />
-            )}
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
               <div className={`grid lg:grid-cols-2 gap-16 items-center ${item.reverse ? "lg:[&>*:first-child]:order-2" : ""}`}>
 

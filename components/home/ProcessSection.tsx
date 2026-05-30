@@ -1,4 +1,5 @@
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import YouTubeFacade from "@/components/ui/YouTubeFacade";
 
 const points = [
   <>
@@ -84,16 +85,10 @@ export default function ProcessSection() {
             </div>
           </ScrollReveal>
 
-          {/* Right – YouTube embed placeholder */}
+          {/* Right – YouTube facade (loads iframe only on click) */}
           <ScrollReveal delay={150}>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-zinc-900">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/OLPQ3pADZ0k"
-                title="MiauSEO – Baza wiedzy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              <YouTubeFacade videoId="OLPQ3pADZ0k" title="MiauSEO – Baza wiedzy" />
             </div>
             <p className="text-xs text-zinc-400 mt-3 text-center">
               Subskrybuj i bądź na bieżąco z najnowszymi poradnikami
