@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import HeroForm from "@/components/home/HeroForm";
 
@@ -90,10 +91,14 @@ export default function HeroSection() {
 
       {/* Photo – right side */}
       <div className="absolute right-0 top-0 bottom-0 w-full lg:w-[58%] hidden lg:block">
-        <img
-          src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1400&q=90&fit=crop&crop=top"
+        <Image
+          src="https://images.unsplash.com/photo-1560250097-0b93528c311a?fit=crop&crop=top"
           alt="Specjalista MiauSEO"
-          className="w-full h-full object-cover object-top"
+          fill
+          className="object-cover object-top"
+          priority
+          sizes="58vw"
+          quality={85}
         />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, white 10%, rgba(255,255,255,0.55) 30%, rgba(255,255,255,0) 56%)" }} />
         {advantages.map((adv) => (
@@ -103,15 +108,19 @@ export default function HeroSection() {
         ))}
       </div>
 
-      {/* Logo watermark – mobile only */}
-      <div className="absolute bottom-16 right-0 w-72 pointer-events-none select-none lg:hidden">
-        <img src="/logo.png" alt="" aria-hidden="true" className="w-full opacity-[0.06]" />
-      </div>
+      {/* Logo watermark – mobile only (CSS background – not LCP candidate) */}
+      <div
+        aria-hidden="true"
+        className="absolute bottom-16 right-0 w-72 pointer-events-none select-none lg:hidden"
+        style={{ aspectRatio: "625/399", backgroundImage: "url('/logo.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat", opacity: 0.06 }}
+      />
 
-      {/* Logo watermark – desktop left column */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[44%] pointer-events-none select-none hidden lg:flex items-center justify-center">
-        <img src="/logo.png" alt="" aria-hidden="true" className="w-[460px] opacity-[0.18]" />
-      </div>
+      {/* Logo watermark – desktop left column (CSS background – not LCP candidate) */}
+      <div
+        aria-hidden="true"
+        className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-none select-none hidden lg:block"
+        style={{ width: "460px", aspectRatio: "625/399", backgroundImage: "url('/logo.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat", opacity: 0.18 }}
+      />
 
       {/* Content – left side */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 min-h-screen flex items-center">

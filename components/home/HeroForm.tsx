@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
@@ -43,8 +44,7 @@ export default function HeroForm() {
           <div className="flex items-start justify-between mb-5">
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-2">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logo.png" alt="MiauSEO" className="h-6 w-auto" />
+                <Image src="/logo.png" alt="MiauSEO" width={84} height={24} className="h-6 w-auto" loading="lazy" />
                 <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-green-50 text-green-600 px-2.5 py-1 rounded-full">
                   Bezpłatne
                 </span>

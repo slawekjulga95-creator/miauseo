@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
@@ -23,7 +24,7 @@ const items = [
         <strong className="font-semibold text-ink">Ty decydujesz</strong>, my dowozimy.
       </>,
     ],
-    photo: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80&fit=crop&crop=center",
+    photo: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?fit=crop&crop=center",
     alt: "Elastyczna umowa i współpraca",
     reverse: false,
     cta: { label: "O nas", href: "/o-nas" },
@@ -49,7 +50,7 @@ const items = [
         odejdziesz, zabierasz historię kampanii, dane i wyniki. Zero uzależnienia od agencji.
       </>,
     ],
-    photo: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80&fit=crop&crop=center",
+    photo: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?fit=crop&crop=center",
     alt: "Transparentność i zero ukrytych kosztów",
     reverse: true,
     cta: { label: "Referencje", href: "/referencje" },
@@ -75,7 +76,7 @@ const items = [
         To nie jest standard w branży.
       </>,
     ],
-    photo: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80&fit=crop&crop=center",
+    photo: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?fit=crop&crop=center",
     alt: "Cykliczny kontakt z klientem",
     reverse: false,
     cta: { label: "Kontakt", href: "/kontakt" },
@@ -87,7 +88,6 @@ function GBPScoreCTA() {
     <div className="py-10 bg-surface border-y border-brand/15">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="relative flex flex-col lg:flex-row items-center justify-between gap-8 border-2 border-dashed border-brand/30 rounded-2xl p-8 bg-brand/5">
-          <img src="/logo.png" alt="" aria-hidden="true" className="pointer-events-none select-none absolute top-4 right-5 h-7 w-auto" />
           <div className="flex items-start gap-5">
             <div className="w-14 h-14 rounded-2xl bg-brand/10 text-brand flex items-center justify-center shrink-0">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -125,7 +125,6 @@ function ChecklistaCTA() {
     <div className="py-10 bg-white border-y border-brand/15">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="relative flex flex-col lg:flex-row items-center justify-between gap-8 border-2 border-dashed border-brand/30 rounded-2xl p-8 bg-brand/5">
-          <img src="/logo.png" alt="" aria-hidden="true" className="pointer-events-none select-none absolute top-4 right-5 h-7 w-auto" />
           <div className="flex items-start gap-5">
             <div className="w-14 h-14 rounded-2xl bg-brand/10 text-brand flex items-center justify-center shrink-0">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -165,12 +164,10 @@ export default function ServicesSection() {
             className={`relative py-20 overflow-hidden ${i % 2 === 1 ? "bg-surface" : "bg-white"}`}
           >
             {(i === 0 || i === 2) && (
-              <img
-                src="/logo.png"
-                alt=""
+              <div
                 aria-hidden="true"
-                className="pointer-events-none select-none absolute top-1/2 -translate-y-1/2 w-[480px] opacity-[0.04] grayscale"
-                style={{ left: "calc(-4% + 100px)" }}
+                className="pointer-events-none select-none absolute top-1/2 -translate-y-1/2 grayscale"
+                style={{ left: "calc(-4% + 100px)", width: "480px", aspectRatio: "625/399", backgroundImage: "url('/logo.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat", opacity: 0.04 }}
               />
             )}
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -213,10 +210,13 @@ export default function ServicesSection() {
                       style={{ width: "calc(100% - 1.25rem)", height: "calc(100% - 1.25rem)" }}
                     />
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
-                      <img
+                      <Image
                         src={item.photo}
                         alt={item.alt}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        loading="lazy"
                       />
                     </div>
                   </div>

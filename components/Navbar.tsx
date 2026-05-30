@@ -199,7 +199,7 @@ export default function Navbar() {
         <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center h-20 gap-8">
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
-            <Image src="/logo.png" alt="MiauSEO logo" width={280} height={80} className="h-16 w-auto" />
+            <Image src="/logo.png" alt="MiauSEO logo" width={280} height={80} className="h-16 w-auto" priority sizes="224px" />
           </Link>
 
           {/* Desktop nav */}
