@@ -6,6 +6,20 @@ import Amp from "./amp";
 import AnchorText from "./anchor-text";
 import AtrybytAlt from "./atrybut-alt";
 import AutorytetDomeny from "./autorytet-domeny";
+import DeepLinking from "./deep-linking";
+import Disavow from "./disavow";
+import DisplayAds from "./display-ads";
+import Dofollow from "./dofollow";
+import DomainAuthority from "./domain-authority";
+import DomainRating from "./domain-rating";
+import DuplicateContent from "./duplicate-content";
+import EEat from "./e-e-a-t";
+import EngagementRate from "./engagement-rate";
+import ExactMatch from "./exact-match";
+import ExternalLink from "./external-link";
+import FeaturedSnippet from "./featured-snippet";
+import Frequency from "./frequency";
+import Funnel from "./funnel";
 import CanonicalUrl from "./canonical-url";
 import Cloaking from "./cloaking";
 import ContentMarketing from "./content-marketing";
@@ -35,6 +49,23 @@ export const termContentMap: Record<string, () => React.JSX.Element> = {
   "anchor-text": AnchorText,
   "atrybut-alt": AtrybytAlt,
   "autorytet-domeny": AutorytetDomeny,
+  // D
+  "deep-linking": DeepLinking,
+  "disavow": Disavow,
+  "display-ads": DisplayAds,
+  "dofollow": Dofollow,
+  "domain-authority": DomainAuthority,
+  "domain-rating": DomainRating,
+  "duplicate-content": DuplicateContent,
+  // E
+  "e-e-a-t": EEat,
+  "engagement-rate": EngagementRate,
+  "exact-match": ExactMatch,
+  "external-link": ExternalLink,
+  // F
+  "featured-snippet": FeaturedSnippet,
+  "frequency": Frequency,
+  "funnel": Funnel,
   // C
   "canonical-url": CanonicalUrl,
   "cloaking": Cloaking,
