@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import HeroForm from "@/components/home/HeroForm";
-import HeroInlineForm from "@/components/home/HeroInlineForm";
 
 export default function HeroSection() {
   return (
@@ -43,8 +42,67 @@ export default function HeroSection() {
           }}
         />
 
-        {/* ── Formularz na zdjęciu ─────────────────────── */}
-        <HeroInlineForm />
+        {/* ── Pływające karty (tylko desktop) ─────────── */}
+
+        {/* Karta 1 — góra-prawo: biała z zielonym checkmarkiem */}
+        <div
+          className="absolute top-20 right-8 w-64 hidden lg:block"
+          style={{
+            background: "white",
+            borderRadius: "1rem",
+            border: "1px solid rgba(255,255,255,0.8)",
+            boxShadow: "0 8px 32px rgba(0,0,0,0.10), 0 1px 3px rgba(0,0,0,0.06)",
+            padding: "1.25rem",
+            animation: "float-slow 3.4s ease-in-out infinite",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.75rem" }}>
+            <div
+              style={{
+                width: "2.25rem", height: "2.25rem",
+                borderRadius: "0.625rem",
+                background: "#f0fdf4",
+                display: "flex", alignItems: "center", justifyContent: "center",
+                flexShrink: 0,
+              }}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div>
+              <p style={{ fontSize: "0.625rem", fontWeight: 700, color: "#16a34a", letterSpacing: "0.12em", textTransform: "uppercase" }}>
+                Nasza zasada
+              </p>
+              <p style={{ fontSize: "0.7rem", color: "#a1a1aa" }}>od pierwszego dnia</p>
+            </div>
+          </div>
+          <p style={{ fontSize: "1.05rem", fontWeight: 700, color: "#111111", lineHeight: 1.3 }}>
+            Marketing bez pustych obietnic.
+          </p>
+        </div>
+
+        {/* Karta 2 — dół-prawo: pełna pomarańczowa */}
+        <div
+          className="absolute bottom-32 right-8 w-56 hidden lg:block"
+          style={{
+            background: "var(--color-brand)",
+            borderRadius: "1rem",
+            boxShadow: "0 8px 28px rgba(243,111,33,0.38)",
+            padding: "1.25rem",
+            animation: "float-medium 2.9s ease-in-out infinite 0.6s",
+          }}
+        >
+          <p style={{ fontSize: "0.6rem", fontWeight: 700, color: "rgba(255,255,255,0.55)", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: "0.25rem" }}>
+            Nasza wartość
+          </p>
+          <p style={{ fontSize: "1.15rem", fontWeight: 700, color: "white", lineHeight: 1.25, marginBottom: "0.25rem" }}>
+            Transparentność.
+          </p>
+          <p style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.6)" }}>
+            Zero ukrytych kosztów.
+          </p>
+        </div>
 
         {/* Kapsułka "PRZEWIŃ ↓" — dół środek, tylko desktop */}
         <div
