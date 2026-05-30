@@ -17,8 +17,8 @@ export default function HeroSection() {
 
         {/* TODO: zdjęcie */}
         <Image
-          src="https://images.unsplash.com/photo-1560250097-0b93528c311a?fit=crop&crop=top"
-          alt="Specjalista MiauSEO"
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?fit=crop&crop=center"
+          alt="Biuro MiauSEO"
           fill
           className="object-cover object-top"
           priority

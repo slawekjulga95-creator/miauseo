@@ -19,7 +19,7 @@ export default function Home() {
       <link
         rel="preload"
         as="image"
-        imageSrcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560250097-0b93528c311a%3Ffit%3Dcrop%26crop%3Dtop&w=828&q=85 828w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560250097-0b93528c311a%3Ffit%3Dcrop%26crop%3Dtop&w=1200&q=85 1200w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560250097-0b93528c311a%3Ffit%3Dcrop%26crop%3Dtop&w=1920&q=85 1920w"
+        imageSrcSet="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1497366216548-37526070297c%3Ffit%3Dcrop%26crop%3Dcenter&w=828&q=85 828w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1497366216548-37526070297c%3Ffit%3Dcrop%26crop%3Dcenter&w=1200&q=85 1200w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1497366216548-37526070297c%3Ffit%3Dcrop%26crop%3Dcenter&w=1920&q=85 1920w"
         imageSizes="58vw"
         fetchPriority="high"
       />
