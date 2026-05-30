@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
+import CatWatermark from "@/components/ui/CatWatermark";
 
 // ─── Types & Data ─────────────────────────────────────────────────────────────
 
@@ -240,15 +241,19 @@ function IntroContent({ onStart }: { onStart: () => void }) {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white py-20 px-6">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
+        <CatWatermark />
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-20">
-            <div className="lg:w-5/12 shrink-0">
-              <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">Bezpłatne narzędzie AI</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-ink leading-tight mb-8">
-                <span className="bg-brand text-white px-2 py-0.5 rounded-md">Audyt</span> widoczności<br />
-                <span className="text-brand">wizytówki Google</span>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">Bezpłatne narzędzie AI</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
+                Audyt widoczności{" "}
+                <span className="text-brand">wizytówki Google.</span>
               </h1>
+              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
+                Odpowiedz na 12 pytań i dowiedz się, ile klientów tracisz miesięcznie przez nieoptymalizowaną wizytówkę. Pełny raport z priorytetami i planem działania — bez rejestracji, bez kosztów.
+              </p>
               <div className="flex flex-wrap gap-4">
                 <button
                   onClick={onStart}
@@ -265,17 +270,23 @@ function IntroContent({ onStart }: { onStart: () => void }) {
                 </Link>
               </div>
             </div>
-
-            <div className="lg:w-7/12 space-y-5 text-zinc-600 text-[17px] leading-relaxed lg:border-l-2 lg:border-brand/20 lg:pl-14">
-              <p>
-                Odpowiedz na <strong className="text-ink font-semibold">12 pytań</strong> i dowiedz się, ile potencjalnych klientów <strong className="text-ink font-semibold">tracisz miesięcznie</strong> przez nieoptymowaną wizytówkę Google Business Profile.
-              </p>
-              <p>
-                Narzędzie analizuje <strong className="text-ink font-semibold">12 kluczowych czynników rankingowych</strong> — od opinii, przez zdjęcia i posty, po kategorie i słowa kluczowe. Każdy obszar ma wagę dopasowaną do aktualnego algorytmu Google.
-              </p>
-              <p>
-                Na koniec otrzymasz <strong className="text-ink font-semibold">pełny raport</strong> z priorytetami, quick wins do wdrożenia od razu i roadmapą działań na kolejne 30 dni. <strong className="text-ink font-semibold">Bez rejestracji, bez kosztów</strong>.
-              </p>
+            <div className="bg-surface rounded-3xl p-8 border border-border">
+              <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-6">Co otrzymasz po audycie</p>
+              <div className="space-y-5">
+                {[
+                  { bold: "Wynik 0–100", rest: " — konkretna liczba pokazująca jak bardzo zoptymalizowana jest Twoja wizytówka." },
+                  { bold: "Krytyczne błędy", rest: " — lista problemów blokujących Cię przed wyświetlaniem w Local Pack Google." },
+                  { bold: "Quick wins na dziś", rest: " — działania do wdrożenia bez kosztów, które od razu poprawiają widoczność." },
+                  { bold: "Roadmapa 30 dni", rest: " — konkretny plan działania podzielony na tygodnie." },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-3 items-start">
+                    <div className="shrink-0 w-5 h-5 rounded-full bg-brand/10 flex items-center justify-center mt-0.5">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <p className="text-sm text-zinc-600 leading-relaxed"><strong className="text-ink">{item.bold}</strong>{item.rest}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
