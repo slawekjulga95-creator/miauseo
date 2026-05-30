@@ -145,7 +145,7 @@ export default function HeroSection() {
           LEFT COLUMN — treść
       ───────────────────────────────────────────────── */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 flex items-center" style={{ minHeight: "100svh" }}>
-        <div className="w-full lg:max-w-[540px] pt-24 pb-16 lg:py-28">
+        <div className="w-full lg:max-w-[540px] pt-44 pb-16 lg:py-28">
 
           {/* Dot pattern — widoczny tylko po lewej stronie */}
           <div
