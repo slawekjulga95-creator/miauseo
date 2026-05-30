@@ -13,7 +13,7 @@ export default function HeroSection() {
           Mobile: relative block (zdjęcie nad treścią)
           Desktop: absolute, pokrywa prawą połowę
       ───────────────────────────────────────────────── */}
-      <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-[52%] h-64 sm:h-[360px] lg:h-auto overflow-hidden">
+      <div className="hidden lg:block lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-[52%] overflow-hidden">
 
         {/* TODO: zdjęcie */}
         <Image
