@@ -10,7 +10,6 @@ const syne = Syne({
   subsets: ["latin"],
   weight: ["700", "800"],
   display: "swap",
-  preload: false,
 });
 
 const dmSans = DM_Sans({
@@ -18,7 +17,6 @@ const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   display: "swap",
-  preload: false,
 });
 
 export const metadata: Metadata = {

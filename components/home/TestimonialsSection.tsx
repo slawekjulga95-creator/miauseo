@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
@@ -30,17 +31,17 @@ const paragraphs = [
 
 const photos = [
   {
-    src: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80&fit=crop&crop=top",
+    src: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?fit=crop&crop=top",
     alt: "Specjalista MiauSEO przy pracy",
     className: "col-span-2 row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80&fit=crop",
+    src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?fit=crop",
     alt: "Wyniki kampanii",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80&fit=crop",
+    src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?fit=crop",
     alt: "Analiza danych",
     className: "col-span-1 row-span-1",
   },
@@ -88,25 +89,34 @@ export default function TestimonialsSection() {
           {/* Right – photo grid */}
           <ScrollReveal delay={150}>
             <div className="grid grid-cols-3 grid-rows-2 gap-3 h-[420px]">
-              <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden">
-                <img
+              <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden relative">
+                <Image
                   src={photos[0].src}
                   alt={photos[0].alt}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  loading="lazy"
+                  sizes="(max-width: 1024px) 66vw, 33vw"
                 />
               </div>
-              <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden">
-                <img
+              <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden relative">
+                <Image
                   src={photos[1].src}
                   alt={photos[1].alt}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  loading="lazy"
+                  sizes="(max-width: 1024px) 33vw, 16vw"
                 />
               </div>
-              <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden">
-                <img
+              <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden relative">
+                <Image
                   src={photos[2].src}
                   alt={photos[2].alt}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  loading="lazy"
+                  sizes="(max-width: 1024px) 33vw, 16vw"
                 />
               </div>
             </div>
