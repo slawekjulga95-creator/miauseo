@@ -16,7 +16,6 @@ export default function Home() {
   return (
     <>
       {/* Preload hero image with high priority — Next.js/Turbopack doesn't add fetchpriority to preload link */}
-      {/* @ts-expect-error fetchpriority is valid HTML but not in React types yet */}
       <link
         rel="preload"
         as="image"
