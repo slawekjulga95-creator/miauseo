@@ -2,196 +2,336 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroForm from "@/components/home/HeroForm";
 
-const lines = [
-  { left: "2%",  top: "18%", h: 90,  rot: 30,   opacity: 0.18, anim: "float-slow 6s ease-in-out infinite" },
-  { left: "6%",  top: "38%", h: 60,  rot: -15,  opacity: 0.12, anim: "float-medium 4.5s ease-in-out infinite 0.8s" },
-  { left: "3%",  top: "62%", h: 80,  rot: 45,   opacity: 0.20, anim: "float-fast 5s ease-in-out infinite 1.5s" },
-  { left: "9%",  top: "25%", h: 45,  rot: -30,  opacity: 0.10, anim: "float-slow 7s ease-in-out infinite 2s" },
-  { left: "7%",  top: "72%", h: 55,  rot: 20,   opacity: 0.16, anim: "float-medium 5.5s ease-in-out infinite 1s" },
-  { left: "11%", top: "50%", h: 70,  rot: -40,  opacity: 0.11, anim: "float-slow 6.5s ease-in-out infinite 0.4s" },
-  { left: "4%",  top: "84%", h: 65,  rot: 55,   opacity: 0.14, anim: "float-fast 4.8s ease-in-out infinite 1.8s" },
-];
-
-const dots = [
-  { left: "1%",  top: "48%", anim: "float-slow 4s ease-in-out infinite 0.5s" },
-  { left: "10%", top: "55%", anim: "float-medium 3.5s ease-in-out infinite 0.3s" },
-  { left: "8%",  top: "30%", anim: "float-fast 5s ease-in-out infinite 1.2s" },
-];
-
-const advantages = [
-  {
-    id: "response",
-    animation: "float-slow 3.4s ease-in-out infinite",
-    card: (
-      <div className="bg-white rounded-2xl shadow-2xl border border-white/80 p-5 w-64">
-        <div className="flex items-center gap-3 mb-3">
-          <div className="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center shrink-0">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-          </div>
-          <div>
-            <p className="text-[11px] font-semibold text-green-600 uppercase tracking-wider">Nasza zasada</p>
-            <p className="text-xs text-zinc-400">od pierwszego dnia</p>
-          </div>
-        </div>
-        <p className="text-xl font-bold text-ink leading-snug">Marketing bez pustych obietnic.</p>
-      </div>
-    ),
-    position: "top-24 right-8",
-  },
-  {
-    id: "reports",
-    animation: "float-medium 2.9s ease-in-out infinite 0.6s",
-    card: (
-      <div className="bg-brand rounded-2xl shadow-2xl p-5 w-56">
-        <div className="flex items-center gap-3 mb-3">
-          <div className="w-9 h-9 rounded-xl bg-white/20 flex items-center justify-center shrink-0">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="12" />
-              <line x1="12" y1="16" x2="12.01" y2="16" />
-            </svg>
-          </div>
-          <p className="text-xs font-semibold text-white/80">Nasza wartość</p>
-        </div>
-        <p className="text-white font-bold text-lg leading-snug">Transparentność.</p>
-        <p className="text-white/60 text-xs mt-1">zero ukrytych kosztów</p>
-      </div>
-    ),
-    position: "bottom-48 right-6",
-  },
-];
-
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-white">
+    <section
+      className="relative overflow-hidden bg-white"
+      style={{ minHeight: "100svh" }}
+    >
+      {/* ─────────────────────────────────────────────────
+          RIGHT COLUMN — zdjęcie
+          Mobile: relative block (zdjęcie nad treścią)
+          Desktop: absolute, pokrywa prawą połowę
+      ───────────────────────────────────────────────── */}
+      <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-[52%] h-64 sm:h-[360px] lg:h-auto overflow-hidden">
 
-      {/* Dot grid texture */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage: "radial-gradient(circle, #d4d4d4 1.2px, transparent 1.2px)",
-          backgroundSize: "28px 28px",
-          opacity: 0.45,
-        }}
-      />
-
-      {/* Floating orange decorative lines */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden hidden lg:block">
-        {lines.map((l, i) => (
-          <div key={i} style={{ position: "absolute", left: l.left, top: l.top, animation: l.anim }}>
-            <div style={{ width: "2px", height: `${l.h}px`, background: "#FF6A00", opacity: l.opacity, transform: `rotate(${l.rot}deg)`, transformOrigin: "center" }} />
-          </div>
-        ))}
-        {dots.map((d, i) => (
-          <div key={i} style={{ position: "absolute", left: d.left, top: d.top, width: "6px", height: "6px", background: "#FF6A00", opacity: 0.22, borderRadius: "50%", animation: d.anim }} />
-        ))}
-      </div>
-
-      {/* Photo – right side */}
-      <div className="absolute right-0 top-0 bottom-0 w-full lg:w-[58%] hidden lg:block">
+        {/* TODO: zdjęcie */}
         <Image
           src="https://images.unsplash.com/photo-1560250097-0b93528c311a?fit=crop&crop=top"
           alt="Specjalista MiauSEO"
           fill
           className="object-cover object-top"
           priority
-          sizes="58vw"
+          sizes="(max-width: 1024px) 100vw, 52vw"
           quality={85}
         />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to right, white 10%, rgba(255,255,255,0.55) 30%, rgba(255,255,255,0) 56%)" }} />
-        {advantages.map((adv) => (
-          <div key={adv.id} className={`absolute ${adv.position}`} style={{ animation: adv.animation }}>
-            {adv.card}
-          </div>
-        ))}
-      </div>
 
+        {/* Gradient lewa krawędź: białe tło → przezroczysty, wtapia foto w treść */}
+        <div
+          className="absolute inset-0 hidden lg:block"
+          style={{
+            background:
+              "linear-gradient(to right, white 0%, white 6%, rgba(255,255,255,0.65) 26%, rgba(255,255,255,0.15) 52%, transparent 70%)",
+          }}
+        />
+        {/* Na mobile gradient na dole foto */}
+        <div
+          className="absolute inset-0 lg:hidden"
+          style={{
+            background: "linear-gradient(to bottom, transparent 50%, white 100%)",
+          }}
+        />
 
-      {/* Content – left side */}
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 min-h-screen flex items-center">
-        <div className="w-full lg:max-w-[500px] py-28">
+        {/* ── Pływające karty (tylko desktop) ─────────── */}
 
-          <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-6 animate-fade-up">
-            Pozycjonowanie lokalne | Kampanie Leadowe
-          </span>
-
-          <h1 className="text-4xl sm:text-5xl lg:text-[3.4rem] font-bold tracking-tight text-ink leading-[1.15] mb-6 animate-fade-up [animation-delay:100ms]">
-            Każdy{" "}
-            <span className="inline-flex items-center gap-2 bg-brand text-white px-3 py-0.5 rounded-lg">
-              miał
-              <svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 opacity-80" aria-hidden="true">
-                <ellipse cx="30" cy="48" rx="16" ry="13" fill="white" />
-                <ellipse cx="12" cy="30" rx="7" ry="9" fill="white" />
-                <ellipse cx="25" cy="23" rx="7" ry="9" fill="white" />
-                <ellipse cx="39" cy="23" rx="7" ry="9" fill="white" />
-                <ellipse cx="51" cy="30" rx="7" ry="9" fill="white" />
+        {/* Karta 1 — góra-prawo: biała z zielonym checkmarkiem */}
+        <div
+          className="absolute top-20 right-8 w-64 hidden lg:block"
+          style={{
+            background: "white",
+            borderRadius: "1rem",
+            border: "1px solid rgba(255,255,255,0.8)",
+            boxShadow: "0 8px 32px rgba(0,0,0,0.10), 0 1px 3px rgba(0,0,0,0.06)",
+            padding: "1.25rem",
+            animation: "float-slow 3.4s ease-in-out infinite",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.75rem" }}>
+            <div
+              style={{
+                width: "2.25rem", height: "2.25rem",
+                borderRadius: "0.625rem",
+                background: "#f0fdf4",
+                display: "flex", alignItems: "center", justifyContent: "center",
+                flexShrink: 0,
+              }}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="20 6 9 17 4 12" />
               </svg>
-            </span>
-            {" "}agencję.
-            <br />
-            <span className="text-brand">Nie każdy efekty.</span>
-          </h1>
-
-          <p className="text-lg text-zinc-500 leading-relaxed mb-8 animate-fade-up [animation-delay:200ms]">
-            <strong className="font-semibold text-ink">Zaufanie kota zdobywa się latami. Traci w sekundę.</strong>
-            <br />
-            Tak samo z klientami.
-            <br />
-            Nie obiecujemy. Pokazujemy. Konkretne działania, realne wyniki, <strong className="font-semibold text-ink">zero ściemy.</strong>
+            </div>
+            <div>
+              <p style={{ fontSize: "0.625rem", fontWeight: 700, color: "#16a34a", letterSpacing: "0.12em", textTransform: "uppercase" }}>
+                Nasza zasada
+              </p>
+              <p style={{ fontSize: "0.7rem", color: "#a1a1aa" }}>od pierwszego dnia</p>
+            </div>
+          </div>
+          <p style={{ fontSize: "1.05rem", fontWeight: 700, color: "#111111", lineHeight: 1.3 }}>
+            Marketing bez pustych obietnic.
           </p>
+        </div>
 
+        {/* Karta 2 — dół-prawo: pełna pomarańczowa */}
+        <div
+          className="absolute bottom-32 right-8 w-56 hidden lg:block"
+          style={{
+            background: "var(--color-brand)",
+            borderRadius: "1rem",
+            boxShadow: "0 8px 28px rgba(243,111,33,0.38)",
+            padding: "1.25rem",
+            animation: "float-medium 2.9s ease-in-out infinite 0.6s",
+          }}
+        >
+          <p style={{ fontSize: "0.6rem", fontWeight: 700, color: "rgba(255,255,255,0.55)", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: "0.25rem" }}>
+            Nasza wartość
+          </p>
+          <p style={{ fontSize: "1.15rem", fontWeight: 700, color: "white", lineHeight: 1.25, marginBottom: "0.25rem" }}>
+            Transparentność.
+          </p>
+          <p style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.6)" }}>
+            Zero ukrytych kosztów.
+          </p>
+        </div>
+
+        {/* Kapsułka "PRZEWIŃ ↓" — dół środek, tylko desktop */}
+        <div
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-1.5"
+          style={{ animation: "fade-in 0.5s ease-out 1.1s both" }}
+        >
           <Link
             href="#sekret"
-            className="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-bold px-7 py-4 rounded-xl transition-colors duration-200 animate-fade-up [animation-delay:300ms] mb-4"
+            className="group flex flex-col items-center gap-1 text-zinc-400 hover:text-brand transition-colors"
           >
-            Poznaj problemy
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <span
+              style={{
+                fontSize: "0.6rem",
+                fontWeight: 700,
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                background: "rgba(255,255,255,0.85)",
+                border: "1px solid #e5e5e5",
+                padding: "0.3rem 0.8rem",
+                borderRadius: "999px",
+                backdropFilter: "blur(8px)",
+                WebkitBackdropFilter: "blur(8px)",
+              }}
+            >
+              Przewiń ↓
+            </span>
+            <svg
+              width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+              className="animate-bounce"
+            >
               <path d="M12 5v14M5 12l7 7 7-7" />
             </svg>
           </Link>
+        </div>
 
-          {/* Trust items */}
-          <div className="flex flex-wrap gap-5 mt-4 pt-5 border-t border-border animate-fade-up [animation-delay:420ms]">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center shrink-0">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l1.62-1.62a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 23 16.92z"/>
-                </svg>
-              </div>
-              <div>
-                <p className="text-sm font-bold text-ink">Bezpłatna konsultacja</p>
-                <p className="text-xs text-zinc-400 mt-0.5">Krótka rozmowa. Zero zobowiązań.</p>
-              </div>
-            </div>
+      </div>
 
-            <div className="w-px bg-border hidden sm:block" />
+      {/* ─────────────────────────────────────────────────
+          LEFT COLUMN — treść
+      ───────────────────────────────────────────────── */}
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 flex items-center" style={{ minHeight: "100svh" }}>
+        <div className="w-full lg:max-w-[540px] pt-6 pb-20 lg:py-28">
 
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center shrink-0">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14 2 14 8 20 8"/>
-                  <line x1="16" y1="13" x2="8" y2="13"/>
-                  <line x1="16" y1="17" x2="8" y2="17"/>
-                  <polyline points="10 9 9 9 8 9"/>
-                </svg>
+          {/* Dot pattern — widoczny tylko po lewej stronie */}
+          <div
+            className="absolute inset-0 pointer-events-none -z-10"
+            style={{
+              backgroundImage: "radial-gradient(circle, #c8c8c8 1.1px, transparent 1.1px)",
+              backgroundSize: "26px 26px",
+              maskImage: "linear-gradient(to right, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0) 90%)",
+              WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0) 90%)",
+            }}
+          />
+
+          {/* Eyebrow z pomarańczową kreską */}
+          <div
+            className="flex items-center gap-3 mb-7 animate-fade-up"
+          >
+            <span
+              style={{
+                display: "block",
+                width: "2rem",
+                height: "2px",
+                background: "var(--color-brand)",
+                borderRadius: "9999px",
+                flexShrink: 0,
+              }}
+            />
+            <span
+              style={{
+                fontSize: "0.65rem",
+                fontWeight: 700,
+                letterSpacing: "0.17em",
+                textTransform: "uppercase",
+                color: "var(--color-brand)",
+              }}
+            >
+              Pozycjonowanie&nbsp;lokalne&nbsp;·&nbsp;Kampanie&nbsp;Leadowe
+            </span>
+          </div>
+
+          {/* H1 */}
+          <h1
+            className="animate-fade-up text-ink"
+            style={{
+              fontSize: "clamp(2.3rem, 4.8vw, 3.4rem)",
+              fontWeight: 800,
+              letterSpacing: "-0.03em",
+              lineHeight: 1.1,
+              marginBottom: "1.75rem",
+              animationDelay: "100ms",
+            }}
+          >
+            Każdy miał{" "}
+            {/* "agencję" — pill -2deg z łapką i cieniem */}
+            <span
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.3em",
+                transform: "rotate(-2deg)",
+                transformOrigin: "center bottom",
+                background: "var(--color-brand)",
+                color: "white",
+                padding: "0.08em 0.42em 0.14em",
+                borderRadius: "0.55rem",
+                boxShadow: "0 4px 16px rgba(243,111,33,0.35), 0 1px 3px rgba(0,0,0,0.08)",
+                verticalAlign: "middle",
+              }}
+            >
+              agencję{" "}
+              <span style={{ fontSize: "0.72em", lineHeight: 1 }} aria-hidden="true">🐾</span>
+            </span>
+            {"."}<br />
+            <span style={{ color: "var(--color-brand)" }}>Nie każdy efekty.</span>
+          </h1>
+
+          {/* Lead — dwa poziomy hierarchii */}
+          <div
+            className="animate-fade-up"
+            style={{ marginBottom: "2.25rem", animationDelay: "200ms" }}
+          >
+            <p style={{ fontSize: "1rem", fontWeight: 600, color: "#111111", lineHeight: 1.5, marginBottom: "0.5rem" }}>
+              Zaufanie kota zdobywa się latami.&nbsp;Traci w&nbsp;sekundę.
+            </p>
+            <p style={{ fontSize: "0.9375rem", color: "#71717a", lineHeight: 1.7, maxWidth: "42ch" }}>
+              Tak samo z klientami. Nie obiecujemy — pokazujemy.
+              Konkretne działania, realne wyniki,{" "}
+              <strong style={{ color: "#111111", fontWeight: 600 }}>zero ściemy.</strong>
+            </p>
+          </div>
+
+          {/* CTA */}
+          <div
+            className="flex flex-wrap items-center gap-4 animate-fade-up"
+            style={{ marginBottom: "2.5rem", animationDelay: "320ms" }}
+          >
+            {/* Główny przycisk */}
+            <Link
+              href="/kontakt"
+              className="hero-cta-primary inline-flex items-center gap-2 font-bold text-white rounded-xl transition-all duration-200 hover:-translate-y-0.5"
+              style={{
+                background: "var(--color-brand)",
+                fontSize: "0.9rem",
+                padding: "0.85rem 1.6rem",
+                boxShadow: "0 4px 20px rgba(243,111,33,0.28)",
+              }}
+            >
+              Umów bezpłatną konsultację
+              <span aria-hidden="true">→</span>
+            </Link>
+
+            {/* Drugorzędny link */}
+            <Link
+              href="#sekret"
+              className="text-sm font-semibold text-zinc-500 hover:text-brand transition-colors duration-150"
+            >
+              Poznaj problemy&nbsp;↓
+            </Link>
+          </div>
+
+          {/* Features pod kreską */}
+          <div
+            className="animate-fade-up"
+            style={{
+              paddingTop: "1.25rem",
+              borderTop: "1px solid var(--color-border)",
+              animationDelay: "450ms",
+            }}
+          >
+            <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6">
+
+              {/* Feature 1 */}
+              <div style={{ display: "flex", alignItems: "flex-start", gap: "0.625rem", minWidth: 0 }}>
+                <span style={{ fontSize: "1.15rem", marginTop: "0.1rem", flexShrink: 0 }} aria-hidden="true">📞</span>
+                <div>
+                  <p style={{ fontSize: "0.8125rem", fontWeight: 700, color: "#111111", lineHeight: 1.3 }}>
+                    Bezpłatna konsultacja
+                  </p>
+                  <p style={{ fontSize: "0.72rem", color: "#a1a1aa", marginTop: "0.15rem" }}>
+                    Krótka rozmowa. Zero zobowiązań.
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="text-sm font-bold text-ink">Elastyczna umowa</p>
-                <p className="text-xs text-zinc-400 mt-0.5">Specjalne warianty.</p>
+
+              {/* Separator pionowy */}
+              <div
+                className="hidden sm:block"
+                style={{ width: "1px", background: "var(--color-border)", alignSelf: "stretch", flexShrink: 0 }}
+              />
+
+              {/* Feature 2 */}
+              <div style={{ display: "flex", alignItems: "flex-start", gap: "0.625rem", minWidth: 0 }}>
+                <span style={{ fontSize: "1.15rem", marginTop: "0.1rem", flexShrink: 0 }} aria-hidden="true">📄</span>
+                <div>
+                  <p style={{ fontSize: "0.8125rem", fontWeight: 700, color: "#111111", lineHeight: 1.3 }}>
+                    Elastyczna umowa
+                  </p>
+                  <p style={{ fontSize: "0.72rem", color: "#a1a1aa", marginTop: "0.15rem" }}>
+                    Specjalne warianty.
+                  </p>
+                </div>
               </div>
+
             </div>
           </div>
+
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in [animation-delay:1200ms]">
-        <Link href="#sekret" className="flex flex-col items-center gap-2 text-zinc-400 hover:text-brand transition-colors">
-          <span className="text-xs font-medium tracking-widest uppercase">Przewiń</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-bounce">
+      {/* Scroll indicator na mobile */}
+      <div className="lg:hidden absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1">
+        <Link href="#sekret" className="flex flex-col items-center gap-1 text-zinc-400 hover:text-brand transition-colors">
+          <span
+            style={{
+              fontSize: "0.6rem",
+              fontWeight: 700,
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              background: "rgba(255,255,255,0.9)",
+              border: "1px solid #e5e5e5",
+              padding: "0.3rem 0.75rem",
+              borderRadius: "999px",
+            }}
+          >
+            Przewiń ↓
+          </span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-bounce">
             <path d="M12 5v14M5 12l7 7 7-7" />
           </svg>
         </Link>
