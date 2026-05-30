@@ -98,7 +98,7 @@ export default function SlownikPage() {
                   {letterTerms.map(term => (
                     <Link
                       key={term.slug}
-                      href={`/slownik/${term.slug}`}
+                      href={`/${term.slug}`}
                       className="group bg-white rounded-2xl border border-border p-5 hover:border-brand hover:shadow-md transition-all duration-200"
                     >
                       <div className="flex items-start justify-between gap-3 mb-2">
