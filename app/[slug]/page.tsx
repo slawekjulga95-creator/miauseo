@@ -6,6 +6,7 @@ import { getPostBySlug, getPublishedPosts, formatDate } from "@/app/blog/posts";
 import type { Category } from "@/app/blog/posts";
 import { articleContent } from "@/app/blog/content";
 import { terms, getTermBySlug, getTermsByLetter } from "@/app/slownik/terms";
+import { termContentMap } from "@/app/slownik/content";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -29,8 +30,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   const term = getTermBySlug(slug);
   if (term) {
+    const hasContent = slug in termContentMap;
     return {
-      title: `${term.term} – definicja | Słownik SEO MiauSEO`,
+      title: hasContent
+        ? `${term.term} – definicja i zastosowanie | Słownik SEO MiauSEO`
+        : `${term.term} – definicja | Słownik SEO MiauSEO`,
       description: term.shortDesc,
     };
   }
@@ -78,12 +82,18 @@ export default async function BlogPostPage({ params }: Props) {
               <h1 className="text-3xl md:text-4xl font-bold text-ink leading-tight mb-4">{term.term}</h1>
               <p className="text-lg text-zinc-500 leading-relaxed border-l-4 border-brand/30 pl-5 mb-10">{term.shortDesc}</p>
               <div className="prose-blog">
-                <h2>Czym jest {term.term}?</h2>
-                <p>{term.shortDesc} Poniżej znajdziesz szczegółowe omówienie tego pojęcia, praktyczne przykłady i wskazówki jak wykorzystać tę wiedzę w strategii SEO lub SEM.</p>
-                <div className="not-prose mt-8 bg-surface border border-border rounded-2xl p-6">
-                  <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Rozbudowany opis wkrótce</p>
-                  <p className="text-sm text-zinc-500 leading-relaxed">Szczegółowy artykuł o pojęciu <strong className="text-ink">{term.term}</strong> jest w przygotowaniu.</p>
-                </div>
+                {termContentMap[slug] ? (
+                  termContentMap[slug]()
+                ) : (
+                  <>
+                    <h2>Czym jest {term.term}?</h2>
+                    <p>{term.shortDesc} Poniżej znajdziesz szczegółowe omówienie tego pojęcia, praktyczne przykłady i wskazówki jak wykorzystać tę wiedzę w strategii SEO lub SEM.</p>
+                    <div className="not-prose mt-8 bg-surface border border-border rounded-2xl p-6">
+                      <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Rozbudowany opis wkrótce</p>
+                      <p className="text-sm text-zinc-500 leading-relaxed">Szczegółowy artykuł o pojęciu <strong className="text-ink">{term.term}</strong> jest w przygotowaniu.</p>
+                    </div>
+                  </>
+                )}
               </div>
               <div className="mt-10 flex flex-col sm:flex-row gap-3 border-t border-border pt-8">
                 {prev && (
