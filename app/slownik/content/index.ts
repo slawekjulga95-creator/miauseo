@@ -6,6 +6,16 @@ import Amp from "./amp";
 import AnchorText from "./anchor-text";
 import AtrybytAlt from "./atrybut-alt";
 import AutorytetDomeny from "./autorytet-domeny";
+import CanonicalUrl from "./canonical-url";
+import Cloaking from "./cloaking";
+import ContentMarketing from "./content-marketing";
+import ConversionRate from "./conversion-rate";
+import CoreWebVitals from "./core-web-vitals";
+import Cpa from "./cpa";
+import Cpc from "./cpc";
+import Cpm from "./cpm";
+import Crawlowanie from "./crawlowanie";
+import Ctr from "./ctr";
 import Backlink from "./backlink";
 import BlackHatSeo from "./black-hat-seo";
 import BounceRate from "./bounce-rate";
@@ -25,6 +35,17 @@ export const termContentMap: Record<string, () => React.JSX.Element> = {
   "anchor-text": AnchorText,
   "atrybut-alt": AtrybytAlt,
   "autorytet-domeny": AutorytetDomeny,
+  // C
+  "canonical-url": CanonicalUrl,
+  "cloaking": Cloaking,
+  "content-marketing": ContentMarketing,
+  "conversion-rate": ConversionRate,
+  "core-web-vitals": CoreWebVitals,
+  "cpa": Cpa,
+  "cpc": Cpc,
+  "cpm": Cpm,
+  "crawlowanie": Crawlowanie,
+  "ctr": Ctr,
   // B
   "backlink": Backlink,
   "black-hat-seo": BlackHatSeo,
