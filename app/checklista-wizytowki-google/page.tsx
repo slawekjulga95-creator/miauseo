@@ -118,40 +118,67 @@ export default function ChecklistaPage() {
     <main className="pt-20">
 
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden bg-white py-20 px-6">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
         <CatWatermark />
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">Bezpłatne narzędzie</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-ink leading-tight mb-6">
-            <span className="inline-block bg-brand text-white px-3 py-1 rounded-lg">Checklista</span>{" "}
-            Pozycjonowania<br className="hidden sm:block" /> Wizytówki Google
-          </h1>
-          <p className="text-zinc-500 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
-            28 punktów kontrolnych, które decydują o pozycji Twojej firmy w Mapach Google.
-            Zaznacz co już masz zrobione. Najedź na{" "}
-            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-zinc-200 text-zinc-600 text-xs font-bold align-middle">?</span>{" "}
-            przy każdym haśle, żeby zobaczyć wskazówkę.
-          </p>
-
-          {/* Progress bar */}
-          <div className="max-w-sm mx-auto">
-            <div className="flex justify-between items-center text-sm font-semibold mb-2">
-              <span className="text-ink">Twój postęp</span>
-              <span style={{ color: "#FF6A00" }}>{checkedCount}/{totalItems} ukończone</span>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">Bezpłatne narzędzie</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
+                Checklista pozycjonowania.{" "}
+                <span className="text-brand">28 punktów kontrolnych.</span>
+              </h1>
+              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
+                Sprawdź, które sygnały rankingowe Twojej wizytówki Google są zadbane, a które wymagają poprawy. Zaznacz co masz zrobione i najedź na{" "}
+                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-zinc-200 text-zinc-600 text-xs font-bold align-middle">?</span>{" "}
+                przy każdym haśle, żeby zobaczyć wskazówkę eksperta.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href="#checklista" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
+                  Przejdź do checklisty
+                </a>
+                <Link href="/kontakt" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
+                  Wolę zlecić
+                </Link>
+              </div>
             </div>
-            <div className="h-3 bg-zinc-100 rounded-full overflow-hidden">
-              <div
-                className="h-full rounded-full transition-all duration-500"
-                style={{ width: `${progress}%`, backgroundColor: "#FF6A00" }}
-              />
+            <div className="bg-surface rounded-3xl p-8 border border-border">
+              <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-5">Twój postęp</p>
+              <div className="mb-7">
+                <div className="flex justify-between items-center text-sm font-semibold mb-2">
+                  <span className="text-ink">Ukończone punkty</span>
+                  <span style={{ color: "#FF6A00" }}>{checkedCount}/{totalItems}</span>
+                </div>
+                <div className="h-3 bg-zinc-200 rounded-full overflow-hidden">
+                  <div
+                    className="h-full rounded-full transition-all duration-500"
+                    style={{ width: `${progress}%`, backgroundColor: "#FF6A00" }}
+                  />
+                </div>
+                <p className="text-xs text-zinc-400 mt-1.5 text-right">{progress}% gotowe</p>
+              </div>
+              <div className="space-y-4">
+                {[
+                  { bold: "Dane podstawowe i NAP", rest: " — nazwa, adres, telefon i spójność w całej sieci." },
+                  { bold: "Recenzje i aktywność", rest: " — liczba opinii, świeżość i systematyczne zbieranie." },
+                  { bold: "Treść i optymalizacja profilu", rest: " — opis, usługi, godziny, atrybuty, Q&A." },
+                  { bold: "Strona www i cytowania lokalne", rest: " — schema markup, katalogi, link building." },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-3 items-start">
+                    <div className="shrink-0 w-5 h-5 rounded-full bg-brand/10 flex items-center justify-center mt-0.5">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <p className="text-sm text-zinc-600 leading-relaxed"><strong className="text-ink">{item.bold}</strong>{item.rest}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-            <p className="text-xs text-zinc-400 mt-1.5 text-right">{progress}% gotowe</p>
           </div>
         </div>
       </section>
 
       {/* ── Checklist ── */}
-      <section className="py-16 bg-surface">
+      <section id="checklista" className="py-16 bg-surface">
         <div className="max-w-5xl mx-auto px-4 lg:px-8">
 
           {/* Legend */}
