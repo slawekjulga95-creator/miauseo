@@ -108,13 +108,6 @@ export default function HeroSection() {
         ))}
       </div>
 
-      {/* Logo watermark – mobile only (CSS background – not LCP candidate) */}
-      <div
-        aria-hidden="true"
-        className="absolute bottom-16 right-0 w-72 pointer-events-none select-none lg:hidden"
-        style={{ aspectRatio: "625/399", backgroundImage: "url('/logo.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat", opacity: 0.06 }}
-      />
-
       {/* Logo watermark – desktop left column (CSS background – not LCP candidate) */}
       <div
         aria-hidden="true"
