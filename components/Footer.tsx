@@ -14,6 +14,7 @@ const company = [
   { href: "/o-nas/zespol", label: "Zespół" },
   { href: "/referencje", label: "Referencje" },
   { href: "/blog", label: "Blog" },
+  { href: "/slownik", label: "Słownik SEO/SEM" },
   { href: "/pytania", label: "FAQ" },
   { href: "/kontakt", label: "Kontakt" },
 ];
