@@ -5729,6 +5729,67 @@ define( 'DB_HOST', 'localhost' );</code></pre>
         Pozycjonowanie lokalne w Google Maps to kilka warstw działań: optymalizacja samego profilu GBP, systematyczne zbieranie i zarządzanie opiniami, budowanie spójności danych w sieci, praca nad stroną internetową i zdobywanie sygnałów lokalnego autorytetu. Razem tworzą strategię SEO lokalnego, która decyduje, czy klient znajdzie Ciebie — czy Twoją konkurencję.
       </p>
 
+      {/* ── Ilustracja: Local Pack ── */}
+      <div className="not-prose my-8 rounded-2xl overflow-hidden border border-border shadow-sm">
+        <div className="bg-surface px-4 py-2.5 flex items-center gap-3 border-b border-border">
+          <div className="flex gap-1.5 shrink-0">
+            <span className="w-2.5 h-2.5 rounded-full bg-red-400 block" />
+            <span className="w-2.5 h-2.5 rounded-full bg-yellow-400 block" />
+            <span className="w-2.5 h-2.5 rounded-full bg-green-400 block" />
+          </div>
+          <div className="flex-1 bg-white rounded-full px-3 py-1 text-xs text-zinc-400 border border-border">hydraulik warszawa</div>
+        </div>
+        <div className="bg-white p-5">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 mb-3">Local Pack · Wyniki lokalne z mapą</p>
+          <div className="flex gap-4">
+            <div className="flex-1 border border-border rounded-xl overflow-hidden">
+              <div className="p-3 flex items-start gap-3 border-b border-border bg-orange-50/50">
+                <span className="shrink-0 w-5 h-5 rounded-full text-[10px] font-bold text-white flex items-center justify-center mt-0.5 bg-brand">1</span>
+                <div>
+                  <p className="text-xs font-semibold text-brand">Hydraulik Warszawa Pro</p>
+                  <p className="text-[11px]"><span className="text-amber-400">★★★★★</span><span className="text-zinc-500 ml-1">4,9 · (184)</span></p>
+                  <p className="text-[10px] text-zinc-400">Hydraulik · Mokotowska 12, Warszawa</p>
+                </div>
+              </div>
+              <div className="p-3 flex items-start gap-3 border-b border-border">
+                <span className="shrink-0 w-5 h-5 rounded-full text-[10px] font-bold text-white flex items-center justify-center mt-0.5 bg-zinc-300">2</span>
+                <div>
+                  <p className="text-xs font-semibold text-ink">Hydraulik 24h Wawa</p>
+                  <p className="text-[11px]"><span className="text-amber-400">★★★★☆</span><span className="text-zinc-500 ml-1">4,2 · (67)</span></p>
+                  <p className="text-[10px] text-zinc-400">Hydraulik · Al. Jerozolimskie 44</p>
+                </div>
+              </div>
+              <div className="p-3 flex items-start gap-3">
+                <span className="shrink-0 w-5 h-5 rounded-full text-[10px] font-bold text-white flex items-center justify-center mt-0.5 bg-zinc-300">3</span>
+                <div>
+                  <p className="text-xs font-semibold text-ink">Złota Rączka Serwis</p>
+                  <p className="text-[11px]"><span className="text-amber-400">★★★★☆</span><span className="text-zinc-500 ml-1">4,0 · (41)</span></p>
+                  <p className="text-[10px] text-zinc-400">Hydraulik · ul. Puławska 88</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-36 shrink-0 rounded-xl bg-blue-50 border border-border flex items-center justify-center overflow-hidden">
+              <svg viewBox="0 0 140 130" width="140" height="130">
+                <rect width="140" height="130" fill="#dbeafe"/>
+                <line x1="0" y1="65" x2="140" y2="65" stroke="white" strokeWidth="7" opacity="0.7"/>
+                <line x1="70" y1="0" x2="70" y2="130" stroke="white" strokeWidth="5" opacity="0.7"/>
+                <line x1="0" y1="32" x2="140" y2="32" stroke="white" strokeWidth="2" opacity="0.4"/>
+                <line x1="0" y1="98" x2="140" y2="98" stroke="white" strokeWidth="2" opacity="0.4"/>
+                <line x1="35" y1="0" x2="35" y2="130" stroke="white" strokeWidth="2" opacity="0.4"/>
+                <line x1="105" y1="0" x2="105" y2="130" stroke="white" strokeWidth="2" opacity="0.4"/>
+                <path d="M65 20 C58 20 52 26 52 34 C52 44 65 57 65 57 C65 57 78 44 78 34 C78 26 72 20 65 20 Z" fill="#FF6A00"/>
+                <circle cx="65" cy="33" r="7" fill="white"/>
+                <path d="M95 50 C90 50 86 54 86 60 C86 67 95 77 95 77 C95 77 104 67 104 60 C104 54 100 50 95 50 Z" fill="#9e9e9e"/>
+                <path d="M112 28 C108 28 105 31 105 36 C105 42 112 50 112 50 C112 50 119 42 119 36 C119 31 116 28 112 28 Z" fill="#9e9e9e"/>
+              </svg>
+            </div>
+          </div>
+          <p className="text-[10px] text-zinc-400 text-center mt-4 border-t border-border pt-3">
+            Local Pack — 3 wyróżnione firmy nad organicznymi. Pozycja #1 zbiera nawet 40% kliknięć dla danej frazy lokalnej.
+          </p>
+        </div>
+      </div>
+
       <h2>Profil Firmy w Google (Google Business Profile) — co to jest i co zawiera?</h2>
       <p>
         Google Business Profile to bezpłatny panel, w którym firma zarządza swoją obecnością w Google. Po weryfikacji profilu wizytówka pojawia się jako <strong>Knowledge Panel</strong> po prawej stronie wyników oraz jako pin na Google Maps. To często pierwsza rzecz, jaką potencjalny klient widzi o Twojej firmie — jeszcze przed wejściem na stronę internetową.
@@ -5771,6 +5832,25 @@ define( 'DB_HOST', 'localhost' );</code></pre>
       <p>
         W 2026 roku dochodzi nowy wymiar: <strong>AI Overviews</strong>. Google AI coraz częściej wstawia rekomendacje firm lokalnych bezpośrednio w odpowiedziach generowanych przez sztuczną inteligencję. Profil z kompletem informacji, aktywnymi postami i dobrymi opiniami ma największą szansę na wyróżnienie w tym nowym formacie — to nowy front Google Maps SEO, który warto brać pod uwagę od zaraz.
       </p>
+
+      {/* ── Ilustracja: Trzy filary algorytmu ── */}
+      <div className="not-prose my-8 grid sm:grid-cols-3 gap-4">
+        <div className="border border-orange-200 rounded-2xl p-5 bg-orange-50">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-brand mb-2">Relevance</p>
+          <p className="text-sm font-bold text-ink mb-2">Trafność</p>
+          <p className="text-xs text-zinc-500 leading-relaxed">Czy Twoja kategoria i usługi odpowiadają na intencję zapytania? Kategoria główna GBP to filtr #1.</p>
+        </div>
+        <div className="border border-sky-200 rounded-2xl p-5 bg-sky-50">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-sky-600 mb-2">Distance</p>
+          <p className="text-sm font-bold text-ink mb-2">Odległość</p>
+          <p className="text-xs text-zinc-500 leading-relaxed">Jak blisko klienta jesteś? Bliżej = wyżej — ale silna renoma pokonuje odległość.</p>
+        </div>
+        <div className="border border-emerald-200 rounded-2xl p-5 bg-emerald-50">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 mb-2">Prominence</p>
+          <p className="text-sm font-bold text-ink mb-2">Renoma</p>
+          <p className="text-xs text-zinc-500 leading-relaxed">Opinie, linki i cytowania — jak rozpoznawalna i wiarygodna jest firma w całej sieci?</p>
+        </div>
+      </div>
 
       <h2>Czynniki rankingowe wizytówek Google w 2026 roku</h2>
       <p>
