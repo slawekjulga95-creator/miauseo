@@ -2,37 +2,29 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 type Field = {
   name: string;
-  company: string;
   email: string;
-  phone: string;
-  service: string;
+  company: string;
   message: string;
   consent: boolean;
 };
-
-const services = [
-  "Pozycjonowanie wizytówki Google",
-  "Pozycjonowanie strony internetowej",
-  "Google Ads",
-  "Meta Ads",
-  "Nie wiem jeszcze – chcę porozmawiać",
-];
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const router = useRouter();
+  const { executeRecaptcha } = useGoogleReCaptcha();
   const [form, setForm] = useState<Field>({
-    name: "", company: "", email: "", phone: "", service: "", message: "", consent: false,
+    name: "", email: "", company: "", message: "", consent: false,
   });
 
   const set =
     (key: keyof Field) =>
-    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
       const value =
         e.target instanceof HTMLInputElement && e.target.type === "checkbox"
           ? e.target.checked
@@ -61,13 +53,15 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!executeRecaptcha) return;
     setLoading(true);
     setError(false);
     try {
+      const token = await executeRecaptcha("contact_form");
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ source: "kontakt", ...form }),
+        body: JSON.stringify({ source: "kontakt", recaptchaToken: token, ...form }),
       });
       if (!res.ok) throw new Error();
       setSent(true);
@@ -83,39 +77,28 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Imię i nazwisko *</label>
+          <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Imię *</label>
           <input type="text" required placeholder="Jan Kowalski" value={form.name} onChange={set("name")} className={input} />
         </div>
         <div>
-          <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Nazwa firmy</label>
-          <input type="text" placeholder="Kowalski Serwis" value={form.company} onChange={set("company")} className={input} />
-        </div>
-      </div>
-
-      <div className="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Email *</label>
+          <label className="block text-xs font-semibold text-zinc-500 mb-1.5">E-mail *</label>
           <input type="email" required placeholder="jan@firma.pl" value={form.email} onChange={set("email")} className={input} />
         </div>
-        <div>
-          <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Telefon *</label>
-          <input type="tel" required placeholder="+48 500 000 000" value={form.phone} onChange={set("phone")} className={input} />
-        </div>
       </div>
 
       <div>
-        <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Czego szukasz?</label>
-        <select value={form.service} onChange={set("service")} className={`${input} cursor-pointer`}>
-          <option value="">Wybierz temat rozmowy...</option>
-          {services.map((s) => <option key={s} value={s}>{s}</option>)}
-        </select>
+        <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Nazwa firmy</label>
+        <input type="text" placeholder="Kowalski Serwis" value={form.company} onChange={set("company")} className={input} />
       </div>
 
       <div>
-        <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Opisz swoją sytuację</label>
+        <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Jak możemy pomóc? *</label>
         <textarea
-          placeholder="Mam wizytówkę Google od roku, ale nie pojawiam się w mapach mimo że konkurencja jest widoczna..."
-          rows={5} value={form.message} onChange={set("message")}
+          required
+          placeholder="Opisz swoją sytuację — im więcej wiesz, tym lepiej możemy się przygotować..."
+          rows={5}
+          value={form.message}
+          onChange={set("message")}
           className={`${input} resize-none`}
         />
       </div>
@@ -127,15 +110,16 @@ export default function ContactForm() {
           className="mt-0.5 accent-brand shrink-0"
         />
         <span className="text-[11px] text-zinc-400 leading-relaxed">
-          Wyrażam zgodę na przetwarzanie moich danych osobowych przez MiauSEO w celu odpowiedzi na zapytanie, zgodnie z{" "}
+          Wyrażam zgodę na przetwarzanie moich danych osobowych przez MiauSEO Sławomir Jułga w celu udzielenia odpowiedzi na przesłane zapytanie, zgodnie z{" "}
           <a href="/polityka-prywatnosci" className="underline hover:text-brand">Polityką prywatności</a>.
-          Dane nie będą udostępniane osobom trzecim.
+          Podanie danych jest dobrowolne. Mam prawo dostępu do danych, ich sprostowania i usunięcia.
         </span>
       </label>
 
       {error && (
         <p className="text-red-500 text-sm text-center">Coś poszło nie tak. Spróbuj ponownie lub napisz bezpośrednio na slawomir@miauseo.pl</p>
       )}
+
       <button
         type="submit"
         disabled={loading}

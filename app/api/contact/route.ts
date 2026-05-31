@@ -13,10 +13,22 @@ const SOURCE_LABELS: Record<string, string> = {
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { source, name, company, email, phone, service, message } = body;
+    const { source, name, company, email, phone, service, message, recaptchaToken } = body;
 
-    if (!name || !phone) {
+    if (!name) {
       return NextResponse.json({ error: "Brak wymaganych pól" }, { status: 400 });
+    }
+
+    if (process.env.RECAPTCHA_SECRET_KEY && recaptchaToken) {
+      const verify = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${recaptchaToken}`,
+      });
+      const result = await verify.json();
+      if (!result.success || result.score < 0.5) {
+        return NextResponse.json({ error: "reCAPTCHA failed" }, { status: 400 });
+      }
     }
 
     const label = SOURCE_LABELS[source] ?? source ?? "Nieznany formularz";

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import ContactForm from "@/components/ContactForm";
+import ContactFormWrapper from "@/components/ContactFormWrapper";
 import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
@@ -133,7 +133,7 @@ export default function KontaktPage() {
           <div className="w-full lg:w-7/12 bg-surface rounded-3xl p-8 md:p-10 border border-border">
             <h2 className="text-2xl font-bold text-ink mb-2">Napisz do mnie</h2>
             <p className="text-zinc-500 text-sm mb-8">Odpowiem w ciągu kilku godzin roboczych.</p>
-            <ContactForm />
+            <ContactFormWrapper />
           </div>
 
           {/* Right — info */}
