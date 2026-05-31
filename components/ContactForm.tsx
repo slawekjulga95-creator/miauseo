@@ -6,8 +6,9 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 type Field = {
   name: string;
-  email: string;
+  phone: string;
   company: string;
+  email: string;
   message: string;
   consent: boolean;
 };
@@ -19,7 +20,7 @@ export default function ContactForm() {
   const router = useRouter();
   const { executeRecaptcha } = useGoogleReCaptcha();
   const [form, setForm] = useState<Field>({
-    name: "", email: "", company: "", message: "", consent: false,
+    name: "", phone: "", company: "", email: "", message: "", consent: false,
   });
 
   const set =
@@ -48,8 +49,7 @@ export default function ContactForm() {
     );
   }
 
-  const input =
-    "w-full px-4 py-3 rounded-xl border border-border bg-white text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition";
+  const inp = "w-full px-4 py-3 rounded-xl border border-border bg-white text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -78,37 +78,39 @@ export default function ContactForm() {
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Imię *</label>
-          <input type="text" required placeholder="Jan Kowalski" value={form.name} onChange={set("name")} className={input} />
+          <input type="text" required placeholder="Jan Kowalski" value={form.name} onChange={set("name")} className={inp} />
         </div>
         <div>
-          <label className="block text-xs font-semibold text-zinc-500 mb-1.5">E-mail *</label>
-          <input type="email" required placeholder="jan@firma.pl" value={form.email} onChange={set("email")} className={input} />
+          <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Telefon *</label>
+          <input type="tel" required placeholder="+48 500 000 000" value={form.phone} onChange={set("phone")} className={inp} />
         </div>
       </div>
 
-      <div>
-        <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Nazwa firmy</label>
-        <input type="text" placeholder="Kowalski Serwis" value={form.company} onChange={set("company")} className={input} />
+      <div className="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Nazwa firmy</label>
+          <input type="text" placeholder="Kowalski Serwis" value={form.company} onChange={set("company")} className={inp} />
+        </div>
+        <div>
+          <label className="block text-xs font-semibold text-zinc-500 mb-1.5">E-mail *</label>
+          <input type="email" required placeholder="jan@firma.pl" value={form.email} onChange={set("email")} className={inp} />
+        </div>
       </div>
 
       <div>
         <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Jak możemy pomóc? *</label>
         <textarea
           required
-          placeholder="Opisz swoją sytuację — im więcej wiesz, tym lepiej możemy się przygotować..."
-          rows={5}
-          value={form.message}
-          onChange={set("message")}
-          className={`${input} resize-none`}
+          placeholder="Opisz swoją sytuację — im więcej napiszesz, tym lepiej możemy się przygotować..."
+          rows={5} value={form.message} onChange={set("message")}
+          className={`${inp} resize-none`}
         />
       </div>
 
       <label className="flex items-start gap-3 cursor-pointer">
-        <input
-          type="checkbox" required checked={form.consent}
+        <input type="checkbox" required checked={form.consent}
           onChange={(e) => setForm((prev) => ({ ...prev, consent: e.target.checked }))}
-          className="mt-0.5 accent-brand shrink-0"
-        />
+          className="mt-0.5 accent-brand shrink-0" />
         <span className="text-[11px] text-zinc-400 leading-relaxed">
           Wyrażam zgodę na przetwarzanie moich danych osobowych przez MiauSEO w celu udzielenia odpowiedzi na przesłane zapytanie, zgodnie z{" "}
           <a href="/polityka-prywatnosci" className="underline hover:text-brand">Polityką prywatności</a>.
@@ -117,14 +119,11 @@ export default function ContactForm() {
       </label>
 
       {error && (
-        <p className="text-red-500 text-sm text-center">Coś poszło nie tak. Spróbuj ponownie lub napisz bezpośrednio na slawomir@miauseo.pl</p>
+        <p className="text-red-500 text-sm text-center">Coś poszło nie tak. Napisz na slawomir@miauseo.pl</p>
       )}
 
-      <button
-        type="submit"
-        disabled={loading}
-        className="w-full bg-brand hover:bg-brand-dark disabled:opacity-60 text-white font-bold py-4 rounded-xl transition-colors duration-200 text-sm flex items-center justify-center gap-2"
-      >
+      <button type="submit" disabled={loading}
+        className="w-full bg-brand hover:bg-brand-dark disabled:opacity-60 text-white font-bold py-4 rounded-xl transition-colors duration-200 text-sm flex items-center justify-center gap-2">
         {loading ? (
           <svg className="animate-spin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10" strokeOpacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10" /></svg>
         ) : (

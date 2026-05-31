@@ -13,8 +13,9 @@ export default function HeroForm() {
   const router = useRouter();
   const [form, setForm] = useState({
     name: "",
-    email: "",
+    phone: "",
     company: "",
+    email: "",
     message: "",
     consent: false,
   });
@@ -109,19 +110,26 @@ export default function HeroForm() {
                 className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition"
               />
               <input
+                type="tel"
+                required
+                placeholder="Telefon"
+                value={form.phone}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition"
+              />
+              <input
+                type="text"
+                placeholder="Nazwa firmy"
+                value={form.company}
+                onChange={(e) => setForm({ ...form, company: e.target.value })}
+                className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition"
+              />
+              <input
                 type="email"
                 required
                 placeholder="E-mail"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition"
-              />
-              <input
-                type="text"
-                required
-                placeholder="Nazwa firmy"
-                value={form.company}
-                onChange={(e) => setForm({ ...form, company: e.target.value })}
                 className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition"
               />
               <textarea
