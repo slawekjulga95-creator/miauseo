@@ -60,12 +60,14 @@ export default function RootLayout({
             wait_for_update: 500
           });
           try {
-            if (localStorage.getItem('miau-consent') === 'granted') {
+            var raw = localStorage.getItem('miau-consent-v2');
+            if (raw) {
+              var c = JSON.parse(raw);
               gtag('consent', 'update', {
-                ad_storage: 'granted',
-                ad_user_data: 'granted',
-                ad_personalization: 'granted',
-                analytics_storage: 'granted'
+                analytics_storage: c.analytics ? 'granted' : 'denied',
+                ad_storage: c.marketing ? 'granted' : 'denied',
+                ad_user_data: c.marketing ? 'granted' : 'denied',
+                ad_personalization: c.marketing ? 'granted' : 'denied'
               });
             }
           } catch(e) {}
