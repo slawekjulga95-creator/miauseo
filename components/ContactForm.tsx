@@ -110,7 +110,7 @@ export default function ContactForm() {
           className="mt-0.5 accent-brand shrink-0"
         />
         <span className="text-[11px] text-zinc-400 leading-relaxed">
-          Wyrażam zgodę na przetwarzanie moich danych osobowych przez MiauSEO Sławomir Jułga w celu udzielenia odpowiedzi na przesłane zapytanie, zgodnie z{" "}
+          Wyrażam zgodę na przetwarzanie moich danych osobowych przez MiauSEO w celu udzielenia odpowiedzi na przesłane zapytanie, zgodnie z{" "}
           <a href="/polityka-prywatnosci" className="underline hover:text-brand">Polityką prywatności</a>.
           Podanie danych jest dobrowolne. Mam prawo dostępu do danych, ich sprostowania i usunięcia.
         </span>

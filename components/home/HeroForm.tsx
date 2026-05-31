@@ -15,7 +15,6 @@ export default function HeroForm() {
     name: "",
     email: "",
     company: "",
-    phone: "",
     message: "",
     consent: false,
   });
@@ -125,17 +124,9 @@ export default function HeroForm() {
                 onChange={(e) => setForm({ ...form, company: e.target.value })}
                 className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition"
               />
-              <input
-                type="tel"
-                required
-                placeholder="Telefon"
-                value={form.phone}
-                onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition"
-              />
               <textarea
                 required
-                placeholder="Opisz swoje dotychczasowe doświadczenia z marketingiem..."
+                placeholder="Jak możemy pomóc?"
                 rows={3}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
