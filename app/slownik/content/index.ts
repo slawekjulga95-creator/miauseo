@@ -33,6 +33,34 @@ import KeywordStuffing from "./keyword-stuffing";
 import KnowledgeGraph from "./knowledge-graph";
 import KnowledgePanel from "./knowledge-panel";
 import Kpi from "./kpi";
+import LandingPage from "./landing-page";
+import LinkBuilding from "./link-building";
+import LinkJuice from "./link-juice";
+import LocalPack from "./local-pack";
+import LocalSeo from "./local-seo";
+import LongTailKeyword from "./long-tail-keyword";
+import Lsi from "./lsi";
+import MetaDescription from "./meta-description";
+import MetaTitle from "./meta-title";
+import MobileFirstIndexing from "./mobile-first-indexing";
+import Nap from "./nap";
+import NaturalLink from "./natural-link";
+import NegativeKeyword from "./negative-keyword";
+import Nofollow from "./nofollow";
+import Noindex from "./noindex";
+import OffPageSeo from "./off-page-seo";
+import OnPageSeo from "./on-page-seo";
+import OrganicTraffic from "./organic-traffic";
+import OrphanPage from "./orphan-page";
+import OutboundLink from "./outbound-link";
+import Pagerank from "./pagerank";
+import PageSpeed from "./page-speed";
+import Panda from "./panda";
+import Penguin from "./penguin";
+import PerformanceMax from "./performance-max";
+import Permalink from "./permalink";
+import Pozycjonowanie from "./pozycjonowanie";
+import Ppc from "./ppc";
 import DeepLinking from "./deep-linking";
 import Disavow from "./disavow";
 import DisplayAds from "./display-ads";
@@ -111,4 +139,69 @@ export const termContentMap: Record<string, () => React.JSX.Element> = {
   "brand-bidding": BrandBidding,
   "breadcrumbs": Breadcrumbs,
   "broad-match": BroadMatch,
+  // G
+  "geotargeting": Geotargeting,
+  "google-ads": GoogleAds,
+  "google-analytics": GoogleAnalytics,
+  "google-business-profile": GoogleBusinessProfile,
+  "google-discover": GoogleDiscover,
+  "google-search-console": GoogleSearchConsole,
+  "google-tag-manager": GoogleTagManager,
+  "googlebot": Googlebot,
+  "gray-hat-seo": GrayHatSeo,
+  // H
+  "heading-tags": HeadingTags,
+  "hreflang": Hreflang,
+  "https": Https,
+  "hyperlink": Hyperlink,
+  // I
+  "impressions": Impressions,
+  "inbound-link": InboundLink,
+  "indeksowanie": Indeksowanie,
+  "intencja-wyszukiwania": IntencjaWyszukiwania,
+  "internal-linking": InternalLinking,
+  // J
+  "javascript-seo": JavascriptSeo,
+  "json-ld": JsonLd,
+  // K
+  "keyword": Keyword,
+  "keyword-density": KeywordDensity,
+  "keyword-research": KeywordResearch,
+  "keyword-stuffing": KeywordStuffing,
+  "knowledge-graph": KnowledgeGraph,
+  "knowledge-panel": KnowledgePanel,
+  "kpi": Kpi,
+  // L
+  "landing-page": LandingPage,
+  "link-building": LinkBuilding,
+  "link-juice": LinkJuice,
+  "local-pack": LocalPack,
+  "local-seo": LocalSeo,
+  "long-tail-keyword": LongTailKeyword,
+  "lsi": Lsi,
+  // M
+  "meta-description": MetaDescription,
+  "meta-title": MetaTitle,
+  "mobile-first-indexing": MobileFirstIndexing,
+  // N
+  "nap": Nap,
+  "natural-link": NaturalLink,
+  "negative-keyword": NegativeKeyword,
+  "nofollow": Nofollow,
+  "noindex": Noindex,
+  // O
+  "off-page-seo": OffPageSeo,
+  "on-page-seo": OnPageSeo,
+  "organic-traffic": OrganicTraffic,
+  "orphan-page": OrphanPage,
+  "outbound-link": OutboundLink,
+  // P
+  "pagerank": Pagerank,
+  "page-speed": PageSpeed,
+  "panda": Panda,
+  "penguin": Penguin,
+  "performance-max": PerformanceMax,
+  "permalink": Permalink,
+  "pozycjonowanie": Pozycjonowanie,
+  "ppc": Ppc,
 };
