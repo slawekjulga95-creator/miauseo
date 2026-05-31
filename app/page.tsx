@@ -10,11 +10,64 @@ import FinalCTASection from "@/components/home/FinalCTASection";
 
 export const metadata: Metadata = {
   title: "MiauSEO.pl - Agencja marketingowa | Pozycjonowanie | Kampanie leadowe",
+  alternates: {
+    canonical: "https://miauseo.pl",
+  },
+};
+
+const schemaOrg = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://miauseo.pl/#organization",
+      name: "MiauSEO",
+      url: "https://miauseo.pl",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://miauseo.pl/logo.png",
+        width: 224,
+        height: 64,
+      },
+      image: "https://miauseo.pl/logo.png",
+      description:
+        "MiauSEO to agencja performance marketingowa specjalizująca się w pozycjonowaniu lokalnym, Google Ads, Meta Ads i TikTok Ads. Zmieniamy kliknięcia w klientów.",
+      email: "kontakt@miauseo.pl",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "PL",
+      },
+      areaServed: "PL",
+      priceRange: "$$",
+      sameAs: [
+        "https://facebook.com",
+        "https://tiktok.com",
+        "https://youtube.com",
+        "https://linkedin.com",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://miauseo.pl/#website",
+      url: "https://miauseo.pl",
+      name: "MiauSEO",
+      publisher: { "@id": "https://miauseo.pl/#organization" },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: { "@type": "EntryPoint", urlTemplate: "https://miauseo.pl/slownik/{search_term_string}" },
+        "query-input": "required name=search_term_string",
+      },
+    },
+  ],
 };
 
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
+      />
       {/* Preload hero image with high priority — Next.js/Turbopack doesn't add fetchpriority to preload link */}
       <link
         rel="preload"

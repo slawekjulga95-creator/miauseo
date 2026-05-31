@@ -33,6 +33,22 @@ export const metadata: Metadata = {
       "Zmieniamy kliknięcia w klientów. Google, Meta i TikTok pracują na Twój wynik – nie na zasięgi.",
     type: "website",
     locale: "pl_PL",
+    url: "https://miauseo.pl",
+    siteName: "MiauSEO",
+    images: [
+      {
+        url: "https://miauseo.pl/logo.png",
+        width: 224,
+        height: 64,
+        alt: "MiauSEO – Agencja Marketingu Online",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "MiauSEO – Agencja Marketingu Online",
+    description: "Zmieniamy kliknięcia w klientów. Google, Meta i TikTok pracują na Twój wynik.",
+    images: ["https://miauseo.pl/logo.png"],
   },
 };
 
