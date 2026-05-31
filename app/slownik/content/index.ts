@@ -61,6 +61,43 @@ import PerformanceMax from "./performance-max";
 import Permalink from "./permalink";
 import Pozycjonowanie from "./pozycjonowanie";
 import Ppc from "./ppc";
+import QualityScore from "./quality-score";
+import Query from "./query";
+import QuickWin from "./quick-win";
+import Redirect301 from "./redirect-301";
+import Redirect302 from "./redirect-302";
+import Remarketing from "./remarketing";
+import RichSnippet from "./rich-snippet";
+import RobotsTxt from "./robots-txt";
+import Roas from "./roas";
+import Roi from "./roi";
+import SchemaMarkup from "./schema-markup";
+import SearchIntent from "./search-intent";
+import Sem from "./sem";
+import Seo from "./seo";
+import Serp from "./serp";
+import SitemapXml from "./sitemap-xml";
+import Sitelinks from "./sitelinks";
+import Slug from "./slug";
+import SocialSignals from "./social-signals";
+import SpamScore from "./spam-score";
+import StructuredData from "./structured-data";
+import TechnicalSeo from "./technical-seo";
+import ThinContent from "./thin-content";
+import TitleTag from "./title-tag";
+import TrustRank from "./trustrank";
+import UniqueContent from "./unique-content";
+import Url from "./url";
+import Ux from "./ux";
+import UserSignals from "./user-signals";
+import VisibilityScore from "./visibility-score";
+import VoiceSearch from "./voice-search";
+import WhiteHatSeo from "./white-hat-seo";
+import WidocznoscOrganiczna from "./widocznosc-organiczna";
+import WskaznikOdrzucen from "./wskaznik-odrzucen";
+import ZasiegOrganiczny from "./zasieg-organiczny";
+import ZaufanieDomeny from "./zaufanie-domeny";
+import ZnacznikStrukturalne from "./znaczniki-strukturalne";
 import DeepLinking from "./deep-linking";
 import Disavow from "./disavow";
 import DisplayAds from "./display-ads";
@@ -204,4 +241,49 @@ export const termContentMap: Record<string, () => React.JSX.Element> = {
   "permalink": Permalink,
   "pozycjonowanie": Pozycjonowanie,
   "ppc": Ppc,
+  // Q
+  "quality-score": QualityScore,
+  "query": Query,
+  "quick-win": QuickWin,
+  // R
+  "redirect-301": Redirect301,
+  "redirect-302": Redirect302,
+  "remarketing": Remarketing,
+  "rich-snippet": RichSnippet,
+  "robots-txt": RobotsTxt,
+  "roas": Roas,
+  "roi": Roi,
+  // S
+  "schema-markup": SchemaMarkup,
+  "search-intent": SearchIntent,
+  "sem": Sem,
+  "seo": Seo,
+  "serp": Serp,
+  "sitemap-xml": SitemapXml,
+  "sitelinks": Sitelinks,
+  "slug": Slug,
+  "social-signals": SocialSignals,
+  "spam-score": SpamScore,
+  "structured-data": StructuredData,
+  // T
+  "technical-seo": TechnicalSeo,
+  "thin-content": ThinContent,
+  "title-tag": TitleTag,
+  "trustrank": TrustRank,
+  // U
+  "unique-content": UniqueContent,
+  "url": Url,
+  "ux": Ux,
+  "user-signals": UserSignals,
+  // V
+  "visibility-score": VisibilityScore,
+  "voice-search": VoiceSearch,
+  // W
+  "white-hat-seo": WhiteHatSeo,
+  "widocznosc-organiczna": WidocznoscOrganiczna,
+  "wskaznik-odrzucen": WskaznikOdrzucen,
+  // Z
+  "zasieg-organiczny": ZasiegOrganiczny,
+  "zaufanie-domeny": ZaufanieDomeny,
+  "znaczniki-strukturalne": ZnacznikStrukturalne,
 };
