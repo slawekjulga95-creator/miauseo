@@ -65,6 +65,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-syne), sans-serif;
 }
 
+/* reCAPTCHA badge — zawsze na wierzchu */
+.grecaptcha-badge {
+  z-index: 9999 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
 /* Scroll-triggered reveal — progressive enhancement: visible without JS */
 .reveal {
   transition: opacity 0.65s ease-out, transform 0.65s ease-out;
