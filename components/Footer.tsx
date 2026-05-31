@@ -73,28 +73,8 @@ export default function Footer() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
 
-          {/* Karta osoby */}
+          {/* Karta firmy */}
           <div className="lg:col-span-1">
-            {/* Zdjęcie + imię + rola */}
-            <div className="flex items-center gap-4 mb-6">
-              <div className="relative shrink-0">
-                <div className="w-16 h-16 rounded-2xl overflow-hidden ring-2 ring-brand/40">
-                  <Image
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=128&h=128&fit=crop&crop=face"
-                    alt="Sławek Julga – Założyciel MiauSEO"
-                    width={64}
-                    height={64}
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-                <span className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-ink" />
-              </div>
-              <div>
-                <p className="font-bold text-white text-[15px] leading-tight">Sławek Julga</p>
-                <p className="text-white/50 text-xs mt-0.5">Założyciel MiauSEO</p>
-              </div>
-            </div>
-
             {/* Opis */}
             <p className="text-white/50 text-sm leading-relaxed mb-6">
               Pomagam małym firmom zdobywać klientów z Google — bez przepalania budżetu i bez umów na rok.
