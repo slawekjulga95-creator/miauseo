@@ -23,9 +23,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: `${post.title} – MiauSEO`,
       description: post.excerpt,
+      alternates: { canonical: `https://miauseo.pl/${post.slug}` },
       openGraph: post.coverImage
-        ? { images: [{ url: post.coverImage, width: 1200, height: 630 }] }
-        : undefined,
+        ? { images: [{ url: `https://miauseo.pl${post.coverImage}`, width: 1200, height: 630 }] }
+        : { images: [{ url: "https://miauseo.pl/logo.png", width: 224, height: 64 }] },
     };
   }
   const term = getTermBySlug(slug);
@@ -36,6 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ? `${term.term} – definicja i zastosowanie | Słownik SEO MiauSEO`
         : `${term.term} – definicja | Słownik SEO MiauSEO`,
       description: term.shortDesc,
+      alternates: { canonical: `https://miauseo.pl/${term.slug}` },
     };
   }
   return {};
@@ -143,6 +145,20 @@ export default async function BlogPostPage({ params }: Props) {
             </aside>
           </div>
         </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://miauseo.pl" },
+                { "@type": "ListItem", "position": 2, "name": "Słownik SEO/SEM", "item": "https://miauseo.pl/slownik" },
+                { "@type": "ListItem", "position": 3, "name": term.term, "item": `https://miauseo.pl/${term.slug}` },
+              ],
+            }),
+          }}
+        />
       </main>
     );
   }
@@ -186,6 +202,13 @@ export default async function BlogPostPage({ params }: Props) {
               <time dateTime={post.date} className="text-sm text-zinc-400">{formatDate(post.date)}</time>
               <span className="text-zinc-300">·</span>
               <span className="text-sm text-zinc-400">{post.readTime} min czytania</span>
+              <span className="text-zinc-300">·</span>
+              <span className="flex items-center gap-1.5 text-sm text-zinc-500">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                </svg>
+                Zespół MiauSEO
+              </span>
             </div>
 
             {/* H1 */}
@@ -262,6 +285,54 @@ export default async function BlogPostPage({ params }: Props) {
               </Link>
             </div>
           </article>
+
+          {/* Article + BreadcrumbList schema */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify([
+                {
+                  "@context": "https://schema.org",
+                  "@type": "Article",
+                  "headline": post.title,
+                  "description": post.excerpt,
+                  "image": post.coverImage ? `https://miauseo.pl${post.coverImage}` : "https://miauseo.pl/logo.png",
+                  "datePublished": post.date,
+                  "dateModified": post.date,
+                  "url": `https://miauseo.pl/${post.slug}`,
+                  "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": `https://miauseo.pl/${post.slug}`,
+                  },
+                  "author": {
+                    "@type": "Organization",
+                    "name": "MiauSEO",
+                    "url": "https://miauseo.pl",
+                  },
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "MiauSEO",
+                    "url": "https://miauseo.pl",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://miauseo.pl/logo.png",
+                      "width": 224,
+                      "height": 64,
+                    },
+                  },
+                },
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://miauseo.pl" },
+                    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://miauseo.pl/blog" },
+                    { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://miauseo.pl/${post.slug}` },
+                  ],
+                },
+              ]),
+            }}
+          />
 
           {/* Sidebar */}
           <aside className="lg:w-64 shrink-0">
