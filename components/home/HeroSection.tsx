@@ -197,8 +197,9 @@ export default function HeroSection() {
               animationDelay: "100ms",
             }}
           >
-            Każdy miał{" "}
-            {/* "agencję" — pill -2deg z łapką i cieniem */}
+            Czujność. Instynkt.{" "}
+            <br />
+            {/* "Analiza" — pill -2deg z łapką i cieniem */}
             <span
               style={{
                 display: "inline-flex",
@@ -214,11 +215,9 @@ export default function HeroSection() {
                 verticalAlign: "middle",
               }}
             >
-              agencję{" "}
-              <span style={{ fontSize: "0.72em", lineHeight: 1 }} aria-hidden="true">🐾</span>
+              Analiza{" "}
+              <span style={{ fontSize: "0.72em", lineHeight: 1, filter: "brightness(0) invert(1)" }} aria-hidden="true">🐾🐾🐾</span>
             </span>
-            <br />
-            <span style={{ color: "var(--color-brand)" }}>Nie każdy efekty.</span>
           </h1>
 
           {/* Lead — dwa poziomy hierarchii */}
