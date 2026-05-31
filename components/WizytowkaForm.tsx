@@ -5,13 +5,29 @@ import { useRouter } from "next/navigation";
 
 export default function WizytowkaForm() {
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const router = useRouter();
   const [form, setForm] = useState({ name: "", company: "", phone: "", message: "", consent: false });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSent(true);
-    router.push("/dziekujemy");
+    setLoading(true);
+    setError(false);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ source: "wizytowka", ...form }),
+      });
+      if (!res.ok) throw new Error();
+      setSent(true);
+      router.push("/dziekujemy");
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (sent) {
@@ -51,9 +67,12 @@ export default function WizytowkaForm() {
           <a href="/polityka-prywatnosci" className="underline hover:text-brand">Polityką prywatności</a>.
         </span>
       </label>
-      <button type="submit"
-        className="w-full bg-brand hover:bg-brand-dark text-white font-bold py-4 rounded-xl transition-colors duration-200 text-sm">
-        Umów bezpłatną konsultację
+      {error && (
+        <p className="text-red-500 text-sm text-center">Błąd wysyłki. Spróbuj ponownie.</p>
+      )}
+      <button type="submit" disabled={loading}
+        className="w-full bg-brand hover:bg-brand-dark disabled:opacity-60 text-white font-bold py-4 rounded-xl transition-colors duration-200 text-sm">
+        {loading ? "Wysyłanie..." : "Umów bezpłatną konsultację"}
       </button>
       <p className="text-center text-xs text-zinc-400">Odpowiadamy w ciągu 24h. Zero spamu.</p>
     </form>

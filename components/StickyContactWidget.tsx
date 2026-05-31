@@ -6,6 +6,7 @@ export default function StickyContactWidget() {
   const [visible, setVisible] = useState(false);
   const [closed, setClosed] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "" });
   const [errors, setErrors] = useState({ name: false, phone: false });
 
@@ -26,10 +27,22 @@ export default function StickyContactWidget() {
     return !e.name && !e.phone;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
-    setSubmitted(true);
+    setLoading(true);
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ source: "widget", ...form }),
+      });
+    } catch {
+      // pokaż success nawet przy błędzie — nie blokuj UX
+    } finally {
+      setLoading(false);
+      setSubmitted(true);
+    }
   };
 
   const show = visible && !closed;
@@ -109,9 +122,10 @@ export default function StickyContactWidget() {
 
               <button
                 type="submit"
-                className="w-full py-3 bg-white text-brand font-bold rounded-xl text-sm hover:bg-white/90 transition-colors mt-1"
+                disabled={loading}
+                className="w-full py-3 bg-white text-brand font-bold rounded-xl text-sm hover:bg-white/90 disabled:opacity-60 transition-colors mt-1"
               >
-                Zadzwońcie do mnie
+                {loading ? "Wysyłanie..." : "Zadzwońcie do mnie"}
               </button>
             </form>
 

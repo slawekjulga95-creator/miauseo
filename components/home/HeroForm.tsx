@@ -8,6 +8,8 @@ export default function HeroForm() {
   const [visible, setVisible] = useState(false);
   const [closed, setClosed] = useState(false);
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const router = useRouter();
   const [form, setForm] = useState({
     name: "",
@@ -25,10 +27,24 @@ export default function HeroForm() {
 
   if (closed) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSent(true);
-    router.push("/dziekujemy");
+    setLoading(true);
+    setError(false);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ source: "hero", ...form }),
+      });
+      if (!res.ok) throw new Error();
+      setSent(true);
+      router.push("/dziekujemy");
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -130,11 +146,15 @@ export default function HeroForm() {
                 </span>
               </label>
 
+              {error && (
+                <p className="text-red-500 text-xs text-center">Błąd wysyłki. Zadzwoń: +48 503 575 067</p>
+              )}
               <button
                 type="submit"
-                className="w-full bg-brand hover:bg-brand-dark text-white font-bold py-3 rounded-xl transition-colors duration-200 text-sm"
+                disabled={loading}
+                className="w-full bg-brand hover:bg-brand-dark disabled:opacity-60 text-white font-bold py-3 rounded-xl transition-colors duration-200 text-sm"
               >
-                Wyślij zapytanie
+                {loading ? "Wysyłanie..." : "Wyślij zapytanie"}
               </button>
             </form>
           )}

@@ -23,6 +23,8 @@ const services = [
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const router = useRouter();
   const [form, setForm] = useState<Field>({
     name: "", company: "", email: "", phone: "", service: "", message: "", consent: false,
@@ -57,8 +59,28 @@ export default function ContactForm() {
   const input =
     "w-full px-4 py-3 rounded-xl border border-border bg-white text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition";
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(false);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ source: "kontakt", ...form }),
+      });
+      if (!res.ok) throw new Error();
+      setSent(true);
+      router.push("/dziekujemy");
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <form onSubmit={(e) => { e.preventDefault(); setSent(true); router.push("/dziekujemy"); }} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs font-semibold text-zinc-500 mb-1.5">Imię i nazwisko *</label>
@@ -111,14 +133,22 @@ export default function ContactForm() {
         </span>
       </label>
 
+      {error && (
+        <p className="text-red-500 text-sm text-center">Coś poszło nie tak. Spróbuj ponownie lub napisz bezpośrednio na slawomir@miauseo.pl</p>
+      )}
       <button
         type="submit"
-        className="w-full bg-brand hover:bg-brand-dark text-white font-bold py-4 rounded-xl transition-colors duration-200 text-sm flex items-center justify-center gap-2"
+        disabled={loading}
+        className="w-full bg-brand hover:bg-brand-dark disabled:opacity-60 text-white font-bold py-4 rounded-xl transition-colors duration-200 text-sm flex items-center justify-center gap-2"
       >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-          <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
-        </svg>
-        Wyślij wiadomość
+        {loading ? (
+          <svg className="animate-spin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10" strokeOpacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10" /></svg>
+        ) : (
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
+          </svg>
+        )}
+        {loading ? "Wysyłanie..." : "Wyślij wiadomość"}
       </button>
       <p className="text-center text-xs text-zinc-400">Odpowiadam zazwyczaj w ciągu kilku godzin roboczych. Zero spamu.</p>
     </form>
