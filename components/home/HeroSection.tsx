@@ -226,13 +226,8 @@ export default function HeroSection() {
             className="animate-fade-up"
             style={{ marginBottom: "2.25rem", animationDelay: "200ms" }}
           >
-            <p style={{ fontSize: "1rem", fontWeight: 600, color: "#111111", lineHeight: 1.5, marginBottom: "0.5rem" }}>
-              Zaufanie kota zdobywa się latami.&nbsp;Traci w&nbsp;sekundę.
-            </p>
             <p style={{ fontSize: "0.9375rem", color: "#71717a", lineHeight: 1.7, maxWidth: "42ch" }}>
-              Tak samo z klientami. Nie obiecujemy — pokazujemy.
-              Konkretne działania, realne wyniki,{" "}
-              <strong style={{ color: "#111111", fontWeight: 600 }}>zero ściemy.</strong>
+              Łączymy zwinność, spryt i sprawdzone strategie SEO, żeby Twój biznes był widoczny tam, gdzie szukają go klienci.
             </p>
           </div>
 
