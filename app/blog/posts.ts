@@ -383,6 +383,17 @@ export const posts: Post[] = [
   },
 
   {
+    slug: "jak-nadac-prawa-menedzerskie-wizytowka-google",
+    title: "Jak nadać prawa menedżerskie do wizytówki Google – krok po kroku",
+    excerpt: "Chcesz dać agencji lub pracownikowi dostęp do wizytówki Google bez oddawania kontroli nad kontem? Prawa menedżerskie w GBP to właściwe rozwiązanie. Pokazujemy jak je nadać, jakie są różnice między właścicielem a menedżerem i jak bezpiecznie zarządzać dostępami.",
+    category: "Poradnik",
+    date: "2026-06-02",
+    readTime: 8,
+    coverColor: "#0284c7",
+    coverImage: "/blog/cover-menedzer.svg",
+    published: true,
+  },
+  {
     slug: "pozycjonowanie-hoteli-w-mapach-google",
     title: "Pozycjonowanie hoteli w Mapach Google – przewodnik 2026",
     excerpt: "Jak sprawić, żeby hotel, pensjonat lub obiekt noclegowy pojawiał się w top 3 Google Maps? Omawiam 3 czynniki rankingowe, optymalizację profilu GBP dla HoReCa, zarządzanie opiniami i najczęstsze błędy, które kosztują rezerwacje.",

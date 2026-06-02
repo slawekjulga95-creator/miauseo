@@ -6268,6 +6268,274 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   ),
 
   /* ─────────────────────────────────────────────────────────────────────────
+     PORADNIK: Prawa menedżerskie do wizytówki Google
+  ───────────────────────────────────────────────────────────────────────── */
+  "jak-nadac-prawa-menedzerskie-wizytowka-google": (
+    <>
+      <h2>Czym są prawa menedżerskie w Google Business Profile?</h2>
+      <p>
+        Prawa menedżerskie w Google Business Profile to uprawnienia nadawane innym użytkownikom, które pozwalają im zarządzać wizytówką firmy bez przejmowania jej własności. Menedżer może edytować dane, dodawać zdjęcia, odpowiadać na opinie i publikować posty — ale nie może usunąć profilu ani zmienić właściciela. To bezpieczny sposób na przekazanie obsługi GBP agencji lub pracownikowi.
+      </p>
+      <p>
+        W praktyce prawa menedżerskie rozwiązują jeden z najczęstszych problemów właścicieli firm: chcą zlecić prowadzenie wizytówki na zewnątrz, ale boją się utraty kontroli nad profilem. Dzięki podziałowi ról w GBP właściciel zawsze zachowuje najwyższy poziom uprawnień — nikt nie może go usunąć bez jego zgody.
+      </p>
+
+      <h2>Właściciel a menedżer — kluczowe różnice w uprawnieniach</h2>
+      <p>
+        Google Business Profile rozróżnia dwie główne role: właściciela (Owner) i menedżera (Manager). Właściciel ma pełną kontrolę nad profilem — może go usunąć, przekazać własność, dodawać i usuwać użytkowników. Menedżer ma dostęp do wszystkich funkcji operacyjnych, ale nie może modyfikować uprawnień ani trwale usunąć profilu. Istnieje też rola Właściciela współdzielonego, pośrednia między nimi.
+      </p>
+
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr className="bg-[#1a2340] text-white">
+              <th className="text-left p-3 border border-border">Czynność</th>
+              <th className="text-left p-3 border border-border">Właściciel</th>
+              <th className="text-left p-3 border border-border">Właściciel współdzielony</th>
+              <th className="text-left p-3 border border-border">Menedżer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-3 border border-border">Edycja danych firmy</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Odpowiadanie na opinie</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border">Dodawanie zdjęć i postów</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Dodawanie/usuwanie użytkowników</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+              <td className="p-3 border border-border text-red-500 font-semibold">✗ Nie</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border">Usunięcie profilu</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+              <td className="p-3 border border-border text-red-500 font-semibold">✗ Nie</td>
+              <td className="p-3 border border-border text-red-500 font-semibold">✗ Nie</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Przekazanie własności</td>
+              <td className="p-3 border border-border text-green-600 font-semibold">✓ Tak</td>
+              <td className="p-3 border border-border text-red-500 font-semibold">✗ Nie</td>
+              <td className="p-3 border border-border text-red-500 font-semibold">✗ Nie</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Zlecając obsługę GBP agencji SEO lub pracownikowi, zawsze nadaj im rolę <strong>Menedżera</strong> — nigdy Właściciela. Właściciel ma zbyt szerokie uprawnienia i w skrajnych przypadkach może przejąć kontrolę nad profilem, co jest trudne do odwrócenia. Szczegóły o tym, jak zarządzać kontem, gdy straciłeś dostęp, opisuje artykuł{" "}
+        <Link href="/jak-odzyskac-dostep-do-wizytowki-google">jak odzyskać dostęp do wizytówki Google</Link>.
+      </p>
+
+      <h2>Jak nadać prawa menedżerskie do wizytówki Google — krok po kroku</h2>
+      <p>
+        Nadanie praw menedżerskich zajmuje mniej niż 2 minuty i wymaga wyłącznie dostępu do przeglądarki. Cały proces odbywa się w panelu Google Business Profile lub bezpośrednio przez wyszukiwarkę Google. Osoba, której nadajesz uprawnienia, musi posiadać aktywne konto Google.
+      </p>
+
+      <h3>Metoda 1 — przez wyszukiwarkę Google (najszybsza)</h3>
+      <ol>
+        <li>Zaloguj się na konto Google powiązane z wizytówką.</li>
+        <li>Wpisz w Google nazwę swojej firmy lub wejdź na <strong>google.com/business</strong>.</li>
+        <li>Kliknij kafelek wizytówki, a następnie „Edytuj profil".</li>
+        <li>W lewym menu wybierz <strong>„Użytkownicy"</strong> (ikona osoby).</li>
+        <li>Kliknij niebieski przycisk <strong>„Dodaj użytkownika"</strong> w prawym górnym rogu.</li>
+        <li>Wpisz adres e-mail konta Google osoby, której nadajesz dostęp.</li>
+        <li>Wybierz rolę: <strong>Menedżer</strong> lub Właściciel współdzielony.</li>
+        <li>Kliknij <strong>„Zaproś"</strong>. Zaproszenie trafi na wskazany adres e-mail.</li>
+      </ol>
+
+      <h3>Metoda 2 — przez panel business.google.com</h3>
+      <ol>
+        <li>Wejdź na <strong>business.google.com</strong> i zaloguj się.</li>
+        <li>Wybierz profil, do którego chcesz dodać użytkownika.</li>
+        <li>Kliknij ikonę trzech kropek (menu) → <strong>„Ustawienia biznesowe"</strong>.</li>
+        <li>Przejdź do sekcji <strong>„Menedżerowie"</strong>.</li>
+        <li>Kliknij <strong>„Zaproś menedżerów"</strong>, wpisz adres e-mail i wybierz rolę.</li>
+        <li>Zatwierdź zaproszenie przyciskiem <strong>„Zaproś"</strong>.</li>
+      </ol>
+      <p>
+        Zaproszenie jest ważne przez <strong>30 dni</strong>. Jeśli zaproszony użytkownik go nie przyjmie w tym czasie, konieczne będzie wysłanie nowego. Osoba po przyjęciu zaproszenia pojawi się na liście użytkowników profilu.
+      </p>
+
+      <h2>Jak wygląda zaproszenie od strony menedżera?</h2>
+      <p>
+        Osoba, której wysłałeś zaproszenie, otrzyma wiadomość e-mail od Google z tytułem „[Nazwa Twojej firmy] zaprasza Cię do zarządzania swoją wizytówką". W mailu znajdzie przycisk „Zaakceptuj zaproszenie", który przekieruje ją do konta Google. Po zalogowaniu (lub założeniu konta, jeśli go nie ma) zaproszenie zostaje aktywowane automatycznie.
+      </p>
+      <p>
+        Od momentu przyjęcia zaproszenia menedżer widzi profil firmy w swoim panelu business.google.com. Może zalogować się na własne konto Google i zarządzać wizytówką — bez dostępu do Twojego prywatnego konta czy innych profili, które posiadasz.
+      </p>
+
+      <h2>Kiedy warto nadać prawa menedżerskie?</h2>
+      <p>
+        Prawa menedżerskie warto nadać w każdej sytuacji, gdy zarządzanie wizytówką ma wykonywać ktoś inny niż właściciel firmy. Delegowanie dostępu do GBP to dobra praktyka przy skalowaniu działań marketingowych i zabezpieczeniu ciągłości obsługi profilu w razie nieobecności.
+      </p>
+      <ul>
+        <li><strong>Agencja SEO lub marketingowa</strong> — aby mogła optymalizować profil, publikować posty, dodawać zdjęcia i odpowiadać na opinie bez angażowania właściciela.</li>
+        <li><strong>Pracownik ds. marketingu</strong> — gdy firma ma dział marketingu wewnętrznego odpowiedzialnego za obecność w Google.</li>
+        <li><strong>Wiele lokalizacji</strong> — gdy każda lokalizacja ma lokalnego menedżera odpowiedzialnego za swoją wizytówkę. Jak zarządzać wieloma profilami jednocześnie, opisuje artykuł{" "}
+          <Link href="/wiele-lokalizacji-google-business-profile">wiele lokalizacji w Google Business Profile</Link>.
+        </li>
+        <li><strong>Wsparcie techniczne podczas weryfikacji</strong> — jeśli ktoś pomaga Ci przejść przez proces weryfikacji. Więcej o weryfikacji przeczytasz w artykule{" "}
+          <Link href="/weryfikacja-wizytowki-google">weryfikacja wizytówki Google</Link>.
+        </li>
+      </ul>
+
+      <h2>Jak bezpiecznie zarządzać dostępami do wizytówki</h2>
+      <p>
+        Bezpieczne zarządzanie dostępami do GBP opiera się na zasadzie minimalnych uprawnień — każda osoba powinna mieć tylko tyle dostępu, ile potrzebuje do wykonania swojej pracy. Właściciel powinien co kwartał przeglądać listę użytkowników i usuwać osoby, które już nie zarządzają profilem.
+      </p>
+      <ul>
+        <li><strong>Nigdy nie przekazuj roli Właściciela agencji</strong> — zawsze nadawaj rolę Menedżera. Właściciel może usunąć Cię z własnego profilu.</li>
+        <li><strong>Używaj adresów e-mail firmowych</strong> — nie prywatnych. Jeśli pracownik odejdzie, jego prywatne konto Google nadal będzie miało dostęp do wizytówki.</li>
+        <li><strong>Regularnie audytuj listę użytkowników</strong> — były pracownik lub była agencja z dostępem Menedżera może edytować dane firmy.</li>
+        <li><strong>Zachowaj co najmniej 2 właścicieli</strong> — jeśli jedyny właściciel straci dostęp do konta Google, odzyskanie profilu może trwać tygodnie.</li>
+        <li><strong>Nie loguj się na konto właściciela przez panel agencji</strong> — udostępniaj tylko dostęp przez zaproszenie, nigdy login i hasło.</li>
+      </ul>
+
+      <h2>Jak usunąć menedżera z wizytówki Google</h2>
+      <p>
+        Usunięcie menedżera z wizytówki Google zajmuje kilkanaście sekund i może wykonać wyłącznie właściciel lub właściciel współdzielony. Dostęp jest odbierany natychmiastowo — menedżer traci możliwość edycji profilu w chwili usunięcia, bez możliwości odwołania ani powiadomienia.
+      </p>
+      <ol>
+        <li>Zaloguj się na konto właściciela wizytówki.</li>
+        <li>Wejdź w panel zarządzania profilem → <strong>„Użytkownicy"</strong>.</li>
+        <li>Znajdź osobę, którą chcesz usunąć, i kliknij ikonę trzech kropek obok jej nazwy.</li>
+        <li>Wybierz <strong>„Usuń"</strong> i potwierdź decyzję.</li>
+      </ol>
+      <p>
+        Jeśli usuwasz dostęp agencji, upewnij się najpierw, że masz własny dostęp do profilu jako właściciel — zdarzają się sytuacje, gdy agencja była jedynym użytkownikiem z dostępem do panelu. W takiej sytuacji pomocny będzie poradnik{" "}
+        <Link href="/jak-odzyskac-dostep-do-wizytowki-google">jak odzyskać dostęp do wizytówki Google</Link>.
+      </p>
+
+      <h2>Najczęstsze problemy przy nadawaniu uprawnień</h2>
+      <p>
+        Większość błędów przy nadawaniu uprawnień do GBP wynika z pomyłek w adresie e-mail lub braku konta Google po stronie zaproszonej osoby. Poniżej najczęstsze problemy i sposoby ich rozwiązania.
+      </p>
+      <ul>
+        <li>
+          <strong>„Nie mogę znaleźć użytkownika"</strong> — podany adres e-mail nie jest powiązany z żadnym kontem Google. Poproś osobę o założenie konta Google lub podaj inny adres.
+        </li>
+        <li>
+          <strong>Zaproszenie wygasło</strong> — zaproszenia ważne są 30 dni. Wyślij nowe zaproszenie. Starsze zaproszenia nie są anulowane automatycznie — warto ręcznie usunąć wygasłe z listy oczekujących.
+        </li>
+        <li>
+          <strong>Menedżer nie widzi profilu w panelu</strong> — zazwyczaj wynika z zalogowania na inne konto Google. Sprawdź, czy menedżer jest zalogowany na adres e-mail, na który wysłałeś zaproszenie.
+        </li>
+        <li>
+          <strong>Brak opcji „Użytkownicy" w panelu</strong> — widzisz tę opcję tylko jako właściciel lub właściciel współdzielony. Menedżerowie nie mają dostępu do zarządzania użytkownikami.
+        </li>
+        <li>
+          <strong>Wizytówka nie jest zweryfikowana</strong> — niezweryfikowane profile mają ograniczone funkcje, w tym brak możliwości zarządzania użytkownikami. Najpierw przeprowadź weryfikację — opisuje ją artykuł{" "}
+          <Link href="/weryfikacja-wizytowki-google">weryfikacja wizytówki Google krok po kroku</Link>.
+        </li>
+      </ul>
+
+      <h2>FAQ — często zadawane pytania</h2>
+
+      <h3>Ile osób może zarządzać jedną wizytówką Google?</h3>
+      <p>
+        Google Business Profile pozwala dodać do 100 użytkowników w różnych rolach. W praktyce profil firmy powinien mieć maksymalnie 2–3 właścicieli (jako zabezpieczenie) i tyle menedżerów, ile realnie potrzeba. Zbyt duża liczba użytkowników zwiększa ryzyko niezamierzonych zmian w profilu.
+      </p>
+
+      <h3>Czy menedżer może sam sobie nadać wyższe uprawnienia?</h3>
+      <p>
+        Nie. Menedżer nie może zmieniać uprawnień — ani swoich, ani innych użytkowników. Tylko właściciel i właściciel współdzielony mogą zarządzać rolami. Menedżer nie może też usunąć profilu ani przekazać własności.
+      </p>
+
+      <h3>Co się stanie z wizytówką, jeśli jedyny właściciel usunie konto Google?</h3>
+      <p>
+        Wizytówka pozostanie aktywna, ale nikt nie będzie miał do niej dostępu jako właściciel. Odzyskanie dostępu w takiej sytuacji wymaga przejścia przez proces weryfikacji tożsamości Google, który może trwać od kilku dni do kilku tygodni. Dlatego warto zawsze mieć co najmniej dwóch właścicieli z różnymi kontami Gmail.
+      </p>
+
+      <h3>Czy agencja SEO potrzebuje hasła do mojego konta Google?</h3>
+      <p>
+        Nie — i nie powinna go otrzymywać. Właściwy sposób to zaproszenie agencji jako menedżera przez panel GBP. Agencja zarządza wizytówką ze swojego konta Google, a Ty zachowujesz pełną kontrolę jako właściciel. Przekazywanie hasła do konta Google jest poważnym błędem bezpieczeństwa.
+      </p>
+
+      <h3>Czy menedżer widzi dane osobiste właściciela?</h3>
+      <p>
+        Menedżer widzi tylko dane biznesowe profilu: nazwę firmy, adres, godziny, opinie, statystyki wizytówki. Nie ma dostępu do prywatnych danych konta Google właściciela, jego innych usług Google (Gmail, Dysk, Zdjęcia) ani historii rozliczeń.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/jak-odzyskac-dostep-do-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak odzyskać dostęp do wizytówki Google? Krok po kroku</Link></li>
+          <li><Link href="/weryfikacja-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Weryfikacja wizytówki Google – wszystkie metody krok po kroku</Link></li>
+          <li><Link href="/wiele-lokalizacji-google-business-profile" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Wiele lokalizacji w Google Business Profile – jak zarządzać?</Link></li>
+          <li><Link href="/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
+          <li><Link href="/pozycjonowanie-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Pozycjonowanie wizytówki Google – kompletny przewodnik 2026</Link></li>
+        </ul>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Ile osób może zarządzać jedną wizytówką Google?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Google Business Profile pozwala dodać do 100 użytkowników w różnych rolach. W praktyce profil firmy powinien mieć 2–3 właścicieli i tyle menedżerów, ile realnie potrzeba.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Czy menedżer może sam sobie nadać wyższe uprawnienia w wizytówce Google?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nie. Menedżer nie może zmieniać uprawnień ani swoich, ani innych użytkowników. Tylko właściciel i właściciel współdzielony mogą zarządzać rolami.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Czy agencja SEO potrzebuje hasła do konta Google żeby zarządzać wizytówką?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nie — i nie powinna go otrzymywać. Właściwy sposób to zaproszenie agencji jako menedżera przez panel GBP. Przekazywanie hasła do konta Google jest poważnym błędem bezpieczeństwa.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Co się stanie z wizytówką, jeśli jedyny właściciel usunie konto Google?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Wizytówka pozostanie aktywna, ale nikt nie będzie miał do niej dostępu jako właściciel. Odzyskanie dostępu wymaga weryfikacji tożsamości przez Google i może trwać tygodnie. Warto zawsze mieć co najmniej dwóch właścicieli.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Czy menedżer wizytówki Google widzi dane osobiste właściciela?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nie. Menedżer widzi tylko dane biznesowe profilu. Nie ma dostępu do prywatnych danych konta Google właściciela, jego innych usług Google ani historii rozliczeń.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      HOTEL: Pozycjonowanie w Mapach Google
   ───────────────────────────────────────────────────────────────────────── */
   "pozycjonowanie-hoteli-w-mapach-google": (
