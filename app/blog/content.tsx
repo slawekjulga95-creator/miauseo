@@ -6268,6 +6268,211 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   ),
 
   /* ─────────────────────────────────────────────────────────────────────────
+     PORADNIK: Reklamy konkurencji na Facebooku
+  ───────────────────────────────────────────────────────────────────────── */
+  "jak-sprawdzic-reklamy-konkurencji-na-facebooku": (
+    <>
+      <h2>Czym jest Meta Ad Library i dlaczego możesz z niej korzystać legalnie?</h2>
+      <p>
+        Meta Ad Library (Biblioteka reklam Meta) to bezpłatne, publicznie dostępne narzędzie udostępnione przez Meta, które pokazuje wszystkie aktywne reklamy emitowane na Facebooku, Instagramie, Messengerze i w sieci Audience Network. Każdy może je przeszukiwać bez logowania. Meta wprowadziła bibliotekę w 2018 roku jako element polityki transparentności reklam politycznych, ale objęła nią wszystkie kategorie reklam.
+      </p>
+      <p>
+        To oznacza, że masz legalny, bezpłatny dostęp do pełnej bazy aktywnych reklam dowolnej firmy — od lokalnego sklepu po ogólnopolską sieć. Nie ma tu żadnej szarej strefy. Meta sama udostępnia te dane publicznie i zachęca do korzystania z biblioteki.
+      </p>
+
+      <h2>Jak wejść do Meta Ad Library — krok po kroku</h2>
+      <p>
+        Meta Ad Library jest dostępna pod adresem <strong>facebook.com/ads/library</strong> — bez logowania, bez zakładania konta. Wystarczy wejść na stronę, wybrać kraj i wpisać nazwę firmy lub słowo kluczowe. Interfejs jest prosty, ale ma kilka filtrów, o których większość użytkowników nie wie.
+      </p>
+      <ol>
+        <li>Wejdź na <strong>facebook.com/ads/library</strong>.</li>
+        <li>W polu <strong>„Kraj"</strong> wybierz <strong>Polska</strong> lub „Wszystkie kraje", jeśli szukasz reklam globalnych.</li>
+        <li>W polu <strong>„Kategoria reklam"</strong> wybierz <strong>„Wszystkie reklamy"</strong> — nie ograniczaj do kategorii politycznych.</li>
+        <li>Wpisz <strong>nazwę strony Facebook</strong> konkurenta lub słowo kluczowe opisujące branżę.</li>
+        <li>Kliknij wybraną stronę z wyników — zobaczyłeś pełną listę aktywnych reklam.</li>
+      </ol>
+      <p>
+        Jeśli nie znasz nazwy fanpage'a konkurenta, wejdź najpierw na ich profil Facebook i skopiuj dokładną nazwę strony. Możesz też wyszukiwać po słowach kluczowych, żeby zobaczyć, co reklamują firmy z danej branży.
+      </p>
+
+      <h2>Co dokładnie widać w bibliotece reklam?</h2>
+      <p>
+        Meta Ad Library pokazuje każdą aktywną reklamę wraz z kluczowymi danymi: treść kreacji (zdjęcie, wideo lub karuzela), tekst reklamy, nagłówek, przycisk CTA, data uruchomienia oraz platformy emisji. Dla reklam z kategorii „Zagadnienia społeczne, wybory lub polityka" widoczne są też szacunkowe wydatki i zasięg — dla zwykłych reklam komercyjnych Meta nie ujawnia budżetów.
+      </p>
+      <ul>
+        <li><strong>Kreacja wizualna</strong> — zdjęcie, wideo, karuzela. Widzisz dokładnie, jakie formaty testuje konkurent.</li>
+        <li><strong>Tekst reklamy i nagłówek</strong> — pełna treść copy, łącznie z wariantami A/B (jeśli są aktywne).</li>
+        <li><strong>Przycisk CTA</strong> — „Kup teraz", „Dowiedz się więcej", „Skontaktuj się" — mówi wiele o etapie lejka, na który kieruje reklama.</li>
+        <li><strong>Data uruchomienia</strong> — kiedy reklama zaczęła się wyświetlać. Reklamy aktywne od wielu tygodni lub miesięcy to zazwyczaj te, które dobrze działają.</li>
+        <li><strong>Platformy emisji</strong> — Facebook, Instagram, Messenger, Audience Network.</li>
+        <li><strong>Liczba aktywnych reklam</strong> — widoczna na poziomie strony. Duża liczba wariantów świadczy o aktywnym testowaniu.</li>
+      </ul>
+
+      <h2>Jak analizować reklamy konkurencji — co szukać</h2>
+      <p>
+        Sam widok reklam to dopiero punkt wyjścia. Wartość płynie z umiejętnej interpretacji tego, co widzisz. Analiza reklam konkurencji pozwala odpowiedzieć na trzy pytania: co im działa, do kogo kierują przekaz i jakie mają luki, które możesz wykorzystać.
+      </p>
+
+      <h3>Które reklamy są skuteczne?</h3>
+      <p>
+        Meta nie pokazuje wyników reklam (CTR, konwersje), ale jest jeden proxy, który działa niezawodnie: <strong>czas emisji</strong>. Reklama aktywna od 3, 6 lub 12 miesięcy bez przerwy prawie na pewno przynosi wyniki — nikt nie płaci za reklamę przez rok, jeśli nie działa. Filtruj wyniki „od najstarszych" i szukaj kreacji, które przetrwały próbę czasu.
+      </p>
+      <p>
+        Drugi sygnał to <strong>liczba wariantów tej samej kreacji</strong>. Jeśli konkurent ma 5 wersji reklamy z różnymi nagłówkami i tymi samymi obrazami, testuje copy. To wskazówka, że warto skupić się na nagłówkach jako elemencie decydującym o efektywności.
+      </p>
+
+      <h3>Do kogo kierują przekaz?</h3>
+      <p>
+        Treść reklamy mówi wiele o targetowaniu, nawet jeśli nie widzisz ustawień grupy docelowej. Reklama pisana językiem technicznym i odwołująca się do konkretnych problemów branżowych sugeruje targetowanie B2B. Reklama emocjonalna z obrazami rodziny i hasłami o bezpieczeństwie — targetowanie konsumentów. Zwróć uwagę na:
+      </p>
+      <ul>
+        <li>Czy reklama mówi „Ty" (B2C) czy „Wasza firma / Twój biznes" (B2B)?</li>
+        <li>Jakie problemy adresuje — finansowe, emocjonalne, wizerunkowe?</li>
+        <li>Jaki jest punkt wejścia do lejka — ruch na stronę, lead magnet, zakup bezpośredni?</li>
+        <li>Jakich słów i fraz używa — czy pokrywają się z tym, czego szukają Twoi klienci?</li>
+      </ul>
+
+      <h3>Jakie mają luki?</h3>
+      <p>
+        Analiza konkurencji to nie tylko kopiowanie tego, co działa — to też szukanie tego, czego nie robią. Czy żaden z konkurentów nie pokazuje twarzy właściciela? Czy nikt nie używa wideo? Czy wszystkie reklamy mówią o cenie, a nikt o procesie lub gwarancji? Luki w komunikacji konkurencji to Twoja przestrzeń do wyróżnienia się.
+      </p>
+
+      <h2>Filtry w Meta Ad Library, o których nie wiesz</h2>
+      <p>
+        Biblioteka reklam Meta ma kilka mniej oczywistych filtrów, które znacząco zwiększają użyteczność analizy. Większość użytkowników przegląda tylko aktywne reklamy konkretnej firmy — a można zrobić znacznie więcej.
+      </p>
+      <ul>
+        <li><strong>Filtr „Data emisji"</strong> — pozwala zawęzić wyniki do reklam uruchomionych w konkretnym przedziale czasowym. Pomocne przy analizie sezonowych kampanii konkurencji.</li>
+        <li><strong>Filtr „Platforma"</strong> — pokaż tylko reklamy z Instagrama albo tylko z Facebooka. Przydatne, jeśli chcesz wiedzieć, gdzie konkurent mocniej inwestuje.</li>
+        <li><strong>Filtr „Typ mediów"</strong> — obrazy, wideo, karuzele. Sprawdź, który format dominuje w strategii konkurenta.</li>
+        <li><strong>Wyszukiwanie po słowach kluczowych</strong> — zamiast szukać konkretnej firmy, wpisz słowo kluczowe (np. „klimatyzacja Warszawa") i zobaczysz reklamy wszystkich firm używających tego zwrotu. Świetne do analizy komunikatów w całej branży.</li>
+        <li><strong>API biblioteki reklam</strong> — dla zaawansowanych użytkowników Meta udostępnia API do pobierania danych masowo. Wymaga zweryfikowanego konta dewelopera Meta.</li>
+      </ul>
+
+      <h2>Inne narzędzia do analizy reklam na Facebooku</h2>
+      <p>
+        Meta Ad Library to punkt startowy, ale nie jedyne narzędzie. Poniższe rozszerzają możliwości analizy, szczególnie gdy potrzebujesz danych historycznych lub głębszej analizy wydatków.
+      </p>
+
+      <h3>Bezpłatne narzędzia</h3>
+      <ul>
+        <li><strong>Facebook Ad Library (Meta Ad Library)</strong> — opisana powyżej. Bezpłatna, bez logowania, wyłącznie aktywne reklamy.</li>
+        <li><strong>Moduł „Dlaczego widzę tę reklamę"</strong> — kliknij trzy kropki przy reklamie w swoim feedzie i wybierz tę opcję. Zobaczysz dane targetowania tej konkretnej reklamy, w tym jakie zainteresowania lub listy odbiorców Cię zakwalifikowały.</li>
+        <li><strong>Rozszerzenie BigSpy (plan bezpłatny)</strong> — ograniczona liczba podglądów reklam dziennie, ale pozwala zobaczyć szacunkowy zasięg i zaangażowanie.</li>
+      </ul>
+
+      <h3>Płatne narzędzia</h3>
+      <ul>
+        <li><strong>Semrush Advertising Research</strong> — rozbudowana analiza konkurencji w płatnych kanałach, w tym Facebook Ads. Pokazuje historię reklam i szacunkowe budżety.</li>
+        <li><strong>AdSpy</strong> — specjalistyczne narzędzie do śledzenia reklam na Facebooku z bazą ponad 150 mln kreacji. Możliwość filtrowania po branży, kraju, typie reklamy.</li>
+        <li><strong>Minea</strong> — popularne wśród e-commerce. Śledzi produkty promowane w reklamach i szacuje ich sprzedaż.</li>
+      </ul>
+
+      <h2>Jak wykorzystać wiedzę o reklamach konkurencji w praktyce</h2>
+      <p>
+        Sama obserwacja reklam nic nie da, jeśli nie przełożysz jej na konkretne działania. Analiza biblioteki reklam Meta powinna kończyć się listą wniosków, nie zrzutami ekranu. Oto co warto zrobić z zebranymi danymi.
+      </p>
+      <ul>
+        <li><strong>Zidentyfikuj najskuteczniejsze formaty</strong> — jeśli wszyscy konkurenci używają wideo, a Ty nie, to albo wiesz coś, czego oni nie wiedzą, albo zostajesz w tyle.</li>
+        <li><strong>Przeanalizuj copy i nagłówki</strong> — jakie hasła się powtarzają? To prawdopodobnie te, które rezonują z Twoją wspólną grupą docelową. Możesz je przetestować z własnym twistem.</li>
+        <li><strong>Sprawdź landing page'e</strong> — kliknij CTA w reklamie konkurenta i przeanalizuj stronę, na którą trafia ruch. Jak wygląda oferta, jakie są elementy konwersji?</li>
+        <li><strong>Zaplanuj testy A/B</strong> — inspirując się tym, co działa u innych, stwórz własne warianty. Nie kopiuj — przetestuj ten sam koncept we własnej interpretacji.</li>
+        <li><strong>Uzupełnij luki komunikacyjne</strong> — jeśli nikt w branży nie mówi o gwarancji zwrotu, czasie reakcji lub konkretnym problemie klienta, to Twoja szansa na wyróżnienie się.</li>
+      </ul>
+
+      <h2>FAQ — często zadawane pytania</h2>
+
+      <h3>Czy sprawdzanie reklam konkurencji w Meta Ad Library jest legalne?</h3>
+      <p>
+        Tak — w 100%. Meta Ad Library jest publicznie dostępnym narzędziem stworzonym przez Meta i udostępnionym celowo. Przegląda je bez ograniczeń każdy użytkownik internetu, bez logowania i bez żadnych warunków użytkowania ograniczających analizę konkurencji.
+      </p>
+
+      <h3>Czy widać reklamy, które już nie są aktywne?</h3>
+      <p>
+        Dla większości kategorii reklam komercyjnych biblioteka pokazuje wyłącznie aktywnie emitowane kampanie. Dla reklam z kategorii politycznej i społecznej Meta przechowuje historię przez 7 lat. Narzędzia płatne takie jak AdSpy archiwizują reklamy komercyjne i pozwalają przeglądać historię.
+      </p>
+
+      <h3>Czy mogę zobaczyć, ile konkurent wydaje na reklamy?</h3>
+      <p>
+        Dla zwykłych reklam komercyjnych Meta nie ujawnia budżetów. Pośrednio możesz ocenić skalę inwestycji po liczbie aktywnych reklam i czasie ich emisji — im więcej wariantów i im dłuższy czas aktywności, tym zazwyczaj wyższe wydatki. Szacunkowe budżety pokazują niektóre płatne narzędzia, ale są to przybliżenia.
+      </p>
+
+      <h3>Jak często powinienem monitorować reklamy konkurencji?</h3>
+      <p>
+        Dla aktywnie prowadzących kampanie — raz w miesiącu jako rutynowy przegląd, plus każdorazowo przed uruchomieniem nowej kampanii. Jeśli jesteś w sezonowej branży (turystyka, budownictwo, produkty świąteczne), sprawdzaj 4–6 tygodni przed sezonem, żeby zobaczyć, jak konkurencja się przygotowuje.
+      </p>
+
+      <h3>Co zrobić, jeśli konkurent kopiuje moje reklamy?</h3>
+      <p>
+        Jeśli konkurent kopiuje Twoje kreacje dosłownie (identyczne zdjęcia, teksty), możesz zgłosić naruszenie praw autorskich bezpośrednio do Meta. Jeśli kopiuje styl lub koncept — to legalne i trudne do zablokowania. Najlepsza odpowiedź to przyspieszone testowanie nowych kreacji i budowanie własnej rozpoznawalnej marki.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/salon-kosmetyczny-facebook-ads" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Salon kosmetyczny i Facebook Ads – jak zarabiać na reklamach Meta?</Link></li>
+          <li><Link href="/reklama-kancelarii-adwokackiej-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Reklama kancelarii adwokackiej w Google – co wolno, co działa</Link></li>
+          <li><Link href="/jak-promowac-warsztat-samochodowy-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak promować warsztat samochodowy w Google?</Link></li>
+          <li><Link href="/ile-kosztuje-pozycjonowanie-strony-internetowej" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Ile kosztuje pozycjonowanie strony internetowej w 2026 roku?</Link></li>
+          <li><Link href="/jak-dobierac-slowa-kluczowe-do-pozycjonowania" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak dobierać słowa kluczowe do pozycjonowania?</Link></li>
+        </ul>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Czy sprawdzanie reklam konkurencji w Meta Ad Library jest legalne?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tak — w 100%. Meta Ad Library jest publicznie dostępnym narzędziem stworzonym przez Meta i udostępnionym celowo. Przegląda je bez ograniczeń każdy użytkownik internetu, bez logowania i bez żadnych warunków użytkowania ograniczających analizę konkurencji.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Czy w Meta Ad Library widać reklamy, które już nie są aktywne?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dla większości kategorii reklam komercyjnych biblioteka pokazuje wyłącznie aktywnie emitowane kampanie. Dla reklam politycznych Meta przechowuje historię przez 7 lat. Narzędzia płatne takie jak AdSpy archiwizują reklamy komercyjne.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Czy można zobaczyć, ile konkurent wydaje na reklamy na Facebooku?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dla zwykłych reklam komercyjnych Meta nie ujawnia budżetów. Pośrednio możesz ocenić skalę po liczbie aktywnych reklam i czasie ich emisji. Szacunkowe budżety pokazują niektóre płatne narzędzia takie jak Semrush czy AdSpy.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Jak często powinienem monitorować reklamy konkurencji na Facebooku?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dla aktywnie prowadzących kampanie — raz w miesiącu jako rutynowy przegląd, plus każdorazowo przed uruchomieniem nowej kampanii. W sezonowych branżach sprawdzaj 4–6 tygodni przed sezonem.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Jak rozpoznać, które reklamy konkurencji są skuteczne?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Kluczowym wskaźnikiem jest czas emisji. Reklama aktywna od wielu miesięcy bez przerwy prawie na pewno przynosi wyniki — nikt nie płaci za niedziałającą reklamę przez rok. Szukaj kreacji uruchomionych najwcześniej i nadal aktywnych.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      OSZUSTWO: Telefon że wizytówka wygaśnie
   ───────────────────────────────────────────────────────────────────────── */
   "telefon-wizytowka-google-wygasnie-oszustwo": (

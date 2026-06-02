@@ -383,6 +383,17 @@ export const posts: Post[] = [
   },
 
   {
+    slug: "jak-sprawdzic-reklamy-konkurencji-na-facebooku",
+    title: "Jak sprawdzić reklamy konkurencji na Facebooku – kompletny przewodnik",
+    excerpt: "Chcesz wiedzieć, co reklamuje Twoja konkurencja na Facebooku i Instagramie? Meta Ad Library to darmowe narzędzie, które pokazuje wszystkie aktywne reklamy dowolnej firmy. Sprawdź jak z niego korzystać, co analizować i jak wyciągnąć z tego realną przewagę.",
+    category: "Poradnik",
+    date: "2026-06-03",
+    readTime: 9,
+    coverColor: "#1e40af",
+    coverImage: "/blog/cover-reklamy-fb-konkurencja.svg",
+    published: true,
+  },
+  {
     slug: "telefon-wizytowka-google-wygasnie-oszustwo",
     title: "Zadzwonili, że wizytówka Google wygaśnie — to oszustwo. Nie płać.",
     excerpt: "Dostałeś telefon z informacją, że Twoja wizytówka Google wygaśnie, jeśli nie zapłacisz? To klasyczny przekręt. Google nigdy nie dzwoni w sprawie wygaśnięcia wizytówki, bo wizytówka Google Business Profile jest bezpłatna i nie wygasa. Dowiedz się jak działa ten schemat i co zrobić.",
