@@ -69,16 +69,20 @@ export async function POST(req: NextRequest) {
       </div>
     `;
 
+    const fromAddr = process.env.RESEND_FROM ?? "(brak RESEND_FROM)";
+    const toAddr   = process.env.RESEND_TO   ?? "(brak RESEND_TO)";
+    console.log(`[contact] sending from="${fromAddr}" to="${toAddr}"`);
+
     const { error: sendError } = await resend.emails.send({
-      from: process.env.RESEND_FROM!,
-      to: process.env.RESEND_TO!,
+      from: fromAddr,
+      to: toAddr,
       replyTo: email || undefined,
       subject: `🐾 [${label}] ${name}${company ? ` – ${company}` : ""}`,
       html,
     });
 
     if (sendError) {
-      console.error("[contact] Resend error:", sendError);
+      console.error("[contact] Resend error:", JSON.stringify(sendError));
       return NextResponse.json({ error: sendError.message }, { status: 500 });
     }
 
