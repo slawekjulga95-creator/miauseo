@@ -350,7 +350,7 @@ export default async function BlogPostPage({ params }: Props) {
                   />
                   <div>
                     <p className="text-white font-bold text-sm leading-tight">Sławomir Jułga</p>
-                    <p className="text-zinc-400 text-xs mt-0.5 leading-snug">Specjalista local SEO<br/>i wizytówek Google</p>
+                    <p className="text-white/60 text-xs mt-0.5 leading-snug">Konsultant</p>
                   </div>
                 </div>
                 <div className="h-px bg-white/10 mb-4" />
