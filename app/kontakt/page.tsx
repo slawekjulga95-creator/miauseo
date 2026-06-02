@@ -27,37 +27,22 @@ const steps = [
   },
 ];
 
-const contactItems = [
+const faqs = [
   {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.06 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z" />
-      </svg>
-    ),
-    label: "Telefon",
-    value: "+48 XXX XXX XXX",
-    href: "tel:+48XXXXXXXXX",
+    q: "Czy konsultacja jest naprawdę bezpłatna?",
+    a: "Tak, bez żadnych warunków. Nie musisz podjąć decyzji o współpracy. Rozmowa to po prostu wspólne spojrzenie na Twoją sytuację.",
   },
   {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-        <polyline points="22,6 12,13 2,6" />
-      </svg>
-    ),
-    label: "Email",
-    value: "kontakt@miauseo.pl",
-    href: "mailto:kontakt@miauseo.pl",
+    q: "Jak szybko oddzwonisz?",
+    a: "Zazwyczaj w ciągu kilku godzin roboczych. W weekendy czas może być dłuższy — wtedy odpisuję w poniedziałek rano.",
   },
   {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
-      </svg>
-    ),
-    label: "Czas odpowiedzi",
-    value: "Kilka godzin roboczych",
-    href: null,
+    q: "Czy pracujesz z każdą branżą?",
+    a: "Specjalizuję się w firmach lokalnych — usługi, handel, rzemiosło. Jeśli Twoja branża jest inna, powiem Ci szczerze czy mogę pomóc.",
+  },
+  {
+    q: "Od czego zależy cena współpracy?",
+    a: "Od zakresu działań, konkurencji w Twojej branży i lokalizacji. Na konsultacji omówimy to konkretnie — bez ogólnikowych cenników.",
   },
 ];
 
@@ -104,151 +89,230 @@ const socials = [
 
 export default function KontaktPage() {
   return (
-    <main className="pt-24">
+    <main className="pt-20">
 
       {/* ── Hero ── */}
-      <section className="bg-ink py-20 px-6 relative overflow-hidden">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
         <CatWatermark />
-        {/* decorative circles */}
-        <div className="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-brand/5 pointer-events-none" />
-        <div className="absolute bottom-0 left-10 w-64 h-64 rounded-full bg-brand/5 pointer-events-none" />
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-        <div className="max-w-6xl mx-auto relative">
-          <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">Kontakt</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-2xl">
-            Porozmawiajmy<br />
-            <span className="text-brand">o Twojej firmie.</span>
-          </h1>
-          <p className="text-zinc-400 text-lg max-w-xl leading-relaxed">
-            Bezpłatna konsultacja — bez zobowiązań, bez sprzedawania na siłę. Sprawdzamy razem, czy i jak możemy Ci pomóc.
-          </p>
-        </div>
-      </section>
-
-      {/* ── Main: form + info ── */}
-      <section className="bg-white py-16 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
-
-          {/* Left — form */}
-          <div className="w-full lg:w-7/12 bg-surface rounded-3xl p-8 md:p-10 border border-border">
-            <h2 className="text-2xl font-bold text-ink mb-2">Napisz do mnie</h2>
-            <p className="text-zinc-500 text-sm mb-8">Odpowiem w ciągu kilku godzin roboczych.</p>
-            <ContactFormWrapper />
-          </div>
-
-          {/* Right — info */}
-          <div className="w-full lg:w-5/12 space-y-8">
-
-            {/* Contact data */}
             <div>
-              <h2 className="text-lg font-bold text-ink mb-5">Dane kontaktowe</h2>
-              <ul className="space-y-4">
-                {contactItems.map((item) => (
-                  <li key={item.label} className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-brand/10 flex items-center justify-center text-brand shrink-0">
-                      {item.icon}
-                    </div>
-                    <div>
-                      <p className="text-[11px] text-zinc-400 font-semibold uppercase tracking-wide">{item.label}</p>
-                      {item.href ? (
-                        <a href={item.href} className="text-sm font-semibold text-ink hover:text-brand transition-colors">
-                          {item.value}
-                        </a>
-                      ) : (
-                        <p className="text-sm font-semibold text-ink">{item.value}</p>
-                      )}
-                    </div>
-                  </li>
-                ))}
-              </ul>
+              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">Kontakt</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
+                Porozmawiajmy{" "}
+                <span className="text-brand">o Twojej firmie.</span>
+              </h1>
+              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
+                Bezpłatna konsultacja bez zobowiązań. Sprawdzamy razem, czy i jak możemy Ci pomóc
+                — <strong className="text-ink font-semibold">bez sprzedawania na siłę,</strong>{" "}
+                tylko konkretna diagnoza i plan działania.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href="#formularz" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
+                  Napisz do mnie
+                </a>
+                <a href="tel:+48503575067" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
+                  +48 503 575 067
+                </a>
+              </div>
             </div>
 
-            {/* Divider */}
-            <div className="h-px bg-border" />
-
-            {/* Socials */}
-            <div>
-              <p className="text-[11px] text-zinc-400 font-semibold uppercase tracking-widest mb-4">Znajdziesz mnie też na</p>
-              <div className="flex items-center gap-3">
-                {socials.map((s) => (
-                  <a
-                    key={s.label}
-                    href={s.href}
-                    aria-label={s.label}
-                    className="w-10 h-10 rounded-xl bg-surface border border-border flex items-center justify-center text-zinc-500 hover:text-brand hover:border-brand/30 hover:bg-orange-50 transition-all duration-150"
-                  >
-                    {s.icon}
-                  </a>
+            <div className="bg-surface rounded-3xl p-8 border border-border">
+              <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-6">Dlaczego warto zadzwonić?</p>
+              <div className="space-y-5">
+                {[
+                  { bold: "Bezpłatna analiza wizytówki Google", rest: " — sprawdzamy razem co blokuje Twoją widoczność i co można poprawić od zaraz." },
+                  { bold: "Zero zobowiązań", rest: " — konsultacja to rozmowa, nie sprzedaż. Decyzja zawsze po Twojej stronie." },
+                  { bold: "Odpowiedź w kilka godzin", rest: " — nie zostawiam wiadomości bez odpowiedzi. Pon–Pt, 9:00–17:00." },
+                  { bold: "11 lat doświadczenia", rest: " — setki zoptymalizowanych wizytówek, realne wyniki dla firm z różnych branż." },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-3 items-start">
+                    <div className="shrink-0 w-5 h-5 rounded-full bg-brand/10 flex items-center justify-center mt-0.5">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                    </div>
+                    <p className="text-sm text-zinc-600 leading-relaxed"><strong className="text-ink">{item.bold}</strong>{item.rest}</p>
+                  </div>
                 ))}
               </div>
             </div>
 
-            {/* Divider */}
-            <div className="h-px bg-border" />
-
-            {/* Steps */}
-            <div>
-              <p className="text-[11px] text-zinc-400 font-semibold uppercase tracking-widest mb-5">Jak wygląda współpraca?</p>
-              <ul className="space-y-5">
-                {steps.map((step) => (
-                  <li key={step.num} className="flex gap-4">
-                    <span className="text-[1.75rem] font-bold text-brand/20 leading-none shrink-0 tabular-nums">{step.num}</span>
-                    <div>
-                      <p className="font-bold text-ink text-sm mb-0.5">{step.title}</p>
-                      <p className="text-zinc-500 text-sm leading-relaxed">{step.desc}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* ── FAQ ── */}
-      <section className="bg-surface border-t border-border py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-ink mb-10">Zanim napiszesz – może tu znajdziesz odpowiedź</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                q: "Czy konsultacja jest naprawdę bezpłatna?",
-                a: "Tak, bez żadnych warunków. Nie musisz podjąć decyzji o współpracy. Rozmowa to po prostu wspólne spojrzenie na Twoją sytuację.",
-              },
-              {
-                q: "Jak szybko oddzwonisz?",
-                a: "Zazwyczaj w ciągu kilku godzin roboczych. W weekendy czas może być dłuższy — wtedy odpisuję w poniedziałek rano.",
-              },
-              {
-                q: "Czy pracujesz z każdą branżą?",
-                a: "Specjalizuję się w firmach lokalnych — usługi, handel, rzemiosło. Jeśli Twoja branża jest inna, powiem Ci szczerze czy mogę pomóc.",
-              },
-              {
-                q: "Od czego zależy cena współpracy?",
-                a: "Od zakresu działań, konkurencji w Twojej branży i lokalizacji. Na konsultacji omówimy to konkretnie — bez ogólnikowych cenników.",
-              },
-            ].map((faq) => (
-              <div key={faq.q} className="bg-white rounded-2xl border border-border p-6">
-                <p className="font-bold text-ink mb-2 text-sm">{faq.q}</p>
-                <p className="text-zinc-500 text-sm leading-relaxed">{faq.a}</p>
+      {/* ── Formularz + kroki ── */}
+      <section id="formularz" className="py-24 bg-surface">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+
+            {/* Formularz */}
+            <div>
+              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">Formularz</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-ink leading-snug mb-8">
+                Napisz{" "}
+                <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">
+                  do mnie
+                </span>
+              </h2>
+              <div className="bg-white rounded-3xl p-8 border border-border shadow-sm">
+                <ContactFormWrapper />
+              </div>
+            </div>
+
+            {/* Jak wygląda współpraca */}
+            <div>
+              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">Proces</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-ink leading-snug mb-8">
+                Jak wygląda{" "}
+                <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">
+                  współpraca?
+                </span>
+              </h2>
+
+              <div className="space-y-5 mb-10">
+                {steps.map((step) => (
+                  <div key={step.num} className="flex gap-5 items-start border-l-2 border-brand/20 pl-5">
+                    <span className="text-[2.5rem] font-bold text-brand/20 leading-none shrink-0 tabular-nums">{step.num}</span>
+                    <div>
+                      <p className="font-bold text-ink mb-1">{step.title}</p>
+                      <p className="text-zinc-500 text-sm leading-relaxed">{step.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="bg-white rounded-2xl border border-border p-6 space-y-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-brand/10 flex items-center justify-center text-brand shrink-0">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.06 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-[11px] text-zinc-400 font-semibold uppercase tracking-wide">Telefon</p>
+                    <a href="tel:+48503575067" className="text-sm font-semibold text-ink hover:text-brand transition-colors">+48 503 575 067</a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-brand/10 flex items-center justify-center text-brand shrink-0">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-[11px] text-zinc-400 font-semibold uppercase tracking-wide">E-mail</p>
+                    <a href="mailto:slawomir@miauseo.pl" className="text-sm font-semibold text-ink hover:text-brand transition-colors">slawomir@miauseo.pl</a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-brand/10 flex items-center justify-center text-brand shrink-0">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-[11px] text-zinc-400 font-semibold uppercase tracking-wide">Godziny pracy</p>
+                    <p className="text-sm font-semibold text-ink">Pon – Pt, 9:00 – 17:00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ── Etapy — karty ── */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">Etapy</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-ink leading-snug">
+              Co się dzieje po{" "}
+              <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">
+                wysłaniu?
+              </span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {steps.map((s) => (
+              <div key={s.num} className="relative bg-surface rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg transition-all duration-200">
+                <div className="absolute top-4 right-5 text-[4rem] font-bold leading-none text-brand/10 select-none pointer-events-none">
+                  {s.num}
+                </div>
+                <div className="w-10 h-0.5 bg-brand mb-5" />
+                <h3 className="text-base font-bold text-ink mb-3 leading-snug">{s.title}</h3>
+                <p className="text-sm text-zinc-500 leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── Bottom strip ── */}
-      <section className="bg-brand py-10 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white font-bold text-lg text-center sm:text-left">
-            Wolisz zadzwonić? Numer czeka.
-          </p>
-          <a
-            href="tel:+48XXXXXXXXX"
-            className="shrink-0 bg-white text-brand font-bold px-8 py-3.5 rounded-xl hover:bg-orange-50 transition-colors duration-200 text-sm"
-          >
-            +48 XXX XXX XXX
-          </a>
+      {/* ── FAQ + podsumowanie ── */}
+      <section className="py-24 bg-ink text-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+
+            <div>
+              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">FAQ</span>
+              <h2 className="text-3xl sm:text-4xl font-bold leading-snug mb-8">
+                Zanim napiszesz –{" "}
+                <span className="text-brand">może tu znajdziesz odpowiedź</span>
+              </h2>
+              <div className="space-y-5">
+                {faqs.map((faq) => (
+                  <div key={faq.q} className="border-l-2 border-brand/40 pl-5">
+                    <p className="font-bold text-white mb-1 text-sm">{faq.q}</p>
+                    <p className="text-white/60 text-sm leading-relaxed">{faq.a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-3xl p-10 flex flex-col gap-6">
+              <p className="text-xs font-semibold tracking-widest uppercase text-brand">Znajdziesz mnie też na</p>
+              <div className="flex items-center gap-3">
+                {socials.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    aria-label={s.label}
+                    className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white/60 hover:text-brand hover:bg-white/20 transition-all duration-150"
+                  >
+                    {s.icon}
+                  </a>
+                ))}
+              </div>
+
+              <div className="h-px bg-white/10" />
+
+              <div>
+                <p className="text-white/70 leading-relaxed text-sm mb-6">
+                  Wolisz od razu sprawdzić, co robimy? Przejrzyj stronę usług i dowiedz się,
+                  jakie rezultaty osiągamy dla firm podobnych do Twojej.
+                </p>
+                <Link
+                  href="/uslugi/wizytowka-google"
+                  className="inline-flex items-center gap-2.5 bg-brand hover:bg-brand-dark text-white font-bold px-6 py-4 rounded-xl transition-colors duration-200 text-sm"
+                >
+                  Pozycjonowanie wizytówki Google
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+
+              <div className="h-px bg-white/10" />
+
+              <p className="text-white/40 text-xs">
+                Elastyczna umowa · Bez długoletnich zobowiązań · Raport co tydzień
+              </p>
+            </div>
+
+          </div>
         </div>
       </section>
 
