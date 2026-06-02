@@ -383,6 +383,17 @@ export const posts: Post[] = [
   },
 
   {
+    slug: "telefon-wizytowka-google-wygasnie-oszustwo",
+    title: "Zadzwonili, że wizytówka Google wygaśnie — to oszustwo. Nie płać.",
+    excerpt: "Dostałeś telefon z informacją, że Twoja wizytówka Google wygaśnie, jeśli nie zapłacisz? To klasyczny przekręt. Google nigdy nie dzwoni w sprawie wygaśnięcia wizytówki, bo wizytówka Google Business Profile jest bezpłatna i nie wygasa. Dowiedz się jak działa ten schemat i co zrobić.",
+    category: "Poradnik",
+    date: "2026-06-03",
+    readTime: 7,
+    coverColor: "#dc2626",
+    coverImage: "/blog/cover-telefon-oszustwo.svg",
+    published: true,
+  },
+  {
     slug: "jak-nadac-prawa-menedzerskie-wizytowka-google",
     title: "Jak nadać prawa menedżerskie do wizytówki Google – krok po kroku",
     excerpt: "Chcesz dać agencji lub pracownikowi dostęp do wizytówki Google bez oddawania kontroli nad kontem? Prawa menedżerskie w GBP to właściwe rozwiązanie. Pokazujemy jak je nadać, jakie są różnice między właścicielem a menedżerem i jak bezpiecznie zarządzać dostępami.",
