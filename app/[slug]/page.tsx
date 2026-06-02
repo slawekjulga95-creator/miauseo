@@ -343,10 +343,10 @@ export default async function BlogPostPage({ params }: Props) {
                   <Image
                     src="/slawomir.png"
                     alt="Sławomir Jułga"
-                    width={52}
-                    height={68}
+                    width={72}
+                    height={96}
                     className="rounded-lg object-cover object-top shrink-0"
-                    style={{ height: 68, width: 52 }}
+                    style={{ height: 96, width: 72 }}
                   />
                   <div>
                     <p className="text-white font-bold text-sm leading-tight">Sławomir Jułga</p>
