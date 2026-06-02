@@ -69,13 +69,18 @@ export async function POST(req: NextRequest) {
       </div>
     `;
 
-    await resend.emails.send({
+    const { error: sendError } = await resend.emails.send({
       from: process.env.RESEND_FROM!,
       to: process.env.RESEND_TO!,
       replyTo: email || undefined,
       subject: `🐾 [${label}] ${name}${company ? ` – ${company}` : ""}`,
       html,
     });
+
+    if (sendError) {
+      console.error("[contact] Resend error:", sendError);
+      return NextResponse.json({ error: sendError.message }, { status: 500 });
+    }
 
     return NextResponse.json({ ok: true });
   } catch (err) {
