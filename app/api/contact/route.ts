@@ -76,7 +76,7 @@ export async function POST(req: NextRequest) {
     const { error: sendError } = await resend.emails.send({
       from: fromAddr,
       to: toAddr,
-      replyTo: email || undefined,
+      replyTo: email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? email : undefined,
       subject: `🐾 [${label}] ${name}${company ? ` – ${company}` : ""}`,
       html,
     });
