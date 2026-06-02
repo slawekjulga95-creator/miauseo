@@ -53,11 +53,10 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!executeRecaptcha) return;
     setLoading(true);
     setError(false);
     try {
-      const token = await executeRecaptcha("contact_form");
+      const token = executeRecaptcha ? await executeRecaptcha("contact_form") : undefined;
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
