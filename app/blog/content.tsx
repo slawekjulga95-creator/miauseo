@@ -6266,4 +6266,249 @@ define( 'DB_HOST', 'localhost' );</code></pre>
       </div>
     </>
   ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     HOTEL: Pozycjonowanie w Mapach Google
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-hoteli-w-mapach-google": (
+    <>
+      <h2>Czym jest pozycjonowanie hoteli w Mapach Google?</h2>
+      <p>
+        Pozycjonowanie hoteli w Mapach Google to proces optymalizacji profilu Google Business Profile (GBP) i sygnałów lokalnego SEO w taki sposób, aby obiekt noclegowy pojawiał się jak najwyżej w wynikach Google Maps i Local Pack — liście 3 firm wyświetlanej nad organicznymi wynikami wyszukiwania. Dla hoteli, pensjonatów i apartamentów jest to główny kanał pozyskiwania rezerwacji bezpośrednich, omijający prowizje OTA.
+      </p>
+      <p>
+        Gdy potencjalny gość wpisuje w Google „hotel Kraków centrum" lub „pensjonat Zakopane z basenem", widzi mapę z trzema pinezkami i tabelą z nazwami, ocenami i odległościami. To właśnie Local Pack. Hotele poza pierwszą trójką tracą statystycznie ponad 70% kliknięć — dlatego pozycja ma bezpośrednie przełożenie na przychody z rezerwacji bezpośrednich.
+      </p>
+      <p>
+        Więcej o tym, jak działa algorytm rankingowy i czym jest Local Pack, wyjaśnia artykuł{" "}
+        <Link href="/pozycjonowanie-wizytowki-google">pozycjonowanie wizytówki Google — kompletny przewodnik</Link>.
+      </p>
+
+      <h2>Jak Google ocenia hotele w wynikach lokalnych — 3 czynniki rankingowe</h2>
+      <p>
+        Google ocenia pozycję hotelu w Maps na podstawie trzech głównych sygnałów: trafności (jak dobrze profil pasuje do zapytania), odległości (jak daleko hotel jest od lokalizacji szukającego) i popularności (jak silna jest marka i profil w internecie). Każdy z tych czynników można aktywnie kształtować — odległość w najmniejszym stopniu, trafność i popularność w największym.
+      </p>
+
+      <h3>Trafność (Relevance)</h3>
+      <p>
+        Trafność to dopasowanie profilu do intencji zapytania. Google analizuje kategorię główną, słowa kluczowe w opisie i sekcji usług, atrybuty (np. „Parking", „Śniadanie w cenie", „Dostęp dla niepełnosprawnych"), a także treść powiązanej strony internetowej. Hotel z kategorią „Hotel" pojawi się na frazę „hotel Wrocław", ale już nie na „hostel Wrocław" — nawet jeśli oferuje pokoje wieloosobowe.
+      </p>
+      <p>
+        Dla obiektów noclegowych kluczowe jest użycie kategorii szczegółowej zamiast ogólnej. Różnica między „Hotel" a „Hotel butikowy" lub „Hotel spa" może decydować o widoczności na frazy long-tail o wysokiej intencji zakupowej. Sprawdź, jak wybrać{" "}
+        <Link href="/kategorie-wizytowka-google">właściwe kategorie wizytówki Google</Link> dla swojej branży.
+      </p>
+
+      <h3>Odległość (Distance)</h3>
+      <p>
+        Google uwzględnia fizyczną odległość hotelu od miejsca, z którego pochodzi zapytanie, lub lokalizacji wpisanej przez użytkownika. Jeśli ktoś szuka hotelu „w centrum Gdańska", Google wyświetli przede wszystkim obiekty w centrum — niezależnie od siły ich profilu. Hotele poza centrum naturalnie tracą na tym czynniku, ale mogą to kompensować wyższą trafnością i popularnością.
+      </p>
+
+      <h3>Popularność (Prominence)</h3>
+      <p>
+        Popularność mierzy ogólną siłę marki i profilu w sieci. Składa się na nią liczba i jakość opinii Google, wzmianki w innych serwisach (booking.com, TripAdvisor, Trivago), cytowania NAP w katalogach, linki do strony hotelowej i aktywność w samym GBP. To jedyny czynnik, który bezpośrednio nagradza długoterminową pracę nad reputacją.
+      </p>
+      <p>
+        Pełną listę 34 czynników rankingowych z oceną ważności znajdziesz w artykule{" "}
+        <Link href="/czynniki-rankingowe-wizytowki-google-2026">czynniki rankingowe wizytówki Google w 2026</Link>.
+      </p>
+
+      <h2>Optymalizacja profilu Google Business Profile dla hotelu</h2>
+      <p>
+        Kompletny i poprawnie zoptymalizowany profil GBP to fundament widoczności hotelu w Google Maps. Google premiuje profile z wypełnionymi wszystkimi dostępnymi polami — im więcej informacji dostarczysz, tym lepiej algorytm dopasuje Twój obiekt do właściwych zapytań. Dla hoteli dostępnych jest kilkadziesiąt pól specyficznych dla branży, których większość właścicieli nie wypełnia.
+      </p>
+
+      <h3>Kategorie i atrybuty dla obiektu noclegowego</h3>
+      <p>
+        Wybierz kategorię główną tak szczegółową, jak to możliwe. Zamiast ogólnego „Hotel" rozważ „Hotel butikowy", „Hotel spa", „Hotel biznesowy" lub „Resort" — zależnie od profilu obiektu. Następnie dodaj kategorie dodatkowe odpowiadające udogodnieniom: „Restauracja", „Centrum konferencyjne", „Centrum fitness".
+      </p>
+      <p>
+        Atrybuty to szczególnie ważny element dla hoteli — Google wyświetla je bezpośrednio w karcie obiektu jeszcze przed wejściem na stronę. Koniecznie zaznacz: parking (bezpłatny vs. płatny), śniadanie w cenie, dostęp do WiFi, dostępność dla osób z niepełnosprawnością, basen, spa, zwierzęta domowe, klimatyzację. Każdy atrybut odpowiada potencjalnemu zapytaniu filtrowemu użytkownika.
+      </p>
+
+      <h3>Opis hotelu i sekcja usług</h3>
+      <p>
+        Opis w GBP ma limit 750 znaków — wykorzystaj go w pełni. Umieść w nim naturalnie słowa kluczowe związane z lokalizacją, typem obiektu i wyróżnikami oferty. Unikaj suchej listy faktów — pisz tak, żeby zaciekawić osobę, która właśnie decyduje między Twoim hotelem a trzema konkurentami.
+      </p>
+      <p>
+        Sekcja Usługi pozwala dodać szczegółowe pozycje z opisem i ceną: „Pokój standard", „Pokój z widokiem na morze", „Śniadanie szwedzkie", „Transfer z lotniska". Każda usługa to dodatkowe słowa kluczowe indeksowane przez Google i wyświetlane w profilu.
+      </p>
+
+      <h2>Opinie i recenzje — jak je zdobywać i zarządzać</h2>
+      <p>
+        Opinie Google są dla hoteli podwójnie ważne: bezpośrednio wpływają na pozycję w Local Pack i stanowią główny czynnik decyzyjny gości. Obiekty z oceną 4,5+ i minimum 50 opiniami dominują w wynikach lokalnych. Każda nowa recenzja to sygnał aktywności — Google premiuje profile, które regularnie zdobywają nowe opinie, a nie te z dużą liczbą ale starą datą ostatniej recenzji.
+      </p>
+      <p>
+        Pełny przewodnik po skutecznym zbieraniu recenzji bez nachalności znajdziesz w artykule{" "}
+        <Link href="/opinie-google-jak-zdobywac-skutecznie">opinie w Google — jak zbierać je skutecznie</Link>.
+      </p>
+
+      <h3>Najlepsze momenty na prośbę o opinię</h3>
+      <ul>
+        <li><strong>Check-out</strong> — personel przy wymeldowaniu może poprosić o recenzję i podesłać QR kod lub link na e-mail.</li>
+        <li><strong>E-mail po pobycie</strong> — automatyczny mail 24 godziny po wymeldowaniu z bezpośrednim linkiem. Konwersja tej metody wynosi zazwyczaj 8–15%.</li>
+        <li><strong>QR kody w pokojach i recepcji</strong> — umieszczone przy karcie WiFi, na pilotach lub menu śniadaniowym. Gość wystawia opinię jeszcze podczas pobytu, kiedy emocje są świeże.</li>
+        <li><strong>Karty z podziękowaniem</strong> — fizyczna kartka w pokoju z QR kodem i krótką prośbą działa szczególnie dobrze w segmencie premium.</li>
+      </ul>
+
+      <h3>Odpowiadanie na opinie — jak to robić dobrze</h3>
+      <p>
+        Google premiuje profile, których właściciele aktywnie odpowiadają na recenzje. Odpowiedź na pozytywną opinię powinna być spersonalizowana — nie kopiuj szablonu. Odpowiedź na negatywną recenzję to Twoja szansa na pokazanie profesjonalizmu: podziękuj za feedback, przeproś za niedogodność i zaproponuj rozwiązanie. Nigdy nie wchodź w publiczną dyskusję ani nie kwestionuj opinii gościa w odpowiedzi.
+      </p>
+
+      <h2>Słowa kluczowe i kategorie dla obiektów noclegowych</h2>
+      <p>
+        Strategia słów kluczowych dla hotelu w Google Maps opiera się na połączeniu frazy lokalizacyjnej, typu obiektu i atrybutów. Frazy o największej intencji zakupowej zawierają konkretną lokalizację i cechy specyficzne dla podróżnych: „hotel z parkingiem Wrocław", „pensjonat przy plaży Sopot", „pokoje ze śniadaniem Zakopane centrum". To właśnie na takie frazy warto optymalizować profil GBP.
+      </p>
+
+      <h3>Mapa fraz kluczowych dla hoteli</h3>
+      <ul>
+        <li><strong>Frazy ogólne + miasto:</strong> „hotel Gdańsk", „noclegi Kraków", „pensjonat Zakopane"</li>
+        <li><strong>Frazy z atrybutem:</strong> „hotel z basenem Łódź", „hotel dla psów Warszawa", „hotel z garażem Poznań"</li>
+        <li><strong>Frazy z lokalizacją precyzyjną:</strong> „hotel przy dworcu Wrocław", „hotel Stare Miasto Kraków"</li>
+        <li><strong>Frazy okazjonalne:</strong> „hotel na wesele Mazury", „hotel spa walentynki Trójmiasto"</li>
+        <li><strong>Frazy biznesowe:</strong> „hotel z salą konferencyjną Katowice", „hotel na szkolenie Warszawa"</li>
+      </ul>
+      <p>
+        Umieszczaj te frazy naturalnie w opisie GBP, sekcji usług, odpowiedziach na opinie i postach Google. Nie upychaj słów kluczowych — Google wykrywa keyword stuffing i może obniżyć pozycję profilu.
+      </p>
+
+      <h2>Zdjęcia i posty w wizytówce hotelu</h2>
+      <p>
+        Hotele i obiekty noclegowe to jedna z kategorii, w której zdjęcia mają największy wpływ na decyzję zakupową — i pośrednio na pozycję w Google Maps. Profile z ponad 100 zdjęciami mają statystycznie trzykrotnie wyższy wskaźnik kliknięć niż profile z kilkoma fotkam. Google analizuje aktywność zdjęciową jako sygnał zaangażowania właściciela.
+      </p>
+
+      <h3>Jakie zdjęcia dodawać</h3>
+      <ul>
+        <li><strong>Pokoje</strong> — każdy typ pokoju osobno, dobra jakość, naturalne światło</li>
+        <li><strong>Restauracja i śniadania</strong> — jedzenie generuje największe zaangażowanie użytkowników</li>
+        <li><strong>Recepcja i hol główny</strong> — pierwsze wrażenie gościa po przyjeździe</li>
+        <li><strong>Okolica i dojazd</strong> — widok z okna, parking, wejście główne</li>
+        <li><strong>Udogodnienia</strong> — basen, spa, sala fitness, sala konferencyjna</li>
+        <li><strong>Zdjęcia 360°</strong> — Google premiuje wirtualne spacery, szczególnie w branży hotelowej</li>
+      </ul>
+      <p>
+        Więcej o tym, które zdjęcia naprawdę wpływają na pozycję, przeczytasz w artykule{" "}
+        <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">zdjęcia w wizytówce Google — które działają</Link>.
+      </p>
+
+      <h3>Google Posts dla hoteli</h3>
+      <p>
+        Posty Google wyświetlają się bezpośrednio w wizytówce i mają krótki czas życia (7 dni dla standardowych). Hotele powinny regularnie publikować: oferty last minute, promocje weekendowe, informacje o eventach w okolicy, pakiety sezonowe (ferie, sylwester, Boże Narodzenie). Każdy post z CTA „Zarezerwuj teraz" to dodatkowa ścieżka konwersji bez pośrednictwa OTA.
+      </p>
+
+      <h2>Najczęstsze błędy w pozycjonowaniu hoteli na mapach</h2>
+      <p>
+        Hotele popełniają powtarzające się błędy w GBP, które bezpośrednio obniżają pozycję i zmniejszają liczbę rezerwacji bezpośrednich. Większość z nich można naprawić w ciągu jednego roboczego dnia — efekty widać po 2–4 tygodniach.
+      </p>
+      <ul>
+        <li><strong>Zbyt ogólna kategoria główna</strong> — „Hotel" zamiast „Hotel spa" lub „Hotel butikowy". Im węższa kategoria, tym mniejsza konkurencja i wyższe pozycje na frazy long-tail.</li>
+        <li><strong>Brak odpowiedzi na opinie</strong> — Google obniża ranking profili, których właściciele ignorują recenzje, szczególnie negatywne.</li>
+        <li><strong>Niespójna nazwa NAP</strong> — inne dane adresowe w GBP, na stronie hotelu i w booking.com dezorientują algorytm i obniżają sygnał trafności.</li>
+        <li><strong>Pusty opis i sekcja usług</strong> — niewykorzystane 750 znaków i brak listy usług to utrata dziesiątek słów kluczowych.</li>
+        <li><strong>Stara data ostatniej aktywności</strong> — profile bez nowych zdjęć, postów i odpowiedzi przez 2–3 miesiące tracą na popularności.</li>
+        <li><strong>Brak zdjęć pokoi</strong> — gość nie zarezerwuje pokoju, którego nie widzi. Profil bez zdjęć pokoi traci kliknięcia i bezpośrednie rezerwacje.</li>
+        <li><strong>Nieuzupełnione godziny specjalne</strong> — brak godzin na święta i ferie powoduje wyświetlanie „Godziny mogą być inne" — sygnał niepewności zniechęcający do rezerwacji.</li>
+      </ul>
+
+      <h2>Jak zmierzyć efekty pozycjonowania hotelu w Google Maps</h2>
+      <p>
+        Postęp pozycjonowania hotelu można śledzić bezpośrednio w panelu GBP — sekcja „Statystyki" pokazuje liczbę wyświetleń w wyszukiwarce i na mapach, kliknięć do strony, połączeń telefonicznych i próśb o trasę. Wzrost tych wskaźników to bezpośredni dowód poprawy widoczności — zanim jeszcze przełoży się na rezerwacje.
+      </p>
+      <p>
+        Jeśli chcesz oddać te działania specjalistom i skupić się na prowadzeniu obiektu, sprawdź{" "}
+        <Link href="/uslugi/wizytowka-google">usługę pozycjonowania wizytówki Google</Link> lub{" "}
+        <Link href="/kontakt">umów bezpłatną konsultację</Link>.
+      </p>
+
+      <h2>FAQ — często zadawane pytania</h2>
+
+      <h3>Ile czasu zajmuje pozycjonowanie hotelu w Google Maps?</h3>
+      <p>
+        Pierwsze efekty — poprawa widoczności na frazy long-tail — są widoczne zazwyczaj po 4–8 tygodniach od kompleksowej optymalizacji profilu. Wejście do top 3 na frazy główne (np. „hotel Kraków centrum") wymaga 3–6 miesięcy systematycznej pracy z opiniami, postami i budową popularności. Konkretny czas zależy od siły konkurencji w danej lokalizacji.
+      </p>
+
+      <h3>Czy hotel z kilkoma budynkami powinien mieć osobną wizytówkę dla każdego?</h3>
+      <p>
+        Nie. Hotel z kilkoma budynkami w tej samej lokalizacji powinien mieć jedną wizytówkę GBP. Wyjątek to obiekty z osobnymi adresami, które realnie działają jako niezależne marki — wówczas każdy adres może mieć własny profil, ale wymagają spójnego zarządzania NAP.
+      </p>
+
+      <h3>Jak ważna jest ocena gwiazdkowa dla pozycji w Google Maps?</h3>
+      <p>
+        Ocena (gwiazdki) to składnik czynnika popularności — im wyższa i im więcej recenzji, tym silniejszy sygnał. Hotele z oceną poniżej 4,0 tracą kliknięcia nawet przy wysokiej pozycji. Ważniejsza niż wysoka ocena jest regularność zdobywania nowych recenzji — Google preferuje profile z aktywnymi opiniami nad te z dużą liczbą ale starymi recenzjami.
+      </p>
+
+      <h3>Czy hotel bez strony internetowej może dobrze pozycjonować się w Mapach?</h3>
+      <p>
+        Tak — Google Business Profile działa niezależnie od posiadania strony www. Jednak hotel z dobrze zoptymalizowaną stroną ma przewagę w zakresie trafności i popularności, a strona umożliwia rezerwacje bezpośrednie bez prowizji OTA.
+      </p>
+
+      <h3>Czy warto inwestować w pozycjonowanie w Mapach Google, skoro hotel jest już na Booking.com?</h3>
+      <p>
+        Zdecydowanie tak. Booking.com pobiera prowizję 15–20% od każdej rezerwacji. Hotele z silną pozycją w Local Pack mogą przenieść 20–40% rezerwacji z OTA na kanały bezpośrednie — przy 100 rezerwacjach miesięcznie i średniej prowizji 200 zł daje to oszczędność 20 000–40 000 zł rocznie.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/pozycjonowanie-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Pozycjonowanie wizytówki Google – kompletny przewodnik 2026</Link></li>
+          <li><Link href="/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026</Link></li>
+          <li><Link href="/opinie-google-jak-zdobywac-skutecznie" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opinie w Google – jak zbierać je skutecznie?</Link></li>
+          <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zdjęcia w wizytówce Google – które naprawdę działają?</Link></li>
+          <li><Link href="/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie wizytówki Google – jak wybrać właściwe?</Link></li>
+        </ul>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Ile czasu zajmuje pozycjonowanie hotelu w Google Maps?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pierwsze efekty są widoczne zazwyczaj po 4–8 tygodniach od kompleksowej optymalizacji profilu GBP. Wejście do top 3 na frazy główne wymaga 3–6 miesięcy systematycznej pracy z opiniami, postami i budową popularności.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Czy hotel bez strony internetowej może dobrze pozycjonować się w Google Maps?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tak — Google Business Profile działa niezależnie od posiadania strony www. Hotel z dobrze zoptymalizowaną stroną internetową ma przewagę w zakresie trafności i popularności i pozwala na rezerwacje bezpośrednie bez prowizji OTA.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Jak ważna jest ocena gwiazdkowa dla pozycji w Google Maps?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ocena to składnik czynnika popularności. Hotele z oceną poniżej 4.0 tracą kliknięcia nawet przy wysokiej pozycji. Ważniejsza niż wysoka ocena jest regularność zdobywania nowych recenzji.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Czy warto pozycjonować hotel w Google Maps, skoro jest już na Booking.com?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tak. Booking.com pobiera prowizję 15–20% od każdej rezerwacji. Hotele z silną pozycją w Local Pack mogą przenieść 20–40% rezerwacji z OTA na kanały bezpośrednie, co oznacza oszczędność dziesiątek tysięcy złotych rocznie.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Czy hotel z kilkoma budynkami powinien mieć osobną wizytówkę Google dla każdego?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nie. Hotel z kilkoma budynkami w tej samej lokalizacji powinien mieć jedną wizytówkę GBP. Wyjątek to obiekty z osobnymi adresami działające jako niezależne marki.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+    </>
+  ),
 };

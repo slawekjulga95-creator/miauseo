@@ -382,6 +382,18 @@ export const posts: Post[] = [
     published: true,
   },
 
+  {
+    slug: "pozycjonowanie-hoteli-w-mapach-google",
+    title: "Pozycjonowanie hoteli w Mapach Google – przewodnik 2026",
+    excerpt: "Jak sprawić, żeby hotel, pensjonat lub obiekt noclegowy pojawiał się w top 3 Google Maps? Omawiam 3 czynniki rankingowe, optymalizację profilu GBP dla HoReCa, zarządzanie opiniami i najczęstsze błędy, które kosztują rezerwacje.",
+    category: "SEO",
+    date: "2026-06-02",
+    readTime: 13,
+    coverColor: "#7c3aed",
+    coverImage: "/blog/cover-hotel.svg",
+    published: true,
+  },
+
   // WordPress posts
   {
     slug: "zawirusowana-strona-wordpress-co-zrobic",
