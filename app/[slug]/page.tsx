@@ -338,14 +338,28 @@ export default async function BlogPostPage({ params }: Props) {
           <aside className="lg:w-64 shrink-0">
             <div className="sticky top-28 space-y-6">
               {/* CTA */}
-              <div className="bg-ink rounded-2xl p-6 text-center">
-                <p className="text-white font-bold mb-2 text-sm">Chcesz efektów, nie czytania?</p>
-                <p className="text-zinc-400 text-xs mb-4 leading-relaxed">
-                  Zajmę się pozycjonowaniem Twojej wizytówki — Ty skupiasz się na biznesie.
+              <div className="bg-ink rounded-2xl p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Image
+                    src="/slawomir.png"
+                    alt="Sławomir Jułga"
+                    width={52}
+                    height={68}
+                    className="rounded-lg object-cover object-top shrink-0"
+                    style={{ height: 68, width: 52 }}
+                  />
+                  <div>
+                    <p className="text-white font-bold text-sm leading-tight">Sławomir Jułga</p>
+                    <p className="text-zinc-400 text-xs mt-0.5 leading-snug">Specjalista local SEO<br/>i wizytówek Google</p>
+                  </div>
+                </div>
+                <div className="h-px bg-white/10 mb-4" />
+                <p className="text-zinc-300 text-xs leading-relaxed mb-4">
+                  Od ponad 11 lat pomagam lokalnym firmom rosnąć w Google. Setki zoptymalizowanych wizytówek — bez obiecywania cudów, za to z realnymi wynikami.
                 </p>
                 <Link
                   href="/kontakt"
-                  className="block bg-brand hover:bg-brand-dark text-white font-bold py-3 rounded-xl transition-colors duration-200 text-sm"
+                  className="block bg-brand hover:bg-brand-dark text-white font-bold py-3 rounded-xl transition-colors duration-200 text-sm text-center"
                 >
                   Bezpłatna konsultacja
                 </Link>
