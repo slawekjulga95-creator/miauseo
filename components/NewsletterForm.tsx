@@ -33,21 +33,19 @@ export default function NewsletterForm() {
 
   return (
     <div className="bg-ink rounded-2xl overflow-hidden">
-      {/* Zdjęcie */}
-      <div className="relative w-full h-64">
-        <Image
-          src="/slawomir.png"
-          alt="Sławomir"
-          fill
-          sizes="256px"
-          className="object-cover object-top"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink from-[15%] via-ink/10 via-[45%] to-transparent" />
-      </div>
+      {/* Zdjęcie — pełne, bez przycinania */}
+      <Image
+        src="/slawomir.png"
+        alt="Sławomir"
+        width={896}
+        height={1200}
+        sizes="256px"
+        className="w-full h-auto block"
+        priority
+      />
 
       {/* Treść */}
-      <div className="px-5 pb-5 -mt-2">
+      <div className="px-5 pb-5 pt-4">
         <p className="text-white font-bold text-base leading-tight">Sławomir</p>
         <p className="text-white/50 text-xs mt-0.5 mb-4">Konsultant SEO · MiauSEO</p>
 
