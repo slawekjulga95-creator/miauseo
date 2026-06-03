@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import NewsletterForm from "@/components/NewsletterForm";
 import { getPostBySlug, getPublishedPosts, formatDate } from "@/app/blog/posts";
 import type { Category } from "@/app/blog/posts";
 import { articleContent } from "@/app/blog/content";
@@ -364,6 +365,8 @@ export default async function BlogPostPage({ params }: Props) {
                   Bezpłatna konsultacja
                 </Link>
               </div>
+
+              <NewsletterForm />
 
               {/* Related / other posts */}
               {otherPosts.length > 0 && (
