@@ -19,9 +19,10 @@ export async function POST(req: NextRequest) {
     }),
   });
 
-  if (!res.ok && res.status !== 409) {
-    return NextResponse.json({ error: "Coś poszło nie tak. Spróbuj ponownie." }, { status: 500 });
+  // 200 = updated, 201 = created, 409 = already exists — wszystkie traktujemy jako sukces
+  if (res.status === 200 || res.status === 201 || res.status === 409) {
+    return NextResponse.json({ success: true });
   }
 
-  return NextResponse.json({ success: true });
+  return NextResponse.json({ error: "Coś poszło nie tak. Spróbuj ponownie." }, { status: 500 });
 }
