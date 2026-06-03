@@ -339,31 +339,14 @@ export default async function BlogPostPage({ params }: Props) {
             <div className="sticky top-28 space-y-6">
               {/* CTA */}
               <div className="bg-ink rounded-2xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Image
-                    src="/slawomir.png"
-                    alt="Sławomir Jułga"
-                    width={72}
-                    height={96}
-                    className="rounded-lg object-cover object-top shrink-0"
-                    style={{ height: 96, width: 72 }}
-                  />
-                  <div>
-                    <p className="text-white font-bold text-sm leading-tight">Sławomir Jułga</p>
-                    <p className="text-white/60 text-xs mt-0.5 leading-snug">Konsultant</p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white/50 hover:text-white transition-colors">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                      </a>
-                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white/50 hover:text-white transition-colors">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                      </a>
-                      <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-white/50 hover:text-white transition-colors">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <Image
+                  src="/logo.png"
+                  alt="MiauSEO"
+                  width={140}
+                  height={90}
+                  className="h-8 w-auto brightness-0 invert mb-3"
+                />
+                <p className="text-white font-bold text-base mb-4">Porozmawiajmy</p>
                 <div className="h-px bg-white/10 mb-4" />
                 <p className="text-zinc-300 text-xs leading-relaxed mb-2">
                   Nie działam według szablonów. Każdą współpracę zaczynam od poznania biznesu, analizy konkurencji i stworzenia <strong className="text-white">dopasowanej strategii marketingowej</strong>, która wspiera realny rozwój firmy.
