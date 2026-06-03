@@ -24,6 +24,7 @@ export const posts: Post[] = [
     date: "2026-06-03",
     readTime: 5,
     coverColor: "#4285F4",
+    coverImage: "/blog/cover-search-console-ai.svg",
     published: true,
   },
   {

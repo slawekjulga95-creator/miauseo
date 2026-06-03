@@ -85,6 +85,18 @@ export const articleContent: Record<string, React.ReactNode> = {
           <li><Link href="/jak-dobierac-slowa-kluczowe-do-pozycjonowania" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak dobierać słowa kluczowe do pozycjonowania</Link></li>
         </ul>
       </div>
+
+      <p className="text-xs text-zinc-400 mt-6">
+        Źródło:{" "}
+        <a
+          href="https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-brand transition-colors"
+        >
+          Google Search Central Blog — Search Generative AI Performance Reports (Hillel Maoz, Moshe Samet)
+        </a>
+      </p>
     </>
   ),
 
