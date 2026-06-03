@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
@@ -30,48 +31,62 @@ export default function NewsletterForm() {
     }
   }
 
-  if (status === "success") {
-    return (
-      <div className="border border-border rounded-2xl p-5 bg-surface">
-        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-2">Newsletter</p>
-        <p className="text-sm font-semibold text-ink mb-1">Jesteś na liście!</p>
-        <p className="text-xs text-zinc-500 leading-relaxed">Wysyłamy tylko wartościowe rzeczy — zero spamu.</p>
-      </div>
-    );
-  }
-
   return (
-    <div className="border border-border rounded-2xl p-5 bg-surface">
-      <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Newsletter</p>
-      <p className="text-sm font-semibold text-ink mb-1 leading-snug">
-        Bądź na bieżąco z SEO
-      </p>
-      <p className="text-xs text-zinc-500 leading-relaxed mb-4">
-        Nowe artykuły, zmiany w algorytmach Google i praktyczne wskazówki — prosto na skrzynkę.
-      </p>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-2">
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Twój adres e-mail"
-          required
-          className="w-full px-3 py-2.5 text-sm rounded-xl border border-border bg-white text-ink placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand transition-colors"
+    <div className="bg-ink rounded-2xl overflow-hidden">
+      {/* Zdjęcie */}
+      <div className="relative w-full h-56">
+        <Image
+          src="/slawomir.png"
+          alt="Sławomir Jułga"
+          fill
+          sizes="256px"
+          className="object-cover object-top"
+          priority
         />
-        <button
-          type="submit"
-          disabled={status === "loading"}
-          className="w-full bg-brand hover:bg-brand-dark disabled:opacity-60 text-white font-bold py-2.5 rounded-xl transition-colors duration-200 text-sm"
-        >
-          {status === "loading" ? "Zapisuję..." : "Zapisz się"}
-        </button>
-        {status === "error" && (
-          <p className="text-xs text-red-500">{msg}</p>
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
+      </div>
+
+      {/* Treść */}
+      <div className="px-5 pb-5 -mt-2">
+        <p className="text-white font-bold text-base leading-tight">Sławomir Jułga</p>
+        <p className="text-white/50 text-xs mt-0.5 mb-4">Konsultant SEO · MiauSEO</p>
+
+        {status === "success" ? (
+          <div className="bg-white/10 rounded-xl p-4 text-center">
+            <p className="text-white font-bold text-sm mb-1">Jesteś na liście!</p>
+            <p className="text-white/60 text-xs leading-relaxed">Wysyłamy tylko wartościowe rzeczy — zero spamu.</p>
+          </div>
+        ) : (
+          <>
+            <p className="text-zinc-300 text-xs leading-relaxed mb-4">
+              Zmiany w Google, praktyczne wskazówki SEO i case studies — prosto na Twoją skrzynkę. Bez lania wody.
+            </p>
+            <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Twój adres e-mail"
+                required
+                className="w-full px-3 py-2.5 text-sm rounded-xl border border-white/15 bg-white/10 text-white placeholder:text-white/35 focus:outline-none focus:ring-2 focus:ring-brand/50 focus:border-brand/50 transition-colors"
+              />
+              <button
+                type="submit"
+                disabled={status === "loading"}
+                className="w-full bg-brand hover:bg-brand-dark disabled:opacity-60 text-white font-bold py-2.5 rounded-xl transition-colors duration-200 text-sm"
+              >
+                {status === "loading" ? "Zapisuję..." : "Dołącz do newslettera"}
+              </button>
+              {status === "error" && (
+                <p className="text-xs text-red-400">{msg}</p>
+              )}
+            </form>
+            <p className="text-[10px] text-white/30 mt-2 text-center">
+              Możesz wypisać się w każdej chwili.
+            </p>
+          </>
         )}
-      </form>
-      <p className="text-[10px] text-zinc-400 mt-2 leading-relaxed">
-        Możesz wypisać się w każdej chwili. Zero spamu.
-      </p>
+      </div>
     </div>
   );
 }

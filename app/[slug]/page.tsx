@@ -338,6 +338,8 @@ export default async function BlogPostPage({ params }: Props) {
           {/* Sidebar */}
           <aside className="lg:w-64 shrink-0">
             <div className="sticky top-28 space-y-6">
+              <NewsletterForm />
+
               {/* CTA */}
               <div className="bg-ink rounded-2xl p-6">
                 <Image
@@ -365,8 +367,6 @@ export default async function BlogPostPage({ params }: Props) {
                   Bezpłatna konsultacja
                 </Link>
               </div>
-
-              <NewsletterForm />
 
               {/* Related / other posts */}
               {otherPosts.length > 0 && (
