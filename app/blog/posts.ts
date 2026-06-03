@@ -17,6 +17,16 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "google-search-console-raporty-ai-2026",
+    title: "Nowe raporty AI w Google Search Console — co mierzą i co to zmienia",
+    excerpt: "Google właśnie uruchomił dedykowane raporty widoczności w AI Overviews i AI Mode. Po raz pierwszy możesz zobaczyć, które strony trafiają do odpowiedzi generatywnych — ale bez danych o kliknięciach. Co to oznacza dla Twojej strategii SEO?",
+    category: "SEO",
+    date: "2026-06-03",
+    readTime: 5,
+    coverColor: "#4285F4",
+    published: true,
+  },
+  {
     slug: "pozycjonowanie-wizytowki-google",
     title: "Pozycjonowanie wizytówki Google – kompletny przewodnik 2026",
     excerpt: "Czym jest pozycjonowanie wizytówki Google, jak działa algorytm Local Pack i co zrobić, żeby Twoja firma znalazła się w top 3 Google Maps? Praktyczny przewodnik eksperta – bez lania wody.",

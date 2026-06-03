@@ -3,6 +3,92 @@ import Link from "next/link";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Google Search Console raporty AI 2026
+  ───────────────────────────────────────────────────────────────────────── */
+  "google-search-console-raporty-ai-2026": (
+    <>
+      <h2>Co właśnie ogłosił Google — i dlaczego to ważne</h2>
+      <p>
+        W czerwcu 2026 Google oficjalnie uruchomił dedykowane raporty widoczności w generatywnych funkcjach AI w Search Console. To odpowiedź na jedno z najczęściej zadawanych pytań przez właścicieli stron i specjalistów SEO: <strong>skąd mam wiedzieć, czy moja treść pojawia się w AI Overviews i AI Mode?</strong>
+      </p>
+      <p>
+        Do tej pory dane o widoczności w AI były wmieszane w ogólny raport wydajności — nie dało się ich wyizolować. Teraz dostają własny, oddzielny widok. To pierwsza tak duża zmiana w transparentności Search Console od lat i sygnał, że Google traktuje generatywne AI w wyszukiwaniu jako stały element, nie eksperyment.
+      </p>
+
+      <h2>Czym są raporty Search Generative AI?</h2>
+      <p>
+        Google uruchamia dwa nowe raporty: jeden dla wyników Search (AI Overviews, AI Mode) i drugi dla Discover. Oba działają jako oddzielne widoki wewnątrz Search Console — dane są też nadal dostępne w głównym raporcie wydajności, ale teraz możesz je przeglądać osobno, bez ręcznego filtrowania.
+      </p>
+      <p>
+        Raporty są wdrażane stopniowo — na start trafiają do wybranej grupy właścicieli stron, zanim rozszerzą się globalnie. Jeśli jeszcze nie widzisz ich w swoim Search Console, poczekaj kilka tygodni. Oficjalnie projekt zapowiedzieli Hillel Maoz (Search Ecosystem Engineering Manager) i Moshe Samet (Product Manager Lead, Search Console).
+      </p>
+
+      <h2>Co dokładnie możesz zmierzyć?</h2>
+      <p>
+        Każdy raport pokazuje pięć wymiarów danych. <strong>Impressions</strong> — ile razy Twój URL pojawił się w odpowiedzi generatywnej AI w Search lub Discover. <strong>Pages</strong> — które konkretne podstrony trafiają do AI. <strong>Countries</strong> — w jakich krajach Twoja strona jest widoczna w AI. <strong>Devices</strong> — na jakich urządzeniach to się dzieje (dostępne wyłącznie dla Search, nie dla Discover). <strong>Dates</strong> — granularność od godzinowej po miesięczną, żebyś mógł śledzić trendy w czasie i wychwytywać momenty, kiedy widoczność rośnie lub spada.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-amber-400 bg-amber-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">WAŻNE</p>
+        <p className="text-sm text-amber-900 leading-relaxed">
+          Raporty pokazują wyłącznie <strong>impressions — nie kliknięcia</strong>. Google świadomie nie udostępnia danych o tym, ile ruchu faktycznie przychodzi z AI Overviews czy AI Mode. Przedstawiciel Google potwierdził tylko tyle, że „pracują nad dodatkowymi metrykami w przyszłości". Na razie widzisz zasięg, ale nie ruch.
+        </p>
+      </div>
+
+      <h2>Brak kliknięć — dlaczego to problem i co z tym zrobić</h2>
+      <p>
+        To nie jest przeoczenie — to świadoma decyzja. AI Overviews i AI Mode są zaprojektowane tak, żeby odpowiadać na pytania bezpośrednio w wynikach wyszukiwania, bez zmuszania użytkownika do klikania w linki. Google doskonale zdaje sobie sprawę, że to generuje mniej kliknięć do stron zewnętrznych, i nie spieszy się z publikowaniem danych, które mogłyby to potwierdzić czarno na białym.
+      </p>
+      <p>
+        Dla właściciela strony oznacza to jedno: impressions w AI to na razie metryka zasięgu, nie ruchu. Możesz wiedzieć, że Google cytuje Twoją treść w odpowiedziach AI — ale czy to przynosi Ci klientów, tego Search Console jeszcze nie powie. To poważne ograniczenie dla każdego, kto próbuje uzasadnić inwestycję w content SEO na podstawie twardych liczb.
+      </p>
+
+      <h2>Blokowanie treści przed AI — masz już taką opcję</h2>
+      <p>
+        Przy okazji premiery raportów Google testuje w Wielkiej Brytanii osobną funkcję: toggle w Search Console, który pozwala zablokować swoją treść przed pojawianiem się w AI Overviews, AI Mode i generatywnym AI w Discover. Strony, które zdecydują się na wyłączenie, przestają otrzymywać impressions z tych funkcji.
+      </p>
+      <p>
+        Google zapewnia, że ta decyzja <strong>nie wpłynie na pozycje w klasycznych wynikach wyszukiwania</strong> — blokada dotyczy wyłącznie funkcji generatywnych AI. Kiedy toggle pojawi się globalnie, stoisz przed realnym wyborem: wolisz być cytowany w AI bez gwarancji ruchu, czy całkowicie z tego zrezygnować i liczyć wyłącznie na klasyczne wyniki organiczne?
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-amber-400 bg-amber-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">WAŻNE</p>
+        <p className="text-sm text-amber-900 leading-relaxed">
+          Blokowanie treści przed AI jest testowane w UK i nie jest jeszcze dostępne globalnie. Zanim zdecydujesz się je włączyć — przeanalizuj najpierw dane z raportów impressions. Jeśli AI Overviews generuje Ci widoczność na frazy, które inaczej byłyby poza Twoim zasięgiem, blokada może przynieść więcej szkody niż pożytku.
+        </p>
+      </div>
+
+      <h2>Co to zmienia w strategii SEO — 3 wnioski na teraz</h2>
+      <p>
+        <strong>Zacznij monitorować impressions z AI</strong> od momentu, gdy dostaniesz dostęp do raportów. To dane historyczne, które za 6 miesięcy pokażą Ci, czy Twoja widoczność w AI rośnie czy maleje. Nie mając baseline'u teraz, nie będziesz miał punktu odniesienia za rok — a większość Twojej konkurencji też go nie będzie mieć.
+      </p>
+      <p>
+        <strong>Sprawdź, które strony trafiają do AI.</strong> Jeśli w raporcie Pages zobaczysz podstrony z wysokimi impressions w AI, to sygnał, że ta treść jest przez Google uznawana za wiarygodną i pełną odpowiedź na konkretne pytania. Zidentyfikuj, co te strony mają wspólnego, i powtórz ten schemat w nowych tekstach.
+      </p>
+      <p>
+        <strong>Nie mierz sukcesu wyłącznie przez ruch organiczny.</strong> Obecność w AI Overviews to element budowania świadomości marki — szczególnie dla lokalnych firm, gdzie pojawienie się w odpowiedzi AI na pytanie „kto robi X w moim mieście" może być równie wartościowe co kliknięcie. Połącz dane z Search Console z innymi sygnałami: zapytaniami bezpośrednimi, rosnącą liczbą wejść branded, telefonami z Google Maps.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        Google po raz pierwszy daje właścicielom stron konkretne dane o widoczności w generatywnym AI. To dobra zmiana — choć niepełna, bo brak danych o kliknięciach to realna luka. Impressions to dopiero pierwszy krok, ale lepszy niż operowanie w ciemno.
+      </p>
+      <p>
+        Obserwuj, kiedy raporty pojawią się w Twoim Search Console, ustaw regularne monitorowanie i zacznij zbierać dane. Za rok będziesz mieć trendlinię — i przewagę nad tymi, którzy zaczęli patrzeć na te liczby rok za późno.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/pozycjonowanie-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Pozycjonowanie wizytówki Google – kompletny przewodnik 2026</Link></li>
+          <li><Link href="/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026 — pełna lista</Link></li>
+          <li><Link href="/jak-dobierac-slowa-kluczowe-do-pozycjonowania" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak dobierać słowa kluczowe do pozycjonowania</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      WIZYTÓWKA: Kategorie
   ───────────────────────────────────────────────────────────────────────── */
   "kategorie-wizytowka-google": (
