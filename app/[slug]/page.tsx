@@ -349,13 +349,13 @@ export default async function BlogPostPage({ params }: Props) {
                 <p className="text-white font-bold text-base mb-4">Porozmawiajmy</p>
                 <div className="h-px bg-white/10 mb-4" />
                 <p className="text-zinc-300 text-xs leading-relaxed mb-2">
-                  Nie działam według szablonów. Każdą współpracę zaczynam od poznania biznesu, analizy konkurencji i stworzenia <strong className="text-white">dopasowanej strategii marketingowej</strong>, która wspiera realny rozwój firmy.
+                  Nie działamy według szablonów. Każdą współpracę zaczynamy od poznania biznesu, analizy konkurencji i stworzenia <strong className="text-white">dopasowanej strategii marketingowej</strong>, która wspiera realny rozwój firmy.
                 </p>
                 <p className="text-zinc-300 text-xs leading-relaxed mb-2">
-                  Dbam o to, aby Twoja marka była widoczna tam, gdzie klienci szukają usług i produktów. <strong className="text-white">Optymalizuję obecność w Google</strong>, zwiększam liczbę wartościowych zapytań i pomagam budować <strong className="text-white">przewagę nad konkurencją</strong>.
+                  Dbamy o to, aby Twoja marka była widoczna tam, gdzie klienci szukają usług i produktów. <strong className="text-white">Optymalizujemy obecność w Google</strong>, zwiększamy liczbę wartościowych zapytań i pomagamy budować <strong className="text-white">przewagę nad konkurencją</strong>.
                 </p>
                 <p className="text-zinc-300 text-xs leading-relaxed mb-4">
-                  Bez obietnic szybkich cudów. Zamiast tego stawiam na <strong className="text-white">sprawdzone działania</strong>, transparentną współpracę i wyniki, które przekładają się na <strong className="text-white">większą liczbę klientów</strong> oraz wzrost sprzedaży.
+                  Bez obietnic szybkich cudów. Zamiast tego stawiamy na <strong className="text-white">sprawdzone działania</strong>, transparentną współpracę i wyniki, które przekładają się na <strong className="text-white">większą liczbę klientów</strong> oraz wzrost sprzedaży.
                 </p>
                 <Link
                   href="/kontakt"
