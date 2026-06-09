@@ -19,7 +19,9 @@ export async function POST(req: NextRequest) {
     }),
   });
 
-  // 200 = updated, 201 = created, 409 = already exists — wszystkie traktujemy jako sukces
+  const body = await res.json().catch(() => ({}));
+  console.log("[subscribe] status:", res.status, "body:", JSON.stringify(body));
+
   if (res.status === 200 || res.status === 201 || res.status === 409) {
     return NextResponse.json({ success: true });
   }
