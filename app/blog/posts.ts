@@ -17,6 +17,17 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "claude-code-skills-jak-dzialaja",
+    title: "Claude Code Skills — czym są, jak działają i jak napisać własny skill od zera",
+    excerpt: "Skills to jeden z najmocniejszych, a zarazem najmniej znanych mechanizmów Claude Code. Pozwalają zapisać cały workflow — od uruchamiania aplikacji po review kodu — jako komendę slash i odtwarzać go jednym wpisem. Kompletny przewodnik dla programistów i agencji.",
+    category: "Sztuczna Inteligencja",
+    date: "2026-06-08",
+    readTime: 12,
+    coverColor: "#0ea5e9",
+    coverImage: "/blog/cover-claude-code-skills.svg",
+    published: true,
+  },
+  {
     slug: "jak-podpiac-domene-vercel-claude-code",
     title: "Jak podpiąć domenę pod stronę z Claude Code — Vercel, GitHub i darmowa baza danych krok po kroku",
     excerpt: "Zrobiłeś stronę w Claude Code i chcesz ją opublikować pod własną domeną? Ten przewodnik przeprowadzi Cię przez cały proces — od pierwszego commita na GitHub, przez deploy na Vercel, po konfigurację DNS i darmową bazę danych. Zero wiedzy technicznej wymagane.",

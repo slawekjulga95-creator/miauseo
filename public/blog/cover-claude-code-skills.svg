@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1a2e"/>
+      <stop offset="100%" style="stop-color:#0f2744"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="65%" cy="45%" r="50%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="15%" cy="75%" r="35%">
+      <stop offset="0%" style="stop-color:#FF6A00;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#FF6A00;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Grid -->
+  <g stroke="#0ea5e9" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+
+  <!-- Terminal window (right side) -->
+  <rect x="660" y="130" width="470" height="340" rx="14" fill="#0d1f33" opacity="0.85"/>
+  <rect x="660" y="130" width="470" height="42" rx="14" fill="#1a3a5c" opacity="0.9"/>
+  <rect x="660" y="158" width="470" height="14" fill="#1a3a5c" opacity="0.9"/>
+  <circle cx="690" cy="151" r="7" fill="#ef4444" opacity="0.8"/>
+  <circle cx="714" cy="151" r="7" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="738" cy="151" r="7" fill="#22c55e" opacity="0.8"/>
+
+  <!-- Terminal text lines -->
+  <text x="688" y="202" font-family="monospace" font-size="14" fill="#38bdf8">$ /run</text>
+  <text x="688" y="224" font-family="monospace" font-size="13" fill="#475569">Launching skill: run</text>
+  <text x="688" y="246" font-family="monospace" font-size="13" fill="#22c55e">✓ HTTP 200 — server ready</text>
+
+  <text x="688" y="282" font-family="monospace" font-size="14" fill="#38bdf8">$ /code-review high</text>
+  <text x="688" y="304" font-family="monospace" font-size="13" fill="#475569">Launching skill: code-review</text>
+  <text x="688" y="326" font-family="monospace" font-size="13" fill="#fbbf24">⚠ 2 findings — medium severity</text>
+
+  <text x="688" y="362" font-family="monospace" font-size="14" fill="#38bdf8">$ /security-review</text>
+  <text x="688" y="384" font-family="monospace" font-size="13" fill="#22c55e">✓ No critical issues found</text>
+
+  <text x="688" y="420" font-family="monospace" font-size="14" fill="#38bdf8">$ /ship-check</text>
+  <text x="688" y="442" font-family="monospace" font-size="13" fill="#475569">Running custom skill...</text>
+
+  <!-- Cursor blink -->
+  <rect x="688" y="450" width="8" height="16" fill="#38bdf8" opacity="0.7"/>
+
+  <!-- Category badge -->
+  <rect x="80" y="80" width="280" height="36" rx="18" fill="#0284c7" opacity="0.9"/>
+  <text x="220" y="103" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1.5">SZTUCZNA INTELIGENCJA</text>
+
+  <!-- Headline -->
+  <text x="80" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800" fill="white" letter-spacing="-1.5">Claude Code</text>
+  <text x="80" y="266" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800" fill="#38bdf8" letter-spacing="-1.5">Skills</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="326" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#7dd3fc" font-weight="400">Jak działają i jak napisać własny od zera</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="358" x2="520" y2="358" stroke="#0284c7" stroke-width="2" opacity="0.5"/>
+
+  <!-- Feature tags -->
+  <rect x="80" y="378" width="100" height="28" rx="6" fill="#0c1a2e" stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="130" y="397" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle">/run</text>
+
+  <rect x="192" y="378" width="130" height="28" rx="6" fill="#0c1a2e" stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="257" y="397" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle">/code-review</text>
+
+  <rect x="334" y="378" width="130" height="28" rx="6" fill="#0c1a2e" stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="399" y="397" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#22c55e" text-anchor="middle">/ship-check</text>
+
+  <rect x="80" y="418" width="100" height="28" rx="6" fill="#0c1a2e" stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="130" y="437" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle">/simplify</text>
+
+  <rect x="192" y="418" width="130" height="28" rx="6" fill="#0c1a2e" stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="257" y="437" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#f87171" text-anchor="middle">/security-review</text>
+
+  <!-- Date + meta -->
+  <text x="80" y="540" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#334155" font-weight="500">12 min czytania — 8 czerwca 2026</text>
+
+  <!-- MiauSEO -->
+  <rect x="80" y="562" width="110" height="32" rx="6" fill="#0284c7" opacity="0.25"/>
+  <text x="135" y="583" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#38bdf8" text-anchor="middle">MiauSEO</text>
+</svg>

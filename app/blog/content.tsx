@@ -7287,6 +7287,175 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   ),
 
   /* ─────────────────────────────────────────────────────────────────────────
+     SZTUCZNA INTELIGENCJA: Claude Code Skills
+  ───────────────────────────────────────────────────────────────────────── */
+  "claude-code-skills-jak-dzialaja": (
+    <>
+      <h2>Czym są Skills w Claude Code i dlaczego zmieniają sposób pracy</h2>
+      <p>
+        Jeśli używasz Claude Code jako codziennego narzędzia do programowania, w pewnym momencie zaczynasz powtarzać te same instrukcje. „Uruchom serwer developerski i sprawdź czy strona działa." „Zrób review tego diffa pod kątem błędów bezpieczeństwa." „Przejrzyj historię commitów i powiedz co zostało zmienione." Skills to mechanizm, który pozwala zamknąć taki workflow w jedną komendę slash — <code>/run</code>, <code>/code-review</code>, <code>/security-review</code> — i wywoływać go jednym wpisem zamiast za każdym razem tłumaczyć Claude'owi od nowa, co ma robić.
+      </p>
+      <p>
+        Skill to w gruncie rzeczy plik tekstowy w formacie Markdown przechowywany w folderze <code>.claude/skills/</code>. Nie ma w nim magii — tylko dobrze napisana instrukcja dla modelu, co ma zrobić, gdy wywołasz daną komendę. Siła tkwi w tym, że ta instrukcja może być bardzo precyzyjna, uwzględniać specyficzny stack technologiczny projektu, dostęp do konkretnych narzędzi i kroków które Claude musi wykonać w odpowiedniej kolejności. Raz napisany skill działa jak żywy playbook — powtarzalny, przewidywalny, łatwy do poprawienia.
+      </p>
+      <p>
+        Skills istnieją na dwóch poziomach. Skille wbudowane (built-in) to te, które Anthropic dostarcza razem z Claude Code — od <code>/run</code> przez <code>/code-review</code> po <code>/init</code>. Skille projektowe to własne pliki SKILL.md tworzone w repozytorium, specyficzne dla danej aplikacji lub zespołu. Oba typy działają dokładnie tak samo — różni je tylko to, kto je napisał i gdzie są przechowywane.
+      </p>
+
+      <h2>Wbudowane skills Claude Code — pełna lista z opisem</h2>
+      <p>
+        Claude Code przychodzi z zestawem gotowych skills pokrywających najczęstsze potrzeby przy pracy z kodem. Warto je znać, zanim zaczniesz pisać własne — często okazuje się, że to czego szukasz już istnieje.
+      </p>
+      <p>
+        <strong>/run</strong> — uruchamia aplikację i weryfikuje czy zmiana działa w praktyce. Skill szuka najpierw pliku SKILL.md w repozytorium opisującego jak odpalić projekt, a jeśli go nie ma — sam rozpoznaje typ aplikacji (serwer, CLI, Electron, przeglądarka) i dobiera odpowiednią metodę. Kończy się zrzutem ekranu lub analizą outputu, nie tylko komunikatem „serwer uruchomiony". Użyj go gdy chcesz mieć pewność że zmiana działa zanim ją commitujesz.
+      </p>
+      <p>
+        <strong>/code-review</strong> — przegląda aktualny diff pod kątem błędów, uproszczeń i problemów z wydajnością. Przyjmuje opcjonalne parametry: poziom dokładności (low, medium, high, ultra) oraz flagi <code>--comment</code> (dodaje komentarze inline do PR) i <code>--fix</code> (automatycznie nanosi poprawki na pliki). Tryb <code>ultra</code> używa wielu agentów do równoległego przeglądu — najdokładniejszy, ale też najwolniejszy.
+      </p>
+      <p>
+        <strong>/security-review</strong> — dedykowany przegląd bezpieczeństwa zmian na bieżącym branchu. Skupia się na podatnościach OWASP Top 10 — SQL injection, XSS, command injection, insecure deserialization, broken authentication. Zwraca listę konkretnych znalezisk z lokalizacją w kodzie.
+      </p>
+      <p>
+        <strong>/simplify</strong> — szuka w zmienionym kodzie miejsc do uproszczenia, usunięcia duplikacji i poprawy czytelności bez zmiany funkcjonalności. Nie poluje na bugi — od tego jest <code>/code-review</code>. Nanosi znalezione poprawki automatycznie.
+      </p>
+      <p>
+        <strong>/verify</strong> — uruchamia aplikację i weryfikuje, że konkretna zmiana zachowuje się tak jak powinna. Przydatny gdy chcesz potwierdzić że fix naprawdę naprawił problem zanim go wypchniesz.
+      </p>
+      <p>
+        <strong>/init</strong> — tworzy plik <code>CLAUDE.md</code> z dokumentacją projektu. Przeskanuje strukturę repozytorium, przeczyta kluczowe pliki konfiguracyjne i wygeneruje zwięzły dokument opisujący stack, konwencje i specyficzne wymagania. Ten plik jest automatycznie ładowany do kontekstu Claude'a przy każdej sesji — raz stworzony, eliminuje konieczność wyjaśniania projektu od nowa.
+      </p>
+      <p>
+        <strong>/loop</strong> — wykonuje zadanie cyklicznie w zadanym interwale. Przydatny do monitorowania deployu, polling statusu CI, automatycznego sprawdzania czy testy przechodzą po zmianach. Wywołujesz go jako <code>/loop 5m /code-review</code> — co 5 minut robi review zmian.
+      </p>
+      <p>
+        <strong>/schedule</strong> — tworzy zaplanowane zadania wykonywane przez zdalnych agentów według harmonogramu cron. W odróżnieniu od <code>/loop</code> działa bez otwartej sesji — zadanie jest rejestrowane i wykonuje się autonomicznie o wskazanej godzinie.
+      </p>
+      <p>
+        <strong>/update-config</strong> — konfiguruje plik <code>settings.json</code> Claude Code: hooki, uprawnienia, zmienne środowiskowe. Używasz go gdy chcesz ustawić automatyczne zachowania — „przed każdym commitem uruchom linter" albo „pozwól na npm bez pytania o zgodę".
+      </p>
+      <p>
+        <strong>/claude-api</strong> — reference dla Anthropic API i SDK. Wymagany gdy pracujesz z API Claude'a w kodzie — zawiera aktualne identyfikatory modeli, parametry, przykłady streamingu, tool use i multi-agent. Skill sam się ładuje gdy wykryje że pytanie dotyczy integracji z API Anthropica.
+      </p>
+
+      <h2>Jak wywołać skill — składnia i argumenty</h2>
+      <p>
+        Wywołanie skilla jest proste: wpisujesz <code>/nazwa-skilla</code> w prompcie Claude Code. Większość skillów przyjmuje opcjonalne argumenty po spacji — <code>/code-review high</code>, <code>/code-review ultra --fix</code>, <code>/loop 2m /run</code>. Argumenty są opisane w pliku SKILL.md każdego skilla, ale nie musisz ich znać na pamięć — Claude Code podpowie co jest dostępne jeśli wpiszesz sam <code>/code-review</code> bez nic.
+      </p>
+      <p>
+        Skille są ładowane leniwie — ich pełna definicja trafia do kontekstu dopiero w momencie wywołania. Oznacza to, że samo istnienie 20 skillów w projekcie nie zajmuje miejsca w oknie kontekstu zanim ich nie użyjesz. To ważne przy długich sesjach gdzie kontekst jest cenny.
+      </p>
+
+      <h2>Struktura pliku SKILL.md — co musi zawierać własny skill</h2>
+      <p>
+        Każdy skill to plik Markdown z metadanymi YAML frontmatter i treścią będącą instrukcją dla modelu. Plik ląduje w <code>.claude/skills/nazwa-skilla/SKILL.md</code>. Nazwa folderu staje się nazwą komendy slash.
+      </p>
+      <p>
+        Frontmatter wymaga pola <code>description</code> — jednozdaniowy opis tego co skill robi. Ten opis pojawia się gdy Claude Code wyświetla listę dostępnych skillów i jest używany do decydowania czy skill pasuje do danego zapytania. Im bardziej precyzyjny opis, tym trafniejsze automatyczne sugestie.
+      </p>
+      <p>
+        Treść pliku to instrukcja pisana tak jak piszesz system prompt dla modelu — w naturalnym języku, precyzyjnie, z przykładami jeśli są potrzebne. Możesz w niej odwoływać się do innych plików przez ich ścieżkę, opisywać kroki do wykonania, definiować format outputu i warunki sukcesu. Dobry skill jest samowystarczalny — nowy agent startujący bez żadnego kontekstu sesji powinien być w stanie go wykonać wyłącznie na podstawie treści pliku.
+      </p>
+      <p>
+        Jedna zasada: skill powinien być napisany zakładając, że model <strong>nie widzi historii rozmowy</strong>. Skills są często wykonywane przez świeże instancje agentów — bez kontekstu sesji, bez pamięci poprzednich kroków. Wszystko czego skill potrzebuje musi być albo zawarte w jego treści, albo możliwe do odkrycia przez odczytanie plików z dysku.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-sky-400 bg-sky-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-2">PRZYKŁAD STRUKTURY PLIKU</p>
+        <p className="text-sm text-sky-900 font-mono leading-relaxed whitespace-pre-wrap">{`---
+description: Uruchamia serwer dev i weryfikuje stronę główną w przeglądarce
+---
+
+## Jak uruchomić ten projekt
+
+1. Sprawdź package.json i znajdź komendę dev
+2. Uruchom serwer w tle (npm run dev)
+3. Poczekaj aż port 3000 odpowie HTTP 200
+4. Otwórz stronę główną i zrób screenshot
+5. Opisz co widać — czy strona wygląda poprawnie`}</p>
+      </div>
+
+      <h2>Skille projektowe vs. skille użytkownika — gdzie trzymać co</h2>
+      <p>
+        Skille dzielą się na dwa zasięgi: projektowy i użytkownika. Skille projektowe mieszkają w <code>.claude/skills/</code> wewnątrz repozytorium — są commitowane razem z kodem i dostępne dla każdego, kto pracuje na tym repo. To właściwe miejsce dla skillów specyficznych dla projektu: jak go uruchomić, jak deployować na staging, jak uruchomić testy integracyjne, jak seedować bazę danych.
+      </p>
+      <p>
+        Skille użytkownika mieszkają w <code>~/.claude/skills/</code> w katalogu domowym — są dostępne we wszystkich projektach na danej maszynie, niezależnie od repozytorium. To właściwe miejsce dla osobistych preferencji i narzędzi: ulubiony format code review, skrót do generowania changelog, workflow commitowania zgodny z konwencjami których używasz w każdym projekcie.
+      </p>
+      <p>
+        Przy konflikcie nazw — jeśli masz skill o tej samej nazwie zarówno na poziomie projektu jak i użytkownika — wygrywa skill projektowy. To deliberatna decyzja: projekt powinien być w stanie nadpisać zachowanie globalne kiedy tego wymaga.
+      </p>
+
+      <h2>Jak napisać własny skill od zera — praktyczny przykład</h2>
+      <p>
+        Wyobraź sobie, że pracujesz nad projektem Next.js z Supabase i za każdym razem gdy kończysz nową funkcjonalność, musisz: sprawdzić czy build przechodzi, zweryfikować typy TypeScript, uruchomić serwer i kliknąć przez nową funkcję w przeglądarce, a na końcu napisać commit message. To pięć kroków które powtarzasz dziesiątki razy w tygodniu. Idealny kandydat na skill.
+      </p>
+      <p>
+        Tworzysz plik <code>.claude/skills/ship-check/SKILL.md</code>. W frontmatter wpisujesz <code>description: Przed commitem — sprawdź build, typy i zweryfikuj nową funkcję w przeglądarce</code>. W treści opisujesz kolejno: uruchom <code>npm run build</code> i sprawdź czy nie ma błędów, uruchom <code>npx tsc --noEmit</code> i sprawdź błędy TypeScript, odpal serwer dev i otwórz URL funkcji której dotyczy zmiana, zrób screenshot i opisz co widzisz, zaproponuj commit message zgodny z konwencją projektu z pliku <code>CLAUDE.md</code>.
+      </p>
+      <p>
+        Od tej chwili wpisujesz <code>/ship-check</code> i cały ten workflow odpala się automatycznie. Jeśli build wywali się na błędzie TypeScript — skill zatrzyma się i pokaże Ci dokładnie co jest nie tak, zanim zmarnujesz czas na manualny testing. Jeśli wszystko przejdzie — dostaniesz gotowy commit message.
+      </p>
+
+      <h2>Generator skillów — /run-skill-generator</h2>
+      <p>
+        Claude Code ma wbudowany generator skillów. Jeśli ręcznie wykonałeś jakiś proces — uruchomiłeś aplikację przez kilka nieoczywistych kroków, zainstalowałeś zależności systemowe, ustawiłeś zmienne środowiskowe — i chcesz go zautomatyzować, możesz wywołać <code>/run-skill-generator</code>. Claude przeanalizuje co zrobiłeś w tej sesji i zaproponuje plik SKILL.md, który odtworzy ten proces przy przyszłych wywołaniach.
+      </p>
+      <p>
+        Generator jest szczególnie cenny przy projektach z niestandardowym środowiskiem — specyficznymi wersjami Node, zewnętrznymi zależnościami binarnymi, konfiguracją wymaganą przed uruchomieniem. Zamiast dokumentować to w README (który nikt nie czyta), zamieniasz to w skill który Claude wykona sam.
+      </p>
+
+      <h2>Skills a CLAUDE.md — różnica której nie wolno mylić</h2>
+      <p>
+        CLAUDE.md i skills to dwa różne mechanizmy służące różnym celom, choć często są mylone. <code>CLAUDE.md</code> to dokumentacja projektu — opisuje stack, konwencje, strukturę folderów, zasady które Claude ma zawsze respektować. Jest ładowany automatycznie do kontekstu przy każdej sesji i działa jako stały system prompt. Nie zawiera kroków do wykonania — zawiera kontekst i reguły.
+      </p>
+      <p>
+        Skill to workflow — sekwencja kroków do wykonania na żądanie. Nie jest ładowany automatycznie, nie zajmuje kontekstu dopóki go nie wywołasz, i jest zaprojektowany pod konkretną akcję, nie pod ciągłe tło. Dobra zasada: jeśli chcesz żeby Claude coś <em>wiedział</em> — CLAUDE.md. Jeśli chcesz żeby coś <em>zrobił</em> na komendę — skill.
+      </p>
+      <p>
+        W praktyce te dwa mechanizmy uzupełniają się: skill może odwoływać się do CLAUDE.md jako źródła informacji o projekcie, a CLAUDE.md może wskazywać na skille jako właściwy sposób wykonania typowych operacji.
+      </p>
+
+      <h2>Skills w pracy zespołowej — jak standaryzować workflow agencji lub zespołu</h2>
+      <p>
+        Najcenniejsze zastosowanie skillów projektowych to standaryzacja workflow w zespole. Zamiast tłumaczyć każdemu nowemu deweloperowi jak uruchomić projekt, jak robić deploy na staging, jak formatować commit messages — te rzeczy żyją w plikach SKILL.md w repozytorium. Każdy ma do nich dostęp, każdy wywołuje je tak samo, każdy dostaje ten sam rezultat.
+      </p>
+      <p>
+        Dla agencji tworzących wiele projektów podobnego typu — np. sklepy Next.js z Supabase — skille użytkownika pozwalają przenieść sprawdzone wzorce między projektami. Skill do audytu bezpieczeństwa, skill do optymalizacji Core Web Vitals, skill do generowania sitemapy — raz napisany, działa w każdym nowym projekcie bez żadnej konfiguracji.
+      </p>
+      <p>
+        Skills można też używać w połączeniu z <code>/loop</code> i <code>/schedule</code> do tworzenia autonomicznych agentów monitorujących. Skill sprawdzający czy deploy na Vercelu przeszedł pomyślnie, uruchamiany co 5 minut po pushu, jest prostą formą CI bez żadnej zewnętrznej infrastruktury.
+      </p>
+
+      <h2>Najczęstsze błędy przy pisaniu własnych skillów</h2>
+      <p>
+        Pierwsza i najczęstsza pomyłka to zakładanie kontekstu sesji. Skill napisany jako „kontynuuj to co robiliśmy" zawiedzie gdy będzie wykonywany przez świeżego agenta. Każdy skill musi opisywać co ma zrobić od początku, bez polegania na tym, co padło wcześniej w rozmowie.
+      </p>
+      <p>
+        Drugi błąd to zbyt ogólny opis w frontmatter. <code>description: robi różne rzeczy z kodem</code> jest bezużyteczny — Claude Code nie będzie wiedział kiedy go zaproponować, a użytkownik nie będzie wiedział kiedy go wywołać. Opis powinien zaczynać się od czasownika i jasno mówić co skill robi w jednym zdaniu.
+      </p>
+      <p>
+        Trzeci błąd to skill który próbuje robić za dużo. Skill łączący deployment, testy, review kodu i aktualizację dokumentacji to skill, który zawiedzie w połowie i zostawi projekt w nieokreślonym stanie. Lepiej mieć cztery małe, niezależne skille niż jeden wielki. Małe skille są łatwiejsze do debugowania, łatwiejsze do ponownego użycia i łatwiejsze do poprawienia kiedy jeden krok zmienia się.
+      </p>
+
+      <h2>Podsumowanie — kiedy warto pisać własny skill</h2>
+      <p>
+        Skill warto napisać gdy wykonujesz tę samą sekwencję kroków trzeci raz. Nie wcześniej — przedwczesna automatyzacja to strata czasu, bo nie wiesz jeszcze jak dokładnie ten workflow powinien wyglądać. Ale przy trzecim powtórzeniu wzorzec jest już wyraźny i pisanie skilla zajmie mniej czasu niż sumują się przyszłe powtórzenia.
+      </p>
+      <p>
+        Skills nie zastępują znajomości narzędzi — Claude nadal musi mieć dostęp do terminala, plików i przeglądarki żeby skill działał. Ale zamieniają wiedzę o projekcie w coś wykonywalnego i powtarzalnego — i to jest ich prawdziwa wartość. Nie oszczędzają jednej minuty dziś. Oszczędzają pięć minut każdego dnia przez następne miesiące.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/jak-podpiac-domene-vercel-claude-code" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak podpiąć domenę pod stronę z Claude Code — Vercel, GitHub krok po kroku</Link></li>
+          <li><Link href="/claude-fable-5-mythos-5-anthropic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Claude Fable 5 i Mythos 5 — najmocniejszy model Anthropic w historii</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SZTUCZNA INTELIGENCJA: Jak podpiąć domenę — Vercel, GitHub, baza danych
   ───────────────────────────────────────────────────────────────────────── */
   "jak-podpiac-domene-vercel-claude-code": (
