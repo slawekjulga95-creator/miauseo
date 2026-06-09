@@ -7287,6 +7287,164 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   ),
 
   /* ─────────────────────────────────────────────────────────────────────────
+     REFERENCJE: Serwis telefonów Poznań
+  ───────────────────────────────────────────────────────────────────────── */
+  "serwis-telefonow-poznan-case-study": (
+    <>
+      <h2>Punkt startowy — dobry serwis, niewidoczny w Google</h2>
+      <p>
+        Klient prowadzi serwis telefonów i elektroniki w centrum Poznania od kilku lat. Fachowiec z opinią — stali klienci wracają, polecają znajomym. Problem w tym, że w Google praktycznie nie istniał. Wizytówka Google Business Profile była założona, ale nigdy porządnie uzupełniona. Zdjęcia sprzed dwóch lat, opis z jednego zdania, kategoria ustawiona nieprecyzyjnie. W Local Pack na frazy takie jak „serwis telefonów Poznań" czy „naprawa iPhone Poznań" pojawiały się sieci i punkty z liczbą opinii liczoną w setkach.
+      </p>
+      <p>
+        Kiedy zaczęliśmy współpracę, klient miał 23 opinie i średnią 4,6. Liczba odwiedzin z wizytówki wynosiła 122 miesięcznie. Ruch przychodził głównie z bezpośrednich wyszukań nazwy firmy — czyli od osób, które już go znały. Nowych klientów przez Google było jak na lekarstwo.
+      </p>
+
+      <h2>Co zrobiliśmy w pierwszych 30 dniach</h2>
+      <p>
+        Pierwsza rzecz to audyt i poprawka samej wizytówki. Zmieniliśmy kategorię główną na „Sklep z telefonami komórkowymi" z kilkoma kategoriami dodatkowymi dokładnie opisującymi usługi — naprawa ekranów, wymiana baterii, odblokowanie. Uzupełniliśmy wszystkie pola, których wcześniej nie było: godziny otwarcia z dokładnymi przerwami, numer telefonu kliknięcia, link do strony, obszar usług. Napisaliśmy nowy opis firmy pod konkretne frazy lokalne — nie marketingowy bełkot, tylko zdania odpowiadające na pytania, które klienci wpisują w Google.
+      </p>
+      <p>
+        Następnie zdjęcia. Stare zastąpiliśmy nowymi — wnętrze serwisu, stanowisko naprawy, gotowe urządzenia. Kluczowe było dodanie zdjęć z geolokalizacją i opisami alt zawierającymi miasto i usługę. Nie brzmi spektakularnie, ale Google traktuje aktywność na zdjęciach jako sygnał zaangażowania właściciela.
+      </p>
+      <p>
+        Trzeci front to opinie. Wdrożyliśmy prosty system zbierania recenzji po naprawie — klient odbiera telefon, pracownik wysyła SMS z linkiem do wystawienia opinii. Żadnych próśb z wyprzedzeniem, żadnych nagród za opinię — tylko właściwy moment i usunięcie bariery wejścia. W ciągu miesiąca przybyło 19 nowych opinii, średnia utrzymała się na poziomie 4,7.
+      </p>
+      <p>
+        Czwarty element to posty GBP — cotygodniowe aktualizacje z informacjami o najczęstszych naprawach, cenach orientacyjnych i czasie realizacji. To nie content marketing — to sygnał dla algorytmu, że profil jest aktywnie zarządzany.
+      </p>
+
+      <h2>Wyniki po 30 dniach — 154 wizyty, wzrost 26,2%</h2>
+      <p>
+        Po pierwszym miesiącu liczba odwiedzin z wizytówki Google wzrosła do 154 — wzrost o 26,2% w stosunku do analogicznego okresu rok wcześniej. Co ważniejsze: zmieniła się struktura ruchu. Wizyty z wyszukiwań bezpośrednich (ludzi szukających nazwy firmy) pozostały na podobnym poziomie. Cały wzrost wygenerowały wyszukiwania odkrywcze — ludzie szukający „naprawa telefonu Poznań" i podobnych fraz, którzy trafili na serwis po raz pierwszy.
+      </p>
+      <p>
+        Liczba połączeń telefonicznych z wizytówki wzrosła o 34%. Klient odnotował, że pytania przez telefon przed wizytą są teraz bardziej konkretne — klienci przychodzą po konkretną naprawę, nie żeby „zapytać co się da zrobić". To efekt dobrze napisanego opisu usług i aktualnych postów z cenami orientacyjnymi.
+      </p>
+
+      <h2>Czego ten case uczy o pozycjonowaniu lokalnym</h2>
+      <p>
+        Serwis telefonów to branża z ogromną konkurencją w każdym dużym mieście. Wygrywanie w niej nie wymaga jednak dużego budżetu — wymaga pełnego, aktywnie zarządzanego profilu GBP i systematycznego zbierania opinii. Sieci mają przewagę liczby lokalizacji, ale lokalny punkt może mieć przewagę autentyczności, szybkości odpowiedzi i dokładności danych. Google premiuje profile, których informacje są spójne, aktualne i szczegółowe. Większość konkurencji tego nie robi — i to jest przewaga, którą można przejąć.
+      </p>
+
+      <div className="not-prose mt-8 rounded-2xl border border-border bg-surface p-6">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Wyniki po 30 dniach</p>
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <div><p className="text-3xl font-black text-ink">154</p><p className="text-xs text-zinc-500 mt-1">wizyty z wizytówki Google</p></div>
+          <div><p className="text-3xl font-black text-emerald-600">+26,2%</p><p className="text-xs text-zinc-500 mt-1">wzrost rok do roku</p></div>
+          <div><p className="text-3xl font-black text-ink">+19</p><p className="text-xs text-zinc-500 mt-1">nowych opinii w miesiącu</p></div>
+        </div>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     REFERENCJE: Protetyk Piła
+  ───────────────────────────────────────────────────────────────────────── */
+  "protetyk-pila-case-study": (
+    <>
+      <h2>Specyfika branży — pacjenci, którzy szukają inaczej</h2>
+      <p>
+        Gabinet protetyczny obsługuje głównie seniorów — osoby po 60. roku życia szukające protez zębowych, koron i implantów. To nie jest klient, który wchodzi na Instagrama i klika w reklamę. To klient, który wpisuje w Google „protetyk Piła" albo pyta sąsiada — i obie te ścieżki prowadzą przez wizytówkę Google Business Profile.
+      </p>
+      <p>
+        Kiedy zaczęliśmy współpracę, gabinet miał 11 opinii i wizytówkę uzupełnioną w 40%. Właściciel doskonale wiedział, że pacjenci go polecają — ale te polecenia ginęły w rozmowach, nie trafiały do Google. W Local Pack na frazę „protetyk Piła" pojawiał się na czwartej pozycji — poza top 3, czyli poza widokiem większości szukających.
+      </p>
+
+      <h2>Strategia — zaufanie jako główny sygnał</h2>
+      <p>
+        W medycynie i stomatologii zaufanie to waluta ważniejsza niż cena. Senior wybierający protetyka nie porównuje ofert jak przy zakupie elektroniki — szuka kogoś, komu może zaufać z czymś tak ważnym jak uzębienie. Nasza strategia skupiła się na tym, żeby profil GBP odpowiadał na to pytanie o zaufanie zanim pacjent w ogóle kliknie.
+      </p>
+      <p>
+        Zaczęliśmy od kategorii i opisu. Kategoria główna „Protetyk dentystyczny" z dodatkowymi „Klinika dentystyczna" i „Usługi stomatologiczne" poszerzyła widoczność na powiązane frazy. Opis napisaliśmy językiem pacjenta, nie lekarza — bez specjalistycznych pojęć, za to z konkretnymi odpowiedziami na pytania, które seniorzy faktycznie zadają: ile to trwa, czy boli, czy jest parking, czy przyjmuje NFZ.
+      </p>
+      <p>
+        Kluczowym elementem był system zbierania opinii od stałych pacjentów. Właściciel miał dziesiątki lojalnych pacjentów, którzy nigdy nie wystawili opinii — nie dlatego, że nie chcieli, ale dlatego, że nikt ich nie poprosił we właściwy sposób. Wprowadziliśmy prostą kartę wizytową wręczaną po wizycie z linkiem QR do Google. W ciągu 6 tygodni liczba opinii wzrosła z 11 do 38.
+      </p>
+      <p>
+        Osobna kwestia to zdjęcia. Gabinet był zadbany, nowoczesny, zupełnie inny niż sugerowała stara jedna fotografia na profilu. Zrobiliśmy sesję — poczekalnia, gabinet, sprzęt, twarz właściciela. Profil z prawdziwymi zdjęciami miejsca buduje zaufanie, zanim pacjent postawi nogę za progiem.
+      </p>
+
+      <h2>Wyniki — 62 połączenia i grafik zapełniony na 3 tygodnie</h2>
+      <p>
+        Po 30 dniach gabinet notował 62 połączenia telefoniczne z wizytówki Google miesięcznie — wzrost o 1,6% w ujęciu rok do roku, co przy tak specyficznej branży i ograniczonej populacji miasta jest wynikiem bardzo dobrym. Ważniejsza niż liczba połączeń była jednak ich jakość — właściciel odnotował, że więcej rozmów kończyło się umówieniem wizyty, bo dzwoniący przychodzili z już gotowym pytaniem, a nie ogólnym „chciałem zapytać".
+      </p>
+      <p>
+        W ciągu dwóch miesięcy gabinet wspiął się na drugą pozycję w Local Pack na frazę „protetyk Piła". Grafik zapisów rozciągnął się z tygodnia oczekiwania do trzech. Właściciel rozważa zatrudnienie drugiego protetyka.
+      </p>
+
+      <h2>Wnioski — senior jako użytkownik Google</h2>
+      <p>
+        Powszechny mit mówi, że starsze osoby nie korzystają z internetu i Google nie ma sensu w branżach dla seniorów. Dane temu przeczą. Senior szuka wolniej, ale szuka — i szuka na Google, bo to jedyna wyszukiwarka, którą zna z nazwy. Różnica jest w tym, że nie klika w reklamy, nie czyta blogów, nie porównuje stron — wchodzi na wizytówkę, czyta opinie i dzwoni. Profil GBP to dla tej grupy ważniejszy punkt kontaktu niż strona internetowa.
+      </p>
+
+      <div className="not-prose mt-8 rounded-2xl border border-border bg-surface p-6">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Wyniki po 30 dniach</p>
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <div><p className="text-3xl font-black text-ink">62</p><p className="text-xs text-zinc-500 mt-1">połączenia z wizytówki Google</p></div>
+          <div><p className="text-3xl font-black text-emerald-600">+27</p><p className="text-xs text-zinc-500 mt-1">nowych opinii w 6 tygodni</p></div>
+          <div><p className="text-3xl font-black text-ink">#2</p><p className="text-xs text-zinc-500 mt-1">w Local Pack „protetyk Piła"</p></div>
+        </div>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     REFERENCJE: Masaż z dojazdem Poznań
+  ───────────────────────────────────────────────────────────────────────── */
+  "masaz-z-dojazdem-poznan-case-study": (
+    <>
+      <h2>Najtrudniejszy rynek lokalny — masaż mobilny w dużym mieście</h2>
+      <p>
+        Masaż z dojazdem w Poznaniu to jeden z bardziej nasyconych segmentów lokalnego rynku usługowego. Ponad 50 aktywnych profili Google Business Profile walczy o te same frazy — „masaż Poznań", „masaż z dojazdem Poznań", „masażystka Poznań". Większość z nich to freelancerzy i jednoosobowe działalności, więc bariera wejścia jest niska. Ale niska bariera wejścia oznacza też niską jakość optymalizacji — i tu właśnie jest przestrzeń do wygrania.
+      </p>
+      <p>
+        Klientka prowadziła działalność od dwóch lat, miała stałą bazę pacjentów z polecenia, ale wizytówka Google była w stanie pierwotnym — założona, niezweryfikowana przez długi czas, z jedną opinią i profilem uzupełnionym w 30%. Przez dwa lata zdobyła 1 opinię. Konkurencja, która wygrywała w Local Pack, miała ich po 40–80.
+      </p>
+
+      <h2>Diagnoza — czego brakowało i co można było szybko naprawić</h2>
+      <p>
+        Pierwsza runda audytu pokazała kilka krytycznych braków. Kategoria główna była ustawiona na „Masażysta" zamiast „Usługi masażu" — subtelna różnica, która ma znaczenie dla algorytmu przy frazy usługowych. Brak opisu obszaru usług (SAB — Service Area Business) był poważnym problemem: Google domyślnie traktuje firmę bez adresu jako widoczną tylko w pobliżu centrum — w przypadku masażysty dojeżdżającej do klienta to błąd wykluczający połowę miasta. Brak zdjęć z efektami i miejscem pracy, brak odpowiedzi na istniejącą jedną opinię, brak postów aktywności.
+      </p>
+      <p>
+        Plan działania na pierwsze 30 dni był prosty do opisania, ale wymagał konsekwencji w wykonaniu: poprawka technyczna profilu, uruchomienie systemu opinii, cotygodniowe posty GBP, budowanie sygnałów NAP przez katalogi lokalne.
+      </p>
+
+      <h2>Wykonanie — krok po kroku przez pierwsze 60 dni</h2>
+      <p>
+        Tydzień pierwszy to poprawki techniczne. Zmieniliśmy kategorię główną, dodaliśmy trzy kategorie dodatkowe — „Gabinet masażu", „Odnowa biologiczna", „Terapia manualna". Ustawiliśmy obszar usług na całe miasto z listą dzielnic. Napisaliśmy opis skupiony na tym, czego szukają klienci: dojazd do domu lub biura, elastyczne godziny, konkretne rodzaje masażu ze specjalizacją na masaż relaksacyjny i sportowy. Przede wszystkim jednak wypełniliśmy sekcję Usługi — każdy rodzaj masażu jako osobna pozycja z opisem i ceną orientacyjną.
+      </p>
+      <p>
+        Tygodnie 2–4 to zdjęcia i opinie. Klientka wysyłała krótką wiadomość po każdej wizycie z prośbą o opinię i bezpośrednim linkiem. Nie natarczywie — raz, w odpowiednim momencie. W ciągu miesiąca liczba opinii wzrosła z 1 do 14. To przełomowa liczba — poniżej 10 opinii algorytm GBP traktuje profil jako niezweryfikowany społecznie. Powyżej 15 pojawia się efekt śniegowej kuli — nowe opinie przyciągają kolejne kliknięcia, które generują kolejne sygnały aktywności.
+      </p>
+      <p>
+        Miesiąc drugi to konsekwentna aktywność. Posty GBP co tydzień — oferty sezonowe, porady dotyczące rodzajów masażu, odpowiedzi na najczęstsze pytania. Każdy post otagowany z lokalizacją. Profil na Facebooku i w trzech katalogach lokalnych z dokładnie tym samym NAP co na wizytówce Google — spójność danych to sygnał wiarygodności.
+      </p>
+
+      <h2>Wyniki — top 3 w 60 dni na głównej frazie</h2>
+      <p>
+        Po 60 dniach klientka zajęła trzecią pozycję w Local Pack na frazę „masaż z dojazdem Poznań" — najważniejszą komercyjną frazę w tej niszy. Na frazach długiego ogona, jak „masaż relaksacyjny Poznań Jeżyce" czy „masażystka z dojazdem Grunwald", pojawiła się na pierwszej lub drugiej pozycji. Liczba nowych klientów z Google wzrosła z zera do kilku tygodniowo. Grafik, który wcześniej zapełniał się wyłącznie z polecenia, zaczął regularnie uzupełniać się z wyszukiwania organicznego.
+      </p>
+      <p>
+        Klientka odnotowała konkretną zmianę w strukturze klientów — wcześniej wszyscy przychodzili z polecenia i znali ją osobiście lub przez kogoś. Teraz regularnie pojawiają się osoby, które znalazły ją w Google i nigdy jej nie spotkały. To fundamentalna zmiana w tym jak działa jej biznes — od w pełni referencyjnego do częściowo organicznego.
+      </p>
+
+      <h2>Czego uczy ta branża o walce z konkurencją w GBP</h2>
+      <p>
+        W nasyconej niszy z 50 konkurentami nie wygrasz samą liczbą opinii — bo wyprzedzenie kogoś kto ma 80 opinii wymaga czasu. Wygrywasz kompletnością i aktywnością profilu na każdym innym polu. Kompletna sekcja usług z cenami, obszar usług poprawnie ustawiony, cotygodniowe posty, odpowiedzi na wszystkie opinie, spójne NAP w internecie. To nie są działania spektakularne — ale większość konkurencji ich nie robi. I to jest przewaga, którą można zbudować w 60 dni.
+      </p>
+
+      <div className="not-prose mt-8 rounded-2xl border border-border bg-surface p-6">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Wyniki po 60 dniach</p>
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <div><p className="text-3xl font-black text-ink">#3</p><p className="text-xs text-zinc-500 mt-1">Local Pack „masaż z dojazdem Poznań"</p></div>
+          <div><p className="text-3xl font-black text-emerald-600">1→14</p><p className="text-xs text-zinc-500 mt-1">opinie w 30 dni</p></div>
+          <div><p className="text-3xl font-black text-ink">+50</p><p className="text-xs text-zinc-500 mt-1">konkurentów pokonanych w 60 dni</p></div>
+        </div>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SZTUCZNA INTELIGENCJA: Claude Code Skills
   ───────────────────────────────────────────────────────────────────────── */
   "claude-code-skills-jak-dzialaja": (
