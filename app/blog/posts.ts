@@ -17,6 +17,17 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "jak-podpiac-domene-vercel-claude-code",
+    title: "Jak podpiąć domenę pod stronę z Claude Code — Vercel, GitHub i darmowa baza danych krok po kroku",
+    excerpt: "Zrobiłeś stronę w Claude Code i chcesz ją opublikować pod własną domeną? Ten przewodnik przeprowadzi Cię przez cały proces — od pierwszego commita na GitHub, przez deploy na Vercel, po konfigurację DNS i darmową bazę danych. Zero wiedzy technicznej wymagane.",
+    category: "Sztuczna Inteligencja",
+    date: "2026-06-09",
+    readTime: 14,
+    coverColor: "#0f172a",
+    coverImage: "/blog/cover-vercel-claude-code.svg",
+    published: true,
+  },
+  {
     slug: "claude-fable-5-mythos-5-anthropic",
     title: "Claude Fable 5 i Mythos 5 — Anthropic wypuścił najmocniejszy model w historii",
     excerpt: "Anthropic ogłosił Claude Fable 5 — pierwszy model klasy Mythos dostępny publicznie. Stripe skompresował nim miesiące pracy inżynierskiej do dni. Model pobił Pokémon FireRed używając wyłącznie surowych zrzutów ekranu. Oto co to oznacza w praktyce.",

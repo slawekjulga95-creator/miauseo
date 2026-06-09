@@ -7287,6 +7287,172 @@ define( 'DB_HOST', 'localhost' );</code></pre>
   ),
 
   /* ─────────────────────────────────────────────────────────────────────────
+     SZTUCZNA INTELIGENCJA: Jak podpiąć domenę — Vercel, GitHub, baza danych
+  ───────────────────────────────────────────────────────────────────────── */
+  "jak-podpiac-domene-vercel-claude-code": (
+    <>
+      <h2>Dlaczego Vercel to najlepszy hosting dla stron zrobionych w Claude Code</h2>
+      <p>
+        Jeśli zbudowałeś stronę lub aplikację przy pomocy Claude Code, z dużym prawdopodobieństwem dostałeś projekt w Next.js. To nie przypadek — Claude domyślnie sięga po Next.js, bo to framework stworzony i utrzymywany przez Vercel. A Vercel to platforma hostingowa zaprojektowana dokładnie pod ten stack. Połączenie jest tak naturalne, że cały proces od kodu do działającej domeny zajmuje mniej niż 30 minut — nawet jeśli nigdy wcześniej nie deployowałeś żadnej strony.
+      </p>
+      <p>
+        Vercel działa na modelu serverless — nie wynajmujesz serwera, nie konfigurujesz nginxa, nie martwiasz się certyfikatami SSL. Wgrywasz kod, Vercel buduje projekt i serwuje go z globalnej sieci CDN. Certyfikat HTTPS jest automatyczny i bezpłatny. Każdy push na GitHuba generuje preview deployment z unikalnym URLem, zanim cokolwiek trafi na produkcję. Darmowy plan (Hobby) jest wystarczający dla zdecydowanej większości projektów osobistych, portfolio i stron firmowych.
+      </p>
+      <p>
+        Alternatywą są Netlify, Railway, Render czy Fly.io — wszystkie działają podobnie i obsługują Next.js. Ale Vercel ma jedną przewagę nie do podważenia: Next.js to ich własny framework. Wsparcie jest natywne, edge functions działają bez dodatkowej konfiguracji, a nowe funkcje Next.js są dostępne na Vercelu natychmiast po premierze. Jeśli nie masz powodu, żeby wybrać inaczej — wybierz Vercel.
+      </p>
+
+      <h2>Krok 1 — Wgraj projekt na GitHub zanim cokolwiek zrobisz na Vercelu</h2>
+      <p>
+        Vercel nie przyjmuje plików bezpośrednio — deployuje z repozytorium. GitHub jest tu standardem, choć Vercel obsługuje też GitLab i Bitbucket. Jeśli jeszcze nie masz konta na GitHub, stwórz je na github.com — to bezpłatne i zajmie dwie minuty.
+      </p>
+      <p>
+        Jeśli Claude Code pracował w twoim lokalnym katalogu, projekt jest już na dysku. Teraz potrzebujesz go wysłać na GitHub. Otwórz terminal w folderze projektu i wykonaj po kolei: <code>git init</code> inicjuje repozytorium lokalnie. <code>git add .</code> dodaje wszystkie pliki do staging area. <code>git commit -m "init"</code> tworzy pierwszy commit. Następnie wejdź na github.com, kliknij "New repository", nadaj mu nazwę i skopiuj komendę <code>git remote add origin</code> z adresem swojego repo — wykonaj ją w terminalu. Na koniec <code>git push -u origin main</code> wyśle kod na GitHub.
+      </p>
+      <p>
+        Jeden plik musisz sprawdzić zanim to zrobisz — <code>.gitignore</code>. Powinien zawierać przynajmniej <code>node_modules</code>, <code>.next</code> i <code>.env.local</code>. Ten ostatni wpis jest krytyczny: plik <code>.env.local</code> zawiera klucze API, hasła do bazy danych i inne tajne dane. Nigdy nie może trafić na publiczne repozytorium. Claude Code zazwyczaj tworzy poprawny <code>.gitignore</code> automatycznie, ale zawsze warto to sprawdzić przed pierwszym pushem.
+      </p>
+
+      <h2>Krok 2 — Pierwszy deploy na Vercel w pięciu kliknięciach</h2>
+      <p>
+        Wejdź na vercel.com i zarejestruj się używając konta GitHub — to jeden przycisk, żadnych formularzy. Po zalogowaniu kliknij "Add New Project". Vercel poprosi o dostęp do twoich repozytoriów — możesz dać dostęp do wszystkich lub wybrać konkretne. Znajdź projekt, który właśnie wgrałeś na GitHub, i kliknij "Import".
+      </p>
+      <p>
+        Vercel automatycznie wykrywa framework — jeśli to Next.js, zobaczy to bez żadnej konfiguracji z Twojej strony. Komenda build (<code>next build</code>), katalog wyjściowy i root directory są ustawiane automatycznie. Jedyne, co musisz zrobić na tym etapie, to uzupełnić zmienne środowiskowe jeśli projekt ich wymaga — o tym za chwilę. Kliknij "Deploy" i poczekaj około minuty. Vercel zbuduje projekt i da Ci automatycznie wygenerowany URL w domenie <code>vercel.app</code> — coś w stylu <code>twoj-projekt.vercel.app</code>. Strona już działa. Teraz trzeba podpiąć własną domenę.
+      </p>
+
+      <h2>Krok 3 — Jak podpiąć własną domenę pod Vercel</h2>
+      <p>
+        W panelu Vercela wejdź w swój projekt, przejdź do zakładki "Settings", a potem "Domains". Kliknij "Add" i wpisz swoją domenę — na przykład <code>mojafirma.pl</code>. Vercel natychmiast pokaże Ci, co musisz skonfigurować po stronie DNS u swojego rejestratora domen. To najważniejszy krok i największe źródło pomyłek — dlatego opiszę go dokładnie.
+      </p>
+      <p>
+        Vercel poprosi cię o dodanie rekordu DNS. W przypadku domeny głównej (<code>mojafirma.pl</code>) będzie to rekord <strong>A</strong> wskazujący na IP Vercela (76.76.21.21) lub rekord <strong>ALIAS/ANAME</strong> wskazujący na <code>cname.vercel-dns.com</code> — zależy od możliwości rejestratora. W przypadku subdomeny (<code>www.mojafirma.pl</code> albo <code>app.mojafirma.pl</code>) będzie to rekord <strong>CNAME</strong> wskazujący na <code>cname.vercel-dns.com</code>. Dokładne wartości Vercel pokazuje wprost w panelu — nie musisz ich zapamiętywać.
+      </p>
+      <p>
+        Jeśli chcesz obsługiwać zarówno <code>mojafirma.pl</code> jak i <code>www.mojafirma.pl</code>, dodaj obie domeny w Vercelu. Możesz ustawić jedną jako główną (primary) i przekierować drugą automatycznie. Vercel robi to jednym togglem.
+      </p>
+
+      <h2>Krok 4 — Konfiguracja DNS u rejestratora — OVH, nazwa.pl, home.pl, GoDaddy</h2>
+      <p>
+        DNS konfiguruje się w panelu firmy, u której kupiłeś domenę. Każdy rejestrator wygląda inaczej, ale logika jest wszędzie taka sama — szukasz sekcji o nazwie "Strefa DNS", "Zarządzanie DNS" lub po prostu "DNS".
+      </p>
+      <p>
+        W <strong>OVH</strong> wejdź w panel klienta, wybierz domenę, kliknij zakładkę "Strefa DNS". Dodaj nowy rekord przyciskiem "Dodaj wpis". Wybierz typ (A lub CNAME), wpisz wartości podane przez Vercel i zapisz. W <strong>nazwa.pl</strong> znajdziesz zarządzanie DNS w sekcji "Domeny" po wybraniu konkretnej domeny — zakładka "DNS". W <strong>home.pl</strong> to sekcja "Moje usługi" → "Domeny" → "Zarządzaj" → "Edytuj strefę DNS". W <strong>GoDaddy</strong> wejdź w "My Products", wybierz domenę i kliknij "DNS".
+      </p>
+      <p>
+        Po zapisaniu zmian DNS musisz poczekać na propagację — może to potrwać od kilku minut do 48 godzin, choć w praktyce większość zmian jest widoczna w ciągu 15–30 minut. Vercel w swoim panelu na bieżąco pokazuje status weryfikacji domeny. Gdy pojawi się zielony znacznik — domena działa, certyfikat SSL jest automatycznie wystawiony i aktywny.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-blue-400 bg-blue-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">WSKAZÓWKA</p>
+        <p className="text-sm text-blue-900 leading-relaxed">
+          Jeśli Twój rejestrator nie obsługuje rekordu ALIAS ani ANAME dla domeny głównej (tzw. apex domain), Vercel zasugeruje przeniesienie nameserverów do siebie. To oznacza, że całą strefę DNS będziesz zarządzał w Vercelu — co jest wygodniejsze, ale wymaga ręcznego przeniesienia wszystkich istniejących rekordów (MX dla poczty itp.) zanim zmienisz NS.
+        </p>
+      </div>
+
+      <h2>Darmowa baza danych dla aplikacji z Claude Code — Supabase, Neon i PlanetScale</h2>
+      <p>
+        Większość stron zrobionych w Claude Code, które wymagają przechowywania danych — formularze kontaktowe, konta użytkowników, treści CMS — potrzebuje bazy danych. Dobra wiadomość: najlepsze platformy mają hojne darmowe plany, które wystarczają do startu i przez długi czas potem.
+      </p>
+      <p>
+        <strong>Supabase</strong> to najpopularniejszy wybór dla projektów Next.js i to właśnie ten stos Claude Code generuje najchętniej. Darmowy plan (Free) daje Ci PostgreSQL z 500 MB miejsca, autentykację użytkowników gotową do użycia, storage na pliki (1 GB), edge functions i wbudowany panel administracyjny. Projekt na Free jest aktywny tak długo, jak regularnie z niego korzystasz — po dwóch tygodniach bez aktywności Supabase usypia projekt, ale wystarczy jedno kliknięcie żeby go obudzić. Zakładasz konto na supabase.com, tworzysz nowy projekt, kopiujesz URL bazy i klucz API do zmiennych środowiskowych w Vercelu — gotowe.
+      </p>
+      <p>
+        <strong>Neon</strong> to PostgreSQL serverless — baza uruchamia się na żądanie i usypia gdy nie jest używana, co oznacza, że darmowy plan (0,5 GB storage) jest praktycznie nieograniczony dla małego ruchu. Neon ma natywną integrację z Vercel dostępną w Vercel Marketplace jednym kliknięciem — to najprostsza możliwa konfiguracja. Jeśli projekt robi Claude Code w oparciu o Drizzle ORM, Neon jest naturalnym wyborem.
+      </p>
+      <p>
+        <strong>PlanetScale</strong> to MySQL serverless od twórców Vitess (technologia używana w YouTube). Darmowy plan Hobby daje 5 GB storage i obsługuje do 1 miliarda odczytów miesięcznie — z dużym zapasem dla większości projektów. PlanetScale wyróżnia się systemem branchy dla schematu bazy danych — zmiany w strukturze tabel wprowadzasz jak kod, z pull requestami i review. Jeśli Claude Code wygenerował projekt z Prisma ORM, PlanetScale jest naturalnym partnerem.
+      </p>
+      <p>
+        Dla projektów niewymagających relacyjnej bazy danych — prosta kolekcja danych, liczniki, sesje — sprawdzi się <strong>Upstash</strong> (Redis serverless, darmowy plan 10 000 komend dziennie) albo <strong>Vercel KV</strong> (Redis zintegrowany bezpośrednio z Vercel, 30 MB free) lub <strong>Vercel Blob</strong> do przechowywania plików (darmowe 500 MB).
+      </p>
+
+      <h2>Zmienne środowiskowe (.env) — jak bezpiecznie przenieść je do Vercela</h2>
+      <p>
+        Claude Code tworzy plik <code>.env.local</code> z kluczami API, hasłami i innymi danymi, których strona potrzebuje do działania — URL bazy danych, klucz Supabase, API key do Resend czy reCAPTCHA. Ten plik nigdy nie idzie na GitHub (jest w <code>.gitignore</code>), więc Vercel go nie widzi. Musisz te wartości wprowadzić ręcznie w panelu Vercela.
+      </p>
+      <p>
+        W projekcie na Vercelu wejdź w "Settings" → "Environment Variables". Dla każdej zmiennej z pliku <code>.env.local</code> kliknij "Add New", wpisz nazwę (np. <code>NEXT_PUBLIC_SUPABASE_URL</code>) i wartość, wybierz środowiska (Production, Preview, Development) i zapisz. Zmienne zaczynające się od <code>NEXT_PUBLIC_</code> są dostępne po stronie przeglądarki — wszystkie pozostałe są widoczne tylko po stronie serwera, co jest bezpieczniejsze dla kluczy API.
+      </p>
+      <p>
+        Po dodaniu zmiennych środowiskowych musisz wykonać nowy deploy — Vercel nie restartuje automatycznie przy zmianie ENV. Kliknij "Redeploy" w zakładce "Deployments" i wybierz ostatni commit. Tym razem build przebiegnie z dostępem do wszystkich kluczy i aplikacja powinna działać w pełni.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-amber-400 bg-amber-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">WAŻNE — BEZPIECZEŃSTWO</p>
+        <p className="text-sm text-amber-900 leading-relaxed">
+          Nigdy nie wklejaj kluczy API bezpośrednio w kodzie. Nawet jeśli repozytorium jest prywatne — to zły nawyk, który prędzej czy później prowadzi do wycieku. Zawsze używaj zmiennych środowiskowych. Jeśli przypadkowo wypchnąłeś plik <code>.env</code> na GitHub — natychmiast unieważnij klucze w panelach odpowiednich usług i wygeneruj nowe.
+        </p>
+      </div>
+
+      <h2>Automatyczny deploy przy każdym pushu — jak działa CI/CD w Vercelu</h2>
+      <p>
+        Jedną z największych wartości Vercela jest automatyzacja, której nie musisz konfigurować — po prostu działa. Gdy połączysz repozytorium GitHub z projektem Vercel, każdy push na dowolny branch automatycznie generuje deployment. Push na branch <code>main</code> (lub <code>master</code>) idzie na produkcję i aktualizuje Twoją domenę. Push na dowolny inny branch generuje preview deployment z unikalnym URLem — możesz sprawdzić jak wygląda zmiana zanim wpłynie na produkcję.
+      </p>
+      <p>
+        Dla projektów robionych z Claude Code oznacza to workflow bez żadnego DevOps: poprawiasz coś lokalnie, Claude Code nanosi zmiany, robisz <code>git add . &amp;&amp; git commit -m "poprawka" &amp;&amp; git push</code> i w ciągu minuty zmiana jest na żywo. Żadnego FTP, żadnego SSH, żadnego ręcznego uploadowania plików.
+      </p>
+
+      <h2>Co jest za darmo, a za co zapłacisz — limity Vercel Hobby 2026</h2>
+      <p>
+        Darmowy plan Vercel (Hobby) jest szczodry jak na hosting, ale ma swoje granice. Dostajesz 100 GB transferu miesięcznie, 6 000 minut build time, 500 000 wywołań Edge Functions dziennie i nieograniczoną liczbę projektów. Dla typowej strony firmowej, portfolio, bloga czy małej aplikacji te limity są praktycznie nieosiągalne.
+      </p>
+      <p>
+        Gdzie się potykasz o limity? Projekty komercyjne na darmowym planie są formalnie niedozwolone — Vercel wymaga planu Pro (20 dolarów miesięcznie) jeśli projektem zarabiasz. Serverless Functions mają limit 10 sekund czasu wykonania na planie Hobby (60 sekund na Pro). Brak ochrony hasłem dla preview deployments — jeśli chcesz ukryć preview przed klientem, potrzebujesz Pro. I brak zespołów — Hobby to jedno konto, jeden użytkownik.
+      </p>
+      <p>
+        Plan Pro za 20 dolarów miesięcznie usuwa większość ograniczeń: 1 TB transferu, 24 000 minut build, ochrona password dla preview, wsparcie dla środowisk Staging. Dla poważnych projektów to rozsądna cena. Plan Enterprise to oddzielne negocjacje dla dużych organizacji.
+      </p>
+
+      <h2>Najczęstsze błędy przy pierwszym deploymencie strony z Claude Code</h2>
+      <p>
+        Pierwsza rzecz, która psuje deploy, to brakujące zmienne środowiskowe. Aplikacja buduje się lokalnie bo ma plik <code>.env.local</code>, ale na Vercelu build wylatuje z błędem <code>undefined is not an object</code> albo połączenie z bazą danych nie działa. Zawsze sprawdź, czy wszystkie zmienne z <code>.env.local</code> masz dodane w panelu Vercel przed pierwszym deployem.
+      </p>
+      <p>
+        Drugi częsty problem to błędy TypeScript, które Claude Code czasem zostawia jako ostrzeżenia — lokalnie się buduje, ale Vercel domyślnie traktuje błędy TS jako blokujące build. Rozwiązanie to albo poprawienie błędów (lepiej), albo dodanie <code>ignoreBuildErrors: true</code> w <code>next.config.ts</code> (szybciej, ale to dług techniczny). Claude Code poprawi błędy TS jeśli go o to poprosisz.
+      </p>
+      <p>
+        Trzeci błąd to ścieżki do plików case-sensitive. Na Windowsie (gdzie Claude Code zazwyczaj pracuje) import <code>import Component from "./component"</code> zadziała nawet jeśli plik nazywa się <code>Component.tsx</code>. Na serwerach Vercela (Linux) ta sama operacja zwróci błąd 404. Zawsze używaj dokładnie tych samych wielkich i małych liter w importach co w nazwach plików.
+      </p>
+      <p>
+        Czwarty problem to duże pliki w repozytorium — zdjęcia, fonty, wideo wgrane bezpośrednio do <code>public/</code>. GitHub ma limit 100 MB na plik, a duże repo spowalnia każdy deploy. Pliki medialne trzymaj w Vercel Blob, Cloudinary lub zewnętrznym CDN, a w kodzie odwołuj się do ich URL.
+      </p>
+
+      <h2>Własna domena na Vercelu z poczty e-mail — MX rekordy i Google Workspace</h2>
+      <p>
+        Wielu właścicieli stron chce mieć nie tylko <code>mojafirma.pl</code> jako stronę, ale też <code>kontakt@mojafirma.pl</code> jako adres email. Vercel zarządza stroną, ale pocztą zarządza osobna usługa — Google Workspace, Zoho Mail, ProtonMail for Business albo po prostu forwarding przez domenę.
+      </p>
+      <p>
+        Jeśli przenosisz nameservery do Vercela, musisz dodać rekordy MX ręcznie w panelu DNS Vercela — inaczej poczta przestanie działać. Rekordy MX otrzymasz od dostawcy poczty. Jeśli zostawiasz DNS u rejestratora i dodajesz tylko rekord A lub CNAME do Vercela, rekordy MX zostają nienaruszone i poczta działa bez żadnych zmian.
+      </p>
+      <p>
+        Dla nowych domen bez poczty najprostszą opcją jest <strong>Zoho Mail</strong> — darmowy plan dla jednej domeny, do 5 kont, 5 GB storage. Konfiguracja zajmuje 10 minut i wymaga dodania kilku rekordów MX i TXT do strefy DNS. Alternatywa to <strong>Resend</strong> — jeśli Claude Code wygenerował formularz kontaktowy z API do wysyłki maili, Resend ma darmowy plan 3 000 maili miesięcznie i działa przez API bez konfiguracji serwera pocztowego.
+      </p>
+
+      <h2>Cały proces od kodu do działającej domeny — podsumowanie w 8 krokach</h2>
+      <p>
+        Zanim zaczniesz, upewnij się że masz: gotowy projekt z Claude Code na dysku, kupioną domenę u dowolnego rejestratora, konto GitHub i przeglądarkę. To wszystko czego potrzebujesz.
+      </p>
+      <p>
+        Krok pierwszy — sprawdź <code>.gitignore</code> i upewnij się że <code>.env.local</code> i <code>node_modules</code> są wykluczone. Krok drugi — zainicjuj repozytorium Git i wypchnij projekt na nowe repo na GitHub. Krok trzeci — wejdź na vercel.com, zaloguj się przez GitHub i zaimportuj repozytorium. Krok czwarty — dodaj zmienne środowiskowe z pliku <code>.env.local</code> w panelu Vercel przed kliknięciem Deploy. Krok piąty — kliknij Deploy i poczekaj na zielony status. Twoja strona działa pod adresem <code>*.vercel.app</code>. Krok szósty — w zakładce Domains dodaj własną domenę i skopiuj wartości DNS. Krok siódmy — zaloguj się do panelu rejestratora domeny i dodaj podane rekordy A lub CNAME. Krok ósmy — poczekaj na propagację DNS (5–30 minut) i sprawdź czy zielony znacznik pojawił się w panelu Vercela. Certyfikat SSL aktywuje się automatycznie.
+      </p>
+      <p>
+        Jeśli projekt wymaga bazy danych — załóż konto na Supabase lub Neon, stwórz projekt, skopiuj URL połączenia do zmiennych środowiskowych w Vercelu i wykonaj redeploy. Cały stack — strona, domena, SSL, baza danych — za 0 złotych miesięcznie na start. Gdy projekt zacznie zarabiać, przejście na płatne plany jest kwestią jednego kliknięcia.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Przydatne linki</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Vercel — <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">vercel.com</a> — &nbsp;
+          Supabase — <a href="https://supabase.com" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">supabase.com</a> — &nbsp;
+          Neon — <a href="https://neon.tech" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">neon.tech</a> — &nbsp;
+          GitHub — <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">github.com</a>
+        </p>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SZTUCZNA INTELIGENCJA: Claude Fable 5 i Mythos 5
   ───────────────────────────────────────────────────────────────────────── */
   "claude-fable-5-mythos-5-anthropic": (
