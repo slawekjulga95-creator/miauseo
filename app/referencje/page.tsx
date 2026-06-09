@@ -20,20 +20,22 @@ const cases: {
   hard: string[];
   photo: string | null;
   reverse: boolean;
+  caseStudySlug?: string;
+  stats?: { value: string; label: string }[];
 }[] = [
   {
     id: "01",
     company: "iHelpyou.pl",
-    service: "Pozycjonowanie strony internetowej",
+    service: "Pozycjonowanie wizytówki Google",
     location: "Serwis telefonów · Poznań",
     paragraphs: [
       <>iHelpyou.pl to serwis telefonów działający w centrum Poznania. Gdy zaczęliśmy współpracę, <strong className="text-ink">strona praktycznie nie istniała w organicznych wynikach Google</strong> — konkurencja z sieci franczyzowych dominowała na każde wartościowe frazy. Właściciel miał solidny warsztat i opinie klientów, ale <strong className="text-ink">online był niewidoczny</strong>.</>,
-      <>Skupiliśmy się na <strong className="text-ink">audycie technicznym strony</strong>, optymalizacji struktury nagłówków i treści pod frazy lokalne: &quot;serwis telefonów Poznań&quot; i kilkanaście podobnych. Ogromną wartością okazał się skup telefonów — fraza, która dziś <strong className="text-ink">rankuje w topce lokalnego rynku</strong> i każdego dnia przynosi właścicielowi telefony od klientów gotowych do sprzedaży. Równolegle zbudowaliśmy <strong className="text-ink">profil linków z lokalnych katalogów</strong> i branżowych serwisów. Proces trwał ok. <strong className="text-ink">4 miesiące</strong> zanim frazy zaczęły wchodzić do top 10.</>,
-      <>Dziś strona notuje <strong className="text-ink">stabilny ruch organiczny</strong>, który przekłada się na telefony od nowych klientów. Współpraca trwa — co miesiąc raportujemy pozycje, ruch i zmiany w konkurencji. Właściciel wie dokładnie, <strong className="text-ink">za co płaci i co się dzieje z jego stroną</strong>.</>,
+      <>Skupiliśmy się na <strong className="text-ink">kompleksowej optymalizacji wizytówki GBP</strong>, kategorii, opisie usług z cenami i systematycznym zbieraniu opinii. W ciągu miesiąca liczba odwiedzin z wizytówki wzrosła o ponad <strong className="text-ink">26% rok do roku</strong>. Klienci zaczęli trafiać z wyszukiwań odkrywczych — nie tylko po nazwie firmy.</>,
+      <>Dziś serwis notuje <strong className="text-ink">stabilny ruch organiczny</strong> z wizytówki, który przekłada się na telefony od nowych klientów. Właściciel wie dokładnie, <strong className="text-ink">za co płaci i co się dzieje z jego profilem</strong>.</>,
     ],
     good: [
       "Szybkie wdrożenie poprawek technicznych — właściciel sprawnie akceptował zmiany",
-      "Otwartość na sugestie dotyczące treści i rozbudowy strony",
+      "Otwartość na sugestie dotyczące treści i rozbudowy profilu",
       "Regularne spotkania — zawsze wiedzieliśmy, co jest aktualne w biznesie",
     ],
     hard: [
@@ -42,6 +44,12 @@ const cases: {
     ],
     photo: "/referencje/1.png",
     reverse: false,
+    caseStudySlug: "serwis-telefonow-poznan-case-study",
+    stats: [
+      { value: "154", label: "wizyty z GBP / mies." },
+      { value: "+26,2%", label: "wzrost r/r" },
+      { value: "30 dni", label: "do pierwszych efektów" },
+    ],
   },
   {
     id: "02",
@@ -50,8 +58,8 @@ const cases: {
     location: "Gabinet Protetyczny · Piła",
     paragraphs: [
       <>Gabinet protetyczny Estetic-Smile działa w Pile — mieście, gdzie rynek stomatologiczny jest <strong className="text-ink">mocno obsadzony przez gabinety z wieloletnią historią</strong>. Klientka przyszła do nas po kilku miesiącach samodzielnych prób z wizytówką Google, <strong className="text-ink">które nie przyniosły efektów</strong>. Profil był założony, ale prawie pusty.</>,
-      <>Zaczęliśmy od <strong className="text-ink">kompleksowej optymalizacji wizytówki</strong>: kategorie, opis, usługi z cenami, zdjęcia wnętrza i sprzętu. Następnie wdrożyliśmy <strong className="text-ink">systematyczne zbieranie opinii od pacjentów</strong> — bez nachalnego proszenia, po prostu łatwiejszy proces dla klienta. W ciągu 3 miesięcy <strong className="text-ink">liczba opinii wzrosła z 8 do ponad 40</strong>.</>,
-      <>Wizytówka zaczęła pojawiać się w <strong className="text-ink">top 3 Mapy Google</strong> na frazy lokalne. Klientka zgłasza wyraźnie <strong className="text-ink">więcej telefonów z pytaniami o wolne terminy</strong> — co przed współpracą było rzadkością. To przykład, gdzie efekty są mierzalne i odczuwalne w codziennej pracy gabinetu.</>,
+      <>Zaczęliśmy od <strong className="text-ink">kompleksowej optymalizacji wizytówki</strong>: kategorie, opis, usługi z cenami, zdjęcia wnętrza i sprzętu. Następnie wdrożyliśmy <strong className="text-ink">systematyczne zbieranie opinii od pacjentów</strong> — bez nachalnego proszenia, po prostu łatwiejszy proces dla klienta. W ciągu 6 tygodni <strong className="text-ink">liczba opinii wzrosła z 11 do ponad 38</strong>.</>,
+      <>Wizytówka zaczęła pojawiać się w <strong className="text-ink">top 3 Mapy Google</strong> na frazy lokalne. Klientka zgłasza wyraźnie <strong className="text-ink">więcej telefonów z pytaniami o wolne terminy</strong> — grafik zapełniony na 3 tygodnie do przodu.</>,
     ],
     good: [
       "Duże zaangażowanie klientki w zbieranie opinii od pacjentów",
@@ -64,16 +72,22 @@ const cases: {
     ],
     photo: "/referencje/2.png",
     reverse: true,
+    caseStudySlug: "protetyk-pila-case-study",
+    stats: [
+      { value: "62", label: "połączenia z GBP / mies." },
+      { value: "+27", label: "nowych opinii w 6 tyg." },
+      { value: "#2", label: "Local Pack Piła" },
+    ],
   },
   {
     id: "03",
     company: "Rozluznijsie.pl",
     service: "Pozycjonowanie wizytówki Google",
-    location: "Gabinet masażu · Polska",
+    location: "Masaż z dojazdem · Poznań",
     paragraphs: [
-      <>Rozluznijsie.pl to gabinet masażu, który trafił do nas z konkretnym problemem: <strong className="text-ink">wizytówka Google istniała, ale klienci z internetu prawie nie dzwonili</strong>. Właścicielka polegała głównie na stałych klientach i poleceniach — co jest dobre, ale <strong className="text-ink">nie buduje wzrostu</strong>.</>,
-      <>Praca zaczęła się od <strong className="text-ink">analizy wizytówki i profilu słów kluczowych</strong>. Uzupełniliśmy ofertę usług, dodaliśmy zdjęcia, poprawiliśmy godziny i odpowiedzieliśmy na stare opinie. Wdrożyliśmy też <strong className="text-ink">prosty system przypominania klientom</strong> o możliwości wystawienia opinii po wizycie.</>,
-      <>Po czterech miesiącach współpracy wizytówka weszła do widoczności na nowe frazy lokalne, <strong className="text-ink">liczba opinii się podwoiła</strong>, a właścicielka odnotowała <strong className="text-ink">wzrost nowych rezerwacji przez internet</strong>. Współpraca jest kontynuowana z fokusem na ekspansję na sąsiednie miasta.</>,
+      <>Rozluznijsie.pl to masaż z dojazdem w Poznaniu — branża z <strong className="text-ink">ponad 50 konkurentami</strong> walczącymi o te same frazy w Google Maps. Klientka zaczynała z jedną opinią i wizytówką uzupełnioną w 30%. Ruch z Google był zerowy.</>,
+      <>Praca zaczęła się od <strong className="text-ink">analizy wizytówki i profilu słów kluczowych</strong>. Ustawiliśmy obszar usług na całe miasto, uzupełniliśmy sekcję usług z cenami, dodaliśmy zdjęcia i cotygodniowe posty GBP. Wdrożyliśmy <strong className="text-ink">prosty system przypominania klientom</strong> o możliwości wystawienia opinii po wizycie.</>,
+      <>Po 60 dniach wizytówka weszła do <strong className="text-ink">top 3 Local Pack</strong> na frazę &quot;masaż z dojazdem Poznań&quot;. Liczba opinii wzrosła z 1 do 14 w pierwszym miesiącu. <strong className="text-ink">Nowi klienci z Google</strong> — których wcześniej nie było — zaczęli regularnie rezerwować wizyty.</>,
     ],
     good: [
       "Bardzo dobra relacja z klientami — wysoka naturalność opinii",
@@ -86,6 +100,12 @@ const cases: {
     ],
     photo: "/referencje/3.png",
     reverse: false,
+    caseStudySlug: "masaz-z-dojazdem-poznan-case-study",
+    stats: [
+      { value: "#3", label: "Local Pack Poznań" },
+      { value: "1→14", label: "opinii w 30 dni" },
+      { value: "60 dni", label: "do top 3" },
+    ],
   },
 ];
 
@@ -148,14 +168,37 @@ export default function ReferencjePage() {
         >
           <div className="max-w-6xl mx-auto">
             {/* Header */}
-            <div className="flex items-center gap-4 mb-12">
+            <div className="flex flex-wrap items-center gap-4 mb-10">
               <span className="text-[4rem] font-bold text-brand/15 leading-none select-none">{item.id}</span>
-              <div>
+              <div className="flex-1 min-w-0">
                 <p className="text-xs text-zinc-400 uppercase tracking-widest font-semibold mb-1">{item.location}</p>
                 <h2 className="text-2xl md:text-3xl font-bold text-ink">{item.company}</h2>
                 <p className="text-brand font-semibold text-sm mt-1">{item.service}</p>
               </div>
+              {item.caseStudySlug && (
+                <Link
+                  href={`/${item.caseStudySlug}`}
+                  className="shrink-0 inline-flex items-center gap-2 text-sm font-bold text-brand border border-brand/30 hover:bg-brand hover:text-white px-5 py-2.5 rounded-xl transition-all duration-200"
+                >
+                  Czytaj pełne case study
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </Link>
+              )}
             </div>
+
+            {/* Stats row */}
+            {item.stats && (
+              <div className="grid grid-cols-3 gap-4 mb-10">
+                {item.stats.map((s, j) => (
+                  <div key={j} className="bg-white border border-border rounded-2xl px-6 py-5 text-center">
+                    <p className="text-3xl font-black text-ink leading-none mb-1">{s.value}</p>
+                    <p className="text-xs text-zinc-400 font-medium leading-snug">{s.label}</p>
+                  </div>
+                ))}
+              </div>
+            )}
 
             {/* Main 2-col */}
             <div className={`flex flex-col ${item.reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-12 mb-12 items-center`}>
@@ -205,7 +248,6 @@ export default function ReferencjePage() {
 
             {/* Good / Hard */}
             <div className="grid md:grid-cols-2 gap-6">
-              {/* Co poszło dobrze */}
               <div className="bg-green-50 border border-green-100 rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-7 h-7 rounded-full bg-green-100 flex items-center justify-center shrink-0">
@@ -225,7 +267,6 @@ export default function ReferencjePage() {
                 </ul>
               </div>
 
-              {/* Co było trudne */}
               <div className="bg-orange-50 border border-orange-100 rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-7 h-7 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
@@ -247,6 +288,21 @@ export default function ReferencjePage() {
                 </ul>
               </div>
             </div>
+
+            {/* Case study CTA bottom */}
+            {item.caseStudySlug && (
+              <div className="mt-8 flex justify-end">
+                <Link
+                  href={`/${item.caseStudySlug}`}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-400 hover:text-brand transition-colors"
+                >
+                  Szczegółowa analiza tego przypadku
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </Link>
+              </div>
+            )}
           </div>
         </section>
       ))}

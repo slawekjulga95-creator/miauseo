@@ -13,6 +13,7 @@ export type Post = {
   coverColor: string;   // kolor placeholdera zanim będzie prawdziwe zdjęcie
   coverImage?: string;  // ścieżka do obrazka w /public
   published: boolean;
+  hideFromBlog?: boolean; // widoczny pod URL-em, ale nie listowany na /blog
 };
 
 export const posts: Post[] = [
@@ -26,6 +27,7 @@ export const posts: Post[] = [
     coverColor: "#0d9488",
     coverImage: "/blog/cover-ref-masaz.svg",
     published: true,
+    hideFromBlog: true,
   },
   {
     slug: "protetyk-pila-case-study",
@@ -37,6 +39,7 @@ export const posts: Post[] = [
     coverColor: "#7c3aed",
     coverImage: "/blog/cover-ref-protetyk.svg",
     published: true,
+    hideFromBlog: true,
   },
   {
     slug: "serwis-telefonow-poznan-case-study",
@@ -48,6 +51,7 @@ export const posts: Post[] = [
     coverColor: "#FF6A00",
     coverImage: "/blog/cover-ref-serwis.svg",
     published: true,
+    hideFromBlog: true,
   },
   {
     slug: "claude-code-skills-jak-dzialaja",
@@ -618,7 +622,7 @@ export const posts: Post[] = [
 ];
 
 export function getPublishedPosts(): Post[] {
-  return posts.filter((p) => p.published).sort((a, b) => b.date.localeCompare(a.date));
+  return posts.filter((p) => p.published && !p.hideFromBlog).sort((a, b) => b.date.localeCompare(a.date));
 }
 
 export function getPostBySlug(slug: string): Post | undefined {
