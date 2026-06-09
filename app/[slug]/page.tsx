@@ -45,11 +45,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const categoryStyle: Record<Category, string> = {
-  "SEO":       "bg-orange-100 text-brand",
-  "Opinie":    "bg-green-100 text-green-700",
-  "Poradnik":  "bg-violet-100 text-violet-700",
-  "Wizytówka": "bg-sky-100 text-sky-700",
-  "WordPress": "bg-blue-100 text-blue-700",
+  "SEO":                   "bg-orange-100 text-brand",
+  "Opinie":                "bg-green-100 text-green-700",
+  "Poradnik":              "bg-violet-100 text-violet-700",
+  "Wizytówka":             "bg-sky-100 text-sky-700",
+  "WordPress":             "bg-blue-100 text-blue-700",
+  "Sztuczna Inteligencja": "bg-purple-100 text-purple-700",
 };
 
 export default async function BlogPostPage({ params }: Props) {
@@ -149,15 +150,58 @@ export default async function BlogPostPage({ params }: Props) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://miauseo.pl" },
-                { "@type": "ListItem", "position": 2, "name": "Słownik SEO/SEM", "item": "https://miauseo.pl/slownik" },
-                { "@type": "ListItem", "position": 3, "name": term.term, "item": `https://miauseo.pl/${term.slug}` },
-              ],
-            }),
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "DefinedTerm",
+                "@id": `https://miauseo.pl/${term.slug}#term`,
+                "name": term.term,
+                "description": term.shortDesc,
+                "url": `https://miauseo.pl/${term.slug}`,
+                "inDefinedTermSet": {
+                  "@type": "DefinedTermSet",
+                  "@id": "https://miauseo.pl/slownik#termset",
+                  "name": "Słownik SEO/SEM MiauSEO",
+                  "url": "https://miauseo.pl/slownik",
+                },
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": `${term.term} – definicja i zastosowanie`,
+                "description": term.shortDesc,
+                "url": `https://miauseo.pl/${term.slug}`,
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": `https://miauseo.pl/${term.slug}`,
+                },
+                "author": {
+                  "@type": "Organization",
+                  "name": "MiauSEO",
+                  "url": "https://miauseo.pl",
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "MiauSEO",
+                  "url": "https://miauseo.pl",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://miauseo.pl/logo.png",
+                    "width": 224,
+                    "height": 64,
+                  },
+                },
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://miauseo.pl" },
+                  { "@type": "ListItem", "position": 2, "name": "Słownik SEO/SEM", "item": "https://miauseo.pl/slownik" },
+                  { "@type": "ListItem", "position": 3, "name": term.term, "item": `https://miauseo.pl/${term.slug}` },
+                ],
+              },
+            ]),
           }}
         />
       </main>
@@ -407,7 +451,7 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="border border-border rounded-2xl p-5">
                 <p className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-4">Kategorie</p>
                 <div className="flex flex-wrap gap-2">
-                  {(["SEO", "Opinie", "Poradnik", "Wizytówka", "WordPress"] as Category[]).map((cat) => (
+                  {(["SEO", "Opinie", "Poradnik", "Wizytówka", "WordPress", "Sztuczna Inteligencja"] as Category[]).map((cat) => (
                     <span key={cat} className={`text-xs font-semibold px-2.5 py-1 rounded-full ${categoryStyle[cat]}`}>
                       {cat}
                     </span>

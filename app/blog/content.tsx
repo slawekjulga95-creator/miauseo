@@ -7285,4 +7285,108 @@ define( 'DB_HOST', 'localhost' );</code></pre>
       />
     </>
   ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SZTUCZNA INTELIGENCJA: Claude Fable 5 i Mythos 5
+  ───────────────────────────────────────────────────────────────────────── */
+  "claude-fable-5-mythos-5-anthropic": (
+    <>
+      <h2>Czym są Claude Fable 5 i Mythos 5?</h2>
+      <p>
+        9 czerwca 2026 roku Anthropic ogłosił dwa nowe modele: Claude Fable 5 i Claude Mythos 5. To nie jest kolejna iteracja — to przełom. Fable 5 jest pierwszym modelem klasy Mythos udostępnionym publicznie, a klasa Mythos oznacza poziom możliwości, który wcześniej był dostępny wyłącznie dla wybranej grupy partnerów rządowych i cyberbezpieczeństwa.
+      </p>
+      <p>
+        Podział między tymi dwoma modelami jest prosty, ale ważny. Fable i Mythos to ten sam model bazowy — różni je zestaw zabezpieczeń. Fable 5 jest dostępny dla wszystkich i ma aktywne klasyfikatory blokujące najbardziej ryzykowne zastosowania. Mythos 5 to wersja z częściowo zdjętymi ograniczeniami, dostępna wyłącznie dla zweryfikowanych partnerów: organizacji cyberobrony, agencji rządowych i wkrótce wybranych ośrodków badań biomedycznych. Nazwa nie jest przypadkowa — <em>fable</em> to po łacinie <em>fabula</em>, „to, co się opowiada", bliskie greckim <em>mythos</em>. Zabezpieczenia to jedyna różnica między tymi dwoma wersjami.
+      </p>
+
+      <h2>Co potrafi Fable 5 w inżynierii oprogramowania</h2>
+      <p>
+        Stripe przetestował model na produkcyjnej bazie kodu liczącej 50 milionów linii Ruby. Migracja, która normalnie zajęłaby całemu zespołowi ponad dwa miesiące pracy, została wykonana w ciągu jednego dnia. To nie jest liczba z benchmarku — to raport z realnego wdrożenia na jednej z największych platform płatniczych na świecie.
+      </p>
+      <p>
+        Na ocenie FrontierCode firmy Cognition — która sprawdza, czy modele potrafią przechodzić trudne zadania kodowania przy zachowaniu standardów produkcyjnej jakości kodu — Fable 5 zajął pierwsze miejsce wśród modeli frontierowych. Co istotne, osiągnął to nawet przy ustawieniu „medium effort", co oznacza, że nie wymaga drogich, wieloetapowych wywołań żeby dostarczyć wyniki na tym poziomie.
+      </p>
+
+      <h2>Praca analityczna i wiedza domenowa</h2>
+      <p>
+        Hebbia, firma specjalizująca się w analizie dokumentów dla sektora finansowego, przetestowała Fable 5 na swoim Finance Benchmark — zestawie zadań odpowiadających pracy analityka wyższego szczebla. Model uzyskał najwyższy wynik spośród wszystkich testowanych modeli, z wyraźną przewagą w rozumowaniu na dokumentach, interpretacji wykresów i tabel oraz rozwiązywaniu problemów wieloetapowych.
+      </p>
+      <p>
+        IMC, firma zajmująca się handlem algorytmicznym, potwierdziła, że Fable 5 praktycznie aced ich wewnętrzne testy analizy tradingowej — od prostego wyszukiwania faktów, przez rozumowanie konceptualne, po analizę przyczyn źródłowych i obliczanie wartości oczekiwanej. To kategorie zadań, w których wcześniejsze modele regularnie popełniały błędy na poziomie eksperta.
+      </p>
+
+      <h2>Widzenie — nowy standard</h2>
+      <p>
+        Fable 5 jest nowym state-of-the-art w zadaniach wymagających analizy obrazu. Potrafi odczytywać precyzyjne liczby z szczegółowych wykresów naukowych i odtwarzać kod źródłowy aplikacji webowej wyłącznie na podstawie zrzutów ekranu. Ale najlepiej ilustruje to przykład z Pokémon FireRed.
+      </p>
+      <p>
+        Wcześniejsze modele Claude radziły sobie z tą grą tylko wtedy, gdy otrzymywały rozbudowane narzędzia pomocnicze — mapy, dane o stanie gry, wskazówki nawigacyjne. Fable 5 ukończył Pokémon FireRed od początku do końca używając wyłącznie surowych zrzutów ekranu z rozgrywki. Żadnych map, żadnych dodatkowych informacji o stanie gry — tylko obrazy, tak jak widzi je gracz. To demonstracja zdolności percepcyjnych, które wcześniej nie istniały w modelu ogólnego przeznaczenia.
+      </p>
+
+      <h2>Pamięć i praca z długim kontekstem</h2>
+      <p>
+        Fable 5 zachowuje koncentrację przez miliony tokenów w długotrwałych zadaniach i potrafi aktywnie ulepszać swoje wyniki korzystając z własnych notatek. Anthropic przetestował to na grze Slay the Spire — deck-building roguelike wymagającym długoterminowego planowania. Gdy model miał dostęp do trwałej pamięci plikowej, jego wyniki poprawiały się trzy razy bardziej niż u Opusa 4.8 w analogicznych warunkach. Fable docierał do finałowego aktu gry trzy razy częściej.
+      </p>
+      <p>
+        W praktyce oznacza to, że im dłuższe i bardziej złożone zadanie, tym większa przewaga Fable 5 nad poprzednimi modelami. To celowe — model był projektowany z myślą o wielogodzinnej, autonomicznej pracy agentowej, nie o krótkich odpowiedziach na pojedyncze pytania.
+      </p>
+
+      <h2>Mythos 5 w nauce — projektowanie leków i genomika</h2>
+      <p>
+        Zastosowania Mythosa 5 w naukach przyrodniczych to osobny rozdział. Wewnętrzni eksperci Anthropic od projektowania białek przyspieszyli przy jego pomocy wybrane etapy procesu projektowania leków o około dziesięć razy. W jednym z testów Mythos 5 — wyposażony w narzędzia do projektowania białek i bioinformatyki, ale bez żadnej pomocy ludzkiej — dorównał lub przewyższył doświadczonych operatorów ludzkich. Model samodzielnie wybierał miejsca wiązania, dobierał i uruchamiał narzędzia do projektowania białek i radził sobie z niepowodzeniami. Spośród 14 celów białkowych zbadanych w tym projekcie, 9 dało obiecujących kandydatów, które Anthropic aktualnie bada dalej.
+      </p>
+      <p>
+        Mythos 5 przeprowadził też nowatorskie badania genomiczne w trakcie ponad tygodnia w dużej mierze autonomicznej pracy. Zebrał dane z pojedynczych komórek dla milionów komórek ze 138 gatunków zwierząt, zaprojektował i wytrenował własny model uczenia maszynowego do identyfikacji komórek pełniących tę samą funkcję biologiczną u odlegle spokrewnionych organizmów. Wynik: model Mythosa pobił wyniki pracy opublikowanej w prestiżowym Science — będąc przy tym 100 razy mniejszy.
+      </p>
+
+      <h2>Jak działają zabezpieczenia Fable 5</h2>
+      <p>
+        Najważniejsze pytanie przy modelu tej klasy to nie „co potrafi", ale „co mu wolno". Fable 5 wprowadza nową generację klasyfikatorów — osobnych systemów AI, które monitorują każde zapytanie i decydują, czy odpowiada na nie Fable, czy automatycznie przełącza się na Opus 4.8. Użytkownik jest o tym informowany. Opus 4.8 to nadal bardzo zdolny model — przełączenie to degradacja, nie odmowa.
+      </p>
+      <p>
+        Klasyfikatory obejmują trzy obszary. Cyberbezpieczeństwo — Mythos-class modele wykazują tak zaawansowane zdolności w znajdowaniu i eksploitowaniu podatności, że ich niekontrolowane udostępnienie stanowiłoby realną pomoc dla cyberprzestępców. Klasyfikatory blokują zarówno klasyczne exploity, jak i wieloetapowe zadania hakerskie: rekonesans, ruch lateralny, eskalację uprawnień. Biologia i chemia — nowe modele są w stanie wykonywać realne zadania naukowe, które mają charakter dualny. Anthropic przetestował zdolność modelu do projektowania wirusowych cząsteczek AAV używanych w terapii genowej — model bez specjalnego treningu w tym kierunku przewyższył dedykowane modele białkowe, co ilustruje zarówno potencjał terapeutyczny, jak i ryzyko. Distylacja — Anthropic wykrył wcześniejsze próby systematycznego wydobywania wiedzy modelu w celu trenowania konkurencyjnych systemów w krajach autorytarnych. Zapytania rozpoznane jako część takiego procesu są automatycznie przełączane na Opus 4.8.
+      </p>
+      <p>
+        Ponad 95% sesji nie wyzwala żadnego klasyfikatora. Zewnętrzny red-teaming przez ponad 1000 godzin nie ujawnił żadnego uniwersalnego jailbreaku. Jeden z zewnętrznych partnerów potwierdził, że Fable 5 ma najsilniejsze zabezpieczenia spośród wszystkich testowanych modeli — zero odpowiedzi na szkodliwe zapytania dotyczące cyberbezpieczeństwa, nawet przy 30 różnych technikach jailbreak.
+      </p>
+
+      <h2>Cena i dostępność</h2>
+      <p>
+        Claude Fable 5 jest dostępny od 9 czerwca 2026 przez API jako <code>claude-fable-5</code>. Cena wynosi 10 dolarów za milion tokenów wejściowych i 50 dolarów za milion tokenów wyjściowych — mniej niż połowa ceny wcześniejszego Mythos Preview. Do 22 czerwca Fable 5 jest dostępny bezpłatnie w planach Pro, Max, Team i Enterprise. Po tej dacie będzie wymagał wykupienia kredytów użytkowania; Anthropic deklaruje przywrócenie go jako standardowego elementu subskrypcji gdy pozwoli na to infrastruktura.
+      </p>
+      <p>
+        Claude Mythos 5 pozostaje na razie dostępny wyłącznie dla partnerów Project Glasswing z cyber safeguards lifted oraz wkrótce dla wybranych badaczy biomedycznych z biology safeguards lifted.
+      </p>
+
+      <div className="not-prose mt-8 rounded-2xl border-l-4 border-purple-400 bg-purple-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-purple-700 mb-2">NOWA POLITYKA RETENCJI DANYCH</p>
+        <p className="text-sm text-purple-900 leading-relaxed">
+          Dla Fable 5, Mythos 5 i przyszłych modeli o podobnych lub wyższych możliwościach Anthropic wprowadza 30-dniową retencję ruchu — dotyczy to zarówno first-party, jak i third-party. Dane nie są używane do trenowania modeli ani do celów innych niż bezpieczeństwo. Po 30 dniach są usuwane. Celem jest wykrywanie złożonych, wielosesyjnych ataków i nowych jailbreaków.
+        </p>
+      </div>
+
+      <h2>Co to zmienia — podsumowanie</h2>
+      <p>
+        Fable 5 to pierwszy raz, kiedy możliwości klasy Mythos trafiają do ogólnego użytku. Wcześniej oznaczało to dostęp wyłącznie dla rządów i wybranych firm z sektora cyberbezpieczeństwa. Teraz każdy deweloper może wywołać ten model przez API. W praktyce oznacza to, że automatyzacja złożonej inżynierii oprogramowania, zaawansowana analiza finansowa i wielogodzinna autonomiczna praca agentowa stają się dostępne w cenie niższej niż wcześniej za słabszy model.
+      </p>
+      <p>
+        Dla firm pytanie nie brzmi już „czy AI może to zrobić" — po demonstracji Stripe to pytanie jest zamknięte. Pytanie brzmi: kiedy i jak to wdrożyć, żeby nie zostać w tyle za konkurencją, która już to robi.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródło</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Artykuł na podstawie oficjalnego ogłoszenia Anthropic z 9 czerwca 2026.{" "}
+          <a
+            href="https://www.anthropic.com/news/claude-fable-5-mythos-5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-brand font-semibold hover:underline"
+          >
+            anthropic.com/news/claude-fable-5-mythos-5 →
+          </a>
+        </p>
+      </div>
+    </>
+  ),
 };

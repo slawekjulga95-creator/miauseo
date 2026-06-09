@@ -1,7 +1,7 @@
 // Źródło danych bloga — docelowo zastąpić fetchemz CMS (Sanity / Contentful / Payload)
 // Struktura posta musi odpowiadać schematowi CMS
 
-export type Category = "SEO" | "Opinie" | "Poradnik" | "Wizytówka" | "WordPress";
+export type Category = "SEO" | "Opinie" | "Poradnik" | "Wizytówka" | "WordPress" | "Sztuczna Inteligencja";
 
 export type Post = {
   slug: string;
@@ -16,6 +16,17 @@ export type Post = {
 };
 
 export const posts: Post[] = [
+  {
+    slug: "claude-fable-5-mythos-5-anthropic",
+    title: "Claude Fable 5 i Mythos 5 — Anthropic wypuścił najmocniejszy model w historii",
+    excerpt: "Anthropic ogłosił Claude Fable 5 — pierwszy model klasy Mythos dostępny publicznie. Stripe skompresował nim miesiące pracy inżynierskiej do dni. Model pobił Pokémon FireRed używając wyłącznie surowych zrzutów ekranu. Oto co to oznacza w praktyce.",
+    category: "Sztuczna Inteligencja",
+    date: "2026-06-09",
+    readTime: 10,
+    coverColor: "#7c3aed",
+    coverImage: "/blog/cover-claude-fable-5.svg",
+    published: true,
+  },
   {
     slug: "google-search-console-raporty-ai-2026",
     title: "Nowe raporty AI w Google Search Console — co mierzą i co to zmienia",

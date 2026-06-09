@@ -5,22 +5,24 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Post, Category } from "@/app/blog/posts";
 
-const CATEGORIES: Category[] = ["SEO", "Opinie", "Poradnik", "Wizytówka", "WordPress"];
+const CATEGORIES: Category[] = ["SEO", "Opinie", "Poradnik", "Wizytówka", "WordPress", "Sztuczna Inteligencja"];
 
 const categoryStyle: Record<Category, string> = {
-  "SEO":       "bg-orange-100 text-brand",
-  "Opinie":    "bg-green-100 text-green-700",
-  "Poradnik":  "bg-violet-100 text-violet-700",
-  "Wizytówka": "bg-sky-100 text-sky-700",
-  "WordPress": "bg-blue-100 text-blue-700",
+  "SEO":                   "bg-orange-100 text-brand",
+  "Opinie":                "bg-green-100 text-green-700",
+  "Poradnik":              "bg-violet-100 text-violet-700",
+  "Wizytówka":             "bg-sky-100 text-sky-700",
+  "WordPress":             "bg-blue-100 text-blue-700",
+  "Sztuczna Inteligencja": "bg-purple-100 text-purple-700",
 };
 
 const categoryActiveBg: Record<Category, string> = {
-  "SEO":       "bg-brand text-white",
-  "Opinie":    "bg-green-600 text-white",
-  "Poradnik":  "bg-violet-600 text-white",
-  "Wizytówka": "bg-sky-600 text-white",
-  "WordPress": "bg-blue-700 text-white",
+  "SEO":                   "bg-brand text-white",
+  "Opinie":                "bg-green-600 text-white",
+  "Poradnik":              "bg-violet-600 text-white",
+  "Wizytówka":             "bg-sky-600 text-white",
+  "WordPress":             "bg-blue-700 text-white",
+  "Sztuczna Inteligencja": "bg-purple-700 text-white",
 };
 
 function formatDate(iso: string) {
