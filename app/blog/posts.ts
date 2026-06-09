@@ -1,7 +1,7 @@
 // Źródło danych bloga — docelowo zastąpić fetchemz CMS (Sanity / Contentful / Payload)
 // Struktura posta musi odpowiadać schematowi CMS
 
-export type Category = "SEO" | "Opinie" | "Poradnik" | "Wizytówka" | "WordPress" | "Sztuczna Inteligencja" | "Narzędzia AI";
+export type Category = "SEO" | "Opinie" | "Poradnik" | "Wizytówka" | "WordPress" | "Sztuczna Inteligencja" | "Referencje";
 
 export type Post = {
   slug: string;
