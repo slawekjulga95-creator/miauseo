@@ -1,7 +1,7 @@
 // Źródło danych bloga — docelowo zastąpić fetchemz CMS (Sanity / Contentful / Payload)
 // Struktura posta musi odpowiadać schematowi CMS
 
-export type Category = "SEO" | "Opinie" | "Poradnik" | "Wizytówka" | "WordPress" | "Sztuczna Inteligencja" | "Referencje";
+export type Category = "SEO" | "Opinie" | "Poradnik" | "Wizytówka" | "WordPress" | "Sztuczna Inteligencja";
 
 export type Post = {
   slug: string;
@@ -21,7 +21,7 @@ export const posts: Post[] = [
     slug: "masaz-z-dojazdem-poznan-case-study",
     title: "Masaż z dojazdem Poznań — top 3 Google Maps w branży z 50 konkurentami w 60 dni",
     excerpt: "Branża masażu mobilnego w Poznaniu to ponad 50 aktywnych profili GBP walczących o te same frazy. Klientka zaczynała bez jednej opinii i z wizytówką sprzed 3 lat. Oto co zrobiliśmy przez pierwsze 60 dni i jak skończyła w top 3 na najważniejszej frazie.",
-    category: "Referencje",
+    category: "Poradnik",
     date: "2026-06-09",
     readTime: 7,
     coverColor: "#0d9488",
@@ -33,7 +33,7 @@ export const posts: Post[] = [
     slug: "protetyk-pila-case-study",
     title: "Protetyk Piła — jak dotrzeć do seniorów przez Google i zapełnić grafik na 3 tygodnie do przodu",
     excerpt: "Gabinet protetyczny w Pile miał świetną opinię wśród stałych pacjentów i zerową widoczność w Google. Problemem nie był brak jakości — był brak obecności tam, gdzie seniorzy szukają dziś lekarzy. Pokazujemy jak to zmieniliśmy.",
-    category: "Referencje",
+    category: "Poradnik",
     date: "2026-06-09",
     readTime: 6,
     coverColor: "#7c3aed",
@@ -45,7 +45,7 @@ export const posts: Post[] = [
     slug: "serwis-telefonow-poznan-case-study",
     title: "Serwis telefonów Poznań — 154 wizyty z wizytówki Google w pierwszym miesiącu współpracy",
     excerpt: "Lokalny serwis telefonów w Poznaniu konkurował z sieciowymi serwisami i kilkudziesięcioma innymi punktami. Po 30 dniach optymalizacji wizytówki Google — 154 wizyty i wzrost o 26,2% rok do roku. Rozkładamy to na czynniki pierwsze.",
-    category: "Referencje",
+    category: "Poradnik",
     date: "2026-06-09",
     readTime: 6,
     coverColor: "#FF6A00",

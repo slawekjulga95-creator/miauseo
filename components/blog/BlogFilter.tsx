@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Post, Category } from "@/app/blog/posts";
 
-const CATEGORIES: Category[] = ["SEO", "Opinie", "Poradnik", "Wizytówka", "WordPress", "Sztuczna Inteligencja", "Referencje"];
+const CATEGORIES: Category[] = ["SEO", "Opinie", "Poradnik", "Wizytówka", "WordPress", "Sztuczna Inteligencja"];
 
 const categoryStyle: Record<Category, string> = {
   "SEO":                   "bg-orange-100 text-brand",
@@ -14,7 +14,6 @@ const categoryStyle: Record<Category, string> = {
   "Wizytówka":             "bg-sky-100 text-sky-700",
   "WordPress":             "bg-blue-100 text-blue-700",
   "Sztuczna Inteligencja": "bg-purple-100 text-purple-700",
-  "Referencje":            "bg-amber-100 text-amber-700",
 };
 
 const categoryActiveBg: Record<Category, string> = {
@@ -24,7 +23,6 @@ const categoryActiveBg: Record<Category, string> = {
   "Wizytówka":             "bg-sky-600 text-white",
   "WordPress":             "bg-blue-700 text-white",
   "Sztuczna Inteligencja": "bg-purple-700 text-white",
-  "Referencje":            "bg-amber-600 text-white",
 };
 
 function formatDate(iso: string) {
