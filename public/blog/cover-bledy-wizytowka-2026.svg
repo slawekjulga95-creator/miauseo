@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c0f0f"/>
+      <stop offset="100%" style="stop-color:#2a1212"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="70%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.16"/>
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="12%" cy="80%" r="35%">
+      <stop offset="0%" style="stop-color:#FF6A00;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#FF6A00;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Grid -->
+  <g stroke="#ef4444" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Local pack mockup (right side) -->
+  <rect x="680" y="130" width="450" height="360" rx="16" fill="#241015" opacity="0.92"/>
+  <text x="708" y="172" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#9f6a6a" letter-spacing="2">LOCAL PACK · GOOGLE MAPS</text>
+
+  <!-- Result 1 - ok -->
+  <rect x="708" y="192" width="394" height="76" rx="12" fill="#2e1518"/>
+  <circle cx="744" cy="230" r="16" fill="#3f1d22"/>
+  <text x="744" y="236" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#c98f8f" text-anchor="middle">1</text>
+  <rect x="776" y="212" width="160" height="12" rx="6" fill="#5b2c33"/>
+  <rect x="776" y="234" width="220" height="9" rx="4.5" fill="#43222a"/>
+  <text x="1076" y="236" font-family="system-ui, sans-serif" font-size="16" fill="#7f5b5b" text-anchor="end">…</text>
+
+  <!-- Result 2 - ok -->
+  <rect x="708" y="280" width="394" height="76" rx="12" fill="#2e1518"/>
+  <circle cx="744" cy="318" r="16" fill="#3f1d22"/>
+  <text x="744" y="324" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#c98f8f" text-anchor="middle">2</text>
+  <rect x="776" y="300" width="190" height="12" rx="6" fill="#5b2c33"/>
+  <rect x="776" y="322" width="180" height="9" rx="4.5" fill="#43222a"/>
+
+  <!-- Result: your company - falling out -->
+  <rect x="708" y="368" width="394" height="76" rx="12" fill="#3b1114" stroke="#ef4444" stroke-opacity="0.55" stroke-width="1.5"/>
+  <circle cx="744" cy="406" r="16" fill="#ef4444"/>
+  <text x="744" y="412" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="white" text-anchor="middle">12</text>
+  <text x="776" y="402" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#fca5a5">Twoja firma</text>
+  <text x="776" y="424" font-family="system-ui, sans-serif" font-size="12" fill="#b07070">spadek z top 3 — bez zmian w profilu?</text>
+  <g transform="translate(1052, 392)">
+    <path d="M4 4 L24 24 M24 4 L4 24" stroke="#ef4444" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <text x="708" y="474" font-family="system-ui, sans-serif" font-size="12" fill="#9f6a6a">Przyczyna prawie nigdy nie jest widoczna w panelu GBP</text>
+
+  <!-- Category badge -->
+  <rect x="80" y="80" width="100" height="36" rx="18" fill="#FF6A00" opacity="0.95"/>
+  <text x="130" y="103" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1.5">SEO</text>
+
+  <!-- Headline -->
+  <text x="80" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="50" font-weight="800" fill="white" letter-spacing="-1.5">Największe błędy</text>
+  <text x="80" y="255" font-family="system-ui, -apple-system, sans-serif" font-size="50" font-weight="800" fill="#f87171" letter-spacing="-1.5">wizytówki Google</text>
+  <text x="80" y="315" font-family="system-ui, -apple-system, sans-serif" font-size="50" font-weight="800" fill="white" letter-spacing="-1.5">w 2026</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="372" font-family="system-ui, -apple-system, sans-serif" font-size="19" fill="#d8a3a3" font-weight="400">Dlaczego firmy tracą lokalnych klientów</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="402" x2="560" y2="402" stroke="#ef4444" stroke-width="2" opacity="0.5"/>
+
+  <!-- Feature tags -->
+  <rect x="80" y="422" width="120" height="28" rx="6" fill="#1c0f0f" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="140" y="441" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#f87171" text-anchor="middle">Encje i NAP</text>
+
+  <rect x="212" y="422" width="140" height="28" rx="6" fill="#1c0f0f" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="282" y="441" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#f87171" text-anchor="middle">Kanibalizacja</text>
+
+  <rect x="364" y="422" width="130" height="28" rx="6" fill="#1c0f0f" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="429" y="441" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#fbbf24" text-anchor="middle">Filtry lokalne</text>
+
+  <rect x="80" y="462" width="150" height="28" rx="6" fill="#1c0f0f" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="155" y="481" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#f87171" text-anchor="middle">AI Overviews</text>
+
+  <rect x="242" y="462" width="100" height="28" rx="6" fill="#1c0f0f" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="292" y="481" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#22c55e" text-anchor="middle">GEO</text>
+
+  <!-- Date + meta -->
+  <text x="80" y="540" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#6b4040" font-weight="500">18 min czytania — 11 czerwca 2026</text>
+
+  <!-- MiauSEO -->
+  <rect x="80" y="562" width="110" height="32" rx="6" fill="#FF6A00" opacity="0.25"/>
+  <text x="135" y="583" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FF9A55" text-anchor="middle">MiauSEO</text>
+</svg>

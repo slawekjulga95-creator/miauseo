@@ -7614,6 +7614,458 @@ description: Uruchamia serwer dev i weryfikuje stronę główną w przeglądarce
   ),
 
   /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Największe błędy w pozycjonowaniu wizytówki Google 2026
+  ───────────────────────────────────────────────────────────────────────── */
+  "najwieksze-bledy-pozycjonowanie-wizytowki-google-2026": (
+    <>
+      {/* Spis treści */}
+      <div className="not-prose mt-2 mb-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Spis treści</p>
+        <ol className="space-y-1.5 text-sm">
+          <li><a href="#dlaczego-2026" className="font-semibold text-ink hover:text-brand transition-colors">Dlaczego w 2026 roku wizytówki przegrywają inaczej niż kiedyś</a></li>
+          <li><a href="#blad-encja" className="font-semibold text-ink hover:text-brand transition-colors">Błąd 1 — traktowanie wizytówki jak wpisu w katalogu, a nie encji</a></li>
+          <li><a href="#blad-nap" className="font-semibold text-ink hover:text-brand transition-colors">Błąd 2 — niespójność NAP, której nie widać gołym okiem</a></li>
+          <li><a href="#blad-kategorie" className="font-semibold text-ink hover:text-brand transition-colors">Błąd 3 — źle rozegrane kategorie główne i dodatkowe</a></li>
+          <li><a href="#blad-kanibalizacja" className="font-semibold text-ink hover:text-brand transition-colors">Błąd 4 — kanibalizacja lokalizacji</a></li>
+          <li><a href="#blad-behawioralne" className="font-semibold text-ink hover:text-brand transition-colors">Błąd 5 — ignorowanie sygnałów behawioralnych i CTR w Local Pack</a></li>
+          <li><a href="#blad-opinie" className="font-semibold text-ink hover:text-brand transition-colors">Błąd 6 — błędne strategie opinii (w tym recenzje pisane przez AI)</a></li>
+          <li><a href="#blad-uslugi" className="font-semibold text-ink hover:text-brand transition-colors">Błąd 7 — pusta sekcja usług i brak geotargetowanej treści</a></li>
+          <li><a href="#blad-schema" className="font-semibold text-ink hover:text-brand transition-colors">Błąd 8 — schema.org wdrożone dla ozdoby</a></li>
+          <li><a href="#blad-nadoptymalizacja" className="font-semibold text-ink hover:text-brand transition-colors">Błąd 9 — nadmierna optymalizacja i filtry lokalne</a></li>
+          <li><a href="#blad-geo" className="font-semibold text-ink hover:text-brand transition-colors">Błąd 10 — brak strategii GEO i niewidzialność w AI</a></li>
+          <li><a href="#tabela-bledow" className="font-semibold text-ink hover:text-brand transition-colors">Tabela: błędy vs wpływ na ranking lokalny</a></li>
+          <li><a href="#case-studies" className="font-semibold text-ink hover:text-brand transition-colors">3 case studies z naszych audytów</a></li>
+          <li><a href="#checklista" className="font-semibold text-ink hover:text-brand transition-colors">Checklista naprawcza na 2026</a></li>
+          <li><a href="#faq-bledy" className="font-semibold text-ink hover:text-brand transition-colors">FAQ</a></li>
+        </ol>
+      </div>
+
+      <h2 id="dlaczego-2026">Dlaczego w 2026 roku wizytówki przegrywają inaczej niż kiedyś</h2>
+      <p>
+        Jeszcze kilka lat temu <strong>pozycjonowanie wizytówki Google</strong> dało się sprowadzić do prostej listy: uzupełnij pola, zbieraj opinie, dodawaj zdjęcia. Te porady nadal są prawdziwe — i nadal znajdziesz je w 90% artykułów o lokalnym SEO. Problem w tym, że w 2026 roku to już tylko bilet wstępu, a nie przewaga. Wizytówki przegrywają dziś na poziomie, którego nie widać w panelu Google Business Profile.
+      </p>
+      <p>
+        Trzy zmiany przestawiły zasady gry. Po pierwsze, <strong>Google coraz mocniej opiera wyniki lokalne na encjach</strong> — firma nie jest już „wpisem z adresem", tylko obiektem w Knowledge Graph, którego wiarygodność Google składa z dziesiątek źródeł naraz: wizytówki, strony, katalogów, opinii, wzmianek. Po drugie, <strong>AI Overviews i tryb AI w wyszukiwarce</strong> zaczęły odpowiadać na zapytania lokalne bezpośrednio — użytkownik pyta „gdzie naprawię telefon blisko centrum", a odpowiedź generuje model językowy, który cytuje te firmy, których dane potrafi zrozumieć i zweryfikować. Po trzecie, <strong>sygnały behawioralne</strong> — co użytkownicy faktycznie robią z Twoją wizytówką w wynikach — ważą więcej niż kiedykolwiek.
+      </p>
+      <p>
+        Efekt? Można mieć komplet zdjęć, 150 opinii i wypełnione wszystkie pola — i systematycznie tracić klientów na rzecz konkurenta, który zrozumiał, jak Google składa lokalny ranking w całość. Ten artykuł jest o błędach, które popełniają firmy „zrobione poprawnie". Podstawy — jak <Link href="/weryfikacja-wizytowki-google">weryfikacja wizytówki</Link> czy <Link href="/sekcja-informacje-wizytowka-google">wypełnienie sekcji Informacje</Link> — opisaliśmy osobno; tutaj wchodzimy poziom wyżej.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-violet-400 bg-violet-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-violet-700 mb-2">CO ZMIENIŁO SIĘ W 2026 ROKU?</p>
+        <p className="text-sm text-violet-900 leading-relaxed">
+          Google udostępnił w Search Console <Link href="/google-search-console-raporty-ai-2026" className="underline">raporty widoczności w AI Overviews i AI Mode</Link> — po raz pierwszy widać czarno na białym, które firmy są cytowane w odpowiedziach generatywnych, a które nie istnieją. Dla lokalnego SEO to nowe pole bitwy: obecność w klasycznym Local Packu nie gwarantuje już obecności w odpowiedzi AI.
+        </p>
+      </div>
+
+      <h2 id="blad-encja">Błąd 1 — traktowanie wizytówki jak wpisu w katalogu, a nie encji</h2>
+      <p>
+        Najgłębszy i najmniej rozumiany błąd. Dla Google Twoja firma to <strong>encja</strong> — obiekt w Knowledge Graph z nazwą, lokalizacją, kategorią, relacjami i historią. Wizytówka Google nie „jest" tą encją; jest tylko jednym z jej źródeł. Pozostałe to Twoja strona, dane strukturalne, katalogi branżowe, wzmianki w lokalnych mediach, profile społecznościowe i opinie.
+      </p>
+      <p>
+        Jeżeli te źródła opowiadają różne historie — inna nazwa w wizytówce, inna na stronie, jeszcze inna w CEIDG i na Facebooku — Google ma niski „entity confidence". A encja, której wyszukiwarka nie jest pewna, nie będzie ani wysoko w Local Packu, ani cytowana przez AI. Modele językowe są tu jeszcze bardziej bezwzględne niż klasyczny algorytm: <strong>AI nie cytuje firm, których danych nie potrafi spójnie zweryfikować w kilku źródłach</strong>.
+      </p>
+
+      <h3>Jak wygląda rozjechana encja w praktyce</h3>
+      <ul>
+        <li>wizytówka: „Auto-Serwis Kowalski — mechanika i wulkanizacja", strona: „AS Kowalski Sp. z o.o.", katalogi: „Auto Serwis Jan Kowalski",</li>
+        <li>strona nie linkuje do wizytówki, wizytówka prowadzi do strony głównej zamiast do podstrony lokalizacji,</li>
+        <li>brak danych strukturalnych LocalBusiness albo dane z innym adresem niż w GBP,</li>
+        <li>pole <code>sameAs</code> w schemie nie wskazuje profili firmy, więc Google nie może „skleić" tożsamości.</li>
+      </ul>
+      <p>
+        Naprawa zaczyna się od decyzji: <strong>jedna kanoniczna wersja nazwy, adresu i opisu działalności</strong> — i konsekwentne wyrównanie wszystkich źródeł do niej. To nudna, żmudna praca, której większość agencji nie wycenia, bo nie widać jej w raporcie. I właśnie dlatego daje przewagę.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-blue-400 bg-blue-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">WSKAZÓWKA EKSPERTA</p>
+        <p className="text-sm text-blue-900 leading-relaxed">
+          Wpisz w Google dokładną nazwę swojej firmy w cudzysłowie i przejrzyj pierwsze 30 wyników. Każda odmiana nazwy, stary adres i martwy profil, który tam znajdziesz, to sygnał rozmywający encję. Zacznij porządki od źródeł, które rankują najwyżej — one najmocniej kształtują to, co Google „wie" o Twojej firmie.
+        </p>
+      </div>
+
+      <h2 id="blad-nap">Błąd 2 — niespójność NAP, której nie widać gołym okiem</h2>
+      <p>
+        O spójności NAP (nazwa, adres, telefon) napisano wszystko — a mimo to w naszych audytach problem dotyczy większości wizytówek. Powód: firmy sprawdzają NAP „na oko", a rozjazdy siedzą w detalach, których oko nie łapie. Czym dokładnie jest NAP i jak działa, <Link href="/nap-wizytowka-google-co-to-jest">opisaliśmy w osobnym przewodniku</Link> — tu skupmy się na tym, co umyka.
+      </p>
+
+      <h3>Niespójności, które znajdujemy najczęściej</h3>
+      <ul>
+        <li><strong>format numeru telefonu</strong> — „+48 503 575 067" vs „503-575-067" vs numer z centralki na stronie a komórka w wizytówce,</li>
+        <li><strong>lokal vs brak lokalu</strong> — „ul. Polna 12" w GBP, „Polna 12/3" w stopce strony, „Polna 12 lok. 3" w katalogu,</li>
+        <li><strong>stare adresy w katalogach</strong>, do których nikt nie ma loginów — Panorama Firm, stare NIP-owe katalogi, nieaktualne wpisy po przeprowadzce sprzed lat,</li>
+        <li><strong>dane strukturalne na stronie z innym adresem niż GBP</strong> — najczęściej po migracji strony, gdy schema została skopiowana ze starego motywu,</li>
+        <li><strong>duplikaty wizytówek</strong> — po byłych pracownikach, po starych weryfikacjach, po „pomocy" poprzedniej agencji.</li>
+      </ul>
+      <p>
+        Każda z tych rozbieżności samodzielnie to drobiazg. Problem w tym, że Google składa zaufanie do encji ze wszystkich źródeł naraz — a w erze wyszukiwania konwersacyjnego błędny telefon w jednym mocnym katalogu potrafi trafić do odpowiedzi AI zamiast aktualnego. Użytkownik dzwoni na martwy numer i to nie Google traci klienta, tylko Ty.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-red-400 bg-red-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-red-600 mb-2">NAJCZĘŚCIEJ POMIJANY BŁĄD</p>
+        <p className="text-sm text-red-900 leading-relaxed">
+          Duplikat wizytówki nie musi być widoczny publicznie, żeby szkodzić. Wizytówka „oczekująca", zawieszona albo nieodebrana po byłym pracowniku nadal istnieje w systemie Google i rozmywa sygnały. W audytach sprawdzamy to w Google Maps po starych numerach telefonów i wariantach nazwy — duplikaty znajdujemy w co trzeciej firmie, która „na pewno ma tylko jedną wizytówkę".
+        </p>
+      </div>
+
+      <h2 id="blad-kategorie">Błąd 3 — źle rozegrane kategorie główne i dodatkowe</h2>
+      <p>
+        Kategoria główna to najsilniejszy pojedynczy sygnał rankingowy w <strong>Local Packu</strong> — działa jak filtr, który algorytm stosuje zanim w ogóle porówna pozostałe czynniki. Mechanikę <Link href="/kategorie-wizytowka-google">opisaliśmy szczegółowo tutaj</Link>; w praktyce audytowej widzimy trzy zaawansowane warianty tego błędu.
+      </p>
+
+      <h3>Wariant 1: kategoria główna „o firmie", nie „o przychodzie"</h3>
+      <p>
+        Stomatolog z kategorią główną „Klinika" zamiast „Dentysta". Firma sprzątająca z kategorią „Usługi dla firm" zamiast „Firma sprzątająca". Kategoria główna powinna odpowiadać frazie, z której przychodzi najwięcej pieniędzy — nie temu, jak właściciel myśli o swojej firmie. Zmiana samej kategorii głównej potrafi przesunąć wizytówkę o kilkanaście pozycji na frazach komercyjnych.
+      </p>
+
+      <h3>Wariant 2: kanibalizacja kategorii między własnymi wizytówkami</h3>
+      <p>
+        Firma z dwoma punktami w jednym mieście ustawia obu tę samą kategorię główną i ten sam obszar. Google zamiast pokazywać obie, wybiera jedną — zwykle naprzemiennie, co właściciel widzi jako „skakanie pozycji". Przy <Link href="/wiele-lokalizacji-google-business-profile">wielu lokalizacjach</Link> kategorie i obszary muszą się uzupełniać, nie dublować.
+      </p>
+
+      <h3>Wariant 3: testowanie kategorii „na żywo"</h3>
+      <p>
+        Częsta praktyka agencji: zmiana kategorii głównej co kilka tygodni, „żeby sprawdzić co działa". Każda zmiana kategorii głównej to dla Google sygnał niestabilności encji i potrafi tymczasowo obniżyć widoczność — a seria zmian w krótkim czasie bywa pierwszym krokiem do ręcznej weryfikacji profilu. Kategorię główną zmienia się na podstawie analizy konkurencji w Local Packu, raz, z premedytacją.
+      </p>
+
+      <h2 id="blad-kanibalizacja">Błąd 4 — kanibalizacja lokalizacji</h2>
+      <p>
+        Kanibalizacja w lokalnym SEO ma dwa oblicza i oba kosztują widoczność.
+      </p>
+      <p>
+        <strong>Kanibalizacja wizytówek:</strong> kilka profili GBP konkurujących o te same frazy w tym samym obszarze — duplikaty, wizytówka „centrali" i „oddziału" pod tym samym adresem, osobne wizytówki dla usług tej samej firmy („Hydraulik Nowak" i „Nowak — przepychanie rur"). Google wybiera jedną, reszta wisi w martwej strefie, a opinie i sygnały rozkładają się na kilka słabych profili zamiast budować jeden mocny.
+      </p>
+      <p>
+        <strong>Kanibalizacja landing pages:</strong> strona ma pięć podstron „hydraulik Poznań", „hydraulik Poznań Grunwald", „hydraulik Poznań tanio" — pisanych pod pozycjonowanie, z przekopiowaną treścią i podmienioną dzielnicą. W 2026 roku to działa odwrotnie do zamierzeń: Google nie wie, którą podstronę powiązać z wizytówką, sygnały się rozpraszają, a treści tego typu są pierwszym kandydatem do dewaluacji jako „thin content". Wizytówka powinna linkować do <strong>jednej, mocnej podstrony lokalizacji</strong>, a struktura geo-treści na stronie musi mieć sens dla użytkownika — jak to ułożyć, pokazujemy na przykładzie <Link href="/siedziba-mala-miejscowosc-local-seo">firmy z małej miejscowości celującej w duże miasto</Link>.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-blue-400 bg-blue-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">WSKAZÓWKA EKSPERTA</p>
+        <p className="text-sm text-blue-900 leading-relaxed">
+          Link z wizytówki ma trafiać w podstronę, która potwierdza wszystko, co mówi wizytówka: ten sam NAP, te same usługi, te same godziny, schema LocalBusiness. To domknięcie pętli semantycznej między GBP a witryną — jeden z najmocniejszych i najczęściej pomijanych ruchów w lokalnym SEO. Wizytówka linkująca do strony głównej z karuzelą i sloganem marnuje ten sygnał.
+        </p>
+      </div>
+
+      <h2 id="blad-behawioralne">Błąd 5 — ignorowanie sygnałów behawioralnych i CTR w Local Pack</h2>
+      <p>
+        Google mierzy, co użytkownicy robią z Twoją wizytówką: czy klikają w nią w <strong>Local Packu</strong>, czy proszą o trasę, czy dzwonią, czy oglądają zdjęcia, czy wracają do wyników i wybierają konkurenta. Te sygnały behawioralne działają jak ciągły plebiscyt — i potrafią wynieść do top 3 wizytówkę, która „na papierze" jest słabsza.
+      </p>
+      <p>
+        Błąd polega na tym, że firmy optymalizują wizytówkę <em>dla algorytmu</em>, a nie <em>dla kliknięcia</em>. Tymczasem w Local Packu użytkownik widzi dosłownie kilka elementów i na ich podstawie wybiera: nazwę, ocenę i liczbę opinii, kategorię, zdjęcie główne, godziny („otwarte teraz"), czasem atrybuty. Każdy z nich to dźwignia CTR:
+      </p>
+      <ul>
+        <li><strong>zdjęcie główne</strong> — Google rotuje je automatycznie, ale to, jaki zestaw zdjęć wgrasz, determinuje co ma do wyboru; wnętrze z ludźmi i efekty pracy klikają się lepiej niż logo na białym tle (<Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">które zdjęcia działają, sprawdziliśmy tutaj</Link>),</li>
+        <li><strong>ocena 4,9 przy 40 opiniach</strong> bije 5,0 przy 6 opiniach — liczba recenzji jest dowodem społecznym sama w sobie,</li>
+        <li><strong>godziny otwarcia</strong> — wizytówka „zamknięte" w godzinach, w których klienci szukają, oddaje kliknięcia konkurencji; dla branż po godzinach to argument za realnym wydłużeniem dyżuru telefonicznego (<Link href="/godziny-otwarcia-wizytowka-google">więcej o godzinach</Link>),</li>
+        <li><strong><Link href="/atrybuty-wizytowka-google">atrybuty</Link></strong> — „możliwość dojazdu", „płatność kartą", „obsługa po angielsku" potrafią rozstrzygnąć wybór między dwiema podobnymi firmami.</li>
+      </ul>
+      <p>
+        Druga strona tego medalu: <strong>porzucone interakcje też są sygnałem</strong>. Telefon, którego nikt nie odbiera, generuje wzorzec „kliknięcie → połączenie → szybki powrót do wyników → wybór konkurenta". Google nie musi wiedzieć, że nie odebrałeś — widzi, że Twoja wizytówka nie kończy ścieżki użytkownika.
+      </p>
+
+      <h2 id="blad-opinie">Błąd 6 — błędne strategie opinii, w tym recenzje pisane przez AI</h2>
+      <p>
+        Opinie to wciąż drugi najsilniejszy blok sygnałów lokalnych — i obszar, w którym w 2026 roku najłatwiej zrobić sobie krzywdę.
+      </p>
+
+      <h3>Skoki i cisza zamiast stałego rytmu</h3>
+      <p>
+        Typowy wzorzec po „akcji zbierania opinii": 30 recenzji w dwa tygodnie, potem pół roku ciszy. Algorytm patrzy na <strong>prędkość i regularność</strong> napływu opinii — nagły pik, zwłaszcza z kont bez historii, wygląda jak kupowanie recenzji i bywa powodem masowego filtrowania. Zdrowy profil zbiera opinie stale, proporcjonalnie do realnego ruchu klientów. Jak ułożyć taki proces bez nachalności, <Link href="/opinie-google-jak-zdobywac-skutecznie">opisaliśmy osobno</Link>.
+      </p>
+
+      <h3>Recenzje generowane przez AI — nowe pole minowe</h3>
+      <p>
+        W 2026 roku coraz więcej firm „pomaga" klientom, wysyłając im gotowe, wygenerowane przez AI treści recenzji do wklejenia — albo wprost zleca publikację recenzji z kont zewnętrznych. Google rozwinął klasyfikatory wykrywające treści syntetyczne i wzorce publikacji (świeże konta, brak innych recenzji, podobna struktura językowa, geolokalizacja niezgodna z firmą). Konsekwencje idą dalej niż usunięcie recenzji: profil dostaje <strong>ograniczenie widoczności opinii</strong>, a w skrajnych przypadkach zawieszenie. Prosić o opinie wolno i trzeba; pisać ich za klientów — nie.
+      </p>
+
+      <h3>Brak odpowiedzi i odpowiedzi „od szablonu"</h3>
+      <p>
+        Odpowiedzi właściciela czytają i użytkownicy, i modele AI budujące opis Twojej firmy. Identyczna formułka pod każdą opinią to zmarnowany kanał semantyczny — odpowiedź to naturalne miejsce, by potwierdzić zakres usług i lokalizację („Dziękujemy! Cieszymy się, że wymiana rozrządu w Pana BMW przebiegła sprawnie…"). Bez przesady jednak: upychanie fraz w każdej odpowiedzi wygląda spamersko dla ludzi i klasyfikatorów. A jak reagować na recenzje krytyczne — i które da się legalnie usunąć — opisaliśmy w przewodnikach o <Link href="/negatywna-opinia-google-co-zrobic">negatywnej opinii</Link> i <Link href="/jak-usunac-negatywne-opinie-z-google">zgłaszaniu opinii naruszających zasady</Link>.
+      </p>
+
+      <h2 id="blad-uslugi">Błąd 7 — pusta sekcja usług i brak geotargetowanej treści</h2>
+      <p>
+        Sekcje <Link href="/uslugi-wizytowka-google-business">Usługi</Link> i <Link href="/produkty-wizytowka-google-business">Produkty</Link> w Google Business Profile to dla algorytmu ustrukturyzowana mapa tego, co sprzedajesz — a dla modeli AI gotowa baza wiedzy, z której składają odpowiedź na pytanie „kto w okolicy robi X". Większość firm zostawia je puste albo wkleja trzy ogólniki. To podwójna strata: wizytówka nie łapie dopasowania na frazy long-tail („wymiana matrycy iPhone 15", „strzyżenie psa rasy shih tzu"), a AI nie ma czego zacytować.
+      </p>
+      <p>
+        Dobrze zrobiona sekcja usług to kilkanaście–kilkadziesiąt pozycji z opisami pisanymi językiem klienta, cenami lub widełkami tam, gdzie to możliwe, pogrupowanych w kategorie. To samo dotyczy <Link href="/posty-wizytowka-google">postów Google</Link> — publikowane regularnie, geotargetowane („promocja dla mieszkańców Wildy") budują świeżość profilu, której nie da się podrobić niczym innym.
+      </p>
+      <p>
+        Po stronie witryny analogiczny błąd to treść „uniwersalna", bez kontekstu lokalnego: strona usługowa, która mogłaby należeć do firmy z dowolnego miasta. Geotargetowanie treści nie polega na doklejeniu nazwy miasta do nagłówka — polega na realnym kontekście: dzielnice obsługi, czas dojazdu, lokalne realia, zdjęcia z realizacji w okolicy, opinie klientów z miasta. Tak buduje się <strong>lokalna topical authority</strong> — sygnał, że to nie strona-wydmuszka, tylko firma faktycznie działająca na tym terenie.
+      </p>
+
+      <h2 id="blad-schema">Błąd 8 — schema.org wdrożone dla ozdoby</h2>
+      <p>
+        Dane strukturalne LocalBusiness to język, w którym strona potwierdza wyszukiwarce (i modelom AI) tożsamość firmy. W audytach widzimy trzy powtarzalne patologie:
+      </p>
+      <ul>
+        <li><strong>schema niezgodna z GBP</strong> — inny adres, inny telefon, inne godziny; zamiast wzmacniać encję, aktywnie ją rozmywa,</li>
+        <li><strong>schema z generatora wtyczki</strong> — typ „Organization" zamiast precyzyjnego podtypu („Dentist", „Plumber", „AutoRepair"), brak <code>geo</code>, brak <code>openingHoursSpecification</code>, brak <code>sameAs</code> z linkiem do profilu Google i social mediów,</li>
+        <li><strong>schema tylko na stronie głównej</strong> — a podstrona lokalizacji, do której linkuje wizytówka, nie ma żadnej.</li>
+      </ul>
+      <p>
+        Poprawne wdrożenie — z przykładami kodu JSON-LD dla różnych środowisk — rozpisaliśmy w przewodniku <Link href="/jak-dodac-local-schema-do-strony">jak dodać local schema do strony</Link>. W 2026 roku to wdrożenie ma dodatkową stawkę: ustrukturyzowane dane to format, który modele językowe konsumują najchętniej. Firma z czystą, spójną schemą jest po prostu łatwiejsza do zacytowania w odpowiedzi AI niż firma, której dane trzeba zgadywać z treści.
+      </p>
+
+      <h2 id="blad-nadoptymalizacja">Błąd 9 — nadmierna optymalizacja i filtry lokalne</h2>
+      <p>
+        W lokalnym SEO da się przegrać nie tylko przez zaniedbanie, ale i przez nadgorliwość. Najczęstsze formy przedobrzenia, które widzimy w 2026 roku:
+      </p>
+      <ul>
+        <li><strong>keyword stuffing w nazwie firmy</strong> — „Hydraulik Poznań 24h Tanio — Nowak Instalacje". Tak, to wciąż potrafi działać krótkoterminowo. I tak, Google coraz skuteczniej to egzekwuje: od cichego obniżenia pozycji, przez przywrócenie nazwy rejestrowej, po zawieszenie profilu. Konkurencja może to zgłosić jednym kliknięciem,</li>
+        <li><strong>fikcyjne lokalizacje</strong> — wirtualne biura i „oddziały" u znajomych, żeby złapać Local Pack w kolejnych miastach. Google weryfikuje lokale wideo-weryfikacją i wygasza takie profile seriami,</li>
+        <li><strong>obszar działania ustawiony „na całe województwo"</strong> — algorytm i tak rankuje wokół realnej lokalizacji; przeciągnięty obszar rozcieńcza dopasowanie tam, gdzie faktycznie możesz wygrywać,</li>
+        <li><strong>upychanie fraz w opisie, usługach, odpowiedziach na opinie i pytaniach Q&A naraz</strong> — pojedynczo nieszkodliwe, w komplecie składa się na profil, który klasyfikatory spamu oznaczają do ręcznego przeglądu.</li>
+      </ul>
+      <p>
+        Filtr lokalny rzadko przychodzi z powiadomieniem. Typowy objaw to nagły, trwały spadek z top 3 do drugiej dziesiątki przy niezmienionym profilu — i brak reakcji na dalsze „optymalizacje". Jeśli to Twój przypadek, audyt warto zacząć od historii zmian profilu i zgodności z wytycznymi, nie od dosypywania kolejnych fraz. Do szybkiej samooceny możesz użyć naszego bezpłatnego narzędzia <Link href="/gbp-score">GBP Score</Link> albo <Link href="/checklista-wizytowki-google">checklisty wizytówki</Link>.
+      </p>
+
+      <h2 id="blad-geo">Błąd 10 — brak strategii GEO: niewidzialność w AI Overviews i wyszukiwaniu konwersacyjnym</h2>
+      <p>
+        <strong>GEO (Generative Engine Optimization)</strong> to optymalizacja pod odpowiedzi generowane przez AI — AI Overviews, tryb AI Google, ChatGPT, Perplexity, asystentów głosowych. W wyszukiwaniu lokalnym to już nie przyszłość: rosnąca część zapytań „usługa + miasto" kończy się odpowiedzią konwersacyjną, w której AI poleca dwie–trzy firmy z uzasadnieniem. Pytanie brzmi: skąd model bierze te firmy?
+      </p>
+      <p>
+        Z naszych obserwacji składają się na to cztery warstwy: <strong>spójna encja</strong> (błąd 1 i 2 — AI cytuje firmy, których dane potrafi zweryfikować), <strong>ustrukturyzowane dane</strong> (sekcje usług w GBP, schema na stronie — błąd 7 i 8), <strong>treść odpowiadająca na pytania</strong> (FAQ na stronie i w wizytówce — sekcja <Link href="/pytania-odpowiedzi-wizytowka-google">pytań i odpowiedzi w GBP</Link> jest tu niedocenianą kopalnią) oraz <strong>dowody jakości</strong> — opinie z konkretami, które model może sparafrazować („klienci chwalą szybki dojazd i uczciwą wycenę").
+      </p>
+      <p>
+        Wyszukiwanie głosowe i multimodalne dokłada kolejny wymiar: użytkownik pyta pełnym zdaniem („gdzie naprawię buty w sobotę po południu blisko Starego Miasta?") albo robi zdjęcie problemu. Wygrywają firmy, których dane pozwalają odpowiedzieć na <em>całe</em> pytanie: godziny (sobota po południu), lokalizacja (Stare Miasto), usługa (naprawa obuwia). Każde puste pole w profilu to pytanie, na które AI nie odpowie Twoją firmą. A na horyzoncie są agenty AI, które w imieniu użytkownika porównają oferty i zarezerwują termin — one będą jeszcze bardziej bezlitosne dla niekompletnych danych.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-violet-400 bg-violet-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-violet-700 mb-2">CO ZMIENIŁO SIĘ W 2026 ROKU?</p>
+        <p className="text-sm text-violet-900 leading-relaxed">
+          Wcześniej lokalne SEO kończyło się na trzech pozycjach Local Packu. Dziś odpowiedź AI często wymienia firmy <strong>zanim użytkownik zobaczy jakiekolwiek klasyczne wyniki</strong> — a kryteria doboru są bliższe „czy model rozumie i ufa danym tej firmy" niż klasycznemu rankingowi. Firmy, które traktują GBP jako bazę danych o sobie (kompletną, spójną, ustrukturyzowaną), wygrywają oba światy naraz.
+        </p>
+      </div>
+
+      <h2 id="tabela-bledow">Tabela: błędy w wizytówce Google vs wpływ na ranking lokalny</h2>
+
+      <div className="overflow-x-auto my-6 rounded-xl border border-zinc-200">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr style={{backgroundColor: '#18181b'}}>
+              <th className="text-left px-4 py-3 text-white font-semibold">Błąd</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Wpływ na widoczność</th>
+              <th className="text-left px-4 py-3 text-white font-semibold w-28">Poziom ryzyka</th>
+              <th className="text-left px-4 py-3 text-white font-semibold w-32">Trudność naprawy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Rozjechana encja (nazwa/dane w wielu wersjach)</td>
+              <td className="px-4 py-3 text-zinc-600">Niski entity confidence — sufit pozycji i brak cytowań w AI</td>
+              <td className="px-4 py-3"><span className="inline-block font-bold px-2.5 py-0.5 rounded text-xs" style={{backgroundColor:'#fee2e2',color:'#b91c1c'}}>Wysoki</span></td>
+              <td className="px-4 py-3 text-zinc-600">Średnia (żmudna)</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Niespójny NAP + duplikaty wizytówek</td>
+              <td className="px-4 py-3 text-zinc-600">Rozproszenie sygnałów, błędne dane w odpowiedziach AI</td>
+              <td className="px-4 py-3"><span className="inline-block font-bold px-2.5 py-0.5 rounded text-xs" style={{backgroundColor:'#fee2e2',color:'#b91c1c'}}>Wysoki</span></td>
+              <td className="px-4 py-3 text-zinc-600">Średnia</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Zła kategoria główna</td>
+              <td className="px-4 py-3 text-zinc-600">Wykluczenie z Local Packu na frazy komercyjne</td>
+              <td className="px-4 py-3"><span className="inline-block font-bold px-2.5 py-0.5 rounded text-xs" style={{backgroundColor:'#fee2e2',color:'#b91c1c'}}>Wysoki</span></td>
+              <td className="px-4 py-3 text-zinc-600">Niska</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Kanibalizacja lokalizacji / landingów</td>
+              <td className="px-4 py-3 text-zinc-600">Wizytówki i podstrony nawzajem wypychają się z wyników</td>
+              <td className="px-4 py-3"><span className="inline-block font-bold px-2.5 py-0.5 rounded text-xs" style={{backgroundColor:'#ffedd5',color:'#c2410c'}}>Średni</span></td>
+              <td className="px-4 py-3 text-zinc-600">Średnia</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Słaby CTR w Local Packu (zdjęcia, godziny, atrybuty)</td>
+              <td className="px-4 py-3 text-zinc-600">Stopniowa erozja pozycji mimo „poprawnego" profilu</td>
+              <td className="px-4 py-3"><span className="inline-block font-bold px-2.5 py-0.5 rounded text-xs" style={{backgroundColor:'#ffedd5',color:'#c2410c'}}>Średni</span></td>
+              <td className="px-4 py-3 text-zinc-600">Niska</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Opinie: skoki, AI-recenzje, brak odpowiedzi</td>
+              <td className="px-4 py-3 text-zinc-600">Filtrowanie recenzji, utrata zaufania, ryzyko zawieszenia</td>
+              <td className="px-4 py-3"><span className="inline-block font-bold px-2.5 py-0.5 rounded text-xs" style={{backgroundColor:'#fee2e2',color:'#b91c1c'}}>Wysoki</span></td>
+              <td className="px-4 py-3 text-zinc-600">Wysoka</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Pusta sekcja usług / produktów</td>
+              <td className="px-4 py-3 text-zinc-600">Brak dopasowania long-tail, niewidzialność w odpowiedziach AI</td>
+              <td className="px-4 py-3"><span className="inline-block font-bold px-2.5 py-0.5 rounded text-xs" style={{backgroundColor:'#ffedd5',color:'#c2410c'}}>Średni</span></td>
+              <td className="px-4 py-3 text-zinc-600">Niska</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Błędna lub brakująca schema LocalBusiness</td>
+              <td className="px-4 py-3 text-zinc-600">Strona nie potwierdza encji; trudniejsze cytowanie przez LLM</td>
+              <td className="px-4 py-3"><span className="inline-block font-bold px-2.5 py-0.5 rounded text-xs" style={{backgroundColor:'#ffedd5',color:'#c2410c'}}>Średni</span></td>
+              <td className="px-4 py-3 text-zinc-600">Niska</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Keyword stuffing w nazwie, fikcyjne lokalizacje</td>
+              <td className="px-4 py-3 text-zinc-600">Filtr lokalny lub zawieszenie profilu — utrata całego kanału</td>
+              <td className="px-4 py-3"><span className="inline-block font-bold px-2.5 py-0.5 rounded text-xs" style={{backgroundColor:'#fee2e2',color:'#b91c1c'}}>Krytyczny</span></td>
+              <td className="px-4 py-3 text-zinc-600">Wysoka</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-semibold text-ink">Brak strategii GEO</td>
+              <td className="px-4 py-3 text-zinc-600">Niewidzialność w AI Overviews i wyszukiwaniu głosowym</td>
+              <td className="px-4 py-3"><span className="inline-block font-bold px-2.5 py-0.5 rounded text-xs" style={{backgroundColor:'#fee2e2',color:'#b91c1c'}}>Rosnący</span></td>
+              <td className="px-4 py-3 text-zinc-600">Średnia</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="case-studies">3 case studies z naszych audytów</h2>
+
+      <h3>Case 1: Klinika stomatologiczna — niewidzialna mimo „idealnego" profilu</h3>
+      <p>
+        <strong>Problem:</strong> klinika w mieście wojewódzkim, komplet zdjęć, 180 opinii ze średnią 4,8, profil prowadzony przez agencję — i pozycje 8–12 na wszystkich frazach komercyjnych, bez wejścia do Local Packu.
+      </p>
+      <p>
+        <strong>Diagnoza:</strong> kategoria główna „Klinika stomatologiczna" zamiast „Dentysta" (kilkukrotnie mniejszy wolumen dopasowań), a głębiej — rozjechana encja: trzy warianty nazwy (z „sp. z o.o." i bez, ze starym członem brandu) w GBP, na stronie i w 40+ katalogach medycznych. Do tego schema typu „Organization" z adresem sprzed przeprowadzki — strona aktywnie zaprzeczała wizytówce.
+      </p>
+      <p>
+        <strong>Wdrożenie:</strong> jedna kanoniczna nazwa, korekta kategorii głównej, czyszczenie katalogów (6 tygodni pracy), nowa schema „Dentist" zgodna 1:1 z GBP na podstronie kontaktowej, do której przepięto link z wizytówki.
+      </p>
+      <p>
+        <strong>Efekty:</strong> wejście do top 3 Local Packu na główną frazę po 9 tygodniach, wzrost połączeń z wizytówki o ~60% kwartał do kwartału. Bez jednej nowej opinii i bez jednego nowego zdjęcia — wyłącznie praca na spójności encji.
+      </p>
+
+      <h3>Case 2: Warsztat samochodowy — filtr po „optymalizacji"</h3>
+      <p>
+        <strong>Problem:</strong> warsztat przez dwa lata stabilnie w top 3, po przejęciu profilu przez nową agencję — w ciągu miesiąca spadek poza top 20 i brak reakcji na kolejne zmiany.
+      </p>
+      <p>
+        <strong>Diagnoza:</strong> historia zmian pokazała klasyczną nadoptymalizację: nazwa zmieniona na „Warsztat Samochodowy [Miasto] — Mechanik 24h Klimatyzacja Diagnostyka", trzy zmiany kategorii głównej w sześć tygodni, opis przepisany pod upchnięcie fraz i seria 25 opinii w 10 dni z kont bez historii. Profil wpadł w filtr — bez żadnego powiadomienia.
+      </p>
+      <p>
+        <strong>Wdrożenie:</strong> powrót do nazwy rejestrowej, stabilizacja kategorii, usunięcie spamowych opinii zanim zrobi to Google (zgłoszenia + kontakt z klientami), trzy miesiące „ciszy optymalizacyjnej" z regularnymi postami i naturalnym napływem recenzji.
+      </p>
+      <p>
+        <strong>Efekty:</strong> filtr puścił po ~10 tygodniach od czyszczenia; powrót do top 5 po czterech miesiącach. Wniosek, który powtarzamy klientom: w lokalnym SEO szybciej traci się zaufanie algorytmu, niż się je odzyskuje.
+      </p>
+
+      <h3>Case 3: Firma sprzątająca — dwie wizytówki zjadające się nawzajem</h3>
+      <p>
+        <strong>Problem:</strong> firma obsługująca dwa sąsiednie miasta, dwie wizytówki (siedziba + „biuro" u wspólnika), pozycje skaczące z dnia na dzień między top 3 a drugą dziesiątką w obu miastach.
+      </p>
+      <p>
+        <strong>Diagnoza:</strong> obie wizytówki miały tę samą kategorię główną, ten sam numer telefonu, linkowały do tej samej strony głównej i miały nakładające się obszary. Google traktował je jak duplikat — pokazywał naprzemiennie jedną, tłumiąc drugą. Opinie rozkładały się pół na pół, więc żaden profil nie miał masy krytycznej.
+      </p>
+      <p>
+        <strong>Wdrożenie:</strong> wizytówka druga (lokal bez realnej obsługi klienta) została wygaszona, a jej opinii nie dało się przenieść — za to cały strumień nowych opinii skierowano na profil główny. Obszar działania ustawiono realistycznie, strona dostała dwie porządne podstrony lokalizacyjne (zamiast ośmiu cienkich), a profil główny — komplet usług z cenami.
+      </p>
+      <p>
+        <strong>Efekty:</strong> stabilne top 3 w mieście głównym po 6 tygodniach, top 5 w mieście drugim z podstrony lokalizacyjnej + service area. Mniej profili, więcej klientów — kanibalizacja działa w obie strony.
+      </p>
+
+      <h2 id="checklista">Checklista naprawcza na 2026</h2>
+      <ul>
+        <li>jedna kanoniczna wersja nazwy, adresu i telefonu — wyrównana w GBP, na stronie, w schemie i katalogach,</li>
+        <li>zero duplikatów wizytówek (sprawdź po starych numerach i wariantach nazwy),</li>
+        <li>kategoria główna pod frazę przychodową, dodatkowe bez kanibalizacji między własnymi profilami,</li>
+        <li>link z wizytówki do podstrony lokalizacji ze schemą LocalBusiness zgodną 1:1 z GBP,</li>
+        <li>komplet usług z opisami i cenami; produkty tam, gdzie branża na to pozwala,</li>
+        <li>stały, naturalny rytm opinii + odpowiedzi z konkretami zamiast szablonu,</li>
+        <li>zdjęcia wymieniane cyklicznie, z realizacji i wnętrza — nie tylko logo,</li>
+        <li>atrybuty i godziny przejrzane co kwartał (w tym święta),</li>
+        <li>sekcja Q&A zasilona realnymi pytaniami klientów i odpowiedziami,</li>
+        <li>FAQ i treść lokalna na stronie pisane pod pytania konwersacyjne (GEO),</li>
+        <li>monitoring: pozycje lokalne, połączenia, trasy, a od 2026 także raporty AI w Search Console.</li>
+      </ul>
+      <p>
+        Jeśli chcesz szybko ocenić, gdzie jesteś, przepuść profil przez <Link href="/gbp-score">bezpłatny GBP Score</Link> — a pełną mechanikę rankingu lokalnego znajdziesz w naszym <Link href="/pozycjonowanie-wizytowki-google">kompletnym przewodniku po pozycjonowaniu wizytówki</Link> i <Link href="/czynniki-rankingowe-wizytowki-google-2026">liście 34 czynników rankingowych</Link>.
+      </p>
+
+      <h2 id="podsumowanie-bledy">Podsumowanie</h2>
+      <p>
+        W 2026 roku lokalne SEO przegrywa się na poziomie, którego nie widać w panelu: w spójności encji, w sygnałach behawioralnych, w danych, których modele AI nie potrafią zweryfikować. Dobra wiadomość jest taka, że większość konkurencji popełnia te błędy nieświadomie — więc firma, która zrobi porządek w fundamentach (encja, NAP, kategorie, semantyczne spięcie wizytówki ze stroną) i zacznie traktować profil jako bazę danych dla AI, wyprzedza rynek na długo, zanim ten zauważy, że zasady się zmieniły.
+      </p>
+      <p>
+        Kolejność ma znaczenie: najpierw usunięcie ryzyk (spam, duplikaty, filtry), potem spójność danych, na końcu rozbudowa treści i strategia GEO. Odwrotna kolejność — dosypywanie treści na rozjechane fundamenty — to najczęstszy powód, dla którego „robienie SEO" nie przynosi efektów.
+      </p>
+
+      <h2 id="faq-bledy">FAQ — najczęstsze pytania o błędy w pozycjonowaniu wizytówki Google</h2>
+
+      <h3>Dlaczego moja wizytówka Google spadła w wynikach, choć nic nie zmieniałem?</h3>
+      <p>
+        Najczęstsze przyczyny to zmiana u konkurencji (ktoś poprawił profil mocniej niż Ty), aktualizacja algorytmu lokalnego, pogorszenie sygnałów behawioralnych (np. nieodbierane telefony, nieaktualne godziny) albo opóźniony efekt wcześniejszych zmian — filtr potrafi przyjść tygodnie po „optymalizacji". Zacznij od historii zmian profilu i porównania z aktualnym top 3.
+      </p>
+
+      <h3>Czy słowa kluczowe w nazwie wizytówki nadal działają?</h3>
+      <p>
+        Krótkoterminowo potrafią podbić pozycję — i właśnie dlatego są kuszące. Długoterminowo to gra przeciwko wytycznym Google: ryzykujesz przywrócenie nazwy rejestrowej, filtr albo zawieszenie, a konkurencja może zgłosić naruszenie jednym kliknięciem. Nazwa w GBP powinna być zgodna z rzeczywistym szyldem firmy.
+      </p>
+
+      <h3>Ile opinii miesięcznie powinno zbierać zdrowe konto?</h3>
+      <p>
+        Nie ma jednej liczby — zdrowy jest rytm proporcjonalny do liczby obsługiwanych klientów i stały w czasie. Lepiej 4 opinie co miesiąc przez rok niż 48 w jeden miesiąc. Algorytm patrzy na prędkość, regularność i wiarygodność kont — nie na sumę.
+      </p>
+
+      <h3>Czy mogę używać AI do odpowiadania na opinie?</h3>
+      <p>
+        Tak — odpowiedzi właściciela to Twoja treść i AI może pomóc w ich redagowaniu, o ile efekt jest spersonalizowany (odnosi się do konkretnej wizyty i usługi). Czerwona linia to generowanie samych recenzji lub podsuwanie klientom gotowych treści do wklejenia — to manipulacja recenzjami w rozumieniu zasad Google.
+      </p>
+
+      <h3>Co to jest kanibalizacja lokalizacji i jak ją rozpoznać?</h3>
+      <p>
+        To sytuacja, w której Twoje własne wizytówki lub podstrony konkurują o te same frazy i nawzajem wypychają się z wyników. Typowy objaw: pozycje „skaczą" między profilami z dnia na dzień, a żaden nie trzyma stabilnego top 3. Rozwiązanie to rozdzielenie kategorii i obszarów albo konsolidacja do jednego mocnego profilu.
+      </p>
+
+      <h3>Czy AI Overviews naprawdę wpływają na firmy lokalne?</h3>
+      <p>
+        Tak — rosnąca część zapytań lokalnych dostaje odpowiedź generatywną, w której AI wymienia konkretne firmy zanim użytkownik zobaczy klasyczne wyniki. Google udostępnił już w Search Console raporty pokazujące widoczność w AI. Firmy ze spójnymi, ustrukturyzowanymi danymi są cytowane; reszta jest niewidzialna w tym kanale.
+      </p>
+
+      <h3>Jak sprawdzić, czy moja wizytówka ma filtr?</h3>
+      <p>
+        Pewnego testu nie ma, ale typowy obraz to: nagły trwały spadek o kilkanaście pozycji, brak profilu w Local Packu nawet na frazę z nazwą + miastem, brak reakcji na poprawki przez wiele tygodni. Przejrzyj historię zmian (nazwa, kategorie, adres), napływ opinii z ostatnich miesięcy i zgodność profilu z wytycznymi — filtry niemal zawsze mają przyczynę w jednej z tych trzech rzeczy.
+      </p>
+
+      <h3>Czy obszar działania (service area) wpływa na ranking?</h3>
+      <p>
+        Mniej, niż się powszechnie sądzi. Ranking i tak ciąży do realnej lokalizacji firmy — obszar działania określa głównie, gdzie profil w ogóle może się pokazywać. Rozciąganie obszaru „na całe województwo" nie podnosi pozycji w odległych miastach, a potrafi rozmyć dopasowanie lokalnie.
+      </p>
+
+      <h3>Co daje sekcja usług w wizytówce, skoro klienci jej nie czytają?</h3>
+      <p>
+        Czyta ją algorytm — i modele AI. Usługi to ustrukturyzowana informacja o tym, na jakie frazy long-tail profil ma prawo się pokazać, oraz gotowy materiał do cytowania w odpowiedziach generatywnych. To jedna z najwyższych dźwigni „darmowej" widoczności w GBP.
+      </p>
+
+      <h3>Czy schema na stronie jest konieczna, jeśli mam dobrze wypełnioną wizytówkę?</h3>
+      <p>
+        Konieczna nie jest; opłacalna — bardzo. Schema LocalBusiness zgodna z GBP to niezależne potwierdzenie encji, które podnosi zaufanie do danych firmy i ułatwia modelom AI ich konsumpcję. Wdrożenie to zwykle godzina pracy przy gotowym szablonie JSON-LD.
+      </p>
+
+      <h3>Po czym poznać, że agencja psuje mi wizytówkę?</h3>
+      <p>
+        Sygnały ostrzegawcze: zmiana nazwy na „frazową", częste zmiany kategorii głównej, nagłe serie opinii, brak dostępu właściciela do profilu (agencja jako jedyny właściciel zamiast menedżera), raporty pokazujące wyłącznie „pozycje" bez połączeń i tras. Każdy z tych punktów to powód do rozmowy; dwa naraz — do zmiany agencji.
+      </p>
+
+      <h3>Od czego zacząć naprawę, jeśli popełniam kilka z tych błędów naraz?</h3>
+      <p>
+        Od ryzyk: spam i duplikaty (mogą ubić cały kanał), potem spójność encji i NAP (fundament, na którym działa reszta), potem kategorie i link wizytówka→strona, na końcu rozbudowa usług, opinii i treści pod GEO. Taka kolejność sprawia, że każda kolejna warstwa pracy ma na czym stanąć.
+      </p>
+
+      <h2>Chcesz wiedzieć, które z tych błędów popełnia Twoja wizytówka?</h2>
+      <p>
+        Przeprowadzamy audyty wizytówek Google dokładnie według metodyki z tego artykułu — od spójności encji, przez kategorie i opinie, po gotowość na AI Overviews. Dostajesz listę konkretnych problemów z priorytetami i instrukcją naprawy, bez ogólników. Zacznij od <Link href="/gbp-score">bezpłatnego GBP Score</Link> albo od razu <Link href="/kontakt">umów bezpłatną konsultację</Link> — sprawdzimy Twój profil i powiemy wprost, gdzie uciekają Ci klienci. Jeśli wolisz oddać temat w całości, zobacz naszą usługę <Link href="/uslugi/wizytowka-google">prowadzenia wizytówki Google</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/pozycjonowanie-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Pozycjonowanie wizytówki Google – kompletny przewodnik 2026</Link></li>
+          <li><Link href="/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026 — pełna lista z oceną ważności</Link></li>
+          <li><Link href="/google-search-console-raporty-ai-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Nowe raporty AI w Google Search Console — co mierzą i co to zmienia</Link></li>
+          <li><Link href="/opinie-google-jak-zdobywac-skutecznie" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opinie w Google – jak zbierać je bez nachalnego proszenia?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SZTUCZNA INTELIGENCJA: Jak połączyć Claude Code z WordPressem
   ───────────────────────────────────────────────────────────────────────── */
   "jak-polaczyc-claude-code-z-wordpressem": (

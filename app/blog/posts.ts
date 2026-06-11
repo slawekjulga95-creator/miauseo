@@ -54,6 +54,17 @@ export const posts: Post[] = [
     hideFromBlog: true,
   },
   {
+    slug: "najwieksze-bledy-pozycjonowanie-wizytowki-google-2026",
+    title: "Największe błędy w pozycjonowaniu wizytówki Google w 2026 — dlaczego firmy tracą lokalnych klientów",
+    excerpt: "Większość wizytówek nie przegrywa przez puste pola, tylko przez błędy, których nie widać w panelu: rozjechane encje, niespójny NAP, kanibalizację lokalizacji, złe kategorie i brak strategii pod AI Overviews. Analizujemy 10 zaawansowanych błędów lokalnego SEO — z tabelą ryzyka i trzema case studies z audytów.",
+    category: "SEO",
+    date: "2026-06-11",
+    readTime: 18,
+    coverColor: "#b91c1c",
+    coverImage: "/blog/cover-bledy-wizytowka-2026.svg",
+    published: true,
+  },
+  {
     slug: "jak-polaczyc-claude-code-z-wordpressem",
     title: "Jak połączyć Claude Code z WordPressem? Kompletny przewodnik po integracji i automatyzacjach",
     excerpt: "Claude Code (często wyszukiwany jako „Cloud Code”) potrafi zarządzać stroną WordPress jak doświadczony developer — publikować wpisy, optymalizować SEO, pisać wtyczki i utrzymywać serwer. Pokazujemy 5 metod integracji, 10 praktycznych zastosowań, koszty wdrożenia i zasady bezpieczeństwa.",
