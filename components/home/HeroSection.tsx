@@ -28,7 +28,7 @@ export default function HeroSection() {
       {/* Osoba — wycięta z tła, przyklejona do prawej krawędzi ekranu (desktop) */}
       <div
         className="absolute right-0 bottom-0 hidden lg:block pointer-events-none select-none"
-        style={{ height: "min(88svh, 780px)", aspectRatio: "2 / 3" }}
+        style={{ height: "min(96svh, 870px)", aspectRatio: "2 / 3" }}
         aria-hidden="true"
       >
         <Image
@@ -173,10 +173,10 @@ export default function HeroSection() {
             <div className="grid grid-cols-3 gap-4">
               <div>
                 <p style={{ fontSize: "1.5rem", fontWeight: 800, color: "#111111", letterSpacing: "-0.02em" }}>
-                  TOP&nbsp;3
+                  0&nbsp;zł
                 </p>
                 <p style={{ fontSize: "0.72rem", color: "#a1a1aa", lineHeight: 1.45, marginTop: "0.2rem" }}>
-                  w Google Maps w&nbsp;60 dni od startu
+                  za konsultację i&nbsp;wycenę na&nbsp;start
                 </p>
               </div>
               <div>
@@ -240,7 +240,7 @@ export default function HeroSection() {
                 <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
               </svg>
               <span style={{ fontSize: "0.85rem", color: "#3f3f46", fontWeight: 500 }}>
-                hydraulik poznań
+                skup telefonów poznań
               </span>
               <span style={{ marginLeft: "auto", width: "2px", height: "15px", background: "var(--color-brand)", borderRadius: "2px" }} className="animate-pulse" />
             </div>
@@ -374,54 +374,6 @@ export default function HeroSection() {
             </p>
           </div>
 
-          {/* Karta — Google Ads */}
-          <div
-            className="absolute left-0 bottom-4 z-20"
-            style={{
-              background: "white",
-              borderRadius: "1rem",
-              border: "1px solid #ececec",
-              boxShadow: "0 12px 32px rgba(0,0,0,0.10)",
-              padding: "0.9rem 1.1rem",
-              animation: "float-medium 2.9s ease-in-out infinite 0.6s",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>
-              <div
-                style={{
-                  width: "2.1rem", height: "2.1rem", borderRadius: "0.6rem",
-                  background: "#fff7f2", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
-                }}
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" />
-                </svg>
-              </div>
-              <div>
-                <p style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#a1a1aa" }}>
-                  Google Ads
-                </p>
-                <p style={{ fontSize: "0.9rem", fontWeight: 800, color: "#111111", lineHeight: 1.2 }}>
-                  31 leadów <span style={{ color: "#16a34a", fontSize: "0.72rem", fontWeight: 700 }}>· CPL −32%</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Karta — wizyty z wizytówki */}
-          <div
-            className="absolute right-2 xl:right-8 bottom-32 z-20"
-            style={{
-              background: "var(--color-brand)",
-              borderRadius: "1rem",
-              boxShadow: "0 10px 28px rgba(243,111,33,0.38)",
-              padding: "0.8rem 1.05rem",
-              animation: "float-slow 3.8s ease-in-out infinite 1.1s",
-            }}
-          >
-            <p style={{ fontSize: "0.85rem", fontWeight: 800, color: "white", lineHeight: 1 }}>+154 wizyty</p>
-            <p style={{ fontSize: "0.62rem", color: "rgba(255,255,255,0.65)", marginTop: "0.2rem" }}>z wizytówki · 30 dni</p>
-          </div>
         </div>
       </div>
 
