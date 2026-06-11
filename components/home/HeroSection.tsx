@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import HeroForm from "@/components/home/HeroForm";
 
@@ -24,8 +25,26 @@ export default function HeroSection() {
         }}
       />
 
+      {/* Osoba — wycięta z tła, przyklejona do prawej krawędzi ekranu (desktop) */}
       <div
-        className="relative max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-14 lg:gap-10 items-center pt-36 pb-16 lg:pt-32 lg:pb-20"
+        className="absolute right-0 bottom-0 hidden lg:block pointer-events-none select-none"
+        style={{ height: "min(88svh, 780px)", aspectRatio: "2 / 3" }}
+        aria-hidden="true"
+      >
+        <Image
+          src="/hero/hero-person-cutout.png"
+          alt=""
+          fill
+          priority
+          sizes="440px"
+          quality={90}
+          className="object-contain"
+          style={{ objectPosition: "right bottom", transform: "scaleX(-1)" }}
+        />
+      </div>
+
+      <div
+        className="relative max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-14 lg:gap-6 items-center pt-36 pb-16 lg:pt-32 lg:pb-20"
         style={{ minHeight: "calc(100svh - 56px)" }}
       >
         {/* ─────────────────────────────────────────────
@@ -185,19 +204,23 @@ export default function HeroSection() {
         </div>
 
         {/* ─────────────────────────────────────────────
-            PRAWA KOLUMNA — mockup wyników Google
+            PRAWA KOLUMNA — panel wyników (osoba za kartami,
+            zakotwiczona do krawędzi ekranu na poziomie sekcji)
         ───────────────────────────────────────────── */}
-        <div className="relative hidden lg:block" style={{ animation: "fade-up 0.7s ease-out 250ms both" }}>
-          {/* Karta SERP */}
+        <div
+          className="relative hidden lg:block self-stretch"
+          style={{ animation: "fade-up 0.7s ease-out 250ms both", minHeight: "620px" }}
+        >
+          {/* Karta SERP — panel wizytówki */}
           <div
-            className="relative mx-auto"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10"
             style={{
-              maxWidth: "440px",
+              width: "390px",
               background: "white",
               borderRadius: "1.25rem",
               border: "1px solid #ececec",
               boxShadow: "0 24px 60px rgba(17,17,17,0.10), 0 4px 14px rgba(17,17,17,0.05)",
-              padding: "1.5rem",
+              padding: "1.4rem",
             }}
           >
             {/* Pasek wyszukiwania */}
@@ -208,22 +231,22 @@ export default function HeroSection() {
                 gap: "0.7rem",
                 border: "1px solid #e4e4e7",
                 borderRadius: "999px",
-                padding: "0.7rem 1.1rem",
-                marginBottom: "1.25rem",
+                padding: "0.65rem 1.05rem",
+                marginBottom: "1.15rem",
                 boxShadow: "0 1px 6px rgba(32,33,36,0.08)",
               }}
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
               </svg>
-              <span style={{ fontSize: "0.875rem", color: "#3f3f46", fontWeight: 500 }}>
+              <span style={{ fontSize: "0.85rem", color: "#3f3f46", fontWeight: 500 }}>
                 hydraulik poznań
               </span>
-              <span style={{ marginLeft: "auto", width: "2px", height: "16px", background: "var(--color-brand)", borderRadius: "2px" }} className="animate-pulse" />
+              <span style={{ marginLeft: "auto", width: "2px", height: "15px", background: "var(--color-brand)", borderRadius: "2px" }} className="animate-pulse" />
             </div>
 
             {/* Nagłówek local pack */}
-            <p style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: "#a1a1aa", marginBottom: "0.7rem" }}>
+            <p style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: "#a1a1aa", marginBottom: "0.65rem" }}>
               Wyniki lokalne · Google Maps
             </p>
 
@@ -232,17 +255,17 @@ export default function HeroSection() {
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: "0.85rem",
+                gap: "0.8rem",
                 background: "#fff7f2",
                 border: "1.5px solid rgba(243,111,33,0.45)",
                 borderRadius: "0.9rem",
-                padding: "0.85rem 1rem",
-                marginBottom: "0.6rem",
+                padding: "0.8rem 0.95rem",
+                marginBottom: "0.55rem",
               }}
             >
               <div
                 style={{
-                  width: "2.4rem", height: "2.4rem", borderRadius: "0.7rem",
+                  width: "2.3rem", height: "2.3rem", borderRadius: "0.7rem",
                   background: "var(--color-brand)", color: "white",
                   display: "flex", alignItems: "center", justifyContent: "center",
                   fontWeight: 800, fontSize: "0.95rem", flexShrink: 0,
@@ -253,23 +276,23 @@ export default function HeroSection() {
               </div>
               <div style={{ minWidth: 0, flex: 1 }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                  <p style={{ fontSize: "0.875rem", fontWeight: 700, color: "#111111" }}>Twoja firma</p>
+                  <p style={{ fontSize: "0.85rem", fontWeight: 700, color: "#111111" }}>Twoja firma</p>
                   <span
                     style={{
                       fontSize: "0.55rem", fontWeight: 800, letterSpacing: "0.1em",
                       textTransform: "uppercase", color: "white",
-                      background: "var(--color-brand)", padding: "0.18rem 0.5rem",
+                      background: "var(--color-brand)", padding: "0.16rem 0.5rem",
                       borderRadius: "999px",
                     }}
                   >
                     To Ty
                   </span>
                 </div>
-                <p style={{ fontSize: "0.72rem", color: "#71717a", marginTop: "0.15rem" }}>
+                <p style={{ fontSize: "0.7rem", color: "#71717a", marginTop: "0.15rem" }}>
                   <span style={{ color: "#f59e0b" }}>★★★★★</span> 4,9 (87) · Otwarte · Poznań
                 </p>
               </div>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
                 <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
@@ -284,17 +307,18 @@ export default function HeroSection() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: "0.85rem",
+                  gap: "0.8rem",
                   border: "1px solid #f0f0f0",
                   borderRadius: "0.9rem",
-                  padding: "0.85rem 1rem",
-                  marginBottom: "0.6rem",
-                  opacity: 0.55,
+                  padding: "0.8rem 0.95rem",
+                  marginBottom: "0.55rem",
+                  background: "white",
+                  opacity: 0.6,
                 }}
               >
                 <div
                   style={{
-                    width: "2.4rem", height: "2.4rem", borderRadius: "0.7rem",
+                    width: "2.3rem", height: "2.3rem", borderRadius: "0.7rem",
                     background: "#f4f4f5", color: "#a1a1aa",
                     display: "flex", alignItems: "center", justifyContent: "center",
                     fontWeight: 800, fontSize: "0.95rem", flexShrink: 0,
@@ -303,8 +327,8 @@ export default function HeroSection() {
                   {c.pos}
                 </div>
                 <div>
-                  <p style={{ fontSize: "0.875rem", fontWeight: 700, color: "#52525b" }}>{c.name}</p>
-                  <p style={{ fontSize: "0.72rem", color: "#a1a1aa", marginTop: "0.15rem" }}>
+                  <p style={{ fontSize: "0.85rem", fontWeight: 700, color: "#52525b" }}>{c.name}</p>
+                  <p style={{ fontSize: "0.7rem", color: "#a1a1aa", marginTop: "0.15rem" }}>
                     <span style={{ color: "#d4d4d8" }}>{c.stars}</span> {c.rating}
                   </p>
                 </div>
@@ -312,63 +336,91 @@ export default function HeroSection() {
             ))}
           </div>
 
-          {/* Pływająca karta — wzrost wizyt */}
+          {/* Karta — wykres pozycjonowania */}
           <div
-            className="absolute -top-7 -right-2 xl:right-6"
+            className="absolute left-0 top-2 z-20"
+            style={{
+              width: "230px",
+              background: "white",
+              borderRadius: "1rem",
+              border: "1px solid #ececec",
+              boxShadow: "0 12px 32px rgba(0,0,0,0.10)",
+              padding: "1rem 1.1rem",
+              animation: "float-slow 3.4s ease-in-out infinite",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.55rem" }}>
+              <p style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#a1a1aa" }}>
+                Pozycjonowanie
+              </p>
+              <span style={{ fontSize: "0.7rem", fontWeight: 800, color: "#16a34a", background: "#f0fdf4", padding: "0.15rem 0.5rem", borderRadius: "999px" }}>
+                +182%
+              </span>
+            </div>
+            <svg viewBox="0 0 200 64" style={{ width: "100%", height: "58px", display: "block" }} aria-hidden="true">
+              <defs>
+                <linearGradient id="hero-chart-fill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#16a34a" stopOpacity="0.22" />
+                  <stop offset="100%" stopColor="#16a34a" stopOpacity="0" />
+                </linearGradient>
+              </defs>
+              <path d="M4 54 L36 48 L68 50 L100 36 L132 28 L164 18 L196 8 L196 64 L4 64 Z" fill="url(#hero-chart-fill)" />
+              <path d="M4 54 L36 48 L68 50 L100 36 L132 28 L164 18 L196 8" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              <circle cx="196" cy="8" r="3.5" fill="#16a34a" />
+              <circle cx="196" cy="8" r="7" fill="#16a34a" opacity="0.2" />
+            </svg>
+            <p style={{ fontSize: "0.68rem", color: "#a1a1aa", marginTop: "0.45rem" }}>
+              Ruch organiczny · 6 miesięcy
+            </p>
+          </div>
+
+          {/* Karta — Google Ads */}
+          <div
+            className="absolute left-0 bottom-4 z-20"
             style={{
               background: "white",
               borderRadius: "1rem",
               border: "1px solid #ececec",
               boxShadow: "0 12px 32px rgba(0,0,0,0.10)",
-              padding: "0.9rem 1.15rem",
-              animation: "float-slow 3.4s ease-in-out infinite",
+              padding: "0.9rem 1.1rem",
+              animation: "float-medium 2.9s ease-in-out infinite 0.6s",
             }}
           >
-            <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>
               <div
                 style={{
-                  width: "2rem", height: "2rem", borderRadius: "0.6rem",
-                  background: "#f0fdf4", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
+                  width: "2.1rem", height: "2.1rem", borderRadius: "0.6rem",
+                  background: "#fff7f2", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
                 }}
               >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" /><polyline points="16 7 22 7 22 13" />
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" />
                 </svg>
               </div>
               <div>
-                <p style={{ fontSize: "0.95rem", fontWeight: 800, color: "#111111", lineHeight: 1 }}>+154 wizyty</p>
-                <p style={{ fontSize: "0.65rem", color: "#a1a1aa", marginTop: "0.2rem" }}>z wizytówki · 30 dni</p>
+                <p style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#a1a1aa" }}>
+                  Google Ads
+                </p>
+                <p style={{ fontSize: "0.9rem", fontWeight: 800, color: "#111111", lineHeight: 1.2 }}>
+                  31 leadów <span style={{ color: "#16a34a", fontSize: "0.72rem", fontWeight: 700 }}>· CPL −32%</span>
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Pływająca karta — telefony */}
+          {/* Karta — wizyty z wizytówki */}
           <div
-            className="absolute -bottom-7 -left-2 xl:left-4"
+            className="absolute right-2 xl:right-8 bottom-32 z-20"
             style={{
               background: "var(--color-brand)",
               borderRadius: "1rem",
               boxShadow: "0 10px 28px rgba(243,111,33,0.38)",
-              padding: "0.9rem 1.15rem",
-              animation: "float-medium 2.9s ease-in-out infinite 0.6s",
+              padding: "0.8rem 1.05rem",
+              animation: "float-slow 3.8s ease-in-out infinite 1.1s",
             }}
           >
-            <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
-              <div
-                style={{
-                  width: "2rem", height: "2rem", borderRadius: "0.6rem",
-                  background: "rgba(255,255,255,0.18)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
-                }}
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-              </div>
-              <div>
-                <p style={{ fontSize: "0.95rem", fontWeight: 800, color: "white", lineHeight: 1 }}>+26% telefonów</p>
-                <p style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.65)", marginTop: "0.2rem" }}>rok do roku</p>
-              </div>
-            </div>
+            <p style={{ fontSize: "0.85rem", fontWeight: 800, color: "white", lineHeight: 1 }}>+154 wizyty</p>
+            <p style={{ fontSize: "0.62rem", color: "rgba(255,255,255,0.65)", marginTop: "0.2rem" }}>z wizytówki · 30 dni</p>
           </div>
         </div>
       </div>
