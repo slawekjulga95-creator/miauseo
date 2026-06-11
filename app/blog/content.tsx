@@ -7614,6 +7614,480 @@ description: Uruchamia serwer dev i weryfikuje stronę główną w przeglądarce
   ),
 
   /* ─────────────────────────────────────────────────────────────────────────
+     SZTUCZNA INTELIGENCJA: Jak połączyć Claude Code z WordPressem
+  ───────────────────────────────────────────────────────────────────────── */
+  "jak-polaczyc-claude-code-z-wordpressem": (
+    <>
+      <h2>Cloud Code czy Claude Code? Najpierw wyjaśnijmy zamieszanie z nazwą</h2>
+      <p>
+        <strong>Claude Code</strong> — często błędnie zapisywany jako „Cloud Code" — to agent AI od firmy Anthropic, działający w terminalu, aplikacji desktopowej i edytorach kodu. Potrafi samodzielnie czytać pliki, wykonywać polecenia, łączyć się z API i przeprowadzać wielokrokowe zadania — w tym pełną automatyzację strony opartej na WordPressie.
+      </p>
+      <p>
+        Skąd pomyłka? Po angielsku „Claude" i „cloud" brzmią niemal identycznie, więc fraza „cloud code wordpress" jest w Google wyszukiwana równie często jak poprawna. Istnieje też narzędzie <em>Google Cloud Code</em> — wtyczka do IDE wspierająca pracę z Kubernetes i Google Cloud — ale to zupełnie inny produkt, który z WordPressem nie ma nic wspólnego. Jeśli szukasz sposobu na połączenie AI z WordPressem, chodzi Ci o <strong>Claude Code od Anthropic</strong> — i o nim jest ten przewodnik.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-sky-400 bg-sky-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-2">W SKRÓCIE</p>
+        <p className="text-sm text-sky-900 leading-relaxed">
+          Claude Code łączy się z WordPressem na pięć sposobów: przez <strong>REST API</strong> (publikowanie i edycja treści), <strong>WP-CLI przez SSH</strong> (administracja), <strong>bezpośrednią pracę na plikach</strong> motywu i wtyczek, <strong>własną wtyczkę z Claude API</strong> (funkcje AI wewnątrz wp-admin) oraz <strong>serwer MCP</strong> (standardowy protokół integracji AI). Najszybszy start to REST API z Application Passwords — konfiguracja zajmuje 15 minut i nie wymaga instalowania niczego na serwerze.
+        </p>
+      </div>
+
+      <h2>Czym jest Claude Code?</h2>
+      <p>
+        <strong>Claude Code to agent do programowania i automatyzacji</strong> stworzony przez Anthropic — firmę stojącą za modelami Claude. W odróżnieniu od czatu w przeglądarce, Claude Code działa bezpośrednio na Twoim komputerze: ma dostęp do terminala, systemu plików i internetu. Wydajesz polecenie w języku naturalnym („opublikuj ten artykuł na blogu", „sprawdź czemu strona wolno działa"), a agent sam planuje i wykonuje kolejne kroki.
+      </p>
+
+      <h3>Jak działa Claude Code w praktyce?</h3>
+      <p>
+        Pod maską Claude Code działa w pętli agentowej: model analizuje zadanie, wybiera narzędzie (wykonanie polecenia w terminalu, odczyt pliku, zapytanie HTTP), ocenia wynik i decyduje o następnym kroku — aż do ukończenia zadania. W kontekście WordPressa oznacza to, że agent może w jednej sesji pobrać listę wpisów przez REST API, przeanalizować ich meta description, wygenerować lepsze wersje i wgrać poprawki z powrotem — bez Twojego udziału przy każdym kroku.
+      </p>
+      <p>
+        Dwa mechanizmy czynią z niego narzędzie produkcyjne, a nie zabawkę. Pierwszy to plik <code>CLAUDE.md</code> — dokumentacja projektu ładowana automatycznie na start każdej sesji, w której opisujesz swoją stronę, dane dostępowe (a właściwie gdzie ich szukać), konwencje i ograniczenia. Drugi to <Link href="/claude-code-skills-jak-dzialaja">Skills — zapisane workflow wywoływane jedną komendą</Link>, np. <code>/publikuj</code>, które odtwarzają cały proces publikacji wpisu za każdym razem tak samo.
+      </p>
+
+      <h3>Czym Claude Code różni się od ChatGPT i innych czatów AI?</h3>
+      <p>
+        Czat AI generuje tekst, który musisz ręcznie skopiować do WordPressa. Claude Code <strong>wykonuje pracę od początku do końca</strong>: generuje treść, formatuje ją do HTML, wysyła przez API, ustawia kategorię, dodaje meta description i zwraca link do opublikowanego wpisu. Różnica jest taka jak między doradcą, który mówi Ci co zrobić, a pracownikiem, który to robi.
+      </p>
+
+      <h2>Czym jest WordPress i dlaczego warto go automatyzować?</h2>
+      <p>
+        <strong>WordPress to najpopularniejszy system zarządzania treścią (CMS) na świecie</strong> — napędza ponad 40% wszystkich stron internetowych. Jest open source, oparty na PHP i bazie MySQL, rozszerzalny wtyczkami i motywami. Jego największa zaleta z punktu widzenia automatyzacji: <strong>wszystko, co można zrobić w panelu wp-admin, można też zrobić programistycznie</strong> — przez REST API, WP-CLI lub bezpośrednio w kodzie.
+      </p>
+      <p>
+        To czyni WordPressa idealnym partnerem dla agenta AI. Typowa firma prowadząca bloga wykonuje co tydzień te same czynności: research tematu, pisanie, formatowanie, dobór grafiki, uzupełnienie SEO, publikacja, aktualizacja starszych wpisów. Każdy z tych kroków da się zautomatyzować — a Claude Code potrafi je połączyć w jeden spójny workflow.
+      </p>
+
+      <h2>Jak połączyć Claude Code z WordPressem? 5 metod integracji</h2>
+      <p>
+        Nie ma jednej „właściwej" metody — wybór zależy od tego, co chcesz automatyzować i jaki masz dostęp do serwera. Oto pełne porównanie:
+      </p>
+
+      <div className="overflow-x-auto my-6 rounded-xl border border-zinc-200">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr style={{backgroundColor: '#18181b'}}>
+              <th className="text-left px-4 py-3 text-white font-semibold">Metoda</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Do czego służy</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Trudność</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Wymagania</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">REST API</td>
+              <td className="px-4 py-3 text-zinc-600">Tworzenie i edycja wpisów, stron, mediów, kategorii</td>
+              <td className="px-4 py-3 text-zinc-600">Niska</td>
+              <td className="px-4 py-3 text-zinc-600">WordPress 5.6+, Application Password</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">WP-CLI + SSH</td>
+              <td className="px-4 py-3 text-zinc-600">Administracja: wtyczki, aktualizacje, baza danych, użytkownicy</td>
+              <td className="px-4 py-3 text-zinc-600">Średnia</td>
+              <td className="px-4 py-3 text-zinc-600">Dostęp SSH do serwera, zainstalowane WP-CLI</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Praca na plikach</td>
+              <td className="px-4 py-3 text-zinc-600">Modyfikacje motywu, własne wtyczki, naprawa błędów PHP</td>
+              <td className="px-4 py-3 text-zinc-600">Średnia</td>
+              <td className="px-4 py-3 text-zinc-600">Kopia lokalna strony lub dostęp SFTP</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Wtyczka z Claude API</td>
+              <td className="px-4 py-3 text-zinc-600">Funkcje AI wewnątrz wp-admin: chatbot, generowanie treści dla redaktorów</td>
+              <td className="px-4 py-3 text-zinc-600">Wysoka</td>
+              <td className="px-4 py-3 text-zinc-600">Klucz Claude API, podstawy PHP</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-semibold text-ink">Serwer MCP</td>
+              <td className="px-4 py-3 text-zinc-600">Standardowa integracja AI — agent „widzi" WordPressa jako zestaw narzędzi</td>
+              <td className="px-4 py-3 text-zinc-600">Średnia</td>
+              <td className="px-4 py-3 text-zinc-600">Wtyczka WordPress MCP lub własny serwer MCP</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-blue-400 bg-blue-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">PRAKTYCZNA WSKAZÓWKA</p>
+        <p className="text-sm text-blue-900 leading-relaxed">
+          Zacznij od REST API — to najmniej inwazyjna metoda, działa na każdym hostingu współdzielonym i nie wymaga zmian na serwerze. Pozostałe metody dokładaj dopiero wtedy, gdy automatyzacja treści zacznie przynosić efekty i zechcesz pójść dalej.
+        </p>
+      </div>
+
+      <h2>Metoda 1 — REST API WordPressa i Application Passwords</h2>
+      <p>
+        <strong>REST API to wbudowany w WordPressa interfejs programistyczny</strong>, dostępny pod adresem <code>twojadomena.pl/wp-json/wp/v2/</code>. Pozwala na pełne operacje CRUD na wpisach, stronach, mediach, kategoriach, tagach, komentarzach i użytkownikach — czyli na wszystkim, czego potrzebuje automatyzacja contentu. Nie wymaga żadnej wtyczki: jest częścią rdzenia WordPressa od wersji 4.7.
+      </p>
+
+      <h3>Krok po kroku: konfiguracja w 15 minut</h3>
+      <ol>
+        <li><strong>Utwórz dedykowanego użytkownika</strong> w wp-admin (Użytkownicy → Dodaj nowego) z rolą <strong>Autor</strong> lub <strong>Redaktor</strong> — nie Administrator. Agent dostanie tylko te uprawnienia, których faktycznie potrzebuje.</li>
+        <li><strong>Wygeneruj Application Password</strong>: wejdź w profil tego użytkownika, przewiń do sekcji „Hasła aplikacji", wpisz nazwę (np. „claude-code") i kliknij „Dodaj". WordPress wygeneruje hasło w formacie <code>xxxx xxxx xxxx xxxx xxxx xxxx</code> — skopiuj je od razu, bo nie zobaczysz go drugi raz.</li>
+        <li><strong>Zapisz dane w pliku środowiskowym</strong> w katalogu projektu (np. <code>.env</code>), a w <code>CLAUDE.md</code> opisz, gdzie się znajdują i jak ich używać.</li>
+        <li><strong>Przetestuj połączenie</strong> — poproś Claude Code: „sprawdź połączenie z moim WordPressem i wylistuj 5 ostatnich wpisów".</li>
+      </ol>
+      <p>
+        Pod spodem agent wykona zapytanie tego rodzaju:
+      </p>
+
+      <div className="my-6 rounded-xl overflow-x-auto bg-zinc-950 border border-zinc-800">
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`# Lista ostatnich wpisów
+curl -u "claude-code:xxxx xxxx xxxx xxxx xxxx xxxx" \\
+  "https://twojadomena.pl/wp-json/wp/v2/posts?per_page=5"
+
+# Publikacja nowego wpisu
+curl -X POST -u "claude-code:xxxx xxxx ..." \\
+  "https://twojadomena.pl/wp-json/wp/v2/posts" \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "title": "Tytuł artykułu",
+    "content": "<p>Treść w HTML...</p>",
+    "status": "draft",
+    "categories": [12]
+  }'`}</pre>
+      </div>
+
+      <p>
+        Zwróć uwagę na <code>"status": "draft"</code> — to świadoma decyzja. Agent tworzy szkic, a Ty zatwierdzasz publikację jednym kliknięciem. Gdy nabierzesz zaufania do jakości, możesz przejść na <code>"publish"</code> i automatyzować w pełni.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-amber-400 bg-amber-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">UWAGA</p>
+        <p className="text-sm text-amber-900 leading-relaxed">
+          Application Passwords działają wyłącznie po HTTPS. Jeśli Twoja strona nie ma certyfikatu SSL, WordPress w ogóle nie pokaże sekcji „Hasła aplikacji". Niektóre wtyczki bezpieczeństwa (np. Wordfence) i hostingi blokują też REST API dla niezalogowanych — upewnij się, że endpoint <code>/wp-json/</code> odpowiada, zanim zaczniesz debugować po stronie agenta.
+        </p>
+      </div>
+
+      <h2>Metoda 2 — WP-CLI przez SSH: administracja bez panelu</h2>
+      <p>
+        <strong>WP-CLI to oficjalny interfejs wiersza poleceń WordPressa.</strong> Tam, gdzie REST API kończy się na treści, WP-CLI daje pełną administrację: instalację i aktualizację wtyczek, zarządzanie motywami, operacje na bazie danych, regenerację miniatur, wyszukiwanie i podmianę tekstu w całej bazie. Większość dobrych hostingów (także polskich) ma WP-CLI preinstalowane.
+      </p>
+      <p>
+        Claude Code jest agentem terminalowym, więc WP-CLI to dla niego naturalne środowisko. Po skonfigurowaniu dostępu SSH możesz wydawać polecenia w rodzaju: „zaktualizuj wszystkie wtyczki na stronie, ale najpierw zrób backup bazy", a agent wykona sekwencję:
+      </p>
+
+      <div className="my-6 rounded-xl overflow-x-auto bg-zinc-950 border border-zinc-800">
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`wp db export backup-2026-06-11.sql   # backup bazy danych
+wp plugin update --all --dry-run      # podgląd co się zmieni
+wp plugin update --all                # aktualizacja
+wp cache flush                        # czyszczenie cache`}</pre>
+      </div>
+
+      <p>
+        To ogromna wartość przy utrzymaniu strony: zamiast klikać przez panel, jednym poleceniem w języku naturalnym przeprowadzasz operacje, które ręcznie zajęłyby pół godziny. A jeśli aktualizacja coś zepsuje — co się zdarza — agent ma backup i potrafi przywrócić poprzedni stan. Pisaliśmy zresztą o tym, <Link href="/aktualizacja-wordpress-zepsuta-strone-co-zrobic">co zrobić, gdy aktualizacja WordPressa zepsuje stronę</Link> — z Claude Code większość tych kroków wykonasz automatycznie.
+      </p>
+
+      <h2>Metoda 3 — praca na plikach motywu i wtyczek</h2>
+      <p>
+        Claude Code najlepiej czuje się tam, gdzie jest kod. Jeśli zgrasz kopię strony lokalnie (np. przez LocalWP, Docker albo zwykłe SFTP), agent może bezpośrednio czytać i modyfikować pliki PHP motywu, style CSS i własne wtyczki. To metoda dla zadań, których nie załatwi żadne API:
+      </p>
+      <ul>
+        <li><strong>modyfikacje motywu</strong> — zmiana układu, dodanie sekcji, poprawki responsywności,</li>
+        <li><strong>pisanie własnych wtyczek</strong> — od prostego snippetu w <code>functions.php</code> po pełną wtyczkę z panelem ustawień,</li>
+        <li><strong>diagnoza błędów PHP</strong> — analiza logów, znajdowanie konfliktów, naprawa <Link href="/bialy-ekran-wordpress-jak-naprawic">białego ekranu</Link> czy <Link href="/wordpress-blad-500-internal-server-error">błędu 500</Link>,</li>
+        <li><strong>optymalizacja wydajności</strong> — audyt zapytań do bazy, lazy loading, czyszczenie zbędnych skryptów,</li>
+        <li><strong>wdrażanie schema markup</strong> — np. <Link href="/jak-dodac-local-schema-do-strony">local schema dla firm lokalnych</Link> bezpośrednio w kodzie motywu.</li>
+      </ul>
+      <p>
+        Workflow wygląda tak: lokalna kopia → zmiany wprowadzane przez agenta → test w lokalnym środowisku → wdrożenie na produkcję (przez SFTP, git lub panel hostingu). Claude Code obsłuży każdy z tych kroków, łącznie z testowaniem strony w przeglądarce po zmianach.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-sky-400 bg-sky-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-2">WARTO WIEDZIEĆ</p>
+        <p className="text-sm text-sky-900 leading-relaxed">
+          Pracując na plikach, Claude Code potrafi też audytować bezpieczeństwo — przeskanować katalogi w poszukiwaniu podejrzanego kodu, znaleźć backdoory po włamaniu i wyczyścić infekcję. To dokładnie ten proces, który opisaliśmy w przewodniku o <strong>zawirusowanej stronie WordPress</strong> — z agentem wykonasz go wielokrotnie szybciej niż ręcznie.
+        </p>
+      </div>
+
+      <h2>Metoda 4 — własna wtyczka z Claude API wewnątrz WordPressa</h2>
+      <p>
+        Dotychczasowe metody zakładają, że agent działa „z zewnątrz" — na Twoim komputerze lub serwerze. Można też odwrócić kierunek: <strong>wbudować AI bezpośrednio w panel WordPressa</strong>, pisząc wtyczkę, która łączy się z Claude API. Wtedy z funkcji AI korzysta każdy redaktor, bez instalowania czegokolwiek u siebie.
+      </p>
+      <p>
+        Typowe zastosowania: przycisk „wygeneruj meta description" w edytorze wpisu, automatyczne propozycje tytułów, podsumowanie artykułu na potrzeby zajawki, chatbot na froncie strony odpowiadający na pytania klientów na podstawie Twoich treści. Sercem takiej wtyczki jest jedno zapytanie HTTP:
+      </p>
+
+      <div className="my-6 rounded-xl overflow-x-auto bg-zinc-950 border border-zinc-800">
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`// Fragment wtyczki: generowanie meta description przez Claude API
+$response = wp_remote_post('https://api.anthropic.com/v1/messages', [
+  'headers' => [
+    'x-api-key'         => $api_key,          // klucz z ustawień wtyczki
+    'anthropic-version' => '2023-06-01',
+    'content-type'      => 'application/json',
+  ],
+  'body' => wp_json_encode([
+    'model'      => 'claude-opus-4-8',
+    'max_tokens' => 1024,
+    'messages'   => [[
+      'role'    => 'user',
+      'content' => "Napisz meta description (max 155 znaków) dla artykułu:\\n\\n" . $tresc_wpisu,
+    ]],
+  ]),
+  'timeout' => 60,
+]);`}</pre>
+      </div>
+
+      <p>
+        Co ważne: taką wtyczkę może napisać… sam Claude Code. Opisujesz funkcjonalność, agent generuje kod, instaluje go na lokalnej kopii, testuje i przygotowuje do wdrożenia. To najszybsza droga do dedykowanych funkcji AI bez zatrudniania programisty na etat.
+      </p>
+
+      <h2>Metoda 5 — MCP i headless WordPress</h2>
+      <p>
+        <strong>MCP (Model Context Protocol) to otwarty standard łączenia agentów AI z zewnętrznymi systemami.</strong> Zamiast tłumaczyć agentowi w promptach, jak działa Twoje API, podpinasz serwer MCP — a agent „widzi" WordPressa jako zestaw gotowych narzędzi: utwórz wpis, zaktualizuj stronę, wgraj zdjęcie, pobierz statystyki. Automattic (firma stojąca za WordPress.com) udostępnił oficjalną wtyczkę WordPress MCP, a społeczność rozwija kolejne implementacje.
+      </p>
+      <p>
+        Konfiguracja sprowadza się do dodania serwera MCP w ustawieniach Claude Code. Od tej chwili każda sesja agenta ma natywny dostęp do Twojej strony — bez ręcznego sklejania zapytań curl. To docelowy kierunek integracji AI z CMS-ami i warto go śledzić.
+      </p>
+      <p>
+        Osobny wariant to <strong>headless WordPress</strong>: WordPress służy wyłącznie jako zaplecze treści (backend), a frontend stoi na Next.js lub innym frameworku JavaScript. W takim układzie Claude Code zarządza dwiema warstwami naraz — treścią przez REST API i kodem frontendu w repozytorium. Jeśli ten model Cię interesuje, zobacz nasz przewodnik <Link href="/jak-podpiac-domene-vercel-claude-code">jak wdrożyć stronę z Claude Code na Vercel</Link> — headless WordPress to jego naturalne rozwinięcie.
+      </p>
+
+      <h2>10 praktycznych zastosowań Claude Code z WordPressem</h2>
+
+      <h3>1. Generowanie treści blogowych z publikacją</h3>
+      <p>
+        Najpopularniejszy scenariusz: podajesz temat i wytyczne, agent robi research, pisze artykuł zgodny z Twoim stylem (opisanym w <code>CLAUDE.md</code>), formatuje do HTML z nagłówkami i listami, po czym wysyła jako szkic przez REST API. Przy dobrze opisanych wytycznych jakość jest na poziomie solidnego copywritera — a czas produkcji spada z godzin do minut. Pamiętaj tylko o redakcji: AI bywa pewne siebie tam, gdzie nie powinno.
+      </p>
+
+      <h3>2. Masowa optymalizacja meta description i title</h3>
+      <p>
+        Masz 200 wpisów bez meta description? Agent pobierze je wszystkie przez API, przeanalizuje treść każdego, wygeneruje opisy w limicie 155 znaków z frazą kluczową i zapisze przez wtyczkę SEO (Yoast i Rank Math wystawiają własne pola w REST API). Zadanie, które ręcznie zajęłoby tydzień, kończy się w godzinę.
+      </p>
+
+      <h3>3. Sekcje FAQ ze schema markup</h3>
+      <p>
+        Sekcje pytań i odpowiedzi to dziś jeden z najskuteczniejszych formatów pod <strong>AI Overviews i wyszukiwarki generatywne</strong> — modele AI chętnie cytują treści w strukturze pytanie → odpowiedź. Claude Code wygeneruje FAQ dopasowane do artykułu i doda znacznik <code>FAQPage</code> w JSON-LD, zwiększając szansę na rozszerzone wyniki.
+      </p>
+
+      <h3>4. Audyt SEO całej strony</h3>
+      <p>
+        Agent przejdzie po wszystkich podstronach, sprawdzi strukturę nagłówków, duplikaty title, brakujące alt-y obrazków, wewnętrzne linkowanie i kanibalizację fraz — a na końcu wypluje raport z priorytetami. W połączeniu z dobrze dobranymi frazami (zobacz: <Link href="/jak-dobierac-slowa-kluczowe-do-pozycjonowania">jak dobierać słowa kluczowe do pozycjonowania</Link>) to fundament strategii contentowej.
+      </p>
+
+      <h3>5. Aktualizacja starych wpisów</h3>
+      <p>
+        Treści starzeją się szybciej, niż myślisz — daty, ceny, zrzuty ekranu, nieaktualne porady. Agent może cyklicznie przeglądać najstarsze wpisy, weryfikować aktualność informacji (z dostępem do internetu), proponować zmiany i aktualizować datę modyfikacji. Google premiuje świeżość — to jedna z najtańszych dźwigni SEO.
+      </p>
+
+      <h3>6. Chatbot AI na stronie</h3>
+      <p>
+        Wtyczka z Claude API może serwować chatbota, który odpowiada na pytania klientów na podstawie Twoich stron, cennika i FAQ. W odróżnieniu od sztywnych botów regułowych rozumie kontekst i parafrazy — a każdą rozmowę możesz logować jako potencjalnego leada.
+      </p>
+
+      <h3>7. Lead generation i integracja z CRM</h3>
+      <p>
+        Formularze kontaktowe w WordPressie potrafią wysyłać webhooki przy każdym zgłoszeniu. Claude Code (lub skrypt przez niego napisany) może odbierać te zgłoszenia, klasyfikować je (zapytanie ofertowe / spam / wsparcie), wzbogacać o dane firmy i wpisywać do CRM-a z gotową notatką dla handlowca. Jeśli formularze w ogóle nie wysyłają maili — <Link href="/formularz-kontaktowy-wordpress-nie-wysyla-maili">to częsty problem z osobnym rozwiązaniem</Link>.
+      </p>
+
+      <h3>8. Analiza danych z Google Search Console</h3>
+      <p>
+        Agent może łączyć dane z GSC z listą wpisów na blogu: które artykuły mają wyświetlenia, ale niski CTR (do poprawy title), które spadają (do odświeżenia), a które frazy nie mają jeszcze dedykowanej treści (luka contentowa). Wynik: konkretna lista zadań zamiast przeczuć.
+      </p>
+
+      <h3>9. Utrzymanie techniczne i diagnostyka</h3>
+      <p>
+        Wolna strona, konflikt wtyczek po aktualizacji, błędy w logach — to chleb powszedni właścicieli WordPressów. Agent z dostępem SSH zdiagnozuje problem metodycznie: sprawdzi logi, wykona profilowanie, przetestuje <Link href="/konflikt-wtyczek-wordpress-jak-zdiagnozowac">bisekcję wtyczek</Link> i zaproponuje rozwiązanie. Do tego dochodzi <Link href="/wordpress-dziala-wolno-jak-przyspieszyc">optymalizacja szybkości</Link> — od cache po obrazki.
+      </p>
+
+      <h3>10. Migracje i operacje masowe</h3>
+      <p>
+        Przeniesienie 500 produktów z CSV do WooCommerce, zmiana struktury kategorii, masowa podmiana linków po zmianie domeny — operacje, których nikt nie chce robić ręcznie. Agent napisze skrypt, przetestuje go na próbce i wykona całość z raportem błędów.
+      </p>
+
+      <h2>Przykładowe wdrożenie krok po kroku — automatyczna publikacja wpisów</h2>
+      <p>
+        Tak wygląda kompletny, sprawdzony w praktyce workflow contentowy dla firmowego bloga:
+      </p>
+      <ol>
+        <li><strong>Fundament:</strong> tworzysz katalog projektu z plikiem <code>CLAUDE.md</code> opisującym markę, grupę docelową, styl pisania, strukturę artykułów i zasady SEO (długość meta, format nagłówków, linkowanie wewnętrzne).</li>
+        <li><strong>Dostęp:</strong> konfigurujesz Application Password dla użytkownika z rolą Autor i zapisujesz dane w <code>.env</code>.</li>
+        <li><strong>Skill:</strong> tworzysz plik <code>.claude/skills/publikuj/SKILL.md</code> z instrukcją: pobierz listę istniejących wpisów (żeby nie dublować tematów i dobrać linki wewnętrzne), napisz artykuł według wytycznych, wygeneruj meta description, wyślij jako szkic, zwróć link do podglądu.</li>
+        <li><strong>Użycie:</strong> od tej chwili publikacja to jedno polecenie — <code>/publikuj jak wybrać hosting dla małej firmy</code>. Po 10–15 minutach masz w panelu gotowy szkic do akceptacji.</li>
+        <li><strong>Iteracja:</strong> po kilku artykułach uzupełniasz <code>CLAUDE.md</code> o poprawki („nie używaj zwrotu X", „zawsze dodawaj sekcję FAQ") — i jakość rośnie z każdym tekstem.</li>
+      </ol>
+      <p>
+        Kluczowa obserwacja z wdrożeń: <strong>80% jakości siedzi w pliku CLAUDE.md</strong>, nie w samym modelu. Firmy, które poświęcą dzień na porządne opisanie swojego stylu i zasad, dostają treści wymagające minimalnej redakcji. Firmy, które wpisują gołe „napisz artykuł o X", dostają generyczny tekst jak z każdego innego narzędzia AI.
+      </p>
+
+      <h2>Korzyści biznesowe — co realnie zyskujesz</h2>
+      <p>
+        <strong>Czas.</strong> Publikacja artykułu — od researchu po gotowy szkic z SEO — spada z 4–6 godzin do kilkunastu minut pracy agenta plus pół godziny redakcji. Przy czterech wpisach miesięcznie to ponad dwa dni robocze odzyskane co miesiąc.
+      </p>
+      <p>
+        <strong>Skala.</strong> Operacje masowe (meta description dla setek wpisów, audyt całej strony, migracje danych) przestają być projektami „na kiedyś" — stają się zadaniami na jedno popołudnie.
+      </p>
+      <p>
+        <strong>Spójność.</strong> Skill wykonuje proces za każdym razem identycznie: ta sama struktura, te same zasady SEO, ten sam styl. Człowiek ma gorsze dni — workflow nie.
+      </p>
+      <p>
+        <strong>Niższy próg techniczny.</strong> Zadania, które wymagały programisty (wtyczka, modyfikacja motywu, skrypt migracyjny), właściciel strony może dziś zrealizować samodzielnie, opisując potrzebę po polsku.
+      </p>
+
+      <h3>Wady i ograniczenia — uczciwie</h3>
+      <p>
+        <strong>Treści wymagają nadzoru</strong> — model może podać nieaktualne dane albo zbyt pewnie brzmiącą nieprawdę; publikowanie bez redakcji to proszenie się o kłopoty wizerunkowe i SEO. <strong>Koszty są zmienne</strong> — intensywna automatyzacja przez API kosztuje realne pieniądze (o tym niżej). <strong>Próg wejścia istnieje</strong> — trzeba czuć się swobodnie z terminalem przynajmniej na podstawowym poziomie, choć paradoksalnie sam Claude Code najlepiej uczy własnej obsługi. I wreszcie: <strong>agent z dostępem do produkcji może narobić szkód</strong>, jeśli nie ustawisz mu granic — dlatego sekcja o bezpieczeństwie poniżej nie jest opcjonalna.
+      </p>
+
+      <h2>Ile kosztuje wdrożenie Claude Code z WordPressem?</h2>
+      <p>
+        <strong>Subskrypcja Claude</strong> — najprostszy model rozliczeń. Plan Pro (ok. 20 USD/mies.) wystarcza do regularnej pracy z blogiem; plany Max (100–200 USD/mies.) dają wyższe limity dla intensywnych automatyzacji. W ramach subskrypcji używasz Claude Code bez dodatkowych opłat za tokeny.
+      </p>
+      <p>
+        <strong>Claude API</strong> — rozliczenie za zużycie, potrzebne gdy budujesz wtyczkę z AI lub automatyzacje działające bez Twojego udziału. Dla orientacji: model Claude Opus 4.8 kosztuje 5 USD za milion tokenów wejściowych i 25 USD za milion wyjściowych; tańszy Haiku 4.5 — odpowiednio 1 i 5 USD. Wygenerowanie jednego artykułu to typowo kilka tysięcy tokenów, czyli <strong>koszt rzędu kilkudziesięciu groszy do kilku złotych</strong>. Chatbot na stronie o średnim ruchu zamknie się zwykle w kilkudziesięciu–stu kilkudziesięciu złotych miesięcznie.
+      </p>
+      <p>
+        <strong>Wdrożenie</strong> — samodzielna konfiguracja REST API to koszt zerowy poza czasem. Pełne wdrożenie z agencją (skille, integracje, wtyczka AI, szkolenie zespołu) to typowo od 2 000 do 15 000 zł jednorazowo, zależnie od zakresu. Dla porównania: jeden artykuł u dobrego copywritera kosztuje 300–800 zł — automatyzacja zwraca się zwykle w pierwszym kwartale.
+      </p>
+
+      <h2>Bezpieczeństwo — zasady, których nie wolno pominąć</h2>
+      <p>
+        Agent AI z dostępem do strony produkcyjnej to potężne narzędzie — i dokładnie dlatego wymaga tych samych rygorów, co dostęp dla zewnętrznego podwykonawcy:
+      </p>
+      <ul>
+        <li><strong>Minimalne uprawnienia</strong> — dedykowany użytkownik z rolą Autor/Redaktor, nigdy Administrator. Do zadań administracyjnych osobny, świadomie używany dostęp.</li>
+        <li><strong>Sekrety poza repozytorium</strong> — hasła aplikacji i klucze API trzymaj w <code>.env</code> dopisanym do <code>.gitignore</code>. Nigdy w <code>CLAUDE.md</code>, nigdy w kodzie wtyczki.</li>
+        <li><strong>Backup przed każdą operacją zapisu</strong> — wpisz to wprost do CLAUDE.md jako żelazną zasadę: przed aktualizacją, migracją czy masową edycją agent ma najpierw wykonać kopię.</li>
+        <li><strong>Staging dla zmian w kodzie</strong> — modyfikacje motywu i wtyczek najpierw na kopii, na produkcję dopiero po testach.</li>
+        <li><strong>Szkice zamiast publikacji</strong> — dopóki nie zweryfikujesz jakości procesu, agent tworzy drafty, człowiek klika „Opublikuj".</li>
+        <li><strong>Rotacja dostępów</strong> — Application Password możesz unieważnić jednym kliknięciem, nie zmieniając głównego hasła. Rób to po każdym podejrzeniu wycieku i okresowo profilaktycznie.</li>
+      </ul>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-amber-400 bg-amber-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">WAŻNE</p>
+        <p className="text-sm text-amber-900 leading-relaxed">
+          Klucz Claude API we wtyczce WordPressa przechowuj po stronie serwera (w opcjach WordPressa lub w <code>wp-config.php</code>) i nigdy nie wysyłaj go do przeglądarki. Zapytania do API zawsze przez backend (PHP), nigdy z JavaScriptu na froncie — inaczej każdy odwiedzający może odczytać Twój klucz i generować koszty na Twoim koncie.
+        </p>
+      </div>
+
+      <h2>Najczęstsze błędy przy łączeniu Claude Code z WordPressem</h2>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-red-400 bg-red-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-red-600 mb-2">NAJCZĘSTSZY BŁĄD</p>
+        <p className="text-sm text-red-900 leading-relaxed">
+          Pełna automatyzacja od pierwszego dnia — publikacja bez ludzkiej redakcji, zanim proces został zweryfikowany. Skutek: blog pełen generycznych treści, które Google coraz skuteczniej rozpoznaje i degraduje. Właściwa kolejność: najpierw szkice i redakcja, potem stopniowe luzowanie kontroli tam, gdzie jakość jest powtarzalna.
+        </p>
+      </div>
+
+      <p>
+        <strong>Brak CLAUDE.md albo plik-wydmuszka</strong> — agent bez kontekstu marki produkuje treść „znikąd". To błąd numer dwa zaraz po braku redakcji. <strong>Konto administratora do wszystkiego</strong> — wygodne, dopóki coś nie pójdzie nie tak. <strong>Testowanie na produkcji</strong> — zmiany w kodzie bez kopii zapasowej i stagingu. <strong>Ignorowanie limitów API</strong> — masowe operacje na setkach wpisów warto dzielić na partie, inaczej hosting może potraktować je jak atak. <strong>Wybór najtańszego modelu do wszystkiego</strong> — do klasyfikacji maili wystarczy Haiku, ale artykuł ekspercki pisany najtańszym modelem będzie wymagał tyle redakcji, że oszczędność znika.
+      </p>
+
+      <h2>Skalowanie — od jednego bloga do contentowej maszyny</h2>
+      <p>
+        Integracja, która działa dla jednej strony, skaluje się na wiele. Agencje prowadzące kilkanaście WordPressów klientów trzymają jeden zestaw skilli (publikacja, audyt, aktualizacja wtyczek) i per-projektowe pliki CLAUDE.md z kontekstem każdej marki. Operacje seryjne — „zaktualizuj wtyczki na wszystkich stronach i wyślij raport" — przestają być dniem pracy, a stają się jednym poleceniem.
+      </p>
+      <p>
+        Kolejny poziom to harmonogramy: cykliczne zadania (cotygodniowy audyt, codzienny monitoring uptime i błędów, miesięczny raport z GSC) mogą działać bez otwierania sesji, jako zaplanowane zadania agenta. W tym modelu WordPress staje się elementem większego ekosystemu: CMS przechowuje treść, agent nią zarządza, a Ty podejmujesz tylko decyzje strategiczne.
+      </p>
+
+      <h2>Przyszłość: dokąd zmierza integracja AI z WordPressem</h2>
+      <p>
+        Trzy trendy są już wyraźne. Po pierwsze, <strong>MCP staje się standardem</strong> — zamiast łatania integracji promptami, systemy wystawiają agentom gotowe narzędzia; WordPress z oficjalną wtyczką MCP jest w czołówce tego ruchu. Po drugie, <strong>modele są coraz tańsze i zdolniejsze</strong> — premiera <Link href="/claude-fable-5-mythos-5-anthropic">Claude Fable 5</Link> pokazała, że agenty radzą sobie z wielogodzinnymi, autonomicznymi zadaniami, co przesuwa granicę tego, co można delegować. Po trzecie, <strong>SEO przesuwa się w stronę GEO</strong> (Generative Engine Optimization) — optymalizacji pod cytowania w odpowiedziach AI. Strony, które już dziś mają ustrukturyzowane treści, FAQ i dane schema, będą w tych odpowiedziach obecne; reszta będzie gonić.
+      </p>
+      <p>
+        Wniosek praktyczny: nie chodzi o to, czy zautomatyzujesz pracę z WordPressem, tylko kiedy — i czy zrobisz to z głową, zanim zrobi to konkurencja.
+      </p>
+
+      <h2>FAQ — najczęstsze pytania o Claude Code i WordPressa</h2>
+
+      <h3>Czy Claude Code działa z każdą stroną WordPress?</h3>
+      <p>
+        Tak, pod warunkiem że strona działa na WordPressie 5.6 lub nowszym (Application Passwords) i ma certyfikat SSL. Hosting współdzielony w zupełności wystarcza do integracji przez REST API — dostęp SSH i WP-CLI to opcje dodatkowe, nie wymagania.
+      </p>
+
+      <h3>Czy potrzebuję umieć programować?</h3>
+      <p>
+        Do podstawowej integracji — nie. Konfiguracja Application Password to klikanie w panelu, a polecenia wydajesz po polsku. Podstawowa swoboda w terminalu pomaga, ale Claude Code sam tłumaczy, co robi, i można go pytać o każdy krok. Programista przydaje się dopiero przy własnej wtyczce z Claude API lub nietypowych integracjach.
+      </p>
+
+      <h3>Ile kosztuje używanie Claude Code z WordPressem?</h3>
+      <p>
+        Minimalny realny koszt to subskrypcja Claude Pro (ok. 20 USD miesięcznie), w ramach której Claude Code działa bez dopłat. Automatyzacje przez API rozliczane są za tokeny — pojedynczy artykuł to koszt rzędu złotówki lub mniej. WordPress i jego REST API są bezpłatne.
+      </p>
+
+      <h3>Czy Google karze za treści generowane przez AI?</h3>
+      <p>
+        Google oficjalnie ocenia jakość i przydatność treści, nie metodę produkcji. W praktyce karane są treści masowe, generyczne i bez wartości — niezależnie czy pisał je człowiek, czy AI. Treść wygenerowana z dobrym kontekstem, zredagowana i wnosząca realną wiedzę rankuje normalnie. Kluczem jest nadzór redakcyjny i unikatowa perspektywa, której sam model nie wymyśli.
+      </p>
+
+      <h3>Czym różni się Claude Code od wtyczek AI do WordPressa?</h3>
+      <p>
+        Wtyczki AI (np. generatory treści w wp-admin) działają wewnątrz jednej strony i robią jedną rzecz. Claude Code jest agentem ogólnego przeznaczenia: łączy treść, kod, serwer i zewnętrzne API w jednym workflow, obsługuje wiele stron naraz i wykonuje zadania, których żadna wtyczka nie przewidziała. Wtyczka to narzędzie; Claude Code to pracownik, który umie używać wszystkich narzędzi.
+      </p>
+
+      <h3>Czy mogę używać Claude Code z WooCommerce?</h3>
+      <p>
+        Tak. WooCommerce ma własne REST API (produkty, zamówienia, klienci, kupony), z którym Claude Code pracuje tak samo jak z API wpisów. Typowe automatyzacje: masowe opisy produktów, aktualizacje cen z plików dostawców, kategoryzacja asortymentu, analiza sprzedaży.
+      </p>
+
+      <h3>Co to jest Application Password i czym różni się od zwykłego hasła?</h3>
+      <p>
+        Application Password to osobne hasło generowane przez WordPressa wyłącznie do dostępu programistycznego (REST API). Nie pozwala zalogować się do panelu wp-admin, można je unieważnić niezależnie od głównego hasła i tworzyć osobne dla każdej integracji. Dzięki temu wyciek hasła aplikacji nie kompromituje konta.
+      </p>
+
+      <h3>Czy agent może zepsuć moją stronę?</h3>
+      <p>
+        Przy dostępie ograniczonym do REST API z rolą Autora — najwyżej utworzy złe szkice. Ryzyko pojawia się przy dostępie SSH i pracy na plikach: tam obowiązują zasady jak przy każdym programiście — backup przed zmianą, staging przed produkcją, jasno opisane granice w CLAUDE.md. Claude Code domyślnie pyta o zgodę przed operacjami zmieniającymi stan systemu.
+      </p>
+
+      <h3>Jak nauczyć Claude Code stylu mojej marki?</h3>
+      <p>
+        Przez plik <code>CLAUDE.md</code> w katalogu projektu: opisz grupę docelową, ton komunikacji, słownictwo (i zakazane zwroty), strukturę artykułów, przykłady dobrych tekstów. Agent czyta ten plik na początku każdej sesji. Styl dopracowuje się iteracyjnie — po każdym artykule dopisujesz uwagi i jakość rośnie.
+      </p>
+
+      <h3>Czy da się zautomatyzować publikację całkowicie, bez człowieka?</h3>
+      <p>
+        Technicznie tak — wystarczy zmienić status z <code>draft</code> na <code>publish</code> i podpiąć harmonogram. Praktycznie rekomendujemy model „human in the loop": agent przygotowuje, człowiek akceptuje. Pełną automatyzację warto rozważyć tylko dla treści niskiego ryzyka (np. automatyczne raporty, strony produktowe z danych), nigdy dla treści eksperckich budujących wizerunek.
+      </p>
+
+      <h3>Jak Claude Code radzi sobie z polskim językiem?</h3>
+      <p>
+        Bardzo dobrze — modele Claude piszą po polsku płynnie, z poprawną odmianą i naturalnym stylem. Warto jednak w CLAUDE.md doprecyzować kwestie, w których polszczyzna daje wybór: formę zwrotu do czytelnika (Ty/Państwo), zapis liczb i walut, terminologię branżową.
+      </p>
+
+      <h3>Co z RODO przy chatbocie AI na stronie?</h3>
+      <p>
+        Rozmowy użytkowników z chatbotem trafiają do API Anthropic, więc musisz to ująć w polityce prywatności, nie wysyłać do API danych osobowych bez potrzeby i rozważyć anonimizację. Anthropic oferuje umowy powierzenia danych (DPA) dla klientów API. To standardowy proces jak przy każdym zewnętrznym przetwarzającym — ale trzeba go przejść.
+      </p>
+
+      <h3>Czy zamiast Claude Code mogę użyć ChatGPT lub Gemini?</h3>
+      <p>
+        Do generowania samego tekstu — tak, każdy duży model to potrafi. Różnica polega na wykonaniu: Claude Code jest agentem z dostępem do terminala i plików, więc samodzielnie domyka cały proces (research → tekst → API → publikacja). Konkurencyjne narzędzia agentowe istnieją, ale ekosystem Claude Code — skille, CLAUDE.md, MCP — jest obecnie najdojrzalszy do tego typu integracji.
+      </p>
+
+      <h3>Jak zacząć, jeśli nigdy nie używałem Claude Code?</h3>
+      <p>
+        Zainstaluj Claude Code (instrukcja na stronie Anthropic — wymaga konta Claude), otwórz terminal w pustym katalogu i zacznij od zadania bez ryzyka: „połącz się z moim WordPressem przez REST API i wylistuj wpisy". Agent poprowadzi Cię przez konfigurację, łącznie z wygenerowaniem Application Password. Pierwszą publikację zrób jako szkic — i od tego momentu iteruj.
+      </p>
+
+      <h3>Czy ta integracja ma sens dla małej firmy z prostą stroną?</h3>
+      <p>
+        Tak — paradoksalnie największy zwrot widzą właśnie małe firmy, których nie stać na copywritera i programistę na stałe. Regularny blog (główny czynnik widoczności w Google dla małych stron) przestaje wymagać budżetu agencyjnego. Warunek: ktoś w firmie musi poświęcić kilka godzin na start i pół godziny tygodniowo na redakcję.
+      </p>
+
+      <h2>Potrzebujesz integracji Claude Code z WordPressem?</h2>
+      <p>
+        Możesz wdrożyć wszystko z tego przewodnika samodzielnie — i gorąco do tego zachęcamy. Ale jeśli wolisz, żeby zrobił to ktoś, kto ma już za sobą kilkanaście takich wdrożeń: pomagamy firmom łączyć AI z WordPressem od strony technicznej i contentowej. Konfigurujemy bezpieczne dostępy, piszemy skille dopasowane do Twojego procesu, budujemy CLAUDE.md, który faktycznie oddaje styl marki, i szkolimy zespół z obsługi.
+      </p>
+      <p>
+        Zacznij od bezpłatnej konsultacji — w 30 minut powiemy Ci, które z Twoich procesów opłaca się zautomatyzować w pierwszej kolejności i ile to realnie kosztuje. Bez zobowiązań i bez wciskania na siłę: jeśli Twój przypadek nie ma sensu biznesowego, też to usłyszysz. <Link href="/kontakt">Napisz do nas lub umów rozmowę</Link> — a jeśli najpierw chcesz uporządkować fundamenty SEO swojej strony, zerknij na naszą <Link href="/uslugi/pozycjonowanie-strony">usługę pozycjonowania</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/claude-code-skills-jak-dzialaja" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Claude Code Skills — czym są, jak działają i jak napisać własny skill od zera</Link></li>
+          <li><Link href="/jak-podpiac-domene-vercel-claude-code" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak podpiąć domenę pod stronę z Claude Code — Vercel, GitHub krok po kroku</Link></li>
+          <li><Link href="/wordpress-dziala-wolno-jak-przyspieszyc" className="text-sm font-semibold text-ink hover:text-brand transition-colors">WordPress działa wolno – jak przyspieszyć stronę w 2026?</Link></li>
+          <li><Link href="/zawirusowana-strona-wordpress-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Zawirusowana strona na WordPressie – co zrobić krok po kroku</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SZTUCZNA INTELIGENCJA: Jak podpiąć domenę — Vercel, GitHub, baza danych
   ───────────────────────────────────────────────────────────────────────── */
   "jak-podpiac-domene-vercel-claude-code": (

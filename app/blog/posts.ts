@@ -54,6 +54,17 @@ export const posts: Post[] = [
     hideFromBlog: true,
   },
   {
+    slug: "jak-polaczyc-claude-code-z-wordpressem",
+    title: "Jak połączyć Claude Code z WordPressem? Kompletny przewodnik po integracji i automatyzacjach",
+    excerpt: "Claude Code (często wyszukiwany jako „Cloud Code”) potrafi zarządzać stroną WordPress jak doświadczony developer — publikować wpisy, optymalizować SEO, pisać wtyczki i utrzymywać serwer. Pokazujemy 5 metod integracji, 10 praktycznych zastosowań, koszty wdrożenia i zasady bezpieczeństwa.",
+    category: "Sztuczna Inteligencja",
+    date: "2026-06-11",
+    readTime: 21,
+    coverColor: "#21759b",
+    coverImage: "/blog/cover-claude-code-wordpress.svg",
+    published: true,
+  },
+  {
     slug: "claude-code-skills-jak-dzialaja",
     title: "Claude Code Skills — czym są, jak działają i jak napisać własny skill od zera",
     excerpt: "Skills to jeden z najmocniejszych, a zarazem najmniej znanych mechanizmów Claude Code. Pozwalają zapisać cały workflow — od uruchamiania aplikacji po review kodu — jako komendę slash i odtwarzać go jednym wpisem. Kompletny przewodnik dla programistów i agencji.",
