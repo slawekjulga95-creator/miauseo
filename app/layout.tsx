@@ -1,22 +1,15 @@
 import type { Metadata } from "next";
-import { Syne, DM_Sans } from "next/font/google";
+import { Lato } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 
-const syne = Syne({
-  variable: "--font-syne",
+const lato = Lato({
+  variable: "--font-lato",
   subsets: ["latin"],
-  weight: ["700", "800"],
-  display: "swap",
-});
-
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "700", "900"],
   display: "swap",
 });
 
@@ -58,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl" className={`${syne.variable} ${dmSans.variable} h-full antialiased`}>
+    <html lang="pl" className={`${lato.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans text-ink bg-white">
         <Navbar />
         <main className="flex-1">{children}</main>

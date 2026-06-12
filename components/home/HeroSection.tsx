@@ -1,10 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
-import HeroForm from "@/components/home/HeroForm";
+import HeroLeadForm from "@/components/home/HeroLeadForm";
 
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-white">
+      {/* Postać w tle — bardziej widoczna na całej wysokości, twarz z przodu */}
+      <div
+        className="absolute right-0 top-0 hidden lg:block pointer-events-none select-none h-full z-5"
+        style={{ aspectRatio: "2 / 3", opacity: 0.4 }}
+        aria-hidden="true"
+      >
+        <Image
+          src="/hero/hero-person-cutout.png"
+          alt=""
+          fill
+          priority
+          sizes="440px"
+          quality={90}
+          className="object-contain"
+          style={{ objectPosition: "right center" }}
+        />
+      </div>
+
       {/* Tło: delikatny brand glow + dot pattern */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -25,23 +43,6 @@ export default function HeroSection() {
         }}
       />
 
-      {/* Osoba — wycięta z tła, przyklejona do prawej krawędzi ekranu (desktop) */}
-      <div
-        className="absolute right-0 bottom-0 hidden lg:block pointer-events-none select-none"
-        style={{ height: "min(96svh, 870px)", aspectRatio: "2 / 3" }}
-        aria-hidden="true"
-      >
-        <Image
-          src="/hero/hero-person-cutout.png"
-          alt=""
-          fill
-          priority
-          sizes="440px"
-          quality={90}
-          className="object-contain"
-          style={{ objectPosition: "right bottom", transform: "scaleX(-1)" }}
-        />
-      </div>
 
       <div
         className="relative max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-14 lg:gap-6 items-center pt-36 pb-16 lg:pt-32 lg:pb-20"
@@ -204,181 +205,30 @@ export default function HeroSection() {
         </div>
 
         {/* ─────────────────────────────────────────────
-            PRAWA KOLUMNA — panel wyników (osoba za kartami,
-            zakotwiczona do krawędzi ekranu na poziomie sekcji)
+            PRAWA KOLUMNA — formularz kontaktowy
+            z dekoracyjnym tłem
         ───────────────────────────────────────────── */}
         <div
-          className="relative hidden lg:block self-stretch"
-          style={{ animation: "fade-up 0.7s ease-out 250ms both", minHeight: "620px" }}
+          className="relative w-full max-w-[440px] mx-auto lg:mx-0 lg:justify-self-start xl:justify-self-center z-10"
+          style={{ animation: "fade-up 0.7s ease-out 250ms both" }}
         >
-          {/* Karta SERP — panel wizytówki */}
+          {/* Dekoracyjne tło za formularzem */}
           <div
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10"
+            className="absolute -inset-8 -z-10 rounded-3xl blur-2xl opacity-60"
             style={{
-              width: "390px",
-              background: "white",
-              borderRadius: "1.25rem",
-              border: "1px solid #ececec",
-              boxShadow: "0 24px 60px rgba(17,17,17,0.10), 0 4px 14px rgba(17,17,17,0.05)",
-              padding: "1.4rem",
+              background:
+                "linear-gradient(135deg, rgba(243,111,33,0.15) 0%, rgba(243,111,33,0.05) 50%, rgba(243,111,33,0) 100%)",
             }}
-          >
-            {/* Pasek wyszukiwania */}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "0.7rem",
-                border: "1px solid #e4e4e7",
-                borderRadius: "999px",
-                padding: "0.65rem 1.05rem",
-                marginBottom: "1.15rem",
-                boxShadow: "0 1px 6px rgba(32,33,36,0.08)",
-              }}
-            >
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
-              </svg>
-              <span style={{ fontSize: "0.85rem", color: "#3f3f46", fontWeight: 500 }}>
-                skup telefonów poznań
-              </span>
-              <span style={{ marginLeft: "auto", width: "2px", height: "15px", background: "var(--color-brand)", borderRadius: "2px" }} className="animate-pulse" />
-            </div>
-
-            {/* Nagłówek local pack */}
-            <p style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: "#a1a1aa", marginBottom: "0.65rem" }}>
-              Wyniki lokalne · Google Maps
-            </p>
-
-            {/* Wynik #1 — Twoja firma */}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "0.8rem",
-                background: "#fff7f2",
-                border: "1.5px solid rgba(243,111,33,0.45)",
-                borderRadius: "0.9rem",
-                padding: "0.8rem 0.95rem",
-                marginBottom: "0.55rem",
-              }}
-            >
-              <div
-                style={{
-                  width: "2.3rem", height: "2.3rem", borderRadius: "0.7rem",
-                  background: "var(--color-brand)", color: "white",
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  fontWeight: 800, fontSize: "0.95rem", flexShrink: 0,
-                  boxShadow: "0 4px 12px rgba(243,111,33,0.35)",
-                }}
-              >
-                1
-              </div>
-              <div style={{ minWidth: 0, flex: 1 }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                  <p style={{ fontSize: "0.85rem", fontWeight: 700, color: "#111111" }}>Twoja firma</p>
-                  <span
-                    style={{
-                      fontSize: "0.55rem", fontWeight: 800, letterSpacing: "0.1em",
-                      textTransform: "uppercase", color: "white",
-                      background: "var(--color-brand)", padding: "0.16rem 0.5rem",
-                      borderRadius: "999px",
-                    }}
-                  >
-                    To Ty
-                  </span>
-                </div>
-                <p style={{ fontSize: "0.7rem", color: "#71717a", marginTop: "0.15rem" }}>
-                  <span style={{ color: "#f59e0b" }}>★★★★★</span> 4,9 (87) · Otwarte · Poznań
-                </p>
-              </div>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-            </div>
-
-            {/* Wynik #2 i #3 — konkurencja */}
-            {[
-              { pos: "2", name: "Konkurent A", stars: "★★★★", rating: "4,2 (31)" },
-              { pos: "3", name: "Konkurent B", stars: "★★★★", rating: "4,0 (18)" },
-            ].map((c) => (
-              <div
-                key={c.pos}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "0.8rem",
-                  border: "1px solid #f0f0f0",
-                  borderRadius: "0.9rem",
-                  padding: "0.8rem 0.95rem",
-                  marginBottom: "0.55rem",
-                  background: "white",
-                  opacity: 0.6,
-                }}
-              >
-                <div
-                  style={{
-                    width: "2.3rem", height: "2.3rem", borderRadius: "0.7rem",
-                    background: "#f4f4f5", color: "#a1a1aa",
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    fontWeight: 800, fontSize: "0.95rem", flexShrink: 0,
-                  }}
-                >
-                  {c.pos}
-                </div>
-                <div>
-                  <p style={{ fontSize: "0.85rem", fontWeight: 700, color: "#52525b" }}>{c.name}</p>
-                  <p style={{ fontSize: "0.7rem", color: "#a1a1aa", marginTop: "0.15rem" }}>
-                    <span style={{ color: "#d4d4d8" }}>{c.stars}</span> {c.rating}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Karta — wykres pozycjonowania */}
+          />
           <div
-            className="absolute left-0 top-2 z-20"
+            className="absolute top-1/4 right-0 w-72 h-72 -z-10 rounded-full blur-3xl opacity-40"
             style={{
-              width: "230px",
-              background: "white",
-              borderRadius: "1rem",
-              border: "1px solid #ececec",
-              boxShadow: "0 12px 32px rgba(0,0,0,0.10)",
-              padding: "1rem 1.1rem",
-              animation: "float-slow 3.4s ease-in-out infinite",
+              background: "radial-gradient(circle, rgba(243,111,33,0.12) 0%, transparent 70%)",
             }}
-          >
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.55rem" }}>
-              <p style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#a1a1aa" }}>
-                Pozycjonowanie
-              </p>
-              <span style={{ fontSize: "0.7rem", fontWeight: 800, color: "#16a34a", background: "#f0fdf4", padding: "0.15rem 0.5rem", borderRadius: "999px" }}>
-                +182%
-              </span>
-            </div>
-            <svg viewBox="0 0 200 64" style={{ width: "100%", height: "58px", display: "block" }} aria-hidden="true">
-              <defs>
-                <linearGradient id="hero-chart-fill" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#16a34a" stopOpacity="0.22" />
-                  <stop offset="100%" stopColor="#16a34a" stopOpacity="0" />
-                </linearGradient>
-              </defs>
-              <path d="M4 54 L36 48 L68 50 L100 36 L132 28 L164 18 L196 8 L196 64 L4 64 Z" fill="url(#hero-chart-fill)" />
-              <path d="M4 54 L36 48 L68 50 L100 36 L132 28 L164 18 L196 8" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-              <circle cx="196" cy="8" r="3.5" fill="#16a34a" />
-              <circle cx="196" cy="8" r="7" fill="#16a34a" opacity="0.2" />
-            </svg>
-            <p style={{ fontSize: "0.68rem", color: "#a1a1aa", marginTop: "0.45rem" }}>
-              Ruch organiczny · 6 miesięcy
-            </p>
-          </div>
-
+          />
+          <HeroLeadForm />
         </div>
       </div>
-
-      {/* Delayed lead form */}
-      <HeroForm />
     </section>
   );
 }
