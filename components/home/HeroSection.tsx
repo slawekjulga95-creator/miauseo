@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import HeroLeadForm from "@/components/home/HeroLeadForm";
 
 export default function HeroSection() {
   return (
@@ -45,7 +44,7 @@ export default function HeroSection() {
 
 
       <div
-        className="relative max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-14 lg:gap-6 items-center pt-36 pb-16 lg:pt-32 lg:pb-20"
+        className="relative max-w-7xl mx-auto px-6 lg:px-8 flex items-center pt-36 pb-16 lg:pt-32 lg:pb-20"
         style={{ minHeight: "calc(100svh - 56px)" }}
       >
         {/* ─────────────────────────────────────────────
@@ -202,31 +201,6 @@ export default function HeroSection() {
               <Link href="/referencje" className="underline hover:text-brand transition-colors">referencjach</Link>.
             </p>
           </div>
-        </div>
-
-        {/* ─────────────────────────────────────────────
-            PRAWA KOLUMNA — formularz kontaktowy
-            z dekoracyjnym tłem
-        ───────────────────────────────────────────── */}
-        <div
-          className="relative w-full max-w-[440px] mx-auto lg:mx-0 lg:justify-self-start xl:justify-self-center z-10"
-          style={{ animation: "fade-up 0.7s ease-out 250ms both" }}
-        >
-          {/* Dekoracyjne tło za formularzem */}
-          <div
-            className="absolute -inset-8 -z-10 rounded-3xl blur-2xl opacity-60"
-            style={{
-              background:
-                "linear-gradient(135deg, rgba(243,111,33,0.15) 0%, rgba(243,111,33,0.05) 50%, rgba(243,111,33,0) 100%)",
-            }}
-          />
-          <div
-            className="absolute top-1/4 right-0 w-72 h-72 -z-10 rounded-full blur-3xl opacity-40"
-            style={{
-              background: "radial-gradient(circle, rgba(243,111,33,0.12) 0%, transparent 70%)",
-            }}
-          />
-          <HeroLeadForm />
         </div>
       </div>
     </section>
