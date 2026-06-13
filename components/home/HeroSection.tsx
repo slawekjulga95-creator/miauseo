@@ -1,27 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import HeroLeadForm from "@/components/home/HeroLeadForm";
 
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-white">
-      {/* Postać w tle — bardziej widoczna na całej wysokości, twarz z przodu */}
-      <div
-        className="absolute top-0 hidden lg:block pointer-events-none select-none h-full z-5"
-        style={{ aspectRatio: "2 / 3", opacity: 0.4, right: "-80px" }}
-        aria-hidden="true"
-      >
-        <Image
-          src="/SlawomirJ.webp"
-          alt=""
-          fill
-          priority
-          sizes="440px"
-          quality={90}
-          className="object-contain"
-          style={{ objectPosition: "right center" }}
-        />
-      </div>
-
       {/* Tło: delikatny brand glow + dot pattern */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -44,13 +27,13 @@ export default function HeroSection() {
 
 
       <div
-        className="relative max-w-7xl mx-auto px-6 lg:px-8 flex items-center pt-36 pb-16 lg:pt-32 lg:pb-20"
+        className="relative max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-12 gap-y-12 lg:gap-x-8 items-center pt-36 pb-16 lg:pt-32 lg:pb-20"
         style={{ minHeight: "calc(100svh - 56px)" }}
       >
         {/* ─────────────────────────────────────────────
-            LEWA KOLUMNA — treść sprzedażowa
+            KOLUMNA 1 — treść sprzedażowa
         ───────────────────────────────────────────── */}
-        <div className="max-w-[560px]">
+        <div className="lg:col-span-5 max-w-[560px]">
           {/* Eyebrow */}
           <div className="flex items-center gap-3 mb-6 animate-fade-up">
             <span
@@ -200,6 +183,30 @@ export default function HeroSection() {
               Liczby z realnych wdrożeń — opisanych w{" "}
               <Link href="/referencje" className="underline hover:text-brand transition-colors">referencjach</Link>.
             </p>
+          </div>
+        </div>
+
+        {/* ─────────────────────────────────────────────
+            KOLUMNA 2 — formularz (węższy, na środku)
+        ───────────────────────────────────────────── */}
+        <div className="lg:col-span-4 w-full max-w-[400px] mx-auto animate-fade-up" style={{ animationDelay: "250ms" }}>
+          <HeroLeadForm />
+        </div>
+
+        {/* ─────────────────────────────────────────────
+            KOLUMNA 3 — zdjęcie (widoczne na laptopie)
+        ───────────────────────────────────────────── */}
+        <div className="hidden lg:flex lg:col-span-3 self-stretch items-end justify-center pointer-events-none select-none" aria-hidden="true">
+          <div className="relative w-full" style={{ aspectRatio: "2 / 3", maxHeight: "calc(100svh - 56px)" }}>
+            <Image
+              src="/SlawomirJ.webp"
+              alt=""
+              fill
+              priority
+              sizes="320px"
+              quality={90}
+              className="object-contain object-bottom"
+            />
           </div>
         </div>
       </div>
