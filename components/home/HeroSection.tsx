@@ -5,12 +5,12 @@ import HeroLeadForm from "@/components/home/HeroLeadForm";
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-white">
-      {/* Tło: delikatny brand glow + dot pattern */}
+      {/* Tło: brand glow — spotlight pod formularzem + dot pattern */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 70% 55% at 78% 38%, rgba(243,111,33,0.07) 0%, transparent 70%)",
+            "radial-gradient(ellipse 48% 60% at 62% 45%, rgba(243,111,33,0.16) 0%, transparent 68%)",
         }}
       />
       <div
@@ -189,7 +189,7 @@ export default function HeroSection() {
         {/* ─────────────────────────────────────────────
             KOLUMNA 2 — formularz (węższy, na środku)
         ───────────────────────────────────────────── */}
-        <div className="lg:col-span-4 w-full max-w-[400px] mx-auto animate-fade-up" style={{ animationDelay: "250ms" }}>
+        <div className="relative z-10 lg:col-span-4 w-full max-w-[420px] mx-auto animate-fade-up lg:scale-[1.04]" style={{ animationDelay: "250ms" }}>
           <HeroLeadForm />
         </div>
 

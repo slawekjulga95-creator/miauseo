@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function HeroLeadForm() {
@@ -38,8 +38,8 @@ export default function HeroLeadForm() {
   };
 
   return (
-    <div className="bg-white rounded-3xl shadow-2xl border border-border overflow-hidden">
-      <div className="h-1 bg-brand w-full" />
+    <div className="bg-white rounded-3xl border border-brand/20 ring-1 ring-brand/10 overflow-hidden shadow-[0_24px_60px_-15px_rgba(243,111,33,0.35),0_8px_24px_-8px_rgba(0,0,0,0.12)]">
+      <div className="h-1.5 bg-brand w-full" />
 
       <div className="p-6 lg:p-7">
         <div className="flex items-center gap-2 mb-2">
@@ -107,6 +107,43 @@ export default function HeroLeadForm() {
               onChange={(e) => setForm({ ...form, message: e.target.value })}
               className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition resize-none"
             />
+
+            {/* Etapy współpracy */}
+            <div className="flex items-start pt-1 pb-0.5 px-0.5">
+              {["Konsultacja", "Współpraca", "Kontakt"].map((label, i, arr) => (
+                <Fragment key={label}>
+                  <div className="flex flex-col items-center shrink-0">
+                    <span
+                      className="flex items-center justify-center text-white font-bold rounded-full"
+                      style={{
+                        width: "1.6rem",
+                        height: "1.6rem",
+                        fontSize: "0.75rem",
+                        background: "var(--color-brand)",
+                        boxShadow: "0 2px 8px rgba(243,111,33,0.35)",
+                      }}
+                    >
+                      {i + 1}
+                    </span>
+                    <span className="text-[0.68rem] font-bold text-ink mt-1.5 whitespace-nowrap">
+                      {label}
+                    </span>
+                  </div>
+                  {i < arr.length - 1 && (
+                    <span
+                      className="flex-1"
+                      style={{
+                        height: 0,
+                        borderTop: "2px dashed var(--color-brand)",
+                        margin: "0.8rem 0.4rem 0",
+                        opacity: 0.6,
+                      }}
+                    />
+                  )}
+                </Fragment>
+              ))}
+            </div>
+
             <label className="flex items-start gap-2.5 cursor-pointer">
               <input
                 type="checkbox"
