@@ -197,7 +197,7 @@ export default function HeroSection() {
             KOLUMNA 3 — zdjęcie (widoczne na laptopie)
         ───────────────────────────────────────────── */}
         <div className="hidden lg:flex lg:col-span-3 self-stretch items-end justify-center pointer-events-none select-none" aria-hidden="true">
-          <div className="relative w-[340px] max-w-none" style={{ aspectRatio: "3 / 4", maxHeight: "calc(100svh - 56px)" }}>
+          <div className="relative w-[340px] max-w-none lg:-translate-y-12" style={{ aspectRatio: "3 / 4", maxHeight: "calc(100svh - 56px)" }}>
             <Image
               src="/SlawomirJ.webp"
               alt=""
