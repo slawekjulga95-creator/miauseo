@@ -7,12 +7,12 @@ export default function HeroSection() {
     <section className="relative overflow-hidden bg-white">
       {/* Postać w tle — bardziej widoczna na całej wysokości, twarz z przodu */}
       <div
-        className="absolute right-0 top-0 hidden lg:block pointer-events-none select-none h-full z-5"
-        style={{ aspectRatio: "2 / 3", opacity: 0.4 }}
+        className="absolute top-0 hidden lg:block pointer-events-none select-none h-full z-5"
+        style={{ aspectRatio: "2 / 3", opacity: 0.4, right: "-80px" }}
         aria-hidden="true"
       >
         <Image
-          src="/hero/hero-person-cutout.png"
+          src="/SlawomirJ.webp"
           alt=""
           fill
           priority
