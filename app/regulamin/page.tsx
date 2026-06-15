@@ -11,8 +11,8 @@ const sections = [
     id: "postanowienia",
     title: "Postanowienia ogólne",
     content: [
-      'Niniejszy regulamin określa zasady korzystania z serwisu internetowego dostępnego pod adresem miauseo.pl oraz zasady świadczenia usług przez MiauSEO, prowadzące działalność gospodarczą na terytorium Rzeczypospolitej Polskiej (dalej: „Usługodawca" lub „MiauSEO").',
-      "Kontakt z Usługodawcą możliwy jest pod adresem e-mail: kontakt@miauseo.pl. Korzystanie z serwisu oznacza akceptację niniejszego regulaminu.",
+      'Niniejszy regulamin określa zasady korzystania z serwisu internetowego dostępnego pod adresem miauseo.pl oraz zasady świadczenia usług przez MiauSEO, NIP 6070100514, prowadzące działalność gospodarczą na terytorium Rzeczypospolitej Polskiej (dalej: „Usługodawca" lub „MiauSEO").',
+      "Kontakt z Usługodawcą możliwy jest pod adresem e-mail: slawomir@miauseo.pl. Korzystanie z serwisu oznacza akceptację niniejszego regulaminu.",
     ],
   },
   {
@@ -62,7 +62,7 @@ const sections = [
       },
       {
         label: "Reklamacje",
-        desc: "Reklamacje dotyczące świadczonych usług należy kierować na adres kontakt@miauseo.pl. Rozpatrzenie reklamacji następuje w terminie do 14 dni roboczych od jej otrzymania.",
+        desc: "Reklamacje dotyczące świadczonych usług należy kierować na adres slawomir@miauseo.pl. Rozpatrzenie reklamacji następuje w terminie do 14 dni roboczych od jej otrzymania.",
       },
     ],
   },
@@ -239,14 +239,14 @@ export default function Regulamin() {
               <h2 className="text-xl font-bold text-ink mb-1">Skontaktuj się z nami</h2>
               <p className="text-sm text-zinc-500">
                 W sprawach dotyczących regulaminu lub warunków świadczenia usług pisz na{" "}
-                <a href="mailto:kontakt@miauseo.pl" className="text-brand font-semibold hover:underline">
-                  kontakt@miauseo.pl
+                <a href="mailto:slawomir@miauseo.pl" className="text-brand font-semibold hover:underline">
+                  slawomir@miauseo.pl
                 </a>
                 . Odpowiadamy w ciągu 72 godzin.
               </p>
             </div>
             <a
-              href="mailto:kontakt@miauseo.pl"
+              href="mailto:slawomir@miauseo.pl"
               className="shrink-0 inline-flex items-center gap-2.5 bg-brand hover:bg-brand-dark text-white font-bold px-6 py-3.5 rounded-xl transition-colors duration-200 text-sm"
             >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

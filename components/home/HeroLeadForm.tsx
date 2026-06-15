@@ -38,7 +38,7 @@ export default function HeroLeadForm() {
   };
 
   return (
-    <div className="bg-white rounded-3xl border border-brand/20 ring-1 ring-brand/10 overflow-hidden shadow-[0_24px_60px_-15px_rgba(243,111,33,0.35),0_8px_24px_-8px_rgba(0,0,0,0.12)]">
+    <div className="bg-white rounded-3xl border border-brand/20 ring-1 ring-brand/10 overflow-hidden">
       <div className="h-1.5 bg-brand w-full" />
 
       <div className="p-6 lg:p-7">
@@ -80,7 +80,7 @@ export default function HeroLeadForm() {
                 placeholder="Imię"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition"
+                className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-sm text-ink placeholder:text-zinc-600 placeholder:font-semibold focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition"
               />
               <input
                 type="tel"
@@ -88,7 +88,7 @@ export default function HeroLeadForm() {
                 placeholder="Telefon"
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-sm text-ink placeholder:text-zinc-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition"
+                className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-sm text-ink placeholder:text-zinc-600 placeholder:font-semibold focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition"
               />
             </div>
             <input

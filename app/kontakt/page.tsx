@@ -216,6 +216,17 @@ export default function KontaktPage() {
                     <p className="text-sm font-semibold text-ink">Pon – Pt, 9:00 – 17:00</p>
                   </div>
                 </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-brand/10 flex items-center justify-center text-brand shrink-0">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="3" y="4" width="18" height="16" rx="2" /><line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-[11px] text-zinc-400 font-semibold uppercase tracking-wide">NIP</p>
+                    <p className="text-sm font-semibold text-ink">6070100514</p>
+                  </div>
+                </div>
               </div>
             </div>
 

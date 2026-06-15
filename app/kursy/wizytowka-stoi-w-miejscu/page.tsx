@@ -242,7 +242,7 @@ export default function KursWizytowkaPage() {
               </a>
               <p className="text-zinc-400 text-xs mt-5">
                 Masz pytania?{" "}
-                <a href="mailto:kontakt@miauseo.pl" className="text-brand hover:underline font-semibold">
+                <a href="mailto:slawomir@miauseo.pl" className="text-brand hover:underline font-semibold">
                   Napisz do nas
                 </a>{" "}
                 — odpiszemy tego samego dnia.

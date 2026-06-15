@@ -216,7 +216,7 @@ export default function ONasPage() {
                   </div>
                   <div>
                     <p className="text-xs text-white/50 uppercase tracking-wider">E-mail</p>
-                    <a href="mailto:kontakt@miauseo.pl" className="font-semibold hover:text-brand transition-colors">kontakt@miauseo.pl</a>
+                    <a href="mailto:slawomir@miauseo.pl" className="font-semibold hover:text-brand transition-colors">slawomir@miauseo.pl</a>
                   </div>
                 </div>
 

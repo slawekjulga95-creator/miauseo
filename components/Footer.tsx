@@ -83,7 +83,7 @@ export default function Footer() {
             {/* Dane kontaktowe */}
             <div className="space-y-2.5 mb-6">
               <a
-                href="mailto:kontakt@miauseo.pl"
+                href="mailto:slawomir@miauseo.pl"
                 className="flex items-center gap-3 text-sm text-white/60 hover:text-white transition-colors group"
               >
                 <span className="w-7 h-7 rounded-lg bg-white/8 flex items-center justify-center shrink-0 group-hover:bg-brand transition-colors">
@@ -92,7 +92,7 @@ export default function Footer() {
                     <polyline points="22,6 12,13 2,6"/>
                   </svg>
                 </span>
-                kontakt@miauseo.pl
+                slawomir@miauseo.pl
               </a>
               <a
                 href="tel:+48XXXXXXXXX"
@@ -186,7 +186,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-sm">
-            © {new Date().getFullYear()} MiauSEO. Wszelkie prawa zastrzeżone.
+            © {new Date().getFullYear()} MiauSEO · NIP 6070100514. Wszelkie prawa zastrzeżone.
           </p>
           <div className="flex items-center gap-4 text-sm text-white/30">
             <Link href="/polityka-prywatnosci" className="hover:text-white transition-colors duration-150">

@@ -11,8 +11,8 @@ const sections = [
     id: "administrator",
     title: "Administrator danych osobowych",
     content: [
-      'Administratorem Twoich danych osobowych jest MiauSEO, prowadzące działalność gospodarczą na terytorium Rzeczypospolitej Polskiej (dalej: „Administrator" lub „MiauSEO").',
-      "Kontakt z Administratorem jest możliwy pod adresem e-mail: kontakt@miauseo.pl lub telefonicznie: +48 600 000 000.",
+      'Administratorem Twoich danych osobowych jest MiauSEO, NIP 6070100514, prowadzące działalność gospodarczą na terytorium Rzeczypospolitej Polskiej (dalej: „Administrator" lub „MiauSEO").',
+      "Kontakt z Administratorem jest możliwy pod adresem e-mail: slawomir@miauseo.pl lub telefonicznie: +48 600 000 000.",
     ],
   },
   {
@@ -71,7 +71,7 @@ const sections = [
     id: "prawa",
     title: "Twoje prawa",
     content: [
-      "Na podstawie RODO przysługują Ci następujące prawa. Możesz z nich skorzystać, kontaktując się z nami pod adresem kontakt@miauseo.pl:",
+      "Na podstawie RODO przysługują Ci następujące prawa. Możesz z nich skorzystać, kontaktując się z nami pod adresem slawomir@miauseo.pl:",
     ],
     items: [
       {
@@ -263,14 +263,14 @@ export default function PolitykaPrywatnosci() {
               <h2 className="text-xl font-bold text-ink mb-1">Skontaktuj się z nami</h2>
               <p className="text-sm text-zinc-500">
                 W sprawach dotyczących ochrony danych osobowych pisz na{" "}
-                <a href="mailto:kontakt@miauseo.pl" className="text-brand font-semibold hover:underline">
-                  kontakt@miauseo.pl
+                <a href="mailto:slawomir@miauseo.pl" className="text-brand font-semibold hover:underline">
+                  slawomir@miauseo.pl
                 </a>
                 . Odpowiadamy w ciągu 72 godzin.
               </p>
             </div>
             <a
-              href="mailto:kontakt@miauseo.pl"
+              href="mailto:slawomir@miauseo.pl"
               className="shrink-0 inline-flex items-center gap-2.5 bg-brand hover:bg-brand-dark text-white font-bold px-6 py-3.5 rounded-xl transition-colors duration-200 text-sm"
             >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
