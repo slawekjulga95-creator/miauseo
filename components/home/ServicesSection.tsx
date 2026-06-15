@@ -4,20 +4,19 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const services = [
   {
-    title: "Wizytówka Google",
-    href: "/uslugi/wizytowka-google",
-    desc: "Top 3 w Mapach Google i Local Pack. Więcej połączeń i klientów z Twojej okolicy.",
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-        <circle cx="12" cy="10" r="3" />
-      </svg>
-    ),
-  },
-  {
     title: "Pozycjonowanie strony",
     href: "/uslugi/pozycjonowanie-strony",
-    desc: "Wyższe pozycje w organicznych wynikach Google i stały ruch na stronie.",
+    badge: "Najpopularniejsze",
+    desc: (
+      <>
+        Wyprowadzamy Twoją stronę na <strong className="font-semibold text-ink">wysokie pozycje w Google</strong> na
+        frazy, których naprawdę szukają klienci. Optymalizujemy treści, szybkość ładowania i strukturę,
+        budujemy wartościowe linki i dbamy o techniczne SEO. Efekt? <strong className="font-semibold text-ink">Stały, darmowy ruch</strong>,
+        który rośnie miesiąc po miesiącu i nie znika, gdy wyłączysz reklamy.
+      </>
+    ),
+    photo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop&crop=center",
+    logo: null,
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="11" cy="11" r="8" />
@@ -26,9 +25,40 @@ const services = [
     ),
   },
   {
+    title: "Wizytówka Google",
+    href: "/uslugi/wizytowka-google",
+    badge: null,
+    desc: (
+      <>
+        Dbamy o to, żeby Twoja firma była <strong className="font-semibold text-ink">widoczna w Mapach Google</strong>,
+        gdy klienci szukają usług w Twojej okolicy. Optymalizujemy profil, kategorie, zdjęcia i opinie, a Ty
+        zyskujesz <strong className="font-semibold text-ink">więcej telefonów, tras dojazdu i wizyt</strong>.
+        To najprostsza droga do lokalnych klientów — także wtedy, gdy nie masz jeszcze strony internetowej.
+      </>
+    ),
+    photo: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=800&q=80&fit=crop&crop=center",
+    logo: null,
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+        <circle cx="12" cy="10" r="3" />
+      </svg>
+    ),
+  },
+  {
     title: "Google Ads",
     href: "/uslugi/google-ads",
-    desc: "Kampanie, które docierają do klientów gotowych do zakupu — dokładnie wtedy, gdy szukają.",
+    badge: null,
+    desc: (
+      <>
+        Docieramy do klientów <strong className="font-semibold text-ink">dokładnie w momencie</strong>, gdy wpisują
+        Twoją usługę w Google. Precyzyjnie dobieramy słowa kluczowe, ustawienia i budżet, a następnie codziennie
+        optymalizujemy kampanie. Eliminujemy przepalanie pieniędzy i skupiamy się na{" "}
+        <strong className="font-semibold text-ink">realnych zapytaniach i sprzedaży</strong>, a nie pustych kliknięciach.
+      </>
+    ),
+    photo: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80&fit=crop&crop=center",
+    logo: null,
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <polygon points="3 11 22 2 13 21 11 13 3 11" />
@@ -38,7 +68,18 @@ const services = [
   {
     title: "Facebook / Meta Ads",
     href: "/uslugi/meta-ads",
-    desc: "Reklamy na Facebooku i Instagramie, które budują zasięg i sprzedaż wśród lokalnych odbiorców.",
+    badge: null,
+    desc: (
+      <>
+        Prowadzimy reklamy na <strong className="font-semibold text-ink">Facebooku i Instagramie</strong>, które
+        trafiają do precyzyjnie dobranych grup odbiorców w Twojej okolicy. Tworzymy przyciągające kreacje,
+        testujemy je na bieżąco i skalujemy to, co działa. Budujemy{" "}
+        <strong className="font-semibold text-ink">rozpoznawalność marki i stały dopływ zapytań</strong> — nawet
+        wtedy, gdy klient nie szukał Cię aktywnie.
+      </>
+    ),
+    photo: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80&fit=crop&crop=center",
+    logo: null,
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
@@ -48,10 +89,53 @@ const services = [
   {
     title: "TikTok Ads",
     href: "/uslugi/tiktok-ads",
-    desc: "Zasięgi i sprzedaż na najszybciej rosnącej platformie. Krótkie wideo, realne wyniki.",
+    badge: null,
+    desc: (
+      <>
+        Wykorzystujemy <strong className="font-semibold text-ink">najszybciej rosnącą platformę</strong> w Polsce,
+        żeby z krótkim wideo dotrzeć do tysięcy odbiorców. Tworzymy kampanie, które łączą{" "}
+        <strong className="font-semibold text-ink">ogromne zasięgi z realną sprzedażą</strong>. To idealny moment,
+        żeby wyprzedzić konkurencję, której jeszcze tam nie ma.
+      </>
+    ),
+    photo: null,
+    logo: (
+      <div className="relative w-20 h-20">
+        <svg viewBox="0 0 24 24" fill="#25F4EE" className="absolute inset-0 w-full h-full translate-x-[-3px] translate-y-[3px]">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z" />
+        </svg>
+        <svg viewBox="0 0 24 24" fill="#FE2C55" className="absolute inset-0 w-full h-full translate-x-[3px] translate-y-[-3px]">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z" />
+        </svg>
+        <svg viewBox="0 0 24 24" fill="#ffffff" className="absolute inset-0 w-full h-full">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z" />
+        </svg>
+      </div>
+    ),
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z" />
+      </svg>
+    ),
+  },
+  {
+    title: "Kursy online",
+    href: "/kursy",
+    badge: null,
+    desc: (
+      <>
+        Wolisz działać <strong className="font-semibold text-ink">samodzielnie</strong>? Pokazujemy krok po kroku,
+        jak pozycjonować wizytówkę Google i prowadzić własne kampanie reklamowe. To{" "}
+        <strong className="font-semibold text-ink">konkretna wiedza z praktyki</strong>, bez lania wody — gotowa
+        do wdrożenia we własnej firmie od pierwszego dnia.
+      </>
+    ),
+    photo: "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=800&q=80&fit=crop&crop=center",
+    logo: null,
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+        <path d="M6 12v5c3 3 9 3 12 0v-5" />
       </svg>
     ),
   },
@@ -112,7 +196,7 @@ const items = [
   },
 ];
 
-function WhatWeDo() {
+export function WhatWeDo() {
   return (
     <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -128,8 +212,9 @@ function WhatWeDo() {
               </span>
             </h2>
             <p className="text-zinc-500 mt-4 max-w-lg mx-auto text-sm">
-              Kompleksowy marketing lokalny — od wizytówki Google po kampanie reklamowe.
-              Wybierz obszar, w którym chcesz rosnąć.
+              <strong className="font-semibold text-ink">Kompleksowy marketing lokalny</strong> — od wizytówki
+              Google po kampanie reklamowe. <strong className="font-semibold text-ink">Wybierz obszar, w którym
+              chcesz rosnąć.</strong>
             </p>
           </div>
         </ScrollReveal>
@@ -139,19 +224,53 @@ function WhatWeDo() {
             <ScrollReveal key={s.href} delay={i * 75}>
               <Link
                 href={s.href}
-                className="group flex flex-col h-full bg-surface rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg transition-all duration-200"
+                className={`group flex flex-col h-full bg-white rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-200 ${
+                  s.badge ? "border-2 border-brand shadow-lg" : "border border-border hover:border-brand"
+                }`}
               >
-                <div className="w-12 h-12 rounded-xl bg-brand/10 text-brand flex items-center justify-center mb-5 group-hover:bg-brand group-hover:text-white transition-colors duration-200">
-                  {s.icon}
+                {/* Zdjęcie lub logo + gradient + badge z ikoną */}
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  {s.badge && (
+                    <span className="absolute top-4 right-4 z-10 inline-flex items-center gap-1 bg-brand text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z" />
+                      </svg>
+                      {s.badge}
+                    </span>
+                  )}
+                  {s.logo ? (
+                    <div className="absolute inset-0 bg-[#010101] flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                      {s.logo}
+                    </div>
+                  ) : (
+                    <Image
+                      src={s.photo as string}
+                      alt={s.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      loading="lazy"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/15 to-transparent" />
+                  <div className="absolute top-4 left-4 w-11 h-11 rounded-xl bg-white/95 backdrop-blur text-brand flex items-center justify-center shadow-lg">
+                    {s.icon}
+                  </div>
+                  <h3 className="absolute bottom-4 left-4 right-4 text-lg font-bold text-white drop-shadow-sm">
+                    {s.title}
+                  </h3>
                 </div>
-                <h3 className="text-lg font-bold text-ink mb-2">{s.title}</h3>
-                <p className="text-sm text-zinc-500 leading-relaxed mb-5">{s.desc}</p>
-                <span className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-brand">
-                  Dowiedz się więcej
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform duration-200">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </span>
+
+                {/* Treść */}
+                <div className="flex flex-col flex-1 p-6">
+                  <p className="text-sm text-zinc-500 leading-relaxed mb-5">{s.desc}</p>
+                  <span className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-brand">
+                    Dowiedz się więcej
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform duration-200">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
               </Link>
             </ScrollReveal>
           ))}
@@ -236,7 +355,6 @@ function ChecklistaCTA() {
 export default function ServicesSection() {
   return (
     <section className="bg-white">
-      <WhatWeDo />
       <ChecklistaCTA />
       {items.map((item, i) => (
         <div key={i}>

@@ -109,10 +109,31 @@ export default function HeroLeadForm() {
             />
 
             {/* Etapy współpracy */}
-            <div className="flex items-start pt-1 pb-0.5 px-0.5">
-              {["Konsultacja", "Współpraca", "Kontakt"].map((label, i, arr) => (
+            <div className="flex items-start pt-8 pb-0.5 px-0.5">
+              {["Zapytanie", "Konsultacja", "Start"].map((label, i, arr) => (
                 <Fragment key={label}>
-                  <div className="flex flex-col items-center shrink-0">
+                  <div className="relative flex flex-col items-center shrink-0">
+                    {i === 0 && (
+                      <span className="absolute -top-7 left-1/2 -translate-x-1/2 flex flex-col items-center">
+                        <span className="whitespace-nowrap bg-brand text-white text-[0.6rem] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full shadow-md">
+                          Tu jesteśmy
+                        </span>
+                        <span
+                          style={{
+                            width: 0,
+                            height: 0,
+                            borderLeft: "4px solid transparent",
+                            borderRight: "4px solid transparent",
+                            borderTop: "5px solid var(--color-brand)",
+                          }}
+                        />
+                      </span>
+                    )}
+                    {i === 1 && (
+                      <span className="absolute -top-5 left-1/2 -translate-x-1/2 whitespace-nowrap text-[0.6rem] font-semibold text-zinc-400">
+                        15–30 min
+                      </span>
+                    )}
                     <span
                       className="flex items-center justify-center text-white font-bold rounded-full"
                       style={{
@@ -120,7 +141,9 @@ export default function HeroLeadForm() {
                         height: "1.6rem",
                         fontSize: "0.75rem",
                         background: "var(--color-brand)",
-                        boxShadow: "0 2px 8px rgba(243,111,33,0.35)",
+                        boxShadow: i === 0
+                          ? "0 0 0 3px rgba(243,111,33,0.25), 0 2px 8px rgba(243,111,33,0.35)"
+                          : "0 2px 8px rgba(243,111,33,0.35)",
                       }}
                     >
                       {i + 1}

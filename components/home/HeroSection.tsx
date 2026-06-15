@@ -164,10 +164,10 @@ export default function HeroSection() {
               </div>
               <div>
                 <p style={{ fontSize: "1.5rem", fontWeight: 800, color: "#111111", letterSpacing: "-0.02em" }}>
-                  154
+                  50+
                 </p>
                 <p style={{ fontSize: "0.72rem", color: "#a1a1aa", lineHeight: 1.45, marginTop: "0.2rem" }}>
-                  wizyty z&nbsp;wizytówki w&nbsp;pierwszy miesiąc
+                  eksperckich artykułów na&nbsp;blogu
                 </p>
               </div>
               <div>

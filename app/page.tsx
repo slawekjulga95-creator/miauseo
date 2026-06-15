@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import HeroSection from "@/components/home/HeroSection";
 import ToolsBar from "@/components/home/ToolsBar";
-import ProblemSection from "@/components/home/ProblemSection";
-import ServicesSection from "@/components/home/ServicesSection";
-import ProcessSection from "@/components/home/ProcessSection";
+import { WhatWeDo } from "@/components/home/ServicesSection";
+import FreeToolsSection from "@/components/home/FreeToolsSection";
 import WhyUsSection from "@/components/home/WhyUsSection";
 import FinalCTASection from "@/components/home/FinalCTASection";
 
@@ -71,9 +70,8 @@ export default function Home() {
       />
       <HeroSection />
       <ToolsBar />
-      <ProblemSection />
-      <ServicesSection />
-      <ProcessSection />
+      <WhatWeDo />
+      <FreeToolsSection />
       <WhyUsSection />
       <FinalCTASection />
     </>
