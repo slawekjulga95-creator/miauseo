@@ -2,33 +2,62 @@ import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
-const items = [
+const services = [
   {
-    label: "Współpraca",
-    title: ["Elastyczna", " umowa"],
-    paragraphs: [
-      <>
-        Kot nie da się przekonać na siłę. Zaufanie buduje się powoli, na własnych zasadach.
-        Dlatego przygotowaliśmy <strong className="font-semibold text-ink">specjalne warianty współpracy</strong>,
-        dzięki którym nie musisz od razu wiązać się na 12 miesięcy lub dłużej. Zacznij od mniejszego kroku.
-      </>,
-      <>
-        Najpierw <strong className="font-semibold text-ink">poznajmy się</strong>. Zobaczysz jak pracujemy,
-        co raportujemy i jakie wyniki potrafimy osiągać. Jeśli poczujesz, że warto, rozszerzymy współpracę.
-        Jeśli nie, rozstajemy się bez żalu i{" "}
-        <strong className="font-semibold text-ink">bez kar umownych</strong>.
-      </>,
-      <>
-        Elastyczność to też <strong className="font-semibold text-ink">skalowalność</strong>. Gdy wyniki rosną,
-        zwiększamy zakres. Gdy sezon zwalnia, przyhamujesz.{" "}
-        <strong className="font-semibold text-ink">Ty decydujesz</strong>, my dowozimy.
-      </>,
-    ],
-    photo: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?fit=crop&crop=center",
-    alt: "Elastyczna umowa i współpraca",
-    reverse: false,
-    cta: { label: "O nas", href: "/o-nas" },
+    title: "Wizytówka Google",
+    href: "/uslugi/wizytowka-google",
+    desc: "Top 3 w Mapach Google i Local Pack. Więcej połączeń i klientów z Twojej okolicy.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+        <circle cx="12" cy="10" r="3" />
+      </svg>
+    ),
   },
+  {
+    title: "Pozycjonowanie strony",
+    href: "/uslugi/pozycjonowanie-strony",
+    desc: "Wyższe pozycje w organicznych wynikach Google i stały ruch na stronie.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="11" cy="11" r="8" />
+        <path d="M21 21l-4.35-4.35" />
+      </svg>
+    ),
+  },
+  {
+    title: "Google Ads",
+    href: "/uslugi/google-ads",
+    desc: "Kampanie, które docierają do klientów gotowych do zakupu — dokładnie wtedy, gdy szukają.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="3 11 22 2 13 21 11 13 3 11" />
+      </svg>
+    ),
+  },
+  {
+    title: "Facebook / Meta Ads",
+    href: "/uslugi/meta-ads",
+    desc: "Reklamy na Facebooku i Instagramie, które budują zasięg i sprzedaż wśród lokalnych odbiorców.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+      </svg>
+    ),
+  },
+  {
+    title: "TikTok Ads",
+    href: "/uslugi/tiktok-ads",
+    desc: "Zasięgi i sprzedaż na najszybciej rosnącej platformie. Krótkie wideo, realne wyniki.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z" />
+      </svg>
+    ),
+  },
+];
+
+const items = [
   {
     label: "Transparentność",
     title: ["Zero", " ukrytych kosztów"],
@@ -82,6 +111,55 @@ const items = [
     cta: { label: "Kontakt", href: "/kontakt" },
   },
 ];
+
+function WhatWeDo() {
+  return (
+    <div className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <ScrollReveal>
+          <div className="text-center mb-14">
+            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
+              Oferta
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-ink leading-snug">
+              Czym się{" "}
+              <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">
+                zajmujemy
+              </span>
+            </h2>
+            <p className="text-zinc-500 mt-4 max-w-lg mx-auto text-sm">
+              Kompleksowy marketing lokalny — od wizytówki Google po kampanie reklamowe.
+              Wybierz obszar, w którym chcesz rosnąć.
+            </p>
+          </div>
+        </ScrollReveal>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((s, i) => (
+            <ScrollReveal key={s.href} delay={i * 75}>
+              <Link
+                href={s.href}
+                className="group flex flex-col h-full bg-surface rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg transition-all duration-200"
+              >
+                <div className="w-12 h-12 rounded-xl bg-brand/10 text-brand flex items-center justify-center mb-5 group-hover:bg-brand group-hover:text-white transition-colors duration-200">
+                  {s.icon}
+                </div>
+                <h3 className="text-lg font-bold text-ink mb-2">{s.title}</h3>
+                <p className="text-sm text-zinc-500 leading-relaxed mb-5">{s.desc}</p>
+                <span className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-brand">
+                  Dowiedz się więcej
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform duration-200">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </Link>
+            </ScrollReveal>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function GBPScoreCTA() {
   return (
@@ -158,6 +236,8 @@ function ChecklistaCTA() {
 export default function ServicesSection() {
   return (
     <section className="bg-white">
+      <WhatWeDo />
+      <ChecklistaCTA />
       {items.map((item, i) => (
         <div key={i}>
           <div
@@ -218,8 +298,7 @@ export default function ServicesSection() {
               </div>
             </div>
           </div>
-          {i === 0 && <ChecklistaCTA key="checklista-cta" />}
-          {i === 2 && <GBPScoreCTA key="gbp-score-cta" />}
+          {i === items.length - 1 && <GBPScoreCTA key="gbp-score-cta" />}
         </div>
       ))}
     </section>
