@@ -76,7 +76,7 @@ export default function Footer() {
                 slawomir@miauseo.pl
               </a>
               <a
-                href="tel:+48503575067"
+                href="tel:+48455571349"
                 className="flex items-center gap-3 text-sm text-white/60 hover:text-white transition-colors group"
               >
                 <span className="w-7 h-7 rounded-lg bg-white/8 flex items-center justify-center shrink-0 group-hover:bg-brand transition-colors">
@@ -84,7 +84,7 @@ export default function Footer() {
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
                   </svg>
                 </span>
-                +48 503 575 067
+                +48 455 571 349
               </a>
               <div className="flex items-center gap-3 text-sm text-white/60">
                 <span className="w-7 h-7 rounded-lg bg-white/8 flex items-center justify-center shrink-0">

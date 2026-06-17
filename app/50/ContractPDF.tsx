@@ -119,7 +119,7 @@ export default function ContractPDF() {
         <Point num="8.4">W sprawach nieuregulowanych niniejszą umową zastosowanie mają przepisy Kodeksu cywilnego.</Point>
 
         <View style={s.footer}>
-          <Text style={s.footerText}>MiauSEO · slawomir@miauseo.pl · miauseo.pl · +48 503 575 067</Text>
+          <Text style={s.footerText}>MiauSEO · slawomir@miauseo.pl · miauseo.pl · +48 455 571 349</Text>
         </View>
 
       </Page>

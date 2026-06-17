@@ -182,7 +182,7 @@ export default function HeroLeadForm() {
             </label>
 
             {error && (
-              <p className="text-red-500 text-xs text-center">Błąd wysyłki. Zadzwoń: +48 503 575 067</p>
+              <p className="text-red-500 text-xs text-center">Błąd wysyłki. Zadzwoń: +48 455 571 349</p>
             )}
             <button
               type="submit"

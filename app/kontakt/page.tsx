@@ -112,8 +112,8 @@ export default function KontaktPage() {
                 <a href="#formularz" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
                   Napisz do mnie
                 </a>
-                <a href="tel:+48503575067" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
-                  +48 503 575 067
+                <a href="tel:+48455571349" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
+                  +48 455 571 349
                 </a>
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function KontaktPage() {
                   </div>
                   <div>
                     <p className="text-[11px] text-zinc-400 font-semibold uppercase tracking-wide">Telefon</p>
-                    <a href="tel:+48503575067" className="text-sm font-semibold text-ink hover:text-brand transition-colors">+48 503 575 067</a>
+                    <a href="tel:+48455571349" className="text-sm font-semibold text-ink hover:text-brand transition-colors">+48 455 571 349</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
