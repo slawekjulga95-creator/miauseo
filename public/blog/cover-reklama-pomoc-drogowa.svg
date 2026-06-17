@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/><stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25"/><stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#sky)"/>
+  <!-- Stars / night dots -->
+  <g fill="white" opacity="0.18">
+    <circle cx="140" cy="90" r="3"/><circle cx="320" cy="60" r="2"/><circle cx="520" cy="110" r="2.5"/>
+    <circle cx="980" cy="70" r="3"/><circle cx="1080" cy="140" r="2"/><circle cx="760" cy="50" r="2"/>
+  </g>
+  <!-- Road -->
+  <rect x="0" y="470" width="1200" height="160" fill="#020617" opacity="0.6"/>
+  <g stroke="#f59e0b" stroke-width="8" stroke-dasharray="48 36" opacity="0.5">
+    <line x1="0" y1="552" x2="1200" y2="552"/>
+  </g>
+  <!-- Flatbed tow truck silhouette -->
+  <g fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <!-- cab -->
+    <path d="M150 470 L150 300 L260 300 L300 360 L340 360 L340 470 Z"/>
+    <!-- flatbed -->
+    <path d="M340 470 L340 380 L860 380 L860 470 Z"/>
+    <!-- ramp -->
+    <path d="M860 470 L980 470"/>
+    <!-- loaded car -->
+    <path d="M430 380 L470 320 L590 310 L690 340 L740 380 Z"/>
+  </g>
+  <rect x="430" y="380" width="310" height="0" />
+  <!-- cab window -->
+  <path d="M175 360 L175 315 L255 315 L288 360 Z" fill="white" opacity="0.4"/>
+  <!-- wheels -->
+  <circle cx="250" cy="480" r="46" fill="none" stroke="white" stroke-width="10" opacity="0.9"/>
+  <circle cx="250" cy="480" r="22" fill="white" opacity="0.35"/>
+  <circle cx="620" cy="480" r="46" fill="none" stroke="white" stroke-width="10" opacity="0.9"/>
+  <circle cx="620" cy="480" r="22" fill="white" opacity="0.35"/>
+  <circle cx="770" cy="480" r="46" fill="none" stroke="white" stroke-width="10" opacity="0.9"/>
+  <circle cx="770" cy="480" r="22" fill="white" opacity="0.35"/>
+  <!-- warning beacon glow -->
+  <ellipse cx="245" cy="288" rx="70" ry="26" fill="#f59e0b" opacity="0.35"/>
+  <rect x="228" y="282" width="34" height="20" rx="6" fill="#f59e0b" opacity="0.95"/>
+  <!-- Map pin -->
+  <g transform="translate(1000 150)">
+    <path d="M60 0 C26 0 0 26 0 60 C0 104 60 170 60 170 C60 170 120 104 120 60 C120 26 94 0 60 0 Z" fill="#f59e0b" opacity="0.95"/>
+    <circle cx="60" cy="60" r="26" fill="#0f172a"/>
+  </g>
+  <!-- Phone icon -->
+  <g transform="translate(940 360)" fill="white" opacity="0.9">
+    <path d="M28 4 C16 4 6 14 6 26 C6 70 56 120 100 120 C112 120 122 110 122 98 L122 80 L92 70 L80 86 C66 80 46 60 40 46 L56 34 L46 4 Z"/>
+  </g>
+  <text x="100" y="600" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.4" letter-spacing="6">MIAUSEO · REKLAMA POMOCY DROGOWEJ · 24/7</text>
+</svg>

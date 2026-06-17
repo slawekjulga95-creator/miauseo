@@ -196,6 +196,191 @@ export const articleContent: Record<string, React.ReactNode> = {
   ),
 
   /* ─────────────────────────────────────────────────────────────────────────
+     PORADNIK: Google Ads dla pomocy drogowej
+  ───────────────────────────────────────────────────────────────────────── */
+  "google-ads-pomoc-drogowa": (
+    <>
+      <p>
+        W pomocy drogowej nie ma kanału, który zwracałby pieniądze szybciej niż Google Ads. Powód jest prosty: reklama w wyszukiwarce łapie klienta dokładnie w sekundzie, w której wpisuje „laweta" albo „pomoc drogowa" i jest gotów dzwonić. Nie budujesz potrzeby, nie czekasz, aż ktoś dojrzeje do zakupu — przechwytujesz istniejącą, gorącą intencję. Problem w tym, że źle ustawiona kampania potrafi przepalić budżet w tydzień, nie przynosząc ani jednego sensownego zlecenia. Ten przewodnik pokazuje, jak skonfigurować Google Ads w tej branży tak, żeby telefon faktycznie dzwonił, a każda złotówka pracowała.
+      </p>
+
+      <h2>Kampania call-only, czyli „kliknięcie = telefon"</h2>
+      <p>
+        Pierwsza i najważniejsza decyzja: w pomocy drogowej domyślnym typem kampanii powinna być kampania typu „tylko połączenie" (call-only). W przeciwieństwie do zwykłej reklamy, która prowadzi na stronę, call-only po kliknięciu od razu wybiera Twój numer telefonu. Dla kierowcy stojącego na poboczu, w stresie, na słabym zasięgu, to różnica między zleceniem a porzuceniem — eliminujesz wszystkie kroki pośrednie między reklamą a rozmową.
+      </p>
+      <p>
+        Jeśli prowadzisz też zwykłe kampanie w sieci wyszukiwania, koniecznie dodaj do nich rozszerzenia połączeń (zasoby z numerem telefonu), żeby numer pojawiał się bezpośrednio pod reklamą i był klikalny na telefonie. W praktyce dobrze działa układ mieszany: kampania call-only nastawiona na natychmiastowy telefon plus kampania kierująca na dedykowaną stronę „laweta + miasto" dla tych, którzy najpierw chcą sprawdzić firmę. O budowie takiej strony piszemy szerzej w przewodniku <Link href="/reklama-pomocy-drogowej-skuteczne-metody" className="text-brand font-semibold hover:underline">o reklamie pomocy drogowej</Link>.
+      </p>
+
+      <h2>Targetowanie geograficzne — wygraj swój obszar, nie całą Polskę</h2>
+      <p>
+        Najczęstszy i najdroższy błąd w kampaniach pomocy drogowej to zbyt szeroki promień działania. Firma z Poznania ustawia reklamy na całe województwo, płaci za kliknięcia kierowców spod Gniezna czy Leszna, do których nie dojedzie na czas — i przepala budżet na zlecenia, których nigdy nie obsłuży. W tej branży węższy, ale precyzyjny target prawie zawsze wygrywa z szerokim.
+      </p>
+      <p>
+        Ustaw obszar dokładnie pod swój realny zasięg dojazdu — promień kilkunastu–kilkudziesięciu kilometrów od bazy, ewentualnie konkretne miasta i gminy, które obsługujesz. Zwróć też uwagę na ustawienia lokalizacji: wybierz opcję kierowania na osoby, które są fizycznie w danym obszarze, a nie tylko nim „zainteresowane" — w pomocy drogowej liczy się ten, kto stoi tu i teraz, nie ktoś, kto z innego miasta szuka informacji. Jeśli obsługujesz odcinek autostrady, dodaj go osobno, bo zapytania typu „pomoc drogowa A2" mają wysoką wartość i często niższą konkurencję.
+      </p>
+
+      <h2>Harmonogram reklam i stawki dobowe</h2>
+      <p>
+        Awarie nie mają godzin pracy, więc Twoja kampania musi działać przez całą dobę, siedem dni w tygodniu. To absolutne minimum — reklama aktywna tylko od 9 do 17 oddaje konkurencji najlepsze zlecenia. Ale samo „włączenie 24/7" to dopiero początek; prawdziwa przewaga leży w manipulowaniu stawkami w czasie.
+      </p>
+      <p>
+        Noce, weekendy i święta to w pomocy drogowej okno największych marż — klient w desperacji o trzeciej w nocy nie negocjuje ceny, a spora część konkurencji w tych godzinach po prostu nie odbiera albo nie reklamuje się. To znaczy, że właśnie wtedy warto dociskać stawki, żeby wygrywać aukcje, kiedy zlecenie jest najbardziej dochodowe. Po zebraniu pierwszych dwóch–trzech tygodni danych sprawdź w raportach, o których porach faktycznie przychodziły telefony, i dostosuj modyfikatory stawek do swojego realnego rozkładu zleceń, a nie do założeń.
+      </p>
+
+      <h2>Słowa kluczowe — wysoka intencja kontra śmieci</h2>
+      <p>
+        Budżet w Google Ads wygrywa się i przegrywa na liście słów kluczowych. Chcesz płacić wyłącznie za zapytania o jasnej, awaryjnej intencji — „laweta Poznań", „pomoc drogowa 24h", „holowanie samochodu", „odpalenie auta", „pomoc drogowa autostrada A2", „wymiana koła na drodze", „transport auta po stłuczce". To frazy, za którymi stoi konkretny człowiek z konkretnym problemem, gotów dzwonić.
+      </p>
+      <p>
+        Równie ważne jak dobór fraz jest budowanie listy wykluczających słów kluczowych — to one chronią budżet. Wykluczaj zapytania informacyjne i niezakupowe, takie jak „pomoc drogowa praca", „laweta sprzedam", „laweta cennik OC", „jak zostać pomocą drogową", „pomoc drogowa kurs". Każde takie kliknięcie to wydane pieniądze bez szansy na zlecenie. Korzystaj z dopasowania do wyrażenia i dopasowania ścisłego zamiast szerokiego, a raport wyszukiwanych haseł przeglądaj co kilka dni w pierwszych tygodniach, dorzucając do wykluczeń wszystko, co nie pasuje.
+      </p>
+
+      <h2>Mierzenie tego, co naprawdę się liczy — telefony</h2>
+      <p>
+        Kampania, której nie mierzysz, to kampania, którą prowadzisz po omacku. W pomocy drogowej kluczową konwersją nie jest wejście na stronę ani wypełnienie formularza, tylko telefon — i właśnie połączenia musisz śledzić. Włącz śledzenie połączeń z reklam i rozszerzeń, żeby wiedzieć, które kampanie, grupy i słowa kluczowe faktycznie generują rozmowy, a nie tylko kliknięcia.
+      </p>
+      <p>
+        Mając te dane, zaczynasz optymalizować na podstawie kosztu pozyskania zlecenia, a nie kosztu kliknięcia. Przesuwasz budżet z fraz, które tylko klikają, na te, które dzwonią, wycinasz nierentowne godziny i lokalizacje, podbijasz to, co działa. To właśnie ta pętla — mierz, wycinaj, dociskaj — zamienia Google Ads z kosztownej loterii w przewidywalne źródło zleceń.
+      </p>
+
+      <h2>Google Ads to nie wszystko — połącz go z SEO</h2>
+      <p>
+        Google Ads ma jedną wadę: w momencie wyłączenia budżetu telefon milknie. Dlatego najlepiej działa w parze z lokalnym SEO i wizytówką Google, które budują darmowy, trwały ruch w tle. Ads daje efekt natychmiast i obsługuje nocne piki, SEO przejmuje z czasem coraz większą część zleceń i obniża średni koszt pozyskania klienta. Jak zbudować ten drugi filar, rozkładamy w przewodniku <Link href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">o SEO lokalnym dla firm</Link>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/reklama-pomocy-drogowej-skuteczne-metody" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Reklama pomocy drogowej – skuteczne sposoby na zdobywanie klientów</Link></li>
+          <li><Link href="/seo-lokalne-dla-firm" className="text-sm font-semibold text-ink hover:text-brand transition-colors">SEO lokalne dla firm – jak trafić do top 3 Google Maps</Link></li>
+          <li><Link href="/jak-promowac-warsztat-samochodowy-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak promować warsztat samochodowy w Google?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO: SEO lokalne dla firm
+  ───────────────────────────────────────────────────────────────────────── */
+  "seo-lokalne-dla-firm": (
+    <>
+      <p>
+        Dla lokalnej firmy — warsztatu, gabinetu, restauracji, pomocy drogowej czy salonu — nie ma ważniejszej walki o widoczność niż ta, która rozgrywa się w wynikach lokalnych Google. Kiedy klient wpisuje „fryzjer Poznań" albo „elektryk w pobliżu", Google pokazuje nad zwykłymi wynikami zestaw trzech firm z mapką, zwany „local packiem". To właśnie te trzy miejsca zbierają większość kliknięć i telefonów. SEO lokalne to zestaw działań, które decydują o tym, czy się tam znajdziesz — czy zostaniesz poniżej, niewidoczny dla klienta, który wybierze konkurencję.
+      </p>
+
+      <h2>Wizytówka Google Business Profile — fundament wszystkiego</h2>
+      <p>
+        Sercem lokalnego SEO jest wizytówka Google Business Profile. To ona, a nie strona internetowa, decyduje o obecności w local packu i na mapach. Wizytówka kompletna, aktywna i prawidłowo skonfigurowana wygrywa z porzuconą — niezależnie od tego, jak dobra jest sama firma.
+      </p>
+      <p>
+        Podstawą jest kompletność i poprawność profilu — właściwa kategoria główna dopasowana do tego, czego szukają klienci, dokładny adres lub obszar działania, aktualne godziny otwarcia, klikalny numer telefonu oraz regularnie dodawane zdjęcia. Kategoria główna jest tu krytyczna: Google najpierw sprawdza, czy pasuje do zapytania, zanim w ogóle rozważy pozostałe sygnały. Więcej o tej decyzji piszemy w tekście o <Link href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">kategoriach w wizytówce Google</Link>, a o samym pozycjonowaniu profilu — w <Link href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">kompletnym przewodniku 2026</Link>.
+      </p>
+
+      <h2>NAP, czyli spójność danych w całej sieci</h2>
+      <p>
+        NAP to skrót od nazwy, adresu i numeru telefonu (Name, Address, Phone) — trzech danych, które muszą być identyczne, co do znaku, w każdym miejscu, gdzie Twoja firma istnieje w internecie. Wizytówka Google, strona, profil na Facebooku, Panorama Firm, katalogi branżowe — wszędzie ten sam format. Każda rozbieżność, nawet drobna jak „ul." kontra „ulica" albo inny zapis numeru telefonu, to dla algorytmu sygnał niespójności, który osłabia zaufanie do profilu.
+      </p>
+      <p>
+        W praktyce warto raz ustalić jeden wzorcowy format danych i przeprowadzić audyt wszystkich miejsc, w których firma jest wymieniona, doprowadzając je do jednej, spójnej wersji. To żmudna, ale jednorazowa praca, która realnie podnosi pozycję w wynikach lokalnych. Temat rozwijamy w osobnym tekście o <Link href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">NAP w wizytówce Google</Link>.
+      </p>
+
+      <h2>Słowa kluczowe lokalne i podstrony lokalizacyjne</h2>
+      <p>
+        Lokalne SEO opiera się na frazach łączących usługę z miejscem — „dentysta Poznań", „naprawa pralek Swarzędz", „pomoc drogowa autostrada A2". To dokładnie to, co wpisują klienci, więc te frazy powinny realnie żyć w treści strony: w nagłówkach, opisach usług, tytułach podstron i tekstach alternatywnych zdjęć. Nie chodzi o sztuczne upychanie słów, lecz o to, żeby strona po ludzku odpowiadała na konkretne zapytania.
+      </p>
+      <p>
+        Bardzo skutecznym zabiegiem są dedykowane podstrony lokalizacyjne — osobne strony pod każde ważne miasto czy dzielnicę, którą obsługujesz, każda z własną treścią dopasowaną do danej lokalizacji. Firma z siedzibą w jednej miejscowości może w ten sposób budować widoczność także w sąsiednich, do których dojeżdża. To szczególnie ważne, gdy baza jest w małej miejscowości, a klientów szukasz w pobliskim mieście — strategię tę rozkładamy w tekście o <Link href="/siedziba-mala-miejscowosc-local-seo" className="text-brand font-semibold hover:underline">siedzibie w małej miejscowości</Link>.
+      </p>
+
+      <h2>Opinie — sygnał rankingowy i dowód zaufania naraz</h2>
+      <p>
+        Opinie w Google działają na dwóch poziomach jednocześnie. Po pierwsze, są sygnałem rankingowym — Google bierze pod uwagę ich liczbę, świeżość i treść, oceniając, jak wysoko pokazać Twoją wizytówkę. Po drugie, są błyskawicznym dowodem zaufania dla klienta, który w trzy sekundy skanuje gwiazdki i liczbę recenzji, zanim zdecyduje, do kogo zadzwonić. Profil ze świeżymi, licznymi opiniami wygrywa z konkurentem mającym ich garstkę.
+      </p>
+      <p>
+        Klucz to systematyczne zbieranie ocen, a nie czekanie, aż klienci sami je wystawią. Najlepiej prosić o opinię od razu po zrealizowanej usłudze, wysyłając krótki link prowadzący wprost do formularza. Równie ważne jest odpowiadanie na wszystkie recenzje — także negatywne, bo spokojna, rzeczowa reakcja buduje wiarygodność u kolejnych czytających. Konkretne metody opisujemy w tekście o <Link href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">zbieraniu opinii bez nachalnego proszenia</Link>.
+      </p>
+
+      <h2>Plan wdrożenia krok po kroku</h2>
+      <p>
+        Lokalne SEO najlepiej wdrażać warstwami, od fundamentów po działania ciągłe. Zacznij od doprowadzenia wizytówki Google do stanu w pełni kompletnego — kategoria, godziny, numer, obszar, komplet zdjęć. Następnie przeprowadź audyt NAP i ujednolić dane we wszystkich miejscach w sieci. W kolejnym kroku dopracuj treść strony pod lokalne frazy i zbuduj podstrony lokalizacyjne dla obszarów, które obsługujesz. Na koniec uruchom stały, systematyczny proces zbierania opinii oraz regularnego dodawania wpisów i zdjęć na wizytówce.
+      </p>
+      <p>
+        Efekty lokalnego SEO przychodzą wolniej niż z płatnych reklam — w perspektywie tygodni i miesięcy, nie dni — ale są trwałe i z czasem obniżają koszt pozyskania klienta. Dlatego najlepiej traktować je jako fundament uzupełniany na starcie przez kampanie płatne, takie jak <Link href="/google-ads-pomoc-drogowa" className="text-brand font-semibold hover:underline">Google Ads</Link>, które dają telefon od pierwszego dnia.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/pozycjonowanie-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Pozycjonowanie wizytówki Google – kompletny przewodnik 2026</Link></li>
+          <li><Link href="/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak skonfigurować</Link></li>
+          <li><Link href="/reklama-firm-uslugowych" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Reklama firm usługowych – jak pozyskiwać klientów lokalnie</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     PORADNIK: Reklama firm usługowych
+  ───────────────────────────────────────────────────────────────────────── */
+  "reklama-firm-uslugowych": (
+    <>
+      <p>
+        Hydraulik, elektryk, firma sprzątająca, pomoc drogowa, serwis AGD, mobilny kosmetolog — branże z pozoru zupełnie różne, a łączy je ta sama logika marketingowa. We wszystkich klient szuka lokalnie i najczęściej w momencie konkretnej potrzeby, a decyzję podejmuje szybko, wybierając spośród kilku firm, które akurat znalazł. To znaczy, że niezależnie od tego, jaką usługę świadczysz, obowiązuje Cię ten sam, uniwersalny system pozyskiwania klientów. Ten artykuł go rozkłada — i pokazuje, jak złożyć z niego plan na pierwsze 30 dni.
+      </p>
+
+      <h2>Zrozum, jak klient szuka usługi</h2>
+      <p>
+        Marketing firmy usługowej zaczyna się od jednej obserwacji: klient nie planuje, tylko reaguje. Zatkana rura, brak prądu, awaria pralki, przeprowadzka na już — potrzeba pojawia się nagle i wymaga szybkiego rozwiązania. Klient wyciąga telefon, wpisuje „hydraulik Poznań" albo „naprawa lodówki w pobliżu" i dzwoni do jednej z pierwszych sensownych firm. Twoim zadaniem nie jest przekonać go, że potrzebuje usługi — tylko być tym, którego znajdzie i do którego zadzwoni jako pierwszego.
+      </p>
+      <p>
+        Z tej obserwacji wynikają trzy konsekwencje, które przewijają się przez cały skuteczny marketing usługowy — liczy się widoczność w momencie intencji, liczy się lokalność, i liczy się prostota kontaktu, najlepiej jeden klikalny numer telefonu. Wszystko, co budujesz, powinno służyć tym trzem rzeczom. To ta sama logika, która rządzi <Link href="/reklama-pomocy-drogowej-skuteczne-metody" className="text-brand font-semibold hover:underline">reklamą pomocy drogowej</Link> — tam jest tylko zaostrzona do granic, bo potrzeba jest skrajnie awaryjna.
+      </p>
+
+      <h2>Dwa filary: płatne reklamy i lokalne SEO</h2>
+      <p>
+        Skuteczny marketing usługowy stoi na dwóch nogach, które się uzupełniają, a nie wykluczają. Pierwsza to płatne reklamy w wyszukiwarce, czyli Google Ads — kanał, który łapie klienta dokładnie w momencie wyszukiwania i daje efekt od pierwszego dnia. Dla firm awaryjnych szczególnie dobrze sprawdzają się kampanie nastawione na połączenie telefoniczne, ograniczone precyzyjnie do obszaru, który obsługujesz. Mechanikę takiej kampanii rozkładamy na przykładzie <Link href="/google-ads-pomoc-drogowa" className="text-brand font-semibold hover:underline">Google Ads dla pomocy drogowej</Link>, ale zasada jest identyczna dla każdej usługi lokalnej.
+      </p>
+      <p>
+        Druga noga to lokalne SEO i wizytówka Google — fundament, który buduje darmowy, trwały ruch w tle. Wymaga cierpliwości, bo efekty przychodzą w skali tygodni i miesięcy, ale raz zbudowana pozycja generuje telefony bez płacenia za każde kliknięcie. Najlepsza strategia to uruchomić oba filary równolegle: Ads na natychmiastowe zlecenia, SEO jako inwestycja, która z czasem przejmuje coraz większą część ruchu i obniża koszt pozyskania klienta. Jak zbudować ten drugi filar, opisujemy w przewodniku <Link href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">o SEO lokalnym dla firm</Link>.
+      </p>
+
+      <h2>Strona, która zamienia kliknięcia w telefony</h2>
+      <p>
+        Reklamy i wizytówka przyprowadzają klienta, ale to strona albo domyka sprzedaż, albo ją gubi. W firmie usługowej strona nie musi być rozbudowana — musi być szybka, mobilna i nastawiona na jeden cel: kontakt. Numer telefonu duży, klikalny, na samej górze. Jasne, czym się zajmujesz i jaki obszar obsługujesz. Konkretne wezwanie do działania zamiast ogólników. Każda dodatkowa sekunda ładowania i każdy zbędny krok między klientem a telefonem to utracone zlecenie.
+      </p>
+      <p>
+        Skutecznym rozwiązaniem są dedykowane podstrony pod konkretne usługi i lokalizacje — osobne strony w schemacie „usługa + miasto", które dużo lepiej konwertują ruch z reklam i jednocześnie wzmacniają lokalne SEO. Klient, który widzi nazwę swojego miasta i dokładnie tę usługę, której szuka, czuje, że trafił do firmy „od siebie".
+      </p>
+
+      <h2>Social media i polecenia — tańsze warstwy, które warto mieć</h2>
+      <p>
+        Poza dwoma głównymi filarami warto zbudować dwie tańsze warstwy wsparcia. Pierwsza to obecność w lokalnych social mediach i grupach — nie jako główne źródło zleceń, lecz jako sposób na budowanie rozpoznawalności, żeby Twoja nazwa była znajoma, zanim klient czegokolwiek potrzebuje. Wartościowa, nienachalna obecność w grupach osiedlowych i branżowych potrafi przynosić polecenia taniej niż płatne reklamy.
+      </p>
+      <p>
+        Druga warstwa to systematyczne budowanie sieci poleceń i opinii. Zadowolony klient, który zostawia opinię w Google i poleca Cię dalej, to najtańszy możliwy kanał pozyskania. Dla wielu firm usługowych równie cenne są wzajemne polecenia z firmami o komplementarnych usługach — hydraulik z firmą remontową, elektryk z deweloperem, pomoc drogowa z warsztatami. Raz zbudowana, taka sieć daje stabilny, powtarzalny strumień zleceń bez wydatków na reklamę.
+      </p>
+
+      <h2>Plan na pierwsze 30 dni</h2>
+      <p>
+        Najlepiej zacząć od rzeczy, które działają natychmiast, i równolegle budować fundament. W pierwszym tygodniu uruchom kampanię Google Ads precyzyjnie ograniczoną do swojego obszaru oraz doprowadź wizytówkę Google do stanu kompletnego, a na stronie upewnij się, że numer telefonu jest na górze i klikalny. To wystarcza, by telefon zaczął dzwonić w ciągu kilku dni.
+      </p>
+      <p>
+        W drugim i trzecim tygodniu buduj zaplecze — podstrony pod kluczowe usługi i lokalizacje, spójne wpisy w katalogach z jednym formatem danych NAP, pierwsze współprace i polecenia. Równolegle uruchom systematyczne zbieranie opinii po każdej zrealizowanej usłudze. Czwarty tydzień poświęć na analizę: sprawdź w danych, które kampanie i frazy realnie generowały telefony, wytnij to, co nie działa, i przesuń budżet na to, co przynosi zlecenia. Po miesiącu masz działający, mierzalny system — zamiast przypadkowych wydatków na marketing.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/seo-lokalne-dla-firm" className="text-sm font-semibold text-ink hover:text-brand transition-colors">SEO lokalne dla firm – jak trafić do top 3 Google Maps</Link></li>
+          <li><Link href="/google-ads-pomoc-drogowa" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Google Ads dla pomocy drogowej – kampania, która dzwoni 24/7</Link></li>
+          <li><Link href="/ile-kosztuje-pozycjonowanie-strony-internetowej" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Ile kosztuje pozycjonowanie strony internetowej w 2026 roku?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SEO: Google Search Console raporty AI 2026
   ───────────────────────────────────────────────────────────────────────── */
   "google-search-console-raporty-ai-2026": (

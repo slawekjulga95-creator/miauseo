@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/><stop offset="100%" stop-color="#0b1f52"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.06" stroke="white" stroke-width="2" fill="none">
+    <path d="M0 90 Q300 50 600 90 T1200 90"/><path d="M0 540 Q300 500 600 540 T1200 540"/>
+  </g>
+  <!-- Search bar -->
+  <g>
+    <rect x="180" y="150" width="700" height="96" rx="48" fill="white" opacity="0.95"/>
+    <circle cx="248" cy="198" r="26" fill="none" stroke="#1d4ed8" stroke-width="9"/>
+    <line x1="268" y1="218" x2="296" y2="246" stroke="#1d4ed8" stroke-width="9" stroke-linecap="round"/>
+    <rect x="330" y="186" width="360" height="24" rx="12" fill="#1d4ed8" opacity="0.35"/>
+  </g>
+  <!-- Ad result card (highlighted) -->
+  <g>
+    <rect x="180" y="290" width="700" height="120" rx="20" fill="white" opacity="0.12"/>
+    <rect x="206" y="316" width="64" height="30" rx="8" fill="#fbbf24"/>
+    <text x="238" y="338" font-family="system-ui,sans-serif" font-size="20" font-weight="800" fill="#0b1f52" text-anchor="middle">AD</text>
+    <rect x="290" y="316" width="360" height="20" rx="10" fill="white" opacity="0.85"/>
+    <rect x="206" y="362" width="500" height="16" rx="8" fill="white" opacity="0.5"/>
+    <rect x="206" y="386" width="300" height="16" rx="8" fill="white" opacity="0.5"/>
+  </g>
+  <!-- cursor click -->
+  <g transform="translate(740 380)" fill="white">
+    <path d="M0 0 L0 56 L16 42 L26 64 L40 58 L30 36 L52 36 Z"/>
+    <g stroke="#fbbf24" stroke-width="5" stroke-linecap="round" opacity="0.9">
+      <line x1="58" y1="6" x2="74" y2="-10"/><line x1="64" y1="28" x2="86" y2="28"/><line x1="58" y1="50" x2="74" y2="66"/>
+    </g>
+  </g>
+  <!-- Phone receiver icon -->
+  <g transform="translate(940 200)" fill="#fbbf24">
+    <path d="M40 6 C24 6 10 20 10 36 C10 96 76 162 136 162 C152 162 166 148 166 132 L166 108 L124 96 L108 116 C90 108 64 82 56 64 L76 48 L64 6 Z"/>
+  </g>
+  <text x="100" y="586" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.4" letter-spacing="6">MIAUSEO · GOOGLE ADS · POMOC DROGOWA</text>
+</svg>
