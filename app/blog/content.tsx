@@ -3,6 +3,199 @@ import Link from "next/link";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     PORADNIK: Reklama pomocy drogowej — skuteczne metody
+  ───────────────────────────────────────────────────────────────────────── */
+  "reklama-pomocy-drogowej-skuteczne-metody": (
+    <>
+      <p>
+        Branża pomocy drogowej rządzi się brutalnie prostą zasadą: wygrywa ten, kto pierwszy odbierze telefon od kierowcy stojącego na poboczu. Klient z przebitą oponą na obwodnicy, z rozładowanym akumulatorem pod marketem albo po stłuczce na trasie szybkiego ruchu nie przegląda dziesięciu ofert, nie porównuje cenników i nie czyta bloga firmowego. Wpisuje w telefon „laweta + nazwa miasta", klika w pierwszy sensowny wynik i dzwoni. Cała gra o tego klienta rozgrywa się w ciągu kilkudziesięciu sekund — a o tym, czy to Ty odbierzesz ten telefon, decyduje to, co zrobiłeś z marketingiem na tygodnie albo miesiące wcześniej.
+      </p>
+      <p>
+        Problem w tym, że konkurencja w assistance jest dziś gęsta i agresywna jak w mało której lokalnej branży. W każdym większym mieście o tę samą frazę „pomoc drogowa" walczy kilkudziesięciu graczy — od jednoosobowych lawet po duże floty z umowami z ubezpieczycielami. Wszyscy obiecują to samo: „24/7", „dojazd w 30 minut", „konkurencyjne ceny". Dla kierowcy w stresie te hasła zlewają się w jedno. Jeśli Twoja firma niczym się nie wyróżnia i — co gorsza — jest niewidoczna w momencie, gdy klient szuka, to po prostu nie istniejesz, niezależnie od tego, jak dobrą masz lawetę i jak uczciwe ceny.
+      </p>
+      <p>
+        Ten artykuł to konkretny, wdrożeniowy przewodnik po reklamie pomocy drogowej. Pokażę Ci, które kanały realnie generują zlecenia w tej branży, ile to kosztuje, jak zbudować stronę, która zamienia kliknięcia w połączenia, i jak ułożyć z tego plan działania na pierwsze 30 dni — wszystko z perspektywy właściciela małej firmy, który ma ograniczony budżet i nie może sobie pozwolić na palenie pieniędzy w reklamach „dla zasięgów".
+      </p>
+
+      <h2>Dlaczego reklama pomocy drogowej jest kluczowa?</h2>
+      <p>
+        Pomoc drogowa to jedna z nielicznych branż, w których popyt jest niemal w stu procentach „popytem awaryjnym" — klient nie planuje skorzystania z usługi, tylko zostaje do niej zmuszony przez nagłą sytuację. To całkowicie zmienia reguły marketingu. Twoim zadaniem nie jest przekonanie kogoś, że potrzebuje lawety. Twoim zadaniem jest być tym, którego znajdzie w sekundzie, w której już wie, że jej potrzebuje.
+      </p>
+      <p>
+        Z tego wynika pierwsza, fundamentalna cecha branży — model 24/7. Awarie nie mają godzin pracy. Akumulator pada w największy mróz o szóstej rano, opona strzela w niedzielę na rodzinnym wyjeździe, a kolizja zdarza się o północy w piątek. Jeśli Twoja reklama jest aktywna tylko w godzinach 9–17, oddajesz konkurencji najlepsze i najczęściej najlepiej płatne zlecenia — te nocne i weekendowe, za które klient w desperacji zapłaci więcej, bez negocjacji. Dostępność reklamowa musi odpowiadać dostępności usługi.
+      </p>
+      <p>
+        Druga cecha to natychmiastowość decyzji. Dla zapytań awaryjnych i lokalnych ogromna część użytkowników kontaktuje się z firmą w ciągu kilku–kilkunastu minut od wyszukania. Nikt nie odkłada decyzji o lawecie „na później". To znaczy, że Twój marketing musi prowadzić klienta do działania jednym ruchem — kliknięciem w numer telefonu. Każdy dodatkowy krok, każdy formularz do wypełnienia, każda sekunda ładowania strony to klient, który w tym czasie zadzwonił już do kogoś innego.
+      </p>
+      <p>
+        Trzecia cecha to skrajna lokalność. Klientowi pod Poznaniem kompletnie nie interesuje świetna firma z Krakowa — liczy się ten, kto dojedzie najszybciej. Google doskonale to rozumie i dla zapytań typu „pomoc drogowa" pokazuje wyniki silnie sprofilowane geograficznie. To dobra wiadomość dla małej firmy: nie musisz konkurować z całą Polską, tylko wygrać swój obszar dojazdu. Cały Twój budżet i wysiłek marketingowy mogą skupić się na promieniu kilkudziesięciu kilometrów — i właśnie tam możesz być realnie numerem jeden, nawet jako jednoosobowa działalność.
+      </p>
+
+      <h2>Najskuteczniejsze kanały reklamy pomocy drogowej</h2>
+      <p>
+        Nie każdy kanał marketingowy ma sens w branży, w której klient decyduje w 30 sekund. Zapomnij o budowaniu zasięgów, viralach i kampaniach wizerunkowych — w assistance liczą się kanały, które łapią klienta w momencie intencji albo budują zaplecze powtarzalnych zleceń. Poniżej pięć, które realnie generują telefony, uszeregowanych według tego, jak szybko zwykle zwracają zainwestowane pieniądze.
+      </p>
+
+      <h3>Google Ads dla pomocy drogowej</h3>
+      <p>
+        Jeśli masz złotówkę i chcesz, żeby zadzwonił telefon jeszcze dzisiaj, ta złotówka powinna pójść w Google Ads. Reklama w wyszukiwarce to jedyny kanał, który łapie klienta dokładnie w sekundzie, w której wpisuje „pomoc drogowa" albo „laweta" i jest gotów dzwonić. Nie tworzysz tu potrzeby — przechwytujesz istniejącą. To dlatego Google Ads jest dla pomocy drogowej kanałem numer jeden, mimo że klikalność bywa droga.
+      </p>
+      <p>
+        Kluczem jest właściwa konstrukcja kampanii. Po pierwsze — rozszerzenia połączeń i kampanie typu „tylko połączenie" (call-only), w których kliknięcie w reklamę od razu wybiera Twój numer, bez wchodzenia na stronę. Po drugie — precyzyjne targetowanie geograficzne ograniczone do realnego obszaru dojazdu, żeby nie płacić za kliknięcia osób spoza Twojego zasięgu. Po trzecie — harmonogram reklam ustawiony na całą dobę, ze szczególnym dociśnięciem stawek w godzinach nocnych i w weekendy, kiedy konkurencja często śpi, a marże na zleceniach są najwyższe. Po czwarte — słowa kluczowe o wysokiej intencji, takie jak „laweta Poznań", „pomoc drogowa autostrada A2", „holowanie 24h", oraz konsekwentne wykluczanie fraz śmieciowych typu „pomoc drogowa praca" czy „laweta sprzedam", które zżerają budżet bez zleceń.
+      </p>
+      <p>
+        Zobacz także: <Link href="/google-ads-pomoc-drogowa" className="text-brand font-semibold hover:underline">konfiguracja kampanii call-only i stawek dobowych krok po kroku</Link>.
+      </p>
+
+      <h3>SEO lokalne i wizytówka Google Business Profile</h3>
+      <p>
+        Google Ads daje efekt natychmiast, ale płacisz za każde kliknięcie i w momencie wyłączenia budżetu telefon milknie. SEO lokalne działa odwrotnie — wymaga czasu i cierpliwości, ale raz zbudowana pozycja generuje darmowe telefony miesiącami. W praktyce te dwa kanały się nie wykluczają, tylko uzupełniają: Ads na start i na nocne piki, SEO jako fundament, który z czasem przejmuje coraz większą część ruchu.
+      </p>
+      <p>
+        Sercem lokalnego SEO w tej branży jest wizytówka Google Business Profile — to ona decyduje, czy pojawisz się w tak zwanym „local packu", czyli zestawie trzech firm z mapką, który Google wyświetla nad zwykłymi wynikami. Dobrze prowadzona wizytówka wymaga kompletnego i spójnego profilu — prawidłowej kategorii „pomoc drogowa", aktualnego numeru kliknij-zadzwoń, godzin pracy ustawionych jako całodobowe, realnego obszaru działania oraz regularnie dodawanych zdjęć lawety, sprzętu i realizacji. Im bardziej żywy i kompletny profil, tym wyżej Google go pozycjonuje.
+      </p>
+
+      <h3>Facebook Ads i social media</h3>
+      <p>
+        Facebook i Instagram to z pozoru dziwny wybór dla branży opartej na nagłej potrzebie — nikt z przebitą oponą nie scrolluje rolek. I to prawda: social media nie złapią klienta w momencie awarii. Pełnią jednak dwie inne, bardzo konkretne funkcje. Pierwsza to budowanie rozpoznawalności w lokalnej społeczności, żeby Twoja nazwa była już znajoma, zanim cokolwiek się stanie. Druga to remarketing: jeśli ktoś wszedł na Twoją stronę i nie zadzwonił, możesz „dogonić" go reklamą, żeby zapisał numer na przyszłość.
+      </p>
+      <p>
+        Najlepiej działa tu obecność w lokalnych grupach — motoryzacyjnych, osiedlowych, „kupię/sprzedam" z Twojego powiatu. Wartościowe, nienachalne komentarze z realną pomocą, okazjonalne relacje z trudnych akcji holowania, krótkie filmy pokazujące sprzęt w działaniu — to wszystko buduje zaufanie taniej niż płatne reklamy. Płatne kampanie warto traktować jako wsparcie świadomości i remarketing, a nie główne źródło zleceń.
+      </p>
+
+      <h3>Współpraca z warsztatami, lawetami i ubezpieczycielami</h3>
+      <p>
+        To kanał, który właściciele firm assistance często niedoceniają, a który potrafi dać najbardziej stabilny, powtarzalny strumień zleceń — i to bez wydawania złotówki na reklamę. Warsztaty samochodowe, lakiernie, stacje kontroli pojazdów, komisy i serwisy opon nieustannie mają do czynienia z autami, które trzeba skądś przyholować albo gdzieś odstawić. Jeśli mechanik ma w telefonie Twój numer i wie, że jesteś rzetelny, będzie Cię polecał klientom dziesiątki razy w miesiącu.
+      </p>
+      <p>
+        Buduje się to relacjami i prostą wymianą korzyści — prowizją od skierowanego zlecenia, priorytetowym dojazdem albo po prostu niezawodnością, która sprawia, że mechanik nie boi się dać Twojego numeru swojemu klientowi. Warto też nawiązać współpracę z innymi firmami lawetowymi, które podzlecają zlecenia przy komplecie albo awarii sprzętu. Osobny, bardziej wymagający, ale bardzo dochodowy kierunek to umowy z ubezpieczycielami i firmami assistance — wejście na ich listy podwykonawców daje regularne zlecenia, choć zwykle przy niższych, narzuconych stawkach.
+      </p>
+
+      <h3>Portale ogłoszeniowe i katalogi firm</h3>
+      <p>
+        Kanał najprostszy do wdrożenia i często lekceważony, a wciąż generujący zlecenia oraz, co równie ważne, wzmacniający lokalne SEO. Część kierowców wciąż szuka pomocy przez Panorama Firm, mapy i serwisy ogłoszeniowe, a wpisy w wiarygodnych katalogach to dla Google dodatkowe sygnały cytowań, które podnoszą pozycję wizytówki.
+      </p>
+      <p>
+        Najważniejsza zasada przy katalogach to absolutna spójność danych firmy — nazwa, adres i numer telefonu (tak zwany NAP) muszą być identyczne, co do znaku, w każdym miejscu w sieci. Rozbieżność w formacie numeru czy skrócie w nazwie ulicy to dla algorytmu sygnał niespójności, który osłabia cały profil. Załóż wpisy w kluczowych katalogach raz, porządnie, z jednym wzorcowym formatem danych — i pilnuj, żeby wszędzie był taki sam.
+      </p>
+
+      <h2>Strona internetowa pomocy drogowej jako centrum sprzedaży</h2>
+      <p>
+        Możesz mieć najlepiej ustawione Google Ads i świetną wizytówkę, ale jeśli kliknięcie prowadzi na słabą stronę, tracisz klienta na ostatnim metrze. Strona internetowa w pomocy drogowej to nie wizytówka „bo wypada mieć" — to maszyna do zamiany kliknięć w telefony. Tylko z takiej perspektywy ma sens o niej myśleć.
+      </p>
+      <p>
+        Dlaczego strona jest kluczowa, skoro klient i tak głównie dzwoni? Bo to ona domyka większość ścieżek z reklam, organicznych wyników i wizytówki, a jednocześnie jest jedynym miejscem, w którym budujesz wiarygodność — pokazujesz sprzęt, opinie, obszar działania i konkretne ceny. Klient w stresie podejmuje decyzję w sekundach, a strona albo go w tej sekundzie przekonuje i daje przycisk do połączenia, albo go gubi. Różnica między stroną dobrą a przeciętną to realna różnica w liczbie telefonów z tego samego budżetu reklamowego.
+      </p>
+      <p>
+        Jak powinna wyglądać strona pomocy drogowej? Przede wszystkim numer telefonu musi być na samej górze, duży, wyróżniony i klikalny — kliknięcie od razu wybiera połączenie. To absolutny priorytet, ważniejszy niż logo, slogan czy ładne zdjęcie. Tuż obok musi być jasne wezwanie do działania w stylu „Zadzwoń teraz — dojeżdżamy 24/7". Strona musi ładować się błyskawicznie, bo na słabym zasięgu na poboczu każda dodatkowa sekunda to porzucenie. Musi być w pełni mobilna, bo praktycznie cały ruch awaryjny jest z telefonu. I musi natychmiast komunikować trzy rzeczy, których szuka zestresowany kierowca — że działacie całą dobę, że obsługujecie jego okolicę i że dojedziecie szybko.
+      </p>
+      <p>
+        Osobnym, bardzo skutecznym rozwiązaniem są dedykowane landing page pod konkretne frazy lokalne, według schematu „laweta + miasto" albo „pomoc drogowa + dzielnica". Zamiast jednej ogólnej strony tworzysz osobne, mocno sprofilowane podstrony — „Laweta Poznań", „Pomoc drogowa Swarzędz", „Holowanie Luboń" — każda dopasowana treścią do konkretnej lokalizacji i z jasnym wezwaniem do telefonu. Taka strona dużo lepiej konwertuje ruch z Google Ads, bo klient widzi nazwę swojego miasta i od razu czuje, że trafił do firmy „od siebie", a nie do ogólnopolskiego pośrednika. To także jeden z najmocniejszych zabiegów lokalnego SEO.
+      </p>
+
+      <h2>SEO lokalne dla pomocy drogowej</h2>
+      <p>
+        Skoro strona i wizytówka są na miejscu, czas wycisnąć z nich maksimum darmowego ruchu. Lokalne SEO to w pomocy drogowej inwestycja, która z czasem potrafi przejąć większość zleceń od płatnych reklam — kosztem cierpliwości, ale za to bez płacenia za każde kliknięcie. Poniżej trzy filary, na których to stoi.
+      </p>
+
+      <h3>Słowa kluczowe lokalne</h3>
+      <p>
+        Cała strategia treści i pozycjonowania w tej branży kręci się wokół fraz łączących usługę z lokalizacją. To nie są przypadkowe słowa — to dokładnie to, co kierowca wpisuje w panice. Najważniejsze są zapytania o wysokiej intencji i jasnym kontekście geograficznym, takie jak „pomoc drogowa Poznań", „laweta Poznań cena", „holowanie 24h Poznań" czy „pomoc drogowa autostrada A2". Warto też pokryć frazy długiego ogona, opisujące konkretne sytuacje — „odpalenie auta z pasażera", „wymiana koła na drodze", „transport auta po stłuczce" — bo to one łapią klientów z bardzo precyzyjną potrzebą.
+      </p>
+      <p>
+        Te frazy powinny realnie żyć w treści strony i landing page — w nagłówkach, opisach usług, tytułach podstron i tekstach alternatywnych zdjęć. Nie chodzi o sztuczne upychanie słów, lecz o to, żeby strona po ludzku odpowiadała na konkretne pytania, które kierowcy wpisują w Google.
+      </p>
+
+      <h3>Optymalizacja Google Maps</h3>
+      <p>
+        Dla pomocy drogowej widoczność na mapach Google jest często ważniejsza niż klasyczne pozycje w wynikach. Kierowca, który szuka lawety z telefonu, najczęściej dostaje na górze blok z mapką i trzema firmami — i to z niego dzwoni. Żeby się tam znaleźć i utrzymać, wizytówka musi być maksymalnie kompletna i aktywna: prawidłowa kategoria główna, dokładnie zdefiniowany obszar działania, całodobowe godziny, regularnie dodawane świeże zdjęcia oraz aktywne korzystanie z funkcji wpisów i pytań. Google premiuje profile, które wyglądają na żywe i prowadzone, a karze te porzucone i niekompletne.
+      </p>
+      <p>
+        Istotnym i często pomijanym czynnikiem jest tu również bliskość — Google pokazuje na mapie firmy najbliższe lokalizacji szukającego. Nie zmienisz fizycznego adresu pod każde zapytanie, ale możesz to wykorzystać, świadomie budując widoczność wokół realnego centrum swojego obszaru dojazdu i wspierając ją landing page'ami pod sąsiednie miejscowości.
+      </p>
+
+      <h3>Opinie klientów</h3>
+      <p>
+        W branży, w której klient powierza Ci swoje auto w sytuacji kryzysowej, zaufanie jest walutą — a opinie w Google to jego najszybszy dowód. Profil z setką pozytywnych, świeżych ocen wygrywa z konkurentem mającym ich pięć, nawet jeśli obaj robią dokładnie to samo. Opinie wpływają na dwie rzeczy naraz: na realną decyzję klienta, który w trzy sekundy skanuje gwiazdki, oraz na samą pozycję wizytówki, bo Google traktuje liczbę, świeżość i treść recenzji jako sygnał rankingowy.
+      </p>
+      <p>
+        Klucz to systematyczne, a nie przypadkowe zbieranie opinii. Po każdym udanym zleceniu warto poprosić klienta o ocenę — najlepiej od razu, wysyłając mu krótki link bezpośrednio do formularza opinii, gdy emocje wdzięczności są jeszcze świeże. Równie ważne jest odpowiadanie na wszystkie recenzje, także te negatywne — spokojna, rzeczowa reakcja na krytykę buduje wiarygodność u kolejnych czytających bardziej niż sam zestaw piątek.
+      </p>
+      <p>
+        Sprawdź: <Link href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">SEO lokalne dla firm — wizytówka, NAP i zbieranie opinii w praktyce</Link>.
+      </p>
+
+      <h2>Najczęstsze błędy w reklamie pomocy drogowej</h2>
+      <p>
+        Zanim zainwestujesz w którykolwiek z opisanych kanałów, warto poznać pułapki, które najczęściej zżerają budżety małych firm assistance. To błędy banalne, a kosztują realne pieniądze i zlecenia każdego miesiąca.
+      </p>
+      <p>
+        Pierwszy i najdroższy to brak analizy kampanii. Wielu właścicieli wrzuca budżet w Google Ads albo Facebooka, patrzy tylko na to, że „coś się dzieje", i nie sprawdza, które słowa kluczowe i które reklamy faktycznie generują telefony. Bez śledzenia połączeń i kosztu pozyskania zlecenia działasz po omacku — równie dobrze możesz palić połowę budżetu na frazy, które nigdy nie zamieniają się w klienta.
+      </p>
+      <p>
+        Drugi błąd to zły target — najczęściej zbyt szeroki geograficznie. Firma z Poznania ustawia reklamy na całe województwo, płaci za kliknięcia osób z drugiego końca regionu, do których i tak nie dojedzie na czas, i przepala budżet, zamiast dominować swój realny obszar dojazdu. W pomocy drogowej węższy, ale precyzyjny target prawie zawsze wygrywa z szerokim.
+      </p>
+      <p>
+        Trzeci błąd to brak strony mobilnej albo strona, która na telefonie ładuje się wolno i jest nieczytelna. Skoro praktycznie cały ruch awaryjny pochodzi z komórek, strona niedopasowana do telefonu to wprost oddawanie klientów konkurencji. Czwarty, pokrewny i zaskakująco częsty błąd to ukryty albo nieklikalny numer telefonu. Numer schowany w stopce, zapisany jako grafika albo niedziałający po dotknięciu to zaproszenie dla klienta, żeby zadzwonił gdzie indziej. Numer kliknij-zadzwoń musi być na wierzchu i działać jednym dotknięciem — to najtańsza, a zarazem najczęściej zaniedbywana optymalizacja w całej branży.
+      </p>
+
+      <h2>Ile kosztuje reklama pomocy drogowej?</h2>
+      <p>
+        To pytanie pada zawsze jako pierwsze, a uczciwa odpowiedź brzmi: zależy od miasta, konkurencji i tego, jak agresywnie chcesz wejść. Mogę jednak podać realne widełki, które pozwolą Ci zaplanować budżet, zamiast strzelać w ciemno.
+      </p>
+      <p>
+        Google Ads to koszt, który ponosisz za kliknięcia, a stawki w pomocy drogowej należą do wyższych właśnie dlatego, że to klient o ogromnej, natychmiastowej wartości. W zależności od miasta i pory koszt pojedynczego kliknięcia potrafi wahać się od kilku do kilkunastu złotych, a w największych aglomeracjach i w godzinach szczytu nawet więcej. Sensowny budżet startowy dla małej firmy to zwykle kilkaset do dwóch–trzech tysięcy złotych miesięcznie — wystarczająco, by zebrać dane i złapać pierwsze zlecenia, a jednocześnie nie tak dużo, by nieoptymalna kampania od razu wydrenowała konto. Ten kanał daje efekt od pierwszego dnia, więc pieniądze pracują od razu.
+      </p>
+      <p>
+        SEO i wizytówka Google to inny model — tu nie płacisz za kliknięcia, tylko inwestujesz w długoterminowy fundament. Koszt to albo czas własny, jeśli prowadzisz wizytówkę i optymalizujesz stronę samodzielnie, albo stała współpraca z osobą lub agencją zajmującą się lokalnym pozycjonowaniem, co w skali małej firmy oznacza zwykle od kilkuset do około tysiąca–dwóch tysięcy złotych miesięcznie. Efekty przychodzą wolniej, w perspektywie kilku miesięcy, ale są trwałe — dobrze wypozycjonowana wizytówka generuje telefony bez płacenia za każde kliknięcie i z czasem obniża koszt pozyskania klienta poniżej tego z reklam.
+      </p>
+      <p>
+        Social media to najtańszy do rozpoczęcia kanał, jeśli liczyć sam wydatek mediowy — kampanie wspierające świadomość i remarketing na Facebooku można prowadzić już od kilkudziesięciu do kilkuset złotych miesięcznie. Trzeba jednak pamiętać, że w pomocy drogowej social to wsparcie, a nie główne źródło zleceń, więc najlepiej traktować go jako tanią warstwę budującą rozpoznawalność na tle dwóch głównych filarów.
+      </p>
+
+      <h2>Strategia marketingowa krok po kroku</h2>
+      <p>
+        Teoria jest tylko tyle warta, ile da się z niej wdrożyć. Poniżej konkretny plan na pierwsze 30 dni — ułożony tak, by najszybciej działające rzeczy uruchomić od razu, a fundamenty budować równolegle w tle.
+      </p>
+      <p>
+        Pierwszy tydzień to szybkie wdrożenia, które dają efekt natychmiast. Zaczynasz od dwóch rzeczy naraz — uruchomienia kampanii Google Ads typu call-only na realny obszar dojazdu oraz uporządkowania wizytówki Google Business Profile do stanu kompletnego: prawidłowa kategoria, całodobowe godziny, klikalny numer, obszar działania i komplet świeżych zdjęć. Równolegle sprawdzasz jedną krytyczną rzecz na stronie — czy numer telefonu jest na górze, duży i klikalny, i czy strona szybko działa na telefonie. Już te działania potrafią sprawić, że telefon zacznie dzwonić w ciągu kilku dni.
+      </p>
+      <p>
+        Drugi i trzeci tydzień to budowa zaplecza, które zacznie pracować na dłużej. Tworzysz dedykowane landing page pod najważniejsze frazy „laweta + miasto" dla swojego obszaru, zakładasz spójne wpisy w kluczowych katalogach z jednym wzorcowym formatem danych NAP oraz ruszasz w teren po współprace — odwiedzasz okoliczne warsztaty, serwisy opon i komisy, zostawiasz wizytówki i umawiasz się na wzajemne polecenia. To także moment na uruchomienie systematycznego zbierania opinii: po każdym zleceniu wysyłasz klientowi link do oceny w Google.
+      </p>
+      <p>
+        Czwarty tydzień to analiza i optymalizacja, czyli zamiana wydatków w system. Patrzysz w dane z Google Ads — które słowa kluczowe realnie generowały telefony, a które tylko zżerały budżet — i wycinasz to, co nie dzwoni, przesuwając pieniądze na to, co działa. Sprawdzasz, o których porach przychodziło najwięcej zleceń, i dociskasz stawki w godzinach nocnych i weekendowych, jeśli to one okazały się najbardziej dochodowe. Na tym etapie masz już pierwsze opinie, działającą wizytówkę i pierwsze polecenia z warsztatów — i wiesz, w co dokładnie inwestować w kolejnym miesiącu, zamiast zgadywać.
+      </p>
+      <p>
+        Co z tego daje efekt od razu, a co buduje się dłużej? Natychmiast pracują Google Ads i poprawiona wizytówka oraz klikalny numer na stronie — to one przynoszą pierwsze telefony jeszcze w pierwszym tygodniu. Wolniej, ale trwale rosną SEO lokalne, opinie i sieć poleceń z warsztatów — i to one z czasem przejmują coraz większą część zleceń, obniżając Twój koszt pozyskania klienta. Sztuka polega na tym, żeby nie wybierać między „szybko" a „trwale", tylko uruchomić jedno i drugie równolegle.
+      </p>
+      <p>
+        Przeczytaj więcej: <Link href="/reklama-firm-uslugowych" className="text-brand font-semibold hover:underline">reklama firm usługowych — jak zaadaptować ten schemat do innych lokalnych usług awaryjnych</Link>.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        Reklama pomocy drogowej rządzi się prostą, ale bezlitosną logiką — wygrywa firma, którą klient znajdzie i do której zadzwoni w pierwszych sekundach awarii. Skuteczny marketing w tej branży to nie budowanie wizerunku, lecz bycie widocznym i osiągalnym dokładnie w momencie intencji, przez całą dobę, na swoim lokalnym terenie.
+      </p>
+      <p>
+        W praktyce sprowadza się to do kilku filarów — Google Ads łapiące klienta w sekundzie wyszukiwania, dopracowana wizytówka i lokalne SEO budujące darmowy ruch na dłużej, strona z klikalnym numerem zamieniająca kliknięcia w telefony, sieć poleceń z warsztatów dająca powtarzalne zlecenia oraz systematycznie zbierane opinie budujące zaufanie. Najmocniejsze jest połączenie tego, co działa natychmiast, z tym, co buduje się miesiącami, uruchomione równolegle według prostego planu na pierwsze 30 dni.
+      </p>
+      <p>
+        Jeśli prowadzisz firmę pomocy drogowej i czujesz, że telefon dzwoni rzadziej, niż powinien — zacznij od najprostszego kroku: sprawdź dziś, czy Twój numer jest na górze strony i klikalny, i czy Twoja wizytówka Google jest kompletna. To dwie zmiany, które możesz wdrożyć w godzinę, a które już jutro mogą przynieść pierwszy dodatkowy telefon.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/jak-promowac-warsztat-samochodowy-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak promować warsztat samochodowy w Google? Wizytówka i reklamy</Link></li>
+          <li><Link href="/pozycjonowanie-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Pozycjonowanie wizytówki Google – kompletny przewodnik 2026</Link></li>
+          <li><Link href="/ile-kosztuje-pozycjonowanie-strony-internetowej" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Ile kosztuje pozycjonowanie strony internetowej w 2026 roku?</Link></li>
+        </ul>
+      </div>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SEO: Google Search Console raporty AI 2026
   ───────────────────────────────────────────────────────────────────────── */
   "google-search-console-raporty-ai-2026": (

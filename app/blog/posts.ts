@@ -19,6 +19,16 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "reklama-pomocy-drogowej-skuteczne-metody",
+    title: "Reklama pomocy drogowej – skuteczne sposoby na zdobywanie klientów",
+    excerpt: "W pomocy drogowej wygrywa ten, kto pierwszy odbierze telefon od kierowcy na poboczu. Pokazujemy, które kanały realnie generują zlecenia — Google Ads, SEO lokalne, wizytówka Google, współprace z warsztatami — ile to kosztuje i jak ułożyć z tego plan działania na pierwsze 30 dni.",
+    category: "Poradnik",
+    date: "2026-06-17",
+    readTime: 14,
+    coverColor: "#f59e0b",
+    published: true,
+  },
+  {
     slug: "masaz-z-dojazdem-poznan-case-study",
     title: "Masaż z dojazdem Poznań — top 3 Google Maps w branży z 50 konkurentami w 60 dni",
     excerpt: "Branża masażu mobilnego w Poznaniu to ponad 50 aktywnych profili GBP walczących o te same frazy. Klientka zaczynała bez jednej opinii i z wizytówką sprzed 3 lat. Oto co zrobiliśmy przez pierwsze 60 dni i jak skończyła w top 3 na najważniejszej frazie.",
