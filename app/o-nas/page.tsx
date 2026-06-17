@@ -10,7 +10,9 @@ export const metadata: Metadata = {
 const reasons = [
   {
     title: "Realne wyniki, zero trików",
-    desc: "Jak koty: niezależni, czujni i odporni na sztuczki. Nie obiecujemy cudów ani nie czarujemy raportami — robimy to, co faktycznie przekłada się na telefony i klientów.",
+    desc: (
+      <>Jak koty: <strong className="font-semibold text-ink">niezależni, czujni i odporni na sztuczki</strong>. Nie obiecujemy cudów ani nie czarujemy raportami — robimy to, co faktycznie <strong className="font-semibold text-ink">przekłada się na telefony i klientów</strong>.</>
+    ),
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="4.5" /><circle cx="12" cy="12" r="0.5" fill="currentColor" />
@@ -19,7 +21,9 @@ const reasons = [
   },
   {
     title: "11 lat doświadczenia",
-    desc: "Setki firm — od jednoosobowych działalności po rozbudowane sieci lokalne. Widzieliśmy, co naprawdę działa, a co tylko ładnie wygląda w zestawieniu.",
+    desc: (
+      <><strong className="font-semibold text-ink">Setki firm</strong> — od jednoosobowych działalności po rozbudowane sieci lokalne. Widzieliśmy, <strong className="font-semibold text-ink">co naprawdę działa</strong>, a co tylko ładnie wygląda w zestawieniu.</>
+    ),
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="8" r="6" /><path d="M8.21 13.89 7 22l5-3 5 3-1.21-8.11" />
@@ -27,20 +31,24 @@ const reasons = [
     ),
   },
   {
-    title: "Specjalizacja: wizytówka Google",
-    desc: "Tam toczy się walka o lokalnych klientów. Gdy ktoś wpisuje usługę i miasto, robimy wszystko, żeby to Ty był pierwszy — a nie konkurencja.",
+    title: "Strategia szyta na miarę",
+    desc: (
+      <><strong className="font-semibold text-ink">Żadnych gotowców ani szablonów.</strong> Najpierw poznajemy Twój biznes i konkurencję, a dopiero potem budujemy plan <strong className="font-semibold text-ink">dopasowany do Twojej branży i celów</strong>.</>
+    ),
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
+        <circle cx="12" cy="12" r="10" /><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
       </svg>
     ),
   },
   {
-    title: "Model miesięczny, bez umów na lata",
-    desc: "Rozliczamy się co miesiąc, bez długoterminowych zobowiązań. Jeśli nie dowozimy wyników — odchodzisz. To mobilizuje nas lepiej niż jakikolwiek kontrakt.",
+    title: "Elastyczne okresy współpracy",
+    desc: (
+      <>Współpracę ustalamy na <strong className="font-semibold text-ink">3, 6 lub 9 miesięcy</strong> — <strong className="font-semibold text-ink">wspólnie wybieramy wariant najkorzystniejszy</strong> dla Twojej firmy. Bez wiązania na lata, z planem dopasowanym do celów.</>
+    ),
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 2v6h-6" /><path d="M3 12a9 9 0 0 1 15-6.7L21 8" /><path d="M3 22v-6h6" /><path d="M21 12a9 9 0 0 1-15 6.7L3 16" />
+        <rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
       </svg>
     ),
   },
