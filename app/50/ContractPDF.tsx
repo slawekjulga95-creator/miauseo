@@ -66,7 +66,7 @@ export default function ContractPDF() {
         <View style={s.parties}>
           <View style={s.partyBox}>
             <Text style={s.partyLabel}>Usługodawca</Text>
-            <Text style={s.partyText}>………………………………………, ………………………………………, NIP: ………………………………, zwany dalej „Usługodawcą".</Text>
+            <Text style={s.partyText}>Sławomir Jułga, prowadzący działalność pod nazwą MiauSEO, z siedzibą ul. Klaudyny Potockiej 25, 60-211 Poznań, NIP: 6070100514, e-mail: slawomir@miauseo.pl, tel. +48 455 571 349, zwany dalej „Usługodawcą".</Text>
           </View>
           <View style={s.partyBox}>
             <Text style={s.partyLabel}>Zleceniodawca</Text>
@@ -76,28 +76,30 @@ export default function ContractPDF() {
 
         <Section title="§ 2. Przedmiot umowy" />
         <Point num="2.1">Usługodawca prowadzi, pozycjonuje i obsługuje ogólnodostępną wizytówkę Google (Profil Firmy w Google) Zleceniodawcy zgodnie z warunkami niniejszej umowy.</Point>
-        <Point num="2.2">Zleceniodawca wskazuje 3 frazy kluczowe do pozycjonowania i może je bezpłatnie wymieniać w dowolnym momencie obowiązywania umowy.</Point>
+        <Point num="2.2">Zleceniodawca wskazuje 3 frazy kluczowe do pozycjonowania. Zmiana fraz jest możliwa bezpłatnie, jednak nie częściej niż raz w miesiącu kalendarzowym. Strony przyjmują do wiadomości, że zmiana frazy rozpoczyna na nowo proces budowania jej pozycji, co może czasowo wpłynąć na widoczność i dotychczasowe efekty.</Point>
         <Point num="2.3">Strony zgodnie ustalają, że niniejsza umowa stanowi umowę starannego działania, a nie umowę rezultatu. Usługodawca zobowiązuje się do dołożenia należytej staranności w wykonywaniu usług, lecz nie gwarantuje osiągnięcia konkretnych pozycji w wynikach wyszukiwania, określonego poziomu ruchu, liczby interakcji ani innych mierzalnych efektów, ponieważ zależą one od czynników niezależnych od Usługodawcy, w szczególności od algorytmów i polityk Google.</Point>
 
         <Section title="§ 3. Zakres usług (miesięcznie)" />
-        <Point num="3.1">Publikacja nie mniej niż 5 nowych wpisów/postów na wizytówce Google.</Point>
-        <Point num="3.2">Przygotowanie nie mniej niż 5 nowych materiałów graficznych lub aktualizacji treści profilu.</Point>
+        <Point num="3.1">Publikacja, co do zasady, nie mniej niż 5 nowych wpisów/postów na wizytówce Google w miesiącu.</Point>
+        <Point num="3.2">Przygotowanie, co do zasady, nie mniej niż 5 nowych materiałów graficznych lub aktualizacji treści profilu w miesiącu.</Point>
         <Point num="3.3">Podejmowanie działań mających na celu zwiększenie zasięgu, widoczności oraz interakcji potencjalnych klientów z wizytówką (połączenia telefoniczne, dojazdy, wejścia na stronę internetową).</Point>
         <Point num="3.4">Bieżące monitorowanie statystyk oraz reagowanie na zmiany algorytmu Google.</Point>
         <Point num="3.5">Optymalizacja opisu, kategorii i atrybutów profilu.</Point>
+        <Point num="3.6">Wskazane wyżej liczby mają charakter planowany i orientacyjny. O ostatecznym rodzaju, doborze oraz liczbie działań decyduje Usługodawca, kierując się ich skutecznością i aktualnymi wytycznymi Google. Drobne odchylenia ilościowe w danym miesiącu nie stanowią niewykonania umowy, o ile Usługodawca zachowuje należytą staranność.</Point>
 
         <Section title="§ 4. Zawarcie umowy i akceptacja warunków" />
         <Point num="4.1">Przesłanie zlecenia przez Zleceniodawcę oraz udostępniony mu projekt (draft) niniejszej umowy wraz z warunkami stanowią ofertę Usługodawcy w rozumieniu art. 66 Kodeksu cywilnego.</Point>
-        <Point num="4.2">Dokonanie płatności na podstawie faktury proforma wystawionej przez Usługodawcę jest równoznaczne z przyjęciem oferty i zawarciem umowy na warunkach niniejszego dokumentu, zgodnie z art. 60 Kodeksu cywilnego. Umowa zostaje zawarta z chwilą zaksięgowania płatności na rachunku Usługodawcy.</Point>
+        <Point num="4.2">Dokonanie płatności na podstawie faktury proforma wystawionej przez Usługodawcę jest równoznaczne z przyjęciem oferty i zawarciem umowy na warunkach niniejszego dokumentu, zgodnie z art. 60 Kodeksu cywilnego. Umowa zostaje zawarta z chwilą zaksięgowania płatności na rachunku Usługodawcy. Zleceniodawca potwierdza tym samym zapoznanie się z treścią oferty i akceptację wszystkich jej postanowień — bez konieczności odrębnego podpisywania i odsyłania dokumentu.</Point>
         <Point num="4.3">Cena wskazana na fakturze proforma stanowi integralną część warunków oferty. Dokonując płatności, Zleceniodawca akceptuje zarówno postanowienia niniejszej umowy, jak i wysokość wynagrodzenia wskazaną na fakturze proforma.</Point>
-        <Point num="4.4">Po zaksięgowaniu wpłaty Usługodawca wystawia fakturę VAT. Egzemplarz umowy uzupełniony danymi Zleceniodawcy dostarczany jest drogą elektroniczną wyłącznie w celu potwierdzenia zawartej umowy i nie wymaga podpisu ani pieczęci.</Point>
+        <Point num="4.4">Po zaksięgowaniu wpłaty Usługodawca wystawia dokument księgowy potwierdzający płatność. Egzemplarz umowy uzupełniony danymi Zleceniodawcy dostarczany jest drogą elektroniczną wyłącznie w celu potwierdzenia zawartej umowy i nie wymaga podpisu ani pieczęci.</Point>
+        <Point num="4.5">Zleceniodawca oświadcza, że zawiera niniejszą umowę w bezpośrednim związku z prowadzoną przez siebie działalnością gospodarczą i że ma ona dla niego charakter zawodowy. Strony zawierają umowę jako przedsiębiorcy (B2B).</Point>
 
         <Section title="§ 5. Wynagrodzenie i płatności" />
         <Point num="5.1">Wynagrodzenie ustalane jest indywidualnie i wskazane na fakturze proforma. Wynagrodzenie za cały okres obowiązywania umowy płatne jest jednorazowo z góry, na podstawie faktury proforma.</Point>
-        <Point num="5.2">Po zaksięgowaniu płatności Zleceniodawca otrzymuje fakturę VAT stanowiącą dokument księgowy.</Point>
+        <Point num="5.2">Po zaksięgowaniu płatności Zleceniodawca otrzymuje dokument księgowy potwierdzający dokonaną wpłatę. Usługodawca korzysta ze zwolnienia z podatku VAT.</Point>
 
         <Section title="§ 6. Czas trwania umowy" />
-        <Point num="6.1">Umowa zostaje zawarta na czas określony ………… miesięcy, liczonych od daty dokonania pierwszej płatności.</Point>
+        <Point num="6.1">Umowa zostaje zawarta na czas określony ………… miesięcy, liczonych od daty zaksięgowania płatności na rachunku Usługodawcy.</Point>
         <Point num="6.2">Po upływie okresu obowiązywania umowa wygasa. Kontynuacja współpracy wymaga zawarcia nowego porozumienia.</Point>
         <Point num="6.3">Opłaty uiszczone z tytułu niniejszej umowy nie podlegają zwrotowi, w szczególności w przypadku rezygnacji Zleceniodawcy przed zakończeniem okresu obowiązywania umowy lub braku współdziałania, o którym mowa w § 7.</Point>
 
@@ -111,15 +113,19 @@ export default function ContractPDF() {
         <Point num="7.7">Z chwilą zapłaty wynagrodzenia Usługodawca przenosi na Zleceniodawcę autorskie prawa majątkowe do materiałów graficznych i treści wytworzonych w ramach realizacji umowy, na polach eksploatacji obejmujących utrwalanie, zwielokrotnianie i publikację w wizytówce Google oraz mediach Zleceniodawcy.</Point>
         <Point num="7.8">Reklamacje składa się pisemnie lub drogą elektroniczną na adres Usługodawcy; termin rozpatrzenia wynosi 30 dni kalendarzowych.</Point>
         <Point num="7.9">Usługodawca uprawniony jest do rozwiązania umowy ze skutkiem natychmiastowym w przypadku rażącego naruszenia jej postanowień przez Zleceniodawcę.</Point>
+        <Point num="7.10">Zawieszenie, ograniczenie, czasowa niedostępność, weryfikacja lub usunięcie wizytówki Google z przyczyn niezależnych od Usługodawcy — w szczególności wskutek decyzji, działania lub polityk Google — nie stanowi niewykonania ani nienależytego wykonania umowy przez Usługodawcę i nie rodzi po stronie Zleceniodawcy prawa do zwrotu wynagrodzenia ani roszczeń odszkodowawczych.</Point>
+        <Point num="7.11">Zleceniodawca powierza Usługodawcy uprawnienia menedżerskie i dane dostępowe do wizytówki Google wyłącznie w celu realizacji niniejszej umowy. Usługodawca przetwarza udostępnione dane, w tym dane osobowe, zgodnie z RODO i wyłącznie w zakresie niezbędnym do wykonania umowy. Na żądanie którejkolwiek ze stron strony zawrą odrębną umowę powierzenia przetwarzania danych osobowych.</Point>
 
         <Section title="§ 8. Postanowienia końcowe" />
         <Point num="8.1">Wszelkie zmiany warunków wymagają zachowania formy dokumentowej (np. wiadomości e-mail) pod rygorem nieważności.</Point>
         <Point num="8.2">Dane osobowe przetwarzane są zgodnie z Rozporządzeniem RODO (UE) 2016/679.</Point>
         <Point num="8.3">Spory rozstrzygane będą polubownie, a w razie braku porozumienia — przez sąd właściwy dla siedziby Usługodawcy.</Point>
         <Point num="8.4">W sprawach nieuregulowanych niniejszą umową zastosowanie mają przepisy Kodeksu cywilnego.</Point>
+        <Point num="8.5">Żadna ze stron nie ponosi odpowiedzialności za niewykonanie lub nienależyte wykonanie umowy w zakresie wynikającym z działania siły wyższej, tj. zdarzenia zewnętrznego, nadzwyczajnego i niemożliwego do przewidzenia lub zapobieżenia. Na czas trwania siły wyższej terminy realizacji ulegają zawieszeniu.</Point>
 
         <View style={s.footer}>
-          <Text style={s.footerText}>MiauSEO · slawomir@miauseo.pl · miauseo.pl · +48 455 571 349</Text>
+          <Text style={s.footerText}>MiauSEO · Sławomir Jułga · NIP 6070100514 · ul. Klaudyny Potockiej 25, 60-211 Poznań · slawomir@miauseo.pl · +48 455 571 349</Text>
+          <Text style={[s.footerText, { marginTop: 2 }]}>Usługodawca korzysta ze zwolnienia z podatku VAT.</Text>
         </View>
 
       </Page>
