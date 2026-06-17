@@ -14,6 +14,7 @@ export type Post = {
   coverImage?: string;  // ścieżka do obrazka w /public
   published: boolean;
   hideFromBlog?: boolean; // widoczny pod URL-em, ale nie listowany na /blog
+  popular?: boolean;      // wyróżniony jako najpopularniejszy (np. na stronie głównej)
 };
 
 export const posts: Post[] = [
@@ -63,6 +64,7 @@ export const posts: Post[] = [
     coverColor: "#b91c1c",
     coverImage: "/blog/cover-bledy-wizytowka-2026.svg",
     published: true,
+    popular: true,
   },
   {
     slug: "jak-polaczyc-claude-code-z-wordpressem",
@@ -129,6 +131,7 @@ export const posts: Post[] = [
     coverColor: "#FF6A00",
     coverImage: "/blog/cover-pozycjonowanie-wizytowki.svg",
     published: true,
+    popular: true,
   },
   {
     slug: "czynniki-rankingowe-wizytowki-google-2026",
@@ -250,6 +253,7 @@ export const posts: Post[] = [
     coverColor: "#059669",
     coverImage: "/blog/cover-koszt-seo.svg",
     published: true,
+    popular: true,
   },
   {
     slug: "reklama-kancelarii-adwokackiej-google",
@@ -645,6 +649,16 @@ export const posts: Post[] = [
 
 export function getPublishedPosts(): Post[] {
   return posts.filter((p) => p.published && !p.hideFromBlog).sort((a, b) => b.date.localeCompare(a.date));
+}
+
+// Najpopularniejsze wpisy — oznaczone flagą `popular`, fallback do najnowszych.
+export function getPopularPosts(limit = 3): Post[] {
+  const published = posts.filter((p) => p.published && !p.hideFromBlog);
+  const popular = published.filter((p) => p.popular);
+  const rest = published
+    .filter((p) => !p.popular)
+    .sort((a, b) => b.date.localeCompare(a.date));
+  return [...popular, ...rest].slice(0, limit);
 }
 
 export function getPostBySlug(slug: string): Post | undefined {

@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import HeroSection from "@/components/home/HeroSection";
 import ToolsBar from "@/components/home/ToolsBar";
 import { WhatWeDo } from "@/components/home/ServicesSection";
+import BlogSection from "@/components/home/BlogSection";
 import FreeToolsSection from "@/components/home/FreeToolsSection";
-import WhyUsSection from "@/components/home/WhyUsSection";
-import FinalCTASection from "@/components/home/FinalCTASection";
 
 export const metadata: Metadata = {
   title: "MiauSEO.pl - Agencja marketingowa | Pozycjonowanie | Kampanie leadowe",
@@ -71,9 +70,8 @@ export default function Home() {
       <HeroSection />
       <ToolsBar />
       <WhatWeDo />
+      <BlogSection />
       <FreeToolsSection />
-      <WhyUsSection />
-      <FinalCTASection />
     </>
   );
 }
