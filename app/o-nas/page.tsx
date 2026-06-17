@@ -7,6 +7,45 @@ export const metadata: Metadata = {
   description: "Poznaj historię MiauSEO. 11 lat doświadczenia w marketingu lokalnym, pozycjonowaniu wizytówki Google i kampaniach reklamowych dla małych i średnich firm.",
 };
 
+const reasons = [
+  {
+    title: "Realne wyniki, zero trików",
+    desc: "Jak koty: niezależni, czujni i odporni na sztuczki. Nie obiecujemy cudów ani nie czarujemy raportami — robimy to, co faktycznie przekłada się na telefony i klientów.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="4.5" /><circle cx="12" cy="12" r="0.5" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    title: "11 lat doświadczenia",
+    desc: "Setki firm — od jednoosobowych działalności po rozbudowane sieci lokalne. Widzieliśmy, co naprawdę działa, a co tylko ładnie wygląda w zestawieniu.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="8" r="6" /><path d="M8.21 13.89 7 22l5-3 5 3-1.21-8.11" />
+      </svg>
+    ),
+  },
+  {
+    title: "Specjalizacja: wizytówka Google",
+    desc: "Tam toczy się walka o lokalnych klientów. Gdy ktoś wpisuje usługę i miasto, robimy wszystko, żeby to Ty był pierwszy — a nie konkurencja.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
+      </svg>
+    ),
+  },
+  {
+    title: "Model miesięczny, bez umów na lata",
+    desc: "Rozliczamy się co miesiąc, bez długoterminowych zobowiązań. Jeśli nie dowozimy wyników — odchodzisz. To mobilizuje nas lepiej niż jakikolwiek kontrakt.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 2v6h-6" /><path d="M3 12a9 9 0 0 1 15-6.7L21 8" /><path d="M3 22v-6h6" /><path d="M21 12a9 9 0 0 1-15 6.7L3 16" />
+      </svg>
+    ),
+  },
+];
+
 const stages = [
   {
     num: "01",
@@ -145,8 +184,40 @@ export default function ONasPage() {
         </div>
       </section>
 
-      {/* ── Etapy współpracy ── */}
+      {/* ── Dlaczego warto z nami współpracować ── */}
       <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
+              Dlaczego my
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-ink leading-snug">
+              Dlaczego warto z nami{" "}
+              <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">
+                współpracować
+              </span>
+            </h2>
+            <p className="text-zinc-500 text-lg leading-relaxed max-w-2xl mx-auto mt-6">
+              Bez trików rodem z marketingowej ściemy. Tylko doświadczenie, jasne zasady i odpowiedzialność za efekty.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {reasons.map((r) => (
+              <div key={r.title} className="group bg-surface rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg transition-all duration-200">
+                <div className="w-12 h-12 rounded-xl bg-brand/10 text-brand flex items-center justify-center mb-5 group-hover:bg-brand group-hover:text-white transition-colors duration-200">
+                  {r.icon}
+                </div>
+                <h3 className="text-base font-bold text-ink mb-3 leading-snug">{r.title}</h3>
+                <p className="text-sm text-zinc-500 leading-relaxed">{r.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Etapy współpracy ── */}
+      <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
@@ -162,7 +233,7 @@ export default function ONasPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {stages.map((s) => (
-              <div key={s.num} className="relative bg-surface rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg transition-all duration-200">
+              <div key={s.num} className="relative bg-white rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg transition-all duration-200">
                 <div className="absolute top-4 right-5 text-[4rem] font-bold leading-none text-brand/10 select-none pointer-events-none">
                   {s.num}
                 </div>
@@ -203,7 +274,7 @@ export default function ONasPage() {
                   </div>
                   <div>
                     <p className="text-xs text-white/50 uppercase tracking-wider">Telefon</p>
-                    <a href="tel:+48600000000" className="font-semibold hover:text-brand transition-colors">+48 600 000 000</a>
+                    <a href="tel:+48455571349" className="font-semibold hover:text-brand transition-colors">+48 455 571 349</a>
                   </div>
                 </div>
 
@@ -217,19 +288,6 @@ export default function ONasPage() {
                   <div>
                     <p className="text-xs text-white/50 uppercase tracking-wider">E-mail</p>
                     <a href="mailto:slawomir@miauseo.pl" className="font-semibold hover:text-brand transition-colors">slawomir@miauseo.pl</a>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10" />
-                      <polyline points="12 6 12 12 16 14" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-xs text-white/50 uppercase tracking-wider">Godziny pracy</p>
-                    <p className="font-semibold">Pon – Pt, 9:00 – 17:00</p>
                   </div>
                 </div>
               </div>

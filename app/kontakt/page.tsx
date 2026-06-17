@@ -124,7 +124,7 @@ export default function KontaktPage() {
                 {[
                   { bold: "Bezpłatna analiza wizytówki Google", rest: " — sprawdzamy razem co blokuje Twoją widoczność i co można poprawić od zaraz." },
                   { bold: "Zero zobowiązań", rest: " — konsultacja to rozmowa, nie sprzedaż. Decyzja zawsze po Twojej stronie." },
-                  { bold: "Odpowiedź w kilka godzin", rest: " — nie zostawiam wiadomości bez odpowiedzi. Pon–Pt, 9:00–17:00." },
+                  { bold: "Odpowiedź w kilka godzin", rest: " — nie zostawiam wiadomości bez odpowiedzi." },
                   { bold: "11 lat doświadczenia", rest: " — setki zoptymalizowanych wizytówek, realne wyniki dla firm z różnych branż." },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-3 items-start">
@@ -203,17 +203,6 @@ export default function KontaktPage() {
                   <div>
                     <p className="text-[11px] text-zinc-400 font-semibold uppercase tracking-wide">E-mail</p>
                     <a href="mailto:slawomir@miauseo.pl" className="text-sm font-semibold text-ink hover:text-brand transition-colors">slawomir@miauseo.pl</a>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-brand/10 flex items-center justify-center text-brand shrink-0">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-[11px] text-zinc-400 font-semibold uppercase tracking-wide">Godziny pracy</p>
-                    <p className="text-sm font-semibold text-ink">Pon – Pt, 9:00 – 17:00</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
