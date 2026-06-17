@@ -119,73 +119,8 @@ export default function ONasPage() {
         </div>
       </section>
 
-      {/* ── O mnie ── */}
-      <section className="py-24 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-
-            {/* Left – text */}
-            <div>
-              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
-                Nasza historia
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-ink leading-snug mb-8">
-                Skąd wzięło się{" "}
-                <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">
-                  MiauSEO?
-                </span>
-              </h2>
-
-              <div className="space-y-5">
-                <p className="text-zinc-500 leading-relaxed border-l-2 border-brand/20 pl-4">
-                  Nazwa MiauSEO nie jest przypadkowa. Pochodzi z{" "}
-                  <strong className="font-semibold text-ink">zamiłowania do kotów</strong> – zwierząt, które są
-                  niezależne, inteligentne i nigdy nie dają się nabrać na sztuczki. Dokładnie takie podejście
-                  wyznajemy w pracy z klientami: <strong className="font-semibold text-ink">żadnych tricków,
-                  tylko realne wyniki</strong>.
-                </p>
-                <p className="text-zinc-500 leading-relaxed border-l-2 border-brand/20 pl-4">
-                  Mam za sobą <strong className="font-semibold text-ink">11 lat doświadczenia w marketingu
-                  lokalnym</strong> i kampaniach reklamowych. Przez ten czas współpracowałem z setkami firm –
-                  od jednoosobowych działalności po rozbudowane sieci lokalne. Widziałem, co działa, a co tylko
-                  wygląda dobrze na raporcie.
-                </p>
-                <p className="text-zinc-500 leading-relaxed border-l-2 border-brand/20 pl-4">
-                  Specjalizujemy się w <strong className="font-semibold text-ink">pozycjonowaniu wizytówki
-                  Google</strong> – bo to właśnie tam toczy się walka o lokalnych klientów. Gdy ktoś wpisuje
-                  nazwę usługi i miasto, chcemy żebyś to <strong className="font-semibold text-ink">Ty był
-                  pierwszy</strong>, nie konkurencja.
-                </p>
-                <p className="text-zinc-500 leading-relaxed border-l-2 border-brand/20 pl-4">
-                  Stawiamy na <strong className="font-semibold text-ink">długoterminowe relacje</strong>, nie
-                  jednorazowe zlecenia. Dlatego pracujemy w modelu miesięcznym bez długoterminowych umów –
-                  jeśli nie dostarczamy wyników, masz pełne prawo odejść. To nas mobilizuje do pracy lepiej
-                  niż jakikolwiek kontrakt.
-                </p>
-              </div>
-            </div>
-
-            {/* Right – photo */}
-            <div className="relative pr-5 pt-5">
-              <div
-                className="absolute top-0 right-0 rounded-2xl bg-brand/20"
-                style={{ width: "calc(100% - 1.25rem)", height: "calc(100% - 1.25rem)" }}
-              />
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5]">
-                <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=700&q=85&fit=crop&crop=top"
-                  alt="Założyciel MiauSEO"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
       {/* ── Dlaczego warto z nami współpracować ── */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
@@ -204,7 +139,7 @@ export default function ONasPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {reasons.map((r) => (
-              <div key={r.title} className="group bg-surface rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg transition-all duration-200">
+              <div key={r.title} className="group bg-white rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg transition-all duration-200">
                 <div className="w-12 h-12 rounded-xl bg-brand/10 text-brand flex items-center justify-center mb-5 group-hover:bg-brand group-hover:text-white transition-colors duration-200">
                   {r.icon}
                 </div>
@@ -217,7 +152,7 @@ export default function ONasPage() {
       </section>
 
       {/* ── Etapy współpracy ── */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
@@ -233,7 +168,7 @@ export default function ONasPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {stages.map((s) => (
-              <div key={s.num} className="relative bg-white rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg transition-all duration-200">
+              <div key={s.num} className="relative bg-surface rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg transition-all duration-200">
                 <div className="absolute top-4 right-5 text-[4rem] font-bold leading-none text-brand/10 select-none pointer-events-none">
                   {s.num}
                 </div>
