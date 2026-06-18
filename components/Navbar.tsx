@@ -106,29 +106,6 @@ const serviceGroups = [
   },
 ];
 
-const socialLinks = [
-  {
-    href: "https://facebook.com",
-    label: "Facebook",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="#1877F2">
-        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-      </svg>
-    ),
-  },
-  {
-    href: "https://linkedin.com",
-    label: "LinkedIn",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2">
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-        <rect x="2" y="9" width="4" height="12" />
-        <circle cx="4" cy="4" r="2" />
-      </svg>
-    ),
-  },
-];
-
 export default function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
@@ -314,15 +291,6 @@ export default function Navbar() {
               Kontakt
             </Link>
 
-            <div className="hidden lg:flex items-center gap-1 pl-3 border-l border-border">
-              {socialLinks.map((s) => (
-                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-                  className="w-9 h-9 flex items-center justify-center rounded-md text-zinc-400 hover:text-brand hover:bg-surface transition-colors duration-150">
-                  {s.icon}
-                </a>
-              ))}
-            </div>
-
             <button
               onClick={() => setOpen(!open)}
               className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-md hover:bg-surface transition-colors"
@@ -404,15 +372,6 @@ export default function Navbar() {
             className="mt-3 text-center px-6 py-4 bg-brand text-white font-semibold rounded-xl text-lg hover:bg-brand-dark transition-colors">
             Kontakt
           </Link>
-
-          <div className="flex items-center justify-center gap-4 mt-6 pt-6 border-t border-border">
-            {socialLinks.map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-                className="w-10 h-10 flex items-center justify-center rounded-xl bg-surface text-zinc-500 hover:text-brand hover:bg-brand/5 transition-colors duration-150">
-                {s.icon}
-              </a>
-            ))}
-          </div>
         </nav>
       </div>
     </>
