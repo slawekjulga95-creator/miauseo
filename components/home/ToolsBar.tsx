@@ -11,7 +11,7 @@ const tools = [
 
 export default function ToolsBar() {
   return (
-    <section className="border-y border-border bg-surface">
+    <section className="hidden lg:block border-y border-border bg-surface">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-7 flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
         <p className="text-xs font-bold uppercase tracking-[0.18em] text-zinc-500 whitespace-nowrap shrink-0">
           Pracujemy na:

@@ -24,29 +24,6 @@ const tools = [
   { href: "/kursy", label: "Kursy online" },
 ];
 
-const socialLinks = [
-  {
-    href: "https://facebook.com",
-    label: "Facebook",
-    icon: (
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="#ffffff">
-        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-      </svg>
-    ),
-  },
-  {
-    href: "https://linkedin.com",
-    label: "LinkedIn",
-    icon: (
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="#ffffff">
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-        <rect x="2" y="9" width="4" height="12" />
-        <circle cx="4" cy="4" r="2" />
-      </svg>
-    ),
-  },
-];
-
 export default function Footer() {
   return (
     <footer className="bg-ink text-white">
@@ -95,22 +72,6 @@ export default function Footer() {
                 </span>
                 NIP 6070100514
               </div>
-            </div>
-
-            {/* Social */}
-            <div className="flex gap-2">
-              {socialLinks.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                  className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center text-white/50 hover:bg-brand hover:text-white transition-colors duration-150"
-                >
-                  {s.icon}
-                </a>
-              ))}
             </div>
           </div>
 
