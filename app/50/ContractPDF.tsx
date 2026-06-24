@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import { Document, Page, Text, View, StyleSheet, Image, Font } from '@react-pdf/renderer'
 
 Font.register({
@@ -31,18 +32,23 @@ const s = StyleSheet.create({
   footerText: { fontSize: 7, color: '#bbb', textAlign: 'center' },
 })
 
-const Section = ({ title }: { title: string }) => (
-  <View style={s.section}>
+const Section = ({ title, break: brk }: { title: string; break?: boolean }) => (
+  <View style={s.section} break={brk}>
     <View style={s.sectionBar} />
     <Text style={s.sectionText}>{title}</Text>
   </View>
 )
 
-const Point = ({ num, children }: { num: string; children: string }) => (
-  <View style={s.point}>
+const Point = ({ num, children }: { num: string; children: ReactNode }) => (
+  <View style={s.point} wrap={false}>
     <Text style={s.num}>{num}</Text>
     <Text style={s.text}>{children}</Text>
   </View>
+)
+
+// Pogrubienie ważnych fragmentów wewnątrz punktu.
+const B = ({ children }: { children: ReactNode }) => (
+  <Text style={{ fontWeight: 700 }}>{children}</Text>
 )
 
 export default function ContractPDF() {
@@ -76,8 +82,8 @@ export default function ContractPDF() {
 
         <Section title="§ 2. Przedmiot umowy" />
         <Point num="2.1">Usługodawca prowadzi, pozycjonuje i obsługuje ogólnodostępną wizytówkę Google (Profil Firmy w Google) Zleceniodawcy zgodnie z warunkami niniejszej umowy.</Point>
-        <Point num="2.2">Zleceniodawca wskazuje 3 frazy kluczowe do pozycjonowania. Zmiana fraz jest możliwa bezpłatnie, jednak nie częściej niż raz w miesiącu kalendarzowym. Strony przyjmują do wiadomości, że zmiana frazy rozpoczyna na nowo proces budowania jej pozycji, co może czasowo wpłynąć na widoczność i dotychczasowe efekty.</Point>
-        <Point num="2.3">Strony zgodnie ustalają, że niniejsza umowa stanowi umowę starannego działania, a nie umowę rezultatu. Usługodawca zobowiązuje się do dołożenia należytej staranności w wykonywaniu usług, lecz nie gwarantuje osiągnięcia konkretnych pozycji w wynikach wyszukiwania, określonego poziomu ruchu, liczby interakcji ani innych mierzalnych efektów, ponieważ zależą one od czynników niezależnych od Usługodawcy, w szczególności od algorytmów i polityk Google.</Point>
+        <Point num="2.2">Zleceniodawca wskazuje <B>3 frazy kluczowe</B> do pozycjonowania. Zmiana fraz jest możliwa bezpłatnie, jednak <B>nie częściej niż raz w miesiącu kalendarzowym</B>. Strony przyjmują do wiadomości, że zmiana frazy rozpoczyna na nowo proces budowania jej pozycji, co może czasowo wpłynąć na widoczność i dotychczasowe efekty.</Point>
+        <Point num="2.3">Strony zgodnie ustalają, że niniejsza umowa stanowi <B>umowę starannego działania, a nie umowę rezultatu</B>. Usługodawca zobowiązuje się do dołożenia należytej staranności w wykonywaniu usług, lecz <B>nie gwarantuje osiągnięcia konkretnych pozycji w wynikach wyszukiwania</B>, określonego poziomu ruchu, liczby interakcji ani innych mierzalnych efektów, ponieważ zależą one od czynników niezależnych od Usługodawcy, w szczególności od algorytmów i polityk Google.</Point>
 
         <Section title="§ 3. Zakres usług (miesięcznie)" />
         <Point num="3.1">Publikacja, co do zasady, nie mniej niż 5 nowych wpisów/postów na wizytówce Google w miesiącu.</Point>
@@ -89,35 +95,35 @@ export default function ContractPDF() {
 
         <Section title="§ 4. Zawarcie umowy i akceptacja warunków" />
         <Point num="4.1">Przesłanie zlecenia przez Zleceniodawcę oraz udostępniony mu projekt (draft) niniejszej umowy wraz z warunkami stanowią ofertę Usługodawcy w rozumieniu art. 66 Kodeksu cywilnego.</Point>
-        <Point num="4.2">Dokonanie płatności na podstawie faktury proforma wystawionej przez Usługodawcę jest równoznaczne z przyjęciem oferty i zawarciem umowy na warunkach niniejszego dokumentu, zgodnie z art. 60 Kodeksu cywilnego. Umowa zostaje zawarta z chwilą zaksięgowania płatności na rachunku Usługodawcy. Zleceniodawca potwierdza tym samym zapoznanie się z treścią oferty i akceptację wszystkich jej postanowień — bez konieczności odrębnego podpisywania i odsyłania dokumentu.</Point>
+        <Point num="4.2"><B>Dokonanie płatności na podstawie faktury proforma wystawionej przez Usługodawcę jest równoznaczne z przyjęciem oferty i zawarciem umowy</B> na warunkach niniejszego dokumentu, zgodnie z art. 60 Kodeksu cywilnego. Umowa zostaje zawarta z chwilą zaksięgowania płatności na rachunku Usługodawcy. Zleceniodawca potwierdza tym samym zapoznanie się z treścią oferty i akceptację wszystkich jej postanowień — <B>bez konieczności odrębnego podpisywania i odsyłania dokumentu</B>.</Point>
         <Point num="4.3">Cena wskazana na fakturze proforma stanowi integralną część warunków oferty. Dokonując płatności, Zleceniodawca akceptuje zarówno postanowienia niniejszej umowy, jak i wysokość wynagrodzenia wskazaną na fakturze proforma.</Point>
         <Point num="4.4">Po zaksięgowaniu wpłaty Usługodawca wystawia dokument księgowy potwierdzający płatność. Egzemplarz umowy uzupełniony danymi Zleceniodawcy dostarczany jest drogą elektroniczną wyłącznie w celu potwierdzenia zawartej umowy i nie wymaga podpisu ani pieczęci.</Point>
         <Point num="4.5">Zleceniodawca oświadcza, że zawiera niniejszą umowę w bezpośrednim związku z prowadzoną przez siebie działalnością gospodarczą i że ma ona dla niego charakter zawodowy. Strony zawierają umowę jako przedsiębiorcy (B2B).</Point>
 
-        <Section title="§ 5. Wynagrodzenie i płatności" />
-        <Point num="5.1">Wynagrodzenie ustalane jest indywidualnie i wskazane na fakturze proforma. Wynagrodzenie za cały okres obowiązywania umowy płatne jest jednorazowo z góry, na podstawie faktury proforma.</Point>
-        <Point num="5.2">Po zaksięgowaniu płatności Zleceniodawca otrzymuje dokument księgowy potwierdzający dokonaną wpłatę. Usługodawca korzysta ze zwolnienia z podatku VAT.</Point>
+        <Section title="§ 5. Wynagrodzenie i płatności" break />
+        <Point num="5.1">Wynagrodzenie ustalane jest indywidualnie i wskazane na fakturze proforma. Wynagrodzenie za cały okres obowiązywania umowy <B>płatne jest jednorazowo z góry</B>, na podstawie faktury proforma.</Point>
+        <Point num="5.2">Po zaksięgowaniu płatności Zleceniodawca otrzymuje dokument księgowy potwierdzający dokonaną wpłatę. <B>Usługodawca korzysta ze zwolnienia z podatku VAT.</B></Point>
 
         <Section title="§ 6. Czas trwania umowy" />
-        <Point num="6.1">Umowa zostaje zawarta na czas określony ………… miesięcy, liczonych od daty zaksięgowania płatności na rachunku Usługodawcy.</Point>
+        <Point num="6.1">Umowa zostaje zawarta na <B>czas określony ………… miesięcy</B>, liczonych od daty zaksięgowania płatności na rachunku Usługodawcy.</Point>
         <Point num="6.2">Po upływie okresu obowiązywania umowa wygasa. Kontynuacja współpracy wymaga zawarcia nowego porozumienia.</Point>
-        <Point num="6.3">Opłaty uiszczone z tytułu niniejszej umowy nie podlegają zwrotowi, w szczególności w przypadku rezygnacji Zleceniodawcy przed zakończeniem okresu obowiązywania umowy lub braku współdziałania, o którym mowa w § 7.</Point>
+        <Point num="6.3"><B>Opłaty uiszczone z tytułu niniejszej umowy nie podlegają zwrotowi</B>, w szczególności w przypadku rezygnacji Zleceniodawcy przed zakończeniem okresu obowiązywania umowy lub braku współdziałania, o którym mowa w § 7.</Point>
 
         <Section title="§ 7. Prawa, obowiązki i odpowiedzialność" />
         <Point num="7.1">Usługodawca stosuje wyłącznie legalne metody pozycjonowania zgodne z wytycznymi Google.</Point>
-        <Point num="7.2">Zleceniodawca udziela Usługodawcy uprawnień menedżerskich do wizytówki Google na czas realizacji niniejszej umowy oraz zobowiązuje się je utrzymać przez cały okres jej obowiązywania.</Point>
+        <Point num="7.2">Zleceniodawca udziela Usługodawcy <B>uprawnień menedżerskich do wizytówki Google</B> na czas realizacji niniejszej umowy oraz zobowiązuje się je utrzymać przez cały okres jej obowiązywania.</Point>
         <Point num="7.3">Zleceniodawca zobowiązany jest do współdziałania niezbędnego do wykonania umowy, w szczególności do terminowego udzielenia i utrzymania dostępu do wizytówki oraz przekazywania niezbędnych informacji i materiałów.</Point>
         <Point num="7.4">Zleceniodawca konsultuje z Usługodawcą planowane zmiany w profilu przed ich wprowadzeniem, by nie zakłócać trwających działań optymalizacyjnych.</Point>
         <Point num="7.5">Usługodawca nie odpowiada za przestoje leżące po stronie Google Inc. ani za treści samodzielnie zamieszczone przez Zleceniodawcę.</Point>
-        <Point num="7.6">Całkowita odpowiedzialność Usługodawcy z tytułu niniejszej umowy ograniczona jest do wysokości wynagrodzenia faktycznie zapłaconego przez Zleceniodawcę. Usługodawca nie odpowiada za utracone korzyści ani za szkody pośrednie.</Point>
+        <Point num="7.6">Całkowita odpowiedzialność Usługodawcy z tytułu niniejszej umowy <B>ograniczona jest do wysokości wynagrodzenia faktycznie zapłaconego</B> przez Zleceniodawcę. Usługodawca <B>nie odpowiada za utracone korzyści ani za szkody pośrednie</B>.</Point>
         <Point num="7.7">Z chwilą zapłaty wynagrodzenia Usługodawca przenosi na Zleceniodawcę autorskie prawa majątkowe do materiałów graficznych i treści wytworzonych w ramach realizacji umowy, na polach eksploatacji obejmujących utrwalanie, zwielokrotnianie i publikację w wizytówce Google oraz mediach Zleceniodawcy.</Point>
         <Point num="7.8">Reklamacje składa się pisemnie lub drogą elektroniczną na adres Usługodawcy; termin rozpatrzenia wynosi 30 dni kalendarzowych.</Point>
         <Point num="7.9">Usługodawca uprawniony jest do rozwiązania umowy ze skutkiem natychmiastowym w przypadku rażącego naruszenia jej postanowień przez Zleceniodawcę.</Point>
-        <Point num="7.10">Zawieszenie, ograniczenie, czasowa niedostępność, weryfikacja lub usunięcie wizytówki Google z przyczyn niezależnych od Usługodawcy — w szczególności wskutek decyzji, działania lub polityk Google — nie stanowi niewykonania ani nienależytego wykonania umowy przez Usługodawcę i nie rodzi po stronie Zleceniodawcy prawa do zwrotu wynagrodzenia ani roszczeń odszkodowawczych.</Point>
+        <Point num="7.10">Zawieszenie, ograniczenie, czasowa niedostępność, weryfikacja lub usunięcie wizytówki Google z przyczyn niezależnych od Usługodawcy — w szczególności wskutek decyzji, działania lub polityk Google — <B>nie stanowi niewykonania ani nienależytego wykonania umowy</B> przez Usługodawcę i <B>nie rodzi po stronie Zleceniodawcy prawa do zwrotu wynagrodzenia ani roszczeń odszkodowawczych</B>.</Point>
         <Point num="7.11">Zleceniodawca powierza Usługodawcy uprawnienia menedżerskie i dane dostępowe do wizytówki Google wyłącznie w celu realizacji niniejszej umowy. Usługodawca przetwarza udostępnione dane, w tym dane osobowe, zgodnie z RODO i wyłącznie w zakresie niezbędnym do wykonania umowy. Na żądanie którejkolwiek ze stron strony zawrą odrębną umowę powierzenia przetwarzania danych osobowych.</Point>
 
         <Section title="§ 8. Postanowienia końcowe" />
-        <Point num="8.1">Wszelkie zmiany warunków wymagają zachowania formy dokumentowej (np. wiadomości e-mail) pod rygorem nieważności.</Point>
+        <Point num="8.1">Wszelkie zmiany warunków wymagają zachowania formy dokumentowej (np. wiadomości e-mail) <B>pod rygorem nieważności</B>.</Point>
         <Point num="8.2">Dane osobowe przetwarzane są zgodnie z Rozporządzeniem RODO (UE) 2016/679.</Point>
         <Point num="8.3">Spory rozstrzygane będą polubownie, a w razie braku porozumienia — przez sąd właściwy dla siedziby Usługodawcy.</Point>
         <Point num="8.4">W sprawach nieuregulowanych niniejszą umową zastosowanie mają przepisy Kodeksu cywilnego.</Point>
