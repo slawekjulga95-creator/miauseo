@@ -107,7 +107,7 @@ export default function ContractPDF() {
         <Section title="§ 6. Czas trwania umowy" />
         <Point num="6.1">Umowa zostaje zawarta na <B>czas określony ………… miesięcy</B>, liczonych od daty zaksięgowania płatności na rachunku Usługodawcy.</Point>
         <Point num="6.2">Po upływie okresu obowiązywania umowa wygasa. Kontynuacja współpracy wymaga zawarcia nowego porozumienia.</Point>
-        <Point num="6.3"><B>Opłaty uiszczone z tytułu niniejszej umowy nie podlegają zwrotowi</B>, w szczególności w przypadku rezygnacji Zleceniodawcy przed zakończeniem okresu obowiązywania umowy lub braku współdziałania, o którym mowa w § 7.</Point>
+        <Point num="6.3">Opłaty uiszczone z tytułu niniejszej umowy nie podlegają zwrotowi, w szczególności w przypadku rezygnacji Zleceniodawcy przed zakończeniem okresu obowiązywania umowy lub braku współdziałania, o którym mowa w § 7.</Point>
 
         <Section title="§ 7. Prawa, obowiązki i odpowiedzialność" />
         <Point num="7.1">Usługodawca stosuje wyłącznie legalne metody pozycjonowania zgodne z wytycznymi Google.</Point>
@@ -115,7 +115,7 @@ export default function ContractPDF() {
         <Point num="7.3">Zleceniodawca zobowiązany jest do współdziałania niezbędnego do wykonania umowy, w szczególności do terminowego udzielenia i utrzymania dostępu do wizytówki oraz przekazywania niezbędnych informacji i materiałów.</Point>
         <Point num="7.4">Zleceniodawca konsultuje z Usługodawcą planowane zmiany w profilu przed ich wprowadzeniem, by nie zakłócać trwających działań optymalizacyjnych.</Point>
         <Point num="7.5">Usługodawca nie odpowiada za przestoje leżące po stronie Google Inc. ani za treści samodzielnie zamieszczone przez Zleceniodawcę.</Point>
-        <Point num="7.6">Całkowita odpowiedzialność Usługodawcy z tytułu niniejszej umowy <B>ograniczona jest do wysokości wynagrodzenia faktycznie zapłaconego</B> przez Zleceniodawcę. Usługodawca <B>nie odpowiada za utracone korzyści ani za szkody pośrednie</B>.</Point>
+        <Point num="7.6">Całkowita odpowiedzialność Usługodawcy z tytułu niniejszej umowy ograniczona jest do wysokości wynagrodzenia faktycznie zapłaconego przez Zleceniodawcę. Usługodawca nie odpowiada za utracone korzyści ani za szkody pośrednie.</Point>
         <Point num="7.7">Z chwilą zapłaty wynagrodzenia Usługodawca przenosi na Zleceniodawcę autorskie prawa majątkowe do materiałów graficznych i treści wytworzonych w ramach realizacji umowy, na polach eksploatacji obejmujących utrwalanie, zwielokrotnianie i publikację w wizytówce Google oraz mediach Zleceniodawcy.</Point>
         <Point num="7.8">Reklamacje składa się pisemnie lub drogą elektroniczną na adres Usługodawcy; termin rozpatrzenia wynosi 30 dni kalendarzowych.</Point>
         <Point num="7.9">Usługodawca uprawniony jest do rozwiązania umowy ze skutkiem natychmiastowym w przypadku rażącego naruszenia jej postanowień przez Zleceniodawcę.</Point>
