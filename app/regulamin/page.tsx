@@ -24,7 +24,7 @@ const sections = [
     items: [
       { label: "Serwis", desc: "Strona internetowa dostępna pod adresem miauseo.pl wraz z wszystkimi podstronami i zasobami cyfrowymi." },
       { label: "Użytkownik", desc: "Osoba fizyczna, prawna lub jednostka organizacyjna nieposiadająca osobowości prawnej, korzystająca z serwisu." },
-      { label: "Usługi", desc: "Świadczone przez MiauSEO usługi marketingowe, w tym pozycjonowanie SEO, kampanie Google Ads, Meta Ads, TikTok Ads, local SEO oraz kursy online." },
+      { label: "Usługi", desc: "Świadczone przez MiauSEO usługi marketingowe, w tym pozycjonowanie SEO, kampanie Google Ads, Meta Ads, TikTok Ads oraz local SEO." },
       { label: "Umowa", desc: "Umowa o świadczenie usług zawarta między MiauSEO a Klientem na warunkach określonych w indywidualnej ofercie i niniejszym regulaminie." },
     ],
   },
@@ -101,23 +101,10 @@ const sections = [
     ],
   },
   {
-    id: "kursy",
-    title: "Kursy online",
-    content: [
-      "MiauSEO oferuje kursy online dostępne po dokonaniu jednorazowej płatności lub wykupieniu subskrypcji. Warunki szczegółowe kursów:",
-    ],
-    list: [
-      "Dostęp do kursu jest przyznawany po zaksięgowaniu płatności i powiązaniu z kontem użytkownika.",
-      "Kurs przeznaczony jest wyłącznie do użytku osobistego — zabrania się odsprzedaży, udostępniania danych dostępowych osobom trzecim oraz kopiowania materiałów.",
-      "Zgodnie z art. 38 pkt 13 ustawy o prawach konsumenta, prawo odstąpienia od umowy nie przysługuje po rozpoczęciu odtwarzania treści cyfrowych — zakup wiąże się z natychmiastowym dostępem i utratą prawa do odstąpienia.",
-      "W przypadku kursów stacjonarnych lub webinarów, rezygnacja w terminie krótszym niż 48 godzin przed rozpoczęciem nie uprawnia do zwrotu opłaty.",
-    ],
-  },
-  {
     id: "prawa-autorskie",
     title: "Prawa własności intelektualnej",
     content: [
-      "Wszelkie treści zamieszczone w serwisie — teksty, grafiki, logotypy, filmy, opisy usług, materiały kursów — są własnością MiauSEO lub podmiotów, które udzieliły MiauSEO licencji na ich wykorzystanie.",
+      "Wszelkie treści zamieszczone w serwisie — teksty, grafiki, logotypy, filmy, opisy usług — są własnością MiauSEO lub podmiotów, które udzieliły MiauSEO licencji na ich wykorzystanie.",
       "Jakiekolwiek kopiowanie, modyfikowanie, dystrybucja lub publiczne odtwarzanie tych treści bez uprzedniej pisemnej zgody MiauSEO jest zabronione i stanowi naruszenie praw autorskich.",
     ],
   },

@@ -118,27 +118,6 @@ const services = [
       </svg>
     ),
   },
-  {
-    title: "Kursy online",
-    href: "/kursy",
-    badge: null,
-    desc: (
-      <>
-        Wolisz działać <strong className="font-semibold text-ink">samodzielnie</strong>? Pokazujemy krok po kroku,
-        jak pozycjonować wizytówkę Google i prowadzić własne kampanie reklamowe. To{" "}
-        <strong className="font-semibold text-ink">konkretna wiedza z praktyki</strong>, bez lania wody — gotowa
-        do wdrożenia we własnej firmie od pierwszego dnia.
-      </>
-    ),
-    photo: "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=800&q=80&fit=crop&crop=center",
-    logo: null,
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-        <path d="M6 12v5c3 3 9 3 12 0v-5" />
-      </svg>
-    ),
-  },
 ];
 
 const items = [

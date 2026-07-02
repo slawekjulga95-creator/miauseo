@@ -568,56 +568,6 @@ function ResultsContent({ answers, score }: { answers: Record<number, number>; s
         </div>
       </section>
 
-      {/* Course CTA */}
-      <div className="bg-white border-y border-brand/15 py-12">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row overflow-hidden rounded-2xl border-2 border-brand/25 shadow-lg">
-            <div className="lg:w-72 shrink-0 relative">
-              <img
-                src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80&fit=crop&crop=center"
-                alt="Kurs wizytówka Google Business Profile"
-                className="w-full h-56 lg:h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:bg-gradient-to-r" />
-              <div className="absolute bottom-4 left-4 lg:hidden">
-                <span className="inline-block text-xs font-bold uppercase tracking-widest bg-brand text-white px-2.5 py-1 rounded-md">Kurs online</span>
-              </div>
-            </div>
-            <div className="flex-1 p-8 lg:p-10 bg-brand/3">
-              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
-                <div>
-                  <span className="hidden lg:inline-block text-xs font-bold uppercase tracking-widest bg-brand text-white px-2.5 py-1 rounded-md mb-3">Kurs online</span>
-                  <h3 className="text-xl lg:text-2xl font-bold text-ink leading-snug">
-                    Wizytówka stoi w miejscu –<br className="hidden sm:block" /> co zrobić gdy wydaje nam się,<br className="hidden sm:block" /> że zrobiliśmy wszystko?
-                  </h3>
-                </div>
-                <div className="shrink-0 text-right">
-                  <p className="text-3xl font-black text-brand leading-none">500 zł</p>
-                  <p className="text-xs text-zinc-400 mt-1">brutto · jednorazowo</p>
-                </div>
-              </div>
-              <p className="text-sm text-zinc-500 leading-relaxed mb-5">
-                Uzupełniłeś opis, masz zdjęcia, zbierasz opinie — a wizytówka <strong className="font-semibold text-ink">wciąż nie rośnie</strong>. Ten kurs pokazuje <strong className="font-semibold text-ink">dokładnie co blokuje algorytm</strong> i jak to naprawić krok po kroku. Bez domysłów, bez ogólnych porad — <strong className="font-semibold text-ink">konkretne działania na Twoją sytuację</strong>.
-              </p>
-              <div className="flex flex-wrap gap-3 mb-6 text-xs text-zinc-500">
-                {["Dostęp na zawsze", "Materiały do pobrania", "Przykłady z realnych wizytówek", "Aktualizacje w cenie"].map(f => (
-                  <div key={f} className="flex items-center gap-1.5">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                    {f}
-                  </div>
-                ))}
-              </div>
-              <Link
-                href="/kursy/wizytowka-stoi-w-miejscu"
-                className="inline-flex items-center gap-2.5 bg-brand hover:bg-brand-dark text-white font-bold px-7 py-4 rounded-xl transition-colors duration-200 text-sm"
-              >
-                Kup kurs za 500 zł
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Critical issues */}
       {criticalIssues.length > 0 && (

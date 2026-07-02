@@ -82,7 +82,7 @@ export default function FreeToolsSection() {
               </p>
             </div>
 
-            {/* Prawa — narzędzia + baner kursów */}
+            {/* Prawa — narzędzia */}
             <div className="lg:col-span-2 flex flex-col gap-4">
               <div className="grid sm:grid-cols-2 gap-4 content-start">
               {tools.map((t) => (
@@ -112,33 +112,6 @@ export default function FreeToolsSection() {
                 </Link>
               ))}
             </div>
-
-            {/* Baner kursów */}
-            <Link
-              href="/kursy"
-              className="group flex items-center justify-between gap-4 bg-brand hover:bg-brand-dark text-white rounded-2xl p-6 transition-colors duration-200"
-            >
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                      <path d="M6 12v5c3 3 9 3 12 0v-5" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-bold text-lg leading-tight">Wolisz działać samodzielnie?</p>
-                    <p className="text-sm text-white/80 mt-0.5">
-                      Sprawdź nasze kursy i naucz się pozycjonować wizytówkę krok po kroku.
-                    </p>
-                  </div>
-                </div>
-                <span className="shrink-0 inline-flex items-center gap-2 font-bold text-sm whitespace-nowrap">
-                  Zobacz kursy
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform duration-200">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </span>
-            </Link>
             </div>
           </div>
 

@@ -21,7 +21,6 @@ const company = [
 const tools = [
   { href: "/gbp-score", label: "Audyt wizytówki Google" },
   { href: "/checklista-wizytowki-google", label: "Checklista pozycjonowania" },
-  { href: "/kursy", label: "Kursy online" },
 ];
 
 export default function Footer() {

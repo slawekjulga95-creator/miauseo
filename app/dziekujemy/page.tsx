@@ -40,21 +40,6 @@ export default function DziekujemyPage() {
           ))}
         </div>
 
-        {/* Kursy promo */}
-        <div className="bg-surface rounded-2xl p-6 border border-border mb-10 text-left">
-          <p className="text-xs font-bold tracking-widest uppercase text-brand mb-3">Działasz samemu?</p>
-          <p className="text-ink font-semibold mb-1">Sprawdź nasze kursy</p>
-          <p className="text-sm text-zinc-500 leading-relaxed mb-4">
-            Wpisz kod <strong className="text-ink font-bold">Maniek</strong> i otrzymaj <strong className="text-ink font-bold">10% rabatu</strong> na dowolny kurs.
-          </p>
-          <Link
-            href="/kursy"
-            className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-6 py-3 rounded-xl transition-colors duration-200 text-sm"
-          >
-            Zobacz kursy
-          </Link>
-        </div>
-
         {/* CTA */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
