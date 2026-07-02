@@ -71,7 +71,7 @@ export default function WizytowkaForm() {
       {error && <p className="text-red-500 text-sm text-center">Błąd wysyłki. Spróbuj ponownie.</p>}
       <button type="submit" disabled={loading}
         className="w-full bg-brand hover:bg-brand-dark disabled:opacity-60 text-white font-bold py-4 rounded-xl transition-colors duration-200 text-sm">
-        {loading ? "Wysyłanie..." : "Umów bezpłatną konsultację"}
+        {loading ? "Wysyłanie..." : "Wyślij zapytanie"}
       </button>
       <p className="text-center text-xs text-zinc-400">Odpowiadamy w ciągu 24h. Zero spamu.</p>
     </form>

@@ -12,7 +12,7 @@ const sections = [
     title: "Administrator danych osobowych",
     content: [
       'Administratorem Twoich danych osobowych jest MiauSEO, NIP 6070100514, prowadzące działalność gospodarczą na terytorium Rzeczypospolitej Polskiej (dalej: „Administrator" lub „MiauSEO").',
-      "Kontakt z Administratorem jest możliwy pod adresem e-mail: slawomir@miauseo.pl lub telefonicznie: +48 600 000 000.",
+      "Kontakt z Administratorem jest możliwy pod adresem e-mail: slawomir@miauseo.pl lub telefonicznie: +48 455 571 349.",
     ],
   },
   {
