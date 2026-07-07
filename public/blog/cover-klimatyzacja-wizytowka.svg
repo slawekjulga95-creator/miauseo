@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Cold airflow lines -->
+  <g opacity="0.07" stroke="white" stroke-width="2" fill="none">
+    <path d="M0 90 Q300 50 600 90 T1200 90"/><path d="M0 210 Q300 170 600 210 T1200 210"/>
+    <path d="M0 450 Q300 410 600 450 T1200 450"/><path d="M0 560 Q300 520 600 560 T1200 560"/>
+  </g>
+  <!-- Wall-mounted AC unit -->
+  <g>
+    <rect x="150" y="200" width="520" height="150" rx="24" fill="white" opacity="0.22"/>
+    <rect x="150" y="200" width="520" height="150" rx="24" fill="none" stroke="white" stroke-width="9" opacity="0.85"/>
+    <!-- front louver -->
+    <rect x="180" y="300" width="460" height="30" rx="10" fill="white" opacity="0.5"/>
+    <!-- vents -->
+    <g stroke="white" stroke-width="6" opacity="0.55" stroke-linecap="round">
+      <line x1="185" y1="240" x2="635" y2="240"/>
+      <line x1="185" y1="262" x2="635" y2="262"/>
+    </g>
+    <!-- display dot -->
+    <circle cx="600" cy="235" r="7" fill="#a7f3d0" opacity="0.9"/>
+    <!-- airflow arrows out -->
+    <g stroke="#e0f2fe" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.75">
+      <path d="M300 380 q40 40 90 20"/>
+      <path d="M410 380 q40 40 90 20"/>
+      <path d="M520 380 q40 40 90 20"/>
+    </g>
+  </g>
+  <!-- Snowflake -->
+  <g transform="translate(900 250)" stroke="white" stroke-width="12" stroke-linecap="round" opacity="0.9">
+    <line x1="0" y1="-110" x2="0" y2="110"/>
+    <line x1="-95" y1="-55" x2="95" y2="55"/>
+    <line x1="-95" y1="55" x2="95" y2="-55"/>
+    <g stroke-width="9">
+      <path d="M0 -110 l-22 26 M0 -110 l22 26"/>
+      <path d="M0 110 l-22 -26 M0 110 l22 -26"/>
+      <path d="M-95 -55 l4 -34 M-95 -55 l-30 12"/>
+      <path d="M95 55 l-4 34 M95 55 l30 -12"/>
+      <path d="M-95 55 l-30 -12 M-95 55 l4 34"/>
+      <path d="M95 -55 l30 12 M95 -55 l-4 -34"/>
+    </g>
+  </g>
+  <!-- Map pin -->
+  <g transform="translate(915 430)" opacity="0.9">
+    <path d="M0 0 C-40 -55 -40 -95 0 -95 C40 -95 40 -55 0 0 Z" fill="white" opacity="0.85"/>
+    <circle cx="0" cy="-62" r="18" fill="#075985"/>
+  </g>
+  <text x="100" y="576" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.4" letter-spacing="6">MIAUSEO · KLIMATYZACJA · WIZYTÓWKA GOOGLE</text>
+</svg>

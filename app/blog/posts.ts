@@ -19,6 +19,18 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "wizytowka-google-klimatyzacja-telefony-od-klientow",
+    title: "Jak wizytówka Google pomaga firmom od klimatyzacji zdobywać więcej telefonów od klientów?",
+    excerpt: "W branży klimatyzacji klient nie czyta ofert — wpisuje „montaż klimatyzacji” albo „serwis klimatyzacji blisko mnie” i dzwoni do jednej z trzech pierwszych firm z Map Google. Pokazujemy, dlaczego wizytówka Google Business Profile jest dla firmy HVAC najtańszym źródłem telefonów, jak Google ustala kolejność firm i co zrobić, żeby to Twój numer był na górze.",
+    category: "SEO",
+    date: "2026-07-07",
+    readTime: 19,
+    coverColor: "#0ea5e9",
+    coverImage: "/blog/cover-klimatyzacja-wizytowka.svg",
+    published: true,
+    popular: true,
+  },
+  {
     slug: "reklama-pomocy-drogowej-skuteczne-metody",
     title: "Reklama pomocy drogowej – skuteczne sposoby na zdobywanie klientów",
     excerpt: "W pomocy drogowej wygrywa ten, kto pierwszy odbierze telefon od kierowcy na poboczu. Pokazujemy, które kanały realnie generują zlecenia — Google Ads, SEO lokalne, wizytówka Google, współprace z warsztatami — ile to kosztuje i jak ułożyć z tego plan działania na pierwsze 30 dni.",

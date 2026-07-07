@@ -9186,4 +9186,506 @@ $response = wp_remote_post('https://api.anthropic.com/v1/messages', [
       </div>
     </>
   ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Wizytówka Google dla firm od klimatyzacji — telefony od klientów
+  ───────────────────────────────────────────────────────────────────────── */
+  "wizytowka-google-klimatyzacja-telefony-od-klientow": (
+    <>
+      <p>
+        Klient, który potrzebuje klimatyzacji, prawie nigdy nie zaczyna od czytania ofert. W środku upału, gdy w mieszkaniu jest 30 stopni, albo gdy klimatyzator w biurze nagle przestał chłodzić, nikt nie porównuje dziesięciu firm i nie analizuje cenników. Człowiek sięga po telefon, wpisuje w Google <strong>„montaż klimatyzacji”</strong> albo <strong>„serwis klimatyzacji blisko mnie”</strong>, patrzy na trzy pierwsze firmy z mapką i dzwoni. Cała decyzja zapada w kilka minut — a to, czy zadzwoni do Ciebie, rozstrzyga się na długo wcześniej: w tym, jak wygląda Twoja <strong>wizytówka Google</strong>.
+      </p>
+      <p>
+        To jest sedno, którego wielu właścicieli firm HVAC nie docenia. Można mieć najlepszy sprzęt, uczciwe ceny i ekipę z dziesięcioletnim doświadczeniem, ale jeśli w momencie, w którym klient szuka, Twoja firma jest niewidoczna albo stoi na siódmej pozycji w <strong>Mapach Google</strong>, telefon po prostu nie zadzwoni. Zadzwoni do konkurenta, który był wyżej — nie dlatego, że jest lepszy, tylko dlatego, że był pierwszy.
+      </p>
+      <p>
+        Większość firm klimatyzacyjnych inwestuje w stronę internetową i na tym poprzestaje. Tymczasem to <strong>Google Business Profile</strong> (dawniej Google Moja Firma) jest dziś pierwszym, a często jedynym punktem styku klienta z Twoją firmą. Wizytówka pokazuje się przed stroną, ma przycisk „Zadzwoń” i opinie na wyciągnięcie kciuka — i to na niej rozgrywa się walka o lokalnego klienta.
+      </p>
+      <p>
+        W tym artykule pokażę, jak dokładnie działa ten mechanizm: dlaczego klienci klimatyzacji szukają w Google, jak Google ustala kolejność firm na mapie, dlaczego pierwsze trzy pozycje zgarniają większość telefonów i co konkretnie zrobić, żeby dobrze prowadzona wizytówka generowała regularne zapytania — także bez wydawania złotówki na płatne reklamy. Wszystko z perspektywy praktyka <strong>lokalnego SEO</strong>, bez ogólników i marketingowego bełkotu.
+      </p>
+
+      <h2>Dlaczego większość klientów szuka klimatyzacji właśnie w Google</h2>
+      <p>
+        Zachowanie klienta w tej branży jest wyjątkowo przewidywalne. Zapotrzebowanie na klimatyzację to najczęściej połączenie dwóch intencji: <strong>sezonowej</strong> (wiosną i latem gwałtownie rośnie liczba zapytań o montaż) oraz <strong>awaryjnej</strong> (serwis, gdy urządzenie przestaje chłodzić w najgorszym możliwym momencie). W obu przypadkach klient nie planuje zakupu tygodniami. Szuka „tu i teraz”, lokalnie, i oczekuje szybkiego kontaktu.
+      </p>
+      <p>
+        Google jest domyślnym pierwszym krokiem. Nikt już nie przegląda papierowych katalogów ani nie pyta znajomych na forum, gdy termometr pokazuje 32 stopnie. Klient otwiera wyszukiwarkę na telefonie i wpisuje frazę, która łączy usługę z lokalizacją. Najczęstsze wzorce zapytań w tej branży to:
+      </p>
+      <ul>
+        <li><strong>klimatyzacja + miasto</strong> — na przykład <strong>klimatyzacja Poznań</strong>, klimatyzacja Warszawa, klimatyzacja Kraków. To fraza o wysokiej intencji zakupowej, wpisywana przez kogoś, kto realnie rozważa montaż.</li>
+        <li><strong>montaż klimatyzacji</strong> — klient wie, czego chce, szuka wykonawcy w swojej okolicy.</li>
+        <li><strong>serwis klimatyzacji</strong> — często zapytanie awaryjne: przegląd, czyszczenie, naprawa, uzupełnienie czynnika.</li>
+        <li><strong>klimatyzacja blisko mnie</strong> / „w pobliżu” — Google interpretuje to jako sygnał czysto lokalizacyjny i pokazuje firmy najbliżej użytkownika.</li>
+        <li>frazy uzupełniające — „klimatyzacja do domu”, „klimatyzacja dla firm”, „pompa ciepła + miasto” — bo wiele firm HVAC łączy montaż klimatyzacji z <strong>pompami ciepła</strong>.</li>
+      </ul>
+      <p>
+        Drugi fakt, którego nie da się pominąć, to <strong>dominacja urządzeń mobilnych</strong>. Zdecydowana większość lokalnych zapytań o usługi pada z telefonu, a zapytania z dopiskiem „blisko mnie” to niemal w całości ruch mobilny. Na telefonie ekran jest mały, a to, co Google pokazuje najpierw, to nie strony internetowe, tylko blok z mapką i trzema firmami. Użytkownik nie przewija w nieskończoność — wybiera z tego, co widzi na pierwszym ekranie.
+      </p>
+      <p>
+        Trzeci fakt to <strong>tempo decyzji</strong>. W usługach lokalnych o wysokiej pilności klient kontaktuje się z firmą w ciągu kilku–kilkunastu minut od wyszukania. Nie odkłada tego „na wieczór”. A najprostszą, najczęściej wybieraną akcją jest <strong>kliknięcie w numer telefonu</strong> bezpośrednio z wizytówki — jeden dotyk i połączenie się wybiera. To jest ten moment, o który toczy się cała gra. Twoim zadaniem jest być firmą, w której numer klient kliknie jako pierwszą.
+      </p>
+
+      <h2>Jak działa wizytówka Google (Google Business Profile)</h2>
+      <p>
+        <strong>Wizytówka Google</strong>, czyli Google Business Profile, to bezpłatny profil firmy w ekosystemie Google. Zakłada się go i prowadzi za darmo — Google nigdy nie pobiera opłat za samo posiadanie wizytówki (jeśli ktoś dzwoni z żądaniem zapłaty za „odnowienie” profilu, to oszustwo). Profil trzeba jednorazowo <Link href="/weryfikacja-wizytowki-google" className="text-brand font-semibold hover:underline">zweryfikować</Link>, bo bez weryfikacji jest praktycznie niewidoczny w wynikach lokalnych.
+      </p>
+      <p>
+        Wizytówka wyświetla się w kilku miejscach, które razem tworzą największą lokalną powierzchnię reklamową w internecie:
+      </p>
+      <ul>
+        <li><strong>Local Pack</strong> — blok trzech firm z mapką pokazywany na samej górze wyników wyszukiwania dla zapytań lokalnych, jeszcze nad zwykłymi stronami. To najcenniejsze miejsce w całym lokalnym SEO.</li>
+        <li><strong>Google Maps</strong> — pełna lista firm w aplikacji Map, z której korzysta ogromna część użytkowników mobilnych szukających usługi w okolicy.</li>
+        <li><strong>Wyniki lokalne (local finder)</strong> — rozszerzona lista firm po kliknięciu „więcej firm” pod Local Packiem.</li>
+        <li><strong>Panel wiedzy</strong> — karta firmy po prawej stronie, która pojawia się, gdy ktoś wyszukuje Twoją firmę z nazwy.</li>
+      </ul>
+      <p>
+        Na samej karcie klient znajduje komplet informacji potrzebnych do podjęcia decyzji, bez wchodzenia gdziekolwiek dalej:
+      </p>
+      <ul>
+        <li><strong>Przycisk „Zadzwoń”</strong> — jednym dotknięciem wybiera Twój numer. Dla firmy klimatyzacyjnej to najważniejszy element całej wizytówki.</li>
+        <li><strong>„Wyznacz trasę”</strong> — nawigacja do siedziby, istotna dla klientów odwiedzających salon lub biuro.</li>
+        <li><strong>Opinie i ocena gwiazdkowa</strong> — pierwsza rzecz, na którą pada wzrok i najsilniejszy dowód zaufania.</li>
+        <li><strong>Zdjęcia</strong> — realizacje, sprzęt, ekipa, biuro. Klient „widzi” firmę, zanim zadzwoni.</li>
+        <li><strong>Godziny otwarcia</strong> — informacja, czy firma pracuje teraz i czy warto dzwonić.</li>
+        <li><strong>Usługi i oferta</strong> — lista tego, co robisz: montaż klimatyzacji, serwis, przeglądy, pompy ciepła — z opisami i cenami orientacyjnymi.</li>
+        <li><strong>Wiadomości i pytania</strong> — kanały, którymi klient może zapytać o szczegóły bez telefonu.</li>
+      </ul>
+      <p>
+        Tu dochodzimy do kluczowego wniosku: <strong>klient bardzo często w ogóle nie odwiedza strony internetowej</strong>. Cały proces — od wyszukania, przez sprawdzenie opinii i zdjęć, po wybranie numeru — odbywa się w obrębie samej wizytówki. Karta firmy jest jednocześnie reklamą, referencjami i przyciskiem sprzedaży. Dlatego traktowanie wizytówki jako drugorzędnego dodatku do strony jest błędem, który realnie kosztuje telefony.
+      </p>
+
+      <h2>Dlaczego kolejność firm w Mapach Google ma ogromne znaczenie</h2>
+      <p>
+        To jest najważniejsza sekcja tego artykułu, bo dotyka mechanizmu, który bezpośrednio decyduje o liczbie Twoich telefonów. <strong>Kolejność firm w Local Packu i w Mapach Google nie jest przypadkowa</strong> — i nie jest też obojętna dla klienta. Wręcz przeciwnie: to, na którym miejscu stoisz, przekłada się na liczbę zapytań bardziej niż jakikolwiek inny pojedynczy czynnik.
+      </p>
+      <p>
+        Zacznijmy od <strong>Local Packu</strong> — tych trzech pierwszych firm z mapką. Statystycznie zdecydowana większość użytkowników wybiera którąś z tych trzech pozycji, nie zaglądając dalej. Rozwinięcie pełnej listy przez kliknięcie „więcej firm” to zachowanie mniejszości. Oznacza to, że jeśli Twoja firma nie mieści się w pierwszej trójce na kluczową frazę, w praktyce konkurujesz o resztki ruchu, którą zostawili liderzy.
+      </p>
+      <p>
+        Działa tu <strong>efekt pierwszeństwa</strong> (primacy) i mechanizm zaufania: użytkownik podświadomie zakłada, że firmy na górze są najlepsze albo najpopularniejsze, bo „Google je tam umieścił”. Do tego dochodzi zwykła wygoda — pierwszy sensowny wynik z dobrą oceną wystarcza, żeby zadzwonić. Im niżej, tym drastyczniej spada <strong>CTR</strong> (współczynnik kliknięć). Poniższa tabela pokazuje typowy rozkład uwagi i kliknięć w wynikach lokalnych — to wartości orientacyjne, ilustrujące skalę zjawiska, nie gwarantowane liczby:
+      </p>
+      <div className="overflow-x-auto my-6 rounded-xl border border-zinc-200">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr style={{backgroundColor: '#075985'}}>
+              <th className="text-left px-4 py-3 text-white font-semibold w-40">Pozycja w wynikach lokalnych</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Typowy udział kliknięć</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Co to oznacza dla liczby telefonów</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">1. pozycja (Local Pack)</td>
+              <td className="px-4 py-3 text-zinc-600">Zdecydowanie największy</td>
+              <td className="px-4 py-3 text-zinc-600">Lider zbiera lwią część telefonów na daną frazę. To pozycja, o którą warto walczyć w pierwszej kolejności.</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">2.–3. pozycja (Local Pack)</td>
+              <td className="px-4 py-3 text-zinc-600">Wciąż wysoki</td>
+              <td className="px-4 py-3 text-zinc-600">Stabilny, regularny strumień zapytań. Bezpieczne miejsce, w którym firma realnie „dzwoni”.</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">4.–7. pozycja (po rozwinięciu listy)</td>
+              <td className="px-4 py-3 text-zinc-600">Wyraźnie niższy</td>
+              <td className="px-4 py-3 text-zinc-600">Telefony pojawiają się sporadycznie, głównie od klientów, którzy świadomie porównują więcej firm.</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-semibold text-ink">Dalsze pozycje</td>
+              <td className="px-4 py-3 text-zinc-600">Marginalny</td>
+              <td className="px-4 py-3 text-zinc-600">Firma praktycznie nie istnieje dla większości szukających — nawet z dobrym profilem.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Weźmy konkretny przykład. Dwie firmy montujące klimatyzację w tym samym mieście, obie z porządnym sprzętem i podobnymi cenami. Firma A stoi na pierwszej pozycji na frazę <strong>klimatyzacja Poznań</strong>, firma B na szóstej. W skali miesiąca fraza generuje setki wyszukiwań. Firma A odbierze z niej dziesiątki telefonów, firma B — kilka. Różnica w przychodzie idzie w dziesiątki tysięcy złotych rocznie, a wynika wyłącznie z pozycji na mapie, nie z jakości usługi. To jest realna cena bycia niżej.
+      </p>
+      <p>
+        <strong>Psychologia wyboru</strong> dodatkowo wzmacnia ten efekt. Klient w pośpiechu i pod presją upału nie chce podejmować trudnej decyzji — chce ją domknąć. Pierwsza firma z oceną 4,8 i setką opinii daje mu poczucie bezpieczeństwa i „zwalnia z myślenia”. Wybór jest niemal automatyczny. Dlatego walka o wysoką pozycję to nie kwestia próżności — to najbardziej dochodowa inwestycja w całym lokalnym marketingu firmy klimatyzacyjnej.
+      </p>
+
+      <h2>Jak Google wybiera kolejność firm</h2>
+      <p>
+        Skoro pozycja jest tak cenna, trzeba zrozumieć, według czego Google ją ustala. Google oficjalnie podaje, że ranking lokalny opiera się na trzech głównych filarach. Nie należy tego mylić z dziesiątkami plotek krążących po internecie — to są potwierdzone przez Google fundamenty:
+      </p>
+      <div className="overflow-x-auto my-6 rounded-xl border border-zinc-200">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr style={{backgroundColor:'#0ea5e9'}}>
+              <th className="text-left px-4 py-3 text-white font-semibold w-40">Filar (oficjalny)</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Co oznacza</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Jak wpływa na firmę HVAC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Trafność</td>
+              <td className="px-4 py-3 text-zinc-600">Jak dobrze profil pasuje do tego, czego szuka użytkownik.</td>
+              <td className="px-4 py-3 text-zinc-600">Zależy od poprawnej kategorii, opisów usług i kompletności profilu. Firma z kategorią „firma zajmująca się montażem klimatyzacji” wygrywa na frazę o montaż z firmą oznaczoną ogólnie jako „usługi budowlane”.</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Odległość</td>
+              <td className="px-4 py-3 text-zinc-600">Jak daleko firma znajduje się od miejsca wyszukiwania.</td>
+              <td className="px-4 py-3 text-zinc-600">Dla zapytań „blisko mnie” to często czynnik decydujący. Fizycznego adresu nie zmienisz, ale możesz precyzyjnie zdefiniować obszar działania.</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-semibold text-ink">Rozpoznawalność</td>
+              <td className="px-4 py-3 text-zinc-600">Jak „znana” i wiarygodna jest firma według Google.</td>
+              <td className="px-4 py-3 text-zinc-600">To najbardziej sterowalny filar. Budują go opinie, aktywność, kompletność, spójność danych i sygnały z całego internetu.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Trafności i odległości nie da się „nagiąć” — albo pasujesz do zapytania i jesteś blisko, albo nie. Cała praktyczna gra o pozycję toczy się więc o <strong>rozpoznawalność</strong>, a ta jest napędzana przez konkretne, znane praktykom sygnały. Google nie publikuje ich wag, ale zgodność setek analiz i codzienna praktyka lokalnego SEO wskazują jednoznacznie na następujące elementy:
+      </p>
+      <ul>
+        <li><strong>Opinie</strong> — ich liczba, średnia ocena oraz świeżość. Regularnie napływające recenzje to jeden z najsilniejszych sygnałów rozpoznawalności.</li>
+        <li><strong>Kompletność profilu</strong> — wypełnione wszystkie pola: kategorie, usługi, opis, godziny, obszar działania, dane kontaktowe.</li>
+        <li><strong>Poprawne kategorie</strong> — kategoria główna oraz dodatkowe (montaż, serwis, pompy ciepła), dopasowane do realnej oferty.</li>
+        <li><strong>Opisy usług</strong> — rozbudowana sekcja usług z naturalnie użytymi frazami, których szukają klienci.</li>
+        <li><strong>Aktywność</strong> — regularne wpisy, dodawane zdjęcia i aktualizacje. Profil „żywy” Google traktuje lepiej niż porzucony.</li>
+        <li><strong>Odpowiedzi na opinie</strong> — reagowanie na recenzje to sygnał zaangażowanego, prowadzonego profilu.</li>
+        <li><strong>Zdjęcia</strong> — świeże, liczne, autentyczne. Wspierają zarówno ranking, jak i decyzję klienta.</li>
+        <li><strong>Link do strony i spójność NAP</strong> — poprawny odnośnik do witryny oraz identyczne dane firmy (nazwa, adres, telefon) w całym internecie.</li>
+      </ul>
+      <p>
+        Warto uczciwie zaznaczyć: nie istnieje żaden gwarantowany „przepis na pierwsze miejsce”. Ranking to wypadkowa wielu sygnałów, a Google stale go modyfikuje. Kto sprzedaje Ci pewność top 1, mija się z prawdą. Realistyczne podejście to konsekwentne wzmacnianie wszystkich powyższych elementów — ich suma buduje przewagę. Pełne zestawienie z oceną ważności znajdziesz w naszym przewodniku o <Link href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</Link>, a dobór właściwej kategorii omawiamy w tekście o <Link href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">kategoriach w wizytówce Google</Link>.
+      </p>
+
+      <h2>Jak opinie klientów zwiększają liczbę telefonów</h2>
+      <p>
+        W branży, w której klient wpuszcza obcą ekipę do mieszkania albo powierza jej instalację za kilkanaście tysięcy złotych, <strong>zaufanie jest walutą</strong>. A najszybszym dowodem zaufania w Google są opinie. Wpływają one na liczbę telefonów dwutorowo: podnoszą pozycję wizytówki (rozpoznawalność) i przekonują klienta w sekundzie, w której skanuje wyniki.
+      </p>
+      <p>
+        Znaczenie mają cztery wymiary opinii:
+      </p>
+      <ul>
+        <li><strong>Liczba opinii</strong> — profil ze 120 recenzjami budzi większe zaufanie niż ten z pięcioma, nawet przy tej samej ocenie. Duża liczba sygnalizuje, że firma realnie i regularnie pracuje.</li>
+        <li><strong>Średnia ocen</strong> — najlepiej działa przedział około 4,5–4,9. Co ciekawe, ocena idealna 5,0 przy setkach recenzji bywa odbierana jako podejrzana; kilka niższych, rzeczowo obsłużonych opinii dodaje wiarygodności.</li>
+        <li><strong>Świeżość opinii</strong> — recenzje z ostatnich tygodni ważą więcej niż te sprzed dwóch lat. Klient chce wiedzieć, że firma działa dobrze <em>teraz</em>, w tym sezonie.</li>
+        <li><strong>Odpowiadanie na opinie</strong> — publiczna, kulturalna odpowiedź (także na tę krytyczną) pokazuje profesjonalizm i to, że firma traktuje klientów poważnie.</li>
+      </ul>
+      <p>
+        Przykład z praktyki: klient wybiera między dwiema firmami montującymi klimatyzację. Pierwsza ma 4,8 gwiazdki, 90 opinii, w tym kilka z ostatniego miesiąca opisujących konkretny montaż w domu. Druga ma 5,0, ale tylko 6 opinii sprzed roku. Mimo wyższej średniej to pierwsza firma dostanie telefon — bo ma dowód regularnej, aktualnej pracy. Liczba i świeżość wygrywają z samą wysokością oceny.
+      </p>
+      <p>
+        Opinie nie pojawiają się same. Zadowolony klient rzadko wystawia recenzję z własnej inicjatywy — trzeba go poprosić, w dobrym momencie i bez nachalności:
+      </p>
+      <ol>
+        <li>Poproś o opinię od razu po udanym montażu lub serwisie, gdy zadowolenie jest największe.</li>
+        <li>Wyślij bezpośredni link do wystawienia opinii SMS-em lub w wiadomości — im mniej kroków, tym więcej recenzji.</li>
+        <li>Umieść prośbę o opinię na fakturze, w stopce maila i na wizytówce papierowej ekipy.</li>
+        <li>Nigdy nie kupuj opinii ani nie wystawiaj ich sobie sam — Google to wykrywa i karze zawieszeniem profilu.</li>
+      </ol>
+      <p>
+        Praktyczne metody zbierania recenzji bez spamowania rozwijamy w osobnym poradniku o <Link href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">zdobywaniu opinii w Google</Link>. A jeśli trafi Ci się nieuczciwa recenzja, sprawdź, co realnie da się z nią zrobić w tekście o <Link href="/jak-usunac-negatywne-opinie-z-google" className="text-brand font-semibold hover:underline">usuwaniu negatywnych opinii z Google</Link>.
+      </p>
+
+      <h2>Zdjęcia realizacji jako przewaga nad konkurencją</h2>
+      <p>
+        Zdjęcia to element, który firmy klimatyzacyjne zaniedbują najczęściej — i właśnie dlatego jest to najtańsza dostępna przewaga. Klient chce zobaczyć, komu powierza mieszkanie i za co płaci. Profil pełen autentycznych zdjęć realizacji sprzedaje sam, zanim ktokolwiek zadzwoni.
+      </p>
+      <p>
+        Co konkretnie warto pokazać firmie od klimatyzacji:
+      </p>
+      <ul>
+        <li><strong>Zamontowane klimatyzatory</strong> — jednostki ścienne w salonie, sypialni, biurze; różne modele i estetyczne poprowadzenie instalacji.</li>
+        <li><strong>Proces montażu</strong> — ekipa przy pracy, wiercenie, prowadzenie rur, jednostka zewnętrzna na elewacji. To buduje wrażenie fachowości.</li>
+        <li><strong>Serwis i przeglądy</strong> — czyszczenie, pomiary, uzupełnianie czynnika. Pokazuje, że firma zajmuje się urządzeniem także po sprzedaży.</li>
+        <li><strong>Ekipa i samochody z logo</strong> — twarze i oznakowane auta budują zaufanie i poczucie, że to realna, uczciwa firma, a nie anonimowy pośrednik.</li>
+        <li><strong>Biuro lub salon</strong> — jeśli klient może przyjść, pokaż mu, gdzie trafi.</li>
+        <li><strong>Zdjęcia „przed i po”</strong> — stary, hałaśliwy albo brzydko poprowadzony montaż zestawiony z Twoją czystą, estetyczną instalacją. To jeden z najsilniejszych argumentów wizualnych.</li>
+      </ul>
+      <p>
+        Dlaczego zdjęcia realnie zwiększają liczbę telefonów? Po pierwsze, są dowodem — klient widzi efekt, a nie tylko obietnicę. Po drugie, redukują niepewność: mieszkanie to prywatna przestrzeń, a widok schludnej ekipy i estetycznych montaży obniża opór przed wpuszczeniem obcych. Po trzecie, regularnie dodawane, autentyczne (nie stockowe) zdjęcia to dla Google sygnał aktywności profilu, który wspiera pozycję. Więcej o tym, które zdjęcia działają najlepiej, piszemy w poradniku o <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-brand font-semibold hover:underline">zdjęciach w wizytówce Google</Link>.
+      </p>
+
+      <h2>Jak często aktualizować wizytówkę</h2>
+      <p>
+        Wizytówka nie jest projektem, który się „kończy”. Google premiuje profile żywe i aktywne, a karze — spadkiem widoczności — te porzucone. Dla firmy klimatyzacyjnej, działającej w silnie sezonowej branży, regularność aktualizacji jest szczególnie ważna. Poniżej realistyczny rytm prowadzenia profilu:
+      </p>
+      <div className="overflow-x-auto my-6 rounded-xl border border-zinc-200">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr style={{backgroundColor:'#075985'}}>
+              <th className="text-left px-4 py-3 text-white font-semibold w-52">Element</th>
+              <th className="text-left px-4 py-3 text-white font-semibold w-44">Zalecana częstotliwość</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Po co</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Nowe zdjęcia realizacji</td>
+              <td className="px-4 py-3 text-zinc-600">Co 1–2 tygodnie</td>
+              <td className="px-4 py-3 text-zinc-600">Stały dopływ świeżych zdjęć to sygnał aktywności i materiał przekonujący klienta.</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Wpisy / aktualności (posty)</td>
+              <td className="px-4 py-3 text-zinc-600">Co 1–2 tygodnie</td>
+              <td className="px-4 py-3 text-zinc-600">Promocje przedsezonowe, przypomnienia o przeglądach, nowości w ofercie.</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Nowe usługi</td>
+              <td className="px-4 py-3 text-zinc-600">Przy każdej zmianie oferty</td>
+              <td className="px-4 py-3 text-zinc-600">Np. dodanie montażu pomp ciepła rozszerza zakres fraz, na które jesteś widoczny.</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Godziny pracy</td>
+              <td className="px-4 py-3 text-zinc-600">Sezonowo i przy świętach</td>
+              <td className="px-4 py-3 text-zinc-600">Wydłużone godziny w szczycie sezonu, poprawne godziny świąteczne — brak dezinformacji klienta.</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-semibold text-ink">Odpowiedzi na opinie</td>
+              <td className="px-4 py-3 text-zinc-600">Na bieżąco, do 48 h</td>
+              <td className="px-4 py-3 text-zinc-600">Szybka reakcja buduje wizerunek profesjonalnej, zaangażowanej firmy.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        <strong>Sezonowość</strong> to w tej branży osobny temat. Największa fala zapytań o montaż przypada na wiosnę i początek lata, dlatego profil trzeba „rozgrzać” zawczasu — publikować wpisy o wolnych terminach i promocjach przedsezonowych na przełomie marca i kwietnia, zanim ruszy szczyt. Zimą warto akcentować drugą nogę oferty, czyli <strong>pompy ciepła</strong> i serwis, żeby profil pracował przez cały rok, a nie tylko trzy miesiące. Więcej o mechanice publikowania znajdziesz w tekście o <Link href="/posty-wizytowka-google" className="text-brand font-semibold hover:underline">postach w wizytówce Google</Link>.
+      </p>
+
+      <h2>Najczęstsze błędy firm klimatyzacyjnych</h2>
+      <p>
+        Większość firm HVAC traci telefony nie przez brak umiejętności, lecz przez proste, powtarzalne zaniedbania na wizytówce. Oto te, które w audytach widać najczęściej:
+      </p>
+      <ul>
+        <li><strong>Brak zdjęć lub kilka przypadkowych fotek</strong> — profil bez realizacji wygląda na martwy i nie daje klientowi żadnego dowodu jakości.</li>
+        <li><strong>Brak opinii albo opinie sprzed lat</strong> — bez świeżych recenzji firma przegrywa zaufanie z każdym aktywnym konkurentem.</li>
+        <li><strong>Nieaktualny numer telefonu</strong> — najkosztowniejszy błąd w całej branży. Klient dzwoni, nikt nie odbiera, dzwoni do następnej firmy. Telefon jest tu produktem numer jeden.</li>
+        <li><strong>Zła lub zbyt ogólna kategoria</strong> — oznaczenie firmy jako „usługi budowlane” zamiast „montaż klimatyzacji” sprawia, że nie pojawiasz się na kluczowe frazy.</li>
+        <li><strong>Brak opisów usług</strong> — pusta sekcja usług to zmarnowane miejsce na frazy i na przekonanie klienta.</li>
+        <li><strong>Nieodpowiadanie na opinie</strong> — zwłaszcza brak reakcji na krytykę czyta się jak lekceważenie klientów.</li>
+        <li><strong>Pusta lub niedokończona wizytówka</strong> — brak godzin, obszaru działania, opisu. Niekompletny profil Google pozycjonuje niżej.</li>
+        <li><strong>Brak regularnych aktualizacji</strong> — profil założony raz i porzucony stopniowo traci widoczność na rzecz aktywnej konkurencji.</li>
+      </ul>
+      <p>
+        Osobno warto wspomnieć o <strong>spójności NAP</strong> — nazwa, adres i telefon firmy muszą być identyczne, co do znaku, w wizytówce, na stronie i w katalogach. Rozjazdy w tych danych osłabiają cały profil; dlaczego to takie istotne, tłumaczymy w tekście o <Link href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">NAP w wizytówce Google</Link>.
+      </p>
+
+      <h2>Czy sama strona internetowa wystarczy?</h2>
+      <p>
+        Krótka odpowiedź: nie — ale nie dlatego, że strona jest zbędna. Chodzi o to, że strona i wizytówka pełnią różne role i pracują na różnych etapach decyzji klienta. Oto zestawienie:
+      </p>
+      <div className="overflow-x-auto my-6 rounded-xl border border-zinc-200">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr style={{backgroundColor:'#18181b'}}>
+              <th className="text-left px-4 py-3 text-white font-semibold w-48">Kryterium</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Strona internetowa</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Wizytówka Google (GBP)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Widoczność w wynikach lokalnych</td>
+              <td className="px-4 py-3 text-zinc-600">Poniżej Local Packu, trudniej przebić się na górę.</td>
+              <td className="px-4 py-3 text-zinc-600">Pokazuje się jako pierwsza, nad wynikami organicznymi.</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Droga do kontaktu</td>
+              <td className="px-4 py-3 text-zinc-600">Klient musi wejść, znaleźć numer, kliknąć.</td>
+              <td className="px-4 py-3 text-zinc-600">Przycisk „Zadzwoń” od razu w wynikach — jeden dotyk.</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Dowód zaufania</td>
+              <td className="px-4 py-3 text-zinc-600">Referencje, które firma sama dobiera.</td>
+              <td className="px-4 py-3 text-zinc-600">Publiczne, niezależne opinie i oceny gwiazdkowe.</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Rola w decyzji</td>
+              <td className="px-4 py-3 text-zinc-600">Pogłębia zaufanie, prezentuje pełną ofertę i realizacje.</td>
+              <td className="px-4 py-3 text-zinc-600">Łapie klienta w momencie intencji i domyka telefonem.</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-semibold text-ink">Koszt widoczności</td>
+              <td className="px-4 py-3 text-zinc-600">Wymaga pozycjonowania i treści.</td>
+              <td className="px-4 py-3 text-zinc-600">Bezpłatna; koszt to czas na prowadzenie profilu.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Wniosek jest prosty: <strong>oba kanały powinny się uzupełniać</strong>. Wizytówka łapie klienta pierwsza i najczęściej domyka sprzedaż telefonem. Strona wchodzi tam, gdzie klient chce więcej — sprawdza pełną ofertę, ceny, realizacje, buduje głębsze zaufanie przed droższą inwestycją w klimatyzację dla firm czy pompę ciepła. Do tego dobrze zoptymalizowana strona wzmacnia samą wizytówkę: link do witryny to jeden z sygnałów rankingowych, a <Link href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">local schema markup</Link> pomaga Google poprawnie powiązać oba profile. Jeśli chcesz zadbać o obie strony równolegle, zajmujemy się tym w ramach <Link href="/uslugi/pozycjonowanie-strony" className="text-brand font-semibold hover:underline">pozycjonowania stron</Link> i <Link href="/uslugi/wizytowka-google" className="text-brand font-semibold hover:underline">optymalizacji wizytówki Google</Link>.
+      </p>
+
+      <h2>Jak zwiększyć liczbę telefonów z wizytówki</h2>
+      <p>
+        Zbierzmy to w konkretny plan działania. Poniższe kroki, wdrażane konsekwentnie, realnie przekładają się na liczbę zapytań — i większość z nich nie kosztuje nic poza czasem:
+      </p>
+      <ol>
+        <li><strong>Systematycznie zdobywaj opinie</strong> — proś każdego zadowolonego klienta po montażu i serwisie, ułatwiaj to bezpośrednim linkiem, celuj w stały, regularny dopływ recenzji.</li>
+        <li><strong>Dodawaj dobre, autentyczne zdjęcia</strong> — realizacje, ekipa, „przed i po”. Regularnie, nie jednorazowo.</li>
+        <li><strong>Zadbaj o lokalne SEO</strong> — spójność NAP, obecność w katalogach, frazy typu „montaż klimatyzacji + miasto” naturalnie w opisach.</li>
+        <li><strong>Rozbuduj i opisz usługi</strong> — montaż, serwis, przeglądy, klimatyzacja dla firm, pompy ciepła; każda usługa z konkretnym opisem.</li>
+        <li><strong>Ustaw poprawne kategorie</strong> — właściwa kategoria główna i sensowne kategorie dodatkowe to fundament trafności.</li>
+        <li><strong>Aktualizuj profil regularnie</strong> — zdjęcia, godziny, oferta, zwłaszcza przed sezonem.</li>
+        <li><strong>Publikuj wpisy</strong> — promocje przedsezonowe, przypomnienia o przeglądach, informacje o wolnych terminach.</li>
+        <li><strong>Odpowiadaj na wszystkie opinie</strong> — szybko, kulturalnie, także na te krytyczne.</li>
+        <li><strong>Monitoruj statystyki</strong> — w panelu GBP sprawdzaj, na jakie frazy Cię znajdują, ile osób dzwoni i wyznacza trasę. Na tej podstawie optymalizuj dalej.</li>
+      </ol>
+      <p>
+        Jeśli chcesz uporządkować teorię rankingu, na której to wszystko stoi, zajrzyj do <Link href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">kompletnego przewodnika po pozycjonowaniu wizytówki Google</Link>. Zasady są uniwersalne dla usług lokalnych — podobnie jak w innych branżach, np. w tekście o <Link href="/jak-promowac-warsztat-samochodowy-google" className="text-brand font-semibold hover:underline">promocji warsztatu samochodowego w Google</Link>.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        Dla firmy z branży klimatyzacji <strong>wizytówka Google jest dziś jednym z najważniejszych, a często najtańszym źródłem telefonów od klientów</strong>. Klient szuka lokalnie, na telefonie, decyduje w kilka minut i najczęściej dzwoni do jednej z trzech pierwszych firm w Mapach Google — nie zaglądając nawet na stronę internetową.
+      </p>
+      <p>
+        Kolejność na mapie nie jest przypadkowa i nie jest obojętna: <strong>wysoka pozycja bezpośrednio przekłada się na liczbę zapytań</strong>, a różnica między pierwszą a szóstą pozycją to w skali roku dziesiątki tysięcy złotych. Google ustala tę kolejność na podstawie trafności, odległości i rozpoznawalności — a ten ostatni, najbardziej sterowalny filar budują opinie, zdjęcia, kompletność profilu, poprawne kategorie i regularna aktywność.
+      </p>
+      <p>
+        Dobra wiadomość jest taka, że <strong>odpowiednio prowadzona wizytówka potrafi generować regularne telefony bez płatnych reklam</strong>. Nie wymaga to budżetu mediowego — wymaga konsekwencji: zdobywania opinii, dodawania zdjęć realizacji, opisywania usług i utrzymywania profilu w ruchu przez cały rok. To najbardziej opłacalna inwestycja marketingowa, jaką może dziś zrobić firma montująca i serwisująca klimatyzację.
+      </p>
+
+      <div className="not-prose my-10 rounded-2xl bg-ink p-8 text-center">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Zamień pozycję na mapie w telefony</p>
+        <p className="text-white text-lg font-bold mb-3">Zoptymalizujemy wizytówkę Google Twojej firmy klimatyzacyjnej</p>
+        <p className="text-zinc-300 text-sm leading-relaxed max-w-xl mx-auto mb-6">
+          Sprawdzimy, na których pozycjach jesteś dziś, co blokuje Cię przed top 3 w Mapach Google i ułożymy plan, który zamienia wyszukiwania w realne telefony od klientów. Bez obietnic cudów — konkretne działania na Twoim rynku lokalnym.
+        </p>
+        <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
+          Umów bezpłatną konsultację
+        </Link>
+      </div>
+
+      <h2>FAQ — często zadawane pytania</h2>
+
+      <h3>Czy wizytówka Google dla firmy klimatyzacyjnej jest płatna?</h3>
+      <p>
+        Nie. Google Business Profile jest w pełni bezpłatny — założenie, prowadzenie i utrzymanie wizytówki nic nie kosztuje. Jeśli ktoś dzwoni lub wysyła fakturę z żądaniem opłaty za „odnowienie” czy „aktywację” wizytówki, jest to oszustwo. Google nie pobiera opłat za samo posiadanie profilu.
+      </p>
+
+      <h3>Ile czasu zajmuje wejście do top 3 w Mapach Google?</h3>
+      <p>
+        To zależy od konkurencji na Twoim rynku i stanu wyjściowego profilu. Na mniej konkurencyjnych frazach pierwsze efekty widać w kilka tygodni. W dużych miastach, gdzie o frazę „klimatyzacja Warszawa” czy „klimatyzacja Kraków” walczy kilkudziesięciu graczy, realny horyzont to zwykle kilka miesięcy konsekwentnej pracy. Nikt uczciwy nie zagwarantuje Ci konkretnego miejsca w konkretnym terminie.
+      </p>
+
+      <h3>Czy da się pozyskiwać telefony z wizytówki bez płatnych reklam?</h3>
+      <p>
+        Tak — i to jest główna zaleta wizytówki. Dobrze zoptymalizowany, aktywny profil z opiniami i zdjęciami generuje telefony z wyników organicznych Map Google bez wydawania złotówki na reklamę. Płatne kampanie mogą to uzupełniać, zwłaszcza w szczycie sezonu, ale nie są warunkiem koniecznym.
+      </p>
+
+      <h3>Jaką kategorię wybrać dla firmy montującej klimatyzację?</h3>
+      <p>
+        Kategorią główną powinna być ta najbliższa Twojej głównej działalności, np. „firma zajmująca się montażem klimatyzacji” czy „serwis klimatyzacji”, a nie ogólne „usługi budowlane”. Kategorie dodatkowe warto ustawić pod pozostałe usługi — serwis, pompy ciepła, wentylację. Poprawna kategoria to jeden z najsilniejszych sygnałów trafności.
+      </p>
+
+      <h3>Ile opinii potrzebuje firma klimatyzacyjna, żeby wygrywać z konkurencją?</h3>
+      <p>
+        Nie ma progu magicznego, liczy się przewaga nad lokalną konkurencją i regularność. Jeśli liderzy w Twoim mieście mają po 50–100 opinii, celuj w podobny albo wyższy poziom, ze stałym dopływem świeżych recenzji. Ważniejsze od jednorazowego zrywu jest to, by nowe opinie napływały co miesiąc.
+      </p>
+
+      <h3>Czy muszę mieć fizyczny adres, żeby prowadzić wizytówkę?</h3>
+      <p>
+        Nie zawsze. Firmy dojazdowe, które świadczą usługi u klienta (montaż, serwis w domu), mogą prowadzić profil jako firma z obszarem działania, bez pokazywania dokładnego adresu. Trzeba wtedy poprawnie zdefiniować obszar, w którym pracujesz — to on wpływa na widoczność dla zapytań „blisko mnie”.
+      </p>
+
+      <h3>Czy wizytówka zastępuje stronę internetową?</h3>
+      <p>
+        Nie zastępuje, lecz uzupełnia. Wizytówka łapie klienta pierwsza i najczęściej domyka kontakt telefonem, a strona pogłębia zaufanie, prezentuje pełną ofertę i realizacje przy droższych decyzjach. Dodatkowo link do strony jest jednym z sygnałów wspierających pozycję wizytówki. Najlepsze wyniki daje prowadzenie obu kanałów równolegle.
+      </p>
+
+      <h3>Jak sprawdzić, czy wizytówka realnie generuje telefony?</h3>
+      <p>
+        W panelu Google Business Profile masz statystyki, które pokazują, na jakie frazy klienci Cię znajdują, ile osób kliknęło „Zadzwoń”, ile wyznaczyło trasę i ile weszło na stronę. To najlepsze źródło informacji, które działania przynoszą efekt — regularny przegląd tych danych pozwala optymalizować profil na podstawie faktów, a nie domysłów.
+      </p>
+
+      <h3>Co jest najczęstszym błędem firm klimatyzacyjnych na wizytówce?</h3>
+      <p>
+        Najkosztowniejszy jest nieaktualny numer telefonu i brak reakcji na próby kontaktu — klient dzwoni raz i idzie dalej. Tuż za nim plasuje się brak zdjęć i brak świeżych opinii, czyli brak dowodów jakości, oraz porzucenie profilu bez aktualizacji, które z czasem obniża widoczność.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/pozycjonowanie-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Pozycjonowanie wizytówki Google – kompletny przewodnik 2026</Link></li>
+          <li><Link href="/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026 — pełna lista</Link></li>
+          <li><Link href="/opinie-google-jak-zdobywac-skutecznie" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opinie w Google – jak zbierać je bez nachalnego proszenia?</Link></li>
+          <li><Link href="/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe?</Link></li>
+          <li><Link href="/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak ją skonfigurować?</Link></li>
+        </ul>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Czy wizytówka Google dla firmy klimatyzacyjnej jest płatna?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nie. Google Business Profile jest w pełni bezpłatny — założenie, prowadzenie i utrzymanie wizytówki nic nie kosztuje. Żądanie opłaty za „odnowienie” czy „aktywację” wizytówki to oszustwo. Google nie pobiera opłat za samo posiadanie profilu.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Ile czasu zajmuje wejście do top 3 w Mapach Google dla firmy od klimatyzacji?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "To zależy od konkurencji na rynku i stanu wyjściowego profilu. Na mniej konkurencyjnych frazach efekty widać w kilka tygodni. W dużych miastach, gdzie o frazę klimatyzacja Warszawa czy klimatyzacja Kraków walczy kilkudziesięciu graczy, realny horyzont to zwykle kilka miesięcy konsekwentnej pracy.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Czy da się pozyskiwać telefony z wizytówki Google bez płatnych reklam?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tak. Dobrze zoptymalizowany, aktywny profil z opiniami i zdjęciami generuje telefony z organicznych wyników Map Google bez wydawania złotówki na reklamę. Płatne kampanie mogą to uzupełniać, szczególnie w szczycie sezonu, ale nie są warunkiem koniecznym.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Jaką kategorię wybrać dla firmy montującej klimatyzację?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Kategorią główną powinna być ta najbliższa głównej działalności, np. firma zajmująca się montażem klimatyzacji lub serwis klimatyzacji, a nie ogólne usługi budowlane. Kategorie dodatkowe warto ustawić pod pozostałe usługi — serwis, pompy ciepła, wentylację. Poprawna kategoria to jeden z najsilniejszych sygnałów trafności.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Ile opinii potrzebuje firma klimatyzacyjna, żeby wygrywać z konkurencją?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nie ma magicznego progu — liczy się przewaga nad lokalną konkurencją i regularność. Jeśli liderzy w mieście mają po 50–100 opinii, celuj w podobny lub wyższy poziom, ze stałym dopływem świeżych recenzji. Ważniejsza od jednorazowego zrywu jest comiesięczna regularność.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Czy muszę mieć fizyczny adres, żeby prowadzić wizytówkę Google?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nie zawsze. Firmy dojazdowe świadczące usługi u klienta mogą prowadzić profil jako firma z obszarem działania, bez pokazywania dokładnego adresu. Trzeba wtedy poprawnie zdefiniować obszar pracy — to on wpływa na widoczność dla zapytań typu blisko mnie.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Czy wizytówka Google zastępuje stronę internetową?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nie zastępuje, lecz uzupełnia. Wizytówka łapie klienta pierwsza i najczęściej domyka kontakt telefonem, a strona pogłębia zaufanie i prezentuje pełną ofertę przy droższych decyzjach. Link do strony jest też jednym z sygnałów wspierających pozycję wizytówki. Najlepsze wyniki daje prowadzenie obu kanałów równolegle.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Jak sprawdzić, czy wizytówka Google realnie generuje telefony?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "W panelu Google Business Profile dostępne są statystyki pokazujące, na jakie frazy klienci znajdują firmę, ile osób kliknęło Zadzwoń, ile wyznaczyło trasę i weszło na stronę. Regularny przegląd tych danych pozwala optymalizować profil na podstawie faktów, a nie domysłów.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+    </>
+  ),
 };
