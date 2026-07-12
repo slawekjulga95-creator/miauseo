@@ -11,7 +11,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Jeśli trafiłeś tutaj, wpisując w Google „miauSEO opinie", to jesteś dokładnie w miejscu, w którym chcieliśmy Cię zobaczyć — tylko zamiast pustych obietnic i marketingowych sloganów pokażemy Ci konkretną, prawdziwą współpracę. To studium przypadku gabinetu protetycznego, który prowadzimy od wiosny 2026 roku. Wszystkie liczby, które za chwilę zobaczysz, pochodzą wprost z panelu statystyk wizytówki Google tego klienta — nie są podkolorowane, nie są uśrednione „dla efektu", a partie zrzutów ekranu możesz obejrzeć niżej miesiąc po miesiącu.
       </p>
       <p>
-        Wybraliśmy branżę protetyczną nie bez powodu. Pacjent szukający protetyka rzadko czyta długie oferty — wpisuje „protetyk", „proteza zębowa" albo „gabinet protetyczny w okolicy", patrzy na trzy pierwsze wizytówki z mapy, sprawdza ocenę w gwiazdkach i dzwoni. O tym, czy zadzwoni właśnie do naszego klienta, decyduje kilka rzeczy, którymi zajęliśmy się po kolei — kompletna i zoptymalizowana wizytówka Google, spójne dane firmy w całej sieci, uporządkowanie bałaganu po zmianie adresu oraz realny, systematyczny proces zbierania i obsługi opinii. Efektem jest ocena <strong>5,0</strong> przy <strong>11 opiniach</strong> i ponad <strong>180 połączeń</strong> od kwietnia do 12 lipca.
+        Wybraliśmy branżę protetyczną nie bez powodu. Pacjent szukający protetyka rzadko czyta długie oferty — wpisuje „protetyk", „proteza zębowa" albo „gabinet protetyczny w okolicy", patrzy na trzy pierwsze wizytówki z mapy, sprawdza ocenę w gwiazdkach i dzwoni. O tym, czy zadzwoni właśnie do naszego klienta, decyduje kilka rzeczy, którymi zajęliśmy się po kolei — kompletna i zoptymalizowana wizytówka Google, spójne dane firmy w całej sieci, uporządkowanie bałaganu po zmianie adresu oraz dostarczenie klientowi odpowiednich narzędzi do zbierania opinii. Efektem jest ocena <strong>5,0</strong> przy <strong>11 opiniach</strong> i ponad <strong>180 połączeń</strong> od kwietnia do 12 lipca.
       </p>
 
       {/* ── Pasek wyników ── */}
@@ -76,12 +76,9 @@ export const articleContent: Record<string, React.ReactNode> = {
         Równolegle przeprowadziliśmy porządki po zmianie adresu. Odszukaliśmy miejsca, w których widniały stare albo rozbieżne dane, i doprowadziliśmy je do jednej, aktualnej wersji — tak, aby wizytówka, strona i wszystkie cytowania mówiły dokładnie to samo. Migracja adresu jest momentem, w którym łatwo stracić wypracowaną pozycję, jeśli sygnały w sieci zaczną się rozjeżdżać. Uporządkowanie NAP sprawiło, że zmiana lokalizacji nie tylko nie zaszkodziła, ale wręcz wzmocniła wiarygodność profilu w oczach Google.
       </p>
 
-      <h2>Krok 3. System opinii — jak powstała ocena 5,0 z 11 opinii</h2>
+      <h2>Krok 3. Narzędzia do zbierania opinii</h2>
       <p>
-        Opinie w branży medycznej i protetycznej są walutą zaufania — pacjent, który waha się między dwoma gabinetami, w praktyce wybiera ten z wyższą oceną i większą liczbą realnych recenzji. Dlatego nie zostawiliśmy zbierania opinii przypadkowi. Dostarczyliśmy klientowi konkretne narzędzia, które maksymalnie upraszczają pacjentowi wystawienie oceny — tak, aby prośba o opinię była naturalną częścią wizyty, a nie krępującym dodatkiem.
-      </p>
-      <p>
-        Drugą połową tego procesu jest systematyczne odpowiadanie na opinie. Reagujemy na każdą recenzję — dziękujemy, odnosimy się do treści, pokazujemy, że po drugiej stronie jest realny, zaangażowany zespół. To działa dwutorowo: buduje zaufanie kolejnych pacjentów, którzy czytają odpowiedzi, i jest wyraźnym sygnałem aktywności dla algorytmu Google, który premiuje wizytówki prowadzone na bieżąco. Efekt tego etapu to ocena <strong>5,0</strong> przy <strong>11 opiniach</strong> — komplet pozytywnych recenzji, które dziś pracują na firmę przy każdym wyszukaniu.
+        Dostarczyliśmy klientowi odpowiednie narzędzia do zbierania opinii — takie, które maksymalnie upraszczają pacjentowi wystawienie oceny w Google i sprawiają, że prośba o opinię staje się naturalną częścią wizyty. Efektem jest ocena <strong>5,0</strong> przy <strong>11 opiniach</strong> — komplet pozytywnych recenzji, które dziś pracują na firmę przy każdym wyszukaniu.
       </p>
 
       <div className="not-prose my-8 rounded-2xl border border-border bg-zinc-50 p-6">
@@ -96,7 +93,7 @@ export const articleContent: Record<string, React.ReactNode> = {
               ))}
             </div>
             <p className="text-sm font-semibold text-ink">Średnia ocena 5,0 z 11 opinii — 100% recenzji pozytywnych.</p>
-            <p className="mt-1 text-sm text-zinc-500">Wszystkie oceny zebrane w ramach wdrożonego procesu, z systematyczną odpowiedzią na każdą z nich.</p>
+            <p className="mt-1 text-sm text-zinc-500">Oceny zebrane dzięki dostarczonym klientowi narzędziom do zbierania opinii.</p>
           </div>
         </div>
       </div>

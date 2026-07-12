@@ -375,6 +375,28 @@ export default async function BlogPostPage({ params }: Props) {
                     { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://miauseo.pl/${post.slug}` },
                   ],
                 },
+                // Rich snippet z oceną — dotyczy KLIENTA opisanego w case study
+                // (opinie klienta publikowane przez MiauSEO jako stronę trzecią).
+                ...(post.caseRating
+                  ? [
+                      {
+                        "@context": "https://schema.org",
+                        "@type": "LocalBusiness",
+                        "name": post.caseRating.businessName,
+                        "image": post.coverImage
+                          ? `https://miauseo.pl${post.coverImage}`
+                          : "https://miauseo.pl/logo.png",
+                        "url": `https://miauseo.pl/${post.slug}`,
+                        "aggregateRating": {
+                          "@type": "AggregateRating",
+                          "ratingValue": post.caseRating.value.toFixed(1),
+                          "reviewCount": post.caseRating.count,
+                          "bestRating": 5,
+                          "worstRating": 1,
+                        },
+                      },
+                    ]
+                  : []),
               ]),
             }}
           />

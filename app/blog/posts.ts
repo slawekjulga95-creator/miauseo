@@ -15,6 +15,13 @@ export type Post = {
   published: boolean;
   hideFromBlog?: boolean; // widoczny pod URL-em, ale nie listowany na /blog
   popular?: boolean;      // wyróżniony jako najpopularniejszy (np. na stronie głównej)
+  // Rich snippet dla case study — ocena dotyczy KLIENTA opisanego w artykule
+  // (opinie klienta publikowane przez MiauSEO jako stronę trzecią, nie self-review).
+  caseRating?: {
+    businessName: string; // nazwa opisywanego biznesu (klienta)
+    value: number;        // średnia ocena
+    count: number;        // liczba opinii
+  };
 };
 
 export const posts: Post[] = [
@@ -29,6 +36,7 @@ export const posts: Post[] = [
     coverImage: "/blog/cover-ref-protetyk.svg",
     published: true,
     popular: true,
+    caseRating: { businessName: "Gabinet protetyczny — klient MiauSEO", value: 5, count: 11 },
   },
   {
     slug: "wizytowka-google-klimatyzacja-telefony-od-klientow",
