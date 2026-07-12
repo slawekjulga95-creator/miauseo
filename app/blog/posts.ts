@@ -19,6 +19,18 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "miauseo-opinie-protetyk",
+    title: "miauSEO Opinie – branża protetyczna 2026",
+    excerpt: "Wpisałeś w Google „miauSEO opinie”? Zamiast obietnic pokazujemy prawdziwą współpracę z gabinetem protetycznym — od optymalizacji wizytówki Google i uporządkowania danych NAP po zmianie adresu, przez wdrożony u klienta system zbierania opinii (ocena 5,0 z 11 opinii), aż po twarde liczby: ponad 180 połączeń od kwietnia do 12 lipca 2026, ze zrzutami statystyk miesiąc po miesiącu.",
+    category: "Opinie",
+    date: "2026-07-12",
+    readTime: 11,
+    coverColor: "#0ea5e9",
+    coverImage: "/blog/cover-ref-protetyk.svg",
+    published: true,
+    popular: true,
+  },
+  {
     slug: "wizytowka-google-klimatyzacja-telefony-od-klientow",
     title: "Jak wizytówka Google pomaga firmom od klimatyzacji zdobywać więcej telefonów od klientów?",
     excerpt: "W branży klimatyzacji klient nie czyta ofert — wpisuje „montaż klimatyzacji” albo „serwis klimatyzacji blisko mnie” i dzwoni do jednej z trzech pierwszych firm z Map Google. Pokazujemy, dlaczego wizytówka Google Business Profile jest dla firmy HVAC najtańszym źródłem telefonów, jak Google ustala kolejność firm i co zrobić, żeby to Twój numer był na górze.",
