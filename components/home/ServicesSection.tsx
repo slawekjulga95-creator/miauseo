@@ -15,7 +15,7 @@ const services = [
         który rośnie miesiąc po miesiącu i nie znika, gdy wyłączysz reklamy.
       </>
     ),
-    photo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop&crop=center",
+    photo: "/miauseopozycjonowaniestrony.webp",
     logo: null,
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -36,7 +36,7 @@ const services = [
         To najprostsza droga do lokalnych klientów — także wtedy, gdy nie masz jeszcze strony internetowej.
       </>
     ),
-    photo: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=800&q=80&fit=crop&crop=center",
+    photo: "/miauseopozycjonowaniewizytowki.webp",
     logo: null,
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -57,7 +57,7 @@ const services = [
         <strong className="font-semibold text-ink">realnych zapytaniach i sprzedaży</strong>, a nie pustych kliknięciach.
       </>
     ),
-    photo: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80&fit=crop&crop=center",
+    photo: "/miauseogoogleads.webp",
     logo: null,
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
