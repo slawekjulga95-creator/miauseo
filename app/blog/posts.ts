@@ -27,8 +27,8 @@ export type Post = {
 export const posts: Post[] = [
   {
     slug: "miauseo-opinie-protetyk",
-    title: "miauSEO Opinie – branża protetyczna 2026",
-    excerpt: "Wpisałeś w Google „miauSEO opinie”? Zamiast obietnic pokazujemy prawdziwą współpracę z gabinetem protetycznym — od optymalizacji wizytówki Google i uporządkowania danych NAP po zmianie adresu, przez wdrożony u klienta system zbierania opinii (ocena 5,0 z 11 opinii), aż po twarde liczby: ponad 180 połączeń od kwietnia do 12 lipca 2026, ze zrzutami statystyk miesiąc po miesiącu.",
+    title: "miauSEO - Opinie - 180 połączeń - 4 miesiące w 2026",
+    excerpt: "Wpisałeś w Google „miauSEO opinie”? Zamiast obietnic pokazujemy prawdziwą współpracę z gabinetem protetycznym — od optymalizacji wizytówki Google i uporządkowania danych NAP po zmianie adresu, przez wdrożony u klienta system zbierania opinii, aż po twarde liczby: ponad 180 połączeń od kwietnia do 12 lipca 2026, ze zrzutami statystyk miesiąc po miesiącu.",
     category: "Opinie",
     date: "2026-07-12",
     readTime: 11,

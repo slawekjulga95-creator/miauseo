@@ -11,7 +11,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Jeśli trafiłeś tutaj, wpisując w Google „miauSEO opinie", to jesteś dokładnie w miejscu, w którym chcieliśmy Cię zobaczyć — tylko zamiast pustych obietnic i marketingowych sloganów pokażemy Ci konkretną, prawdziwą współpracę. To studium przypadku gabinetu protetycznego, który prowadzimy od wiosny 2026 roku. Wszystkie liczby, które za chwilę zobaczysz, pochodzą wprost z panelu statystyk wizytówki Google tego klienta — nie są podkolorowane, nie są uśrednione „dla efektu", a partie zrzutów ekranu możesz obejrzeć niżej miesiąc po miesiącu.
       </p>
       <p>
-        Wybraliśmy branżę protetyczną nie bez powodu. Pacjent szukający protetyka rzadko czyta długie oferty — wpisuje „protetyk", „proteza zębowa" albo „gabinet protetyczny w okolicy", patrzy na trzy pierwsze wizytówki z mapy, sprawdza ocenę w gwiazdkach i dzwoni. O tym, czy zadzwoni właśnie do naszego klienta, decyduje kilka rzeczy, którymi zajęliśmy się po kolei — kompletna i zoptymalizowana wizytówka Google, spójne dane firmy w całej sieci, uporządkowanie bałaganu po zmianie adresu oraz dostarczenie klientowi odpowiednich narzędzi do zbierania opinii. Efektem jest ocena <strong>5,0</strong> przy <strong>11 opiniach</strong> i ponad <strong>180 połączeń</strong> od kwietnia do 12 lipca.
+        Wybraliśmy branżę protetyczną nie bez powodu. Pacjent szukający protetyka rzadko czyta długie oferty — wpisuje „protetyk", „proteza zębowa" albo „gabinet protetyczny w okolicy", patrzy na trzy pierwsze wizytówki z mapy, sprawdza ocenę w gwiazdkach i dzwoni. O tym, czy zadzwoni właśnie do naszego klienta, decyduje kilka rzeczy, którymi zajęliśmy się po kolei — kompletna i zoptymalizowana wizytówka Google, spójne dane firmy w całej sieci, uporządkowanie bałaganu po zmianie adresu oraz dostarczenie klientowi odpowiednich narzędzi do zbierania opinii.
       </p>
 
       {/* ── Pasek wyników ── */}
@@ -76,34 +76,12 @@ export const articleContent: Record<string, React.ReactNode> = {
         Równolegle przeprowadziliśmy porządki po zmianie adresu. Odszukaliśmy miejsca, w których widniały stare albo rozbieżne dane, i doprowadziliśmy je do jednej, aktualnej wersji — tak, aby wizytówka, strona i wszystkie cytowania mówiły dokładnie to samo. Migracja adresu jest momentem, w którym łatwo stracić wypracowaną pozycję, jeśli sygnały w sieci zaczną się rozjeżdżać. Uporządkowanie NAP sprawiło, że zmiana lokalizacji nie tylko nie zaszkodziła, ale wręcz wzmocniła wiarygodność profilu w oczach Google.
       </p>
 
-      <h2>Krok 3. Narzędzia do zbierania opinii</h2>
-      <p>
-        Dostarczyliśmy klientowi odpowiednie narzędzia do zbierania opinii — takie, które maksymalnie upraszczają pacjentowi wystawienie oceny w Google i sprawiają, że prośba o opinię staje się naturalną częścią wizyty. Efektem jest ocena <strong>5,0</strong> przy <strong>11 opiniach</strong> — komplet pozytywnych recenzji, które dziś pracują na firmę przy każdym wyszukaniu.
-      </p>
-
-      <div className="not-prose my-8 rounded-2xl border border-border bg-zinc-50 p-6">
-        <div className="flex items-start gap-4">
-          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand text-2xl font-extrabold text-white">5,0</div>
-          <div>
-            <div className="mb-1 inline-flex text-amber-400" aria-hidden>
-              {[0, 1, 2, 3, 4].map((i) => (
-                <svg key={i} viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
-                  <path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.42 4.36a1 1 0 0 0 .95.69h4.59c.97 0 1.37 1.24.59 1.81l-3.72 2.7a1 1 0 0 0-.36 1.12l1.42 4.36c.3.92-.75 1.69-1.54 1.12l-3.71-2.7a1 1 0 0 0-1.18 0l-3.71 2.7c-.79.57-1.84-.2-1.54-1.12l1.42-4.36a1 1 0 0 0-.36-1.12l-3.72-2.7c-.78-.57-.38-1.81.59-1.81h4.59a1 1 0 0 0 .95-.69L9.05 2.93Z" />
-                </svg>
-              ))}
-            </div>
-            <p className="text-sm font-semibold text-ink">Średnia ocena 5,0 z 11 opinii — 100% recenzji pozytywnych.</p>
-            <p className="mt-1 text-sm text-zinc-500">Oceny zebrane dzięki dostarczonym klientowi narzędziom do zbierania opinii.</p>
-          </div>
-        </div>
-      </div>
-
       <h2>Wyniki — połączenia miesiąc po miesiącu</h2>
       <p>
         Najlepszym miernikiem skuteczności w lokalnym SEO nie są pozycje same w sobie, tylko to, ile razy telefon faktycznie zadzwonił. Poniżej surowe dane z panelu wizytówki Google klienta — liczba połączeń wykonanych bezpośrednio z profilu firmy, miesiąc po miesiącu, wraz ze zrzutami ekranu.
       </p>
 
-      <div className="not-prose my-6 grid gap-6 md:grid-cols-2">
+      <div className="not-prose my-6 space-y-6">
         <figure className="overflow-hidden rounded-2xl border border-border bg-white">
           <img src="/blog/protetyk/miauSEO_opinie_kwiecien.png" alt="Statystyki wizytówki Google gabinetu protetycznego — kwiecień 2026, 43 połączenia od klientów" loading="lazy" className="w-full" />
           <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600"><strong className="text-ink">Kwiecień</strong> — 43 połączenia. Pierwszy pełny miesiąc po optymalizacji wizytówki.</figcaption>
