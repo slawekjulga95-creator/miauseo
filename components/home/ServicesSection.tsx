@@ -155,7 +155,7 @@ export function WhatWeDo() {
                 }`}
               >
                 {/* Zdjęcie lub logo + gradient + badge z ikoną */}
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="relative aspect-[3/4] overflow-hidden bg-white">
                   {s.badge && (
                     <span className="absolute top-4 right-4 z-10 inline-flex items-center gap-1 bg-brand text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
                       <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -164,27 +164,16 @@ export function WhatWeDo() {
                       {s.badge}
                     </span>
                   )}
-                  {s.logo ? (
-                    <div className="absolute inset-0 bg-[#010101] flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                      {s.logo}
-                    </div>
-                  ) : (
-                    <Image
-                      src={s.photo as string}
-                      alt={s.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      loading="lazy"
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/15 to-transparent" />
-                  <div className="absolute top-4 left-4 w-11 h-11 rounded-xl bg-white/95 backdrop-blur text-brand flex items-center justify-center shadow-lg">
-                    {s.icon}
-                  </div>
-                  <h3 className="absolute bottom-4 left-4 right-4 text-lg font-bold text-white drop-shadow-sm">
-                    {s.title}
-                  </h3>
+                  <Image
+                    src={s.photo as string}
+                    alt={s.title}
+                    fill
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    loading="lazy"
+                  />
+                  {/* Tytuł jest już częścią grafiki — h3 tylko dla SEO/dostępności */}
+                  <h3 className="sr-only">{s.title}</h3>
                 </div>
 
                 {/* Treść */}
