@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import CaseStudyPopup from "@/components/CaseStudyPopup";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -57,6 +58,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <CookieBanner />
+        <CaseStudyPopup />
         {/* Consent Mode v2 — musi być przed załadowaniem GA/Ads */}
         <Script id="consent-default" strategy="beforeInteractive">{`
           window.dataLayer = window.dataLayer || [];
