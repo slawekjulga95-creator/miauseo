@@ -65,59 +65,6 @@ const services = [
       </svg>
     ),
   },
-  {
-    title: "Facebook / Meta Ads",
-    href: "/uslugi/meta-ads",
-    badge: null,
-    desc: (
-      <>
-        Prowadzimy reklamy na <strong className="font-semibold text-ink">Facebooku i Instagramie</strong>, które
-        trafiają do precyzyjnie dobranych grup odbiorców w Twojej okolicy. Tworzymy przyciągające kreacje,
-        testujemy je na bieżąco i skalujemy to, co działa. Budujemy{" "}
-        <strong className="font-semibold text-ink">rozpoznawalność marki i stały dopływ zapytań</strong> — nawet
-        wtedy, gdy klient nie szukał Cię aktywnie.
-      </>
-    ),
-    photo: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80&fit=crop&crop=center",
-    logo: null,
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-      </svg>
-    ),
-  },
-  {
-    title: "TikTok Ads",
-    href: "/uslugi/tiktok-ads",
-    badge: null,
-    desc: (
-      <>
-        Wykorzystujemy <strong className="font-semibold text-ink">najszybciej rosnącą platformę</strong> w Polsce,
-        żeby z krótkim wideo dotrzeć do tysięcy odbiorców. Tworzymy kampanie, które łączą{" "}
-        <strong className="font-semibold text-ink">ogromne zasięgi z realną sprzedażą</strong>. To idealny moment,
-        żeby wyprzedzić konkurencję, której jeszcze tam nie ma.
-      </>
-    ),
-    photo: null,
-    logo: (
-      <div className="relative w-20 h-20">
-        <svg viewBox="0 0 24 24" fill="#25F4EE" className="absolute inset-0 w-full h-full translate-x-[-3px] translate-y-[3px]">
-          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z" />
-        </svg>
-        <svg viewBox="0 0 24 24" fill="#FE2C55" className="absolute inset-0 w-full h-full translate-x-[3px] translate-y-[-3px]">
-          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z" />
-        </svg>
-        <svg viewBox="0 0 24 24" fill="#ffffff" className="absolute inset-0 w-full h-full">
-          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z" />
-        </svg>
-      </div>
-    ),
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z" />
-      </svg>
-    ),
-  },
 ];
 
 const items = [

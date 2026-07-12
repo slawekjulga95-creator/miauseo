@@ -5,8 +5,6 @@ const services = [
   { href: "/uslugi/wizytowka-google", label: "Wizytówka Google" },
   { href: "/uslugi/pozycjonowanie-strony", label: "Pozycjonowanie strony" },
   { href: "/uslugi/google-ads", label: "Google Ads" },
-  { href: "/uslugi/meta-ads", label: "Facebook / Meta Ads" },
-  { href: "/uslugi/tiktok-ads", label: "TikTok Ads" },
 ];
 
 const company = [

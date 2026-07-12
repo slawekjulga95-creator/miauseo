@@ -14,9 +14,9 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "MiauSEO – Agencja Marketingu Online | Google Ads, SEO, Meta Ads, TikTok Ads",
+  title: "MiauSEO – Agencja Marketingu Online | Pozycjonowanie, SEO, Google Ads",
   description:
-    "MiauSEO to agencja performance marketingowa. Pozycjonowanie wizytówki Google, Google Ads, Facebook Ads i TikTok Ads. Zmieniamy kliknięcia w klientów.",
+    "MiauSEO to agencja performance marketingowa. Pozycjonowanie wizytówki Google, SEO strony i Google Ads. Zmieniamy kliknięcia w klientów.",
   verification: {
     google: "0lUwydjVkEDxbgPPlE6cuTszviE3BhmeM9eU-qbfMpg",
   },

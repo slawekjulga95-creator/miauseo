@@ -28,7 +28,7 @@ const schemaOrg = {
       },
       image: "https://miauseo.pl/logo.png",
       description:
-        "MiauSEO to agencja performance marketingowa specjalizująca się w pozycjonowaniu lokalnym, Google Ads, Meta Ads i TikTok Ads. Zmieniamy kliknięcia w klientów.",
+        "MiauSEO to agencja performance marketingowa specjalizująca się w pozycjonowaniu lokalnym, SEO i Google Ads. Zmieniamy kliknięcia w klientów.",
       email: "slawomir@miauseo.pl",
       vatID: "PL6070100514",
       taxID: "6070100514",
