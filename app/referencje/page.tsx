@@ -74,18 +74,14 @@ const portfolio: {
 
 export default function ReferencjePage() {
   return (
-    <main className="pt-24">
+    <main className="pt-24 bg-surface">
       {/* Realizacje – portfolio */}
-      <section className="py-24 px-6 bg-surface">
+      <section className="pt-12 pb-24 px-6 bg-surface">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-2xl mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-ink leading-tight mb-4">
-              Jak <span className="text-brand">działamy</span>
+            <h1 className="text-3xl md:text-4xl font-bold text-ink leading-tight">
+              Referencje
             </h1>
-            <p className="text-zinc-500 leading-relaxed mb-6">
-              Przedstawiamy poniżej przykłady branż i sposób działania, aby osiągnąć efekty o których rozmawialiśmy. Każda branża jest inna, ale wdrożenie odpowiednich działań pomaga zwiększyć widoczność. Sprawdź jak wygląda współpraca i porozmawiajmy o Twojej firmie.
-            </p>
-            <p className="text-sm font-bold text-ink">Konkretne przykłady z opisem:</p>
           </div>
 
           <div className="grid lg:grid-cols-3 lg:grid-rows-[auto_auto_auto_auto_1fr_auto] gap-6 items-stretch">
@@ -132,21 +128,33 @@ export default function ReferencjePage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="bg-ink py-20 px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-brand font-bold text-sm uppercase tracking-widest mb-4">Twoja firma</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Chcę zrozumieć Twój biznes,<br />zanim cokolwiek zaproponuję.
-          </h2>
-          <p className="text-zinc-400 text-lg mb-10 max-w-xl mx-auto">
-            Bezpłatna rozmowa — bez sprzedawania, bez presji. Sprawdźmy razem czy i jak możemy Ci pomóc.
-          </p>
-          <Link
-            href="/kontakt"
-            className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-10 py-4 rounded-xl transition-colors duration-200 text-lg"
-          >
-            Zacznijmy rozmowę
-          </Link>
+      <section className="pb-24 px-6 bg-surface">
+        <div className="max-w-4xl mx-auto bg-white border border-border rounded-3xl p-8 md:p-12">
+          <div className="flex flex-col sm:flex-row items-center gap-8 md:gap-12">
+            <div className="shrink-0 relative w-40 h-52 rounded-2xl overflow-hidden bg-surface border border-border">
+              <Image
+                src="/SlawomirJ.webp"
+                alt="Sławomir Julga — MiauSEO"
+                fill
+                sizes="160px"
+                className="object-cover object-top"
+              />
+            </div>
+            <div className="text-center sm:text-left">
+              <h2 className="text-2xl md:text-3xl font-bold text-ink leading-tight mb-4">
+                Porozmawiajmy o <span className="text-brand">Twojej firmie</span>
+              </h2>
+              <p className="text-zinc-500 leading-relaxed mb-6">
+                Bezpłatna rozmowa — bez sprzedawania, bez presji. Sprawdźmy razem, czy i jak mogę Ci pomóc.
+              </p>
+              <Link
+                href="/kontakt"
+                className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200"
+              >
+                Skontaktuj się ze mną
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </main>
