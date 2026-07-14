@@ -26,6 +26,17 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "miauseo-opinie-mobilny-masaz",
+    title: "MiauSEO - strona WWW i podstrony lokalizacyjne w 2026",
+    excerpt: "Case study z branży masażu mobilnego. Zbudowaliśmy stronę od zera — architekturę pod frazy „mobilny masaż” i „masaż z dojazdem”, osobne podstrony lokalizacyjne dopasowane do obszarów dojazdu oraz blog budujący kontekst tematyczny wokół usługi. Opisujemy też, dlaczego projekt świadomie skupił się wyłącznie na stronie i treściach.",
+    category: "Opinie",
+    date: "2026-07-14",
+    readTime: 9,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-miauseo-opinie-mobilny-masaz.svg",
+    published: true,
+  },
+  {
     slug: "miauseo-opinie-skup",
     title: "MiauSEO Opinie - 466 wizyt w punkcie - 3 miesiące",
     excerpt: "Skup telefonów konkurujący z sieciówkami, które mają budżety marketingowe wielokrotnie większe od całego rocznego przychodu klienta. Pokazujemy, jak rozbudowa strony pod frazę „skup telefonów”, blog, zaplecze NAP i wdrożony system opinii przełożyły się na 466 wizyt w punkcie w trzy miesiące — i dlaczego stabilność pozycji jest tu ważniejsza niż jednorazowy skok.",

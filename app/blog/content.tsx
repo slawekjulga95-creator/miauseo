@@ -3,6 +3,84 @@ import Link from "next/link";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     OPINIE / CASE STUDY: miauSEO — mobilny masaż, strona WWW i podstrony lokalizacyjne
+  ───────────────────────────────────────────────────────────────────────── */
+  "miauseo-opinie-mobilny-masaz": (
+    <>
+      <p>
+        Klient świadczy usługę mobilnego masażu — dojeżdża do klienta, zamiast przyjmować go w gabinecie. To model, w którym cała obietnica sprzedażowa opiera się na wygodzie: masaż odbywa się tam, gdzie klient akurat jest, bez dojazdów, parkowania i sztywnych godzin. Problem polegał na tym, że ta obietnica nie miała gdzie wybrzmieć. W internecie usługa praktycznie nie istniała — nie było miejsca, do którego można by skierować kogoś, kto szuka masażu z dojazdem i chce sprawdzić, na czym to polega, ile kosztuje i czy w ogóle jest dostępne w jego okolicy.
+      </p>
+      <p>
+        Zaczynaliśmy więc od zera. Nie od poprawiania czegoś, co działało średnio, tylko od zbudowania obecności w sieci od podstaw.
+      </p>
+
+      <h2>Cel współpracy</h2>
+      <p>
+        Celem było stworzenie fundamentu, na którym usługa może być odnajdywana w wyszukiwarce przez osoby świadomie szukające masażu z dojazdem. Nie chodziło o obecność „gdziekolwiek”, tylko o konkretną sytuację: ktoś wpisuje w wyszukiwarkę frazę opisującą dokładnie tę usługę i musi trafić na stronę, która na to zapytanie realnie odpowiada — mówi, co obejmuje masaż, jak wygląda dojazd, czego klient potrzebuje u siebie w domu i jak umówić termin.
+      </p>
+      <p>
+        Drugim celem było przygotowanie strony tak, żeby dało się na niej pracować dalej. Miała nie być zamkniętą ulotką, tylko strukturą, którą można rozbudowywać o kolejne treści i kolejne obszary dojazdu bez przebudowywania wszystkiego od nowa.
+      </p>
+
+      <h2>Budowa strony internetowej</h2>
+      <p>
+        Zbudowaliśmy stronę dedykowaną wyłącznie usłudze mobilnego masażu. Architekturę zaprojektowaliśmy wokół głównych fraz usługowych — „mobilny masaż”, „masaż z dojazdem” i ich naturalnych wariantów — ale nie w sensie upychania słów w nagłówkach. Chodziło o to, żeby układ strony odzwierciedlał sposób, w jaki człowiek myśli o tej usłudze: czym ona jest, jak przebiega, co trzeba przygotować, ile trwa, ile kosztuje, jak się umówić.
+      </p>
+      <p>
+        Każda z tych kwestii dostała swoje miejsce w strukturze, zamiast tonąć w jednym długim tekście na stronie głównej. Dzięki temu zarówno użytkownik, jak i wyszukiwarka mogą jednoznacznie stwierdzić, o czym jest dana podstrona i na jakie zapytanie odpowiada.
+      </p>
+      <p>
+        Osobno zadbaliśmy o warstwę techniczną i o to, żeby strona dobrze działała na telefonie. W tej usłudze to nie jest detal — klient najczęściej szuka masażu z telefonu, często wieczorem, często z myślą o najbliższych dniach. Strona, która ładuje się wolno albo źle układa się na małym ekranie, traci go, zanim zdąży cokolwiek powiedzieć.
+      </p>
+
+      <h2>Podstrony lokalizacyjne</h2>
+      <p>
+        Usługa mobilna ma tę cechę, że jej zasięg jest realnie ograniczony obszarem dojazdu. Zbudowaliśmy więc osobne podstrony dla obszarów, w których klient faktycznie świadczy usługi — każda z nich mówi wprost o dostępności masażu z dojazdem na danym terenie i jest zoptymalizowana pod zapytania z intencją lokalną.
+      </p>
+      <p>
+        Kluczowe było uniknięcie pułapki, w którą wpada większość takich wdrożeń: powielenia tej samej treści i podmienienia w niej wyłącznie nazwy obszaru. Strony zbudowane w ten sposób są bezwartościowe zarówno dla użytkownika, który natychmiast widzi, że czyta szablon, jak i dla wyszukiwarki, która traktuje je jako treść powielaną. Każda podstrona ma więc własny sens istnienia — mówi o realiach dojazdu i dostępności na danym obszarze, a nie tylko odmienia jego nazwę przez przypadki.
+      </p>
+
+      <h2>Optymalizacja pod frazy kluczowe</h2>
+      <p>
+        Pracowaliśmy nad tym, żeby strona miała realną szansę konkurować na frazy „mobilny masaż”, „masaż z dojazdem” i ich pochodne. To oznaczało uporządkowanie struktury treści i nagłówków tak, żeby odpowiadały intencji stojącej za tymi zapytaniami — a intencja jest tu bardzo konkretna. Człowiek wpisujący „masaż z dojazdem” nie chce artykułu o historii masażu. Chce wiedzieć, czy ktoś przyjedzie do niego, kiedy i za ile.
+      </p>
+      <p>
+        Treści pisaliśmy więc tak, żeby odpowiedź na to pytanie pojawiała się od razu, a dopiero potem następowało rozwinięcie. To ma znaczenie nie tylko dla użytkownika, który nie musi się przekopywać przez wstęp, ale i dla wyszukiwarek generatywnych — te budują odpowiedź z fragmentów, które są konkretne i samodzielnie zrozumiałe, a nie z ozdobników.
+      </p>
+
+      <h2>Content marketing i blog</h2>
+      <p>
+        Uruchomiliśmy zakładkę blog i zaczęliśmy budować wokół usługi kontekst tematyczny. Chodzi o to, żeby strona nie była pojedynczym punktem mówiącym „robimy masaż z dojazdem”, ale miejscem, które omawia temat szerzej: rodzaje masażu i to, komu który służy, przeciwwskazania, przygotowanie miejsca w domu przed wizytą, czego się spodziewać za pierwszym razem, jak dbać o siebie między wizytami.
+      </p>
+      <p>
+        Ta otoczka tematyczna pracuje na dwóch poziomach. Dla użytkownika jest dowodem kompetencji — ktoś, kto potrafi rzeczowo wyjaśnić, kiedy masażu robić nie należy, jest wiarygodniejszy od kogoś, kto tylko sprzedaje. Dla wyszukiwarki jest sygnałem, że strona pokrywa temat, a nie tylko jedno zapytanie sprzedażowe, i że można ją traktować jako źródło w tej dziedzinie.
+      </p>
+
+      <h2>Podejście strategiczne — dlaczego strona i treści, a nie wszystko naraz</h2>
+      <p>
+        Ten projekt świadomie ograniczyliśmy do strony internetowej i treści. To była decyzja, a nie zaniechanie — i warto ją wyjaśnić, bo bywa źle rozumiana.
+      </p>
+      <p>
+        Klient zaczynał bez własnego miejsca w internecie. W takiej sytuacji rozpraszanie budżetu i uwagi na kilka kanałów naraz kończy się zwykle tym, że żaden z nich nie jest zrobiony porządnie. Strona jest natomiast jedynym aktywem, które w całości należy do klienta — którego wygląd, treść i strukturę kontroluje on sam, i które zostaje z nim niezależnie od tego, co się zmieni w regulaminach czy algorytmach zewnętrznych platform. Zbudowanie jej solidnie jako pierwszej rzeczy nie jest ostrożnością; to kolejność, która pozwala wszystkiemu, co przyjdzie później, mieć się na czym oprzeć.
+      </p>
+      <p>
+        Doszedł do tego drugi argument, bardziej praktyczny. Każdy kolejny kanał — niezależnie który — prędzej czy później kieruje człowieka do miejsca, w którym ma on podjąć decyzję. Jeśli tym miejscem jest strona, która nie tłumaczy usługi, nie pokazuje obszaru dojazdu i nie ułatwia kontaktu, to każdy ruch skierowany gdziekolwiek indziej wycieka. Najpierw więc porządna strona i treści, które faktycznie odpowiadają na pytania klientów — kolejne działania mają wtedy do czego prowadzić i co wzmacniać.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        Zakres tej współpracy był z założenia wąski i skupiony: strona zbudowana od zera wokół konkretnej usługi, podstrony odpowiadające realnym obszarom dojazdu, struktura treści dopasowana do intencji stojącej za frazami usługowymi i blog budujący kontekst tematyczny wokół masażu mobilnego. Bez rozpraszania się na wszystko naraz, za to z fundamentem, który da się dalej rozbudowywać.
+      </p>
+      <p>
+        Efekt tej pracy można zobaczyć na stronie klienta:{" "}
+        <a href="https://rozluznijsie.pl" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">rozluznijsie.pl →</a>
+      </p>
+    </>
+  ),
+
+
+  /* ─────────────────────────────────────────────────────────────────────────
      OPINIE / CASE STUDY: miauSEO Opinie — skup telefonów 2026
   ───────────────────────────────────────────────────────────────────────── */
   "miauseo-opinie-skup": (
