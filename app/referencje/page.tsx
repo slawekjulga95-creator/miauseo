@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import LightboxImage from "@/components/ui/LightboxImage";
-import CatWatermark from "@/components/ui/CatWatermark";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Referencje – MiauSEO | Szczere opinie ze współpracy",
@@ -10,302 +9,127 @@ export const metadata: Metadata = {
     "Prawdziwe referencje klientów MiauSEO. Piszemy wprost co poszło dobrze, co było trudne i jakie efekty osiągnęliśmy razem. Żadnej ściemy.",
 };
 
-const cases: {
-  id: string;
-  company: string;
-  service: string;
-  location: string;
-  paragraphs: ReactNode[];
-  good: string[];
-  hard: string[];
-  photo: string | null;
-  reverse: boolean;
-  caseStudySlug?: string;
-  stats?: { value: string; label: string }[];
+const portfolio: {
+  title: string;
+  description: ReactNode;
+  scope: string[];
+  href: string;
 }[] = [
   {
-    id: "01",
-    company: "iHelpyou.pl",
-    service: "Pozycjonowanie wizytówki Google",
-    location: "Serwis telefonów · Poznań",
-    paragraphs: [
-      <>iHelpyou.pl to serwis telefonów działający w centrum Poznania. Gdy zaczęliśmy współpracę, <strong className="text-ink">strona praktycznie nie istniała w organicznych wynikach Google</strong> — konkurencja z sieci franczyzowych dominowała na każde wartościowe frazy. Właściciel miał solidny warsztat i opinie klientów, ale <strong className="text-ink">online był niewidoczny</strong>.</>,
-      <>Skupiliśmy się na <strong className="text-ink">kompleksowej optymalizacji wizytówki GBP</strong>, kategorii, opisie usług z cenami i systematycznym zbieraniu opinii. W ciągu miesiąca liczba odwiedzin z wizytówki wzrosła o ponad <strong className="text-ink">26% rok do roku</strong>. Klienci zaczęli trafiać z wyszukiwań odkrywczych — nie tylko po nazwie firmy.</>,
-      <>Dziś serwis notuje <strong className="text-ink">stabilny ruch organiczny</strong> z wizytówki, który przekłada się na telefony od nowych klientów. Właściciel wie dokładnie, <strong className="text-ink">za co płaci i co się dzieje z jego profilem</strong>.</>,
+    title: "Protetyk",
+    description: (
+      <>
+        Realizacja obejmowała <strong className="text-ink">kompleksową optymalizację obecności firmy w Google</strong>. Wykonaliśmy działania związane z poprawą <strong className="text-ink">widoczności lokalnej</strong>, optymalizacją <strong className="text-ink">wizytówki Google</strong>, przygotowaniem treści oraz rozwojem strony internetowej.
+      </>
+    ),
+    scope: [
+      "Optymalizacja wizytówki GBP",
+      "Poprawa kategorii i usług",
+      "Optymalizacja danych NAP",
+      "Przygotowanie treści",
+      "Linkowanie wewnętrzne",
+      "Publikacja wpisów",
+      "Optymalizacja SEO strony",
+      "Wzrost widoczności lokalnej",
     ],
-    good: [
-      "Szybkie wdrożenie poprawek technicznych — właściciel sprawnie akceptował zmiany",
-      "Otwartość na sugestie dotyczące treści i rozbudowy profilu",
-      "Regularne spotkania — zawsze wiedzieliśmy, co jest aktualne w biznesie",
-    ],
-    hard: [
-      "Silna konkurencja franczyzowa z ogromnymi budżetami SEO wymusiła dłuższy czas oczekiwania na efekty",
-      "Pierwsze 3 miesiące bez widocznych wzrostów — trudny okres wymagający cierpliwości z obu stron",
-    ],
-    photo: "/referencje/1.png",
-    reverse: false,
-    caseStudySlug: "serwis-telefonow-poznan-case-study",
-    stats: [
-      { value: "154", label: "wizyty z GBP / mies." },
-      { value: "+26,2%", label: "wzrost r/r" },
-      { value: "30 dni", label: "do pierwszych efektów" },
-    ],
+    href: "/miauseo-opinie-protetyk",
   },
   {
-    id: "02",
-    company: "Estetic-Smile",
-    service: "Pozycjonowanie wizytówki Google",
-    location: "Gabinet Protetyczny · Piła",
-    paragraphs: [
-      <>Gabinet protetyczny Estetic-Smile działa w Pile — mieście, gdzie rynek stomatologiczny jest <strong className="text-ink">mocno obsadzony przez gabinety z wieloletnią historią</strong>. Klientka przyszła do nas po kilku miesiącach samodzielnych prób z wizytówką Google, <strong className="text-ink">które nie przyniosły efektów</strong>. Profil był założony, ale prawie pusty.</>,
-      <>Zaczęliśmy od <strong className="text-ink">kompleksowej optymalizacji wizytówki</strong>: kategorie, opis, usługi z cenami, zdjęcia wnętrza i sprzętu. Następnie wdrożyliśmy <strong className="text-ink">systematyczne zbieranie opinii od pacjentów</strong> — bez nachalnego proszenia, po prostu łatwiejszy proces dla klienta. W ciągu 6 tygodni <strong className="text-ink">liczba opinii wzrosła z 11 do ponad 38</strong>.</>,
-      <>Wizytówka zaczęła pojawiać się w <strong className="text-ink">top 3 Mapy Google</strong> na frazy lokalne. Klientka zgłasza wyraźnie <strong className="text-ink">więcej telefonów z pytaniami o wolne terminy</strong> — grafik zapełniony na 3 tygodnie do przodu.</>,
+    title: "Skup telefonów",
+    description: (
+      <>
+        Projekt realizowany w <strong className="text-ink">bardzo konkurencyjnej branży lokalnej</strong>. Skupiliśmy się na zwiększeniu <strong className="text-ink">widoczności wizytówki Google</strong> oraz poprawie <strong className="text-ink">pozycji na lokalne zapytania</strong> użytkowników.
+      </>
+    ),
+    scope: [
+      "Analiza konkurencji",
+      "Optymalizacja wizytówki GBP",
+      "Rozwój lokalnych fraz",
+      "Poprawa widoczności usług",
+      "Regularne aktualizacje",
+      "Przygotowanie treści",
+      "Wzrost zaangażowania",
+      "SEO zwiększające ruch",
     ],
-    good: [
-      "Duże zaangażowanie klientki w zbieranie opinii od pacjentów",
-      "Świetne zdjęcia wnętrza, które znacząco poprawiły atrakcyjność wizytówki",
-      "Szybka komunikacja — odpowiedzi na pytania zawsze w ciągu dnia",
-    ],
-    hard: [
-      "Branża medyczna ma ograniczenia w pewnych formach promocji — wymagała ostrożności w doborze słów w opisach",
-      "Sezonowość — wakacje spowalniały pozyskiwanie nowych opinii",
-    ],
-    photo: "/referencje/2.png",
-    reverse: true,
-    caseStudySlug: "protetyk-pila-case-study",
-    stats: [
-      { value: "62", label: "połączenia z GBP / mies." },
-      { value: "+27", label: "nowych opinii w 6 tyg." },
-      { value: "#2", label: "Local Pack Piła" },
-    ],
+    href: "/miauseo-opinie-skup",
   },
   {
-    id: "03",
-    company: "Rozluznijsie.pl",
-    service: "Pozycjonowanie wizytówki Google",
-    location: "Masaż z dojazdem · Poznań",
-    paragraphs: [
-      <>Rozluznijsie.pl to masaż z dojazdem w Poznaniu — branża z <strong className="text-ink">ponad 50 konkurentami</strong> walczącymi o te same frazy w Google Maps. Klientka zaczynała z jedną opinią i wizytówką uzupełnioną w 30%. Ruch z Google był zerowy.</>,
-      <>Praca zaczęła się od <strong className="text-ink">analizy wizytówki i profilu słów kluczowych</strong>. Ustawiliśmy obszar usług na całe miasto, uzupełniliśmy sekcję usług z cenami, dodaliśmy zdjęcia i cotygodniowe posty GBP. Wdrożyliśmy <strong className="text-ink">prosty system przypominania klientom</strong> o możliwości wystawienia opinii po wizycie.</>,
-      <>Po 60 dniach wizytówka weszła do <strong className="text-ink">top 3 Local Pack</strong> na frazę &quot;masaż z dojazdem Poznań&quot;. Liczba opinii wzrosła z 1 do 14 w pierwszym miesiącu. <strong className="text-ink">Nowi klienci z Google</strong> — których wcześniej nie było — zaczęli regularnie rezerwować wizyty.</>,
+    title: "Mobilny masaż",
+    description: (
+      <>
+        Stworzyliśmy <strong className="text-ink">stronę internetową</strong> oraz przygotowaliśmy <strong className="text-ink">fundamenty pod lokalne pozycjonowanie</strong> usługi mobilnej.
+      </>
+    ),
+    scope: [
+      "Stworzenie strony internetowej",
+      "Przygotowanie struktury SEO",
+      "Optymalizacja mobilna",
+      "Treści usługowe",
+      "Integracja z wizytówką GBP",
+      "Fundament widoczności lokalnej",
     ],
-    good: [
-      "Bardzo dobra relacja z klientami — wysoka naturalność opinii",
-      "Elastyczność właścicielki w testowaniu nowych pomysłów na treść",
-      "Wyraźny efekt w postaci nowych klientów — łatwy do zmierzenia",
-    ],
-    hard: [
-      "Mała liczba startowych opinii sprawiła, że pierwsze tygodnie były mało widoczne w wynikach",
-      "Konieczność edukacji na temat tego, że SEO to proces — nie jednorazowe działanie",
-    ],
-    photo: "/referencje/3.png",
-    reverse: false,
-    caseStudySlug: "masaz-z-dojazdem-poznan-case-study",
-    stats: [
-      { value: "#3", label: "Local Pack Poznań" },
-      { value: "1→14", label: "opinii w 30 dni" },
-      { value: "60 dni", label: "do top 3" },
-    ],
+    href: "/miauseo-opinie-mobilny-masaz",
   },
 ];
 
 export default function ReferencjePage() {
   return (
     <main className="pt-24">
-      {/* Intro */}
-      <section className="py-24 px-6 bg-white relative overflow-hidden">
-        <CatWatermark />
+      {/* Realizacje – portfolio */}
+      <section className="py-24 px-6 bg-surface">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-6">Referencje</span>
-              <h1 className="text-4xl sm:text-5xl font-bold text-ink leading-tight mb-6">
-                Zależy mi na rozmowie o Twojej firmie.{" "}
-                <span className="text-brand">Nie na liście logo.</span>
-              </h1>
-              <p className="text-zinc-500 text-lg leading-relaxed mb-8">
-                Poniżej przedstawiamy firmy, z którymi współpracowaliśmy — co poszło dobrze, co było trudne i czego nie powtórzymy. Nie ma tu setki logo dla wrażenia. Jest konkret.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
-                  Porozmawiajmy o Twoim biznesie
-                </Link>
-                <Link href="/uslugi/wizytowka-google" className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200">
-                  Sprawdź ofertę
-                </Link>
-              </div>
-            </div>
-            <div className="bg-surface rounded-3xl p-8 border border-border">
-              <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-6">Jak podchodzę do referencji</p>
-              <div className="space-y-5">
-                {[
-                  { bold: "Żadnych wykresów z jednego miesiąca,", rest: " które wyglądają imponująco ale ukrywają brak realnych efektów." },
-                  { bold: "Konkretne rozmowy z klientami", rest: " — możesz zapytać co poszło dobrze, co było trudne i czego nie powtórzymy." },
-                  { bold: "Transparentność przed podpisaniem umowy", rest: " — najpierw rozmawiamy o Twojej firmie, potem proponuję rozwiązanie." },
-                  { bold: "Każdy biznes jest inny", rest: " — nie stosuję szablonowych rozwiązań. Strategia zawsze zaczyna się od Twojej sytuacji." },
-                ].map((item, i) => (
-                  <div key={i} className="flex gap-3 items-start">
-                    <div className="shrink-0 w-5 h-5 rounded-full bg-brand/10 flex items-center justify-center mt-0.5">
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                    </div>
-                    <p className="text-sm text-zinc-600 leading-relaxed"><strong className="text-ink">{item.bold}</strong>{item.rest}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="max-w-2xl mb-12">
+            <h1 className="text-3xl md:text-4xl font-bold text-ink leading-tight mb-4">
+              Jak <span className="text-brand">działamy</span>
+            </h1>
+            <p className="text-zinc-500 leading-relaxed mb-6">
+              Przedstawiamy poniżej przykłady branż i sposób działania, aby osiągnąć efekty o których rozmawialiśmy. Każda branża jest inna, ale wdrożenie odpowiednich działań pomaga zwiększyć widoczność. Sprawdź jak wygląda współpraca i porozmawiajmy o Twojej firmie.
+            </p>
+            <p className="text-sm font-bold text-ink">Konkretne przykłady z opisem:</p>
           </div>
-        </div>
-      </section>
 
-      {/* Divider */}
-      <div className="h-px bg-border max-w-5xl mx-auto" />
+          <div className="grid lg:grid-cols-3 lg:grid-rows-[auto_auto_auto_auto_1fr_auto] gap-6 items-stretch">
+            {portfolio.map((p) => (
+              <article
+                key={p.href}
+                className="flex flex-col lg:grid lg:grid-rows-subgrid lg:row-span-6 rounded-2xl p-7 bg-white border border-border hover:border-brand/40 transition-colors duration-200"
+              >
+                <Image
+                  src="/logo.png"
+                  alt="MiauSEO"
+                  width={224}
+                  height={64}
+                  sizes="112px"
+                  className="self-start justify-self-start h-8 w-auto mb-5"
+                />
+                <h3 className="text-xl font-bold text-ink mb-3">{p.title}</h3>
+                <p className="text-[15px] text-zinc-600 leading-relaxed mb-6">{p.description}</p>
 
-      {/* Case studies */}
-      {cases.map((item, i) => (
-        <section
-          key={item.id}
-          className={`py-20 px-6 ${i % 2 === 1 ? "bg-surface" : "bg-white"}`}
-        >
-          <div className="max-w-6xl mx-auto">
-            {/* Header */}
-            <div className="flex flex-wrap items-center gap-4 mb-10">
-              <span className="text-[4rem] font-bold text-brand/15 leading-none select-none">{item.id}</span>
-              <div className="flex-1 min-w-0">
-                <p className="text-xs text-zinc-400 uppercase tracking-widest font-semibold mb-1">{item.location}</p>
-                <h2 className="text-2xl md:text-3xl font-bold text-ink">{item.company}</h2>
-                <p className="text-brand font-semibold text-sm mt-1">{item.service}</p>
-              </div>
-              {item.caseStudySlug && (
+                <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-3">Zakres działań</p>
+                <ul className="space-y-2.5 mb-8">
+                  {p.scope.map((s, j) => (
+                    <li key={j} className="flex items-center gap-2.5 text-sm text-zinc-600 leading-relaxed whitespace-nowrap">
+                      <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-brand" />
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+
                 <Link
-                  href={`/${item.caseStudySlug}`}
-                  className="shrink-0 inline-flex items-center gap-2 text-sm font-bold text-brand border border-brand/30 hover:bg-brand hover:text-white px-5 py-2.5 rounded-xl transition-all duration-200"
+                  href={p.href}
+                  aria-label={`Zobacz pełną realizację — ${p.title}`}
+                  className="mt-auto inline-flex items-center justify-center gap-2 text-sm font-bold px-5 py-3 rounded-xl border border-border text-ink hover:border-brand hover:text-brand transition-colors duration-200"
                 >
-                  Czytaj pełne case study
+                  Zobacz pełną realizację
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
                   </svg>
                 </Link>
-              )}
-            </div>
-
-            {/* Stats row */}
-            {item.stats && (
-              <div className="grid grid-cols-3 gap-4 mb-10">
-                {item.stats.map((s, j) => (
-                  <div key={j} className="bg-white border border-border rounded-2xl px-6 py-5 text-center">
-                    <p className="text-3xl font-black text-ink leading-none mb-1">{s.value}</p>
-                    <p className="text-xs text-zinc-400 font-medium leading-snug">{s.label}</p>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {/* Main 2-col */}
-            <div className={`flex flex-col ${item.reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-12 mb-12 items-center`}>
-              {/* Text */}
-              <div className="lg:w-1/2 flex flex-col justify-center space-y-5">
-                {item.paragraphs.map((p, j) => (
-                  <p key={j} className="text-zinc-600 leading-relaxed text-[15px] border-l-2 border-brand/20 pl-4">{p}</p>
-                ))}
-              </div>
-
-              {/* Photo */}
-              <div className={`lg:w-1/2 ${item.id === "01" ? "lg:w-[55%]" : ""}`}>
-                <div className="relative">
-                  <div className={`rounded-2xl overflow-hidden bg-zinc-100 flex items-center justify-center ${item.id === "01" ? "min-h-[320px]" : "min-h-[280px]"}`}>
-                    {item.photo ? (
-                      <LightboxImage
-                        src={item.photo}
-                        alt={`Wyniki ${item.company}`}
-                        className="w-full h-full object-contain rounded-2xl"
-                      />
-                    ) : (
-                      <div className="text-center p-8">
-                        <div className="w-16 h-16 rounded-full bg-brand/10 flex items-center justify-center mx-auto mb-3">
-                          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" />
-                            <circle cx="8.5" cy="8.5" r="1.5" />
-                            <polyline points="21 15 16 10 5 21" />
-                          </svg>
-                        </div>
-                        <p className="text-zinc-400 text-sm">Zdjęcie klienta</p>
-                      </div>
-                    )}
-                  </div>
-                  <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl bg-brand/15 -z-10" />
-                  {item.photo && (
-                    <div className="absolute bottom-3 right-3 bg-black/50 text-white text-xs px-2.5 py-1 rounded-lg flex items-center gap-1.5 pointer-events-none">
-                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                        <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
-                      </svg>
-                      Kliknij aby powiększyć
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* Good / Hard */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-green-50 border border-green-100 rounded-2xl p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-7 h-7 rounded-full bg-green-100 flex items-center justify-center shrink-0">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                  </div>
-                  <h3 className="font-bold text-green-800 text-sm uppercase tracking-wide">Co poszło dobrze</h3>
-                </div>
-                <ul className="space-y-3">
-                  {item.good.map((g, j) => (
-                    <li key={j} className="flex items-start gap-2.5 text-sm text-green-900 leading-relaxed">
-                      <span className="text-green-500 mt-0.5 shrink-0">✓</span>
-                      {g}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="bg-orange-50 border border-orange-100 rounded-2xl p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-7 h-7 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <line x1="12" y1="9" x2="12" y2="13" />
-                      <line x1="12" y1="17" x2="12.01" y2="17" />
-                      <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
-                    </svg>
-                  </div>
-                  <h3 className="font-bold text-orange-800 text-sm uppercase tracking-wide">Co było trudne</h3>
-                </div>
-                <ul className="space-y-3">
-                  {item.hard.map((h, j) => (
-                    <li key={j} className="flex items-start gap-2.5 text-sm text-orange-900 leading-relaxed">
-                      <span className="text-brand mt-0.5 shrink-0">–</span>
-                      {h}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* Case study CTA bottom */}
-            {item.caseStudySlug && (
-              <div className="mt-8 flex justify-end">
-                <Link
-                  href={`/${item.caseStudySlug}`}
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-400 hover:text-brand transition-colors"
-                >
-                  Szczegółowa analiza tego przypadku
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
-                  </svg>
-                </Link>
-              </div>
-            )}
+              </article>
+            ))}
           </div>
-        </section>
-      ))}
+        </div>
+      </section>
 
       {/* Bottom CTA */}
       <section className="bg-ink py-20 px-6">
