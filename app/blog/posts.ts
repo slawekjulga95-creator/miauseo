@@ -26,6 +26,17 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "miauseo-opinie-skup",
+    title: "MiauSEO Opinie - 466 wizyt w punkcie - 3 miesiące",
+    excerpt: "Skup telefonów konkurujący z sieciówkami, które mają budżety marketingowe wielokrotnie większe od całego rocznego przychodu klienta. Pokazujemy, jak rozbudowa strony pod frazę „skup telefonów”, blog, zaplecze NAP i wdrożony system opinii przełożyły się na 466 wizyt w punkcie w trzy miesiące — i dlaczego stabilność pozycji jest tu ważniejsza niż jednorazowy skok.",
+    category: "Opinie",
+    date: "2026-07-14",
+    readTime: 14,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-miauseo-opinie-skup.svg",
+    published: true,
+  },
+  {
     slug: "miauseo-opinie-protetyk",
     title: "miauSEO - Opinie - 180 połączeń - 4 miesiące w 2026",
     excerpt: "Wpisałeś w Google „miauSEO opinie”? Zamiast obietnic pokazujemy prawdziwą współpracę z gabinetem protetycznym — od optymalizacji wizytówki Google i uporządkowania danych NAP po zmianie adresu, przez wdrożony u klienta system zbierania opinii, aż po twarde liczby: ponad 180 połączeń od kwietnia do 12 lipca 2026, ze zrzutami statystyk miesiąc po miesiącu.",

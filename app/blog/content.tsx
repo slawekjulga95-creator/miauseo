@@ -3,6 +3,138 @@ import Link from "next/link";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     OPINIE / CASE STUDY: miauSEO Opinie — skup telefonów 2026
+  ───────────────────────────────────────────────────────────────────────── */
+  "miauseo-opinie-skup": (
+    <>
+      <p>
+        Ten case study opisuje współpracę z firmą prowadzącą skup telefonów, która dodatkowo zajmuje się serwisem i naprawą sprzętu. To branża, w której konkurencja jest wyjątkowo bezlitosna: po drugiej stronie wyników wyszukiwania stoją sieciówki i skupy działające w skali ogólnopolskiej, z budżetami marketingowymi wielokrotnie większymi niż roczny przychód lokalnego punktu. Nie da się ich przelicytować pieniędzmi. Można je natomiast wyprzedzić jakością — i właśnie na tym oparliśmy całą strategię.
+      </p>
+      <p>
+        Efektem trzech miesięcy pracy jest <strong>466 wizyt w punkcie</strong> pochodzących z ruchu, który wygenerowaliśmy w Google. Ważniejsze jednak od samej liczby jest to, co za nią stoi: pozycje, które nie skaczą z tygodnia na tydzień i przechodzą kolejne aktualizacje algorytmu bez zadyszki.
+      </p>
+
+      {/* ── Pasek wyników ── */}
+      <div className="not-prose my-8 rounded-2xl border border-border bg-white p-6">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          {[
+            { v: "466", l: "wizyt w punkcie" },
+            { v: "3 mies.", l: "czas realizacji" },
+            { v: "0", l: "spadków pozycji" },
+          ].map((s) => (
+            <div key={s.l} className="rounded-xl border border-border bg-zinc-50 p-4 text-center">
+              <div className="text-3xl font-extrabold text-ink">{s.v}</div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-zinc-500">{s.l}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <h2>Punkt wyjścia — co zastaliśmy</h2>
+      <p>
+        Klient miał działający biznes i zadowolonych klientów, ale w Google praktycznie nie istniał. Strona była wizytówką w najgorszym znaczeniu tego słowa: kilka ekranów tekstu, jedna podstrona kontaktowa, żadnej treści, która odpowiadałaby na realne pytania osoby chcącej sprzedać telefon. Fraza „skup telefonów” nie miała na stronie żadnego naturalnego miejsca — nie było podstrony, którą Google mógłby uznać za odpowiedź na to zapytanie.
+      </p>
+      <p>
+        Do tego dochodził problem, którego klient w ogóle nie widział: dane firmy — nazwa, adres i telefon — funkcjonowały w sieci w kilku różnych wariantach. Raz z jednym numerem, raz z drugim, raz z inną formą nazwy. Dla wyszukiwarki to nie jest drobiazg kosmetyczny, tylko sygnał niepewności: skoro sama firma nie mówi jednym głosem, trudno traktować ją jako wiarygodne źródło.
+      </p>
+
+      <h2>Cel projektu</h2>
+      <p>
+        Cel ustaliliśmy wąsko i mierzalnie, bo w tej branży „więcej widoczności” nic nie znaczy. Chodziło o to, żeby osoba, która ma w szufladzie telefon do sprzedania i wpisuje w Google „skup telefonów”, trafiała na naszego klienta zamiast na sieciówkę — i żeby po wejściu na stronę wiedziała, ile dostanie i co ma zrobić dalej. Wizyta w punkcie jest tu jedyną walutą, która się liczy. Sprzedaż telefonu wymaga fizycznego przyjścia albo wysyłki, więc ruch, który nie kończy się wizytą, jest ruchem bezwartościowym.
+      </p>
+      <p>
+        Drugim celem było rozszerzenie widoczności poza samą frazę główną — na serwis i naprawę telefonów. Ten sam punkt, ta sama obsługa, a zupełnie inny klient i zupełnie inny moment w jego głowie.
+      </p>
+
+      <h2>Wyzwania rynkowe — dlaczego to trudna branża</h2>
+      <p>
+        Skup telefonów to jedna z tych kategorii, w których pieniądz robi ogromną różnicę. Duzi gracze mają zespoły content marketingowe, budżety na linki i wieloletnią historię domeny. Konkurując z nimi frontalnie — czyli próbując przelicytować ich objętością treści i liczbą linków — lokalna firma przegrywa, zanim zacznie.
+      </p>
+      <p>
+        Doszło do tego drugie wyzwanie, specyficzne dla tej branży: <strong>niskie zaufanie na starcie</strong>. Człowiek sprzedający telefon oddaje obcej firmie urządzenie warte często kilka tysięcy złotych, razem ze wszystkim, co ma w środku. Boi się dwóch rzeczy — że dostanie mniej, niż mu obiecano, i że jego dane trafią w nieznane ręce. Każda niejasność w wycenie, każdy brak informacji o procedurze i każda niepewność co do tego, kim właściwie jest firma po drugiej stronie, kosztuje transakcję.
+      </p>
+      <p>
+        Uznaliśmy więc, że skoro nie wygramy budżetem, musimy wygrać wiarygodnością. To nie jest slogan — to była konkretna decyzja strategiczna, która przełożyła się na każdy kolejny krok.
+      </p>
+
+      <h2>Krok 1. Rozbudowa strony pod frazę główną</h2>
+      <p>
+        Zaczęliśmy od zbudowania podstrony, która jest jednoznaczną, pełną odpowiedzią na zapytanie „skup telefonów”. Nie chodziło o upchnięcie frazy w nagłówku, tylko o pokrycie całej ścieżki decyzyjnej człowieka, który rozważa sprzedaż sprzętu.
+      </p>
+      <p>
+        Na tej podstronie znalazły się elementy, których brakowało u konkurencji albo były tam ukryte drobnym drukiem: przejrzysta informacja o tym, jak wygląda wycena i od czego zależy kwota, opis stanu technicznego wpływającego na cenę, jasne wyjaśnienie procedury odbioru i płatności, informacja o tym, co dzieje się z danymi na urządzeniu, oraz odpowiedzi na pytania, które ludzie realnie zadają przed sprzedażą telefonu — o telefony z uszkodzonym ekranem, o urządzenia bez ładowarki i pudełka, o blokadę operatora, o telefony na gwarancji.
+      </p>
+      <p>
+        Równolegle przebudowaliśmy architekturę informacji całego serwisu. Wcześniej wszystko było na jednej kupie; po zmianach każda intencja użytkownika ma swoje miejsce w strukturze — osobno sprzedaż sprzętu, osobno serwis, osobno naprawa. Menu, linkowanie wewnętrzne i adresy podstron zostały ułożone tak, żeby zarówno człowiek, jak i robot wyszukiwarki po dwóch sekundach wiedzieli, gdzie są i co mogą tu zrobić.
+      </p>
+
+      <h2>Krok 2. Blog i content marketing</h2>
+      <p>
+        Uruchomiliśmy zakładkę blog i zaczęliśmy publikować treści odpowiadające na pytania, które ludzie wpisują w Google, zanim w ogóle zdecydują, że chcą sprzedać telefon. To jest klucz do wyprzedzenia sieciówek: nie walczymy z nimi na frazę główną gołymi rękami, tylko przejmujemy ruch na etapie, na którym duzi gracze nie zadają sobie trudu.
+      </p>
+      <p>
+        Treści budowaliśmy w dwóch warstwach. Pierwsza wspiera frazę główną i odpowiada na pytania okołosprzedażowe — ile realnie jest wart używany telefon, co zrobić z urządzeniem przed oddaniem, jak bezpiecznie usunąć dane, czy opłaca się naprawiać telefon przed sprzedażą. Druga warstwa to długi ogon wokół serwisu i naprawy: konkretne usterki, konkretne modele, konkretne objawy. Człowiek, który wpisuje w Google opis swojej awarii, ma dokładnie ten problem, który klient rozwiązuje zawodowo.
+      </p>
+      <p>
+        Każdy artykuł pisaliśmy tak, żeby dawał odpowiedź od razu, w pierwszym akapicie, a dopiero potem rozwijał temat. To nie jest kaprys stylistyczny — tak zbudowana treść jest znacznie chętniej cytowana przez wyszukiwarki generatywne i podsumowania AI, które wybierają fragmenty dające konkretną odpowiedź, a nie rozgrzewkę na tysiąc znaków.
+      </p>
+
+      <h2>Krok 3. Zaplecze linkowe i spójność NAP</h2>
+      <p>
+        Zamiast kupować linki na masową skalę, uporządkowaliśmy obecność firmy w sieci od podstaw. Punktem wyjścia było ujednolicenie danych NAP — nazwy, adresu i telefonu — we wszystkich miejscach, w których firma występuje. Jedna forma zapisu, wszędzie identyczna, konsekwentnie utrzymywana.
+      </p>
+      <p>
+        Na tym fundamencie zbudowaliśmy zaplecze cytowań: wpisy w katalogach i serwisach branżowych, w których dane firmy pojawiają się w tej samej, spójnej postaci. Dla wyszukiwarki każde takie wystąpienie to niezależne potwierdzenie, że firma jest realna, działa i jest tym, za kogo się podaje. To sygnał, którego nie da się podrobić samą liczbą linków.
+      </p>
+      <p>
+        Elementem tej strategii jest też podstrona typu <strong>/opinie-skup</strong> — miejsce, w którym doświadczenie klientów zostaje zebrane, opisane i podlinkowane wewnątrz serwisu. Pełni ona podwójną rolę. Dla użytkownika to dowód, że po drugiej stronie stoją ludzie, którzy wywiązują się z obietnic. Dla wyszukiwarki to sygnał E-E-A-T — doświadczenia, wiedzy, autorytetu i wiarygodności — czyli dokładnie tego, na czym Google opiera ocenę firm z kategorii, w których użytkownik ryzykuje pieniądze.
+      </p>
+
+      <h2>Krok 4. Opinie i reputacja</h2>
+      <p>
+        Wdrożyliśmy u klienta proces zbierania opinii — na tyle prosty, żeby faktycznie działał w codziennej pracy punktu, a nie tylko w prezentacji. Każdy klient, który sprzedał telefon albo odebrał naprawiony sprzęt, dostaje wygodną ścieżkę do wystawienia opinii. Bez nagabywania i bez wciskania — po prostu bez tarcia.
+      </p>
+      <p>
+        Do tego doszło zarządzanie tym, co już się pojawia: odpowiadanie na opinie, także te trudne, konkretnie i bez defensywy. W branży, w której klient zostawia u obcych ludzi telefon wart kilka tysięcy złotych, publiczna odpowiedź właściciela na wątpliwość innego klienta jest wart więcej niż każda reklama.
+      </p>
+      <p>
+        Opinie pracują tu na trzech poziomach naraz. Podnoszą konwersję, bo człowiek waha się krócej. Wzmacniają sygnały lokalne, bo świeże, regularnie napływające opinie są dla Google dowodem, że firma żyje. I wreszcie zwiększają cytowalność w odpowiedziach generowanych przez AI — modele językowe, budując rekomendację, sięgają po źródła, które mają potwierdzenie w niezależnych sygnałach zaufania.
+      </p>
+
+      <h2>Krok 5. Rozszerzenie na frazy powiązane</h2>
+      <p>
+        Gdy fundament pod frazę główną był już stabilny, rozszerzyliśmy widoczność na serwis i naprawę telefonów. To ruch o innej charakterystyce: klient nie chce sprzedać sprzętu, tylko go uratować. Ma inną motywację, inny poziom pilności i trafia do firmy w innym momencie.
+      </p>
+      <p>
+        Ta dywersyfikacja ma też wymiar czysto biznesowy — chroni firmę przed uzależnieniem od jednej frazy. Gdyby konkurencja rzuciła cały budżet na „skup telefonów”, klient nadal ma drugie źródło wizyt. A z naszej perspektywy każdy klient serwisu jest potencjalnym klientem skupu za rok albo dwa, gdy zdecyduje się na wymianę sprzętu.
+      </p>
+
+      <h2>Rezultaty — 466 wizyt i stabilność</h2>
+      <p>
+        W ciągu trzech miesięcy działania przełożyły się na <strong>466 wizyt w punkcie</strong>. To ludzie, którzy fizycznie przyszli z telefonem — nie kliknięcia, nie wyświetlenia, nie „zasięgi”.
+      </p>
+      <p>
+        Dużo ważniejsza jest jednak druga liczba, ta, której nie ma: <strong>zero spadków pozycji</strong>. Wyniki nie skaczą z tygodnia na tydzień, nie znikają po aktualizacji algorytmu i nie wymagają gaszenia pożarów. W branży, w której konkurencja regularnie testuje agresywne skróty i równie regularnie za nie płaci, stabilność jest osiągnięciem samym w sobie.
+      </p>
+      <p>
+        To nie jest przypadek — to bezpośrednia konsekwencja tego, jak zbudowaliśmy ten projekt. Nie ma tu kupionych linków, które mogą zniknąć z dnia na dzień. Nie ma treści generowanych masowo pod algorytm. Nie ma sztucznych sygnałów, które przy kolejnym filtrze Google zamieniają się w obciążenie. Jest strona, która realnie odpowiada na pytania, spójne dane firmy, prawdziwe opinie prawdziwych klientów i profil linkowy, który wygląda dokładnie tak, jak wygląda profil linkowy firmy, która po prostu istnieje i działa.
+      </p>
+
+      <h2>Wnioski</h2>
+      <p>
+        Ten projekt jest dowodem na coś, co powtarzamy każdemu klientowi wchodzącemu do konkurencyjnej branży: z sieciówką nie wygrywa się budżetem, tylko trafnością. Duży gracz mówi do wszystkich naraz i dlatego mówi ogólnikami. Lokalna firma może odpowiedzieć konkretnie na konkretne pytanie konkretnego człowieka — i właśnie ta konkretność jest przewagą, której nie da się kupić.
+      </p>
+      <p>
+        Jeśli szukasz frazy „MiauSEO opinie”, bo chcesz sprawdzić, czy naprawdę dowozimy efekty — masz je opisane wyżej, razem z metodą, która do nich doprowadziła. Jeśli działasz w równie trudnej branży i chcesz wiedzieć, od czego zacząć u siebie, umów się na rozmowę.
+      </p>
+      <p>
+        <Link href="/kontakt" className="text-brand font-semibold hover:underline">Umów bezpłatną konsultację z miauSEO →</Link>
+      </p>
+    </>
+  ),
+
+
+  /* ─────────────────────────────────────────────────────────────────────────
      OPINIE / CASE STUDY: miauSEO Opinie — branża protetyczna 2026
   ───────────────────────────────────────────────────────────────────────── */
   "miauseo-opinie-protetyk": (
