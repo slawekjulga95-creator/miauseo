@@ -26,6 +26,18 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "kiedy-nie-pozycjonowac-strony-internetowej",
+    title: "Kiedy NIE pozycjonować strony? 7 sytuacji",
+    excerpt: "Kiedy nie pozycjonować strony internetowej? Oto 7 sytuacji, w których SEO to zły pomysł — i co robić zamiast tego, żeby nie przepalić budżetu na start.",
+    category: "Poradnik",
+    date: "2026-07-18",
+    readTime: 10,
+    coverColor: "#f59e0b",
+    coverImage: "/blog/cover-kiedy-nie-pozycjonowac-strony-internetowej.svg",
+    published: true,
+    popular: true,
+  },
+  {
     slug: "miauseo-opinie-mobilny-masaz",
     title: "MiauSEO - strona WWW i podstrony lokalizacyjne w 2026",
     excerpt: "Case study z branży masażu mobilnego. Zbudowaliśmy stronę od zera — architekturę pod frazy „mobilny masaż” i „masaż z dojazdem”, osobne podstrony lokalizacyjne dopasowane do obszarów dojazdu oraz blog budujący kontekst tematyczny wokół usługi. Opisujemy też, dlaczego projekt świadomie skupił się wyłącznie na stronie i treściach.",
