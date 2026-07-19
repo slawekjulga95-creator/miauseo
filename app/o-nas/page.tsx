@@ -89,8 +89,8 @@ export default function ONasPage() {
 
       {/* ── Co zyskujesz ze współpracy ── */}
       <section className="relative overflow-hidden py-24 bg-surface">
-        {/* Znak wodny — logo marki w tle */}
-        <div aria-hidden className="pointer-events-none select-none absolute -right-20 top-10 w-[560px] max-w-[75%] opacity-[0.04]">
+        {/* Znak wodny — logo marki wyśrodkowane w tle */}
+        <div aria-hidden className="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[680px] max-w-[85%] opacity-[0.04]">
           <Image src="/logo.png" alt="" width={896} height={256} className="w-full h-auto" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
