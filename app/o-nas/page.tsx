@@ -89,13 +89,13 @@ export default function ONasPage() {
 
       {/* ── Co zyskujesz ze współpracy ── */}
       <section className="relative overflow-hidden py-24 bg-surface">
-        {/* Znak wodny — logo marki wyśrodkowane w tle */}
-        <div aria-hidden className="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[680px] max-w-[85%] opacity-[0.04]">
-          <Image src="/logo.png" alt="" width={896} height={256} className="w-full h-auto" />
-        </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <ScrollReveal>
-            <div className="text-center mb-16">
+            <div className="relative text-center mb-16">
+              {/* Znak wodny — logo marki w tle nagłówka */}
+              <div aria-hidden className="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-[620px] max-w-[85%] opacity-[0.05]">
+                <Image src="/logo.png" alt="" width={896} height={256} className="w-full h-auto" />
+              </div>
               <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
                 Twoje korzyści
               </span>
@@ -190,12 +190,12 @@ export default function ONasPage() {
 
       {/* ── Etapy współpracy ── */}
       <section className="relative overflow-hidden py-24 bg-white">
-        {/* Znak wodny — logo marki wyśrodkowane w tle */}
-        <div aria-hidden className="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[680px] max-w-[85%] opacity-[0.04]">
-          <Image src="/logo.png" alt="" width={896} height={256} className="w-full h-auto" />
-        </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="relative text-center mb-16">
+            {/* Znak wodny — logo marki w tle nagłówka */}
+            <div aria-hidden className="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-[620px] max-w-[85%] opacity-[0.05]">
+              <Image src="/logo.png" alt="" width={896} height={256} className="w-full h-auto" />
+            </div>
             <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
               Proces
             </span>
