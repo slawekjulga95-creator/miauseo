@@ -8,7 +8,7 @@ const services = [
 ];
 
 const company = [
-  { href: "/o-nas", label: "O nas" },
+  { href: "/o-nas", label: "Jak działamy" },
   { href: "/referencje", label: "Referencje" },
   { href: "/blog", label: "Blog" },
   { href: "/slownik", label: "Słownik SEO/SEM" },

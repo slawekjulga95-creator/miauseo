@@ -160,7 +160,7 @@ export default function Navbar() {
                   isActive("/o-nas") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
                 }`}
               >
-                O nas
+                Jak działamy
               </Link>
             </li>
 
@@ -296,7 +296,7 @@ export default function Navbar() {
 
           <Link href="/o-nas" onClick={() => setOpen(false)}
             className={`text-2xl font-semibold py-3 border-b border-border transition-colors duration-150 ${isActive("/o-nas") ? "text-brand" : "text-ink hover:text-brand"}`}>
-            O nas
+            Jak działamy
           </Link>
 
           {/* Mobile services accordion */}
