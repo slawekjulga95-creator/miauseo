@@ -88,8 +88,12 @@ export default function ONasPage() {
     <main className="pt-20">
 
       {/* ── Co zyskujesz ze współpracy ── */}
-      <section className="py-24 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="relative overflow-hidden py-24 bg-surface">
+        {/* Znak wodny — logo marki w tle */}
+        <div aria-hidden className="pointer-events-none select-none absolute -right-20 top-10 w-[560px] max-w-[75%] opacity-[0.04]">
+          <Image src="/logo.png" alt="" width={896} height={256} className="w-full h-auto" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-16">
               <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
