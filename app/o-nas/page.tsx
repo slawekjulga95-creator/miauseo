@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 const benefits = [
   {
     title: "Zawsze wiesz, co się dzieje",
+    photo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&auto=format&fit=crop&crop=center",
     desc: (
       <>Masz <strong className="font-semibold text-ink">pełny wgląd w każdy etap</strong> i realne efekty naszej pracy. Bez ukrytych kosztów i niejasnych zasad — warunki znasz od pierwszego dnia. To Ty zachowujesz <strong className="font-semibold text-ink">pełną kontrolę</strong> nad swoim projektem.</>
     ),
@@ -21,6 +23,7 @@ const benefits = [
   },
   {
     title: "Współpraca dopasowana do Ciebie",
+    photo: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80&auto=format&fit=crop&crop=center",
     desc: (
       <>Zakres działań <strong className="font-semibold text-ink">dostosowujemy do Twoich potrzeb</strong> i bieżącej sytuacji firmy. Chcesz coś zmienić albo przyspieszyć? Reagujemy na bieżąco. <strong className="font-semibold text-ink">Nie narzucamy sztywnego modelu</strong>, w który musisz się wpasować.</>
     ),
@@ -32,6 +35,7 @@ const benefits = [
   },
   {
     title: "Efekty widzisz bez pytania",
+    photo: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80&auto=format&fit=crop&crop=center",
     desc: (
       <>Regularnie dostajesz <strong className="font-semibold text-ink">aktualizacje i konkretne wyniki</strong> — nie musisz dopominać się o raporty ani sprawdzać, czy coś się dzieje. Sami dbamy o to, <strong className="font-semibold text-ink">żebyś był na bieżąco</strong> na każdym etapie.</>
     ),
@@ -43,6 +47,7 @@ const benefits = [
   },
   {
     title: "Jedna osoba, która Cię zna",
+    photo: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80&auto=format&fit=crop&crop=center",
     desc: (
       <>Masz <strong className="font-semibold text-ink">swojego opiekuna</strong>, który prowadzi Twój projekt od początku do końca. Nie przechodzisz między działami ani konsultantami. Zawsze wiesz, <strong className="font-semibold text-ink">do kogo się zgłosić</strong> — i kto odpowiada za Twoje wyniki.</>
     ),
@@ -106,12 +111,29 @@ export default function ONasPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {benefits.map((b, i) => (
               <ScrollReveal key={b.title} delay={i * 75}>
-                <div className="group h-full bg-white rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
-                  <div className="w-12 h-12 rounded-xl bg-brand/10 text-brand flex items-center justify-center mb-5 group-hover:bg-brand group-hover:text-white transition-colors duration-200">
-                    {b.icon}
+                <div className="group h-full flex flex-col bg-white rounded-2xl overflow-hidden border border-border hover:border-brand hover:shadow-xl hover:-translate-y-1 transition-all duration-200">
+                  {/* Zdjęcie + gradient + ikona + tytuł */}
+                  <div className="relative aspect-[16/10] overflow-hidden">
+                    <Image
+                      src={b.photo}
+                      alt={b.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/20 to-transparent" />
+                    <div className="absolute top-3.5 left-3.5 w-11 h-11 rounded-xl bg-white/95 backdrop-blur text-brand flex items-center justify-center shadow-lg">
+                      {b.icon}
+                    </div>
+                    <h3 className="absolute bottom-3.5 left-3.5 right-3.5 text-base font-bold text-white drop-shadow-sm leading-snug">
+                      {b.title}
+                    </h3>
                   </div>
-                  <h3 className="text-base font-bold text-ink mb-3 leading-snug">{b.title}</h3>
-                  <p className="text-sm text-zinc-500 leading-relaxed">{b.desc}</p>
+                  {/* Opis */}
+                  <div className="flex-1 p-6">
+                    <p className="text-sm text-zinc-500 leading-relaxed">{b.desc}</p>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}
