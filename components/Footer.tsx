@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             {/* Opis */}
             <p className="text-white/50 text-sm leading-relaxed mb-6">
-              Pomagam małym firmom zdobywać klientów z Google — bez przepalania budżetu i bez umów na rok.
+              Pomagam <strong className="font-semibold text-white/80">małym i średnim firmom</strong> zdobywać <strong className="font-semibold text-white/80">klientów z Google</strong> — <strong className="font-semibold text-white/80">bez przepalania budżetu</strong> i <strong className="font-semibold text-white/80">bez umów na rok</strong>.
             </p>
 
             {/* Dane kontaktowe */}
