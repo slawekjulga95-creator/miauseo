@@ -1,54 +1,55 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import CatWatermark from "@/components/ui/CatWatermark";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "O nas – MiauSEO",
   description: "Poznaj historię MiauSEO. 11 lat doświadczenia w marketingu lokalnym, pozycjonowaniu wizytówki Google i kampaniach reklamowych dla małych i średnich firm.",
 };
 
-const reasons = [
+const benefits = [
   {
-    title: "Realne wyniki, zero trików",
+    title: "Zawsze wiesz, co się dzieje",
     desc: (
-      <>Jak koty: <strong className="font-semibold text-ink">niezależni, czujni i odporni na sztuczki</strong>. Nie obiecujemy cudów ani nie czarujemy raportami — robimy to, co faktycznie <strong className="font-semibold text-ink">przekłada się na telefony i klientów</strong>.</>
+      <>Masz <strong className="font-semibold text-ink">pełny wgląd w każdy etap</strong> i realne efekty naszej pracy. Bez ukrytych kosztów i niejasnych zasad — warunki znasz od pierwszego dnia. To Ty zachowujesz <strong className="font-semibold text-ink">pełną kontrolę</strong> nad swoim projektem.</>
     ),
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="4.5" /><circle cx="12" cy="12" r="0.5" fill="currentColor" />
+        <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" /><circle cx="12" cy="12" r="3" />
       </svg>
     ),
   },
   {
-    title: "11 lat doświadczenia",
+    title: "Współpraca dopasowana do Ciebie",
     desc: (
-      <><strong className="font-semibold text-ink">Setki firm</strong> — od jednoosobowych działalności po rozbudowane sieci lokalne. Widzieliśmy, <strong className="font-semibold text-ink">co naprawdę działa</strong>, a co tylko ładnie wygląda w zestawieniu.</>
+      <>Zakres działań <strong className="font-semibold text-ink">dostosowujemy do Twoich potrzeb</strong> i bieżącej sytuacji firmy. Chcesz coś zmienić albo przyspieszyć? Reagujemy na bieżąco. <strong className="font-semibold text-ink">Nie narzucamy sztywnego modelu</strong>, w który musisz się wpasować.</>
     ),
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="8" r="6" /><path d="M8.21 13.89 7 22l5-3 5 3-1.21-8.11" />
+        <line x1="4" y1="21" x2="4" y2="14" /><line x1="4" y1="10" x2="4" y2="3" /><line x1="12" y1="21" x2="12" y2="12" /><line x1="12" y1="8" x2="12" y2="3" /><line x1="20" y1="21" x2="20" y2="16" /><line x1="20" y1="12" x2="20" y2="3" /><line x1="1" y1="14" x2="7" y2="14" /><line x1="9" y1="8" x2="15" y2="8" /><line x1="17" y1="16" x2="23" y2="16" />
       </svg>
     ),
   },
   {
-    title: "Strategia szyta na miarę",
+    title: "Efekty widzisz bez pytania",
     desc: (
-      <><strong className="font-semibold text-ink">Żadnych gotowców ani szablonów.</strong> Najpierw poznajemy Twój biznes i konkurencję, a dopiero potem budujemy plan <strong className="font-semibold text-ink">dopasowany do Twojej branży i celów</strong>.</>
+      <>Regularnie dostajesz <strong className="font-semibold text-ink">aktualizacje i konkretne wyniki</strong> — nie musisz dopominać się o raporty ani sprawdzać, czy coś się dzieje. Sami dbamy o to, <strong className="font-semibold text-ink">żebyś był na bieżąco</strong> na każdym etapie.</>
     ),
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10" /><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+        <polyline points="23 4 23 10 17 10" /><polyline points="1 20 1 14 7 14" /><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" />
       </svg>
     ),
   },
   {
-    title: "Elastyczne okresy współpracy",
+    title: "Jedna osoba, która Cię zna",
     desc: (
-      <>Współpracę ustalamy na <strong className="font-semibold text-ink">3, 6 lub 9 miesięcy</strong> — <strong className="font-semibold text-ink">wspólnie wybieramy wariant najkorzystniejszy</strong> dla Twojej firmy. Bez wiązania na lata, z planem dopasowanym do celów.</>
+      <>Masz <strong className="font-semibold text-ink">swojego opiekuna</strong>, który prowadzi Twój projekt od początku do końca. Nie przechodzisz między działami ani konsultantami. Zawsze wiesz, <strong className="font-semibold text-ink">do kogo się zgłosić</strong> — i kto odpowiada za Twoje wyniki.</>
     ),
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
+        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="8.5" cy="7" r="4" /><polyline points="17 11 19 13 23 9" />
       </svg>
     ),
   },
@@ -127,35 +128,83 @@ export default function ONasPage() {
         </div>
       </section>
 
-      {/* ── Dlaczego warto z nami współpracować ── */}
+      {/* ── Co zyskujesz ze współpracy ── */}
       <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
-              Dlaczego my
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-ink leading-snug">
-              Dlaczego warto z nami{" "}
-              <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">
-                współpracować
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
+                Twoje korzyści
               </span>
-            </h2>
-            <p className="text-zinc-500 text-lg leading-relaxed max-w-2xl mx-auto mt-6">
-              Bez trików rodem z marketingowej ściemy. Tylko doświadczenie, jasne zasady i odpowiedzialność za efekty.
-            </p>
-          </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-ink leading-snug">
+                Dlaczego klienci wybierają{" "}
+                <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">
+                  współpracę z nami
+                </span>
+              </h2>
+              <p className="text-zinc-500 text-lg leading-relaxed max-w-2xl mx-auto mt-6">
+                Współpraca, która jest <strong className="font-semibold text-ink">wygodna, bezpieczna i przejrzysta</strong>. Bez ukrytych zasad i sztywnych ram — z jasnym podziałem odpowiedzialności i realnymi efektami, które widzisz na bieżąco.
+              </p>
+            </div>
+          </ScrollReveal>
 
+          {/* 4 benefity w siatce */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {reasons.map((r) => (
-              <div key={r.title} className="group bg-white rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg transition-all duration-200">
-                <div className="w-12 h-12 rounded-xl bg-brand/10 text-brand flex items-center justify-center mb-5 group-hover:bg-brand group-hover:text-white transition-colors duration-200">
-                  {r.icon}
+            {benefits.map((b, i) => (
+              <ScrollReveal key={b.title} delay={i * 75}>
+                <div className="group h-full bg-white rounded-2xl p-7 border border-border hover:border-brand hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+                  <div className="w-12 h-12 rounded-xl bg-brand/10 text-brand flex items-center justify-center mb-5 group-hover:bg-brand group-hover:text-white transition-colors duration-200">
+                    {b.icon}
+                  </div>
+                  <h3 className="text-base font-bold text-ink mb-3 leading-snug">{b.title}</h3>
+                  <p className="text-sm text-zinc-500 leading-relaxed">{b.desc}</p>
                 </div>
-                <h3 className="text-base font-bold text-ink mb-3 leading-snug">{r.title}</h3>
-                <p className="text-sm text-zinc-500 leading-relaxed">{r.desc}</p>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
+
+          {/* Wyróżniony benefit — Zero automatycznych przedłużeń */}
+          <ScrollReveal delay={100}>
+            <div className="relative mt-6 overflow-hidden rounded-3xl bg-ink text-white p-9 sm:p-12">
+              {/* subtelna poświata brandu */}
+              <div className="pointer-events-none absolute -top-24 -right-16 w-80 h-80 rounded-full bg-brand/20 blur-3xl" />
+              <div className="pointer-events-none absolute -bottom-28 -left-20 w-80 h-80 rounded-full bg-brand/10 blur-3xl" />
+
+              <div className="relative flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12">
+                <div className="flex items-start gap-6 flex-1">
+                  <div className="shrink-0 w-16 h-16 rounded-2xl bg-brand/15 text-brand flex items-center justify-center ring-1 ring-brand/25">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline points="9 12 11.5 14.5 16 9.5" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-3">
+                      Nasza obietnica
+                    </span>
+                    <h3 className="text-2xl sm:text-3xl font-bold leading-snug mb-4">
+                      Zero automatycznych przedłużeń
+                    </h3>
+                    <p className="text-white/70 leading-relaxed max-w-2xl">
+                      Nie stosujemy ukrytych zapisów ani cichego odnawiania usług. O kontynuacji współpracy
+                      decydujesz <strong className="font-semibold text-white">wyłącznie Ty</strong> — świadomie i bez presji.
+                      Zostajesz z nami dlatego, że <strong className="font-semibold text-white">widzisz efekty</strong>, a nie
+                      dlatego, że umowa sama się przedłużyła.
+                    </p>
+                  </div>
+                </div>
+
+                <Link
+                  href="/kontakt"
+                  className="shrink-0 inline-flex items-center gap-2.5 bg-brand hover:bg-brand-dark text-white font-bold px-7 py-4 rounded-xl transition-colors duration-200 text-sm whitespace-nowrap w-fit"
+                >
+                  Porozmawiajmy o współpracy
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
