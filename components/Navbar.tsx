@@ -256,7 +256,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          {/* CTA + socials + hamburger */}
+          {/* CTA + hamburger */}
           <div className="flex items-center gap-3 ml-auto justify-end">
             <Link
               href="/kontakt"

@@ -46,46 +46,6 @@ const faqs = [
   },
 ];
 
-const socials = [
-  {
-    label: "Facebook",
-    href: "#",
-    icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-      </svg>
-    ),
-  },
-  {
-    label: "TikTok",
-    href: "#",
-    icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.16 8.16 0 004.77 1.52V6.76a4.85 4.85 0 01-1-.07z" />
-      </svg>
-    ),
-  },
-  {
-    label: "YouTube",
-    href: "#",
-    icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z" />
-        <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white" />
-      </svg>
-    ),
-  },
-  {
-    label: "LinkedIn",
-    href: "#",
-    icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-        <circle cx="4" cy="4" r="2" />
-      </svg>
-    ),
-  },
-];
 
 export default function KontaktPage() {
   return (
@@ -273,22 +233,6 @@ export default function KontaktPage() {
             </div>
 
             <div className="bg-white/5 border border-white/10 rounded-3xl p-10 flex flex-col gap-6">
-              <p className="text-xs font-semibold tracking-widest uppercase text-brand">Znajdziesz mnie też na</p>
-              <div className="flex items-center gap-3">
-                {socials.map((s) => (
-                  <a
-                    key={s.label}
-                    href={s.href}
-                    aria-label={s.label}
-                    className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white/60 hover:text-brand hover:bg-white/20 transition-all duration-150"
-                  >
-                    {s.icon}
-                  </a>
-                ))}
-              </div>
-
-              <div className="h-px bg-white/10" />
-
               <div>
                 <p className="text-white/70 leading-relaxed text-sm mb-6">
                   Wolisz od razu sprawdzić, co robimy? Przejrzyj stronę usług i dowiedz się,

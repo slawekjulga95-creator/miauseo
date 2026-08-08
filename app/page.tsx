@@ -39,12 +39,6 @@ const schemaOrg = {
       },
       areaServed: "PL",
       priceRange: "$$",
-      sameAs: [
-        "https://facebook.com",
-        "https://tiktok.com",
-        "https://youtube.com",
-        "https://linkedin.com",
-      ],
     },
     {
       "@type": "WebSite",
