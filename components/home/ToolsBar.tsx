@@ -1,23 +1,27 @@
 import Image from "next/image";
 
+/**
+ * Ściana logotypów. Każde logo ma inną paletę i inną proporcję znaku do napisu,
+ * więc jedziemy je na szaro i wyrównujemy optycznie wysokością — kolor wraca
+ * dopiero pod kursorem. Bez tego pasek wygląda jak zlepek naklejek.
+ */
 const tools = [
-  { name: "Semrush", src: "/tools/semrush.svg", width: 150, height: 38 },
-  { name: "Senuto", src: "/tools/senuto.svg", width: 130, height: 33 },
-  { name: "Surfer", src: "/tools/surferseo.svg", width: 130, height: 33 },
-  { name: "Google Analytics", src: "/tools/google-analytics.svg", width: 175, height: 28 },
-  { name: "Google Search Console", src: "/tools/google-search-console.svg", width: 200, height: 28 },
-  { name: "Screaming Frog", src: "/tools/screaming-frog.svg", width: 150, height: 28 },
+  { name: "Semrush", src: "/tools/semrush.svg", width: 150, height: 38, h: "h-[19px]" },
+  { name: "Senuto", src: "/tools/senuto.svg", width: 130, height: 33, h: "h-[21px]" },
+  { name: "Surfer", src: "/tools/surferseo.svg", width: 130, height: 33, h: "h-[20px]" },
+  { name: "Google Analytics", src: "/tools/google-analytics.svg", width: 175, height: 28, h: "h-[18px]" },
+  { name: "Google Search Console", src: "/tools/google-search-console.svg", width: 200, height: 28, h: "h-[18px]" },
+  { name: "Screaming Frog", src: "/tools/screaming-frog.svg", width: 150, height: 28, h: "h-[19px]" },
 ];
 
 export default function ToolsBar() {
   return (
-    <section className="hidden lg:block border-y border-border bg-surface">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-7 flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-zinc-500 whitespace-nowrap shrink-0">
-          Pracujemy na:
+    <section className="hidden lg:block bg-surface border-y border-border">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-10">
+        <p className="text-center text-[0.72rem] font-bold uppercase tracking-[0.2em] text-zinc-500">
+          Pracujemy na narzędziach
         </p>
-        <span className="hidden lg:block w-px h-8 bg-border shrink-0" aria-hidden="true" />
-        <div className="flex flex-nowrap items-center justify-center gap-4 md:gap-5">
+        <div className="mt-7 flex flex-nowrap items-center justify-between gap-8">
           {tools.map((tool) => (
             <Image
               key={tool.name}
@@ -26,7 +30,7 @@ export default function ToolsBar() {
               width={tool.width}
               height={tool.height}
               loading="lazy"
-              className="h-5 md:h-6 w-auto shrink-0 opacity-90 hover:opacity-100 transition duration-300"
+              className={`${tool.h} w-auto shrink-0 grayscale contrast-[1.35] brightness-[0.55] opacity-90 hover:grayscale-0 hover:contrast-100 hover:brightness-100 transition duration-300`}
             />
           ))}
         </div>

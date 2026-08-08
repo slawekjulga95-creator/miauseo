@@ -23,13 +23,27 @@ const tools = [
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-8">
+    <footer className="relative isolate overflow-hidden bg-ink text-white">
+      {/* Pomarańczowa kreska i ziarno — te same sygnały co w hero */}
+      <div aria-hidden="true" className="h-1 w-full bg-brand" />
+      <div aria-hidden="true" className="tekstura-ziarno absolute inset-0 -z-10 mix-blend-screen opacity-[0.14]" />
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-8">
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
 
           {/* Karta firmy */}
           <div className="lg:col-span-1">
+            <Link href="/" className="inline-block mb-6">
+              <Image
+                src="/logo.png"
+                alt="MiauSEO"
+                width={224}
+                height={64}
+                className="h-11 w-auto brightness-0 invert"
+              />
+            </Link>
+
             {/* Opis */}
             <p className="text-white/50 text-sm leading-relaxed mb-6">
               Pomagam <strong className="font-semibold text-white/80">małym i średnim firmom</strong> zdobywać <strong className="font-semibold text-white/80">klientów z Google</strong> — <strong className="font-semibold text-white/80">bez przepalania budżetu</strong> i <strong className="font-semibold text-white/80">na elastycznych warunkach</strong>.
@@ -109,7 +123,7 @@ export default function Footer() {
             <h3 className="font-semibold text-xs uppercase tracking-widest text-white/30 mb-5">
               Darmowe narzędzia
             </h3>
-            <ul className="space-y-3 mb-10">
+            <ul className="space-y-3 mb-8">
               {tools.map((t) => (
                 <li key={t.href}>
                   <Link href={t.href} className="text-sm text-white/60 hover:text-white transition-colors duration-150">
@@ -118,14 +132,15 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <Link href="/" className="inline-block">
-              <Image
-                src="/logo.png"
-                alt="MiauSEO"
-                width={120}
-                height={34}
-                className="h-8 w-auto brightness-0 invert opacity-30 hover:opacity-60 transition-opacity"
-              />
+
+            <Link
+              href="/kontakt"
+              className="inline-flex items-center gap-2 rounded-xl bg-brand px-6 py-3 text-sm font-bold text-white transition-colors duration-200 hover:bg-brand-dark"
+            >
+              Umów konsultację
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
             </Link>
           </div>
 

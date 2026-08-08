@@ -61,6 +61,57 @@ body {
   color: #111111;
 }
 
+::selection {
+  background: #FF6A00;
+  color: #ffffff;
+}
+
+/* Iskry w hero: pojedyncze punkty światła w marce, które pojawiają się,
+   dryfują parę pikseli i gasną. Animujemy wyłącznie opacity i transform. */
+.iskra {
+  position: absolute;
+  border-radius: 9999px;
+  background: var(--color-brand);
+  box-shadow:
+    0 0 10px 2px rgba(255, 106, 0, 0.5),
+    0 0 22px 6px rgba(255, 106, 0, 0.18);
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: iskra-zycie var(--czas, 6s) ease-in-out var(--zwloka, 0s) infinite;
+}
+
+@keyframes iskra-zycie {
+  0%   { opacity: 0; transform: translate3d(0, 0, 0) scale(0.6); }
+  14%  { opacity: var(--szczyt, 0.7); transform: translate3d(calc(var(--dx, 0px) * 0.2), calc(var(--dy, -10px) * 0.2), 0) scale(1); }
+  55%  { opacity: var(--szczyt, 0.7); transform: translate3d(calc(var(--dx, 0px) * 0.65), calc(var(--dy, -10px) * 0.65), 0) scale(1); }
+  100% { opacity: 0; transform: translate3d(var(--dx, 0px), var(--dy, -10px), 0) scale(0.9); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .iskra {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+/* Tekstura tła: siatka pomiarowa + ziarno. Jedno źródło dla hero i sekcji,
+   żeby białe płaszczyzny nie były martwe. */
+.tekstura-siatka {
+  background-image:
+    linear-gradient(to right, rgba(17, 17, 17, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.045) 1px, transparent 1px);
+  background-size: 72px 72px;
+  -webkit-mask-image: radial-gradient(120% 100% at 50% 0%, #000 30%, transparent 78%);
+  mask-image: radial-gradient(120% 100% at 50% 0%, #000 30%, transparent 78%);
+}
+
+.tekstura-ziarno {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+  opacity: 0.28;
+  mix-blend-mode: multiply;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-lato), sans-serif;
 }

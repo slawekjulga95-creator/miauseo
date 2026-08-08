@@ -1,15 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getPopularPosts, formatDate, type Category } from "@/app/blog/posts";
+import { getPopularPosts, formatDate } from "@/app/blog/posts";
 
-const categoryStyle: Record<Category, string> = {
-  "SEO":                   "bg-orange-100 text-brand",
-  "Opinie":                "bg-green-100 text-green-700",
-  "Poradnik":              "bg-violet-100 text-violet-700",
-  "Wizytówka":             "bg-sky-100 text-sky-700",
-  "WordPress":             "bg-blue-100 text-blue-700",
-  "Sztuczna Inteligencja": "bg-purple-100 text-purple-700",
-};
+/**
+ * Jedna etykieta dla wszystkich kategorii. Wcześniej każda miała własny kolor
+ * (fiolet, błękit, zieleń) i pasek wpisów rozjeżdżał się z resztą strony.
+ */
+const CHIP =
+  "bg-white/90 backdrop-blur-sm border border-border text-ink text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full";
 
 export default function BlogSection() {
   const posts = getPopularPosts(3);
@@ -17,31 +15,31 @@ export default function BlogSection() {
   if (posts.length === 0) return null;
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="relative isolate overflow-hidden py-24 bg-white border-b border-border">
+      <div aria-hidden="true" className="tekstura-siatka absolute inset-0 -z-10" />
+      <div aria-hidden="true" className="tekstura-ziarno absolute inset-0 -z-10" />
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Nagłówek */}
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-10">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12">
           <div>
-            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
-              Z bloga
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-ink leading-snug">
-              Najpopularniejsze{" "}
-              <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">
-                wpisy
-              </span>
+            <h2
+              className="text-ink"
+              style={{ fontSize: "clamp(1.9rem, 3.4vw, 2.6rem)", fontWeight: 800, letterSpacing: "-0.03em", lineHeight: 1.12 }}
+            >
+              Najnowsze <span style={{ color: "var(--color-brand)" }}>wpisy</span>
             </h2>
-            <p className="text-zinc-500 mt-4 max-w-xl text-sm">
-              Najczęściej czytane poradniki o <strong className="font-semibold text-ink">pozycjonowaniu wizytówki Google</strong> i <strong className="font-semibold text-ink">local SEO</strong> — bez lania wody.
+            <p className="text-zinc-500 mt-5 leading-relaxed" style={{ maxWidth: "52ch" }}>
+              Najczęściej czytane poradniki o <strong className="font-semibold text-ink">pozycjonowaniu wizytówki Google</strong> i{" "}
+              <strong className="font-semibold text-ink">local SEO</strong> — bez lania wody.
             </p>
           </div>
           <Link
             href="/blog"
-            className="group shrink-0 inline-flex items-center gap-2 text-sm font-semibold text-brand whitespace-nowrap"
+            className="group shrink-0 inline-flex items-center gap-2 text-sm font-bold text-ink hover:text-brand transition-colors whitespace-nowrap"
           >
             Zobacz wszystkie wpisy
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform duration-200">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand group-hover:translate-x-1 transition-transform duration-200">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </Link>
@@ -53,7 +51,7 @@ export default function BlogSection() {
             <Link
               key={post.slug}
               href={`/${post.slug}`}
-              className="group flex flex-col bg-white border border-border rounded-2xl overflow-hidden hover:border-brand/30 hover:shadow-lg transition-all duration-200"
+              className="group flex flex-col bg-white border border-border rounded-2xl overflow-hidden transition-all duration-200 hover:border-brand/50 hover:shadow-[0_24px_50px_-34px_rgba(17,17,17,0.5)]"
             >
               <div className="relative w-full aspect-[3/2] overflow-hidden bg-zinc-100 shrink-0">
                 {post.coverImage ? (
@@ -78,9 +76,7 @@ export default function BlogSection() {
                   </div>
                 )}
                 <div className="absolute top-3 left-3">
-                  <span className={`text-[11px] font-bold px-2.5 py-1 rounded-full ${categoryStyle[post.category]}`}>
-                    {post.category}
-                  </span>
+                  <span className={CHIP}>{post.category}</span>
                 </div>
               </div>
 
@@ -96,15 +92,14 @@ export default function BlogSection() {
                 <p className="text-[13px] text-zinc-500 leading-relaxed line-clamp-2 mb-4">
                   {post.excerpt}
                 </p>
-                <div className="flex items-center gap-1.5 text-brand text-[13px] font-semibold mt-auto">
+                <div className="flex items-center gap-2 text-ink text-[13px] font-bold mt-auto pt-2 group-hover:text-brand transition-colors">
                   Czytaj więcej
                   <svg
-                    className="group-hover:translate-x-1 transition-transform duration-150"
+                    className="text-brand group-hover:translate-x-1 transition-transform duration-150"
                     width="14" height="14" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
                   >
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <polyline points="12 5 19 12 12 19" />
+                    <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </div>
               </div>

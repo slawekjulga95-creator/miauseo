@@ -10,9 +10,8 @@ const services = [
     desc: (
       <>
         Wyprowadzamy Twoją stronę na <strong className="font-semibold text-ink">wysokie pozycje w Google</strong> na
-        frazy, których naprawdę szukają klienci. Optymalizujemy treści, szybkość ładowania i strukturę,
-        budujemy wartościowe linki i dbamy o techniczne SEO. Efekt? <strong className="font-semibold text-ink">Stały, darmowy ruch</strong>,
-        który rośnie miesiąc po miesiącu i nie znika, gdy wyłączysz reklamy.
+        frazy, których naprawdę szukają klienci. Efekt to <strong className="font-semibold text-ink">stały, darmowy ruch</strong>,
+        który nie znika, gdy wyłączysz reklamy.
       </>
     ),
     photo: "/uslugi/seo-pozycjonowanie.jpg",
@@ -31,9 +30,8 @@ const services = [
     desc: (
       <>
         Dbamy o to, żeby Twoja firma była <strong className="font-semibold text-ink">widoczna w Mapach Google</strong>,
-        gdy klienci szukają usług w Twojej okolicy. Optymalizujemy profil, kategorie, zdjęcia i opinie, a Ty
-        zyskujesz <strong className="font-semibold text-ink">więcej telefonów, tras dojazdu i wizyt</strong>.
-        To najprostsza droga do lokalnych klientów — także wtedy, gdy nie masz jeszcze strony internetowej.
+        gdy klienci szukają usług w okolicy. Zyskujesz <strong className="font-semibold text-ink">więcej telefonów, tras i wizyt</strong>,
+        także bez własnej strony internetowej.
       </>
     ),
     photo: "/uslugi/wizytowka-google.jpg",
@@ -52,9 +50,8 @@ const services = [
     desc: (
       <>
         Docieramy do klientów <strong className="font-semibold text-ink">dokładnie w momencie</strong>, gdy wpisują
-        Twoją usługę w Google. Precyzyjnie dobieramy słowa kluczowe, ustawienia i budżet, a następnie codziennie
-        optymalizujemy kampanie. Eliminujemy przepalanie pieniędzy i skupiamy się na{" "}
-        <strong className="font-semibold text-ink">realnych zapytaniach i sprzedaży</strong>, a nie pustych kliknięciach.
+        Twoją usługę w Google. Pilnujemy budżetu, żeby szedł na <strong className="font-semibold text-ink">realne zapytania</strong>,
+        a nie na puste kliknięcia.
       </>
     ),
     photo: "/uslugi/google-ads.jpg",
@@ -122,81 +119,140 @@ const items = [
   },
 ];
 
+/* Mini-podglądy tego, co klient realnie dostaje w Google. Rysowane w HTML,
+   bez zdjęć i bez stocka — ten sam język co siatka i krzywa w hero. */
+
+function PodgladSerp() {
+  return (
+    <div className="space-y-2">
+      <div className="rounded-lg border border-brand/30 bg-brand/[0.06] px-3 py-2">
+        <div className="flex items-center gap-2">
+          <span className="text-[0.6rem] font-bold text-white bg-brand rounded px-1.5 py-0.5">1</span>
+          <span className="h-2 w-28 rounded-full bg-brand/70" />
+        </div>
+        <span className="mt-1.5 block h-1.5 w-full rounded-full bg-ink/10" />
+      </div>
+      {[2, 3].map((n) => (
+        <div key={n} className="rounded-lg border border-border px-3 py-2 opacity-60">
+          <div className="flex items-center gap-2">
+            <span className="text-[0.6rem] font-bold text-zinc-400">{n}</span>
+            <span className="h-2 w-20 rounded-full bg-ink/15" />
+          </div>
+          <span className="mt-1.5 block h-1.5 w-full rounded-full bg-ink/[0.07]" />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function PodgladWizytowki() {
+  return (
+    <div className="rounded-lg border border-border bg-white p-3">
+      <div className="flex items-start gap-2.5">
+        <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand text-white">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+        </span>
+        <div className="min-w-0 flex-1">
+          <span className="block h-2 w-24 rounded-full bg-ink/70" />
+          <div className="mt-2 flex items-center gap-1">
+            {[0, 1, 2, 3, 4].map((i) => (
+              <svg key={i} width="10" height="10" viewBox="0 0 24 24" fill="#FF6A00" aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z" />
+              </svg>
+            ))}
+            <span className="ml-1 text-[0.65rem] font-bold text-ink">4,9</span>
+          </div>
+        </div>
+      </div>
+      <div className="mt-3 flex gap-2">
+        <span className="flex-1 rounded-md bg-brand py-1.5 text-center text-[0.62rem] font-bold text-white">Zadzwoń</span>
+        <span className="flex-1 rounded-md border border-border py-1.5 text-center text-[0.62rem] font-bold text-zinc-500">Trasa</span>
+      </div>
+    </div>
+  );
+}
+
+function PodgladAds() {
+  return (
+    <div className="space-y-2.5">
+      <div className="rounded-lg border border-border bg-white px-3 py-2.5">
+        <span className="text-[0.58rem] font-bold uppercase tracking-wider text-ink">Sponsorowane</span>
+        <span className="mt-2 block h-2 w-24 rounded-full bg-brand/70" />
+        <span className="mt-1.5 block h-1.5 w-full rounded-full bg-ink/10" />
+      </div>
+      <div className="flex items-end gap-1.5 h-12 px-1">
+        {[35, 52, 44, 70, 88, 100].map((h, i) => (
+          <span
+            key={i}
+            className="flex-1 rounded-t-sm"
+            style={{ height: `${h}%`, background: i > 3 ? "var(--color-brand)" : "rgba(255,106,0,0.28)" }}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+const PODGLADY = [<PodgladSerp key="serp" />, <PodgladWizytowki key="gbp" />, <PodgladAds key="ads" />];
+
 export function WhatWeDo() {
   return (
-    <div className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <div className="relative isolate overflow-hidden py-24 bg-white border-b border-border">
+      <div aria-hidden="true" className="tekstura-siatka absolute inset-0 -z-10" />
+      <div aria-hidden="true" className="tekstura-ziarno absolute inset-0 -z-10" />
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         <ScrollReveal>
-          <div className="text-center mb-14">
-            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand mb-4">
-              Oferta
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-ink leading-snug">
-              Czym się{" "}
-              <span className="inline-block bg-brand text-white px-4 py-1 rounded-lg">
-                zajmujemy
-              </span>
+          <div className="max-w-2xl">
+            <h2
+              className="text-ink"
+              style={{ fontSize: "clamp(1.9rem, 3.4vw, 2.6rem)", fontWeight: 800, letterSpacing: "-0.03em", lineHeight: 1.12 }}
+            >
+              Czym się <span style={{ color: "var(--color-brand)" }}>zajmujemy</span>
             </h2>
-            <p className="text-zinc-500 mt-4 max-w-lg mx-auto text-sm">
+            <p className="text-zinc-500 mt-5 leading-relaxed" style={{ maxWidth: "52ch" }}>
               <strong className="font-semibold text-ink">Kompleksowy marketing lokalny</strong> — od wizytówki
-              Google po kampanie reklamowe. <strong className="font-semibold text-ink">Wybierz obszar, w którym
-              chcesz rosnąć.</strong>
+              Google po kampanie reklamowe. Wybierz obszar, w którym chcesz rosnąć.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Bez kafelków ze zdjęciami: trzy kolumny rozdzielone włoskową linią,
+            ta sama kreska co siatka w hero. */}
+        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s, i) => (
-            <ScrollReveal key={s.href} delay={i * 75}>
+            <ScrollReveal key={s.href} delay={i * 75} className="h-full">
               <Link
                 href={s.href}
-                className={`group flex flex-col h-full bg-white rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-200 ${
-                  s.badge ? "border-2 border-brand shadow-lg" : "border border-border hover:border-brand"
+                className={`group flex flex-col h-full rounded-2xl bg-white p-6 transition-all duration-200 hover:shadow-[0_24px_50px_-34px_rgba(17,17,17,0.5)] ${
+                  s.badge ? "border-2 border-brand" : "border border-border hover:border-brand/50"
                 }`}
               >
-                {/* Zdjęcie lub logo + gradient + badge z ikoną */}
-                <div className="relative aspect-[16/10] overflow-hidden">
+                {/* Podgląd efektu, nie ikonka: to widzi klient w Google */}
+                {/* Stała wysokość, żeby tytuły w trzech kolumnach stały w jednej linii */}
+                <div className="rounded-xl bg-surface/70 border border-border p-4 h-[196px] flex flex-col justify-center">
+                  {PODGLADY[i]}
+                </div>
+
+                <h3 className="mt-6 text-[1.3rem] font-bold text-ink tracking-[-0.02em] flex items-center gap-3 flex-wrap">
+                  {s.title}
                   {s.badge && (
-                    <span className="absolute top-4 right-4 z-10 inline-flex items-center gap-1 bg-brand text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
-                      <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z" />
-                      </svg>
+                    <span className="text-[0.62rem] font-bold uppercase tracking-[0.14em] text-brand border border-brand/35 rounded px-2 py-0.5 whitespace-nowrap">
                       {s.badge}
                     </span>
                   )}
-                  {s.logo ? (
-                    <div className="absolute inset-0 bg-[#010101] flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                      {s.logo}
-                    </div>
-                  ) : (
-                    <Image
-                      src={s.photo as string}
-                      alt={s.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      loading="lazy"
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/15 to-transparent" />
-                  <div className="absolute top-4 left-4 w-11 h-11 rounded-xl bg-white/95 backdrop-blur text-brand flex items-center justify-center shadow-lg">
-                    {s.icon}
-                  </div>
-                  <h3 className="absolute bottom-4 left-4 right-4 text-lg font-bold text-white drop-shadow-sm">
-                    {s.title}
-                  </h3>
-                </div>
+                </h3>
 
-                {/* Treść */}
-                <div className="flex flex-col flex-1 p-6">
-                  <p className="text-sm text-zinc-500 leading-relaxed mb-5">{s.desc}</p>
-                  <span className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-brand">
-                    Dowiedz się więcej
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform duration-200">
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </div>
+                <p className="mt-4 text-[0.95rem] text-zinc-500 leading-relaxed">{s.desc}</p>
+
+                <span className="mt-auto pt-6 inline-flex items-center gap-2 text-sm font-bold text-ink group-hover:text-brand transition-colors">
+                  Dowiedz się więcej
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand group-hover:translate-x-1 transition-transform duration-200">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </span>
               </Link>
             </ScrollReveal>
           ))}

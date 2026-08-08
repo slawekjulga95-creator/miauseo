@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import HeroSection from "@/components/home/HeroSection";
 import ToolsBar from "@/components/home/ToolsBar";
 import { WhatWeDo } from "@/components/home/ServicesSection";
+import DoradztwoCTA from "@/components/home/DoradztwoCTA";
 import BlogSection from "@/components/home/BlogSection";
 import FreeToolsSection from "@/components/home/FreeToolsSection";
 
@@ -70,6 +71,7 @@ export default function Home() {
       <HeroSection />
       <ToolsBar />
       <WhatWeDo />
+      <DoradztwoCTA />
       <BlogSection />
       <FreeToolsSection />
     </>

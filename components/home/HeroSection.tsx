@@ -2,212 +2,209 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroLeadForm from "@/components/home/HeroLeadForm";
 
+/** Punkty krzywej „wzrostu telefonów" — ten sam motyw co wykres z panelu Google. */
+const PUNKTY: [number, number][] = [
+  [0, 268], [90, 250], [180, 258], [270, 224], [360, 232],
+  [450, 196], [540, 205], [630, 158], [720, 170], [810, 118],
+  [900, 132], [990, 74], [1080, 92], [1170, 36], [1260, 52], [1350, 10],
+];
+
+const LINIA = PUNKTY.map(([x, y]) => `${x},${y}`).join(" ");
+const OBSZAR = `0,300 ${LINIA} 1350,300`;
+
+/**
+ * Iskry po lewej stronie hero. Wartości są wpisane ręcznie, a nie losowane,
+ * bo losowanie przy renderze serwerowym rozjeżdża się z hydracją. Nierówne
+ * czasy i zwłoki sprawiają, że rytm i tak nie układa się w pętlę.
+ * `male: true` znika na telefonie, żeby nie właziło w tekst.
+ */
+type Iskra = {
+  x: string; y: string; r: number;
+  dx: string; dy: string;
+  czas: string; zwloka: string; szczyt: number;
+  tylkoDesktop?: boolean;
+};
+
+const ISKRY: Iskra[] = [
+  { x: "5%",  y: "20%", r: 6, dx: "12px",  dy: "-30px", czas: "5.5s", zwloka: "0s",   szczyt: 1 },
+  { x: "16%", y: "66%", r: 4, dx: "-9px",  dy: "-22px", czas: "4.8s", zwloka: "1.1s", szczyt: 0.9 },
+  { x: "30%", y: "12%", r: 5, dx: "14px",  dy: "-18px", czas: "6.2s", zwloka: "2.3s", szczyt: 0.85, tylkoDesktop: true },
+  { x: "8%",  y: "84%", r: 7, dx: "16px",  dy: "-34px", czas: "6.8s", zwloka: "3.4s", szczyt: 0.95, tylkoDesktop: true },
+  { x: "41%", y: "46%", r: 4, dx: "-12px", dy: "-26px", czas: "5.2s", zwloka: "1.8s", szczyt: 0.8,  tylkoDesktop: true },
+  { x: "23%", y: "34%", r: 5, dx: "10px",  dy: "-28px", czas: "6.4s", zwloka: "4.2s", szczyt: 0.9 },
+  { x: "2%",  y: "52%", r: 4, dx: "15px",  dy: "-20px", czas: "5s",   zwloka: "5.1s", szczyt: 0.85, tylkoDesktop: true },
+  { x: "35%", y: "76%", r: 8, dx: "-10px", dy: "-32px", czas: "7.4s", zwloka: "2.9s", szczyt: 0.75, tylkoDesktop: true },
+  { x: "12%", y: "42%", r: 5, dx: "8px",   dy: "-24px", czas: "5.9s", zwloka: "6.2s", szczyt: 0.9 },
+  { x: "45%", y: "88%", r: 6, dx: "-14px", dy: "-30px", czas: "6.6s", zwloka: "0.7s", szczyt: 0.8,  tylkoDesktop: true },
+];
+
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white">
-      {/* Tło: brand glow — spotlight pod formularzem + dot pattern */}
+    <section className="relative isolate overflow-hidden bg-white border-b border-border">
+      {/* Tekstura: siatka + ziarno (klasy w globals.css, te same co w sekcjach) */}
+      <div aria-hidden="true" className="tekstura-siatka absolute inset-0 -z-10" />
+      <div aria-hidden="true" className="tekstura-ziarno absolute inset-0 -z-10" />
+
+      {/* Znak wodny: łapa z logo */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        aria-hidden="true"
+        className="hidden md:block absolute -z-10 pointer-events-none"
         style={{
-          background:
-            "radial-gradient(ellipse 48% 60% at 62% 45%, rgba(243,111,33,0.16) 0%, transparent 68%)",
-        }}
-      />
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage: "radial-gradient(circle, #d4d4d8 1px, transparent 1px)",
-          backgroundSize: "26px 26px",
-          maskImage:
-            "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.08) 55%, rgba(0,0,0,0) 85%)",
-          WebkitMaskImage:
-            "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.08) 55%, rgba(0,0,0,0) 85%)",
+          right: "-3rem",
+          top: "4rem",
+          width: "26rem",
+          height: "26rem",
+          backgroundImage: "url('/logo.svg')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+          opacity: 0.05,
+          transform: "rotate(-12deg)",
         }}
       />
 
-
+      {/* Iskry — tylko lewa część hero, warstwa czysto dekoracyjna */}
       <div
-        className="relative max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-12 gap-y-12 lg:gap-x-8 items-center pt-36 pb-16 lg:pt-32 lg:pb-20"
-        style={{ minHeight: "calc(100svh - 56px)" }}
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-y-0 left-0 -z-10 w-[62%] lg:w-[46%]"
       >
-        {/* ─────────────────────────────────────────────
-            KOLUMNA 1 — treść sprzedażowa
-        ───────────────────────────────────────────── */}
-        <div className="lg:col-span-5 max-w-[560px]">
-          {/* Eyebrow */}
-          <div className="flex items-center gap-3 mb-6 animate-fade-up">
-            <span
-              style={{
-                display: "block",
-                width: "2rem",
-                height: "2px",
-                background: "var(--color-brand)",
-                borderRadius: "9999px",
-                flexShrink: 0,
-              }}
-            />
-            <span
-              style={{
-                fontSize: "0.65rem",
-                fontWeight: 700,
-                letterSpacing: "0.17em",
-                textTransform: "uppercase",
-                color: "var(--color-brand)",
-              }}
-            >
-              SEO&nbsp;·&nbsp;Wizytówki&nbsp;Google&nbsp;·&nbsp;Kampanie&nbsp;leadowe
-            </span>
-          </div>
-
-          {/* H1 */}
-          <h1
-            className="animate-fade-up text-ink"
+        {ISKRY.map((iskra, i) => (
+          <span
+            key={i}
+            className={`iskra ${iskra.tylkoDesktop ? "hidden lg:block" : ""}`}
             style={{
-              fontSize: "clamp(2.2rem, 4.6vw, 3.3rem)",
+              left: iskra.x,
+              top: iskra.y,
+              width: `${iskra.r}px`,
+              height: `${iskra.r}px`,
+              ["--dx" as string]: iskra.dx,
+              ["--dy" as string]: iskra.dy,
+              ["--czas" as string]: iskra.czas,
+              ["--zwloka" as string]: iskra.zwloka,
+              ["--szczyt" as string]: iskra.szczyt,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Krzywa wzrostu — rośnie w prawo, pod treścią */}
+      <svg
+        aria-hidden="true"
+        viewBox="0 0 1350 300"
+        preserveAspectRatio="none"
+        className="absolute inset-x-0 bottom-0 -z-10 w-full h-[46%] lg:h-[58%]"
+      >
+        <defs>
+          <linearGradient id="hero-wypelnienie" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#FF6A00" stopOpacity="0.16" />
+            <stop offset="100%" stopColor="#FF6A00" stopOpacity="0" />
+          </linearGradient>
+          <linearGradient id="hero-linia" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="#FF6A00" stopOpacity="0.25" />
+            <stop offset="100%" stopColor="#FF6A00" stopOpacity="0.9" />
+          </linearGradient>
+        </defs>
+        <polygon points={OBSZAR} fill="url(#hero-wypelnienie)" />
+        <polyline
+          points={LINIA}
+          fill="none"
+          stroke="url(#hero-linia)"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          vectorEffect="non-scaling-stroke"
+        />
+        {PUNKTY.filter((_, i) => i % 2 === 1).map(([x, y]) => (
+          <circle key={x} cx={x} cy={y} r="4" fill="#ffffff" stroke="#FF6A00" strokeWidth="2.5" vectorEffect="non-scaling-stroke" />
+        ))}
+      </svg>
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-12 gap-y-14 lg:gap-x-16 items-center pt-32 pb-20 lg:pt-28 lg:pb-28">
+        {/* Treść sprzedażowa */}
+        <div className="lg:col-span-7 animate-fade-up">
+          <h1
+            className="text-ink"
+            style={{
+              fontSize: "clamp(2.4rem, 5.2vw, 3.9rem)",
               fontWeight: 800,
-              letterSpacing: "-0.03em",
-              lineHeight: 1.12,
-              marginBottom: "1.5rem",
-              animationDelay: "100ms",
+              letterSpacing: "-0.035em",
+              lineHeight: 1.07,
             }}
           >
             Więcej zapytań.
             <br />
-            Więcej telefonów.{" "}
+            Więcej telefonów.
             <br />
-            <span
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.3em",
-                transform: "rotate(-1.5deg)",
-                transformOrigin: "center bottom",
-                background: "var(--color-brand)",
-                color: "white",
-                padding: "0.08em 0.42em 0.14em",
-                borderRadius: "0.55rem",
-                boxShadow: "0 4px 16px rgba(243,111,33,0.35), 0 1px 3px rgba(0,0,0,0.08)",
-                verticalAlign: "middle",
-                marginTop: "0.18em",
-              }}
-            >
-              Więcej klientów.
-              <span style={{ fontSize: "0.65em", lineHeight: 1, filter: "brightness(0) invert(1)" }} aria-hidden="true">🐾</span>
-            </span>
+            <span style={{ color: "var(--color-brand)" }}>Więcej klientów.</span>
           </h1>
 
-          {/* Lead */}
           <p
-            className="animate-fade-up"
+            className="mt-7"
             style={{
-              fontSize: "1rem",
-              color: "#71717a",
-              lineHeight: 1.7,
-              maxWidth: "46ch",
-              marginBottom: "2.25rem",
-              animationDelay: "200ms",
+              fontSize: "1.0625rem",
+              color: "#52525b",
+              lineHeight: 1.65,
+              maxWidth: "48ch",
             }}
           >
             Twoi klienci właśnie wpisują w Google to, co sprzedajesz. Sprawiamy, że
-            znajdują <strong style={{ color: "#111111", fontWeight: 700 }}>Ciebie, nie konkurencję</strong> —
-            a efekty mierzymy liczbą zapytań i telefonów, nie kolorowymi raportami.
+            znajdują <strong className="text-ink font-bold">Ciebie, nie konkurencję</strong> —
+            a efekty rozliczamy telefonami i zapytaniami, nie kolorowymi raportami.
           </p>
 
-          {/* CTA */}
-          <div
-            className="flex flex-wrap items-center gap-4 animate-fade-up"
-            style={{ marginBottom: "2.75rem", animationDelay: "320ms" }}
-          >
+          <div className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4">
             <Link
               href="/kontakt"
-              className="hero-cta-primary inline-flex items-center gap-2 font-bold text-white rounded-xl transition-all duration-200 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 font-bold text-white rounded-xl bg-brand hover:bg-brand-dark transition-colors duration-200"
               style={{
-                background: "var(--color-brand)",
-                fontSize: "0.95rem",
-                padding: "0.95rem 1.75rem",
-                boxShadow: "0 4px 20px rgba(243,111,33,0.28)",
+                fontSize: "0.975rem",
+                padding: "1rem 1.9rem",
+                boxShadow: "0 10px 26px -12px rgba(255,106,0,0.85)",
               }}
             >
               Umów bezpłatną konsultację
-              <span aria-hidden="true">→</span>
-            </Link>
-
-            <Link
-              href="/referencje"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-zinc-600 hover:text-brand transition-colors duration-150"
-              style={{ padding: "0.95rem 0.25rem" }}
-            >
-              Zobacz wyniki klientów
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </Link>
-          </div>
 
-          {/* Dowody — liczby z wdrożeń */}
-          <div
-            className="animate-fade-up"
-            style={{
-              paddingTop: "1.5rem",
-              borderTop: "1px solid var(--color-border)",
-              animationDelay: "450ms",
-            }}
-          >
-            <div className="grid grid-cols-3 gap-4">
-              <div>
-                <p style={{ fontSize: "1.5rem", fontWeight: 800, color: "#111111", letterSpacing: "-0.02em" }}>
-                  0&nbsp;zł
-                </p>
-                <p style={{ fontSize: "0.72rem", color: "#a1a1aa", lineHeight: 1.45, marginTop: "0.2rem" }}>
-                  za konsultację i&nbsp;wycenę na&nbsp;start
-                </p>
-              </div>
-              <div>
-                <p style={{ fontSize: "1.5rem", fontWeight: 800, color: "#111111", letterSpacing: "-0.02em" }}>
-                  50+
-                </p>
-                <p style={{ fontSize: "0.72rem", color: "#a1a1aa", lineHeight: 1.45, marginTop: "0.2rem" }}>
-                  eksperckich artykułów na&nbsp;blogu
-                </p>
-              </div>
-              <div>
-                <p style={{ fontSize: "1.5rem", fontWeight: 800, color: "#111111", letterSpacing: "-0.02em" }}>
-                  15&nbsp;min
-                </p>
-                <p style={{ fontSize: "0.72rem", color: "#a1a1aa", lineHeight: 1.45, marginTop: "0.2rem" }}>
-                  średni czas odpowiedzi na&nbsp;zapytanie
-                </p>
-              </div>
-            </div>
-            <p style={{ fontSize: "0.68rem", color: "#d4d4d8", marginTop: "0.9rem" }}>
-              Liczby z realnych wdrożeń — opisanych w{" "}
-              <Link href="/referencje" className="underline hover:text-brand transition-colors">referencjach</Link>.
+            <p className="text-sm text-zinc-500">
+              Wolisz od razu porozmawiać?{" "}
+              <a
+                href="tel:+48455571349"
+                className="font-bold text-ink hover:text-brand transition-colors whitespace-nowrap"
+              >
+                +48 455 571 349
+              </a>
             </p>
           </div>
-        </div>
 
-        {/* ─────────────────────────────────────────────
-            KOLUMNA 2 — formularz (węższy, na środku)
-        ───────────────────────────────────────────── */}
-        <div className="relative z-10 lg:col-span-4 w-full max-w-[420px] mx-auto animate-fade-up lg:scale-[1.04]" style={{ animationDelay: "250ms" }}>
-          <HeroLeadForm />
-        </div>
-
-        {/* ─────────────────────────────────────────────
-            KOLUMNA 3 — zdjęcie (widoczne na laptopie)
-        ───────────────────────────────────────────── */}
-        <div className="hidden lg:flex lg:col-span-3 self-stretch items-end justify-center pointer-events-none select-none" aria-hidden="true">
-          <div className="relative w-[340px] max-w-none lg:-translate-y-12" style={{ aspectRatio: "3 / 4", maxHeight: "calc(100svh - 56px)" }}>
+          {/* Dowód: prawdziwy wynik z panelu klienta */}
+          <figure className="mt-12 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 rounded-2xl border border-border bg-white/85 backdrop-blur-sm p-4 sm:pr-7 max-w-[600px] shadow-[0_18px_40px_-30px_rgba(17,17,17,0.45)]">
             <Image
-              src="/SlawomirJ.webp"
-              alt=""
-              fill
-              priority
-              sizes="340px"
-              quality={90}
-              className="object-contain object-bottom"
+              src="/ProtetykPila.png"
+              alt="Wykres połączeń telefonicznych z wizytówki Google gabinetu protetycznego"
+              width={1168}
+              height={449}
+              sizes="(max-width: 640px) 90vw, 200px"
+              className="w-full sm:w-[200px] h-auto rounded-lg border border-border shrink-0"
             />
-          </div>
+            <figcaption>
+              <p className="text-ink" style={{ fontSize: "1.05rem", fontWeight: 700, lineHeight: 1.3 }}>
+                62 telefony z wizytówki w 30 dni
+              </p>
+              <p className="text-sm text-zinc-500 mt-1">
+                Branża protetyczna.{" "}
+                <Link href="/referencje" className="font-semibold text-ink underline underline-offset-4 decoration-border hover:text-brand hover:decoration-brand transition-colors">
+                  Zobacz kolejne wyniki
+                </Link>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+
+        {/* Formularz */}
+        <div className="lg:col-span-5 w-full max-w-[440px] mx-auto lg:mx-0 lg:ml-auto animate-fade-up">
+          <HeroLeadForm />
         </div>
       </div>
     </section>
