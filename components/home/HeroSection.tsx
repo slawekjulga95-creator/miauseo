@@ -166,16 +166,6 @@ export default function HeroSection() {
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </Link>
-
-            <p className="text-sm text-zinc-500">
-              Wolisz od razu porozmawiać?{" "}
-              <a
-                href="tel:+48455571349"
-                className="font-bold text-ink hover:text-brand transition-colors whitespace-nowrap"
-              >
-                +48 455 571 349
-              </a>
-            </p>
           </div>
 
           {/* Dowód: prawdziwy wynik z panelu klienta */}

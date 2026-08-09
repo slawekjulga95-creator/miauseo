@@ -17,7 +17,7 @@ export default function DoradztwoCTA() {
             <div className="relative flex flex-col sm:flex-row items-center gap-6 sm:gap-8 p-7 sm:p-8">
               <Image
                 src="/SlawomirJ.webp"
-                alt="Sławomir Jułga, MiauSEO"
+                alt="Sławomir, MiauSEO"
                 width={200}
                 height={267}
                 sizes="112px"
@@ -33,7 +33,7 @@ export default function DoradztwoCTA() {
                   na Twoim etapie <strong className="font-semibold text-ink">nie warto jeszcze robić</strong>.
                   Rozmowa nic nie kosztuje i do niczego nie zobowiązuje.
                 </p>
-                <p className="mt-2 text-sm text-zinc-400">Sławomir Jułga, MiauSEO</p>
+                <p className="mt-2 text-sm text-zinc-400">Sławomir, MiauSEO</p>
               </div>
 
               <div className="shrink-0 flex flex-col items-center gap-2">

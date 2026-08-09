@@ -134,7 +134,7 @@ export default function ReferencjePage() {
             <div className="shrink-0 relative w-40 h-52 rounded-2xl overflow-hidden bg-surface border border-border">
               <Image
                 src="/SlawomirJ.webp"
-                alt="Sławomir Julga — MiauSEO"
+                alt="Sławomir — MiauSEO"
                 fill
                 sizes="160px"
                 className="object-cover object-top"
