@@ -3,6 +3,142 @@ import Link from "next/link";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     OPINIE / CASE STUDY: skup aut — wizytówka Google, 77 połączeń w lipcu 2026
+  ───────────────────────────────────────────────────────────────────────── */
+  "miauseo-opinie-skup-aut": (
+    <>
+      <p>
+        Klient prowadzi skup samochodów, kasację i złomowanie pojazdów w mieście liczącym <strong>około 70 tysięcy mieszkańców</strong>. To rynek o dwóch cechach, które trzeba rozumieć, zanim zacznie się cokolwiek robić. Po pierwsze, decyzja o oddaniu auta zapada szybko i zwykle kończy się telefonem, a nie formularzem: człowiek ma samochód po kolizji albo bez ważnych badań i chce go zwyczajnie pozbyć się dziś, nie w przyszłym tygodniu. Po drugie, w takim mieście liczba realnie konkurujących firm jest ograniczona, ale za to widoczność w Google rozstrzyga niemal wszystko, bo klient nie zna nikogo z branży z polecenia.
+      </p>
+      <p>
+        Współpracę nad <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniem wizytówki Google</a> ustaliliśmy w <strong>czerwcu</strong>. W <strong>lipcu</strong>, pierwszym pełnym miesiącu prowadzonych działań, profil firmy wygenerował <strong>77 połączeń telefonicznych</strong>. Poniżej opisujemy, co dokładnie się na to złożyło, bo nie był to efekt jednej optymalizacji, tylko kilku równolegle prowadzonych wątków.
+      </p>
+
+      <h2>Punkt wyjścia</h2>
+      <p>
+        Firma działała, ale w wyszukiwarce praktycznie jej nie było. Nie chodziło o to, że wizytówka wypadała słabo na tle konkurencji — chodziło o to, że nie miała jeszcze ustawionej i potwierdzonej obecności, na której można byłoby cokolwiek budować. Klient nie miał też strony, do której mógłby skierować kogoś, kto chce sprawdzić firmę przed telefonem.
+      </p>
+      <p>
+        W branży skupu aut to kosztowna sytuacja. Zapytanie „skup aut" czy „kasacja aut" wpisuje się zwykle raz, dzwoni do jednej albo dwóch pierwszych firm z mapy i sprawa jest zamknięta. Nieobecność w tym miejscu nie oznacza mniejszej liczby klientów rozłożonej w czasie, tylko brak udziału w tych konkretnych zapytaniach.
+      </p>
+
+      <h2>Co obejmowała współpraca</h2>
+      <p>
+        Zakres ustaliliśmy jako kompleksową obsługę profilu firmy w Google, a nie pojedynczą optymalizację. Objął przygotowanie i dopracowanie wizytówki, przeprowadzenie klienta przez weryfikację wideo, zbudowanie strony internetowej z podstronami lokalizacyjnymi wspierającymi profil, zaplecze linkowe, narzędzia do zbierania opinii Google oraz stały kontakt i reagowanie na to, co pokazują statystyki.
+      </p>
+      <p>
+        Ta lista ma znaczenie przy czytaniu wyniku. Trudno wskazać jedno działanie, któremu można przypisać 77 połączeń, bo wszystkie te elementy pracowały równocześnie i wzajemnie się wzmacniały.
+      </p>
+
+      <h2>Przygotowanie i optymalizacja wizytówki Google</h2>
+      <p>
+        Zaczęliśmy od profilu. Uzupełniliśmy komplet podstawowych informacji o firmie i uporządkowaliśmy dane tak, żeby nazwa, adres i telefon występowały wszędzie w jednym, spójnym formacie. To fundament, o którym piszemy szerzej przy okazji <a href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">spójności NAP</a>: rozjeżdżające się warianty danych osłabiają zaufanie Google do wizytówki, zanim jeszcze zacznie się walka o pozycje.
+      </p>
+      <p>
+        Osobnej pracy wymagał <a href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">dobór kategorii</a>. W tej branży to nie jest formalność, bo skup aut, kasacja pojazdów i złomowanie to z punktu widzenia Google bliskie, ale nie identyczne rzeczy, a od kategorii głównej zależy, przy jakich zapytaniach profil ma w ogóle szansę się pokazać. Do tego doszły opisy usług i opis działalności napisany pod realne frazy, którymi ludzie szukają tej usługi, a nie pod branżowy żargon.
+      </p>
+      <p>
+        Efekt tej warstwy pracy jest niewidoczny na pierwszy rzut oka, ale bez niej reszta nie ma się o co oprzeć. Kompletny, uporządkowany profil to dla algorytmu sygnał, że firma jest aktywna i konkretna, a dla człowieka powód, żeby zadzwonić akurat tutaj. Zebraliśmy to szerzej w artykule o <a href="/jak-pozycjonowac-wizytowke-google-2026" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
+      </p>
+
+      <h2>Weryfikacja wideo</h2>
+      <p>
+        Osobnym etapem była <a href="/weryfikacja-wizytowki-google" className="text-brand font-semibold hover:underline">weryfikacja wizytówki</a> nagraniem wideo. Google coraz częściej wymaga tej formy potwierdzenia zamiast kodu pocztowego, a dla właściciela firmy jest to moment, w którym łatwo utknąć: trzeba wiedzieć, co dokładnie ma znaleźć się w nagraniu, w jakiej kolejności i co Google chce w nim faktycznie zobaczyć.
+      </p>
+      <p>
+        Przygotowaliśmy profil pod weryfikację i przeprowadziliśmy klienta przez cały proces. To nie jest żaden trik ani obejście — to zwykły wymóg formalny, który po prostu trzeba spełnić poprawnie za pierwszym razem, bo nieudane podejście oznacza kolejne dni bez widocznej wizytówki. Klient nie musiał się zastanawiać, jak to ugryźć, i to była świadoma część zakresu usługi.
+      </p>
+
+      <h2>Strona internetowa i podstrony lokalizacyjne</h2>
+      <p>
+        Równolegle przygotowaliśmy stronę internetową wraz z <strong>podstronami lokalizacyjnymi</strong> odpowiadającymi obszarowi, na którym klient realnie odbiera samochody. Wizytówka nie działa w próżni — istnienie spójnej strony, do której profil prowadzi i która mówi to samo co on, wzmacnia całościową obecność firmy w wynikach lokalnych.
+      </p>
+      <p>
+        Warto tu postawić sprawę jasno, bo bywa to mylone: <strong>strony nie pozycjonujemy osobno</strong>. Nie prowadzimy dla niej odrębnych działań SEO i nie walczymy nią o pozycje w wynikach organicznych. Jest wykorzystywana jako element wspierający działania związane z widocznością wizytówki Google — daje profilowi zaplecze treściowe, miejsce, do którego można skierować klienta po szczegóły, i punkt odniesienia dla danych firmy. Szerzej o tej zależności pisaliśmy przy okazji <a href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">lokalnego SEO dla firm</a>.
+      </p>
+
+      <h2>Problem z zapytaniami o części samochodowe</h2>
+      <p>
+        Klient zgłosił konkretny problem biznesowy, który wart jest opisania, bo dotyczy całej tej branży. Przy frazach takich jak <strong>kasacja aut</strong>, <strong>złomowanie aut</strong> czy <strong>skup aut</strong> pojawiają się nie tylko osoby chcące oddać samochód, ale też takie, które szukają <strong>części samochodowych</strong>. Dzwonili, pisali wiadomości, wysyłali zapytania mailowe z pytaniem o konkretny element do konkretnego modelu.
+      </p>
+      <p>
+        To naturalna konsekwencja szerokiej intencji stojącej za tymi zapytaniami. Skoro firma przyjmuje auta do kasacji, to w głowie części użytkowników jest też miejscem, w którym można kupić z nich części. Trudno mieć o to pretensje do algorytmu, bo skojarzenie jest logiczne.
+      </p>
+      <p>
+        Pracowaliśmy nad tym, żeby ograniczyć liczbę takich kontaktów — precyzując opisy usług i sposób, w jaki profil komunikuje, czym firma się zajmuje, a czym nie. Liczba nietrafionych zapytań spadła, ale trzeba powiedzieć wprost: <strong>przy tych frazach pewien odsetek takich telefonów zostanie zawsze</strong>. Można to ograniczać, nie da się tego wyeliminować, a obiecywanie klientowi czegoś innego byłoby zwyczajnie nieuczciwe.
+      </p>
+
+      <h2>Linkowanie i zaplecze</h2>
+      <p>
+        Kolejnym elementem było zbudowanie zaplecza linkowego wspierającego widoczność wizytówki. Chodzi o pozyskanie wzmianek i odnośników, które budują szerszy kontekst wokół firmy i potwierdzają, że jest to realnie działający podmiot, obecny w sieci w więcej niż jednym miejscu.
+      </p>
+      <p>
+        Linkowanie prowadzimy do strony internetowej, która z kolei wspiera profil w Google. Zaplecze rozwijamy stopniowo, razem z rozszerzaniem obszaru działań, a nie jednorazowym zrywem na starcie. W lokalnym SEO tempo ma znaczenie: to ma wyglądać jak naturalnie rosnąca obecność firmy, bo w istocie właśnie tym jest.
+      </p>
+
+      <h2>Opinie Google</h2>
+      <p>
+        Klient dostał również narzędzia ułatwiające zbieranie <a href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">opinii Google</a>. To element, który w firmach lokalnych bywa odkładany na później, a działa mocniej niż większość pozostałych. Opinie wpływają na to, jak profil wypada w porównaniu z konkurencją przy tym samym zapytaniu, i na decyzję człowieka, który ma przed sobą trzy podobne wyniki i wybiera ten, który wygląda na sprawdzony.
+      </p>
+      <p>
+        Nie chodzi o sztuczne generowanie ocen. Chodzi o usunięcie tarcia z drogi prawdziwego klienta, który jest zadowolony, ale sam z siebie nie wejdzie w Google szukać miejsca na wystawienie opinii. Zbieranie opinii to proces prowadzony na bieżąco, a nie akcja zamknięta w pierwszym miesiącu współpracy.
+      </p>
+
+      <h2>Stała opieka i rozwijanie obszaru działania</h2>
+      <p>
+        Współpraca nie skończyła się na ustawieniu wizytówki. Utrzymujemy cykliczny kontakt z klientem, sprawdzamy statystyki profilu, analizujemy, co się dzieje z połączeniami i zapytaniami, i reagujemy na to, co widać w danych — łącznie z problemami takimi jak te telefony o części.
+      </p>
+      <p>
+        Obszar działań jest stopniowo rozszerzany na coraz szerszy teren wokół siedziby firmy. To naturalna kolejność w <a href="/siedziba-mala-miejscowosc-local-seo" className="text-brand font-semibold hover:underline">lokalnym SEO poza dużym miastem</a>: najpierw ugruntowana pozycja tam, gdzie firma fizycznie jest, potem sąsiednie miejscowości. Odwrotna kolejność zwykle kończy się tym, że profil jest wszędzie po trochu i nigdzie mocno.
+      </p>
+
+      <h2>Efekt: 77 połączeń w lipcu</h2>
+      <p>
+        Poniżej surowe dane z panelu statystyk wizytówki Google klienta. Lipiec to <strong>pierwszy pełny miesiąc</strong> prowadzonych działań, licząc od ustalenia współpracy w czerwcu.
+      </p>
+
+      <div className="not-prose my-6">
+        <figure className="overflow-hidden rounded-2xl border border-border bg-white">
+          <img src="/blog/skup-aut/miauSEO_opinie_skup_aut_lipiec.png" alt="Statystyki wizytówki Google skupu aut — lipiec 2026, 77 połączeń wykonanych z profilu firmy" loading="lazy" className="w-full" />
+          <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600"><strong className="text-ink">Lipiec 2026</strong> — 77 połączeń wykonanych z poziomu profilu firmy w Google. Źródło: panel statystyk wizytówki klienta.</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        Liczba połączeń jest jednym z najbardziej konkretnych wskaźników wartości biznesowej wizytówki, znacznie lepszym niż pozycje czy wyświetlenia. Pozycja mówi, gdzie firma stoi na liście. Połączenie mówi, że ktoś sięgnął po telefon.
+      </p>
+      <p>
+        Trzeba to jednak czytać dokładnie: <strong>77 połączeń oznacza 77 interakcji telefonicznych wygenerowanych przez wizytówkę, a nie 77 zawartych transakcji</strong>. Mieści się w tym również część tych zapytań o części, o których pisaliśmy wyżej. Nie mamy podstaw, by twierdzić, ile z tych rozmów zamieniło się w odebrany samochód, więc tego nie robimy.
+      </p>
+      <p>
+        Nie twierdzimy też, że taki sam wynik da się powtórzyć w każdej firmie i każdym mieście. Na ten rezultat złożyły się branża o wysokiej intencji telefonicznej, rynek tej wielkości, konkretny zestaw równolegle prowadzonych działań i po prostu porządnie odrobiona podstawa.
+      </p>
+
+      <h2>Co dalej</h2>
+      <p>
+        Praca nad profilem trwa. Rozwijamy widoczność na kolejne frazy i stopniowo poszerzamy obszar, w którym wizytówka ma się pokazywać. Kontynuujemy budowę zaplecza i linkowanie do strony, prowadzimy proces zbierania opinii Google i monitorujemy statystyki, żeby wychwycić zarówno wzrosty, jak i sygnały, że coś zaczyna się psuć.
+      </p>
+      <p>
+        Osobnym, ciągłym wątkiem zostaje ograniczanie zapytań o części — to nie jest zadanie z terminem końcowym, tylko coś, co się dostraja w miarę tego, jak zmienia się struktura zapytań trafiających do firmy.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        W czerwcu ustaliliśmy współpracę, w lipcu wizytówka wygenerowała <strong>77 połączeń</strong>. Za tą liczbą stoi przygotowana i zoptymalizowana wizytówka Google, przeprowadzona weryfikacja wideo, strona z podstronami lokalizacyjnymi wspierająca profil, zaplecze linkowe, uruchomiony proces zbierania opinii i stały kontakt z klientem.
+      </p>
+      <p>
+        Najważniejszy wniosek jest taki, że <strong>lokalne SEO to proces, a nie jednorazowe ustawienie wizytówki</strong>. Profil, który zostawi się w spokoju po pierwszym miesiącu, zaczyna cofać się względem konkurencji, która swojego nie zostawiła. Wynik z lipca jest punktem wyjścia do dalszej pracy, a nie zamknięciem tematu.
+      </p>
+      <p>
+        Jeśli prowadzisz firmę lokalną i chcesz sprawdzić, co da się zrobić z Twoim profilem, zobacz, jak wygląda u nas{" "}
+        <a href="/uslugi/wizytowka-google" className="text-brand font-semibold hover:underline">obsługa wizytówki Google</a>{" "}
+        albo od razu <Link href="/kontakt" className="text-brand font-semibold hover:underline">umów bezpłatną konsultację</Link>. Możesz też zobaczyć inne nasze wdrożenie w branży lokalnej:{" "}
+        <a href="/miauseo-opinie-protetyk" className="text-brand font-semibold hover:underline">case study gabinetu protetycznego</a>.
+      </p>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      OPINIE / CASE STUDY: miauSEO — mobilny masaż, strona WWW i podstrony lokalizacyjne
   ───────────────────────────────────────────────────────────────────────── */
   "miauseo-opinie-mobilny-masaz": (

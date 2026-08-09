@@ -26,6 +26,17 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "miauseo-opinie-skup-aut",
+    title: "SEO i opinie Google - wizytówka skupu aut, 77 połączeń",
+    excerpt: "Współpracę nad wizytówką Google skupu aut zaczęliśmy w czerwcu. W lipcu, pierwszym pełnym miesiącu działań, profil wygenerował 77 połączeń telefonicznych. Pokazujemy cały zakres: przygotowanie i optymalizację wizytówki, weryfikację wideo, stronę z podstronami lokalizacyjnymi wspierającą profil, zaplecze linkowe, narzędzia do zbierania opinii Google oraz walkę z zapytaniami o części samochodowe.",
+    category: "Opinie",
+    date: "2026-08-09",
+    readTime: 12,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-miauseo-opinie-skup-aut.svg",
+    published: true,
+  },
+  {
     slug: "kiedy-nie-pozycjonowac-strony-internetowej",
     title: "Kiedy NIE pozycjonować strony? 7 sytuacji",
     excerpt: "Kiedy nie pozycjonować strony internetowej? Oto 7 sytuacji, w których SEO to zły pomysł — i co robić zamiast tego, żeby nie przepalić budżetu na start.",
