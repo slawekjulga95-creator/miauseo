@@ -15,6 +15,7 @@ const staticRoutes: { url: string; priority: number; changeFrequency: MetadataRo
   { url: "/uslugi/tiktok-ads",             priority: 0.9, changeFrequency: "monthly" },
   { url: "/blog",                          priority: 0.8, changeFrequency: "weekly" },
   { url: "/pytania",                       priority: 0.8, changeFrequency: "weekly" },
+  { url: "/strony-internetowe",            priority: 0.8, changeFrequency: "monthly" },
   { url: "/referencje",                    priority: 0.7, changeFrequency: "monthly" },
   { url: "/opinie",                        priority: 0.7, changeFrequency: "monthly" },
   { url: "/o-nas",                         priority: 0.7, changeFrequency: "monthly" },

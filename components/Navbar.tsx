@@ -235,6 +235,17 @@ export default function Navbar() {
 
             <li>
               <Link
+                href="/strony-internetowe"
+                className={`px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
+                  isActive("/strony-internetowe") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
+                }`}
+              >
+                Strony internetowe
+              </Link>
+            </li>
+
+            <li>
+              <Link
                 href="/referencje"
                 className={`px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
                   isActive("/referencje") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
@@ -334,6 +345,11 @@ export default function Navbar() {
           <Link href="/pytania" onClick={() => setOpen(false)}
             className={`text-2xl font-semibold py-3 border-b border-border transition-colors duration-150 ${isActive("/pytania") ? "text-brand" : "text-ink hover:text-brand"}`}>
             FAQ
+          </Link>
+
+          <Link href="/strony-internetowe" onClick={() => setOpen(false)}
+            className={`text-2xl font-semibold py-3 border-b border-border transition-colors duration-150 ${isActive("/strony-internetowe") ? "text-brand" : "text-ink hover:text-brand"}`}>
+            Strony internetowe
           </Link>
 
           <Link href="/referencje" onClick={() => setOpen(false)}
