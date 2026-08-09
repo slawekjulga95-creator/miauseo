@@ -4,8 +4,8 @@ import WizytowkaForm from "@/components/WizytowkaForm";
 import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
-  title: "Pozycjonowanie wizytówki Google – MiauSEO | Od 500 zł/mies.",
-  description: "Pozycjonowanie wizytówki Google dla firm lokalnych. Sprawdź co obejmuje usługa, ile kosztuje i jak działamy. Bezpłatna konsultacja – oddzwonimy.",
+  title: "Pozycjonowanie wizytówki Google – MiauSEO | Widoczność w Mapach",
+  description: "Pozycjonowanie wizytówki Google dla firm lokalnych. Sprawdź co obejmuje usługa i jak działamy. Bezpłatna konsultacja i wycena dopasowana do Twojej branży.",
 };
 
 const services = [
@@ -333,10 +333,12 @@ export default function WizytowkaGooglePage() {
               i zupełnie inne nakłady pracy.
             </p>
             <p className="text-zinc-500 leading-relaxed border-l-2 border-brand/20 pl-5">
-              Nasze ceny zaczynają się od <strong className="font-semibold text-ink">500 zł netto miesięcznie</strong>{" "}
-              dla firm w mniej konkurencyjnych niszach i lokalizacjach. W bardziej wymagających przypadkach —
-              duże miasto, wiele fraz, intensywna konkurencja — kwota może być znacznie wyższa.
-              Na końcową cenę wpływa liczba obsługiwanych lokalizacji, zakres działań i aktualny stan wizytówki.
+              Inaczej wygląda wycena dla firmy w mniej konkurencyjnej niszy, a inaczej tam, gdzie
+              trzeba walczyć o widoczność w dużym mieście, na wielu frazach i przy intensywnej
+              konkurencji. Na końcową kwotę wpływa{" "}
+              <strong className="font-semibold text-ink">liczba obsługiwanych lokalizacji, zakres działań
+              i aktualny stan wizytówki</strong> — czasem trzeba zacząć od uporządkowania profilu,
+              czasem można od razu pracować nad pozycjami.
             </p>
             <p className="text-zinc-500 leading-relaxed border-l-2 border-brand/20 pl-5">
               <strong className="font-semibold text-ink">Wszystko ustalamy indywidualnie</strong> — na
