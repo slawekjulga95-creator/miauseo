@@ -204,23 +204,12 @@ const realizacje: Realizacja[] = [
 export default function StronyInternetowePage() {
   return (
     <main className="pt-20">
-      {/* Hero */}
-      <section className="px-6 py-20 bg-surface border-b border-border">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs font-bold tracking-widest uppercase text-brand mb-4">Realizacje</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-ink leading-tight mb-6">
-            Strony internetowe, <span className="text-brand">które zbudowaliśmy</span>
-          </h1>
-          <p className="text-lg text-zinc-500 leading-relaxed">
-            Każdy z tych projektów powstał pod konkretną usługę i konkretny rynek lokalny. Nie
-            kupujemy szablonów i nie zmieniamy w nich kolorów — układ strony wynika z tego, jak
-            klient danej firmy podejmuje decyzję.
-          </p>
-        </div>
-      </section>
+      {/* H1 zostaje dla wyszukiwarek i czytników ekranu — na ekranie od razu wchodzimy
+          w realizacje, bez sekcji wstępnej. */}
+      <h1 className="sr-only">Strony internetowe, które zbudowaliśmy dla klientów</h1>
 
       {/* Realizacje */}
-      <section className="px-6 py-20">
+      <section className="px-6 pt-12 pb-20">
         <div className="max-w-6xl mx-auto space-y-24">
           {realizacje.map((r, i) => (
             <article
