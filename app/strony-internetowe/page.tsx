@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
+import { Fragment, type ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -210,10 +210,18 @@ export default function StronyInternetowePage() {
 
       {/* Realizacje */}
       <section className="px-6 pt-12 pb-20">
-        <div className="max-w-6xl mx-auto space-y-24">
+        <div className="max-w-6xl mx-auto space-y-16">
           {realizacje.map((r, i) => (
+            <Fragment key={r.url}>
+            {i > 0 && (
+              <div className="flex items-center gap-4" aria-hidden="true">
+                <span className="h-px flex-1 bg-border" />
+                <span className="w-1.5 h-1.5 rounded-full bg-brand/40" />
+                <span className="h-px flex-1 bg-border" />
+              </div>
+            )}
+
             <article
-              key={r.url}
               className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center"
             >
               {/* Opis */}
@@ -297,6 +305,28 @@ export default function StronyInternetowePage() {
                 </div>
               </div>
             </article>
+
+            {/* CTA w połowie listy — dłuższe portfolio bez przerwy przewija się bez okazji do kontaktu */}
+            {i === 2 && (
+              <div className="bg-ink rounded-3xl px-8 py-10 md:px-12 flex flex-col md:flex-row md:items-center gap-6">
+                <div className="flex-1">
+                  <p className="text-white text-xl md:text-2xl font-bold leading-tight mb-2">
+                    Twoja branża wygląda podobnie?
+                  </p>
+                  <p className="text-zinc-300 text-sm leading-relaxed">
+                    Powiedz, czym się zajmujesz i skąd dziś przychodzą do Ciebie klienci. Odpiszę, co
+                    da się zrobić i czy w ogóle warto zaczynać od strony.
+                  </p>
+                </div>
+                <Link
+                  href="/kontakt"
+                  className="shrink-0 inline-flex items-center justify-center bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200"
+                >
+                  Napisz do nas
+                </Link>
+              </div>
+            )}
+            </Fragment>
           ))}
         </div>
       </section>
