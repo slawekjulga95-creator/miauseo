@@ -35,6 +35,18 @@ const serviceGroups = [
           </svg>
         ),
       },
+      {
+        href: "/strony-internetowe",
+        label: "Strony internetowe",
+        desc: "Realizacje stron dla klientów",
+        icon: (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <line x1="2" y1="9" x2="22" y2="9" />
+            <circle cx="5.5" cy="6.5" r="0.5" fill="currentColor" />
+          </svg>
+        ),
+      },
     ],
   },
   {
@@ -125,7 +137,7 @@ export default function Navbar() {
     if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
   };
-  const isServicesActive = pathname.startsWith("/uslugi");
+  const isServicesActive = pathname.startsWith("/uslugi") || pathname === "/strony-internetowe";
 
   return (
     <>
@@ -235,17 +247,6 @@ export default function Navbar() {
 
             <li>
               <Link
-                href="/strony-internetowe"
-                className={`px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
-                  isActive("/strony-internetowe") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
-                }`}
-              >
-                Strony internetowe
-              </Link>
-            </li>
-
-            <li>
-              <Link
                 href="/referencje"
                 className={`px-3.5 py-2 text-[15px] font-semibold rounded-md transition-colors duration-150 ${
                   isActive("/referencje") ? "text-brand" : "text-zinc-800 hover:text-brand hover:bg-surface"
@@ -345,11 +346,6 @@ export default function Navbar() {
           <Link href="/pytania" onClick={() => setOpen(false)}
             className={`text-2xl font-semibold py-3 border-b border-border transition-colors duration-150 ${isActive("/pytania") ? "text-brand" : "text-ink hover:text-brand"}`}>
             FAQ
-          </Link>
-
-          <Link href="/strony-internetowe" onClick={() => setOpen(false)}
-            className={`text-2xl font-semibold py-3 border-b border-border transition-colors duration-150 ${isActive("/strony-internetowe") ? "text-brand" : "text-ink hover:text-brand"}`}>
-            Strony internetowe
           </Link>
 
           <Link href="/referencje" onClick={() => setOpen(false)}
