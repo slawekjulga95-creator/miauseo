@@ -25,6 +25,84 @@ type Realizacja = {
 
 const realizacje: Realizacja[] = [
   {
+    name: "UMYJEMY Morusiewicz",
+    url: "umyjemy-morusiewicz.pl",
+    href: "https://umyjemy-morusiewicz.pl",
+    branza: "Mycie ciśnieniowe i malowanie dachów · Suwałki, Olecko, Ełk",
+    description: (
+      <>
+        Firma myjąca ciśnieniowo dachy, elewacje i kostkę brukową, która przy okazji dachy również
+        maluje. Materiałem wyjściowym było{" "}
+        <strong className="text-ink">kilkadziesiąt zdjęć z telefonu właściciela</strong>, więc cała
+        identyfikacja strony wyszła z oklejenia jego busa: granat, błękit wody i znak z lancą
+        ciśnieniową. Każda usługa dostała osobną podstronę, bo klient szukający malowania dachu
+        wpisuje w Google zupełnie coś innego niż ten z zarośniętym podjazdem.
+      </>
+    ),
+    scope: [
+      "Projekt i budowa strony od zera",
+      "Logo i paleta odtworzone z oklejenia auta",
+      "Cztery podstrony usługowe",
+      "Galeria realizacji z podglądem zdjęć",
+      "Obróbka i optymalizacja zdjęć klienta",
+      "Telefon i wizytówka Google wyeksponowane",
+    ],
+    image: "/realizacje/umyjemy-morusiewicz.png",
+    imageAlt:
+      "Strona internetowa umyjemy-morusiewicz.pl — mycie ciśnieniowe i malowanie dachów w Suwałkach",
+  },
+  {
+    name: "Skup Aut Syców",
+    url: "skupaut-sycow.pl",
+    href: "https://skupaut-sycow.pl",
+    branza: "Skup aut, złomowanie i pomoc drogowa · Syców",
+    description: (
+      <>
+        Skup samochodów połączony z kasacją pojazdów i pomocą drogową. Właściciel działa lokalnie,
+        więc zamiast jednej ogólnej strony powstało{" "}
+        <strong className="text-ink">dwadzieścia osobnych podstron miejscowości</strong> w promieniu
+        dojazdu, każda z realną odległością od bazy. Pierwszy ekran odpowiada na jedyne pytanie,
+        jakie ma człowiek chcący pozbyć się auta: co się teraz stanie i ile to potrwa.
+      </>
+    ),
+    scope: [
+      "Projekt i budowa strony od zera",
+      "Dwadzieścia podstron pod okoliczne miejscowości",
+      "Osobne podstrony usługowe",
+      "Ścieżka sprzedaży auta rozpisana na kroki",
+      "Kontakt telefoniczny wyeksponowany",
+      "Wsparcie widoczności wizytówki Google",
+    ],
+    image: "/realizacje/skupaut-sycow.png",
+    imageAlt:
+      "Strona internetowa skupaut-sycow.pl — skup aut, złomowanie i pomoc drogowa w Sycowie",
+  },
+  {
+    name: "HydroNówka",
+    url: "hydronowka.pl",
+    href: "https://hydronowka.pl",
+    branza: "Czyszczenie ciśnieniowe · Leszno, Kościan, Śmigiel",
+    description: (
+      <>
+        Firma myjąca ciśnieniowo kostkę brukową, elewacje, ogrodzenia i dachy. Cała strona stoi na
+        jednym argumencie: <strong className="text-ink">zamiast wymieniać nawierzchnię, wystarczy ją
+        porządnie umyć</strong>. Stąd efekt „przed i po" już w pierwszym ekranie i osiem osobnych
+        podstron usługowych, bo klient szukający impregnacji kostki wpisuje w Google coś zupełnie
+        innego niż ten, który ma zielony dach.
+      </>
+    ),
+    scope: [
+      "Projekt i budowa strony od zera",
+      "Osiem podstron usługowych",
+      "Galeria efektów przed i po",
+      "Podstrony pod obszar działania",
+      "Blog i treści budujące kontekst",
+      "Telefon i wizytówka Google wyeksponowane",
+    ],
+    image: "/realizacje/hydronowka.png",
+    imageAlt: "Strona internetowa hydronowka.pl — czyszczenie ciśnieniowe kostki brukowej i elewacji",
+  },
+  {
     name: "Szybki Skup Aut",
     url: "szybkiskup-aut.pl",
     href: "https://szybkiskup-aut.pl",
