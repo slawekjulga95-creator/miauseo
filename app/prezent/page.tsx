@@ -15,9 +15,6 @@ export const metadata: Metadata = {
 
 const TELEFON = "+48 455 571 349";
 const TELEFON_HREF = "tel:+48455571349";
-const MAIL = "slawomir@miauseo.pl";
-const MAIL_HREF =
-  "mailto:slawomir@miauseo.pl?subject=Strona%20w%20prezencie%20-%20pytanie";
 
 const wZestawie = [
   {
@@ -151,7 +148,7 @@ export default function PrezentPage() {
   return (
     <>
       {/* ─────────────────────────── HERO ─────────────────────────── */}
-      <section className="px-6 pt-16 pb-16 md:pt-24 md:pb-20 bg-surface">
+      <section className="px-6 pt-28 pb-16 md:pt-32 md:pb-20 bg-surface">
         <div className="max-w-4xl mx-auto text-center">
           <p className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.18em] uppercase text-brand bg-white border border-border rounded-full px-4 py-2">
             <span className="w-2 h-2 rounded-full bg-brand" aria-hidden="true" />
@@ -422,39 +419,6 @@ export default function PrezentPage() {
               </details>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ─────────────────────────── CTA ──────────────────────────── */}
-      <section className="px-6 pb-24">
-        <div className="max-w-5xl mx-auto bg-ink text-white rounded-3xl px-8 py-12 md:px-14 md:py-16 text-center">
-          <h2 className="text-2xl md:text-4xl font-black">
-            Jeden telefon i będzie Pan wiedział, czy to ma sens
-          </h2>
-          <p className="mt-5 text-zinc-300 max-w-2xl mx-auto leading-relaxed">
-            Nie ma tu formularza do wypełniania ani prezentacji do odsłuchania. Wystarczy krótka
-            rozmowa: powie Pan, czym się zajmuje i gdzie pracuje, a my powiemy, jak wyglądałaby
-            strona i cała współpraca.
-          </p>
-
-          <div className="mt-9 flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href={TELEFON_HREF}
-              className="inline-flex items-center justify-center bg-brand text-white hover:bg-brand-dark font-bold rounded-xl px-8 py-4 transition-colors"
-            >
-              Zadzwoń: {TELEFON}
-            </a>
-            <a
-              href={MAIL_HREF}
-              className="inline-flex items-center justify-center border-2 border-white/40 text-white hover:bg-white hover:text-ink font-bold rounded-xl px-8 py-4 transition-colors"
-            >
-              Napisz: {MAIL}
-            </a>
-          </div>
-
-          <p className="mt-7 text-sm text-zinc-400">
-            Sławomir Julga · MiauSEO · odpowiadamy zwykle tego samego dnia
-          </p>
         </div>
       </section>
     </>
