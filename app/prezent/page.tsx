@@ -181,10 +181,6 @@ export default function PrezentPage() {
               Zobacz, co zbudowaliśmy
             </a>
           </div>
-
-          <p className="mt-6 text-sm text-zinc-500">
-            Rozmowa niczego nie kosztuje i do niczego nie zobowiązuje.
-          </p>
         </div>
       </section>
 
