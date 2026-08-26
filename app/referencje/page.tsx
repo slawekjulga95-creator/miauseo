@@ -11,12 +11,14 @@ export const metadata: Metadata = {
 
 const portfolio: {
   title: string;
+  client: string;
   description: ReactNode;
   scope: string[];
   href: string;
 }[] = [
   {
     title: "Protetyk",
+    client: "Estetic-Smile Piła",
     description: (
       <>
         Realizacja obejmowała <strong className="text-ink">kompleksową optymalizację obecności firmy w Google</strong>. Wykonaliśmy działania związane z poprawą <strong className="text-ink">widoczności lokalnej</strong>, optymalizacją <strong className="text-ink">wizytówki Google</strong>, przygotowaniem treści oraz rozwojem strony internetowej.
@@ -36,6 +38,7 @@ const portfolio: {
   },
   {
     title: "Skup telefonów",
+    client: "IHelpYou Poznań",
     description: (
       <>
         Projekt realizowany w <strong className="text-ink">bardzo konkurencyjnej branży lokalnej</strong>. Skupiliśmy się na zwiększeniu <strong className="text-ink">widoczności wizytówki Google</strong> oraz poprawie <strong className="text-ink">pozycji na lokalne zapytania</strong> użytkowników.
@@ -55,6 +58,7 @@ const portfolio: {
   },
   {
     title: "Mobilny masaż",
+    client: "Rozluznijsię Poznań",
     description: (
       <>
         Stworzyliśmy <strong className="text-ink">stronę internetową</strong> oraz przygotowaliśmy <strong className="text-ink">fundamenty pod lokalne pozycjonowanie</strong> usługi mobilnej.
@@ -98,7 +102,10 @@ export default function ReferencjePage() {
                   sizes="112px"
                   className="self-start justify-self-start h-8 w-auto mb-5"
                 />
-                <h3 className="text-xl font-bold text-ink mb-3">{p.title}</h3>
+                <h3 className="text-xl font-bold text-ink mb-3">
+                  {p.title}
+                  <span className="block text-sm font-semibold text-brand mt-1">{p.client}</span>
+                </h3>
                 <p className="text-[15px] text-zinc-600 leading-relaxed mb-6">{p.description}</p>
 
                 <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-3">Zakres działań</p>
