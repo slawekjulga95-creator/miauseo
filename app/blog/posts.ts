@@ -26,6 +26,17 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "jak-poprawic-widocznosc-profilu-firmy-w-mapach",
+    title: "Jak poprawić widoczność profilu firmy w mapach?",
+    excerpt: "Konkretna lista działań, które realnie zmieniają pozycję wizytówki w Mapach Google — od kategorii głównej i godzin otwarcia po opinie i sygnały behawioralne. Oparta na wytycznych Google, raporcie Whitespark 2026 i badaniu BrightLocal, bez ogólników.",
+    category: "SEO",
+    date: "2026-08-28",
+    readTime: 17,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-widocznosc-w-mapach.svg",
+    published: true,
+  },
+  {
     slug: "miauseo-opinie-skup-aut",
     title: "SEO i opinie Google - wizytówka skupu aut, 77 połączeń",
     excerpt: "Współpracę nad wizytówką Google skupu aut zaczęliśmy w czerwcu. W lipcu, pierwszym pełnym miesiącu działań, profil wygenerował 77 połączeń telefonicznych. Pokazujemy cały zakres: przygotowanie i optymalizację wizytówki, weryfikację wideo, stronę z podstronami lokalizacyjnymi wspierającą profil, zaplecze linkowe, narzędzia do zbierania opinii Google oraz walkę z zapytaniami o części samochodowe.",
