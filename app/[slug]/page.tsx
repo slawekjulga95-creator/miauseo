@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import NewsletterForm from "@/components/NewsletterForm";
+import BlogLeadForm from "@/components/BlogLeadForm";
 import { getPostBySlug, getPublishedPosts, formatDate } from "@/app/blog/posts";
 import type { Category } from "@/app/blog/posts";
 import { articleContent } from "@/app/blog/content";
@@ -404,7 +404,7 @@ export default async function BlogPostPage({ params }: Props) {
           {/* Sidebar */}
           <aside className="lg:w-64 shrink-0">
             <div className="sticky top-28 space-y-6">
-              <NewsletterForm />
+              <BlogLeadForm />
 
               {/* CTA */}
               <div className="bg-ink rounded-2xl p-6">

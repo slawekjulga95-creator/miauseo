@@ -8,6 +8,7 @@ const SOURCE_LABELS: Record<string, string> = {
   hero: "Widget Hero (strona główna)",
   wizytowka: "Checklista wizytówki Google",
   widget: "Sticky widget (strona główna)",
+  blog: "Formularz w artykule na blogu",
 };
 
 export async function POST(req: NextRequest) {
