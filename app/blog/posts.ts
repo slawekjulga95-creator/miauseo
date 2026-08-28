@@ -26,6 +26,17 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "pozycjonowanie-wizytowki-google-pila",
+    title: "Pozycjonowanie wizytówki Google Piła — poradnik dla firm z Piły i powiatu",
+    excerpt: "Jak firma z Piły wchodzi do top 3 w Mapach Google. Realia pilskiego rynku, mapa zasięgu do Ujścia, Kaczor, Chodzieży i Wałcza, gotowy kod Local Schema pod Piłę oraz kolejność prac na pierwszy tydzień i pierwszy miesiąc.",
+    category: "SEO",
+    date: "2026-08-28",
+    readTime: 16,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-pila.svg",
+    published: true,
+  },
+  {
     slug: "jak-poprawic-widocznosc-profilu-firmy-w-mapach",
     title: "Jak poprawić widoczność profilu firmy w mapach?",
     excerpt: "Konkretna lista działań, które realnie zmieniają pozycję wizytówki w Mapach Google — od kategorii głównej i godzin otwarcia po opinie i sygnały behawioralne. Oparta na wytycznych Google, raporcie Whitespark 2026 i badaniu BrightLocal, bez ogólników.",

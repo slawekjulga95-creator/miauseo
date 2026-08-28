@@ -3,6 +3,352 @@ import Link from "next/link";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google Piła
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-pila": (
+    <>
+      <p>
+        Piła liczy <strong>69 748 mieszkańców</strong> i zajmuje <strong>102,7 km²</strong>, co daje gęstość zaludnienia na poziomie 679 osób na kilometr kwadratowy. Te trzy liczby tłumaczą, dlaczego walka o Mapy Google wygląda tutaj inaczej niż w Poznaniu czy Bydgoszczy — i dlaczego przeniesienie poradnika napisanego pod duże miasto na pilski rynek zwykle kończy się rozczarowaniem.
+      </p>
+      <p>
+        Ten tekst jest o jednym: co konkretnie zrobić z profilem firmy, żeby wchodził do pierwszej trójki na zapytania wpisywane w Pile i okolicznych gminach. Bez teorii przepisanej z zagranicznych blogów, za to z pilskimi realiami: rozciągłością miasta, sąsiednimi miejscowościami i tym, jak wygląda konkurencja przy kilkudziesięciu tysiącach mieszkańców.
+      </p>
+
+      <h2>Pilski rynek w liczbach</h2>
+      <p>
+        Powiat pilski liczy <strong>około 138 tysięcy osób</strong> i zajmuje <strong>1268 km²</strong>, a tworzy go dziewięć gmin: Piła, Białośliwie, Kaczory, Łobżenica, Miasteczko Krajeńskie, Szydłowo, Ujście, Wyrzysk i Wysoka. Połowa mieszkańców powiatu mieszka w samej Pile, druga połowa rozłożona jest po obszarze niemal trzynastokrotnie większym.
+      </p>
+      <p>
+        Dla firmy usługowej z Piły oznacza to dwie rzeczy naraz. Pierwsza jest dobra: na większość fraz realnie konkuruje kilka, najwyżej kilkanaście profili, a nie kilkadziesiąt jak w mieście wojewódzkim. Wejście do top 3 jest tu osiągalne w miesiące, nie w lata. Druga jest trudniejsza: zapytań o daną usługę jest po prostu mniej, więc każde nietrafione — bo profil nie pokazał się przy zapytaniu z Zamościa albo z Ujścia — kosztuje procentowo znacznie więcej niż w dużym mieście.
+      </p>
+      <p>
+        Wniosek praktyczny: w Pile nie opłaca się walczyć o widoczność „ogólnie w mieście". Opłaca się walczyć o widoczność <strong>na konkretnych osiedlach i w konkretnych gminach</strong>, z których faktycznie przyjeżdżają klienci.
+      </p>
+
+      <h2>Dlaczego bliskość decyduje w Pile wyjątkowo mocno</h2>
+      <p>
+        Google opisuje w dokumentacji Business Profile trzy podstawy wyników lokalnych: trafność, czyli dopasowanie profilu do zapytania, odległość, czyli dystans między firmą a miejscem wyszukiwania, oraz popularność. Odległość to czynnik, którego nie da się ustawić w panelu — i w Pile bije szczególnie mocno, bo miasto jest rozciągnięte, a Gwda dzieli je na dwie części.
+      </p>
+      <p>
+        Konkretnie: firma z <strong>Motylewa</strong> i firma ze <strong>Śródmieścia</strong> to z punktu widzenia algorytmu dwa różne punkty na mapie, a klient wpisujący zapytanie na <strong>Zamościu</strong>, <strong>Podlasiu</strong>, <strong>Górnem</strong> czy <strong>Staszycach</strong> dostanie inną trójkę wyników w każdym z tych miejsc. Pilanie posługują się tymi nazwami na co dzień, choć część osiedli formalnie straciła status jednostek pomocniczych miasta — dla algorytmu liczy się nie nazwa, tylko współrzędne, z których pada zapytanie.
+      </p>
+      <p>
+        Dlatego pierwszy krok przy każdej pilskiej wizytówce jest ten sam: sprawdzić, jak daleko sięga widoczność profilu, zamiast pytać „na którym jestem miejscu". Odpowiedź „na którym miejscu" nie istnieje, bo jest ich tyle, ile punktów w mieście.
+      </p>
+
+      <h2>Zasięg wizytówki: Piła i okoliczne miejscowości</h2>
+      <p>
+        Poniżej odległości od Piły do najbliższych ośrodków, z których realnie przyjeżdżają klienci pilskich firm. To one wyznaczają obszar, o który warto walczyć.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6 flex justify-center">
+          <svg viewBox="0 0 420 400" width="100%" style={{maxWidth: '520px'}} role="img" aria-labelledby="mapa-pila-tytul mapa-pila-opis">
+            <title id="mapa-pila-tytul">Mapa zasięgu wizytówki Google firmy z Piły — odległości do okolicznych miejscowości</title>
+            <desc id="mapa-pila-opis">Schemat rozmieszczenia miejscowości wokół Piły z odległościami: Ujście 10,9 km na południe, Kaczory 11,2 km na południowy wschód, Miasteczko Krajeńskie 18,8 km na wschód, Chodzież 21,1 km na południowy wschód, Trzcianka 22,1 km na południowy zachód, Wałcz 22,2 km na północny zachód.</desc>
+            <rect x="0" y="0" width="420" height="400" fill="#ffffff"/>
+            <circle cx="200" cy="200" r="60" fill="none" stroke="#FF6A00" strokeWidth="1" strokeDasharray="4 4" opacity="0.35"/>
+            <circle cx="200" cy="200" r="120" fill="none" stroke="#FF6A00" strokeWidth="1" strokeDasharray="4 4" opacity="0.35"/>
+            <text x="200" y="136" textAnchor="middle" fontFamily="sans-serif" fontSize="10" fill="#c2410c">10 km</text>
+            <text x="200" y="76" textAnchor="middle" fontFamily="sans-serif" fontSize="10" fill="#c2410c">20 km</text>
+
+            <line x1="200" y1="200" x2="197" y2="265" stroke="#d4d4d8" strokeWidth="1.5"/>
+            <line x1="200" y1="200" x2="252" y2="243" stroke="#d4d4d8" strokeWidth="1.5"/>
+            <line x1="200" y1="200" x2="310" y2="225" stroke="#d4d4d8" strokeWidth="1.5"/>
+            <line x1="200" y1="200" x2="271" y2="305" stroke="#d4d4d8" strokeWidth="1.5"/>
+            <line x1="200" y1="200" x2="88" y2="270" stroke="#d4d4d8" strokeWidth="1.5"/>
+            <line x1="200" y1="200" x2="95" y2="118" stroke="#d4d4d8" strokeWidth="1.5"/>
+
+            <g fontFamily="sans-serif">
+              <circle cx="197" cy="265" r="6" fill="#FF6A00" opacity="0.75"/>
+              <text x="197" y="288" textAnchor="middle" fontSize="12" fontWeight="700" fill="#18181b">Ujście</text>
+              <text x="197" y="301" textAnchor="middle" fontSize="11" fill="#71717a">10,9 km</text>
+
+              <circle cx="252" cy="243" r="6" fill="#FF6A00" opacity="0.75"/>
+              <text x="268" y="247" textAnchor="start" fontSize="12" fontWeight="700" fill="#18181b">Kaczory</text>
+              <text x="268" y="260" textAnchor="start" fontSize="11" fill="#71717a">11,2 km</text>
+
+              <circle cx="310" cy="225" r="6" fill="#FF6A00" opacity="0.55"/>
+              <text x="322" y="215" textAnchor="start" fontSize="12" fontWeight="700" fill="#18181b">Miasteczko</text>
+              <text x="322" y="228" textAnchor="start" fontSize="12" fontWeight="700" fill="#18181b">Krajeńskie</text>
+              <text x="322" y="241" textAnchor="start" fontSize="11" fill="#71717a">18,8 km</text>
+
+              <circle cx="271" cy="305" r="6" fill="#FF6A00" opacity="0.55"/>
+              <text x="271" y="328" textAnchor="middle" fontSize="12" fontWeight="700" fill="#18181b">Chodzież</text>
+              <text x="271" y="341" textAnchor="middle" fontSize="11" fill="#71717a">21,1 km</text>
+
+              <circle cx="88" cy="270" r="6" fill="#FF6A00" opacity="0.55"/>
+              <text x="88" y="293" textAnchor="middle" fontSize="12" fontWeight="700" fill="#18181b">Trzcianka</text>
+              <text x="88" y="306" textAnchor="middle" fontSize="11" fill="#71717a">22,1 km</text>
+
+              <circle cx="95" cy="118" r="6" fill="#FF6A00" opacity="0.55"/>
+              <text x="95" y="104" textAnchor="middle" fontSize="12" fontWeight="700" fill="#18181b">Wałcz</text>
+              <text x="95" y="91" textAnchor="middle" fontSize="11" fill="#71717a">22,2 km</text>
+
+              <path d="M200 176c-9.4 0-17 7.6-17 17 0 12.7 17 30.5 17 30.5s17-17.8 17-30.5c0-9.4-7.6-17-17-17z" fill="#18181b"/>
+              <circle cx="200" cy="193" r="6.3" fill="#ffffff"/>
+              <text x="200" y="245" textAnchor="middle" fontSize="15" fontWeight="700" fill="#18181b">PIŁA</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Zasięg realnego rynku pilskiej firmy.</strong> Schemat poglądowy: kierunki i odległości drogowe od Piły do najbliższych ośrodków. Odległości za serwisem Polska w liczbach na podstawie danych GUS.
+        </figcaption>
+      </figure>
+
+      <p>
+        Praktyczny wniosek z tej mapki jest taki, że firma z Piły ma w zasięgu dwudziestu paru kilometrów sześć osobnych rynków, na których nikt jej nie zna. Ujście i Kaczory leżą na tyle blisko, że pilski profil ma realną szansę pokazywać się przy tamtejszych zapytaniach. Chodzież, Trzcianka i Wałcz to już inna bajka — tam bez podstron lokalizacyjnych na stronie nie pojawisz się w ogóle, bo dystans przeważy nad wszystkim innym.
+      </p>
+
+      <h2>Kategoria główna — na tym przegrywa najwięcej pilskich firm</h2>
+      <p>
+        Kategoria główna decyduje o tym, na jaką pulę zapytań profil w ogóle startuje. Nie jest opisem firmy, tylko przypisaniem do zbioru fraz. Zła kategoria oznacza, że przy najważniejszym dla Ciebie zapytaniu nie przegrywasz — po prostu nie bierzesz udziału.
+      </p>
+      <p>
+        W mieście wielkości Piły ten błąd kosztuje szczególnie dużo, bo pula zapytań jest ograniczona i nie da się jej nadrobić objętością. Ustal kategorię na podstawie jednej frazy, która przynosi Ci najwięcej zleceń. Sprawdź też, jakie kategorie mają trzy firmy stojące dziś w Local Packu na tę frazę w Pile — jeśli wszystkie trzy mają tę samą, a Ty inną, masz gotową odpowiedź, zanim cokolwiek wydasz.
+      </p>
+      <p>
+        Kategorie dodatkowe dokładają kolejne pule zapytań, ale nie wzmacniają głównej i nie służą do upychania wszystkiego, co firma potrafi. Cały mechanizm doboru rozpisaliśmy w tekście o <a href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">kategoriach w wizytówce Google</a>.
+      </p>
+
+      <h2>Nazwa firmy — nie dopisuj „Piła"</h2>
+      <p>
+        Pokusa jest zrozumiała, bo dopisanie miasta do nazwy faktycznie podnosi pozycję. Problem w tym, że wytyczne Google mówią wprost: nazwa ma odzwierciedlać rzeczywistą nazwę firmy, używaną konsekwentnie na szyldzie, stronie i w dokumentach, a hasła marketingowe oraz informacje o usługach są niedozwolone.
+      </p>
+      <p>
+        „Hydraulik Piła Najtaniej 24h" to nie nazwa, tylko naruszenie, które kończy się edycją profilu przez Google, zawieszeniem albo zgłoszeniem od konkurenta. W Pile to ryzyko jest wyższe niż gdzie indziej z prozaicznego powodu: przy kilkunastu firmach w branży wszyscy się obserwują i zgłoszenie przychodzi szybko.
+      </p>
+      <p>
+        Jeżeli nazwa firmy naprawdę zawiera miasto i tak brzmi na fakturach oraz szyldzie, używaj jej w całości. W pozostałych przypadkach miasto wprowadza się przez adres, opis, usługi i treść strony, a nie przez pole nazwy. Więcej pułapek tego typu zebraliśmy w tekście o <a href="/wizytowka-google-popularne-oszustwa" className="text-brand font-semibold hover:underline">oszustwach wokół wizytówki Google</a>.
+      </p>
+
+      <h2>Adres, pinezka i obszar działania</h2>
+      <p>
+        Trzy ustawienia, które w Pile robią różnicę i zajmują łącznie kwadrans.
+      </p>
+      <p>
+        <strong>Pinezka</strong> — sprawdź, czy stoi na wejściu do firmy, a nie na środku działki albo na sąsiedniej ulicy. W pilskiej zabudowie blokowej na Zamościu czy Górnem, gdzie budynki stoją gęsto i mają wejścia od podwórka, przesunięta pinezka realnie zmienia to, komu profil się pokazuje.
+      </p>
+      <p>
+        <strong>Widoczny adres</strong> — jeżeli klient może przyjść do lokalu, adres ma być pokazany. Profile z ukrytym adresem wypadają słabiej. Ukrywaj go tylko wtedy, gdy prowadzisz działalność wyłącznie z dojazdem i Google tego wymaga.
+      </p>
+      <p>
+        <strong>Obszar działania</strong> — zaznaczenie Ujścia, Kaczor czy Trzcianki w obszarze obsługi nie sprawi, że zaczniesz się tam pokazywać. To informacja dla klienta, a nie dźwignia rankingowa. Zasięg poza Piłę buduje się treścią na stronie, o czym niżej.
+      </p>
+
+      <h2>Godziny otwarcia</h2>
+      <p>
+        To, czy firma jest otwarta w momencie wyszukiwania, wpływa na jej pozycję. Ta sama wizytówka wygląda więc inaczej o 10:00 i o 19:00. Dla pilskich firm usługowych, gdzie większość zleceń zaczyna się telefonem, to jeden z najtańszych sposobów na poprawę widoczności.
+      </p>
+      <p>
+        Ustaw godziny zgodne z prawdą, łącznie z sobotami, jeśli faktycznie pracujesz. Uzupełniaj godziny świąteczne z wyprzedzeniem. Nie ustawiaj natomiast trybu całodobowego, jeśli nie odbierasz w nocy — zysk w godzinach, w których nikt nie szuka, nie zrekompensuje nieodebranych telefonów i ocen jednogwiazdkowych. Szczegóły w tekście o <a href="/godziny-otwarcia-wizytowka-google" className="text-brand font-semibold hover:underline">godzinach otwarcia w wizytówce</a>.
+      </p>
+
+      <h2>Opinie — w Pile działają inaczej niż w mieście wojewódzkim</h2>
+      <p>
+        Google wymienia liczbę opinii wśród składników popularności profilu, a odpowiadanie na nie wskazuje wprost jako działanie poprawiające pozycję lokalną. To część uniwersalna. Pilska specyfika jest inna i sprowadza się do jednego: <strong>w mieście, w którym ludzie się znają, prośba o opinię wypowiedziana osobiście działa lepiej niż jakikolwiek automat</strong>.
+      </p>
+      <p>
+        Praktycznie oznacza to prośbę przy odbiorze zlecenia, kiedy klient jest zadowolony, a nie SMS-a wysłanego trzy dni później. Liczy się też rytm: kilka opinii miesięcznie przez rok buduje profil mocniej niż czterdzieści zebranych w tydzień, bo świeżość i stały napływ są osobnymi sygnałami, a nagły skok wygląda podejrzanie.
+      </p>
+      <p>
+        Uwaga na zaostrzone w 2026 roku zasady. Nie wolno wymagać od pracowników określonej liczby zebranych opinii ani prosić o opinie o konkretnej treści, w tym wskazujące pracownika z imienia. Popularne „proszę napisać, że obsługiwał Pana Marek" jest dziś naruszeniem. Zgodne z regulaminem sposoby opisaliśmy w tekście o <a href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">zdobywaniu opinii</a>, a postępowanie z negatywną — w artykule <a href="/negatywna-opinia-google-co-zrobic" className="text-brand font-semibold hover:underline">negatywna opinia w Google</a>.
+      </p>
+      <p>
+        Odpowiadaj na wszystkie, także pozytywne. Odpowiedź to jedyne miejsce, w którym możesz naturalnie napisać „dziękujemy za zaufanie, do zobaczenia w Pile" bez ryzyka naruszenia czegokolwiek.
+      </p>
+
+      <h2>Zdjęcia z Piły, nie ze stocku</h2>
+      <p>
+        Google wymienia dodawanie zdjęć i filmów wśród działań poprawiających pozycję lokalną. Niezależnie od rankingu zdjęcia decydują o tym, czy z trzech firm w Local Packu klient wybierze akurat Twoją.
+      </p>
+      <p>
+        W małym mieście działa tu dodatkowy mechanizm: <strong>rozpoznawalność miejsca</strong>. Zdjęcie budynku od strony, z której klient nadjeżdża, zdjęcie wjazdu, widok szyldu z ulicy — mieszkaniec Piły od razu wie, gdzie to jest, i to obniża próg wejścia bardziej niż jakakolwiek grafika z cennikiem. Dokładaj kilka zdjęć miesięcznie zamiast wrzucać sto naraz. Które typy pracują najlepiej, sprawdziliśmy w tekście o <a href="/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-brand font-semibold hover:underline">zdjęciach w wizytówce Google</a>.
+      </p>
+
+      <h2>Kompletny profil: usługi, opis, atrybuty</h2>
+      <p>
+        <strong>Usługi</strong> to najbardziej niedoceniana sekcja i jednocześnie najtańszy sposób na poszerzenie puli zapytań. Każda pozycja z własnym opisem to kolejne frazy, przy których profil może się pokazać. Rozpisz je tak, jak nazywa je klient z Piły, a nie tak, jak brzmią w cenniku. Szczegóły w tekście o <a href="/uslugi-wizytowka-google-business" className="text-brand font-semibold hover:underline">usługach w wizytówce</a>.
+      </p>
+      <p>
+        <strong>Opis firmy</strong> ma niewielką wagę rankingową, ale od 2026 roku pełni nową rolę: jest jednym ze źródeł, z których Google generuje odpowiedzi AI o Twojej firmie, po wycofaniu klasycznej sekcji pytań i odpowiedzi. Napisz w nim wprost, w jakich miejscowościach działasz — Piła, Ujście, Kaczory, Szydłowo — bo jeśli tego nie napiszesz, model nie zgadnie. Jak to ułożyć, pokazujemy w tekście o <a href="/opis-firmy-google-business-profile-jak-napisac" className="text-brand font-semibold hover:underline">opisie firmy w Google Business Profile</a>.
+      </p>
+      <p>
+        <strong>Atrybuty</strong> — parking, dostęp dla wózków, płatność kartą, dojazd do klienta — Google wymienia je wśród danych, które warto uzupełnić; zebraliśmy je w tekście o <a href="/atrybuty-wizytowka-google" className="text-brand font-semibold hover:underline">atrybutach wizytówki</a>. Komplet pozostałych pól przechodzimy po kolei w tekście o <a href="/sekcja-informacje-wizytowka-google" className="text-brand font-semibold hover:underline">sekcji informacje</a>, a <a href="/posty-wizytowka-google" className="text-brand font-semibold hover:underline">posty</a> traktuj jako narzędzie klikalności, nie rankingu.
+      </p>
+
+      <h2>Local Schema dla firmy z Piły</h2>
+      <p>
+        Dane strukturalne LocalBusiness to fragment kodu na stronie, który jednoznacznie mówi wyszukiwarce i modelom AI, gdzie firma jest, co robi i kogo obsługuje. Przy pilskiej firmie kluczowe są trzy pola: dokładny adres z kodem pocztowym, współrzędne geograficzne oraz <code>areaServed</code> z listą obsługiwanych miejscowości.
+      </p>
+      <p>
+        Poniżej gotowy szkielet do wklejenia w sekcję <code>&lt;head&gt;</code>. Podmień nazwę, ulicę, telefon i współrzędne na własne — reszta jest już ustawiona pod Piłę i powiat pilski.
+      </p>
+      <div className="my-6 rounded-xl overflow-hidden" style={{backgroundColor: '#18181b'}}>
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nazwa Twojej Firmy",
+  "url": "https://twojafirma.pl",
+  "telephone": "+48 000 000 000",
+  "image": "https://twojafirma.pl/zdjecia/firma.jpg",
+  "description": "Krotki opis uslugi wraz z obszarem dzialania.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Przykladowa 12",
+    "addressLocality": "Pila",
+    "postalCode": "64-920",
+    "addressRegion": "wielkopolskie",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.1515,
+    "longitude": 16.7386
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Pila" },
+    { "@type": "City", "name": "Ujscie" },
+    { "@type": "City", "name": "Wyrzysk" },
+    { "@type": "City", "name": "Wysoka" },
+    { "@type": "City", "name": "Lobzenica" },
+    { "@type": "AdministrativeArea", "name": "powiat pilski" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "sameAs": ["https://www.google.com/maps/place/?q=place_id:TWOJ_PLACE_ID"]
+}
+</script>`}</pre>
+      </div>
+      <p>
+        Dwie rzeczy, które trzeba zrobić dobrze, bo najczęściej są robione źle. Po pierwsze, <strong>dane w schemacie muszą być identyczne z tymi w wizytówce</strong> — ten sam skrót ulicy, ten sam format numeru telefonu, ta sama nazwa. Rozjeżdżające się warianty osłabiają zaufanie do profilu, o czym piszemy szerzej przy <a href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">spójności NAP</a>. Po drugie, <code>areaServed</code> nie zastępuje treści — wymienienie Trzcianki w schemacie bez ani jednego zdania o Trzciance na stronie niczego nie załatwia.
+      </p>
+      <p>
+        Pełne wdrożenie, razem z wariantami dla firm z dojazdem i wieloma lokalizacjami, rozpisaliśmy krok po kroku w tekście o <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">dodawaniu Local Schema do strony</a>.
+      </p>
+
+      <h2>Jak wyjść poza Piłę</h2>
+      <p>
+        Firmy z Piły najczęściej chcą klientów także z Ujścia, Kaczor, Wyrzyska, Wysokiej, Szydłowa czy Trzcianki. Sam profil tego nie zrobi, bo odległość zadziała przeciwko niemu. Robi to strona.
+      </p>
+      <p>
+        Mechanizm jest prosty: <strong>osobna podstrona dla każdej miejscowości</strong>, w której realnie pracujesz, z własnym tytułem, własną treścią i konkretami z tego miejsca — czas dojazdu, obsługiwane ulice albo dzielnice, przykłady zleceń. Nie kopie tego samego tekstu z podmienioną nazwą, bo takie strony Google traktuje jako masowo generowane i nie daje im widoczności. Podejście opisaliśmy przy okazji <a href="/siedziba-mala-miejscowosc-local-seo" className="text-brand font-semibold hover:underline">firm z siedzibą w małej miejscowości</a> oraz w tekście o <a href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">lokalnym SEO dla firm</a>.
+      </p>
+      <p>
+        Profil ma prowadzić do podstrony usługi z nazwą miejscowości w tytule, a nie do strony głównej. To jeden z tych szczegółów, które nic nie kosztują i są pomijane w większości pilskich wdrożeń.
+      </p>
+
+      <h2>Ile to trwa i czego się spodziewać</h2>
+      <p>
+        Uczciwa odpowiedź brzmi: zależy od stanu wyjściowego i od tego, ilu konkurentów w Pile ma w ogóle uzupełniony profil. W wielu pilskich branżach pierwsza trójka jest zajęta przez firmy, które nie robią nic poza istnieniem — bez opisu, bez usług, ze zdjęciem sprzed pięciu lat. Tam wyprzedzenie ich zajmuje tygodnie, nie miesiące.
+      </p>
+      <p>
+        Tam, gdzie konkurencja pracuje nad profilami świadomie, horyzont to kilka miesięcy konsekwentnych działań, głównie dlatego, że opinie i ich świeżość budują się w czasie i nie da się tego przyspieszyć zakupem. Jak taka praca wygląda w Pile od środka, pokazaliśmy na przykładzie <a href="/protetyk-pila-case-study" className="text-brand font-semibold hover:underline">gabinetu protetycznego z Piły</a>.
+      </p>
+      <p>
+        Czego nie da się obejść: jeśli firma stoi na obrzeżach, nie będzie w top 3 przy zapytaniach ze Śródmieścia, choćby zrobiła wszystko idealnie. To nie błąd wdrożenia, tylko odległość — i odpowiedzią na nią jest treść na stronie, a nie kolejna próba obejścia algorytmu.
+      </p>
+
+      <h2>Kolejność prac dla pilskiej firmy</h2>
+      <p>
+        <strong>Pierwszy tydzień</strong> — pomiar startowy widoczności w kilku punktach miasta, weryfikacja kategorii głównej i dodatkowych, poprawienie pinezki, prawdziwe godziny otwarcia razem ze świątecznymi, odsłonięcie adresu jeśli klient może przyjść. Jeśli profil nie przeszedł <a href="/weryfikacja-wizytowki-google" className="text-brand font-semibold hover:underline">weryfikacji</a>, to jest krok zerowy.
+      </p>
+      <p>
+        <strong>Pierwszy miesiąc</strong> — pełna lista usług z opisami, opis firmy z wymienionymi miejscowościami, komplet atrybutów, kilkanaście własnych zdjęć z Piły, uporządkowany NAP na stronie, Local Schema, podpięcie profilu do konkretnej podstrony usługowej.
+      </p>
+      <p>
+        <strong>Praca ciągła</strong> — stały proces zbierania opinii po każdym zleceniu, odpowiedzi w ciągu doby, kilka zdjęć miesięcznie, podstrony dla kolejnych miejscowości z powiatu, zgłaszanie naruszeń u konkurencji, comiesięczny pomiar na tych samych frazach.
+      </p>
+
+      <h2>Najczęstsze pytania firm z Piły</h2>
+      <p>
+        <strong>Czy wizytówka Google jest płatna?</strong> Nie. Założenie i prowadzenie profilu jest bezpłatne, a Google zaznacza w dokumentacji, że nie da się poprosić o lepszą pozycję lokalną ani za nią zapłacić. Faktury za „odnowienie wizytówki" to oszustwo, opisaliśmy je w tekście o <a href="/czy-wizytowka-google-jest-platna" className="text-brand font-semibold hover:underline">płatności za wizytówkę</a>.
+      </p>
+      <p>
+        <strong>Czy da się pokazywać w całym powiecie pilskim z jednego adresu?</strong> Nie w Local Packu — tam decyduje odległość. Da się natomiast być widocznym na zapytania z nazwą miejscowości w wynikach organicznych, jeśli ma się dla nich osobne podstrony.
+      </p>
+      <p>
+        <strong>Czy potrzebuję strony, żeby pozycjonować wizytówkę?</strong> Do samego profilu nie, ale bez strony tracisz cztery rzeczy naraz: zgodność NAP, Local Schema, podstrony lokalizacyjne i miejsce, do którego prowadzi przycisk w wizytówce. W praktyce to sufit, o który zawsze w końcu uderzysz.
+      </p>
+      <p>
+        <strong>Co zrobić, gdy konkurent z Piły ma miasto w nazwie firmy?</strong> Zgłosić przez formularz sugestii zmiany w profilu. To jedyna zgodna z zasadami metoda i działa, bo jest to jawne naruszenie wytycznych dotyczących nazwy.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        Pilski rynek jest na tyle mały, że dobrze poprowadzony profil daje realną przewagę, i na tyle rozproszony, że nie wystarczy „być w Google". Zacznij od godziny pracy w panelu: kategoria, pinezka, godziny, adres, usługi. Dopiero potem opinie, zdjęcia, Local Schema i podstrony dla Ujścia, Kaczor czy Wyrzyska.
+      </p>
+      <p>
+        Jeśli chcesz zobaczyć całą listę sygnałów z oceną ważności, zebraliśmy ją w tekście o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>, a kolejność działań i sposób mierzenia efektów — w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>. Całość procesu opisuje przewodnik o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Google Business Profile Help — poprawa pozycji firmy w Google: trafność, odległość, popularność.{" "}
+          <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Google Business Profile Help — wytyczne dotyczące nazwy firmy.{" "}
+          <a href="https://support.google.com/business/answer/3038177" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/3038177 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Polska w liczbach na podstawie danych GUS — Piła: 69 748 mieszkańców, 102,7 km², odległości do okolicznych miejscowości.{" "}
+          <a href="https://www.polskawliczbach.pl/Pila" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">polskawliczbach.pl/Pila →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Starostwo Powiatowe w Pile — powiat pilski: ok. 138 tys. mieszkańców, 1268 km², dziewięć gmin.{" "}
+          <a href="https://www.powiat.pila.pl/o-powiecie/informacje/powiat-pilski" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">powiat.pila.pl →</a>
+        </p>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Pozycjonowanie wizytówki Google w Pile",
+            "serviceType": "Pozycjonowanie wizytówki Google Business Profile",
+            "url": "https://miauseo.pl/pozycjonowanie-wizytowki-google-pila",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "MiauSEO",
+              "url": "https://miauseo.pl",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Klaudyny Potockiej 25",
+                "addressLocality": "Poznań",
+                "postalCode": "60-211",
+                "addressRegion": "wielkopolskie",
+                "addressCountry": "PL",
+              },
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Piła" },
+              { "@type": "City", "name": "Ujście" },
+              { "@type": "City", "name": "Wyrzysk" },
+              { "@type": "City", "name": "Wysoka" },
+              { "@type": "City", "name": "Łobżenica" },
+              { "@type": "City", "name": "Trzcianka" },
+              { "@type": "City", "name": "Chodzież" },
+              { "@type": "AdministrativeArea", "name": "powiat pilski" },
+            ],
+            "inLanguage": "pl-PL",
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SEO: Jak poprawić widoczność profilu firmy w mapach
   ───────────────────────────────────────────────────────────────────────── */
   "jak-poprawic-widocznosc-profilu-firmy-w-mapach": (
@@ -155,7 +501,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         <strong>Adres widoczny na profilu</strong> (czynnik 7.) — profile z ukrytym adresem, typowe dla firm z dojazdem, wypadają słabiej niż te z adresem widocznym. Jeśli masz lokal, do którego klient może wejść, pokaż adres. Ukrywaj go tylko wtedy, gdy Google tego wymaga, czyli przy działalności czysto mobilnej.
       </p>
       <p>
-        <strong>Obszar działania</strong> — ustawienie obszaru obsługi nie sprawia, że pokazujesz się w całym zaznaczonym rejonie. To informacja dla klienta, nie dźwignia rankingowa. Firmom działającym poza własną miejscowością zostaje praca na stronie: osobne podstrony lokalizacyjne, o czym piszemy w tekście o <a href="/siedziba-mala-miejscowosc-local-seo" className="text-brand font-semibold hover:underline">siedzibie w małej miejscowości</a>. Ten sam mechanizm wykorzystaliśmy przy <a href="/miauseo-opinie-skup-aut" className="text-brand font-semibold hover:underline">wizytówce skupu aut</a>, gdzie obszar odbioru samochodów wykraczał daleko poza adres rejestrowy.
+        <strong>Obszar działania</strong> — ustawienie obszaru obsługi nie sprawia, że pokazujesz się w całym zaznaczonym rejonie. To informacja dla klienta, nie dźwignia rankingowa. Firmom działającym poza własną miejscowością zostaje praca na stronie: osobne podstrony lokalizacyjne, o czym piszemy w tekście o <a href="/siedziba-mala-miejscowosc-local-seo" className="text-brand font-semibold hover:underline">siedzibie w małej miejscowości</a>. Jak ten sam mechanizm wygląda na konkretnym, niewielkim rynku, rozkładamy na czynniki w tekście o <a href="/pozycjonowanie-wizytowki-google-pila" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google w Pile</a>. Ten sam mechanizm wykorzystaliśmy przy <a href="/miauseo-opinie-skup-aut" className="text-brand font-semibold hover:underline">wizytówce skupu aut</a>, gdzie obszar odbioru samochodów wykraczał daleko poza adres rejestrowy.
       </p>
 
       <h2>Nazwa firmy — czynnik, który działa i łamie regulamin</h2>
