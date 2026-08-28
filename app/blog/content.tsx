@@ -3,6 +3,283 @@ import Link from "next/link";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google Olsztyn
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-olsztyn": (
+    <>
+      <p>
+        Olsztyn ma <strong>166 697 mieszkańców</strong> na <strong>88,3 km²</strong>, co daje gęstość <strong>1887 osób na km²</strong> — ponad dwa i pół raza więcej niż w Pile. To jest cała różnica między tymi rynkami: w Olsztynie na jedną frazę walczy nie kilka firm, tylko kilkanaście albo kilkadziesiąt, a jednocześnie dzielnice są na tyle gęste, że promień skutecznego oddziaływania wizytówki jest krótki.
+      </p>
+      <p>
+        Poniżej dwie części. Pierwsza to konkret, co ustawić i w jakiej kolejności. Druga to opis metod z szarej strefy, po które sięga część olsztyńskiej konkurencji — jak działają, co Google z nimi robi i ile to naprawdę kosztuje, gdy się nie uda. Piszemy o nich, bo lepiej rozumieć, dlaczego konkurent stoi wyżej, niż zgadywać.
+      </p>
+
+      <h2>Realia olsztyńskiego Local Packu</h2>
+      <p>
+        Google opiera wyniki lokalne na trafności, odległości i popularności. W mieście o takiej gęstości zabudowy odległość działa na krótkim dystansie: firma z <strong>Jarot</strong> nie jest tym samym wynikiem co firma z <strong>Zatorza</strong>, a klient szukający z <strong>Kortowa</strong>, <strong>Nagórek</strong>, <strong>Pieczewa</strong> czy <strong>Dajtek</strong> dostanie w każdym z tych miejsc inną trójkę.
+      </p>
+      <p>
+        Olsztyn dodatkowo komplikuje geografia. Miasto rozcina <strong>Łyna</strong>, a w jego granicach leży kilkanaście jezior i duży kompleks Lasu Miejskiego. Odległość w linii prostej bywa więc myląca — dwie firmy oddalone o trzy kilometry mogą mieć zupełnie różne zasięgi, bo między nimi jest woda albo las, a nie ulica. Dlatego zasięg trzeba mierzyć w punktach na mapie, a nie oceniać na oko.
+      </p>
+      <p>
+        Praktyczny wniosek: w Olsztynie celem nie jest „być w top 3 w mieście", tylko <strong>być w top 3 na tych osiedlach, z których faktycznie przyjeżdżają klienci</strong>. Reszta to strata budżetu.
+      </p>
+
+      <h2>Fundament: pięć ustawień, które robią najwięcej</h2>
+      <p>
+        Zanim pojawi się myśl o metodach na skróty, warto sprawdzić te pięć rzeczy, bo w większości olsztyńskich profili co najmniej jedna leży odłogiem, a wszystkie są darmowe i zgodne z zasadami.
+      </p>
+      <p>
+        <strong>Kategoria główna</strong> decyduje o tym, na jaką pulę zapytań profil w ogóle startuje. Zła kategoria to nie przegrana, tylko nieobecność w rywalizacji. Sprawdź kategorie trzech firm, które stoją dziś na Twojej frazie w Olsztynie — mechanizm doboru rozpisaliśmy w tekście o <a href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">kategoriach w wizytówce</a>.
+      </p>
+      <p>
+        <strong>Pinezka</strong> musi stać na wejściu, nie na środku działki. W olsztyńskiej zabudowie blokowej na Jarotach czy Nagórkach, gdzie lokale usługowe mają wejścia od podwórka, przesunięta pinezka realnie zmienia to, komu profil się wyświetla.
+      </p>
+      <p>
+        <strong>Godziny otwarcia</strong> wpływają na pozycję, bo to, czy firma jest otwarta w momencie wyszukiwania, jest osobnym sygnałem. <strong>Usługi</strong> z własnymi opisami poszerzają pulę fraz bez naruszania czegokolwiek i to jest najtańsza dźwignia, jaka istnieje — szczegóły w tekście o <a href="/uslugi-wizytowka-google-business" className="text-brand font-semibold hover:underline">usługach w wizytówce</a>. <strong>Opinie</strong> pracują na czterech osobnych poziomach: średnia, liczba, świeżość i stały napływ; sposoby zgodne z regulaminem zebraliśmy w tekście o <a href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">zdobywaniu opinii</a>.
+      </p>
+      <p>
+        Kolejność prac i sposób mierzenia efektów rozpisaliśmy osobno w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
+      </p>
+
+      <h2>Zasięg poza Olsztyn</h2>
+      <p>
+        Olsztyn jest stolicą regionu i ściąga klientów z całej Warmii. Poniżej odległości do najbliższych ośrodków — to one wyznaczają, gdzie warto budować podstrony lokalizacyjne, bo sam profil tak daleko nie sięgnie.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 460 230" width="100%" role="img" aria-labelledby="olsztyn-dyst-tytul olsztyn-dyst-opis">
+            <title id="olsztyn-dyst-tytul">Odległości z Olsztyna do najbliższych miast</title>
+            <desc id="olsztyn-dyst-opis">Wykres słupkowy odległości od Olsztyna: Barczewo 15 km, Dobre Miasto 23,8 km, Pasym 25 km, Olsztynek 25,4 km, Ostróda 35,1 km.</desc>
+            <rect x="0" y="0" width="460" height="230" fill="#ffffff"/>
+            <line x1="130" y1="18" x2="130" y2="196" stroke="#18181b" strokeWidth="2"/>
+            <text x="130" y="214" textAnchor="middle" fontFamily="sans-serif" fontSize="11" fontWeight="700" fill="#18181b">OLSZTYN</text>
+
+            <g fontFamily="sans-serif" fontSize="12">
+              <rect x="130" y="24" width="123" height="20" rx="3" fill="#FF6A00"/>
+              <text x="124" y="38" textAnchor="end" fontWeight="700" fill="#18181b">Barczewo</text>
+              <text x="261" y="38" fill="#71717a">15,0 km</text>
+
+              <rect x="130" y="58" width="195" height="20" rx="3" fill="#FF6A00" opacity="0.82"/>
+              <text x="124" y="72" textAnchor="end" fontWeight="700" fill="#18181b">Dobre Miasto</text>
+              <text x="333" y="72" fill="#71717a">23,8 km</text>
+
+              <rect x="130" y="92" width="205" height="20" rx="3" fill="#FF6A00" opacity="0.68"/>
+              <text x="124" y="106" textAnchor="end" fontWeight="700" fill="#18181b">Pasym</text>
+              <text x="343" y="106" fill="#71717a">25,0 km</text>
+
+              <rect x="130" y="126" width="208" height="20" rx="3" fill="#FF6A00" opacity="0.54"/>
+              <text x="124" y="140" textAnchor="end" fontWeight="700" fill="#18181b">Olsztynek</text>
+              <text x="346" y="140" fill="#71717a">25,4 km</text>
+
+              <rect x="130" y="160" width="288" height="20" rx="3" fill="#FF6A00" opacity="0.4"/>
+              <text x="124" y="174" textAnchor="end" fontWeight="700" fill="#18181b">Ostróda</text>
+              <text x="426" y="174" textAnchor="end" fill="#ffffff" fontWeight="700">35,1 km</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Zasięg rynku olsztyńskiej firmy.</strong> Odległości drogowe do najbliższych miast, za serwisem Polska w liczbach na podstawie danych GUS. Powyżej dwudziestu kilometrów sam profil przestaje wystarczać.
+        </figcaption>
+      </figure>
+
+      <h2>Metody z szarej strefy, po które sięga konkurencja</h2>
+      <p>
+        Teraz część, o którą zwykle chodzi, gdy ktoś pyta „dlaczego oni są wyżej, skoro mają gorsze opinie". Poniższe metody działają, są niezgodne z zasadami Google i mają realne konsekwencje. Opisujemy je razem z ceną, bo bez ceny to nie jest pełna informacja.
+      </p>
+      <div className="overflow-x-auto my-6 rounded-xl border border-zinc-200">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr style={{backgroundColor: '#18181b'}}>
+              <th className="text-left px-4 py-3 text-white font-semibold w-52">Metoda</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Dlaczego działa</th>
+              <th className="text-left px-4 py-3 text-white font-semibold w-56">Czym to się kończy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Słowo kluczowe w nazwie firmy</td>
+              <td className="px-4 py-3 text-zinc-600">Nazwa jest jednym z najsilniejszych sygnałów trafności. „Hydraulik Olsztyn 24h" dopasowuje się do zapytania dosłownie, więc profil zyskuje przewagę nad firmą o nazwie własnej.</td>
+              <td className="px-4 py-3 text-zinc-600">Wytyczne Google dopuszczają wyłącznie rzeczywistą nazwę firmy, bez haseł marketingowych i informacji o usługach. Skutek: cicha edycja nazwy przez Google, zawieszenie profilu albo skuteczne zgłoszenie od konkurenta.</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Wydłużone lub całodobowe godziny</td>
+              <td className="px-4 py-3 text-zinc-600">To, czy firma jest otwarta w momencie wyszukiwania, wpływa na pozycję. Ustawienie „czynne 24 godziny" daje przewagę o każdej porze, także wtedy, gdy konkurencja jest zamknięta.</td>
+              <td className="px-4 py-3 text-zinc-600">Google wymaga, by firma miała osobisty kontakt z klientami w podanych godzinach. Poza ryzykiem naruszenia dochodzi koszt twardy: nieodebrane telefony i opinie jednogwiazdkowe „nie odbierają mimo otwartego".</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Wirtualne biuro w centrum</td>
+              <td className="px-4 py-3 text-zinc-600">Bliskość to jeden z najmocniejszych czynników. Adres w Śródmieściu zamiast na obrzeżach przesuwa środek zasięgu tam, gdzie jest najwięcej zapytań.</td>
+              <td className="px-4 py-3 text-zinc-600">Adres bez realnej obsługi klienta narusza wymóg fizycznej obecności. To jedno z najczęściej i najskuteczniej zgłaszanych naruszeń, zwłaszcza gdy pod tym samym adresem siedzi dwadzieścia innych firm.</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Kilka wizytówek na jeden adres</td>
+              <td className="px-4 py-3 text-zinc-600">Więcej profili to więcej losów na loterii i szansa na zajęcie dwóch miejsc w trójce zamiast jednego.</td>
+              <td className="px-4 py-3 text-zinc-600">Duplikaty są łączone albo zawieszane, a wykrycie jednego często pociąga za sobą przegląd pozostałych profili na tym samym koncie.</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Opinie od znajomych i kupowane</td>
+              <td className="px-4 py-3 text-zinc-600">Średnia, liczba i świeżość opinii to cztery osobne sygnały rankingowe. Szybki zastrzyk podnosi wszystkie naraz.</td>
+              <td className="px-4 py-3 text-zinc-600">Filtry wykrywają nagłe skoki i powiązane konta. Usunięcie zwykle obejmuje też część prawdziwych opinii, więc profil kończy słabszy niż był na starcie.</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Kategorie niezwiązane z usługą</td>
+              <td className="px-4 py-3 text-zinc-600">Każda kategoria dokłada pulę zapytań, więc dopisanie kilkunastu wygląda na darmowy zasięg.</td>
+              <td className="px-4 py-3 text-zinc-600">Rozmywa trafność profilu, obniża pozycję na frazie, na której naprawdę Ci zależy, i bywa bezpośrednim powodem zawieszenia.</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-semibold text-ink">Zgłaszanie konkurencji na zapas</td>
+              <td className="px-4 py-3 text-zinc-600">Zdjęcie rywala z Local Packu jest szybsze niż wyprzedzenie go pracą.</td>
+              <td className="px-4 py-3 text-zinc-600">Zgłaszanie realnych naruszeń jest w pełni dozwolone i skuteczne. Zgłaszanie zmyślonych nie działa i kosztuje czas, którego nie poświęcasz na własny profil.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Co się dzieje, gdy Google to wyłapie</h2>
+      <p>
+        Google zaznacza w dokumentacji, że może zawieszać i wyłączać profile niezgodne z wytycznymi. Zawieszenie ma dwie postacie, które w praktyce różnią się diametralnie.
+      </p>
+      <p>
+        <strong>Zawieszenie miękkie</strong> — profil dalej jest widoczny w Wyszukiwarce i Mapach, ale tracisz możliwość edycji do czasu rozpatrzenia odwołania. Firma działa, tylko masz związane ręce.
+      </p>
+      <p>
+        <strong>Zawieszenie twarde</strong> — profil przestaje być publicznie dostępny, a właściciele i menedżerowie nie mogą w nim nic zrobić. Z perspektywy klienta firma znika z Map z dnia na dzień. To jest ten scenariusz, o którym trzeba myśleć, licząc opłacalność skrótów.
+      </p>
+      <p>
+        Odwołanie składa się przez narzędzie Google, a do wniosku dołącza się dowody prowadzenia działalności: dokumenty rejestrowe, zaświadczenia podatkowe, rachunki za media. Jest przy tym haczyk łatwy do przeoczenia — <strong>od otwarcia formularza dowodowego masz 60 minut na jego złożenie</strong>, inaczej dowody nie zostaną dołączone do odwołania. Miej komplet dokumentów przygotowany, zanim klikniesz.
+      </p>
+      <p>
+        Jak odzyskać dostęp i przejść przez tę procedurę, opisaliśmy krok po kroku w tekście o <a href="/jak-odzyskac-dostep-do-wizytowki-google" className="text-brand font-semibold hover:underline">odzyskiwaniu dostępu do wizytówki</a>.
+      </p>
+
+      <h2>Kto to zgłasza</h2>
+      <p>
+        Nie algorytm, przynajmniej nie w pierwszej kolejności. <strong>Zgłasza konkurencja</strong>, i w Olsztynie robi to sprawnie, bo w większości branż firmy się znają i obserwują nawzajem Local Pack.
+      </p>
+      <p>
+        Każdy może zaproponować zmianę nazwy albo danych cudzego profilu bezpośrednio w Mapach, a agencje korzystają dodatkowo z formularza zgłaszania naruszeń. To działa w obie strony: jeśli konkurent z Olsztyna ma miasto i usługę wpisane w nazwę, masz zgodne z zasadami narzędzie, żeby to zgłosić. Jest to skuteczniejsze niż dorównywanie mu tą samą metodą, bo nie wystawia Twojego profilu na ryzyko.
+      </p>
+
+      <h2>Rachunek ryzyka bez ściemy</h2>
+      <p>
+        Uczciwie: te metody podnoszą pozycję, inaczej nikt by ich nie stosował. Pytanie brzmi, co się stanie, gdy przestaną działać, i w jakim momencie to nastąpi.
+      </p>
+      <p>
+        Zawieszenie nie przychodzi w spokojnym tygodniu. Przychodzi wtedy, gdy konkurent zauważy, że go wyprzedzasz, czyli zwykle w szczycie sezonu. Firma remontowa traci profil w maju, warsztat w listopadzie przy zmianie opon, gastronomia w wakacje. Straty liczy się w tygodniach nieobecności w Mapach, a nie w kosztach naprawy.
+      </p>
+      <p>
+        Druga rzecz to trwałość. Skrót działa do pierwszego zgłoszenia, a praca nad kategorią, usługami, opiniami i treścią zostaje na lata i nie da się jej zgłosić. Trzecia to efekt uboczny, o którym mało kto myśli: przy odwołaniu i tak trzeba udowodnić Google realność działalności, więc firma, która budowała widoczność na wirtualnym adresie, nie ma czym się bronić.
+      </p>
+      <p>
+        Nasza rekomendacja jest prosta i nie wynika z moralizowania, tylko z rachunku. <strong>Nie warto</strong> — nie dlatego, że to nieładne, tylko dlatego, że w Olsztynie fundament opisany wyżej jest u większości konkurentów niedokończony, a wyprzedzenie ich zgodnie z zasadami jest tańsze niż odbudowa profilu po zawieszeniu.
+      </p>
+
+      <h2>Legalne odpowiedniki, które dają ten sam efekt</h2>
+      <p>
+        Prawie każda z tych metod ma zgodny z zasadami wariant, który realizuje ten sam cel wolniej, ale trwale.
+      </p>
+      <p>
+        <strong>Zamiast frazy w nazwie</strong> — rozbudowana lista usług z opisami. Sekcja usług poszerza pulę zapytań w sposób w pełni dozwolony i nikt jej nie zgłosi. Jeśli fraza faktycznie jest częścią zarejestrowanej nazwy i widnieje na szyldzie, używaj pełnej nazwy bez skrupułów.
+      </p>
+      <p>
+        <strong>Zamiast fikcyjnych godzin</strong> — realne wydłużenie dostępności choćby o dwie godziny albo dyżur telefoniczny w soboty. Zyskujesz ten sam sygnał, tylko prawdziwy, a przy okazji odbierasz telefony, które konkurencja zostawia bez odpowiedzi.
+      </p>
+      <p>
+        <strong>Zamiast wirtualnego biura</strong> — podstrony dla dzielnic i miejscowości: Jaroty, Nagórki, Kortowo, Barczewo, Dobre Miasto. Każda z własną treścią i konkretami, nie kopią z podmienioną nazwą. Podejście opisaliśmy w tekstach o <a href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">lokalnym SEO dla firm</a> i o <a href="/siedziba-mala-miejscowosc-local-seo" className="text-brand font-semibold hover:underline">siedzibie poza głównym rynkiem</a>.
+      </p>
+      <p>
+        <strong>Zamiast kupowanych opinii</strong> — proces proszenia po każdej zrealizowanej usłudze. Kilka opinii miesięcznie przez rok buduje profil mocniej niż czterdzieści w tydzień, bo świeżość i stały napływ są osobnymi sygnałami, a nagły skok i tak zapala lampkę. Pamiętaj przy tym o zaostrzonych w 2026 zasadach: nie wolno wymagać od pracowników liczby zebranych opinii ani prosić o opinie wskazujące pracownika z imienia.
+      </p>
+      <p>
+        <strong>Zamiast wielu wizytówek</strong> — jeden profil plus <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">dane strukturalne LocalBusiness</a> ze spójnym NAP-em i obszarem działania. Jak to poukładać, pokazujemy przy okazji <a href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">spójności NAP</a> oraz przy profilach z <a href="/wiele-lokalizacji-google-business-profile" className="text-brand font-semibold hover:underline">wieloma lokalizacjami</a>.
+      </p>
+
+      <h2>Najczęstsze pytania olsztyńskich firm</h2>
+      <p>
+        <strong>Konkurent ma „Olsztyn" w nazwie i stoi wyżej. Mam zrobić to samo?</strong> Nie. Zgłoś to jako sugestię zmiany w jego profilu i równolegle dokończ własne usługi oraz opinie. Dorównywanie tą metodą oznacza, że obaj jesteście o jedno zgłoszenie od zniknięcia z Map.
+      </p>
+      <p>
+        <strong>Czy Google wykrywa fałszywe godziny automatycznie?</strong> Nie licz na to, że wykrycie jest tu warunkiem problemu. Realnym mechanizmem są opinie klientów, którzy przyjechali albo dzwonili na darmo — i te zostają na profilu na stałe.
+      </p>
+      <p>
+        <strong>Straciłem profil, czy opinie wracają po odwołaniu?</strong> Przy skutecznym przywróceniu profil wraca z historią. Problem w tym, że przez cały czas rozpatrywania firma jest niewidoczna w Mapach, a Google nie podaje gwarantowanego terminu.
+      </p>
+      <p>
+        <strong>Czy wizytówka jest płatna?</strong> Nie. Prowadzenie profilu jest bezpłatne, a Google zaznacza wprost, że nie da się poprosić o lepszą pozycję lokalną ani za nią zapłacić. Faktury za „odnowienie" to oszustwo, zebraliśmy je w tekście o <a href="/czy-wizytowka-google-jest-platna" className="text-brand font-semibold hover:underline">płatności za wizytówkę</a> i o <a href="/wizytowka-google-popularne-oszustwa" className="text-brand font-semibold hover:underline">oszustwach wokół wizytówki</a>.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        Olsztyn jest rynkiem gęstym i konkurencyjnym, więc kuszą tu skróty. Ich problem nie polega na tym, że nie działają, tylko na tym, że działają do momentu, w którym przestają — a ten moment wybiera konkurent, nie Ty, i wybiera go w najgorszym możliwym tygodniu.
+      </p>
+      <p>
+        Kolejność, która ma sens: najpierw kategoria, pinezka, prawdziwe godziny, usługi i opinie, potem podstrony dla dzielnic i okolicznych miast, na końcu utrzymanie. Pełną listę sygnałów z oceną ważności zebraliśmy w tekście o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>, a wersję tego poradnika dla mniejszego rynku — w artykule o <a href="/pozycjonowanie-wizytowki-google-pila" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki w Pile</a>. Całość procesu opisuje przewodnik o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Profil Firmy w Google — poprawa pozycji firmy: trafność, odległość, popularność.{" "}
+          <a href="https://support.google.com/business/answer/7091?hl=pl" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Profil Firmy w Google — wskazówki na temat umieszczania informacji o firmie, w tym zasady dotyczące nazwy.{" "}
+          <a href="https://support.google.com/business/answer/3038177?hl=pl" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/3038177 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Profil Firmy w Google — poprawianie zawieszonego lub wyłączonego profilu, procedura odwoławcza i 60-minutowe okno na dowody.{" "}
+          <a href="https://support.google.com/business/answer/4569145?hl=pl" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/4569145 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Profil Firmy w Google — omówienie zasad i wytycznych, w tym wymóg osobistego kontaktu z klientami w podanych godzinach.{" "}
+          <a href="https://support.google.com/business/answer/13762416?hl=pl" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/13762416 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Polska w liczbach na podstawie danych GUS — Olsztyn: 166 697 mieszkańców, 88,3 km², odległości do okolicznych miast.{" "}
+          <a href="https://www.polskawliczbach.pl/Olsztyn" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">polskawliczbach.pl/Olsztyn →</a>
+        </p>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Pozycjonowanie wizytówki Google w Olsztynie",
+            "serviceType": "Pozycjonowanie wizytówki Google Business Profile",
+            "url": "https://miauseo.pl/pozycjonowanie-wizytowki-google-olsztyn",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "MiauSEO",
+              "url": "https://miauseo.pl",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Klaudyny Potockiej 25",
+                "addressLocality": "Poznań",
+                "postalCode": "60-211",
+                "addressRegion": "wielkopolskie",
+                "addressCountry": "PL",
+              },
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Olsztyn" },
+              { "@type": "City", "name": "Barczewo" },
+              { "@type": "City", "name": "Dobre Miasto" },
+              { "@type": "City", "name": "Olsztynek" },
+              { "@type": "City", "name": "Ostróda" },
+              { "@type": "AdministrativeArea", "name": "województwo warmińsko-mazurskie" },
+            ],
+            "inLanguage": "pl-PL",
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SEO: Pozycjonowanie wizytówki Google Piła
   ───────────────────────────────────────────────────────────────────────── */
   "pozycjonowanie-wizytowki-google-pila": (

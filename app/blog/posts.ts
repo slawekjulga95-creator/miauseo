@@ -26,6 +26,17 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "pozycjonowanie-wizytowki-google-olsztyn",
+    title: "Pozycjonowanie wizytówki Google Olsztyn — także metody z szarej strefy i ich cena",
+    excerpt: "Co ustawić w profilu firmy z Olsztyna, żeby wejść do top 3 w Mapach. Plus uczciwy przegląd metod z szarej strefy — fraza w nazwie, całodobowe godziny, wirtualne biuro — z opisem tego, czym kończą się w praktyce i co robić zamiast nich.",
+    category: "SEO",
+    date: "2026-08-27",
+    readTime: 15,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-olsztyn.svg",
+    published: true,
+  },
+  {
     slug: "pozycjonowanie-wizytowki-google-pila",
     title: "Pozycjonowanie wizytówki Google Piła — poradnik dla firm z Piły i powiatu",
     excerpt: "Jak firma z Piły wchodzi do top 3 w Mapach Google. Realia pilskiego rynku, mapa zasięgu do Ujścia, Kaczor, Chodzieży i Wałcza, gotowy kod Local Schema pod Piłę oraz kolejność prac na pierwszy tydzień i pierwszy miesiąc.",
