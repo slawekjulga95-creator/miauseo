@@ -1,0 +1,5 @@
+<svg width="120" height="90" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 20h50a6 6 0 016 6v24a6 6 0 01-6 6H34l-12 12V56h-10a6 6 0 01-6-6V26a6 6 0 016-6z" fill="#FF6A00" opacity="0.75"/>
+  <path d="M62 40h44a6 6 0 016 6v20a6 6 0 01-6 6H86l-10 10V72h-14a6 6 0 01-6-6V46a6 6 0 016-6z" fill="#FF6A00" opacity="0.3"/>
+  <text x="34" y="45" font-family="sans-serif" font-size="17" font-weight="700" fill="#ffffff">PL</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg width="120" height="90" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="40" cy="45" r="24" fill="#FF6A00" opacity="0.85"/>
+  <text x="40" y="55" font-family="sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">0</text>
+  <circle cx="80" cy="34" r="16" fill="#FF6A00" opacity="0.35"/>
+  <circle cx="94" cy="58" r="12" fill="#FF6A00" opacity="0.22"/>
+  <path d="M68 74h44" stroke="#FF6A00" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+</svg>
