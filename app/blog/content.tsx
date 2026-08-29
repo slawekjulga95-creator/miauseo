@@ -3,6 +3,1977 @@ import Link from "next/link";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google Konin
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-konin": (
+    <>
+      <p>
+        Konin ma <strong>66 606 mieszkańców</strong> na <strong>82,3 km²</strong>, czyli 809 osób na kilometr kwadratowy. To jedno z najbardziej rozciągniętych miast w tej kategorii wielkości i ta rozciągłość jest tu ważniejsza niż liczba mieszkańców, bo Warta dzieli Konin na dwie części, które w Mapach Google zachowują się jak dwa osobne rynki.
+      </p>
+      <p>
+        Ten tekst nie zaczyna się od listy ustawień do zmiany. Zaczyna się od pomiaru, bo w Koninie <strong>bez pomiaru nie wiesz, czy masz problem z profilem, czy z geografią</strong>, a to są dwie zupełnie różne sprawy i kosztują różne pieniądze.
+      </p>
+
+      <h2>Konin to dwa miasta w jednym</h2>
+      <p>
+        Stare Miasto po prawej stronie Warty i Nowy Konin z osiedlami po lewej to nie są dzielnice jednego organizmu w rozumieniu wyszukiwarki. Google ustala wyniki lokalne na podstawie trafności, odległości i popularności, a odległość liczy od miejsca, w którym stoi wyszukujący. Klient z osiedla Zatorze i klient z Chorznia dostają inną trójkę na tę samą frazę, choć obaj są w Koninie.
+      </p>
+      <p>
+        Dlatego zdanie „mój profil nie wyświetla się w Koninie" nie jest w tym mieście sensowną diagnozą. Profil zawsze gdzieś się wyświetla. Pytanie brzmi: <strong>w których punktach miasta i na których frazach</strong>.
+      </p>
+
+      <h2>Zacznij od siatki, nie od zmian</h2>
+      <p>
+        Pomiar wygląda tak: wybierasz jedną frazę, która przynosi Ci najwięcej zleceń, i sprawdzasz pozycję profilu w kilku rozrzuconych punktach miasta, a nie tylko z własnego biura. Dziewięć punktów w układzie trzy na trzy wystarczy w Koninie w zupełności.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 420 300" width="100%" role="img" aria-labelledby="konin-siatka-tytul konin-siatka-opis">
+            <title id="konin-siatka-tytul">Siatka pomiarowa widoczności profilu firmy w Koninie</title>
+            <desc id="konin-siatka-opis">Schemat dziewięciu punktów pomiarowych rozłożonych w układzie trzy na trzy wokół siedziby firmy. W punktach blisko pinezki profil zajmuje wysokie pozycje, w punktach oddalonych spada poza pierwszą trójkę.</desc>
+            <rect x="0" y="0" width="420" height="300" fill="#ffffff"/>
+            <path d="M40 20 C 150 90, 170 180, 120 285" fill="none" stroke="#bae6fd" strokeWidth="14" strokeLinecap="round"/>
+            <text x="52" y="290" fontFamily="sans-serif" fontSize="11" fill="#0284c7">Warta</text>
+
+            <g fontFamily="sans-serif" fontSize="13" fontWeight="700">
+              <circle cx="150" cy="70" r="18" fill="#FF6A00" opacity="0.25"/><text x="150" y="75" textAnchor="middle" fill="#18181b">7</text>
+              <circle cx="250" cy="70" r="18" fill="#FF6A00" opacity="0.55"/><text x="250" y="75" textAnchor="middle" fill="#18181b">3</text>
+              <circle cx="350" cy="70" r="18" fill="#FF6A00" opacity="0.2"/><text x="350" y="75" textAnchor="middle" fill="#18181b">11</text>
+
+              <circle cx="150" cy="160" r="18" fill="#FF6A00" opacity="0.55"/><text x="150" y="165" textAnchor="middle" fill="#18181b">4</text>
+              <circle cx="250" cy="160" r="20" fill="#FF6A00"/><text x="250" y="166" textAnchor="middle" fill="#ffffff">1</text>
+              <circle cx="350" cy="160" r="18" fill="#FF6A00" opacity="0.35"/><text x="350" y="165" textAnchor="middle" fill="#18181b">6</text>
+
+              <circle cx="150" cy="250" r="18" fill="#FF6A00" opacity="0.2"/><text x="150" y="255" textAnchor="middle" fill="#18181b">14</text>
+              <circle cx="250" cy="250" r="18" fill="#FF6A00" opacity="0.35"/><text x="250" y="255" textAnchor="middle" fill="#18181b">5</text>
+              <circle cx="350" cy="250" r="18" fill="#FF6A00" opacity="0.2"/><text x="350" y="255" textAnchor="middle" fill="#18181b">12</text>
+            </g>
+
+            <path d="M250 132c-6.6 0-12 5.4-12 12 0 9 12 22 12 22s12-13 12-22c0-6.6-5.4-12-12-12z" fill="#18181b"/>
+            <circle cx="250" cy="144" r="4.4" fill="#ffffff"/>
+            <text x="250" y="200" textAnchor="middle" fontFamily="sans-serif" fontSize="11" fill="#71717a">Twoja pinezka</text>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Przykładowy odczyt siatki.</strong> Liczby to pozycja profilu na tę samą frazę mierzona z dziewięciu punktów miasta. Schemat poglądowy, wartości ilustracyjne.
+        </figcaption>
+      </figure>
+
+      <p>
+        Taki obrazek mówi więcej niż godzina czytania poradników. Jeśli w punkcie przy pinezce jesteś pierwszy, a trzy kilometry dalej wypadasz na jedenaste miejsce, <strong>Twój profil działa poprawnie i uderzasz w sufit odległości</strong>. Jeśli natomiast jesteś słaby wszędzie, łącznie z punktem tuż obok siedziby, problem leży w samym profilu i dopiero wtedy warto go otwierać.
+      </p>
+
+      <h2>Co robić, gdy słabe wyniki są wszędzie</h2>
+      <p>
+        Wtedy kolejność jest sztywna i zajmuje mniej więcej godzinę. Najpierw sprawdzasz, czy profil w ogóle przeszedł <a href="/weryfikacja-wizytowki-google" className="text-brand font-semibold hover:underline">weryfikację</a>, bo niezweryfikowany profil nie bierze udziału w rywalizacji.
+      </p>
+      <p>
+        Potem kategoria główna. To nie jest opis działalności, tylko przypisanie do zbioru zapytań. Zła kategoria oznacza, że przy najważniejszej frazie nie przegrywasz, tylko nie startujesz. Sprawdź kategorie trzech firm, które w Koninie stoją dziś na Twojej frazie, mechanizm doboru rozpisaliśmy w tekście o <a href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">kategoriach w wizytówce</a>.
+      </p>
+      <p>
+        Na końcu pinezka, godziny i widoczny adres. W konińskiej zabudowie blokowej na Zatorzu czy V Osiedlu lokale usługowe często mają wejście od podwórka, a pinezka domyślnie ląduje na środku działki. Przesunięcie jej na wejście realnie zmienia to, komu profil się pokazuje.
+      </p>
+
+      <h2>Co robić, gdy słabe wyniki są tylko na obrzeżach</h2>
+      <p>
+        To jest w Koninie sytuacja typowa i wymaga innej reakcji. Odległości nie da się obejść ustawieniami w panelu. Zaznaczenie całego powiatu konińskiego w obszarze działania niczego nie zmieni w rankingu, bo to informacja dla klienta, a nie dźwignia.
+      </p>
+      <p>
+        Zasięg poza własną część miasta buduje się <strong>treścią na stronie</strong>. Osobna podstrona dla dzielnicy albo gminy, w której realnie pracujesz, z konkretami z tego miejsca zamiast przepisanego tekstu z podmienioną nazwą. Zasadę rozpisaliśmy szerzej w tekście o <a href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">lokalnym SEO dla firm</a>.
+      </p>
+
+      <h2>Local Schema dla firmy z Konina</h2>
+      <p>
+        Dane strukturalne to fragment kodu, który wprost mówi wyszukiwarce i modelom AI, gdzie firma jest i kogo obsługuje. Poniżej szkielet do wklejenia w sekcję <code>&lt;head&gt;</code>, ustawiony już pod Konin.
+      </p>
+      <div className="my-6 rounded-xl overflow-hidden" style={{backgroundColor: '#18181b'}}>
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nazwa Twojej Firmy",
+  "url": "https://twojafirma.pl",
+  "telephone": "+48 000 000 000",
+  "image": "https://twojafirma.pl/zdjecia/firma.jpg",
+  "description": "Krótki opis usługi wraz z obszarem działania.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Przykładowa 12",
+    "addressLocality": "Konin",
+    "postalCode": "62-500",
+    "addressRegion": "wielkopolskie",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.2230,
+    "longitude": 18.2511
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Konin" },
+    { "@type": "City", "name": "Kleczew" },
+    { "@type": "City", "name": "Golina" },
+    { "@type": "AdministrativeArea", "name": "powiat koniński" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "sameAs": ["https://www.google.com/maps/place/?q=place_id:TWOJ_PLACE_ID"]
+}
+</script>`}</pre>
+      </div>
+      <p>
+        Jedna zasada, o którą rozbija się większość wdrożeń: <strong>dane w schemacie muszą być identyczne z tymi w profilu</strong>. Ten sam skrót ulicy, ten sam format telefonu, ta sama nazwa. Rozjeżdżające się warianty osłabiają zaufanie do firmy, o czym piszemy przy okazji <a href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">spójności NAP</a>. Pełne wdrożenie, razem z wariantem dla firm z dojazdem, opisaliśmy w tekście o <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">dodawaniu Local Schema do strony</a>.
+      </p>
+
+      <h2>Drugi pomiar i co z niego wynika</h2>
+      <p>
+        Powtórz siatkę po miesiącu, w tych samych dziewięciu punktach i na tej samej frazie. Dopiero różnica między dwoma odczytami mówi cokolwiek o skuteczności. Pojedynczy pomiar to zdjęcie, dopiero dwa robią wykres.
+      </p>
+      <p>
+        Realistyczny obraz w Koninie wygląda tak: w branżach, w których konkurencja ma profile pozostawione same sobie, przesunięcie o kilka pozycji widać po dwóch, trzech tygodniach. Tam, gdzie ktoś nad profilami pracuje świadomie, horyzont to kilka miesięcy, głównie przez opinie, których świeżość buduje się w czasie. Pełną listę sygnałów z oceną wagi zebraliśmy w tekście o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>, a kolejność prac w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
+      </p>
+
+      <h2>Trzy pytania, które padają najczęściej</h2>
+      <p>
+        <strong>Ile punktów pomiarowych wystarczy w Koninie?</strong> Dziewięć rozłożonych po obu stronach Warty daje pełny obraz. Mniej niż pięć nie pokaże efektu odległości, więcej niż dwanaście nie doda już nowej informacji.
+      </p>
+      <p>
+        <strong>Czy mogę mierzyć z telefonu, jeżdżąc po mieście?</strong> Tak i to jest najtańsza metoda. Warunek: ta sama fraza, wyłączona personalizacja i zapisany zrzut ekranu z datą, żeby drugi pomiar dało się porównać.
+      </p>
+      <p>
+        <strong>Profil stoi wysoko, a telefon nie dzwoni. Co dalej?</strong> To znaczy, że ranking masz zrobiony, a przegrywasz na etapie wyboru. Wtedy pracuje się nad zdjęciami, opiniami i opisem, nie nad pozycją.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        W Koninie mierz, zanim zmienisz. Siatka dziewięciu punktów w kwadrans oddziela problem z profilem od problemu z odległością, a to przesądza o tym, czy wystarczy godzina w panelu, czy trzeba budować treść na stronie. Podobne podejście, ale w mieście o zupełnie innej geografii, opisaliśmy w tekstach o <a href="/pozycjonowanie-wizytowki-google-inowroclaw" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google w Inowrocławiu</a> oraz <a href="/pozycjonowanie-wizytowki-google-pila" className="text-brand font-semibold hover:underline">w Pile</a>. Całość procesu od zera opisuje przewodnik o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Pomoc Google — profil firmy w Google — poprawa pozycji firmy w Google: trafność, odległość, popularność.{" "}
+          <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Polska w liczbach na podstawie danych GUS — Konin: 66 606 mieszkańców, 82,3 km², 809 osób na km².{" "}
+          <a href="https://www.polskawliczbach.pl/Konin" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">polskawliczbach.pl/Konin →</a>
+        </p>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Pozycjonowanie wizytówki Google w Koninie",
+            "serviceType": "Pozycjonowanie profilu firmy w Google",
+            "url": "https://miauseo.pl/pozycjonowanie-wizytowki-google-konin",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "MiauSEO",
+              "url": "https://miauseo.pl",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Klaudyny Potockiej 25",
+                "addressLocality": "Poznań",
+                "postalCode": "60-211",
+                "addressRegion": "wielkopolskie",
+                "addressCountry": "PL",
+              },
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Konin" },
+              { "@type": "City", "name": "Kleczew" },
+              { "@type": "City", "name": "Golina" },
+              { "@type": "City", "name": "Sompolno" },
+              { "@type": "AdministrativeArea", "name": "powiat koniński" },
+            ],
+            "inLanguage": "pl-PL",
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google Inowrocław
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-inowroclaw": (
+    <>
+      <p>
+        Inowrocław mieści <strong>67 041 osób</strong> na <strong>30,4 km²</strong>, co daje <strong>2204 osoby na kilometr kwadratowy</strong>. To miasto zwarte, w którym z jednego końca na drugi jedzie się kilkanaście minut, więc odległość rzadko bywa tu głównym problemem profilu firmy.
+      </p>
+      <p>
+        Problemem jest za to coś, o czym prawie nikt nie pisze: <strong>rytm roku</strong>. Inowrocław żyje uzdrowiskiem, tężniami i ruchem, który wyraźnie faluje w ciągu dwunastu miesięcy. Zapytania w Mapach falują razem z nim, a większość profili stoi ustawiona identycznie w lutym i w lipcu.
+      </p>
+
+      <h2>Sezon zmienia zapytania, profil ma za nim nadążać</h2>
+      <p>
+        Nie chodzi tylko o branże jawnie sezonowe. W mieście z ruchem uzdrowiskowym zmienia się <em>kto</em> pyta i <em>o co</em>. Latem rośnie udział zapytań od osób, które są w Inowrocławiu przejazdem, nie znają firm z nazwy i wybierają wyłącznie na podstawie tego, co zobaczą w wynikach. Poza sezonem zostaje rynek mieszkańców, który działa na poleceniu i powrocie do znanej firmy.
+      </p>
+      <p>
+        To dwie różne publiczności i profil może obsłużyć obie, ale nie tym samym ustawieniem przez cały rok.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 460 240" width="100%" role="img" aria-labelledby="ino-rytm-tytul ino-rytm-opis">
+            <title id="ino-rytm-tytul">Roczny rytm pracy nad profilem firmy w Inowrocławiu</title>
+            <desc id="ino-rytm-opis">Oś czasu podzielona na cztery okresy roku z przypisanym zadaniem: zima to godziny świąteczne i uporządkowanie usług, wiosna to wymiana zdjęć i posty, lato to godziny wydłużone i szybkie odpowiedzi, jesień to podsumowanie opinii i korekta opisu.</desc>
+            <rect x="0" y="0" width="460" height="240" fill="#ffffff"/>
+            <line x1="30" y1="120" x2="430" y2="120" stroke="#d4d4d8" strokeWidth="2"/>
+            <g fontFamily="sans-serif">
+              <circle cx="80" cy="120" r="9" fill="#FF6A00" opacity="0.35"/>
+              <text x="80" y="100" textAnchor="middle" fontSize="12" fontWeight="700" fill="#18181b">Zima</text>
+              <text x="80" y="150" textAnchor="middle" fontSize="11" fill="#71717a">godziny</text>
+              <text x="80" y="164" textAnchor="middle" fontSize="11" fill="#71717a">świąteczne</text>
+
+              <circle cx="190" cy="120" r="11" fill="#FF6A00" opacity="0.6"/>
+              <text x="190" y="100" textAnchor="middle" fontSize="12" fontWeight="700" fill="#18181b">Wiosna</text>
+              <text x="190" y="150" textAnchor="middle" fontSize="11" fill="#71717a">wymiana zdjęć,</text>
+              <text x="190" y="164" textAnchor="middle" fontSize="11" fill="#71717a">pierwsze posty</text>
+
+              <circle cx="300" cy="120" r="14" fill="#FF6A00"/>
+              <text x="300" y="96" textAnchor="middle" fontSize="12" fontWeight="700" fill="#18181b">Lato</text>
+              <text x="300" y="152" textAnchor="middle" fontSize="11" fill="#71717a">wydłużone godziny,</text>
+              <text x="300" y="166" textAnchor="middle" fontSize="11" fill="#71717a">odpowiedzi w dobę</text>
+
+              <circle cx="400" cy="120" r="10" fill="#FF6A00" opacity="0.45"/>
+              <text x="400" y="100" textAnchor="middle" fontSize="12" fontWeight="700" fill="#18181b">Jesień</text>
+              <text x="400" y="150" textAnchor="middle" fontSize="11" fill="#71717a">korekta opisu</text>
+              <text x="400" y="164" textAnchor="middle" fontSize="11" fill="#71717a">i usług</text>
+
+              <text x="230" y="215" textAnchor="middle" fontSize="11" fill="#a1a1aa">Wielkość punktu odpowiada natężeniu zapytań w danym okresie</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Kalendarz pracy nad profilem.</strong> Schemat poglądowy rozkładu zadań w roku dla firmy usługowej z Inowrocławia.
+        </figcaption>
+      </figure>
+
+      <h2>Godziny otwarcia to sygnał, nie ozdoba</h2>
+      <p>
+        To, czy firma jest otwarta w chwili wyszukiwania, wpływa na jej pozycję. Ta sama wizytówka wygląda więc inaczej o dziesiątej rano i o dziewiętnastej. W mieście, które latem żyje dłużej, wydłużenie godzin o półtorej godziny w sezonie bywa najtańszą zmianą, jaką da się w profilu zrobić.
+      </p>
+      <p>
+        Warunek jest jeden i nie ma od niego wyjątku: <strong>godziny muszą być prawdziwe</strong>. Tryb całodobowy ustawiony po to, żeby profil zawsze wyglądał na otwarty, kończy się nieodebranymi telefonami i ocenami jednogwiazdkowymi, które zostają na lata. Uzupełniaj też godziny świąteczne z wyprzedzeniem, bo to jedyny moment, w którym Google pokazuje przy profilu wyraźne ostrzeżenie o niepotwierdzonych godzinach. Szczegóły w tekście o <a href="/godziny-otwarcia-wizytowka-google" className="text-brand font-semibold hover:underline">godzinach otwarcia w wizytówce</a>.
+      </p>
+
+      <h2>Zdjęcia: podmieniaj razem z sezonem</h2>
+      <p>
+        Google wymienia dodawanie zdjęć wśród działań poprawiających pozycję lokalną, ale w Inowrocławiu ważniejszy jest drugi efekt. Klient przyjezdny wybiera z trójki wyłącznie po tym, co widzi, bo nie zna żadnej z tych firm.
+      </p>
+      <p>
+        Zdjęcie budynku od strony, z której się nadjeżdża, wjazd, szyld z ulicy, wnętrze o tej porze roku, w której klient przyjdzie. Zimowe zdjęcie w lipcu podpowiada, że profil stoi nieruszany od miesięcy, a to jest sygnał czytelny również dla człowieka. Dokładaj kilka sztuk miesięcznie zamiast wrzucać sto naraz. Które typy pracują najlepiej, sprawdziliśmy w tekście o <a href="/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-brand font-semibold hover:underline">zdjęciach w wizytówce Google</a>.
+      </p>
+
+      <h2>Posty: do czego naprawdę służą</h2>
+      <p>
+        Warto to powiedzieć wprost, bo sprzedaje się to inaczej: <strong>posty nie są dźwignią rankingową</strong>. Są narzędziem klikalności i miejscem na komunikat, który ma krótki termin ważności, czyli dokładnie tym, czego wymaga sezon.
+      </p>
+      <p>
+        Informacja o wydłużonych godzinach w wakacje, o przerwie urlopowej, o tym, że w sierpniu przyjmujesz bez zapisów. To działa na klienta, który stoi z telefonem w ręku. Nie oczekuj po tym skoku pozycji, bo go nie będzie. Rolę postów rozpisaliśmy w tekście o <a href="/posty-wizytowka-google" className="text-brand font-semibold hover:underline">postach w wizytówce Google</a>.
+      </p>
+
+      <h2>Komplet pól, który warto zamknąć raz na rok</h2>
+      <p>
+        <strong>Usługi</strong> z własnymi opisami to najtańszy sposób na poszerzenie puli zapytań, przy których profil może się pokazać. Raz w roku warto przejść listę i wyrzucić to, czego już nie robisz, oraz dopisać to, co doszło.
+      </p>
+      <p>
+        <strong>Opis firmy</strong> ma niewielką wagę rankingową, ale od 2026 roku jest jednym ze źródeł, z których Google buduje odpowiedzi AI o Twojej firmie, po wycofaniu klasycznej sekcji pytań i odpowiedzi. Napisz w nim wprost, gdzie działasz i co robisz, bo model tego nie zgadnie. Jak to ułożyć, pokazujemy w tekście o <a href="/opis-firmy-google-business-profile-jak-napisac" className="text-brand font-semibold hover:underline">opisie firmy</a>, a resztę pól przechodzimy po kolei w artykule o <a href="/sekcja-informacje-wizytowka-google" className="text-brand font-semibold hover:underline">sekcji informacje</a>.
+      </p>
+
+      <h2>Local Schema z godzinami sezonowymi</h2>
+      <p>
+        W schemacie da się zapisać więcej niż jeden zestaw godzin i to jest wariant, którego prawie nikt nie używa, a w mieście z sezonem ma sens.
+      </p>
+      <div className="my-6 rounded-xl overflow-hidden" style={{backgroundColor: '#18181b'}}>
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nazwa Twojej Firmy",
+  "url": "https://twojafirma.pl",
+  "telephone": "+48 000 000 000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Przykładowa 8",
+    "addressLocality": "Inowrocław",
+    "postalCode": "88-100",
+    "addressRegion": "kujawsko-pomorskie",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.7979,
+    "longitude": 18.2611
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "19:00",
+      "validFrom": "2026-06-01",
+      "validThrough": "2026-08-31"
+    }
+  ],
+  "areaServed": [
+    { "@type": "City", "name": "Inowrocław" },
+    { "@type": "City", "name": "Kruszwica" },
+    { "@type": "City", "name": "Janikowo" },
+    { "@type": "AdministrativeArea", "name": "powiat inowrocławski" }
+  ]
+}
+</script>`}</pre>
+      </div>
+      <p>
+        Pola <code>validFrom</code> i <code>validThrough</code> opisują okres, w którym obowiązuje drugi zestaw godzin. Pamiętaj, żeby te same godziny wprowadzić także w panelu profilu, bo schemat nie zastępuje ustawień, tylko je potwierdza. Pełne wdrożenie opisaliśmy w tekście o <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">dodawaniu Local Schema do strony</a>.
+      </p>
+
+      <h2>Najczęstsze pytania firm z Inowrocławia</h2>
+      <p>
+        <strong>Czy warto wyłączać profil poza sezonem?</strong> Nie. Profil zamknięty na stałe traci pozycję, a odzyskanie jej zajmuje więcej niż utrzymanie. Zamiast tego popraw godziny.
+      </p>
+      <p>
+        <strong>Czy przyjezdni w ogóle trafiają przez Mapy?</strong> Tak, i to jest ich podstawowy sposób szukania, bo nie mają lokalnych poleceń. Dla nich liczy się zdjęcie, ocena i odległość, w tej kolejności.
+      </p>
+      <p>
+        <strong>Ile postów miesięcznie ma sens?</strong> Dwa albo trzy, jeśli masz o czym pisać. Post bez treści jest gorszy niż brak postu, bo zajmuje miejsce na czymś pustym.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        Inowrocław jest za mały, żeby przegrywać odległością, i za bardzo sezonowy, żeby profil mógł stać nieruszony przez rok. Ustaw kalendarz: godziny świąteczne zimą, zdjęcia i posty wiosną, wydłużone godziny latem, przegląd usług jesienią. Podejście oparte na pomiarze zamiast na kalendarzu opisaliśmy w tekście o <a href="/pozycjonowanie-wizytowki-google-konin" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google w Koninie</a>, a walkę o widoczność w cieniu dużego miasta w artykule o <a href="/pozycjonowanie-wizytowki-google-stargard" className="text-brand font-semibold hover:underline">Stargardzie</a>. Cały proces od zera opisuje przewodnik o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Pomoc Google — profil firmy w Google — poprawa pozycji firmy w Google: trafność, odległość, popularność.{" "}
+          <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Polska w liczbach na podstawie danych GUS — Inowrocław: 67 041 mieszkańców, 30,4 km², 2204 osoby na km².{" "}
+          <a href="https://www.polskawliczbach.pl/Inowroclaw" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">polskawliczbach.pl/Inowroclaw →</a>
+        </p>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Pozycjonowanie wizytówki Google w Inowrocławiu",
+            "serviceType": "Pozycjonowanie profilu firmy w Google",
+            "url": "https://miauseo.pl/pozycjonowanie-wizytowki-google-inowroclaw",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "MiauSEO",
+              "url": "https://miauseo.pl",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Klaudyny Potockiej 25",
+                "addressLocality": "Poznań",
+                "postalCode": "60-211",
+                "addressRegion": "wielkopolskie",
+                "addressCountry": "PL",
+              },
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Inowrocław" },
+              { "@type": "City", "name": "Kruszwica" },
+              { "@type": "City", "name": "Janikowo" },
+              { "@type": "City", "name": "Pakość" },
+              { "@type": "AdministrativeArea", "name": "powiat inowrocławski" },
+            ],
+            "inLanguage": "pl-PL",
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google Stargard
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-stargard": (
+    <>
+      <p>
+        Stargard ma <strong>66 272 mieszkańców</strong> na <strong>48,1 km²</strong>, czyli 1378 osób na kilometr kwadratowy. Miasto jest samowystarczalne, ma własny powiat i własny rynek usług. Ma też jeden problem, którego nie da się rozwiązać w panelu profilu: <strong>Szczecin jest za blisko</strong>.
+      </p>
+      <p>
+        Nie chodzi o to, że stargardzcy klienci jeżdżą do Szczecina. Chodzi o to, że szczecińskie firmy pokazują się na stargardzkie zapytania, a stargardzka firma nierzadko stoi we własnym mieście niżej niż konkurent oddalony o kilkadziesiąt kilometrów. Ten tekst jest o tym, dlaczego tak się dzieje i co z tym zrobić.
+      </p>
+
+      <h2>Dlaczego szczecińska firma wygrywa u Ciebie na podwórku</h2>
+      <p>
+        Google układa wyniki lokalne z trzech składników: trafności, odległości i popularności. Odległość jest tylko jednym z trzech. Firma ze Szczecina, która ma sześćset opinii, kompletny profil, mocną stronę i dziesięć lat historii, nadrabia dystans popularnością i trafnością.
+      </p>
+      <p>
+        Firma ze Stargardu, która ma dwanaście opinii i profil bez opisu, przegrywa nawet mając odległość po swojej stronie. To nie jest niesprawiedliwość algorytmu, tylko prosty rachunek: <strong>bliskość sama w sobie nie wystarcza</strong>.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 460 250" width="100%" role="img" aria-labelledby="stargard-zasieg-tytul stargard-zasieg-opis">
+            <title id="stargard-zasieg-tytul">Nakładanie się zasięgu firm ze Szczecina i ze Stargardu</title>
+            <desc id="stargard-zasieg-opis">Dwa okręgi zasięgu: szeroki okrąg firmy szczecińskiej z dużą liczbą opinii oraz mniejszy okrąg firmy stargardzkiej. Obszar wspólny to strefa, w której obie firmy walczą o te same zapytania.</desc>
+            <rect x="0" y="0" width="460" height="250" fill="#ffffff"/>
+            <circle cx="170" cy="125" r="108" fill="#71717a" opacity="0.10"/>
+            <circle cx="170" cy="125" r="108" fill="none" stroke="#71717a" strokeWidth="1.5" strokeDasharray="5 5" opacity="0.5"/>
+            <circle cx="330" cy="125" r="72" fill="#FF6A00" opacity="0.14"/>
+            <circle cx="330" cy="125" r="72" fill="none" stroke="#FF6A00" strokeWidth="2" opacity="0.7"/>
+            <g fontFamily="sans-serif">
+              <circle cx="170" cy="125" r="7" fill="#71717a"/>
+              <text x="170" y="112" textAnchor="middle" fontSize="13" fontWeight="700" fill="#3f3f46">SZCZECIN</text>
+              <text x="170" y="148" textAnchor="middle" fontSize="11" fill="#71717a">duży profil, setki opinii</text>
+              <path d="M330 108c-8 0-14.5 6.5-14.5 14.5 0 10.8 14.5 27 14.5 27s14.5-16.2 14.5-27c0-8-6.5-14.5-14.5-14.5z" fill="#FF6A00"/>
+              <circle cx="330" cy="122.5" r="5.4" fill="#ffffff"/>
+              <text x="330" y="172" textAnchor="middle" fontSize="13" fontWeight="700" fill="#18181b">STARGARD</text>
+              <text x="330" y="188" textAnchor="middle" fontSize="11" fill="#71717a">Twoja firma</text>
+              <text x="255" y="42" textAnchor="middle" fontSize="11" fontWeight="700" fill="#c2410c">strefa wspólna</text>
+              <line x1="255" y1="48" x2="255" y2="76" stroke="#c2410c" strokeWidth="1.5"/>
+              <text x="255" y="228" textAnchor="middle" fontSize="11" fill="#a1a1aa">Tu decyduje nie odległość, tylko kompletność profilu i opinie</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Nakładające się zasięgi.</strong> Schemat poglądowy relacji między profilem firmy szczecińskiej a stargardzkiej.
+        </figcaption>
+      </figure>
+
+      <h2>Trzy przewagi, które ma tylko firma ze Stargardu</h2>
+      <p>
+        <strong>Pierwsza to adres w mieście.</strong> Widoczny, prawdziwy adres przy stargardzkiej ulicy jest sygnałem, którego szczecińska firma nie podrobi bez naruszenia zasad. Jeśli klient może do Ciebie przyjść, adres ma być pokazany, nie ukryty. Profile z ukrytym adresem wypadają słabiej.
+      </p>
+      <p>
+        <strong>Druga to czas dojazdu.</strong> Nie jest to sygnał rankingowy, ale jest argumentem, który wpisujesz w opis firmy, w opisy usług i w odpowiedzi na opinie. Klient, który waha się między dwiema firmami, czyta te zdania.
+      </p>
+      <p>
+        <strong>Trzecia to opinie od stargardzian.</strong> Sto opinii od klientów ze Stargardu jest w tym mieście warte więcej niż sześćset opinii rozsianych po całym województwie, bo buduje dokładnie ten obszar, o który walczysz. Sposoby zgodne z regulaminem zebraliśmy w tekście o <a href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">zdobywaniu opinii</a>.
+      </p>
+
+      <h2>Czego nie robić: nazwa firmy</h2>
+      <p>
+        Najczęstsza pokusa w miastach satelitarnych brzmi: dopiszmy do nazwy „Szczecin i okolice", to złapiemy oba rynki. Wytyczne Google mówią wprost, że nazwa ma odzwierciedlać rzeczywistą nazwę firmy używaną konsekwentnie na szyldzie, stronie i w dokumentach, a hasła marketingowe i informacje o usługach są niedozwolone.
+      </p>
+      <p>
+        Skutkiem jest edycja profilu przez Google, zawieszenie albo zgłoszenie od konkurenta, a przy kilkunastu firmach w branży zgłoszenie przychodzi szybko. Odwrotna strona medalu jest praktyczna: jeśli to konkurent ma miasto w nazwie, możesz zgłosić to przez formularz sugestii zmiany i to działa. Więcej pułapek tego typu zebraliśmy w tekście o <a href="/wizytowka-google-popularne-oszustwa" className="text-brand font-semibold hover:underline">oszustwach wokół wizytówki Google</a>.
+      </p>
+
+      <h2>Strona: pisz o Stargardzie, nie o aglomeracji</h2>
+      <p>
+        Odruch jest taki, żeby na stronie napisać „działamy w Szczecinie i okolicach", bo brzmi poważniej. Efekt jest odwrotny: tracisz jedyną frazę, na której masz przewagę, i wchodzisz na frazę, na której konkurujesz z całym Szczecinem.
+      </p>
+      <p>
+        Zrób odwrotnie. Podstrona usługi z nazwą Stargardu w tytule, nazwy dzielnic w treści, konkretne przykłady zleceń stąd. Dopiero potem, jako osobne podstrony, sąsiednie miejscowości powiatu, w których faktycznie pracujesz. Każda z własną treścią, nie kopią z podmienioną nazwą, bo takie strony Google traktuje jako masowo generowane i nie daje im widoczności. Zasadę rozpisaliśmy przy okazji <a href="/siedziba-mala-miejscowosc-local-seo" className="text-brand font-semibold hover:underline">firm z siedzibą w małej miejscowości</a> oraz w tekście o <a href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">lokalnym SEO dla firm</a>.
+      </p>
+      <p>
+        Profil ma prowadzić do podstrony usługi z nazwą miasta, a nie do strony głównej. Kosztuje to jedną zmianę w panelu i jest pomijane w większości wdrożeń.
+      </p>
+
+      <h2>Local Schema pod powiat stargardzki</h2>
+      <div className="my-6 rounded-xl overflow-hidden" style={{backgroundColor: '#18181b'}}>
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nazwa Twojej Firmy",
+  "url": "https://twojafirma.pl",
+  "telephone": "+48 000 000 000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Przykładowa 3",
+    "addressLocality": "Stargard",
+    "postalCode": "73-110",
+    "addressRegion": "zachodniopomorskie",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.3364,
+    "longitude": 15.0500
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Stargard" },
+    { "@type": "City", "name": "Chociwel" },
+    { "@type": "City", "name": "Dobrzany" },
+    { "@type": "City", "name": "Suchań" },
+    { "@type": "AdministrativeArea", "name": "powiat stargardzki" }
+  ],
+  "sameAs": ["https://www.google.com/maps/place/?q=place_id:TWOJ_PLACE_ID"]
+}
+</script>`}</pre>
+      </div>
+      <p>
+        Zwróć uwagę, czego tu nie ma: Szczecina. Wpisanie go do <code>areaServed</code> bez ani jednego zdania o Szczecinie na stronie i bez realnej obecności tam niczego nie załatwia, a rozmywa sygnał, który miał być mocny. Dane w schemacie muszą się też zgadzać co do znaku z tymi w profilu, o czym piszemy przy <a href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">spójności NAP</a>.
+      </p>
+
+      <h2>Najczęstsze pytania firm ze Stargardu</h2>
+      <p>
+        <strong>Czy da się wygrać ze szczecińską firmą na stargardzkie zapytania?</strong> Tak, i to jest realny cel. Warunkiem jest kompletny profil i opinie zbierane systematycznie, bo tylko tym nadrabia się ich popularność.
+      </p>
+      <p>
+        <strong>Czy warto zakładać drugi profil w Szczecinie?</strong> Tylko jeśli masz tam prawdziwy lokal z obsługą na miejscu. Profil pod adresem wirtualnym jest naruszeniem i kończy się zawieszeniem, także pierwszego profilu. Zasady dla firm z kilkoma punktami opisaliśmy w tekście o <a href="/wiele-lokalizacji-google-business-profile" className="text-brand font-semibold hover:underline">wielu lokalizacjach</a>.
+      </p>
+      <p>
+        <strong>Konkurent ze Szczecina stoi u mnie wyżej. Da się to zgłosić?</strong> Nie, bo to nie jest naruszenie. Zgłosić da się fałszywy adres, miasto w nazwie albo kupione opinie, a nie samą obecność w wynikach.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        W Stargardzie nie walczysz o to, żeby być bliżej, bo bliżej już jesteś. Walczysz o to, żeby bliskość zaczęła się liczyć, a do tego potrzebujesz kompletnego profilu, widocznego adresu i stałego napływu opinii od stargardzian. Podobny układ, tylko z inną osią problemu, opisaliśmy w tekstach o <a href="/pozycjonowanie-wizytowki-google-inowroclaw" className="text-brand font-semibold hover:underline">Inowrocławiu</a> i <a href="/pozycjonowanie-wizytowki-google-piotrkow-trybunalski" className="text-brand font-semibold hover:underline">Piotrkowie Trybunalskim</a>. Kolejność prac i sposób mierzenia efektów znajdziesz w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Pomoc Google — profil firmy w Google — poprawa pozycji firmy w Google: trafność, odległość, popularność.{" "}
+          <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Pomoc Google — profil firmy w Google — wytyczne dotyczące nazwy firmy.{" "}
+          <a href="https://support.google.com/business/answer/3038177" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/3038177 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Polska w liczbach na podstawie danych GUS — Stargard: 66 272 mieszkańców, 48,1 km², 1378 osób na km².{" "}
+          <a href="https://www.polskawliczbach.pl/Stargard" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">polskawliczbach.pl/Stargard →</a>
+        </p>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Pozycjonowanie wizytówki Google w Stargardzie",
+            "serviceType": "Pozycjonowanie profilu firmy w Google",
+            "url": "https://miauseo.pl/pozycjonowanie-wizytowki-google-stargard",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "MiauSEO",
+              "url": "https://miauseo.pl",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Klaudyny Potockiej 25",
+                "addressLocality": "Poznań",
+                "postalCode": "60-211",
+                "addressRegion": "wielkopolskie",
+                "addressCountry": "PL",
+              },
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Stargard" },
+              { "@type": "City", "name": "Chociwel" },
+              { "@type": "City", "name": "Dobrzany" },
+              { "@type": "City", "name": "Suchań" },
+              { "@type": "AdministrativeArea", "name": "powiat stargardzki" },
+            ],
+            "inLanguage": "pl-PL",
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google Piotrków Trybunalski
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-piotrkow-trybunalski": (
+    <>
+      <p>
+        Piotrków Trybunalski liczy <strong>66 211 mieszkańców</strong> na <strong>67,2 km²</strong>, czyli 985 osób na kilometr kwadratowy. Miasto leży w węźle dróg krajowych i autostrady, przez co znaczna część tutejszych firm usługowych pracuje z dojazdem: serwisy mobilne, pomoc drogowa, ekipy budowlane, transport, usługi u klienta.
+      </p>
+      <p>
+        I tu zaczyna się rzecz, którą większość poradników pomija: <strong>profil firmy z lokalem i profil firmy z dojazdem to dwa różne byty</strong>, rządzące się innymi zasadami. Pomylenie ich kosztuje w Piotrkowie więcej niż gdziekolwiek indziej, bo połowa rynku to firmy mobilne.
+      </p>
+
+      <h2>Dwa typy profilu i tylko jeden pokazuje adres</h2>
+      <p>
+        Profil z lokalem pokazuje adres, ma godziny otwarcia rozumiane jako godziny wizyty klienta i pojawia się w wynikach mocno wokół pinezki. Profil firmy z dojazdem adresu nie pokazuje, deklaruje zamiast tego obszar obsługi, a jego pinezka pozostaje w miejscu prowadzenia działalności, choć klient jej nie widzi.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 470 250" width="100%" role="img" aria-labelledby="piotrkow-typy-tytul piotrkow-typy-opis">
+            <title id="piotrkow-typy-tytul">Porównanie profilu firmy z lokalem i profilu firmy z dojazdem</title>
+            <desc id="piotrkow-typy-opis">Zestawienie dwóch typów profilu. Profil z lokalem: widoczny adres, godziny wizyt, silne wyniki wokół pinezki. Profil z dojazdem: adres ukryty, zadeklarowany obszar obsługi, wyniki nadal liczone od ukrytej pinezki.</desc>
+            <rect x="0" y="0" width="470" height="250" fill="#ffffff"/>
+            <rect x="14" y="14" width="210" height="222" rx="12" fill="#FF6A00" opacity="0.06"/>
+            <rect x="14" y="14" width="210" height="222" rx="12" fill="none" stroke="#FF6A00" strokeWidth="1.5" opacity="0.4"/>
+            <rect x="246" y="14" width="210" height="222" rx="12" fill="#71717a" opacity="0.06"/>
+            <rect x="246" y="14" width="210" height="222" rx="12" fill="none" stroke="#71717a" strokeWidth="1.5" strokeDasharray="5 5" opacity="0.5"/>
+            <g fontFamily="sans-serif">
+              <text x="119" y="44" textAnchor="middle" fontSize="13" fontWeight="700" fill="#18181b">Firma z lokalem</text>
+              <text x="351" y="44" textAnchor="middle" fontSize="13" fontWeight="700" fill="#18181b">Firma z dojazdem</text>
+
+              <text x="34" y="76" fontSize="12" fill="#3f3f46">Adres: widoczny</text>
+              <text x="34" y="102" fontSize="12" fill="#3f3f46">Godziny: wizyty klienta</text>
+              <text x="34" y="128" fontSize="12" fill="#3f3f46">Obszar: nieobowiązkowy</text>
+              <text x="34" y="154" fontSize="12" fill="#3f3f46">Zasięg: wokół pinezki</text>
+
+              <text x="266" y="76" fontSize="12" fill="#3f3f46">Adres: ukryty</text>
+              <text x="266" y="102" fontSize="12" fill="#3f3f46">Godziny: przyjmowanie zleceń</text>
+              <text x="266" y="128" fontSize="12" fill="#3f3f46">Obszar: zadeklarowany</text>
+              <text x="266" y="154" fontSize="12" fill="#3f3f46">Zasięg: nadal wokół pinezki</text>
+
+              <path d="M119 176c-8 0-14.5 6.5-14.5 14.5 0 10.8 14.5 27 14.5 27s14.5-16.2 14.5-27c0-8-6.5-14.5-14.5-14.5z" fill="#FF6A00"/>
+              <circle cx="119" cy="190.5" r="5.4" fill="#ffffff"/>
+              <path d="M351 176c-8 0-14.5 6.5-14.5 14.5 0 10.8 14.5 27 14.5 27s14.5-16.2 14.5-27c0-8-6.5-14.5-14.5-14.5z" fill="none" stroke="#71717a" strokeWidth="2" strokeDasharray="3 3"/>
+              <text x="351" y="232" textAnchor="middle" fontSize="11" fill="#c2410c">ukryta, ale wciąż licząca się</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Dwa typy profilu.</strong> Kluczowa różnica jest w ostatnim wierszu: ukrycie adresu nie przenosi firmy na środek obszaru obsługi.
+        </figcaption>
+      </figure>
+
+      <h2>Gdzie naprawdę leży pinezka firmy mobilnej</h2>
+      <p>
+        To jest najdroższe nieporozumienie w tej kategorii. Ukrycie adresu <strong>nie sprawia, że Google przestaje liczyć odległość od Twojego adresu</strong>. Pinezka nadal tam stoi, po prostu klient jej nie widzi.
+      </p>
+      <p>
+        Praktycznie oznacza to, że firma mobilna z siedzibą przy wschodniej granicy Piotrkowa nadal będzie mocniejsza we wschodniej części miasta niż w zachodniej, choćby zadeklarowała obsługę całego powiatu. Zaznaczenie w obszarze działania Sulejowa, Wolborza czy Rozprzy jest informacją dla klienta, a nie dźwignią rankingową.
+      </p>
+      <p>
+        Wniosek jest prosty: jeśli wybierasz, gdzie zarejestrować działalność, wybieraj punkt bliżej środka obszaru, w którym pracujesz. Jeśli już jesteś zarejestrowany, przestań liczyć na obszar obsługi i zacznij budować zasięg treścią.
+      </p>
+
+      <h2>Adres wirtualny to najdroższy skrót w Piotrkowie</h2>
+      <p>
+        Pomysł jest kuszący, zwłaszcza dla firm mobilnych: wynająć adres w centrum, żeby pinezka stała lepiej. Google traktuje to jako naruszenie i wykrywa dobrze, między innymi dlatego, że pod jednym adresem rejestruje się kilkanaście firm z różnych branż.
+      </p>
+      <p>
+        Cena porażki jest asymetryczna. Zawieszenie profilu oznacza utratę wszystkich opinii, całej historii i pozycji wypracowanej latami, a odzyskanie dostępu bywa procesem na tygodnie, jeśli w ogóle się uda. Zebraliśmy takie przypadki w tekście o <a href="/najwieksze-bledy-pozycjonowanie-wizytowki-google-2026" className="text-brand font-semibold hover:underline">największych błędach przy pozycjonowaniu wizytówki</a>, a procedurę odzyskiwania w artykule o <a href="/jak-odzyskac-dostep-do-wizytowki-google" className="text-brand font-semibold hover:underline">odzyskiwaniu dostępu do wizytówki</a>.
+      </p>
+      <p>
+        Osobna sprawa: firma mobilna i tak musi przejść <a href="/weryfikacja-wizytowki-google" className="text-brand font-semibold hover:underline">weryfikację</a>, a przy profilach bez widocznego adresu Google częściej prosi o weryfikację nagraniem wideo, w którym trzeba pokazać sprzęt, oznakowany pojazd i miejsce prowadzenia działalności. Adres wirtualny wykłada się właśnie na tym etapie.
+      </p>
+
+      <h2>Jak firma mobilna buduje zasięg wzdłuż trasy</h2>
+      <p>
+        Skoro obszar obsługi nie podnosi pozycji, zasięg trzeba zbudować na stronie. Dla piotrkowskiej firmy mobilnej sensowna kolejność wygląda tak.
+      </p>
+      <p>
+        <strong>Krok pierwszy</strong> to podstrona usługi z nazwą Piotrkowa w tytule, do której prowadzi przycisk w profilu. Nie strona główna, tylko konkretna podstrona.
+      </p>
+      <p>
+        <strong>Krok drugi</strong> to osobne podstrony dla miejscowości, w których faktycznie jeździsz najczęściej, każda z własną treścią: czas dojazdu, obsługiwane ulice albo sołectwa, przykłady zleceń stamtąd. Kopiowanie tekstu z podmienioną nazwą nie działa, bo Google rozpoznaje takie strony jako masowo generowane.
+      </p>
+      <p>
+        <strong>Krok trzeci</strong> to spójny NAP wszędzie tam, gdzie firma występuje, oraz Local Schema z listą obsługiwanych miejscowości. Podejście opisaliśmy szerzej w tekście o <a href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">lokalnym SEO dla firm</a>, a przykład z branży mobilnej pokazaliśmy w artykule o <a href="/reklama-pomocy-drogowej-skuteczne-metody" className="text-brand font-semibold hover:underline">reklamie pomocy drogowej</a>.
+      </p>
+
+      <h2>Local Schema dla firmy z dojazdem</h2>
+      <p>
+        Dla firmy bez widocznego adresu używa się typu, który opisuje działalność z dojazdem do klienta. Adres podajesz nadal, bo jest prawdziwy, ale ciężar przenosi się na obszar obsługi.
+      </p>
+      <div className="my-6 rounded-xl overflow-hidden" style={{backgroundColor: '#18181b'}}>
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nazwa Twojej Firmy",
+  "url": "https://twojafirma.pl",
+  "telephone": "+48 000 000 000",
+  "description": "Usługi z dojazdem do klienta na terenie Piotrkowa i powiatu.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Piotrków Trybunalski",
+    "postalCode": "97-300",
+    "addressRegion": "łódzkie",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.4053,
+    "longitude": 19.7031
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Piotrków Trybunalski" },
+    { "@type": "City", "name": "Sulejów" },
+    { "@type": "City", "name": "Wolbórz" },
+    { "@type": "City", "name": "Rozprza" },
+    { "@type": "AdministrativeArea", "name": "powiat piotrkowski" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "07:00",
+      "closes": "20:00"
+    }
+  ]
+}
+</script>`}</pre>
+      </div>
+      <p>
+        Zwróć uwagę na brak pola <code>streetAddress</code>. Przy firmie z ukrytym adresem podawanie ulicy w schemacie, gdy w profilu jest ukryta, tworzy rozjazd danych. Reszta pól ma pozostać identyczna z profilem. Pełne wdrożenie, razem z wariantem dla firmy z kilkoma punktami, opisaliśmy w tekście o <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">dodawaniu Local Schema do strony</a>.
+      </p>
+
+      <h2>Najczęstsze pytania firm z Piotrkowa</h2>
+      <p>
+        <strong>Mam lokal, ale prawie zawsze jeżdżę do klienta. Który typ wybrać?</strong> Jeśli klient może przyjść i zostanie obsłużony, pokaż adres. Profil hybrydowy jest dopuszczalny i zwykle mocniejszy niż profil z ukrytym adresem.
+      </p>
+      <p>
+        <strong>Czy da się mieć kilka profili dla różnych miejscowości?</strong> Nie, jeśli nie masz tam prawdziwych punktów z obsługą. Zasady dla firm wielooddziałowych opisaliśmy w tekście o <a href="/wiele-lokalizacji-google-business-profile" className="text-brand font-semibold hover:underline">wielu lokalizacjach</a>.
+      </p>
+      <p>
+        <strong>Jak szeroki obszar obsługi zadeklarować?</strong> Taki, w którym naprawdę pracujesz. Zbyt szeroki nie zwiększa zasięgu, a generuje telefony z miejsc, do których nie chcesz jechać.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        W Piotrkowie zacznij od ustalenia, którym typem profilu w ogóle jesteś, bo od tego zależy wszystko dalej. Ukryty adres nie przesuwa pinezki, obszar obsługi nie podnosi pozycji, a adres wirtualny kosztuje więcej, niż jest wart. Zasięg poza własną okolicę zbudujesz treścią na stronie i niczym innym. Inne układy tego samego problemu opisaliśmy w tekstach o <a href="/pozycjonowanie-wizytowki-google-stargard" className="text-brand font-semibold hover:underline">Stargardzie</a> i <a href="/pozycjonowanie-wizytowki-google-siedlce" className="text-brand font-semibold hover:underline">Siedlcach</a>. Cały proces opisuje przewodnik o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Pomoc Google — profil firmy w Google — poprawa pozycji firmy w Google: trafność, odległość, popularność.{" "}
+          <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Pomoc Google — profil firmy w Google — zabronione i ograniczone treści, w tym fałszywe dane o lokalizacji.{" "}
+          <a href="https://support.google.com/business/answer/2622994" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/2622994 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Polska w liczbach na podstawie danych GUS — Piotrków Trybunalski: 66 211 mieszkańców, 67,2 km², 985 osób na km².{" "}
+          <a href="https://www.polskawliczbach.pl/Piotrkow_Trybunalski" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">polskawliczbach.pl/Piotrkow_Trybunalski →</a>
+        </p>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Pozycjonowanie wizytówki Google w Piotrkowie Trybunalskim",
+            "serviceType": "Pozycjonowanie profilu firmy w Google",
+            "url": "https://miauseo.pl/pozycjonowanie-wizytowki-google-piotrkow-trybunalski",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "MiauSEO",
+              "url": "https://miauseo.pl",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Klaudyny Potockiej 25",
+                "addressLocality": "Poznań",
+                "postalCode": "60-211",
+                "addressRegion": "wielkopolskie",
+                "addressCountry": "PL",
+              },
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Piotrków Trybunalski" },
+              { "@type": "City", "name": "Sulejów" },
+              { "@type": "City", "name": "Wolbórz" },
+              { "@type": "City", "name": "Rozprza" },
+              { "@type": "AdministrativeArea", "name": "powiat piotrkowski" },
+            ],
+            "inLanguage": "pl-PL",
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google Siedlce
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-siedlce": (
+    <>
+      <p>
+        Siedlce to <strong>75 072 mieszkańców</strong> upchniętych na <strong>31,9 km²</strong>, czyli <strong>2356 osób na kilometr kwadratowy</strong>. Miasto jest gęste i zwarte, więc odległość rzadko decyduje o tym, kto wygrywa. Decyduje coś innego: <strong>na ile zapytań Twój profil w ogóle startuje</strong>.
+      </p>
+      <p>
+        To jest sedno tego tekstu. W mieście, w którym wszyscy są blisko, przewagę daje szerokość puli fraz, na których profil ma prawo się pokazać. Ta pula zaczyna się od kategorii i rozszerza przez usługi, a obie rzeczy są darmowe i większość siedleckich firm ich nie rusza.
+      </p>
+
+      <h2>Kategoria główna to nie opis, to bilet wstępu</h2>
+      <p>
+        Kategoria nie mówi Google, czym się zajmujesz. Kategoria przypisuje profil do zbioru zapytań. Jeśli wybierzesz złą, przy najważniejszej dla Ciebie frazie nie przegrywasz z konkurencją, tylko w ogóle nie bierzesz udziału. Żadna liczba opinii tego nie nadrobi.
+      </p>
+      <p>
+        Kategorie dodatkowe dokładają kolejne pule, ale nie wzmacniają głównej. Nie służą do wpisania wszystkiego, co firma potrafi. Trzy dobrze dobrane działają lepiej niż dziewięć wrzuconych na wszelki wypadek, bo rozmyta struktura kategorii utrudnia Google zrozumienie, czym jest ta firma.
+      </p>
+
+      <h2>Trik: sprawdź kategorie konkurencji, zanim cokolwiek zmienisz</h2>
+      <p>
+        Nie musisz zgadywać. Wpisz w Mapach swoją najważniejszą frazę z dopiskiem Siedlce i otwórz profile trzech firm, które stoją najwyżej. Kategoria główna każdej z nich jest widoczna na profilu, pod nazwą firmy.
+      </p>
+      <p>
+        Jeśli wszystkie trzy mają tę samą kategorię, a Ty inną, masz odpowiedź, zanim wydasz złotówkę. Jeśli mają trzy różne, to znaczy, że fraza jest szeroka i warto ją rozbić na węższe. Dobór fraz opisaliśmy w tekście o <a href="/jak-dobierac-slowa-kluczowe-do-pozycjonowania" className="text-brand font-semibold hover:underline">dobieraniu słów kluczowych</a>, a mechanizm kategorii w artykule o <a href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">kategoriach w wizytówce Google</a>.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 460 280" width="100%" role="img" aria-labelledby="siedlce-pula-tytul siedlce-pula-opis">
+            <title id="siedlce-pula-tytul">Jak kategoria i usługi poszerzają pulę zapytań profilu firmy</title>
+            <desc id="siedlce-pula-opis">Schemat trójpoziomowy. Na górze kategoria główna, która otwiera podstawową pulę zapytań. Poniżej kategorie dodatkowe, które dokładają kolejne pule. Na dole pozycje z sekcji usług, z których każda dokłada własne frazy.</desc>
+            <rect x="0" y="0" width="460" height="280" fill="#ffffff"/>
+            <g fontFamily="sans-serif">
+              <rect x="150" y="20" width="160" height="38" rx="8" fill="#FF6A00"/>
+              <text x="230" y="44" textAnchor="middle" fontSize="13" fontWeight="700" fill="#ffffff">Kategoria główna</text>
+
+              <path d="M230 58v22M230 80h-90M230 80h90M140 80v18M320 80v18M230 80v18" fill="none" stroke="#e4e4e7" strokeWidth="2"/>
+
+              <rect x="88" y="98" width="104" height="32" rx="7" fill="#FF6A00" opacity="0.45"/>
+              <text x="140" y="119" textAnchor="middle" fontSize="12" fontWeight="700" fill="#18181b">Kategoria 2</text>
+              <rect x="178" y="98" width="104" height="32" rx="7" fill="#FF6A00" opacity="0.45"/>
+              <text x="230" y="119" textAnchor="middle" fontSize="12" fontWeight="700" fill="#18181b">Kategoria 3</text>
+              <rect x="268" y="98" width="104" height="32" rx="7" fill="#FF6A00" opacity="0.2"/>
+              <text x="320" y="119" textAnchor="middle" fontSize="12" fill="#71717a">Kategoria 4</text>
+
+              <text x="230" y="156" textAnchor="middle" fontSize="12" fontWeight="700" fill="#c2410c">Sekcja usług, każda pozycja z własnym opisem</text>
+
+              <rect x="26" y="172" width="118" height="28" rx="6" fill="#FF6A00" opacity="0.3"/>
+              <rect x="152" y="172" width="146" height="28" rx="6" fill="#FF6A00" opacity="0.3"/>
+              <rect x="306" y="172" width="128" height="28" rx="6" fill="#FF6A00" opacity="0.3"/>
+              <rect x="60" y="208" width="132" height="28" rx="6" fill="#FF6A00" opacity="0.3"/>
+              <rect x="200" y="208" width="164" height="28" rx="6" fill="#FF6A00" opacity="0.3"/>
+              <rect x="110" y="244" width="150" height="28" rx="6" fill="#FF6A00" opacity="0.3"/>
+              <rect x="268" y="244" width="112" height="28" rx="6" fill="#FF6A00" opacity="0.3"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Pula zapytań rośnie w dół, nie w bok.</strong> Kategoria otwiera zbiór podstawowy, sekcja usług dokłada frazy szczegółowe. Schemat poglądowy.
+        </figcaption>
+      </figure>
+
+      <h2>Usługi: najtańsze poszerzenie puli, jakie istnieje</h2>
+      <p>
+        Sekcja usług jest w profilach najbardziej niedoceniana i najczęściej pusta. Każda pozycja z własnym opisem to kolejne frazy, przy których profil może się pokazać, a wypełnienie jej zajmuje godzinę i nie kosztuje nic.
+      </p>
+      <p>
+        Zasada jest jedna i banalna, a mimo to prawie nikt jej nie stosuje: <strong>nazywaj usługi tak, jak nazywa je klient, a nie tak, jak brzmią w Twoim cenniku</strong>. Klient z Siedlec nie wpisuje w wyszukiwarkę nazwy z faktury. Wpisuje to, co mu się popsuło albo czego potrzebuje, często niepoprawnie i potocznie. Twoja lista usług ma pokryć oba języki: fachowy i potoczny. Szczegóły w tekście o <a href="/uslugi-wizytowka-google-business" className="text-brand font-semibold hover:underline">usługach w wizytówce</a>.
+      </p>
+      <p>
+        Jeśli sprzedajesz produkty fizyczne, ta sama logika dotyczy sekcji produktów, o której piszemy w artykule o <a href="/produkty-wizytowka-google-business" className="text-brand font-semibold hover:underline">produktach w wizytówce</a>.
+      </p>
+
+      <h2>Opis firmy jako źródło dla odpowiedzi AI</h2>
+      <p>
+        Opis ma niewielką wagę rankingową i to się nie zmieniło. Zmieniło się co innego: od 2026 roku, po wycofaniu klasycznej sekcji pytań i odpowiedzi, opis jest jednym z głównych źródeł, z których Google buduje odpowiedzi generowane przez AI na temat Twojej firmy.
+      </p>
+      <p>
+        Praktyczny wniosek: napisz w nim wprost, w jakich dzielnicach i miejscowościach pracujesz, czego nie robisz i czym się różnisz. Model nie zgadnie tego z kategorii. Jak ułożyć taki opis, pokazujemy w tekście o <a href="/opis-firmy-google-business-profile-jak-napisac" className="text-brand font-semibold hover:underline">opisie firmy</a>.
+      </p>
+
+      <h2>Local Schema dla firmy z Siedlec</h2>
+      <div className="my-6 rounded-xl overflow-hidden" style={{backgroundColor: '#18181b'}}>
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nazwa Twojej Firmy",
+  "url": "https://twojafirma.pl",
+  "telephone": "+48 000 000 000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Przykładowa 21",
+    "addressLocality": "Siedlce",
+    "postalCode": "08-110",
+    "addressRegion": "mazowieckie",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.1676,
+    "longitude": 22.2902
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Usługi",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Nazwa usługi pierwszej" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Nazwa usługi drugiej" }
+      }
+    ]
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Siedlce" },
+    { "@type": "City", "name": "Mordy" },
+    { "@type": "AdministrativeArea", "name": "powiat siedlecki" }
+  ]
+}
+</script>`}</pre>
+      </div>
+      <p>
+        Pole <code>hasOfferCatalog</code> to miejsce, w którym powtarzasz listę usług z profilu. Nazwy mają być identyczne w obu miejscach, bo zgodność sygnałów jest tu całym sensem. Pełne wdrożenie opisaliśmy w tekście o <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">dodawaniu Local Schema do strony</a>.
+      </p>
+
+      <h2>Czego kategoria nie naprawi</h2>
+      <p>
+        Uczciwa uwaga na koniec części technicznej. Poszerzenie puli zapytań daje szansę na pokazanie się, ale o kolejności w trójce decydują dalej opinie, kompletność i sygnały zaufania. W Siedlcach, gdzie rynek jest gęsty, sam dobry wybór kategorii wprowadzi Cię do gry, a nie na podium. Pełną listę sygnałów z oceną wagi zebraliśmy w tekście o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>.
+      </p>
+
+      <h2>Najczęstsze pytania firm z Siedlec</h2>
+      <p>
+        <strong>Czy zmiana kategorii głównej resetuje pozycję?</strong> Nie resetuje historii profilu, ale zmienia pulę zapytań, więc wyniki na starych frazach mogą spaść, a na nowych wzrosnąć. Zmieniaj świadomie i mierz przed oraz po.
+      </p>
+      <p>
+        <strong>Ile usług warto wpisać?</strong> Tyle, ile faktycznie świadczysz, i ani jednej więcej. Wpisywanie usług, których nie wykonujesz, kończy się telefonami, które musisz odrzucać, i opiniami od rozczarowanych klientów.
+      </p>
+      <p>
+        <strong>Czy opisy usług powinny zawierać nazwę miasta?</strong> Naturalnie, w jednym lub dwóch miejscach, jeśli zdanie brzmi normalnie. Upychanie nazwy Siedlec w każdej pozycji wygląda dokładnie na to, czym jest.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        W Siedlcach nie wygrywa się odległością, bo wszyscy są blisko. Wygrywa się szerokością puli zapytań: dobrze dobrana kategoria główna, trzy sensowne kategorie dodatkowe, kompletna lista usług nazwanych językiem klienta i opis, który mówi wprost, gdzie pracujesz. To jedna godzina pracy w panelu i zwykle największa pojedyncza zmiana, jaką da się zrobić za darmo. Inne osie problemu opisaliśmy w tekstach o <a href="/pozycjonowanie-wizytowki-google-piotrkow-trybunalski" className="text-brand font-semibold hover:underline">Piotrkowie Trybunalskim</a> i <a href="/pozycjonowanie-wizytowki-google-suwalki" className="text-brand font-semibold hover:underline">Suwałkach</a>. Kolejność prac znajdziesz w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Pomoc Google — profil firmy w Google — poprawa pozycji firmy w Google: trafność, odległość, popularność.{" "}
+          <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Polska w liczbach na podstawie danych GUS — Siedlce: 75 072 mieszkańców, 31,9 km², 2356 osób na km².{" "}
+          <a href="https://www.polskawliczbach.pl/Siedlce" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">polskawliczbach.pl/Siedlce →</a>
+        </p>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Pozycjonowanie wizytówki Google w Siedlcach",
+            "serviceType": "Pozycjonowanie profilu firmy w Google",
+            "url": "https://miauseo.pl/pozycjonowanie-wizytowki-google-siedlce",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "MiauSEO",
+              "url": "https://miauseo.pl",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Klaudyny Potockiej 25",
+                "addressLocality": "Poznań",
+                "postalCode": "60-211",
+                "addressRegion": "wielkopolskie",
+                "addressCountry": "PL",
+              },
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Siedlce" },
+              { "@type": "City", "name": "Mordy" },
+              { "@type": "AdministrativeArea", "name": "powiat siedlecki" },
+            ],
+            "inLanguage": "pl-PL",
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google Suwałki
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-suwalki": (
+    <>
+      <p>
+        Suwałki liczą <strong>68 035 mieszkańców</strong> na <strong>65,5 km²</strong>, czyli 1039 osób na kilometr kwadratowy. Liczby są zbliżone do wielu miast tej wielkości, ale jedna rzecz odróżnia Suwałki od nich wszystkich: <strong>wokół nie ma niczego większego</strong>.
+      </p>
+      <p>
+        To ma dwie konsekwencje, obie ważne dla profilu firmy. Konkurencja jest mniejsza, więc wejście do pierwszej trójki jest realne w miesiące. Ale rynek jest rozrzucony na dużym obszarze, a każde niezłapane zapytanie kosztuje procentowo więcej niż w mieście, gdzie zapytań jest po prostu dużo.
+      </p>
+
+      <h2>Odległość działa tu inaczej niż w aglomeracji</h2>
+      <p>
+        Google liczy odległość od miejsca, w którym stoi wyszukujący, i to się nie zmienia. Zmienia się skala. W gęstej aglomeracji trzy kilometry to inna dzielnica i inna trójka wyników. W regionie suwalskim trzy kilometry to nadal to samo miasto, a różnica robi się dopiero przy kilkudziesięciu.
+      </p>
+      <p>
+        Dobra wiadomość: <strong>wewnątrz Suwałk profil firmy pokrywa praktycznie całe miasto</strong>. Nie musisz walczyć o poszczególne osiedla tak, jak w mieście trzykrotnie gęstszym. Zła wiadomość jest odwrotną stroną tej samej monety: zapytanie z Sejn, Augustowa czy Olecka to już inny świat i profil sam tam nie dojedzie.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 420 340" width="100%" role="img" aria-labelledby="suwalki-zasieg-tytul suwalki-zasieg-opis">
+            <title id="suwalki-zasieg-tytul">Podział zasięgu firmy z Suwałk na strefę profilu i strefę treści na stronie</title>
+            <desc id="suwalki-zasieg-opis">Dwie koncentryczne strefy wokół Suwałk. Strefa wewnętrzna to obszar, w którym pracuje sam profil firmy w Google. Strefa zewnętrzna to obszar, w którym widoczność buduje wyłącznie treść na stronie, czyli podstrony lokalizacyjne.</desc>
+            <rect x="0" y="0" width="420" height="340" fill="#ffffff"/>
+            <circle cx="210" cy="160" r="130" fill="#71717a" opacity="0.07"/>
+            <circle cx="210" cy="160" r="130" fill="none" stroke="#71717a" strokeWidth="1.5" strokeDasharray="6 6" opacity="0.5"/>
+            <circle cx="210" cy="160" r="66" fill="#FF6A00" opacity="0.13"/>
+            <circle cx="210" cy="160" r="66" fill="none" stroke="#FF6A00" strokeWidth="2"/>
+            <g fontFamily="sans-serif">
+              <circle cx="210" cy="60" r="5" fill="#71717a" opacity="0.7"/>
+              <circle cx="310" cy="215" r="5" fill="#71717a" opacity="0.7"/>
+              <circle cx="112" cy="220" r="5" fill="#71717a" opacity="0.7"/>
+              <circle cx="322" cy="100" r="5" fill="#71717a" opacity="0.7"/>
+              <text x="210" y="48" textAnchor="middle" fontSize="11" fill="#52525b">sąsiednia gmina</text>
+              <text x="316" y="234" textAnchor="middle" fontSize="11" fill="#52525b">sąsiednia gmina</text>
+              <text x="112" y="240" textAnchor="middle" fontSize="11" fill="#52525b">sąsiednia gmina</text>
+              <text x="322" y="88" textAnchor="middle" fontSize="11" fill="#52525b">sąsiednia gmina</text>
+
+              <path d="M210 138c-8 0-14.5 6.5-14.5 14.5 0 10.8 14.5 27 14.5 27s14.5-16.2 14.5-27c0-8-6.5-14.5-14.5-14.5z" fill="#18181b"/>
+              <circle cx="210" cy="152.5" r="5.4" fill="#ffffff"/>
+              <text x="210" y="198" textAnchor="middle" fontSize="14" fontWeight="700" fill="#18181b">SUWAŁKI</text>
+
+              <text x="210" y="120" textAnchor="middle" fontSize="11" fontWeight="700" fill="#c2410c">tu pracuje profil</text>
+              <text x="210" y="310" textAnchor="middle" fontSize="12" fontWeight="700" fill="#52525b">tu pracuje wyłącznie treść na stronie</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Dwie strefy, dwa narzędzia.</strong> Schemat poglądowy podziału pracy między profilem firmy a podstronami lokalizacyjnymi.
+        </figcaption>
+      </figure>
+
+      <h2>Czego profil nie zrobi za Ciebie</h2>
+      <p>
+        Warto powiedzieć to raz, jasno, bo na tym opiera się cała reszta. <strong>Zaznaczenie obszaru obsługi w panelu nie sprawi, że zaczniesz pokazywać się w Sejnach.</strong> To jest informacja dla klienta, który już Twój profil ogląda, a nie sygnał, który podnosi pozycję w wynikach z innego miasta.
+      </p>
+      <p>
+        To samo dotyczy wpisania sąsiednich miejscowości do opisu firmy. Opis pomaga, ale w innym celu, o czym za chwilę. Rankingu w innym mieście nie zbuduje.
+      </p>
+
+      <h2>Podstrony lokalizacyjne, które nie są kopiami</h2>
+      <p>
+        Zasięg poza Suwałki buduje strona i tylko strona. Mechanizm jest prosty: osobna podstrona dla każdej miejscowości, w której realnie pracujesz, z własnym tytułem i własną treścią.
+      </p>
+      <p>
+        Słowo „własną" jest tu kluczowe. Skopiowanie tego samego tekstu z podmienioną nazwą miejscowości to najczęstszy błąd i najskuteczniejszy sposób, żeby te podstrony nigdy nie dostały widoczności, bo Google rozpoznaje je jako masowo generowane.
+      </p>
+      <p>
+        Co wpisać, żeby treść była prawdziwie inna: czas dojazdu z Suwałk, obsługiwane sołectwa albo ulice, przykład zlecenia stamtąd, lokalne uwarunkowania, które faktycznie zmieniają sposób wykonania usługi. Trzy akapity prawdziwych konkretów działają lepiej niż osiem akapitów przepisanych. Podejście rozpisaliśmy przy okazji <a href="/siedziba-mala-miejscowosc-local-seo" className="text-brand font-semibold hover:underline">firm z siedzibą w małej miejscowości</a> i w tekście o <a href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">lokalnym SEO dla firm</a>.
+      </p>
+
+      <h2>Telefon i godziny: w regionie o niskim zagęszczeniu decyduje odbiór</h2>
+      <p>
+        Przy mniejszej liczbie zapytań każde ma większą wagę. Nieodebrany telefon w Suwałkach kosztuje więcej niż nieodebrany telefon w Warszawie, bo następnego nie będzie za dziesięć minut.
+      </p>
+      <p>
+        Praktycznie: prawdziwe godziny w profilu, uzupełnione godziny świąteczne i żadnego trybu całodobowego, jeśli nie odbierasz w nocy. Wpisz też numer, który faktycznie odbierasz, a nie numer stacjonarny w biurze, w którym nikogo nie ma po piętnastej. Szczegóły w tekście o <a href="/godziny-otwarcia-wizytowka-google" className="text-brand font-semibold hover:underline">godzinach otwarcia w wizytówce</a>, a komplet pozostałych pól w artykule o <a href="/atrybuty-wizytowka-google" className="text-brand font-semibold hover:underline">atrybutach wizytówki</a>.
+      </p>
+
+      <h2>Local Schema z obszarem obsługi</h2>
+      <div className="my-6 rounded-xl overflow-hidden" style={{backgroundColor: '#18181b'}}>
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nazwa Twojej Firmy",
+  "url": "https://twojafirma.pl",
+  "telephone": "+48 000 000 000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Przykładowa 5",
+    "addressLocality": "Suwałki",
+    "postalCode": "16-400",
+    "addressRegion": "podlaskie",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 54.1117,
+    "longitude": 22.9309
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Suwałki" },
+    { "@type": "City", "name": "Sejny" },
+    { "@type": "City", "name": "Augustów" },
+    { "@type": "City", "name": "Olecko" },
+    { "@type": "AdministrativeArea", "name": "powiat suwalski" },
+    { "@type": "AdministrativeArea", "name": "powiat sejneński" }
+  ]
+}
+</script>`}</pre>
+      </div>
+      <p>
+        Jedna zasada, o której łatwo zapomnieć: <code>areaServed</code> nie zastępuje treści. Wymienienie Augustowa w schemacie bez ani jednego zdania o Augustowie na stronie niczego nie załatwia. Schemat potwierdza to, co i tak na stronie jest, a nie tworzy tego z niczego. Pełne wdrożenie opisaliśmy w tekście o <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">dodawaniu Local Schema do strony</a>.
+      </p>
+
+      <h2>Najczęstsze pytania firm z Suwałk</h2>
+      <p>
+        <strong>Ile podstron lokalizacyjnych ma sens?</strong> Tyle, ile miejscowości realnie obsługujesz, i w kolejności od tych, z których przyjeżdża najwięcej klientów. Trzy dobre są warte więcej niż piętnaście przepisanych.
+      </p>
+      <p>
+        <strong>Czy w Suwałkach da się wejść do pierwszej trójki?</strong> W większości branż tak i szybciej niż w dużym mieście, bo część konkurencji ma profile pozostawione bez opieki. Zwykle wystarczy być tą firmą, która jako jedyna pracuje nad profilem systematycznie.
+      </p>
+      <p>
+        <strong>Czy warto zakładać profil w Augustowie?</strong> Tylko z prawdziwym punktem i obsługą na miejscu. Profil pod pożyczonym adresem jest naruszeniem, które kończy się zawieszeniem także profilu głównego.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        W Suwałkach profil pokryje całe miasto i to jest Twoja darmowa przewaga. Wszystko poza miastem trzeba zbudować treścią, podstrona po podstronie, i nie ma tu drogi na skróty. Zacznij od kompletnego profilu i prawdziwych godzin, potem trzy najważniejsze miejscowości powiatu z realną treścią. Wariant miasta gęstszego opisaliśmy w tekście o <a href="/pozycjonowanie-wizytowki-google-siedlce" className="text-brand font-semibold hover:underline">Siedlcach</a>, wariant z opiniami jako główną osią w artykule o <a href="/pozycjonowanie-wizytowki-google-ostrowiec-swietokrzyski" className="text-brand font-semibold hover:underline">Ostrowcu Świętokrzyskim</a>, a rynek regionalny o podobnej strukturze w tekście o <a href="/pozycjonowanie-wizytowki-google-olsztyn" className="text-brand font-semibold hover:underline">Olsztynie</a>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Pomoc Google — profil firmy w Google — poprawa pozycji firmy w Google: trafność, odległość, popularność.{" "}
+          <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Polska w liczbach na podstawie danych GUS — Suwałki: 68 035 mieszkańców, 65,5 km², 1039 osób na km².{" "}
+          <a href="https://www.polskawliczbach.pl/Suwalki" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">polskawliczbach.pl/Suwalki →</a>
+        </p>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Pozycjonowanie wizytówki Google w Suwałkach",
+            "serviceType": "Pozycjonowanie profilu firmy w Google",
+            "url": "https://miauseo.pl/pozycjonowanie-wizytowki-google-suwalki",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "MiauSEO",
+              "url": "https://miauseo.pl",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Klaudyny Potockiej 25",
+                "addressLocality": "Poznań",
+                "postalCode": "60-211",
+                "addressRegion": "wielkopolskie",
+                "addressCountry": "PL",
+              },
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Suwałki" },
+              { "@type": "City", "name": "Sejny" },
+              { "@type": "City", "name": "Augustów" },
+              { "@type": "City", "name": "Olecko" },
+              { "@type": "AdministrativeArea", "name": "powiat suwalski" },
+            ],
+            "inLanguage": "pl-PL",
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google Ostrowiec Świętokrzyski
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-ostrowiec-swietokrzyski": (
+    <>
+      <p>
+        Ostrowiec Świętokrzyski to <strong>61 637 mieszkańców</strong> na <strong>46,4 km²</strong>, czyli 1328 osób na kilometr kwadratowy. Miasto jest na tyle duże, żeby mieć pełny rynek usług, i na tyle małe, żeby <strong>opinia o firmie rozeszła się szybciej niż jakikolwiek algorytm zdąży ją zauważyć</strong>.
+      </p>
+      <p>
+        Dlatego ten tekst jest w całości o opiniach. Nie dlatego, że reszta ustawień nie ma znaczenia, tylko dlatego, że w mieście tej wielkości opinie są jednocześnie największą dźwignią rankingową i największym ryzykiem reputacyjnym, a te dwie rzeczy trzeba prowadzić razem.
+      </p>
+
+      <h2>Opinie pracują na czterech osobnych poziomach</h2>
+      <p>
+        Google wymienia liczbę opinii wśród składników popularności profilu, a odpowiadanie na nie wskazuje wprost jako działanie poprawiające pozycję lokalną. To jednak nie jest jeden sygnał, tylko cztery, które warto rozdzielić.
+      </p>
+      <p>
+        <strong>Średnia ocena</strong> decyduje o tym, czy klient w ogóle rozważy Twoją firmę. <strong>Liczba opinii</strong> buduje wiarygodność tej średniej, bo 4,8 z ośmiu opinii i 4,8 ze stu to dwa różne komunikaty. <strong>Świeżość</strong> mówi, czy firma działa dziś, czy działała trzy lata temu. <strong>Stały napływ</strong> jest sygnałem osobnym od wszystkich powyższych i najtrudniejszym do podrobienia.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 460 260" width="100%" role="img" aria-labelledby="ostrowiec-rytm-tytul ostrowiec-rytm-opis">
+            <title id="ostrowiec-rytm-tytul">Porównanie dwóch sposobów zbierania opinii: skok jednorazowy i równy napływ</title>
+            <desc id="ostrowiec-rytm-opis">Dwa wykresy słupkowe w skali dwunastu miesięcy. Pierwszy pokazuje czterdzieści opinii zebranych w jednym miesiącu i ciszę przez resztę roku. Drugi pokazuje po trzy do czterech opinii co miesiąc przez cały rok.</desc>
+            <rect x="0" y="0" width="460" height="260" fill="#ffffff"/>
+            <g fontFamily="sans-serif">
+              <text x="16" y="20" fontSize="12" fontWeight="700" fill="#71717a">Skok jednorazowy</text>
+              <line x1="16" y1="104" x2="440" y2="104" stroke="#e4e4e7" strokeWidth="1.5"/>
+              <rect x="22" y="98" width="24" height="6" rx="2" fill="#a1a1aa"/>
+              <rect x="56" y="94" width="24" height="10" rx="2" fill="#a1a1aa"/>
+              <rect x="90" y="34" width="24" height="70" rx="2" fill="#a1a1aa"/>
+              <rect x="124" y="100" width="24" height="4" rx="2" fill="#a1a1aa"/>
+              <rect x="158" y="101" width="24" height="3" rx="2" fill="#a1a1aa"/>
+              <rect x="192" y="101" width="24" height="3" rx="2" fill="#a1a1aa"/>
+              <rect x="226" y="102" width="24" height="2" rx="2" fill="#a1a1aa"/>
+              <rect x="260" y="102" width="24" height="2" rx="2" fill="#a1a1aa"/>
+              <rect x="294" y="102" width="24" height="2" rx="2" fill="#a1a1aa"/>
+              <rect x="328" y="102" width="24" height="2" rx="2" fill="#a1a1aa"/>
+              <rect x="362" y="102" width="24" height="2" rx="2" fill="#a1a1aa"/>
+              <rect x="396" y="102" width="24" height="2" rx="2" fill="#a1a1aa"/>
+              <text x="102" y="28" textAnchor="middle" fontSize="11" fill="#71717a">wygląda podejrzanie</text>
+
+              <text x="16" y="150" fontSize="12" fontWeight="700" fill="#c2410c">Równy napływ</text>
+              <line x1="16" y1="236" x2="440" y2="236" stroke="#e4e4e7" strokeWidth="1.5"/>
+              <rect x="22" y="212" width="24" height="24" rx="2" fill="#FF6A00"/>
+              <rect x="56" y="206" width="24" height="30" rx="2" fill="#FF6A00"/>
+              <rect x="90" y="214" width="24" height="22" rx="2" fill="#FF6A00"/>
+              <rect x="124" y="204" width="24" height="32" rx="2" fill="#FF6A00"/>
+              <rect x="158" y="210" width="24" height="26" rx="2" fill="#FF6A00"/>
+              <rect x="192" y="202" width="24" height="34" rx="2" fill="#FF6A00"/>
+              <rect x="226" y="212" width="24" height="24" rx="2" fill="#FF6A00"/>
+              <rect x="260" y="206" width="24" height="30" rx="2" fill="#FF6A00"/>
+              <rect x="294" y="208" width="24" height="28" rx="2" fill="#FF6A00"/>
+              <rect x="328" y="200" width="24" height="36" rx="2" fill="#FF6A00"/>
+              <rect x="362" y="210" width="24" height="26" rx="2" fill="#FF6A00"/>
+              <rect x="396" y="204" width="24" height="32" rx="2" fill="#FF6A00"/>
+              <text x="228" y="184" textAnchor="middle" fontSize="11" fill="#c2410c">ta sama liczba opinii, inny odbiór</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Ten sam wynik roczny, dwa różne sygnały.</strong> Schemat poglądowy rozkładu opinii w czasie.
+        </figcaption>
+      </figure>
+
+      <h2>Czego nie wolno, ze szczególnym naciskiem na 2026</h2>
+      <p>
+        Zasady zaostrzyły się i część praktyk, które przez lata uchodziły za standard, jest dziś jawnym naruszeniem. Google zabrania wprost oferowania jakichkolwiek zachęt w zamian za opinię, w tym rabatu, gratisu czy płatności, a także zamawiania treści, która nie odzwierciedla prawdziwego doświadczenia.
+      </p>
+      <p>
+        Osobno zakazane jest <strong>wymaganie od pracowników określonej liczby zebranych opinii</strong> oraz naciskanie na klienta, żeby wystawił ocenę jeszcze na miejscu, w lokalu. Zakazane jest też proszenie o opinię o konkretnej treści, w tym o wskazanie pracownika z imienia. Popularne „proszę napisać, że obsługiwał Pana Marek" mieści się dokładnie w tej definicji.
+      </p>
+      <p>
+        Co zostaje dozwolone i jest napisane w tych samych wytycznych wprost: <strong>możesz prosić o opinię i zachęcać do jej wystawienia, o ile nie oferujesz nic w zamian i nie sterujesz treścią ani oceną</strong>. To jest cała przestrzeń, w której się poruszasz, i w małym mieście jest w zupełności wystarczająca.
+      </p>
+
+      <h2>Prośba, która w Ostrowcu naprawdę działa</h2>
+      <p>
+        W mieście, w którym ludzie się znają, prośba wypowiedziana osobiście przy odbiorze zlecenia działa lepiej niż jakikolwiek automat. Klient jest zadowolony teraz, a nie za trzy dni, kiedy przyjdzie SMS.
+      </p>
+      <p>
+        Dwie rzeczy podnoszą skuteczność takiej prośby. Po pierwsze, ułatw drogę: krótki link albo kod QR na paragonie czy w wiadomości po zleceniu. Po drugie, nie proś wszystkich naraz. Kilka opinii miesięcznie przez rok buduje profil mocniej niż czterdzieści zebranych w tydzień, bo świeżość i stały napływ są osobnymi sygnałami, a nagły skok wygląda dokładnie tak, jak wygląda. Metody zgodne z regulaminem zebraliśmy w tekście o <a href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">zdobywaniu opinii</a>.
+      </p>
+
+      <h2>Negatywna opinia w małym mieście</h2>
+      <p>
+        Tu ryzyko jest wyższe niż w dużym mieście, bo jedna negatywna opinia trafia do osób, które znają zarówno Ciebie, jak i autora. Odpowiedź czyta więc nie tylko przyszły klient, ale i połowa Twojego rynku.
+      </p>
+      <p>
+        Zasada jest prosta i niewygodna: <strong>odpowiadaj rzeczowo, bez emocji, publicznie, w ciągu doby</strong>, a szczegóły przenoś na telefon. Nie licz na usunięcie, bo Google usuwa wyłącznie opinie naruszające zasady, a nie opinie niesprawiedliwe. Co da się zgłosić i jak, opisaliśmy w tekstach o <a href="/negatywna-opinia-google-co-zrobic" className="text-brand font-semibold hover:underline">negatywnej opinii w Google</a> oraz <a href="/jak-usunac-negatywne-opinie-z-google" className="text-brand font-semibold hover:underline">usuwaniu negatywnych opinii</a>.
+      </p>
+      <p>
+        Odpowiadaj też na pozytywne. To jedyne miejsce, w którym możesz naturalnie napisać „dziękujemy, do zobaczenia w Ostrowcu" bez naruszania czegokolwiek, a Google wskazuje odpowiadanie na opinie jako działanie poprawiające pozycję lokalną.
+      </p>
+
+      <h2>Local Schema: czego tu nie wolno wstawiać</h2>
+      <p>
+        Kuszące jest wpisanie własnej średniej ocen do danych strukturalnych. Nie rób tego. Oceny wystawione samemu sobie na własnej stronie nie są uznawane, a mogą skutkować oznaczeniem danych jako naruszających wytyczne. Schemat na Twojej stronie ma opisywać firmę, a nie chwalić ją cudzą oceną.
+      </p>
+      <div className="my-6 rounded-xl overflow-hidden" style={{backgroundColor: '#18181b'}}>
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nazwa Twojej Firmy",
+  "url": "https://twojafirma.pl",
+  "telephone": "+48 000 000 000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Przykładowa 9",
+    "addressLocality": "Ostrowiec Świętokrzyski",
+    "postalCode": "27-400",
+    "addressRegion": "świętokrzyskie",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.9295,
+    "longitude": 21.3856
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Ostrowiec Świętokrzyski" },
+    { "@type": "City", "name": "Ćmielów" },
+    { "@type": "City", "name": "Kunów" },
+    { "@type": "AdministrativeArea", "name": "powiat ostrowiecki" }
+  ],
+  "sameAs": [
+    "https://www.google.com/maps/place/?q=place_id:TWOJ_PLACE_ID",
+    "https://www.facebook.com/twojafirma"
+  ]
+}
+</script>`}</pre>
+      </div>
+      <p>
+        Pole <code>sameAs</code> z linkiem do profilu w Mapach to sposób na powiązanie strony z profilem bez podawania czegokolwiek, czego nie da się zweryfikować. Pełne wdrożenie opisaliśmy w tekście o <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">dodawaniu Local Schema do strony</a>, a wagę pozostałych sygnałów w artykule o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>.
+      </p>
+
+      <h2>Najczęstsze pytania firm z Ostrowca</h2>
+      <p>
+        <strong>Ile opinii miesięcznie to bezpieczne tempo?</strong> Takie, jakie odpowiada Twojej realnej liczbie zleceń. Firma z pięcioma zleceniami dziennie może zbierać kilkanaście opinii miesięcznie i będzie to wyglądało naturalnie. Firma z pięcioma zleceniami w miesiącu nie może.
+      </p>
+      <p>
+        <strong>Czy da się usunąć opinię od kogoś, kto nie był klientem?</strong> Można ją zgłosić jako treść niepochodzącą z prawdziwego doświadczenia. Decyzja należy do Google i nie zawsze wypada po Twojej myśli, ale zgłoszenie jest darmowe i warto je złożyć.
+      </p>
+      <p>
+        <strong>Czy kupowanie opinii daje efekt?</strong> Krótkoterminowo bywa, że tak. Kosztem jest ryzyko utraty całego profilu razem z prawdziwymi opiniami i historią, a w mieście wielkości Ostrowca ryzyko zgłoszenia przez konkurenta jest wysokie, bo wszyscy się obserwują.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        W Ostrowcu opinie są najmocniejszą dźwignią, jaką masz, i jedyną, której nie da się przyspieszyć bez ryzyka. Poproś osobiście, ułatw drogę linkiem, odpowiadaj na wszystko w ciągu doby i rozłóż to na miesiące zamiast na tydzień. Reszta profilu ma być kompletna, ale to opinie zdecydują o kolejności. Inne osie tego samego problemu opisaliśmy w tekstach o <a href="/pozycjonowanie-wizytowki-google-suwalki" className="text-brand font-semibold hover:underline">Suwałkach</a> i <a href="/pozycjonowanie-wizytowki-google-swidnica" className="text-brand font-semibold hover:underline">Świdnicy</a>. Kolejność prac znajdziesz w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Pomoc Google — profil firmy w Google — zabronione i ograniczone treści, w tym manipulacja ocenami, zachęty za opinie i wymaganie opinii od pracowników.{" "}
+          <a href="https://support.google.com/business/answer/2622994" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/2622994 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Maps User Generated Content Policy — zasady dotyczące treści tworzonych przez użytkowników.{" "}
+          <a href="https://support.google.com/contributionpolicy/answer/7400114" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/contributionpolicy/answer/7400114 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Polska w liczbach na podstawie danych GUS — Ostrowiec Świętokrzyski: 61 637 mieszkańców, 46,4 km², 1328 osób na km².{" "}
+          <a href="https://www.polskawliczbach.pl/Ostrowiec_Swietokrzyski" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">polskawliczbach.pl/Ostrowiec_Swietokrzyski →</a>
+        </p>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Pozycjonowanie wizytówki Google w Ostrowcu Świętokrzyskim",
+            "serviceType": "Pozycjonowanie profilu firmy w Google",
+            "url": "https://miauseo.pl/pozycjonowanie-wizytowki-google-ostrowiec-swietokrzyski",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "MiauSEO",
+              "url": "https://miauseo.pl",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Klaudyny Potockiej 25",
+                "addressLocality": "Poznań",
+                "postalCode": "60-211",
+                "addressRegion": "wielkopolskie",
+                "addressCountry": "PL",
+              },
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Ostrowiec Świętokrzyski" },
+              { "@type": "City", "name": "Ćmielów" },
+              { "@type": "City", "name": "Kunów" },
+              { "@type": "AdministrativeArea", "name": "powiat ostrowiecki" },
+            ],
+            "inLanguage": "pl-PL",
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google Świdnica
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-swidnica": (
+    <>
+      <p>
+        Świdnica mieści <strong>52 417 osób</strong> na zaledwie <strong>21,8 km²</strong>, co daje <strong>2409 osób na kilometr kwadratowy</strong> i czyni ją najgęstszym miastem z tych, o których tu piszemy. Wszystko jest blisko wszystkiego, więc odległość między firmami rzadko przesądza o czymkolwiek.
+      </p>
+      <p>
+        Kiedy odległość przestaje decydować, decyzję podejmuje człowiek. I to jest temat tego tekstu: <strong>ranking to połowa roboty, drugą połową jest to, czy klient kliknie akurat w Ciebie</strong>. Bycie na pierwszym miejscu z pustym, brzydkim profilem oznacza oddawanie zleceń firmie z trzeciej pozycji.
+      </p>
+
+      <h2>Rozłóżmy wynik z trójki na części</h2>
+      <p>
+        Klient widzi w Mapach kilka elementów naraz i podejmuje decyzję w kilka sekund. Warto wiedzieć, na co dokładnie patrzy.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 460 250" width="100%" role="img" aria-labelledby="swidnica-anatomia-tytul swidnica-anatomia-opis">
+            <title id="swidnica-anatomia-tytul">Elementy wyniku firmy widoczne dla klienta w Mapach Google</title>
+            <desc id="swidnica-anatomia-opis">Schemat karty firmy w wynikach lokalnych z zaznaczonymi elementami: zdjęcie, nazwa firmy, ocena i liczba opinii, kategoria z odległością, godziny otwarcia oraz przyciski kontaktu.</desc>
+            <rect x="0" y="0" width="460" height="250" fill="#ffffff"/>
+            <rect x="20" y="24" width="290" height="202" rx="12" fill="#ffffff" stroke="#e4e4e7" strokeWidth="2"/>
+            <rect x="36" y="40" width="82" height="76" rx="8" fill="#FF6A00" opacity="0.2"/>
+            <circle cx="58" cy="64" r="8" fill="#FF6A00" opacity="0.55"/>
+            <path d="M36 100l22-22 18 16 14-12 28 24v10H36z" fill="#FF6A00" opacity="0.5"/>
+            <g fontFamily="sans-serif">
+              <rect x="132" y="42" width="150" height="12" rx="4" fill="#18181b" opacity="0.8"/>
+              <g>
+                <circle cx="138" cy="70" r="4.5" fill="#FF6A00"/><circle cx="152" cy="70" r="4.5" fill="#FF6A00"/><circle cx="166" cy="70" r="4.5" fill="#FF6A00"/><circle cx="180" cy="70" r="4.5" fill="#FF6A00"/><circle cx="194" cy="70" r="4.5" fill="#FF6A00" opacity="0.3"/>
+                <text x="208" y="74" fontSize="11" fill="#71717a">(64)</text>
+              </g>
+              <rect x="132" y="88" width="112" height="9" rx="4" fill="#a1a1aa" opacity="0.6"/>
+              <rect x="132" y="104" width="78" height="9" rx="4" fill="#22c55e" opacity="0.6"/>
+              <rect x="36" y="132" width="118" height="30" rx="15" fill="#FF6A00" opacity="0.85"/>
+              <rect x="164" y="132" width="118" height="30" rx="15" fill="#ffffff" stroke="#e4e4e7" strokeWidth="2"/>
+              <rect x="36" y="180" width="246" height="9" rx="4" fill="#e4e4e7"/>
+              <rect x="36" y="198" width="180" height="9" rx="4" fill="#e4e4e7"/>
+
+              <text x="330" y="60" fontSize="12" fontWeight="700" fill="#c2410c">zdjęcie</text>
+              <text x="330" y="76" fontSize="12" fontWeight="700" fill="#c2410c">ocena i liczba opinii</text>
+              <text x="330" y="96" fontSize="12" fontWeight="700" fill="#c2410c">kategoria, odległość</text>
+              <text x="330" y="112" fontSize="12" fontWeight="700" fill="#c2410c">status otwarcia</text>
+              <text x="330" y="152" fontSize="12" fontWeight="700" fill="#c2410c">przyciski kontaktu</text>
+              <line x1="300" y1="56" x2="318" y2="56" stroke="#c2410c" strokeWidth="1.5"/>
+              <line x1="300" y1="72" x2="318" y2="72" stroke="#c2410c" strokeWidth="1.5"/>
+              <line x1="300" y1="92" x2="318" y2="92" stroke="#c2410c" strokeWidth="1.5"/>
+              <line x1="300" y1="108" x2="318" y2="108" stroke="#c2410c" strokeWidth="1.5"/>
+              <line x1="300" y1="148" x2="318" y2="148" stroke="#c2410c" strokeWidth="1.5"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Co widzi klient, zanim kliknie.</strong> Schemat poglądowy karty firmy w wynikach lokalnych.
+        </figcaption>
+      </figure>
+
+      <p>
+        Z tych elementów tylko część zależy od rankingu. Cała reszta zależy od tego, co sam wstawisz do profilu, i to jest robota na jedno popołudnie.
+      </p>
+
+      <h2>Zdjęcia: które naprawdę pracują</h2>
+      <p>
+        Google wymienia dodawanie zdjęć i filmów wśród działań poprawiających pozycję lokalną, ale drugi efekt jest w Świdnicy ważniejszy: zdjęcie decyduje o wyborze, gdy trzy firmy stoją obok siebie w odległości kilkuset metrów.
+      </p>
+      <p>
+        <strong>Zdjęcie z ulicy, od strony, z której klient nadchodzi.</strong> W świdnickiej zabudowie śródmiejskiej, gdzie lokale są w kamienicach i łatwo je przeoczyć, to jest najbardziej użyteczne zdjęcie, jakie możesz mieć. Mieszkaniec od razu wie, gdzie to jest.
+      </p>
+      <p>
+        <strong>Wnętrze w naturalnym świetle, bez upiększania.</strong> Rozbieżność między zdjęciem a rzeczywistością wraca w opiniach.
+      </p>
+      <p>
+        <strong>Ludzie przy pracy.</strong> Firma z twarzą wygrywa z firmą bez twarzy, zwłaszcza w mieście, w którym klient prawdopodobnie zna kogoś, kto zna Ciebie.
+      </p>
+      <p>
+        Czego unikać: grafik z cennikiem, zdjęć ze stocku i logo w miejscu zdjęcia głównego. Które typy sprawdziły się najlepiej, opisaliśmy w tekście o <a href="/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-brand font-semibold hover:underline">zdjęciach w wizytówce Google</a>. Dokładaj kilka sztuk miesięcznie zamiast wrzucać sto naraz, bo świeżość jest osobnym sygnałem.
+      </p>
+
+      <h2>Status otwarcia i przyciski, czyli darmowa klikalność</h2>
+      <p>
+        Zielony napis o godzinach otwarcia jest jednym z pierwszych elementów, na które pada wzrok, a jednocześnie działa jako sygnał rankingowy, bo to, czy firma jest otwarta w chwili wyszukiwania, wpływa na pozycję. Uzupełnij godziny świąteczne z wyprzedzeniem, bo brak potwierdzenia wyświetla przy profilu ostrzeżenie, które psuje cały efekt.
+      </p>
+      <p>
+        Przyciski kontaktu to druga darmowa rzecz. Numer, który odbierasz, link do konkretnej podstrony zamiast strony głównej, opcja rezerwacji, jeśli branża na to pozwala. Komplet pól przechodzimy w tekście o <a href="/sekcja-informacje-wizytowka-google" className="text-brand font-semibold hover:underline">sekcji informacje</a>, a listę atrybutów takich jak parking, płatność kartą czy dostęp dla wózków w artykule o <a href="/atrybuty-wizytowka-google" className="text-brand font-semibold hover:underline">atrybutach wizytówki</a>. W Świdnicy, gdzie parkowanie w centrum bywa problemem, atrybut o parkingu ma realną wagę przy wyborze.
+      </p>
+
+      <h2>Produkty i posty: dodatkowa powierzchnia w karcie</h2>
+      <p>
+        Sekcja produktów wyświetla się jako osobny pas w profilu i dla firm handlowych bywa najbardziej klikanym elementem całej karty. Opisaliśmy ją w tekście o <a href="/produkty-wizytowka-google-business" className="text-brand font-semibold hover:underline">produktach w wizytówce</a>.
+      </p>
+      <p>
+        <a href="/posty-wizytowka-google" className="text-brand font-semibold hover:underline">Posty</a> traktuj jako narzędzie klikalności, nie rankingu. Świdnica żyje wydarzeniami w Rynku i ruchem turystycznym wokół Kościoła Pokoju, więc post o zmienionych godzinach w weekend imprezowy ma sens praktyczny, a nie pozycyjny.
+      </p>
+
+      <h2>Local Schema ze zdjęciem i logo</h2>
+      <p>
+        Skoro cały tekst jest o wyglądzie, w schemacie warto zadbać o pola obrazkowe, które bywają pomijane.
+      </p>
+      <div className="my-6 rounded-xl overflow-hidden" style={{backgroundColor: '#18181b'}}>
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nazwa Twojej Firmy",
+  "url": "https://twojafirma.pl",
+  "telephone": "+48 000 000 000",
+  "image": [
+    "https://twojafirma.pl/zdjecia/lokal-od-ulicy.jpg",
+    "https://twojafirma.pl/zdjecia/wnetrze.jpg"
+  ],
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://twojafirma.pl/logo.png"
+  },
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Przykładowa 4",
+    "addressLocality": "Świdnica",
+    "postalCode": "58-100",
+    "addressRegion": "dolnośląskie",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.8434,
+    "longitude": 16.4887
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Świdnica" },
+    { "@type": "City", "name": "Jaworzyna Śląska" },
+    { "@type": "City", "name": "Strzegom" },
+    { "@type": "AdministrativeArea", "name": "powiat świdnicki" }
+  ]
+}
+</script>`}</pre>
+      </div>
+      <p>
+        Pole <code>image</code> przyjmuje kilka adresów i warto podać zdjęcia w różnych proporcjach, bo wyszukiwarka wybiera z nich sama. Pełne wdrożenie opisaliśmy w tekście o <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">dodawaniu Local Schema do strony</a>.
+      </p>
+
+      <h2>Najczęstsze pytania firm ze Świdnicy</h2>
+      <p>
+        <strong>Stoję pierwszy, a telefon nie dzwoni. Co jest nie tak?</strong> Ranking masz zrobiony, przegrywasz na etapie wyboru. Zacznij od zdjęcia głównego i liczby opinii, bo to dwa pierwsze elementy, na które pada wzrok.
+      </p>
+      <p>
+        <strong>Czy warto wstawiać zdjęcia z drona?</strong> Rzadko. Klient szuka wejścia, a nie panoramy. Panorama robi wrażenie na Tobie, nie na osobie, która za chwilę ma trafić pod Twój adres.
+      </p>
+      <p>
+        <strong>Ile zdjęć wystarczy?</strong> Kilkanaście dobrych i po kilka nowych co miesiąc. Sto zdjęć wrzuconych jednego dnia daje gorszy efekt niż dwadzieścia dokładanych systematycznie.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        W Świdnicy odległość jest tak mała, że przestaje być argumentem, a decyzję klienta rozstrzyga wygląd karty: zdjęcie z ulicy, wiarygodna liczba opinii, prawdziwy status otwarcia i przyciski, które działają. To wszystko robisz sam, w jedno popołudnie, bez budżetu. Warstwę reputacyjną tego samego problemu opisaliśmy w tekście o <a href="/pozycjonowanie-wizytowki-google-ostrowiec-swietokrzyski" className="text-brand font-semibold hover:underline">Ostrowcu Świętokrzyskim</a>, a warstwę danych dla modeli AI w artykule o <a href="/pozycjonowanie-wizytowki-google-zamosc" className="text-brand font-semibold hover:underline">Zamościu</a>. Aktualną listę działań na 2026 rok zebraliśmy w tekście o <a href="/jak-pozycjonowac-wizytowke-google-2026" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google w 2026</a>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Pomoc Google — profil firmy w Google — poprawa pozycji firmy w Google: trafność, odległość, popularność.{" "}
+          <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Polska w liczbach na podstawie danych GUS — Świdnica: 52 417 mieszkańców, 21,8 km², 2409 osób na km².{" "}
+          <a href="https://www.polskawliczbach.pl/Swidnica" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">polskawliczbach.pl/Swidnica →</a>
+        </p>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Pozycjonowanie wizytówki Google w Świdnicy",
+            "serviceType": "Pozycjonowanie profilu firmy w Google",
+            "url": "https://miauseo.pl/pozycjonowanie-wizytowki-google-swidnica",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "MiauSEO",
+              "url": "https://miauseo.pl",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Klaudyny Potockiej 25",
+                "addressLocality": "Poznań",
+                "postalCode": "60-211",
+                "addressRegion": "wielkopolskie",
+                "addressCountry": "PL",
+              },
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Świdnica" },
+              { "@type": "City", "name": "Jaworzyna Śląska" },
+              { "@type": "City", "name": "Strzegom" },
+              { "@type": "AdministrativeArea", "name": "powiat świdnicki" },
+            ],
+            "inLanguage": "pl-PL",
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google Zamość
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-zamosc": (
+    <>
+      <p>
+        Zamość ma <strong>57 924 mieszkańców</strong> na <strong>30,3 km²</strong>, czyli 1909 osób na kilometr kwadratowy, i strukturę rynku, jakiej nie mają miasta tej wielkości bez zabytkowej starówki: <strong>stały rynek mieszkańców plus ruch przyjezdnych</strong>, którzy nie znają tu żadnej firmy z nazwy.
+      </p>
+      <p>
+        Ta druga grupa coraz częściej nie ogląda wyników wyszukiwania w klasycznej postaci. Zadaje pytanie i dostaje odpowiedź wygenerowaną przez model. Ten tekst jest o tym, skąd taki model bierze informacje o Twojej firmie i jak sprawić, żeby brał je ze źródeł, które kontrolujesz.
+      </p>
+
+      <h2>Skąd model bierze wiedzę o Twojej firmie</h2>
+      <p>
+        Nie ma jednego panelu, w którym da się ustawić, co AI ma o Tobie mówić. Są za to cztery źródła, które realnie zasilają odpowiedź, i wszystkie cztery są w Twoim zasięgu.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 470 280" width="100%" role="img" aria-labelledby="zamosc-zrodla-tytul zamosc-zrodla-opis">
+            <title id="zamosc-zrodla-tytul">Cztery źródła, z których model AI buduje odpowiedź o firmie</title>
+            <desc id="zamosc-zrodla-opis">Schemat czterech bloków po lewej stronie: profil firmy w Google, treść strony internetowej, dane strukturalne oraz opinie i wzmianki. Strzałki prowadzą do wspólnego węzła po prawej, opisanego jako odpowiedź wygenerowana przez model.</desc>
+            <rect x="0" y="0" width="470" height="280" fill="#ffffff"/>
+            <g fontFamily="sans-serif">
+              <rect x="16" y="20" width="180" height="46" rx="10" fill="#FF6A00" opacity="0.75"/>
+              <text x="106" y="41" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#ffffff">Profil firmy w Google</text>
+              <text x="106" y="57" textAnchor="middle" fontSize="11" fill="#ffffff" opacity="0.85">opis, usługi, atrybuty</text>
+
+              <rect x="16" y="82" width="180" height="46" rx="10" fill="#FF6A00" opacity="0.55"/>
+              <text x="106" y="103" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#18181b">Treść strony</text>
+              <text x="106" y="119" textAnchor="middle" fontSize="11" fill="#3f3f46">podstrony usług i miejscowości</text>
+
+              <rect x="16" y="144" width="180" height="46" rx="10" fill="#FF6A00" opacity="0.4"/>
+              <text x="106" y="165" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#18181b">Dane strukturalne</text>
+              <text x="106" y="181" textAnchor="middle" fontSize="11" fill="#3f3f46">LocalBusiness w kodzie</text>
+
+              <rect x="16" y="206" width="180" height="46" rx="10" fill="#FF6A00" opacity="0.28"/>
+              <text x="106" y="227" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#18181b">Opinie i wzmianki</text>
+              <text x="106" y="243" textAnchor="middle" fontSize="11" fill="#3f3f46">to, co piszą inni</text>
+
+              <path d="M196 43C260 43 270 130 306 136M196 105C250 105 268 128 306 136M196 167C250 167 268 145 306 136M196 229C260 229 270 142 306 136" fill="none" stroke="#d4d4d8" strokeWidth="2"/>
+
+              <circle cx="360" cy="136" r="52" fill="#18181b"/>
+              <text x="360" y="130" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#ffffff">Odpowiedź</text>
+              <text x="360" y="148" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#ffffff">modelu AI</text>
+              <text x="360" y="212" textAnchor="middle" fontSize="11" fill="#a1a1aa">Sprzeczne dane osłabiają wszystkie cztery</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Cztery źródła, jedna odpowiedź.</strong> Schemat poglądowy przepływu informacji o firmie.
+        </figcaption>
+      </figure>
+
+      <h2>Opis firmy po wycofaniu pytań i odpowiedzi</h2>
+      <p>
+        Klasyczna sekcja pytań i odpowiedzi w profilu została wycofana, a to znaczy, że zniknęło miejsce, w którym firma mogła własnymi słowami doprecyzować rzeczy, o które klienci pytają najczęściej. Ciężar przeszedł na <strong>opis firmy</strong>, który stał się jednym z głównych źródeł dla generowanych odpowiedzi.
+      </p>
+      <p>
+        Praktyczny wniosek dla firmy z Zamościa: napisz w opisie wprost to, czego model nie zgadnie. Że obsługujesz też Szczebrzeszyn i Krasnobród, jeśli tak jest. Że przyjmujesz bez zapisów. Czego nie robisz, bo to eliminuje telefony, których nie chcesz. Jak ułożyć taki opis, pokazujemy w tekście o <a href="/opis-firmy-google-business-profile-jak-napisac" className="text-brand font-semibold hover:underline">opisie firmy</a>, a co zmieniło się w sekcji pytań, opisaliśmy w artykule o <a href="/pytania-odpowiedzi-wizytowka-google" className="text-brand font-semibold hover:underline">pytaniach i odpowiedziach w wizytówce</a>.
+      </p>
+
+      <h2>Spójność danych, czyli dlaczego rozjazd kosztuje podwójnie</h2>
+      <p>
+        Model, który znajdzie trzy różne numery telefonu do Twojej firmy, nie wybierze najlepszego. Obniży pewność co do wszystkich i chętniej sięgnie po informację z innego źródła, na przykład od konkurenta, którego dane są zgodne.
+      </p>
+      <p>
+        Sprawdź cztery miejsca i doprowadź je do identycznej postaci: profil firmy w Google, stopka strony, podstrona kontaktu i dane strukturalne. Ten sam skrót ulicy, ten sam format numeru, ta sama nazwa. Zasadę rozpisaliśmy w tekście o <a href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">spójności NAP</a>. To brzmi jak drobiazg i jest jedną z najtańszych rzeczy, jakie możesz zrobić.
+      </p>
+
+      <h2>Dane strukturalne to jedyny język, który model czyta wprost</h2>
+      <p>
+        Treść strony model musi zinterpretować. Dane strukturalne czyta bez interpretacji, bo są zapisane w formacie przeznaczonym dla maszyn. To jest cała ich przewaga i powód, dla którego warto je wdrożyć, nawet jeśli nie widać po nich natychmiastowego efektu w rankingu.
+      </p>
+      <div className="my-6 rounded-xl overflow-hidden" style={{backgroundColor: '#18181b'}}>
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://twojafirma.pl/#lokalizacja",
+  "name": "Nazwa Twojej Firmy",
+  "url": "https://twojafirma.pl",
+  "telephone": "+48 000 000 000",
+  "description": "Czym się zajmujesz, dla kogo i w jakich miejscowościach.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Przykładowa 7",
+    "addressLocality": "Zamość",
+    "postalCode": "22-400",
+    "addressRegion": "lubelskie",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.7231,
+    "longitude": 23.2519
+  },
+  "knowsLanguage": ["pl", "en"],
+  "areaServed": [
+    { "@type": "City", "name": "Zamość" },
+    { "@type": "City", "name": "Szczebrzeszyn" },
+    { "@type": "City", "name": "Krasnobród" },
+    { "@type": "City", "name": "Zwierzyniec" },
+    { "@type": "AdministrativeArea", "name": "powiat zamojski" }
+  ],
+  "sameAs": ["https://www.google.com/maps/place/?q=place_id:TWOJ_PLACE_ID"]
+}
+</script>`}</pre>
+      </div>
+      <p>
+        Dwa pola warte uwagi. <code>@id</code> daje firmie stały identyfikator, po którym da się ją powiązać między podstronami. <code>knowsLanguage</code> ma sens w mieście z ruchem turystycznym, jeśli faktycznie obsługujesz klientów po angielsku. Pełne wdrożenie opisaliśmy w tekście o <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">dodawaniu Local Schema do strony</a>.
+      </p>
+
+      <h2>Czego nie da się zrobić i lepiej to wiedzieć</h2>
+      <p>
+        Nie ma panelu z pozycją w odpowiedziach AI. Nie ma raportu, który pokaże, ile razy model wymienił Twoją firmę. To, co da się obserwować, to zapytania i kliknięcia w Search Console, gdzie ruch z powierzchni AI jest częściowo widoczny, ale nie jako osobna, w pełni rozdzielona kategoria. Co dokładnie da się z tych raportów wyczytać, opisaliśmy w tekście o <a href="/google-search-console-raporty-ai-2026" className="text-brand font-semibold hover:underline">raportach AI w Search Console</a>.
+      </p>
+      <p>
+        Praktyczna konsekwencja: nie kupuj usług obiecujących „pozycjonowanie w ChatGPT" z gwarantowanym miejscem. Nikt nie ma do tego dostępu. To, co realnie działa, to kompletne i zgodne dane w czterech źródłach z rysunku powyżej, i to jest ta sama praca, która poprawia zwykłą widoczność.
+      </p>
+
+      <h2>Najczęstsze pytania firm z Zamościa</h2>
+      <p>
+        <strong>Czy trzeba mieć stronę, żeby pojawiać się w odpowiedziach AI?</strong> Nie trzeba, ale bez strony zostają Ci dwa źródła z czterech, a modele chętniej cytują informacje potwierdzone w więcej niż jednym miejscu.
+      </p>
+      <p>
+        <strong>Czy warto pisać opis firmy po angielsku?</strong> Opis może być tylko w jednym języku. Wersję angielską lepiej zrobić jako osobną podstronę na własnej stronie, jeśli faktycznie obsługujesz turystów zagranicznych.
+      </p>
+      <p>
+        <strong>Model podaje o mnie nieprawdziwe informacje. Co zrobić?</strong> Sprawdź, czy ta informacja gdzieś realnie występuje: w starym wpisie w katalogu, w nieaktualnej stopce, w opinii. Zwykle model niczego nie wymyślił, tylko powtórzył źródło, o którym zapomniałeś.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        W Zamościu opłaca się myśleć o profilu jako o jednym z czterech źródeł, z których powstaje to, co Google i modele mówią o Twojej firmie. Uzupełnij opis tym, czego nikt nie zgadnie, doprowadź numer i adres do identycznej postaci w czterech miejscach i wdroż dane strukturalne. Efekt jest podwójny, bo ta sama praca poprawia klasyczną widoczność. Warstwę wizualną tego samego tematu opisaliśmy w tekście o <a href="/pozycjonowanie-wizytowki-google-swidnica" className="text-brand font-semibold hover:underline">Świdnicy</a>, a wariant dla rynku B2B w artykule o <a href="/pozycjonowanie-wizytowki-google-mielec" className="text-brand font-semibold hover:underline">Mielcu</a>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Pomoc Google — profil firmy w Google — poprawa pozycji firmy w Google: trafność, odległość, popularność.{" "}
+          <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Polska w liczbach na podstawie danych GUS — Zamość: 57 924 mieszkańców, 30,3 km², 1909 osób na km².{" "}
+          <a href="https://www.polskawliczbach.pl/Zamosc" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">polskawliczbach.pl/Zamosc →</a>
+        </p>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Pozycjonowanie wizytówki Google w Zamościu",
+            "serviceType": "Pozycjonowanie profilu firmy w Google",
+            "url": "https://miauseo.pl/pozycjonowanie-wizytowki-google-zamosc",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "MiauSEO",
+              "url": "https://miauseo.pl",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Klaudyny Potockiej 25",
+                "addressLocality": "Poznań",
+                "postalCode": "60-211",
+                "addressRegion": "wielkopolskie",
+                "addressCountry": "PL",
+              },
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Zamość" },
+              { "@type": "City", "name": "Szczebrzeszyn" },
+              { "@type": "City", "name": "Krasnobród" },
+              { "@type": "City", "name": "Zwierzyniec" },
+              { "@type": "AdministrativeArea", "name": "powiat zamojski" },
+            ],
+            "inLanguage": "pl-PL",
+          }),
+        }}
+      />
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Pozycjonowanie wizytówki Google Mielec
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-mielec": (
+    <>
+      <p>
+        Mielec liczy <strong>56 719 mieszkańców</strong> na <strong>46,9 km²</strong>, czyli 1210 osób na kilometr kwadratowy. Struktura rynku jest tu jednak ważniejsza niż gęstość, bo miasto wyrosło wokół przemysłu i strefy ekonomicznej, a duża część firm pracuje jako podwykonawcy dla innych firm, nie dla konsumentów.
+      </p>
+      <p>
+        To zmienia całą kalkulację. Klient B2B nie szuka pod wpływem pilnej potrzeby o dwudziestej drugiej. Szuka w godzinach pracy, porównuje przez tydzień i weryfikuje, zanim zadzwoni. Profil firmy w Google obsługuje tę ścieżkę inaczej niż konsumencką i o tym jest ten tekst.
+      </p>
+
+      <h2>Czy firma B2B w ogóle potrzebuje profilu</h2>
+      <p>
+        Pytanie pada często i odpowiedź brzmi: tak, ale nie z tego powodu, z którego zwykle się je zakłada.
+      </p>
+      <p>
+        <strong>Powód pierwszy: weryfikacja.</strong> Osoba, która ma podpisać z Tobą umowę, sprawdza, czy firma istnieje. Profil ze zdjęciami hali, prawdziwym adresem i kilkoma opiniami jest dowodem istnienia. Brak profilu w 2026 roku jest sygnałem sam w sobie i to niedobrym.
+      </p>
+      <p>
+        <strong>Powód drugi: zapytania problemowe.</strong> Nawet w B2B część zapytań brzmi jak zapytania usługowe, bo ktoś potrzebuje obróbki, transportu albo serwisu na już. Te trafiają do wyników lokalnych.
+      </p>
+      <p>
+        <strong>Powód trzeci: dane dla wyszukiwarki i modeli AI.</strong> Profil jest jednym ze źródeł, z których budowana jest odpowiedź o Twojej firmie, także wtedy, gdy pytanie zadaje ktoś z zupełnie innego miasta.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 470 250" width="100%" role="img" aria-labelledby="mielec-sciezki-tytul mielec-sciezki-opis">
+            <title id="mielec-sciezki-tytul">Porównanie ścieżki klienta konsumenckiego i klienta biznesowego przez profil firmy</title>
+            <desc id="mielec-sciezki-opis">Dwie równoległe ścieżki. Konsument: zapytanie, wybór z trójki wyników, telefon w ciągu minut. Klient biznesowy: zapytanie, weryfikacja firmy przez profil i stronę, porównanie kilku dostawców, kontakt po kilku dniach.</desc>
+            <rect x="0" y="0" width="470" height="250" fill="#ffffff"/>
+            <g fontFamily="sans-serif">
+              <text x="20" y="34" fontSize="12.5" fontWeight="700" fill="#71717a">Klient konsumencki</text>
+              <line x1="24" y1="66" x2="440" y2="66" stroke="#e4e4e7" strokeWidth="2"/>
+              <circle cx="60" cy="66" r="9" fill="#a1a1aa"/><text x="60" y="92" textAnchor="middle" fontSize="11" fill="#71717a">zapytanie</text>
+              <circle cx="180" cy="66" r="9" fill="#a1a1aa"/><text x="180" y="92" textAnchor="middle" fontSize="11" fill="#71717a">wybór z trójki</text>
+              <circle cx="300" cy="66" r="9" fill="#a1a1aa"/><text x="300" y="92" textAnchor="middle" fontSize="11" fill="#71717a">telefon</text>
+              <text x="404" y="70" fontSize="11" fontWeight="700" fill="#71717a">minuty</text>
+
+              <text x="20" y="146" fontSize="12.5" fontWeight="700" fill="#c2410c">Klient biznesowy</text>
+              <line x1="24" y1="178" x2="440" y2="178" stroke="#FF6A00" strokeWidth="2" opacity="0.4"/>
+              <circle cx="60" cy="178" r="9" fill="#FF6A00"/><text x="60" y="204" textAnchor="middle" fontSize="11" fill="#3f3f46">zapytanie</text>
+              <circle cx="160" cy="178" r="9" fill="#FF6A00"/><text x="160" y="204" textAnchor="middle" fontSize="11" fill="#3f3f46">weryfikacja firmy</text>
+              <circle cx="270" cy="178" r="9" fill="#FF6A00"/><text x="270" y="204" textAnchor="middle" fontSize="11" fill="#3f3f46">porównanie ofert</text>
+              <circle cx="370" cy="178" r="9" fill="#FF6A00"/><text x="370" y="204" textAnchor="middle" fontSize="11" fill="#3f3f46">kontakt</text>
+              <text x="418" y="182" fontSize="11" fontWeight="700" fill="#c2410c">dni</text>
+              <text x="160" y="228" textAnchor="middle" fontSize="11" fill="#c2410c">tu pracuje profil: zdjęcia, adres, opinie</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Dwie ścieżki, dwie role profilu.</strong> W B2B profil rzadziej sprzedaje bezpośrednio, częściej potwierdza wiarygodność. Schemat poglądowy.
+        </figcaption>
+      </figure>
+
+      <h2>Kategoria dla firmy produkcyjnej</h2>
+      <p>
+        Tu pojawia się problem, którego nie ma w usługach konsumenckich: kategorie w Google są zbudowane głównie pod firmy obsługujące klientów indywidualnych, a producent podzespołów nie mieści się w nich wygodnie.
+      </p>
+      <p>
+        Zasada zostaje ta sama. Kategoria główna to nie opis firmy, tylko przypisanie do zbioru zapytań, więc wybierz tę, która odpowiada frazie realnie przynoszącej Ci zapytania ofertowe. Jeśli nie ma idealnej, wybierz najbliższą i całą precyzję przenieś do sekcji usług oraz opisu, gdzie masz swobodę nazewnictwa. Mechanizm rozpisaliśmy w tekście o <a href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">kategoriach w wizytówce</a>.
+      </p>
+
+      <h2>Usługi i produkty, gdy nie masz cennika</h2>
+      <p>
+        Odruch firmy B2B brzmi: nie wypełnię sekcji usług, bo wszystko wyceniam indywidualnie. To nieporozumienie, bo cena jest w tych sekcjach opcjonalna, a sama nazwa i opis pracują niezależnie od niej.
+      </p>
+      <p>
+        Wpisz zakresy, technologie i możliwości: rodzaje obróbki, tolerancje, wielkości serii, obsługiwane materiały, terminy realizacji. To są dokładnie te frazy, które wpisuje osoba szukająca podwykonawcy, a jednocześnie treść, którą model AI może zacytować, odpowiadając na pytanie o dostawców w regionie. Szczegóły w tekstach o <a href="/uslugi-wizytowka-google-business" className="text-brand font-semibold hover:underline">usługach w wizytówce</a> i <a href="/produkty-wizytowka-google-business" className="text-brand font-semibold hover:underline">produktach w wizytówce</a>.
+      </p>
+
+      <h2>Godziny: profil B2B ma inne okno kontaktu</h2>
+      <p>
+        W B2B nie ma sensu udawać dostępności wieczorem ani w weekend, bo klient i tak nie zadzwoni. Ma za to sens precyzja: prawdziwe godziny pracy biura, osobne godziny działu handlowego, jeśli różnią się od produkcji, i uzupełnione dni wolne z wyprzedzeniem.
+      </p>
+      <p>
+        To ma wymiar rankingowy, bo status otwarcia w chwili wyszukiwania wpływa na pozycję, i wymiar praktyczny, bo nieodebrany telefon od klienta biznesowego rzadko wraca. Szczegóły w tekście o <a href="/godziny-otwarcia-wizytowka-google" className="text-brand font-semibold hover:underline">godzinach otwarcia w wizytówce</a>.
+      </p>
+
+      <h2>Zdjęcia hali, nie stocku</h2>
+      <p>
+        W B2B zdjęcia pełnią inną funkcję niż w usługach konsumenckich: są elementem oceny zdolności produkcyjnej. Park maszynowy, hala, magazyn, oznakowany transport, certyfikaty na ścianie, ludzie przy pracy.
+      </p>
+      <p>
+        Zdjęcia ze stocku szkodzą tu bardziej niż gdzie indziej, bo osoba weryfikująca dostawcę rozpoznaje je natychmiast i wyciąga wniosek, że firma nie chce pokazać własnego zakładu. Które typy zdjęć pracują najlepiej, sprawdziliśmy w tekście o <a href="/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-brand font-semibold hover:underline">zdjęciach w wizytówce Google</a>.
+      </p>
+
+      <h2>Local Schema dla firmy produkcyjnej</h2>
+      <div className="my-6 rounded-xl overflow-hidden" style={{backgroundColor: '#18181b'}}>
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nazwa Twojej Firmy",
+  "url": "https://twojafirma.pl",
+  "telephone": "+48 000 000 000",
+  "email": "kontakt@twojafirma.pl",
+  "description": "Zakres produkcji, technologie i obsługiwane branże.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Przykładowa 30",
+    "addressLocality": "Mielec",
+    "postalCode": "39-300",
+    "addressRegion": "podkarpackie",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.2872,
+    "longitude": 21.4237
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Zakres usług",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Nazwa procesu lub technologii" }
+      }
+    ]
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Mielec" },
+    { "@type": "AdministrativeArea", "name": "powiat mielecki" },
+    { "@type": "AdministrativeArea", "name": "województwo podkarpackie" }
+  ],
+  "sameAs": ["https://www.linkedin.com/company/twojafirma"]
+}
+</script>`}</pre>
+      </div>
+      <p>
+        Dwie różnice wobec wariantu konsumenckiego. Pole <code>email</code> ma tu sens, bo w B2B pierwszy kontakt często idzie mailem, a nie telefonem. W <code>sameAs</code> warto wskazać profil na LinkedIn, jeśli firma go prowadzi, bo to najczęściej odwiedzana przez klientów biznesowych strona towarzysząca. Pełne wdrożenie opisaliśmy w tekście o <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">dodawaniu Local Schema do strony</a>.
+      </p>
+
+      <h2>Najczęstsze pytania firm z Mielca</h2>
+      <p>
+        <strong>Nie chcę telefonów od klientów indywidualnych. Czy profil je wygeneruje?</strong> Częściowo tak i da się to ograniczyć precyzyjnym opisem oraz listą usług nazwanych językiem branżowym. Napisanie wprost, dla kogo pracujesz, odsiewa najwięcej.
+      </p>
+      <p>
+        <strong>Czy opinie w B2B mają sens?</strong> Mają, choć zbiera się je trudniej i wolniej. Nawet kilkanaście opinii od kontrahentów działa jak referencje i jest sygnałem popularności profilu. Sposoby zgodne z regulaminem opisaliśmy w tekście o <a href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">zdobywaniu opinii</a>.
+      </p>
+      <p>
+        <strong>Firma jest w strefie ekonomicznej, gdzie postawić pinezkę?</strong> Na wjeździe do zakładu, a nie na środku działki. Przy dużych terenach przemysłowych to realnie zmienia trafność nawigacji, co ma znaczenie zwłaszcza dla dostaw.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        W Mielcu profil firmy rzadko sprzedaje sam z siebie, za to niemal zawsze bierze udział w weryfikacji przed zapytaniem ofertowym. Ustaw najbliższą sensowną kategorię, przenieś precyzję do usług i opisu, wstaw prawdziwe zdjęcia zakładu i podaj godziny, w których naprawdę odbierasz. To jest ta sama praca co w usługach konsumenckich, tylko z innym adresatem. Warstwę danych dla modeli AI rozwinęliśmy w tekście o <a href="/pozycjonowanie-wizytowki-google-zamosc" className="text-brand font-semibold hover:underline">Zamościu</a>, podejście oparte na pomiarze w artykule o <a href="/pozycjonowanie-wizytowki-google-konin" className="text-brand font-semibold hover:underline">Koninie</a>, a pełny przewodnik znajdziesz w tekście o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
+      </p>
+
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Pomoc Google — profil firmy w Google — poprawa pozycji firmy w Google: trafność, odległość, popularność.{" "}
+          <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Polska w liczbach na podstawie danych GUS — Mielec: 56 719 mieszkańców, 46,9 km², 1210 osób na km².{" "}
+          <a href="https://www.polskawliczbach.pl/Mielec" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">polskawliczbach.pl/Mielec →</a>
+        </p>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Pozycjonowanie wizytówki Google w Mielcu",
+            "serviceType": "Pozycjonowanie profilu firmy w Google",
+            "url": "https://miauseo.pl/pozycjonowanie-wizytowki-google-mielec",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "MiauSEO",
+              "url": "https://miauseo.pl",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Klaudyny Potockiej 25",
+                "addressLocality": "Poznań",
+                "postalCode": "60-211",
+                "addressRegion": "wielkopolskie",
+                "addressCountry": "PL",
+              },
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Mielec" },
+              { "@type": "AdministrativeArea", "name": "powiat mielecki" },
+              { "@type": "AdministrativeArea", "name": "województwo podkarpackie" },
+            ],
+            "inLanguage": "pl-PL",
+          }),
+        }}
+      />
+    </>
+  ),
+
+
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SEO: Pozycjonowanie wizytówki Google Olsztyn
   ───────────────────────────────────────────────────────────────────────── */
   "pozycjonowanie-wizytowki-google-olsztyn": (
@@ -216,6 +2187,9 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
       <p>
         Kolejność, która ma sens: najpierw kategoria, pinezka, prawdziwe godziny, usługi i opinie, potem podstrony dla dzielnic i okolicznych miast, na końcu utrzymanie. Pełną listę sygnałów z oceną ważności zebraliśmy w tekście o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>, a wersję tego poradnika dla mniejszego rynku — w artykule o <a href="/pozycjonowanie-wizytowki-google-pila" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki w Pile</a>. Całość procesu opisuje przewodnik o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
+      </p>
+      <p>
+        Rynki o zbliżonej strukturze rozłożyliśmy na części w tekstach o <a href="/pozycjonowanie-wizytowki-google-suwalki" className="text-brand font-semibold hover:underline">Suwałkach</a>, <a href="/pozycjonowanie-wizytowki-google-siedlce" className="text-brand font-semibold hover:underline">Siedlcach</a>, <a href="/pozycjonowanie-wizytowki-google-ostrowiec-swietokrzyski" className="text-brand font-semibold hover:underline">Ostrowcu Świętokrzyskim</a>, <a href="/pozycjonowanie-wizytowki-google-swidnica" className="text-brand font-semibold hover:underline">Świdnicy</a>, <a href="/pozycjonowanie-wizytowki-google-zamosc" className="text-brand font-semibold hover:underline">Zamościu</a> i <a href="/pozycjonowanie-wizytowki-google-mielec" className="text-brand font-semibold hover:underline">Mielcu</a>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
@@ -564,6 +2538,9 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
       <p>
         Jeśli chcesz zobaczyć całą listę sygnałów z oceną ważności, zebraliśmy ją w tekście o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>, a kolejność działań i sposób mierzenia efektów — w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>. Całość procesu opisuje przewodnik o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
+      </p>
+      <p>
+        Ten sam rozbiór rynku zrobiliśmy dla innych miast tej wielkości. Pomiar siatką punktów opisaliśmy przy <a href="/pozycjonowanie-wizytowki-google-konin" className="text-brand font-semibold hover:underline">Koninie</a>, rytm sezonu przy <a href="/pozycjonowanie-wizytowki-google-inowroclaw" className="text-brand font-semibold hover:underline">Inowrocławiu</a>, sąsiedztwo dużego miasta przy <a href="/pozycjonowanie-wizytowki-google-stargard" className="text-brand font-semibold hover:underline">Stargardzie</a>, a firmy z dojazdem przy <a href="/pozycjonowanie-wizytowki-google-piotrkow-trybunalski" className="text-brand font-semibold hover:underline">Piotrkowie Trybunalskim</a>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">

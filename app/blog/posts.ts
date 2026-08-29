@@ -14,6 +14,7 @@ export type Post = {
   coverImage?: string;  // ścieżka do obrazka w /public
   published: boolean;
   hideFromBlog?: boolean; // widoczny pod URL-em, ale nie listowany na /blog
+  pinBottom?: boolean;    // listowany zawsze na końcu /blog (seria lokalizacyjna)
   popular?: boolean;      // wyróżniony jako najpopularniejszy (np. na stronie głównej)
   // Rich snippet dla case study — ocena dotyczy KLIENTA opisanego w artykule
   // (opinie klienta publikowane przez MiauSEO jako stronę trzecią, nie self-review).
@@ -35,6 +36,7 @@ export const posts: Post[] = [
     coverColor: "#FF6A00",
     coverImage: "/blog/cover-olsztyn.svg",
     published: true,
+    pinBottom: true,
   },
   {
     slug: "pozycjonowanie-wizytowki-google-pila",
@@ -46,6 +48,7 @@ export const posts: Post[] = [
     coverColor: "#FF6A00",
     coverImage: "/blog/cover-pila.svg",
     published: true,
+    pinBottom: true,
   },
   {
     slug: "jak-poprawic-widocznosc-profilu-firmy-w-mapach",
@@ -799,10 +802,146 @@ export const posts: Post[] = [
     coverImage: "/blog/cover-wp-wtyczki.svg",
     published: true,
   },
+  {
+    slug: "pozycjonowanie-wizytowki-google-konin",
+    title: "Pozycjonowanie wizytówki Google Konin",
+    excerpt:
+      "Konin rozcina Warta, a Stare Miasto i Nowy Konin to w Mapach dwa osobne rynki. Pokazujemy, jak zmierzyć widoczność profilu firmy siatką punktów, zanim wydasz złotówkę na zmiany, i co z takiego pomiaru realnie wynika.",
+    category: "SEO",
+    date: "2026-08-01",
+    readTime: 12,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-konin.svg",
+    published: true,
+    pinBottom: true,
+  },
+  {
+    slug: "pozycjonowanie-wizytowki-google-inowroclaw",
+    title: "Pozycjonowanie wizytówki Google Inowrocław",
+    excerpt:
+      "Inowrocław ma 2204 osoby na kilometr kwadratowy i wyraźny rytm sezonu uzdrowiskowego. Jak ustawić godziny, posty i zdjęcia tak, żeby profil firmy nadążał za zmianą zapytań w ciągu roku, zamiast stać w miejscu od stycznia do grudnia.",
+    category: "SEO",
+    date: "2026-08-02",
+    readTime: 11,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-inowroclaw.svg",
+    published: true,
+    pinBottom: true,
+  },
+  {
+    slug: "pozycjonowanie-wizytowki-google-stargard",
+    title: "Pozycjonowanie wizytówki Google Stargard",
+    excerpt:
+      "Stargard leży za blisko Szczecina, żeby to ignorować. Szczecińskie firmy zbierają stargardzkie zapytania, a lokalna firma stoi niżej we własnym mieście. Trzy przewagi, które ma tylko firma ze Stargardu, i jak je wprowadzić do profilu.",
+    category: "SEO",
+    date: "2026-08-03",
+    readTime: 11,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-stargard.svg",
+    published: true,
+    pinBottom: true,
+  },
+  {
+    slug: "pozycjonowanie-wizytowki-google-piotrkow-trybunalski",
+    title: "Pozycjonowanie wizytówki Google Piotrków Trybunalski",
+    excerpt:
+      "W Piotrkowie dużo firm pracuje z dojazdem, a profil bez adresu rządzi się innymi prawami niż profil z lokalem. Czym różnią się te dwa typy, gdzie naprawdę leży pinezka firmy mobilnej i dlaczego adres wirtualny jest tu najdroższym skrótem.",
+    category: "SEO",
+    date: "2026-08-04",
+    readTime: 12,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-piotrkow-trybunalski.svg",
+    published: true,
+    pinBottom: true,
+  },
+  {
+    slug: "pozycjonowanie-wizytowki-google-siedlce",
+    title: "Pozycjonowanie wizytówki Google Siedlce",
+    excerpt:
+      "Siedlce to 2356 osób na kilometr kwadratowy i gęsty rynek usługowy. Kategoria główna decyduje, na jakie zapytania w ogóle startujesz, a sekcja usług tę pulę poszerza za darmo. Pokazujemy trik na sprawdzenie kategorii konkurencji.",
+    category: "SEO",
+    date: "2026-08-05",
+    readTime: 12,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-siedlce.svg",
+    published: true,
+    pinBottom: true,
+  },
+  {
+    slug: "pozycjonowanie-wizytowki-google-suwalki",
+    title: "Pozycjonowanie wizytówki Google Suwałki",
+    excerpt:
+      "Suwałki mają 68 tysięcy mieszkańców i najbliższe większe miasto daleko. W takim regionie odległość działa inaczej: profil firmy nie dowiezie klienta z drugiego końca powiatu, ale strona z podstronami lokalizacyjnymi już tak.",
+    category: "SEO",
+    date: "2026-08-06",
+    readTime: 11,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-suwalki.svg",
+    published: true,
+    pinBottom: true,
+  },
+  {
+    slug: "pozycjonowanie-wizytowki-google-ostrowiec-swietokrzyski",
+    title: "Pozycjonowanie wizytówki Google Ostrowiec Świętokrzyski",
+    excerpt:
+      "W mieście, w którym opinia rozchodzi się szybciej niż algorytm, recenzje pracują na czterech osobnych poziomach. Jak zbierać je zgodnie z zaostrzonymi zasadami z 2026 roku i dlaczego równy napływ bije jednorazowy skok.",
+    category: "SEO",
+    date: "2026-08-07",
+    readTime: 12,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-ostrowiec-swietokrzyski.svg",
+    published: true,
+    pinBottom: true,
+  },
+  {
+    slug: "pozycjonowanie-wizytowki-google-swidnica",
+    title: "Pozycjonowanie wizytówki Google Świdnica",
+    excerpt:
+      "W Świdnicy odległości są małe, więc o zleceniu decyduje nie tylko pozycja, ale i to, jak profil wygląda w wynikach. Rozkładamy wynik z trójki na części pierwsze i pokazujemy, które zdjęcia faktycznie zwiększają liczbę kliknięć.",
+    category: "SEO",
+    date: "2026-08-08",
+    readTime: 11,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-swidnica.svg",
+    published: true,
+    pinBottom: true,
+  },
+  {
+    slug: "pozycjonowanie-wizytowki-google-zamosc",
+    title: "Pozycjonowanie wizytówki Google Zamość",
+    excerpt:
+      "Zamość łączy rynek lokalny z ruchem turystycznym, a coraz większa część zapytań kończy się odpowiedzią wygenerowaną przez model AI. Skąd taki model bierze informacje o Twojej firmie i jak zadbać, żeby brał je z Twoich źródeł.",
+    category: "SEO",
+    date: "2026-08-09",
+    readTime: 12,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-zamosc.svg",
+    published: true,
+    pinBottom: true,
+  },
+  {
+    slug: "pozycjonowanie-wizytowki-google-mielec",
+    title: "Pozycjonowanie wizytówki Google Mielec",
+    excerpt:
+      "Mielec to strefa ekonomiczna, lotnictwo i podwykonawcy, czyli klient, który nie szuka pod wpływem pilnej potrzeby. Czy firma B2B w ogóle potrzebuje profilu w Google, jaką ustawić kategorię i co wpisać w usługi bez cennika.",
+    category: "SEO",
+    date: "2026-08-10",
+    readTime: 12,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-mielec.svg",
+    published: true,
+    pinBottom: true,
+  },
 ];
 
 export function getPublishedPosts(): Post[] {
-  return posts.filter((p) => p.published && !p.hideFromBlog).sort((a, b) => b.date.localeCompare(a.date));
+  return posts
+    .filter((p) => p.published && !p.hideFromBlog)
+    .sort(
+      (a, b) =>
+        Number(a.pinBottom ?? false) - Number(b.pinBottom ?? false) ||
+        b.date.localeCompare(a.date),
+    );
 }
 
 // Najpopularniejsze wpisy — oznaczone flagą `popular`, fallback do najnowszych.

@@ -1,0 +1,15 @@
+<svg width="120" height="90" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="8" y="64" width="6" height="10" rx="2" fill="#FF6A00" opacity="0.38"/>
+  <rect x="17" y="58" width="6" height="16" rx="2" fill="#FF6A00" opacity="0.45"/>
+  <rect x="26" y="50" width="6" height="24" rx="2" fill="#FF6A00" opacity="0.55"/>
+  <rect x="35" y="40" width="6" height="34" rx="2" fill="#FF6A00" opacity="0.68"/>
+  <rect x="44" y="30" width="6" height="44" rx="2" fill="#FF6A00" opacity="0.80"/>
+  <rect x="53" y="22" width="6" height="52" rx="2" fill="#FF6A00" opacity="0.90"/>
+  <rect x="62" y="18" width="6" height="56" rx="2" fill="#FF6A00" opacity="0.95"/>
+  <rect x="71" y="24" width="6" height="50" rx="2" fill="#FF6A00" opacity="0.88"/>
+  <rect x="80" y="34" width="6" height="40" rx="2" fill="#FF6A00" opacity="0.75"/>
+  <rect x="89" y="46" width="6" height="28" rx="2" fill="#FF6A00" opacity="0.60"/>
+  <rect x="98" y="56" width="6" height="18" rx="2" fill="#FF6A00" opacity="0.47"/>
+  <rect x="107" y="62" width="6" height="12" rx="2" fill="#FF6A00" opacity="0.40"/>
+  <line x1="6" y1="78" x2="114" y2="78" stroke="#FF6A00" stroke-width="1.5" opacity="0.35"/>
+</svg>
