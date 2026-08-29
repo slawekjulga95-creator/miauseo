@@ -42,6 +42,8 @@ export default function BlogFilter({ posts }: { posts: Post[] }) {
   }, {});
 
   const filtered = active ? posts.filter((p) => p.category === active) : posts;
+  const ogolne = filtered.filter((p) => !p.pinBottom);
+  const lokalne = filtered.filter((p) => p.pinBottom);
 
   return (
     <>
@@ -83,8 +85,40 @@ export default function BlogFilter({ posts }: { posts: Post[] }) {
           {filtered.length === 0 ? (
             <p className="text-zinc-400 text-center py-20">Brak wpisów w tej kategorii.</p>
           ) : (
+            <>
+              {ogolne.length > 0 && <PostGrid posts={ogolne} />}
+
+              {lokalne.length > 0 && (
+                <>
+                  {ogolne.length > 0 && (
+                    <div className="mt-20 mb-10 pt-10 border-t border-border">
+                      <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand mb-4">
+                        Obszary działania
+                      </span>
+                      <h2 className="text-2xl sm:text-3xl font-bold text-ink leading-tight mb-3">
+                        Pozycjonowanie wizytówki Google według miast
+                      </h2>
+                      <p className="text-zinc-500 leading-relaxed max-w-2xl">
+                        Osobny poradnik dla każdego miasta: realia lokalnego rynku, gotowy kod Local Schema
+                        pod właściwy powiat i kolejność prac na pierwszy miesiąc.
+                      </p>
+                    </div>
+                  )}
+                  <PostGrid posts={lokalne} />
+                </>
+              )}
+            </>
+          )}
+        </div>
+      </section>
+    </>
+  );
+}
+
+function PostGrid({ posts }: { posts: Post[] }) {
+  return (
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-              {filtered.map((post) => (
+              {posts.map((post) => (
                 <Link
                   key={post.slug}
                   href={`/${post.slug}`}
@@ -146,9 +180,5 @@ export default function BlogFilter({ posts }: { posts: Post[] }) {
                 </Link>
               ))}
             </div>
-          )}
-        </div>
-      </section>
-    </>
   );
 }
