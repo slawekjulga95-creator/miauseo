@@ -96,12 +96,13 @@ export default function BlogFilter({ posts }: { posts: Post[] }) {
                         Obszary działania
                       </span>
                       <h2 className="text-2xl sm:text-3xl font-bold text-ink leading-tight mb-3">
-                        Pozycjonowanie wizytówki Google według miast
+                        W jakiej miejscowości masz siedzibę?
                       </h2>
-                      <p className="text-zinc-500 leading-relaxed max-w-2xl">
+                      <p className="text-zinc-500 leading-relaxed max-w-2xl mb-6">
                         Osobny poradnik dla każdego miasta: realia lokalnego rynku, gotowy kod Local Schema
                         pod właściwy powiat i kolejność prac na pierwszy miesiąc.
                       </p>
+                      <CityIndex posts={lokalne} />
                     </div>
                   )}
                   <PostGrid posts={lokalne} />
@@ -112,6 +113,36 @@ export default function BlogFilter({ posts }: { posts: Post[] }) {
         </div>
       </section>
     </>
+  );
+}
+
+// Spis miejscowości nad siatką wpisów lokalizacyjnych. Nazwę bierzemy z tytułu,
+// więc kolejne miasta pojawiają się tu same, bez ruszania komponentu.
+function CityIndex({ posts }: { posts: Post[] }) {
+  const cities = posts
+    .map((p) => ({ slug: p.slug, name: p.title.replace(/^Pozycjonowanie wizytówki Google\s*/i, "").split(/\s+[–—-]\s+/)[0].trim() }))
+    .filter((c) => c.name.length > 0)
+    .sort((a, b) => a.name.localeCompare(b.name, "pl"));
+
+  if (cities.length === 0) return null;
+
+  return (
+    <div className="bg-surface border border-border rounded-2xl px-5 py-4">
+      <p className="text-[11px] font-bold uppercase tracking-widest text-zinc-400 mb-3">
+        Miejscowości w serii
+        <span className="ml-1.5 text-brand">{cities.length}</span>
+      </p>
+      <p className="text-[13px] leading-7 text-zinc-500">
+        {cities.map((c, i) => (
+          <span key={c.slug}>
+            <Link href={`/${c.slug}`} className="hover:text-brand hover:underline transition-colors">
+              {c.name}
+            </Link>
+            {i < cities.length - 1 && <span className="text-zinc-300"> · </span>}
+          </span>
+        ))}
+      </p>
+    </div>
   );
 }
 
