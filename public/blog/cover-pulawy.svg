@@ -1,0 +1,6 @@
+<svg width="120" height="90" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="45" r="30" fill="none" stroke="#FF6A00" stroke-width="3" stroke-dasharray="6 5"/>
+  <text x="60" y="57" font-family="sans-serif" font-size="30" font-weight="700" fill="#FF6A00" text-anchor="middle">0</text>
+  <path d="M96 30l6-8 6 8M102 22v22" stroke="#FF6A00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6"/>
+  <path d="M12 74h96" stroke="#FF6A00" stroke-width="2" opacity="0.25"/>
+</svg>

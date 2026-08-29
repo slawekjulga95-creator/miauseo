@@ -1,0 +1,7 @@
+<svg width="120" height="90" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M18 26h48l36 22-36 22H18z" fill="#FF6A00" opacity="0.2" stroke="#FF6A00" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="34" cy="48" r="5" fill="#FF6A00"/>
+  <text x="70" y="57" font-family="sans-serif" font-size="24" font-weight="700" fill="#FF6A00" text-anchor="middle">zł</text>
+  <path d="M12 18h96" stroke="#FF6A00" stroke-width="2" opacity="0.2"/>
+  <path d="M12 78h96" stroke="#FF6A00" stroke-width="2" opacity="0.2"/>
+</svg>
