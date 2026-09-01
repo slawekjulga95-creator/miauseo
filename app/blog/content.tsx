@@ -435,9 +435,17 @@ export const articleContent: Record<string, React.ReactNode> = {
         <p className="text-zinc-300 text-sm leading-relaxed max-w-xl mx-auto mb-6">
           Sprawdzimy, w których miejscowościach jesteś dziś widoczny, a w których nie istniejesz, ułożymy listę podstron i zajmiemy się wizytówką. Bez obietnic cudów, konkretny plan na Twój obszar dojazdu.
         </p>
-        <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
-          Umów bezpłatną konsultację
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+          <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
+            Umów bezpłatną konsultację
+          </Link>
+          <a href="tel:+48455571349" className="inline-flex items-center gap-2 border border-zinc-600 hover:border-brand text-white hover:text-brand font-bold px-8 py-4 rounded-xl transition-colors duration-200">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            +48 455 571 349
+          </a>
+        </div>
       </div>
 
       <h2 id="zwrot">Ile to kosztuje i kiedy się zwraca</h2>
