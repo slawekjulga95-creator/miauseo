@@ -27,6 +27,18 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "czym-sa-encje-wizytowka-google-przyklady",
+    title: "Czym są encje? Wizytówka Google i przykłady",
+    excerpt:
+      "Encja to obiekt, który Google identyfikuje niezależnie od słów użytych w zapytaniu. Wyjaśniamy, czym różni się od słowa kluczowego, dlaczego wizytówka jest źródłem danych o encji, a nie encją samą w sobie, jak działa identyfikator MID i pole sameAs. Z gotowym kodem, trzema przykładami z audytów i listą źródeł Google oraz schema.org.",
+    category: "SEO",
+    date: "2026-09-01",
+    readTime: 16,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-encje.svg",
+    published: true,
+  },
+  {
     slug: "pozycjonowanie-wizytowki-google-warszawa",
     title: "Pozycjonowanie wizytówki Google Warszawa",
     excerpt:

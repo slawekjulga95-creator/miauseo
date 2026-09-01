@@ -3,6 +3,471 @@ import Link from "next/link";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     SEO: Czym są encje? Wizytówka Google i przykłady
+  ───────────────────────────────────────────────────────────────────────── */
+  "czym-sa-encje-wizytowka-google-przyklady": (
+    <>
+      {/* Spis treści */}
+      <div className="not-prose mt-2 mb-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Spis treści</p>
+        <ol className="space-y-1.5 text-sm">
+          <li><a href="#definicja" className="font-semibold text-ink hover:text-brand transition-colors">Czym jest encja w wyszukiwarce</a></li>
+          <li><a href="#things-not-strings" className="font-semibold text-ink hover:text-brand transition-colors">Skąd pochodzi to pojęcie: „things, not strings"</a></li>
+          <li><a href="#encja-vs-fraza" className="font-semibold text-ink hover:text-brand transition-colors">Encja a słowo kluczowe, konkretna różnica</a></li>
+          <li><a href="#zrodla" className="font-semibold text-ink hover:text-brand transition-colors">Z czego Google składa encję Twojej firmy</a></li>
+          <li><a href="#wizytowka-a-encja" className="font-semibold text-ink hover:text-brand transition-colors">Wizytówka Google nie jest encją, jest jej źródłem</a></li>
+          <li><a href="#mid" className="font-semibold text-ink hover:text-brand transition-colors">MID, czyli identyfikator encji w Knowledge Graph</a></li>
+          <li><a href="#sameas" className="font-semibold text-ink hover:text-brand transition-colors">sameAs, czyli jak sklejasz tożsamość firmy</a></li>
+          <li><a href="#przyklady" className="font-semibold text-ink hover:text-brand transition-colors">Trzy przykłady z praktyki</a></li>
+          <li><a href="#checklista" className="font-semibold text-ink hover:text-brand transition-colors">Checklista: budowa encji krok po kroku</a></li>
+          <li><a href="#bledy" className="font-semibold text-ink hover:text-brand transition-colors">Błędy, które rozmywają encję</a></li>
+          <li><a href="#faq-encje" className="font-semibold text-ink hover:text-brand transition-colors">FAQ</a></li>
+          <li><a href="#zrodla-lista" className="font-semibold text-ink hover:text-brand transition-colors">Źródła</a></li>
+        </ol>
+      </div>
+
+      <h2 id="definicja">Czym jest encja w wyszukiwarce</h2>
+      <p>
+        <strong>Encja to obiekt, który istnieje w świecie rzeczywistym i który wyszukiwarka potrafi jednoznacznie zidentyfikować oraz odróżnić od innych obiektów o podobnej nazwie.</strong> Firma, osoba, produkt, miejsce, wydarzenie, marka. Encja nie jest tekstem ani frazą. Jest rekordem, do którego przypięte są atrybuty i relacje.
+      </p>
+      <p>
+        Różnica wobec klasycznego rozumienia SEO jest zasadnicza. Fraza „Kowalski" to ciąg znaków. Encja „Auto-Serwis Kowalski, ul. Polna 12, Legnica, warsztat samochodowy, NIP 691xxxxxxx" to obiekt, o którym Google ma zbiór twierdzeń pochodzących z wielu niezależnych źródeł, i który potrafi odróżnić od dwustu innych firm o nazwie Kowalski.
+      </p>
+      <p>
+        Dla lokalnego SEO ma to jedną praktyczną konsekwencję, wokół której kręci się cały ten tekst: <strong>Google nie ocenia Twojej wizytówki w izolacji</strong>. Ocenia encję, którą składa z wizytówki, strony, danych strukturalnych, katalogów, opinii i wzmianek. Wizytówka jest jednym z wejść, nie całością.
+      </p>
+
+      <h2 id="things-not-strings">Skąd pochodzi to pojęcie: „things, not strings"</h2>
+      <p>
+        Pojęcie nie jest marketingowym wymysłem branży SEO. Google wprowadził je oficjalnie <strong>16 maja 2012 roku</strong>, ogłaszając Knowledge Graph. Amit Singhal, ówczesny wiceprezes ds. inżynierii, opisał to jako „inteligentny model, w żargonie graf, który rozumie obiekty świata rzeczywistego i relacje między nimi: <em>things, not strings</em>", czyli rzeczy, a nie ciągi znaków ({" "}
+        <a href="https://blog.google/products/search/introducing-knowledge-graph-things-not/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">blog.google</a>, dostęp 1 września 2026).
+      </p>
+      <p>
+        W tym samym wpisie Google podał skalę startową: <strong>ponad 500 milionów obiektów oraz ponad 3,5 miliarda faktów i relacji między nimi</strong>. To był rok 2012. Dziś Knowledge Graph jest nieporównanie większy, ale mechanika pozostała ta sama, a Google wymienił wtedy trzy funkcje, które do dziś opisują sposób jego działania:
+      </p>
+      <ul>
+        <li><strong>Ujednoznacznienie</strong> (disambiguation) — rozstrzygnięcie, o który obiekt o danej nazwie chodzi.</li>
+        <li><strong>Podsumowanie kontekstowe</strong> — pokazanie faktów o obiekcie bez wchodzenia na stronę.</li>
+        <li><strong>Odkrywanie relacji</strong> — powiązanie obiektu z innymi, pokrewnymi obiektami.</li>
+      </ul>
+      <p>
+        Pierwsza z nich, ujednoznacznienie, jest sednem problemu każdej lokalnej firmy. Jeżeli Google nie potrafi jednoznacznie stwierdzić, którą firmą jesteś, pozostałe dwie funkcje nie mają na czym pracować. Pojęcie rozwijamy też w słowniku, przy haśle <Link href="/knowledge-graph">Knowledge Graph</Link>.
+      </p>
+
+      <h2 id="encja-vs-fraza">Encja a słowo kluczowe, konkretna różnica</h2>
+      <p>
+        Najprostszy sposób, żeby zobaczyć różnicę, to zestawić oba podejścia obok siebie.
+      </p>
+
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr className="bg-surface">
+              <th className="text-left p-3 border border-border font-bold text-ink">Wymiar</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Słowo kluczowe</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Encja</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-3 border border-border font-semibold">Czym jest</td>
+              <td className="p-3 border border-border">Ciąg znaków w zapytaniu i w treści</td>
+              <td className="p-3 border border-border">Obiekt z identyfikatorem, atrybutami i relacjami</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border font-semibold">Zależy od języka</td>
+              <td className="p-3 border border-border">Tak, „wulkanizacja" i „tyre service" to dwie różne frazy</td>
+              <td className="p-3 border border-border">Nie, ten sam obiekt niezależnie od języka zapytania</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border font-semibold">Jak się to wzmacnia</td>
+              <td className="p-3 border border-border">Treścią, w której fraza występuje</td>
+              <td className="p-3 border border-border">Zgodnymi potwierdzeniami w wielu niezależnych źródłach</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border font-semibold">Co je psuje</td>
+              <td className="p-3 border border-border">Nadoptymalizacja, kanibalizacja</td>
+              <td className="p-3 border border-border">Sprzeczne dane o tym samym obiekcie</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border font-semibold">Gdzie to widać</td>
+              <td className="p-3 border border-border">Pozycja w wynikach organicznych</td>
+              <td className="p-3 border border-border">Panel wiedzy, Local Pack, cytowania w odpowiedziach AI</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        To rozróżnienie nie unieważnia pracy nad frazami. Zmienia natomiast to, gdzie leży wąskie gardło. W lokalnym SEO wąskim gardłem prawie nigdy nie jest brak frazy w tekście. Jest nim <strong>brak pewności Google, że firma opisana w wizytówce, na stronie i w katalogach to ta sama firma</strong>.
+      </p>
+
+      <h2 id="zrodla">Z czego Google składa encję Twojej firmy</h2>
+      <p>
+        Google nie publikuje listy źródeł ani wag, jakie im przypisuje. Publikuje natomiast trzy filary rankingu lokalnego i to, co na nie wpływa. W oficjalnej pomocy Google Business Profile są to <strong>trafność, odległość i widoczność</strong>, przy czym widoczność (prominence) jest opisana wprost jako zależna od tego, „ile witryn linkuje do Twojej firmy i ile masz opinii" ({" "}
+        <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com</a>, dostęp 1 września 2026).
+      </p>
+      <p>
+        To jest oficjalne potwierdzenie mechanizmu, o którym mówimy: <strong>na widoczność lokalną wpływają dane spoza wizytówki</strong>. W praktyce audytowej źródła, które składają się na encję lokalnej firmy, można podzielić na pięć grup:
+      </p>
+      <ul>
+        <li><strong>Profil w Google Business Profile</strong> — nazwa, adres lub obszar działania, kategorie, godziny, telefon, adres strony, usługi, atrybuty.</li>
+        <li><strong>Własna strona internetowa</strong> — treść, dane kontaktowe w stopce i dane strukturalne <code>LocalBusiness</code> lub <code>Organization</code>.</li>
+        <li><strong>Rejestry i katalogi</strong> — CEIDG i KRS, katalogi branżowe, portale ogłoszeniowe, mapy alternatywne, cytowania NAP.</li>
+        <li><strong>Profile firmowe</strong> — Facebook, LinkedIn, YouTube, Instagram, wizytówki w serwisach branżowych.</li>
+        <li><strong>Wzmianki i opinie</strong> — treść recenzji, artykuły na portalach lokalnych, wypowiedzi na forach, linki z kontekstem.</li>
+      </ul>
+      <p>
+        Kluczowe jest słowo <strong>zgodne</strong>. Wartość źródła bierze się nie z jego istnienia, tylko z tego, że mówi to samo, co pozostałe. Piąte źródło z inną nazwą firmy nie dokłada pewności, tylko ją odejmuje.
+      </p>
+
+      <div className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 470 290" width="100%" role="img" aria-labelledby="encja-tytul encja-opis">
+            <title id="encja-tytul">Encja firmy jako obiekt zasilany przez wiele niezależnych źródeł</title>
+            <desc id="encja-opis">Schemat: w centrum encja firmy w Knowledge Graph, dookoła pięć grup źródeł zasilających ją danymi: wizytówka Google, strona internetowa z danymi strukturalnymi, rejestry i katalogi, profile firmowe oraz wzmianki i opinie. Zgodne dane podnoszą pewność identyfikacji, sprzeczne ją obniżają.</desc>
+            <rect x="0" y="0" width="470" height="290" fill="#ffffff"/>
+            <g fontFamily="sans-serif">
+              <line x1="235" y1="145" x2="88" y2="58" stroke="#FF6A00" strokeWidth="1.5" opacity="0.4"/>
+              <line x1="235" y1="145" x2="382" y2="58" stroke="#FF6A00" strokeWidth="1.5" opacity="0.4"/>
+              <line x1="235" y1="145" x2="60" y2="168" stroke="#FF6A00" strokeWidth="1.5" opacity="0.4"/>
+              <line x1="235" y1="145" x2="410" y2="168" stroke="#FF6A00" strokeWidth="1.5" opacity="0.4"/>
+              <line x1="235" y1="145" x2="235" y2="248" stroke="#FF6A00" strokeWidth="1.5" opacity="0.4"/>
+
+              <circle cx="235" cy="145" r="46" fill="#FF6A00" opacity="0.12"/>
+              <circle cx="235" cy="145" r="46" fill="none" stroke="#FF6A00" strokeWidth="2"/>
+              <text x="235" y="140" textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#c2410c">ENCJA FIRMY</text>
+              <text x="235" y="157" textAnchor="middle" fontSize="10.5" fill="#71717a">obiekt w Knowledge Graph</text>
+
+              <rect x="18" y="40" width="140" height="34" rx="8" fill="#ffffff" stroke="#e4e4e7"/>
+              <text x="88" y="55" textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#3f3f46">Wizytówka Google</text>
+              <text x="88" y="68" textAnchor="middle" fontSize="9.5" fill="#a1a1aa">nazwa, kategoria, adres</text>
+
+              <rect x="312" y="40" width="140" height="34" rx="8" fill="#ffffff" stroke="#e4e4e7"/>
+              <text x="382" y="55" textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#3f3f46">Strona internetowa</text>
+              <text x="382" y="68" textAnchor="middle" fontSize="9.5" fill="#a1a1aa">treść + dane strukturalne</text>
+
+              <rect x="8" y="152" width="126" height="34" rx="8" fill="#ffffff" stroke="#e4e4e7"/>
+              <text x="71" y="167" textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#3f3f46">Rejestry i katalogi</text>
+              <text x="71" y="180" textAnchor="middle" fontSize="9.5" fill="#a1a1aa">CEIDG, KRS, cytowania</text>
+
+              <rect x="336" y="152" width="126" height="34" rx="8" fill="#ffffff" stroke="#e4e4e7"/>
+              <text x="399" y="167" textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#3f3f46">Profile firmowe</text>
+              <text x="399" y="180" textAnchor="middle" fontSize="9.5" fill="#a1a1aa">pole sameAs w schemie</text>
+
+              <rect x="160" y="240" width="150" height="34" rx="8" fill="#ffffff" stroke="#e4e4e7"/>
+              <text x="235" y="255" textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#3f3f46">Wzmianki i opinie</text>
+              <text x="235" y="268" textAnchor="middle" fontSize="9.5" fill="#a1a1aa">treść recenzji, portale lokalne</text>
+
+              <text x="235" y="20" textAnchor="middle" fontSize="10" fill="#a1a1aa">Zgodne dane podnoszą pewność identyfikacji. Sprzeczne ją obniżają.</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <h2 id="wizytowka-a-encja">Wizytówka Google nie jest encją, jest jej źródłem</h2>
+      <p>
+        To rozróżnienie jest naszą interpretacją, a nie cytatem z dokumentacji Google, ale wynika bezpośrednio z tego, co Google opisuje w pomocy dotyczącej rankingu lokalnego. Skoro na widoczność profilu wpływają linki z innych witryn i opinie, to <strong>ocena nie może pochodzić wyłącznie z panelu Google Business Profile</strong>.
+      </p>
+      <p>
+        Praktyczne konsekwencje tego ujęcia są następujące:
+      </p>
+      <ul>
+        <li><strong>Nie da się „zoptymalizować wizytówki" w oderwaniu od reszty.</strong> Komplet pól w panelu przy rozjechanej nazwie na stronie i w katalogach daje mniej, niż sugerowałby stopień wypełnienia profilu.</li>
+        <li><strong>Zmiana w jednym źródle nie przepisuje encji.</strong> Poprawienie adresu tylko w wizytówce, przy pięciu katalogach ze starym adresem, tworzy konflikt, a nie korektę.</li>
+        <li><strong>Kolejność prac wynika z tego wprost.</strong> Najpierw ustalasz jedną kanoniczną wersję danych, potem wyrównujesz do niej wszystkie źródła, a dopiero na końcu budujesz nowe.</li>
+        <li><strong>Utrata profilu nie kasuje encji.</strong> Firma dalej istnieje w rejestrach, katalogach i wzmiankach, ale traci najmocniejsze źródło danych o sobie, a wraz z nim opinie.</li>
+      </ul>
+      <p>
+        Dlatego audyt encji zaczynamy nie od panelu, tylko od wyszukania dokładnej nazwy firmy w cudzysłowie i przejrzenia pierwszych trzydziestu wyników. Każda odmiana nazwy, każdy stary adres i każdy martwy profil, który tam znajdziesz, to źródło mówiące co innego niż pozostałe.
+      </p>
+
+      <h2 id="mid">MID, czyli identyfikator encji w Knowledge Graph</h2>
+      <p>
+        Encje w Knowledge Graph mają identyfikatory maszynowe, w skrócie MID (machine ID). W dokumentacji Knowledge Graph Search API Google pokazuje je w polu <code>@id</code> w formacie <code>kg:/m/0dl567</code>, w przykładowej odpowiedzi dotyczącej Taylor Swift ({" "}
+        <a href="https://developers.google.com/knowledge-graph" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">developers.google.com/knowledge-graph</a>, dostęp 1 września 2026).
+      </p>
+      <p>
+        Dwie rzeczy warto o tym wiedzieć, zanim ktoś sprzeda Ci „optymalizację encji" opartą na MID-ach.
+      </p>
+      <ul>
+        <li><strong>Google migruje ten interfejs.</strong> W dokumentacji jest wprost napisane, że API jest przenoszone do Cloud Enterprise Knowledge Graph, a nowym użytkownikom zaleca się korzystanie z produktu Google Cloud. Narzędzia oparte o stare API mogą przestać działać.</li>
+        <li><strong>API zwraca pojedyncze encje, nie graf.</strong> Odpowiedź to lista wyników zgodnych ze schema.org i JSON-LD, z oceną trafności <code>resultScore</code>, a nie zestaw relacji między obiektami. Brak wyniku dla Twojej firmy nie jest dowodem, że Google jej nie zna, bo API pokrywa wycinek grafu.</li>
+      </ul>
+      <p>
+        Traktuj więc MID jako wskaźnik pomocniczy, nie jako cel. <strong>Nie istnieje ustawienie, które „nadaje" firmie MID.</strong> Identyfikator pojawia się wtedy, gdy Google uzna, że ma wystarczająco spójny zbiór danych, żeby wyodrębnić obiekt.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-amber-400 bg-amber-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-amber-700 mb-2">Uczciwie o tym, czego nie da się zrobić</p>
+        <p className="text-sm text-amber-900 leading-relaxed">
+          Nie ma panelu, w którym edytuje się encję, i nie ma pola, w którym deklaruje się jej istnienie. Można wyłącznie dostarczać wyszukiwarce zgodne, weryfikowalne dane z wielu niezależnych źródeł i czekać, aż zbuduje z nich obiekt. Każda oferta „gwarantowanego wpisu do Knowledge Graph" opisuje coś, czego mechanicznie nie da się kupić.
+        </p>
+      </div>
+
+      <h2 id="sameas">sameAs, czyli jak sklejasz tożsamość firmy</h2>
+      <p>
+        <code>sameAs</code> to właściwość ze słownika schema.org, zdefiniowana jako „adres URL referencyjnej strony internetowej, która jednoznacznie wskazuje tożsamość obiektu, na przykład adres strony obiektu w Wikipedii, wpisu w Wikidata lub oficjalnej witryny" ({" "}
+        <a href="https://schema.org/sameAs" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">schema.org/sameAs</a>, dostęp 1 września 2026). Właściwość dotyczy typu <code>Thing</code>, a więc dziedziczą ją wszystkie typy, w tym <code>Organization</code> i <code>LocalBusiness</code>.
+      </p>
+      <p>
+        Google dokumentuje ją osobno, w wytycznych dla danych strukturalnych typu Organization, opisując jako „adres URL strony w innej witrynie zawierającej dodatkowe informacje o Twojej organizacji, na przykład adres profilu organizacji w serwisie społecznościowym lub serwisie z opiniami" i zaznacza, że <strong>można podać wiele adresów <code>sameAs</code></strong> ({" "}
+        <a href="https://developers.google.com/search/docs/appearance/structured-data/organization" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">developers.google.com</a>, dostęp 1 września 2026).
+      </p>
+      <p>
+        To jest jedyne miejsce, w którym możesz Google <em>powiedzieć wprost</em>, że te profile należą do tej samej firmy, zamiast liczyć, że sam to wywnioskuje. Minimalny, poprawny przykład dla lokalnej firmy:
+      </p>
+
+      <div className="my-6 rounded-xl overflow-hidden" style={{backgroundColor: '#18181b'}}>
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://twojafirma.pl/#firma",
+  "name": "Auto-Serwis Kowalski",
+  "url": "https://twojafirma.pl",
+  "telephone": "+48 000 000 000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Polna 12",
+    "addressLocality": "Legnica",
+    "postalCode": "59-220",
+    "addressCountry": "PL"
+  },
+  "sameAs": [
+    "https://www.facebook.com/twojafirma",
+    "https://www.linkedin.com/company/twojafirma",
+    "https://www.youtube.com/@twojafirma",
+    "https://www.instagram.com/twojafirma",
+    "https://maps.google.com/?cid=0000000000000000000"
+  ]
+}
+</script>`}</pre>
+      </div>
+
+      <p>
+        Cztery zasady, bez których ten kod nie zadziała tak, jak powinien:
+      </p>
+      <ul>
+        <li><strong>Stały <code>@id</code></strong> — jeden identyfikator w obrębie witryny, powtarzany na wszystkich podstronach, żeby Google wiedział, że mówią o tym samym obiekcie.</li>
+        <li><strong>Zapis danych identyczny co do znaku</strong> — nazwa, adres i format numeru telefonu takie same w schemie, w stopce strony i w wizytówce. To jest ta sama zasada, którą opisujemy przy <Link href="/nap-wizytowka-google-co-to-jest">spójności NAP</Link>.</li>
+        <li><strong>Tylko profile faktycznie należące do firmy</strong> — <code>sameAs</code> to twierdzenie o tożsamości, nie lista linków wychodzących. Wrzucenie tam cudzych profili jest deklaracją nieprawdy.</li>
+        <li><strong>Profile muszą linkować z powrotem</strong> — potwierdzenie jednostronne jest słabsze niż obustronne. Adres strony w każdym profilu firmowym domyka pętlę.</li>
+      </ul>
+      <p>
+        Techniczne wdrożenie krok po kroku, razem z walidacją, opisaliśmy w tekście o <Link href="/jak-dodac-local-schema-do-strony">dodawaniu Local Schema do strony</Link>. Same znaczniki omawiamy też w słowniku, przy hasłach <Link href="/json-ld">JSON-LD</Link> i <Link href="/schema-markup">schema markup</Link>.
+      </p>
+
+      <h2 id="przyklady">Trzy przykłady z praktyki</h2>
+      <p>
+        Poniższe przypadki są uogólnionymi wzorcami z audytów lokalnych profili, nie opisami konkretnych klientów. Nazwy i dane są przykładowe, natomiast wzorce błędów powtarzają się na tyle często, że warto je znać.
+      </p>
+
+      <h3>Przykład 1: encja rozjechana między źródłami</h3>
+      <p>
+        Warsztat samochodowy, jeden adres, jeden właściciel, a w sieci cztery różne tożsamości:
+      </p>
+      <ul>
+        <li>wizytówka Google: <em>Auto-Serwis Kowalski — mechanika i wulkanizacja</em>,</li>
+        <li>strona internetowa: <em>AS Kowalski Sp. z o.o.</em>,</li>
+        <li>Panorama Firm: <em>Auto Serwis Jan Kowalski</em>, ze starym adresem sprzed przeprowadzki,</li>
+        <li>Facebook: <em>Kowalski Serwis</em>, z komórką zamiast numeru stacjonarnego.</li>
+      </ul>
+      <p>
+        <strong>Co widzi Google:</strong> cztery zbiory twierdzeń, które częściowo się pokrywają, a częściowo wykluczają. Efektem nie jest kara, tylko niska pewność identyfikacji. Profil rankuje słabiej, niż wynikałoby z jego kompletności, a w odpowiedziach generatywnych firma bywa pomijana na rzecz konkurenta o spójnych danych.
+      </p>
+      <p>
+        <strong>Naprawa:</strong> wybór jednej kanonicznej wersji nazwy, adresu i telefonu, a potem wyrównanie do niej wszystkich źródeł, zaczynając od tych, które rankują najwyżej na nazwę firmy. To praca żmudna i niewidoczna w raporcie, i właśnie dlatego daje przewagę.
+      </p>
+
+      <h3>Przykład 2: encja bez potwierdzeń zewnętrznych</h3>
+      <p>
+        Gabinet kosmetyczny z bardzo dobrze uzupełnioną wizytówką: komplet kategorii, usługi z cenami, sto zdjęć, opis na 750 znaków. Poza wizytówką nie istnieje nic: strona to jednostronicowa wizytówka bez danych strukturalnych, brak profili firmowych, brak wzmianek, brak wpisów w katalogach.
+      </p>
+      <ul>
+        <li><strong>Objaw:</strong> profil wchodzi do Local Packu na frazy z nazwą własną i najbliższą okolicę, ale przegrywa na frazach usługowych z firmami o gorzej uzupełnionych profilach.</li>
+        <li><strong>Przyczyna:</strong> jedno źródło danych nie tworzy potwierdzenia. Google ma twierdzenia firmy o sobie samej i nic, co by je niezależnie potwierdzało, a widoczność w rankingu lokalnym Google wprost wiąże między innymi z linkami z innych witryn.</li>
+        <li><strong>Naprawa:</strong> profile firmowe z <code>sameAs</code>, dane strukturalne na stronie, kilka cytowań NAP i wzmianki na portalach lokalnych. Kolejność ma znaczenie: najpierw potwierdzenia tożsamości, potem linki jakościowe.</li>
+      </ul>
+
+      <h3>Przykład 3: encja zbudowana poprawnie</h3>
+      <p>
+        Firma usługowa z dojazdem. Nazwa identyczna we wszystkich źródłach, adres ukryty zgodnie z typem działalności, obszar działania wskazany po miejscowościach. Na stronie schema <code>LocalBusiness</code> ze stałym <code>@id</code> i polem <code>sameAs</code> wskazującym pięć profili, z których każdy linkuje z powrotem do strony. Podstrony lokalizacyjne z realną treścią pod obsługiwane miejscowości. Kilkanaście wzmianek na portalach lokalnych, opinie, w których klienci wymieniają nazwy miejscowości.
+      </p>
+      <ul>
+        <li><strong>Co to daje:</strong> wysoką pewność identyfikacji i spójny obraz zasięgu działania, potwierdzony niezależnie w kilku miejscach.</li>
+        <li><strong>Gdzie to widać:</strong> stabilniejsze pozycje w Local Packu w całym obszarze, a nie tylko wokół adresu, oraz częstsze cytowania w odpowiedziach generatywnych, które opierają się na danych możliwych do zweryfikowania w kilku źródłach.</li>
+        <li><strong>Czego to nie daje:</strong> automatycznego panelu wiedzy ani MID-a. To pozostaje decyzją Google.</li>
+      </ul>
+
+      <div className="not-prose my-10 rounded-2xl bg-ink p-8 text-center">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Audyt encji Twojej firmy</p>
+        <p className="text-white text-lg font-bold mb-3">Sprawdzimy, co Google naprawdę wie o Twojej firmie</p>
+        <p className="text-zinc-300 text-sm leading-relaxed max-w-xl mx-auto mb-6">
+          Przejrzymy wszystkie źródła danych o Twojej firmie, znajdziemy rozjazdy w nazwie, adresie i telefonie, wskażemy duplikaty wizytówek i ułożymy kolejność napraw. Konkretna lista, nie ogólniki.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+          <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
+            Umów bezpłatną konsultację
+          </Link>
+          <a href="tel:+48455571349" className="inline-flex items-center gap-2 border border-zinc-600 hover:border-brand text-white hover:text-brand font-bold px-8 py-4 rounded-xl transition-colors duration-200">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            +48 455 571 349
+          </a>
+        </div>
+      </div>
+
+      <h2 id="checklista">Checklista: budowa encji krok po kroku</h2>
+      <p>
+        Kolejność nie jest dowolna. Każdy krok opiera się na poprzednim, a odwrócenie ich sprawia, że wcześniejsze prace nie mają na czym stanąć.
+      </p>
+
+      <h3>Etap 1: ustal jedną kanoniczną wersję danych</h3>
+      <ul>
+        <li>Zapisz jedną wersję <strong>nazwy firmy</strong>, dokładnie tę, którą masz na szyldzie, fakturach i stronie. Google wymaga, żeby nazwa w profilu „odzwierciedlała rzeczywistą nazwę firmy, używaną konsekwentnie na witrynie sklepu, stronie internetowej, papierze firmowym i znaną klientom" ({" "}
+          <a href="https://support.google.com/business/answer/3038177" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com</a>, dostęp 1 września 2026).</li>
+        <li>Zapisz jedną wersję <strong>adresu</strong>, z rozstrzygnięciem kwestii numeru lokalu, oraz jeden <strong>format numeru telefonu</strong>.</li>
+        <li>Zapisz jeden <strong>kanoniczny adres strony</strong>, z rozstrzygnięciem wersji z <code>www</code> i bez.</li>
+      </ul>
+
+      <h3>Etap 2: znajdź wszystkie istniejące źródła</h3>
+      <ul>
+        <li>Wyszukaj w Google dokładną nazwę firmy w cudzysłowie i przejrzyj pierwsze trzydzieści wyników.</li>
+        <li>Powtórz to samo dla numeru telefonu w cudzysłowie, także dla numerów, których już nie używasz. Numer wyłapuje wpisy, w których nazwa jest zapisana inaczej.</li>
+        <li>Sprawdź w Mapach Google warianty nazwy i stare numery pod kątem <strong>duplikatów wizytówek</strong>: profili po byłych pracownikach, po starych weryfikacjach, po poprzednich agencjach.</li>
+        <li>Wypisz wszystko do jednej tabeli: źródło, nazwa, adres, telefon, adres strony, status.</li>
+      </ul>
+
+      <h3>Etap 3: wyrównaj źródła do wersji kanonicznej</h3>
+      <ul>
+        <li>Zacznij od źródeł, które rankują najwyżej na nazwę firmy, bo one najmocniej kształtują obraz encji.</li>
+        <li>Duplikaty wizytówek zgłoś do scalenia albo do oznaczenia jako trwale zamknięte, jeżeli faktycznie nie działają.</li>
+        <li>Wpisy w katalogach, do których nie masz dostępu, zgłoś przez formularz aktualizacji danych albo usunięcia.</li>
+      </ul>
+
+      <h3>Etap 4: zadeklaruj tożsamość wprost</h3>
+      <ul>
+        <li>Wdróż na stronie dane strukturalne <code>LocalBusiness</code> lub <code>Organization</code> ze stałym <code>@id</code>.</li>
+        <li>Wypełnij pole <code>sameAs</code> adresami wszystkich profili firmowych, także profilu w Mapach Google.</li>
+        <li>W każdym profilu firmowym ustaw adres strony, żeby potwierdzenie działało w obie strony.</li>
+        <li>W wizytówce uzupełnij sekcję linków do profili społecznościowych, która u większości firm usługowych stoi pusta.</li>
+      </ul>
+
+      <h3>Etap 5: dokładaj niezależne potwierdzenia</h3>
+      <ul>
+        <li>Cytowania NAP w katalogach o realnym ruchu, nie w farmach wpisów.</li>
+        <li>Wzmianki na portalach lokalnych, z linkiem do właściwej podstrony, a nie zawsze do strony głównej.</li>
+        <li>Opinie, w których klienci naturalnie wymieniają usługę i miejscowość. Treści opinii nie dyktuj, ale prosząc, poproś o opisanie, co i gdzie było robione. Metodykę rozpisaliśmy przy <Link href="/opinie-google-jak-zdobywac-skutecznie">zdobywaniu opinii Google</Link>.</li>
+      </ul>
+
+      <h2 id="bledy">Błędy, które rozmywają encję</h2>
+      <ul>
+        <li><strong>Fraza dopisana do nazwy w panelu.</strong> Google wprost zabrania dodawania do nazwy słów kluczowych, informacji o lokalizacji i haseł marketingowych, podając jako przykłady niedozwolone „(I-93 at Exit 2)", „near SOHO" czy „Auto Service Experts". Dopisek tworzy nazwę, której nie potwierdza żadne inne źródło, więc jednocześnie łamie wytyczne i osłabia spójność encji.</li>
+        <li><strong>Duplikaty wizytówek.</strong> Profil zawieszony albo nieodebrany nadal istnieje w systemie i nadal dokłada sprzeczne twierdzenia.</li>
+        <li><strong>Dane strukturalne skopiowane ze starego motywu.</strong> Po migracji strony schema często zostaje z poprzednim adresem albo poprzednią nazwą, co tworzy konflikt w najbardziej wiarygodnym źródle, jakim jest własna witryna.</li>
+        <li><strong>Puste <code>sameAs</code>.</strong> Brak deklaracji nie jest błędem technicznym, ale jest zmarnowaną okazją, bo to jedyne miejsce, w którym możesz tożsamość zadeklarować wprost.</li>
+        <li><strong>Profile założone i porzucone.</strong> Profil z nieaktualnym adresem lub telefonem szkodzi bardziej niż jego brak, bo aktywnie zaprzecza pozostałym źródłom.</li>
+        <li><strong>Dwie firmy pod jednym adresem bez rozróżnienia.</strong> Gdy w jednym lokalu działają dwie działalności o podobnym profilu i wspólnym telefonie, Google ma problem z rozdzieleniem obiektów, a skutkiem bywa wyświetlanie tylko jednej z nich.</li>
+      </ul>
+      <p>
+        Szerszy przegląd tych i pokrewnych problemów, wraz z ich wpływem na ranking, zebraliśmy w tekście o <Link href="/najwieksze-bledy-pozycjonowanie-wizytowki-google-2026">największych błędach w pozycjonowaniu wizytówki Google</Link>.
+      </p>
+
+      <h2 id="faq-encje">FAQ</h2>
+
+      <h3>Czym różni się encja od słowa kluczowego?</h3>
+      <p>
+        Słowo kluczowe to ciąg znaków w zapytaniu i w treści. Encja to obiekt świata rzeczywistego, który wyszukiwarka identyfikuje niezależnie od tego, jakimi słowami ktoś o nim pyta, i do którego przypisuje atrybuty oraz relacje. Google opisał tę różnicę hasłem „things, not strings" przy uruchomieniu Knowledge Graph w 2012 roku.
+      </p>
+
+      <h3>Czy wizytówka Google to encja?</h3>
+      <p>
+        Nie. Wizytówka jest jednym ze źródeł danych o encji, choć zwykle najmocniejszym. Encja jest obiektem w Knowledge Graph, który Google składa z wielu źródeł naraz. Dlatego kompletny profil przy sprzecznych danych w pozostałych źródłach daje mniej, niż wynikałoby ze stopnia jego wypełnienia.
+      </p>
+
+      <h3>Jak sprawdzić, czy moja firma jest encją w Knowledge Graph?</h3>
+      <p>
+        Pomocniczo można użyć Knowledge Graph Search API, które zwraca identyfikator w formacie <code>kg:/m/…</code>. Trzeba jednak pamiętać o dwóch ograniczeniach: Google migruje to API do Cloud Enterprise Knowledge Graph, a odpowiedź obejmuje wycinek grafu, więc brak wyniku nie jest dowodem, że Google Twojej firmy nie zna.
+      </p>
+
+      <h3>Czy da się „dodać" firmę do Knowledge Graph?</h3>
+      <p>
+        Nie ma mechanizmu zgłoszenia ani pola, w którym deklaruje się istnienie encji. Można wyłącznie dostarczać zgodne, weryfikowalne dane z wielu niezależnych źródeł. Decyzja o wyodrębnieniu obiektu należy do Google.
+      </p>
+
+      <h3>Ile profili firmowych warto wpisać w sameAs?</h3>
+      <p>
+        Google dopuszcza wiele adresów i nie podaje limitu. Kryterium nie jest liczba, tylko prawdziwość: wpisuj wyłącznie profile faktycznie należące do firmy i zadbaj, żeby każdy z nich linkował z powrotem do strony. Pięć aktywnych, wzajemnie potwierdzonych profili jest warte więcej niż piętnaście porzuconych.
+      </p>
+
+      <h3>Czy praca nad encją zastępuje klasyczne SEO lokalne?</h3>
+      <p>
+        Nie, jest jego warstwą fundamentową. Kategorie, opinie, zdjęcia i treść nadal decydują o trafności i widoczności. Praca nad encją usuwa natomiast przeszkodę, która sprawia, że te działania nie przynoszą efektu proporcjonalnego do włożonej pracy.
+      </p>
+
+      <h2 id="zrodla-lista">Źródła</h2>
+      <div className="not-prose my-6 space-y-4">
+        <div className="border-l-2 border-border pl-4">
+          <p className="text-sm text-zinc-600 leading-relaxed">
+            <strong className="text-ink">Google — „Introducing the Knowledge Graph: things, not strings"</strong>, Amit Singhal, 16 maja 2012. Ogłoszenie Knowledge Graph, definicja podejścia „things, not strings", skala startowa 500 mln obiektów i 3,5 mld faktów.{" "}
+            <a href="https://blog.google/products/search/introducing-knowledge-graph-things-not/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">blog.google →</a>
+          </p>
+        </div>
+        <div className="border-l-2 border-border pl-4">
+          <p className="text-sm text-zinc-600 leading-relaxed">
+            <strong className="text-ink">Google Business Profile Help — „Improve your local ranking on Google"</strong>. Trzy filary rankingu lokalnego: trafność, odległość, widoczność, wraz z opisem wpływu linków i opinii.{" "}
+            <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+          </p>
+        </div>
+        <div className="border-l-2 border-border pl-4">
+          <p className="text-sm text-zinc-600 leading-relaxed">
+            <strong className="text-ink">Google Business Profile Help — wytyczne dotyczące reprezentowania firmy w Google</strong>. Wymóg zgodności nazwy z rzeczywistą nazwą firmy oraz zakaz dodawania słów kluczowych, lokalizacji i haseł marketingowych.{" "}
+            <a href="https://support.google.com/business/answer/3038177" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/3038177 →</a>
+          </p>
+        </div>
+        <div className="border-l-2 border-border pl-4">
+          <p className="text-sm text-zinc-600 leading-relaxed">
+            <strong className="text-ink">schema.org — właściwość <code>sameAs</code></strong>. Definicja właściwości, typ oczekiwany URL, zastosowanie do typu <code>Thing</code> i wszystkich typów pochodnych.{" "}
+            <a href="https://schema.org/sameAs" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">schema.org/sameAs →</a>
+          </p>
+        </div>
+        <div className="border-l-2 border-border pl-4">
+          <p className="text-sm text-zinc-600 leading-relaxed">
+            <strong className="text-ink">Google Search Central — dane strukturalne Organization</strong>. Dokumentacja właściwości <code>sameAs</code> po stronie Google oraz lista właściwości zalecanych dla typu Organization.{" "}
+            <a href="https://developers.google.com/search/docs/appearance/structured-data/organization" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">developers.google.com →</a>
+          </p>
+        </div>
+        <div className="border-l-2 border-border pl-4">
+          <p className="text-sm text-zinc-600 leading-relaxed">
+            <strong className="text-ink">Google for Developers — Knowledge Graph Search API</strong>. Format identyfikatora encji <code>kg:/m/…</code> w polu <code>@id</code>, struktura odpowiedzi zgodna ze schema.org i JSON-LD oraz informacja o migracji API do Cloud Enterprise Knowledge Graph.{" "}
+            <a href="https://developers.google.com/knowledge-graph" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">developers.google.com/knowledge-graph →</a>
+          </p>
+        </div>
+        <p className="text-xs text-zinc-400 leading-relaxed pt-2">
+          Wszystkie źródła sprawdzone 1 września 2026. Przykłady w sekcji „Trzy przykłady z praktyki" są uogólnionymi wzorcami z audytów, a nie opisami konkretnych klientów. Rozróżnienie „wizytówka jest źródłem, nie encją" jest naszą interpretacją dokumentacji Google, a nie jej cytatem.
+        </p>
+      </div>
+
+      <h2>Co z tego wynika</h2>
+      <p>
+        Encja jest warstwą, której nie widać w żadnym panelu i której nie da się odhaczyć w checkliście optymalizacyjnej. Widać za to jej brak: profil uzupełniony w stu procentach, który mimo to przegrywa z gorzej wypełnionym konkurentem, prawie zawsze ma za sobą kilka źródeł mówiących o firmie coś innego.
+      </p>
+      <p>
+        <strong>Praktyczny wniosek na dziś jest jeden.</strong> Zanim dodasz kolejne zdjęcia, kolejny post i kolejny katalog, wpisz nazwę swojej firmy w cudzysłowie w Google i przejrzyj trzydzieści pierwszych wyników. Wszystko, co tam znajdziesz i co mówi coś innego niż Twoja wizytówka, jest pracą do wykonania przed jakąkolwiek dalszą optymalizacją.
+      </p>
+      <ul>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/nap-wizytowka-google-co-to-jest">Czym jest NAP i dlaczego decyduje o spójności danych</Link></li>
+        <li><Link href="/jak-dodac-local-schema-do-strony">Jak dodać Local Schema do strony</Link></li>
+        <li><Link href="/czynniki-rankingowe-wizytowki-google-2026">Czynniki rankingowe wizytówki Google w 2026</Link></li>
+        <li><Link href="/knowledge-panel">Knowledge Panel, czyli panel wiedzy w wynikach</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SEO lokalne: Warszawa
   ───────────────────────────────────────────────────────────────────────── */
   "pozycjonowanie-wizytowki-google-warszawa": (
