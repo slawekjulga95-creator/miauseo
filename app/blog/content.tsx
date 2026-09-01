@@ -3,6 +3,2140 @@ import Link from "next/link";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Warszawa
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-warszawa": (
+    <>
+      <p>
+        Warszawa z około 1,86 miliona mieszkańców jest największym rynkiem lokalnym w Polsce i jednocześnie jedynym, w którym <strong>samo pojęcie „widoczności w mieście" nie ma sensu</strong>. Firma z Ursusa i firma z Białołęki nie konkurują ze sobą praktycznie w ogóle, mimo że obie są „w Warszawie". Dzieli je czterdzieści minut jazdy i dwie zupełnie różne pule zapytań.
+      </p>
+      <p>
+        To pierwsza rzecz, którą trzeba zrozumieć przed jakąkolwiek pracą nad profilem. W mniejszym mieście jedna dobrze ustawiona wizytówka obsługuje cały rynek. W Warszawie <strong>obsługuje dzielnicę, czasem kilka ulic</strong>. Cały plan działania wynika z tego jednego faktu.
+      </p>
+
+      <h2>Dlaczego promień widoczności jest w Warszawie najkrótszy w Polsce</h2>
+      <p>
+        Odległość od użytkownika do firmy jest jednym z trzech filarów, na których Google opiera wyniki lokalne, obok trafności i popularności. Ale odległość nie działa jako sztywny promień w kilometrach. Działa <strong>względnie: liczy się, ilu podobnych firm jest bliżej niż Ty</strong>.
+      </p>
+      <p>
+        I tu leży specyfika Warszawy. W Sieradzu fryzjer w promieniu dwóch kilometrów ma trzech konkurentów. Na Mokotowie ma ich pięćdziesięciu. Ta sama fizyczna odległość oznacza w Warszawie zupełnie inną pozycję, bo między Tobą a użytkownikiem mieści się dziesięć razy więcej alternatyw. Efekt praktyczny: <strong>zasięg profilu w centrum Warszawy potrafi kończyć się po kilometrze</strong>, podczas gdy w mieście powiatowym obejmuje całą gminę.
+      </p>
+      <p>
+        Wniosek nie jest przygnębiający, tylko porządkujący. Przestań mierzyć się z „Warszawą" i zacznij mierzyć się z obszarem, w którym realnie możesz wygrać. Jak mierzyć widoczność punkt po punkcie, opisaliśmy w tekście o <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+      </p>
+
+      <h2>Jak wyznaczyć swój realny rynek</h2>
+      <p>
+        Zrób to na kartce, zanim dotkniesz panelu. Wypisz dzielnice, z których faktycznie przychodzą klienci, sprawdzając to w rachunkach, w kalendarzu wizyt albo w historii dojazdów. Nie zgaduj i nie licz na to, że ktoś przyjedzie z drugiego brzegu Wisły, bo w Warszawie Wisła jest realną barierą decyzyjną, nie tylko geograficzną.
+      </p>
+      <p>
+        Potem sprawdź, gdzie faktycznie się wyświetlasz. Otwórz Mapy Google na telefonie, przejedź się po kilku punktach swojej dzielnicy i sąsiednich, i za każdym razem wpisz frazę, na której Ci zależy. Zapisz pozycję. Po godzinie takiej jazdy będziesz mieć obraz, którego nie da Ci żadne narzędzie w abonamencie: <strong>mapę własnej widoczności z dokładnością do ulicy</strong>.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-sky-400 bg-sky-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-2">Praktyczna uwaga</p>
+        <p className="text-sm text-sky-900 leading-relaxed">
+          Sprawdzając własne pozycje, wyloguj się z konta Google albo użyj trybu incognito. Zalogowany widzisz wyniki spersonalizowane historią, w tym własną firmę wyżej, niż widzi ją klient. To najczęstszy powód, dla którego właściciel firmy jest przekonany, że „jest w top 3", a telefonów nie ma.
+        </p>
+      </div>
+
+      <h2>Kategoria i usługi w rynku o dużej gęstości</h2>
+      <p>
+        W Warszawie precyzja kategorii waży więcej niż gdziekolwiek indziej, bo jest z kim przegrać. Jeśli robisz wyłącznie manicure, kategoria „Salon paznokci" da Ci lepszą pozycję na frazie zakupowej niż szeroki „Salon kosmetyczny", w którym konkurujesz z setkami profili świadczących dziesięć innych usług.
+      </p>
+      <p>
+        Ta sama zasada dotyczy sekcji usług. W rynku o tej gęstości <strong>wygrywa profil, który dokładniej odpowiada na konkretne zapytanie</strong>, a nie ten, który obiecuje wszystko. Rozpisaliśmy tę mechanikę w przewodniku po <Link href="/kategorie-wizytowka-google">kategoriach w wizytówce Google</Link> i w tekście o <Link href="/uslugi-wizytowka-google-business">sekcji usług</Link>.
+      </p>
+
+      <h2>Kilka punktów jednej firmy: gdzie to pomaga, a gdzie szkodzi</h2>
+      <p>
+        Warszawa to jedyne polskie miasto, w którym otwarcie drugiego punktu jest naturalną strategią widocznościową, a nie tylko biznesową. Druga lokalizacja w innej części miasta daje drugi profil, drugi zestaw opinii i drugi obszar widoczności.
+      </p>
+      <p>
+        Warunek jest jeden i bezwzględny: <strong>każdy punkt musi być realnym miejscem, w którym obsługujesz klientów</strong>, z własnym personelem i własnymi godzinami. Wirtualne biura i adresy współdzielone w coworkingach są w Warszawie masowo zgłaszane przez konkurencję i masowo zawieszane. Jeśli obie lokalizacje mają tę samą kategorię główną i ten sam obszar, Google zwykle pokaże tylko jedną z nich, więc różnicuj kategorie i obszary. Szerzej opisaliśmy to przy <Link href="/wiele-lokalizacji-google-business-profile">wielu lokalizacjach w Google Business Profile</Link>.
+      </p>
+
+      <h2>Opinie: tempo, nie tylko liczba</h2>
+      <p>
+        Na rynku warszawskim konkurent z tysiącem opinii nie jest rzadkością. Dogonienie go liczbą jest niemożliwe i nie jest potrzebne. <strong>Google patrzy również na świeżość i regularność</strong>, a profil, który dostaje osiem opinii miesięcznie, wygląda w oczach algorytmu inaczej niż profil z tysiącem recenzji, z których ostatnia jest sprzed roku.
+      </p>
+      <p>
+        Realny cel dla warszawskiej firmy usługowej to stały strumień, a nie zryw. Poproś o opinię po każdej obsłudze, odpowiadaj na wszystkie w ciągu doby i pilnuj, żeby w odpowiedziach padała nazwa dzielnicy i usługi. Metodykę zbierania rozpisaliśmy w tekście o <Link href="/opinie-google-jak-zdobywac-skutecznie">skutecznym zdobywaniu opinii Google</Link>.
+      </p>
+
+      <h2>Sygnały ze strony internetowej</h2>
+      <p>
+        W Warszawie strona przestaje być dodatkiem. Przy tej konkurencji to często ona rozstrzyga remis między dwoma podobnymi profilami. Trzy rzeczy, które robią najwięcej: <strong>osobne podstrony pod dzielnice</strong>, w których faktycznie pracujesz, dane strukturalne <code>LocalBusiness</code> spójne z profilem, i adres w stopce identyczny co do znaku z tym w wizytówce. Jak wgrać schemę, opisaliśmy w poradniku o <Link href="/jak-dodac-local-schema-do-strony">dodawaniu Local Schema</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy da się wypozycjonować wizytówkę na całą Warszawę?</h3>
+      <p>
+        Nie w sensie, w jakim się o tym zwykle myśli. Nie istnieje ustawienie, które pokaże Twój profil użytkownikowi z drugiego końca miasta, jeśli między wami jest kilkadziesiąt bliższych firm z tej samej kategorii. Realny cel to dominacja we własnej dzielnicy i sąsiednich, a szerszy zasięg buduje się kolejnymi lokalizacjami albo widocznością organiczną strony.
+      </p>
+
+      <h3>Czy warto dopisać „Warszawa" do nazwy firmy?</h3>
+      <p>
+        Nazwa ma odpowiadać rzeczywistej nazwie firmy, tej z szyldu i faktur. Dopisanie miasta wyłącznie w panelu jest naruszeniem wytycznych, a w Warszawie zgłoszenia od konkurencji przychodzą szybko. Jeśli firma faktycznie tak się nazywa i jest tak oznaczona w terenie, sprawa jest czysta.
+      </p>
+
+      <h3>Ile czasu zajmuje wejście do top 3 w Warszawie?</h3>
+      <p>
+        Dłużej niż w mniejszych miastach, bo rywalizujesz z profilami prowadzonymi świadomie od lat. Uzupełnienie profilu daje pierwsze ruchy w kilka tygodni, ale stabilna pozycja na frazach zakupowych w gęstej dzielnicy to zwykle kwestia kilku miesięcy systematycznej pracy nad opiniami i treścią.
+      </p>
+
+      <ul>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/czynniki-rankingowe-wizytowki-google-2026">Czynniki rankingowe wizytówki Google w 2026</Link></li>
+        <li><Link href="/najwieksze-bledy-pozycjonowanie-wizytowki-google-2026">Największe błędy w pozycjonowaniu wizytówki</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-radom">Pozycjonowanie wizytówki Google Radom</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Kraków
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-krakow": (
+    <>
+      <p>
+        Kraków, z około 809 tysiącami mieszkańców, ma w Mapach Google problem, którego nie ma żadne inne polskie miasto poza Trójmiastem: <strong>na jednym terenie żyją obok siebie dwa różne rynki</strong>. Pierwszy to mieszkańcy Nowej Huty, Krowodrzy, Podgórza i Bronowic, którzy szukają fryzjera, mechanika i dentysty blisko domu. Drugi to ruch turystyczny skoncentrowany w obrębie Plant i na Kazimierzu, który szuka zupełnie innych rzeczy, o innych porach i w innym języku.
+      </p>
+      <p>
+        Te dwa rynki wymagają innych ustawień profilu. Firma, która próbuje obsłużyć oba jednym zestawem kategorii, zdjęć i godzin, zwykle przegrywa w obu.
+      </p>
+
+      <h2>Który z dwóch rynków jest Twój</h2>
+      <p>
+        Odpowiedz sobie na to uczciwie, zanim zaczniesz cokolwiek zmieniać. Sygnały są proste. Jeśli większość klientów wraca, mieszka w promieniu kilku kilometrów i przychodzi w tygodniu po pracy, obsługujesz rynek mieszkańców. Jeśli klienci przychodzą raz, płacą kartą zagraniczną i pojawiają się w weekendy i wakacje, obsługujesz ruch turystyczny.
+      </p>
+      <p>
+        Wiele krakowskich firm obsługuje oba, ale w różnych proporcjach. <strong>Profil ustawiasz pod ten, który daje więcej pieniędzy</strong>, a drugi obsługujesz uzupełniająco.
+      </p>
+
+      <h2>Ustawienia pod rynek mieszkańców</h2>
+      <p>
+        Tu obowiązują reguły takie jak w każdym dużym mieście: precyzyjna kategoria główna, komplet usług, opinie zbierane systematycznie, zdjęcia z wnętrza i regularne posty. Różnica krakowska polega na tym, że <strong>dzielnice mają tu bardzo silną tożsamość</strong> i mieszkańcy realnie wpisują ich nazwy w wyszukiwarkę. „Fryzjer Nowa Huta" i „fryzjer Kraków" to dwa różne zapytania z różnymi wynikami.
+      </p>
+      <p>
+        Konsekwencja praktyczna: nazwa dzielnicy powinna pojawiać się naturalnie w opisie firmy, w odpowiedziach na opinie i na stronie internetowej. Jak napisać opis, żeby nie brzmiał sztucznie, pokazujemy w tekście o <Link href="/opis-firmy-google-business-profile-jak-napisac">opisie firmy w Google Business Profile</Link>.
+      </p>
+
+      <h2>Ustawienia pod ruch turystyczny</h2>
+      <p>
+        Tu zmienia się prawie wszystko. Po pierwsze, <strong>godziny otwarcia muszą być bezwzględnie aktualne</strong>, łącznie z godzinami specjalnymi w święta i długie weekendy, bo turysta nie zadzwoni, żeby sprawdzić, tylko pójdzie do następnego lokalu. Jak zarządzać godzinami, opisaliśmy przy <Link href="/godziny-otwarcia-wizytowka-google">godzinach otwarcia w wizytówce</Link>.
+      </p>
+      <p>
+        Po drugie, atrybuty. Płatność kartą, obsługa w języku angielskim, dostępność dla osób z niepełnosprawnościami, toaleta, wi-fi. To są rzeczy, które turysta filtruje w Mapach, zanim w ogóle spojrzy na ocenę. Szerzej o tym w przewodniku po <Link href="/atrybuty-wizytowka-google">atrybutach wizytówki</Link>.
+      </p>
+      <p>
+        Po trzecie, opinie w językach obcych. <strong>Nie tłumacz ich i nie proś o polskie</strong>. Opinia po angielsku czy hiszpańsku jest sygnałem dla algorytmu i dla kolejnego turysty, że to miejsce obsługuje takich jak on. Odpowiadaj w języku opinii, choćby krótko.
+      </p>
+
+      <h2>Adres w centrum: przewaga i pułapka</h2>
+      <p>
+        Adres w obrębie Plant to ogromna przewaga dla firmy obsługującej ruch pieszy i realny problem dla firmy, która żyje z klienta dojeżdżającego. W centrum Krakowa parkowanie jest trudne i płatne, a część ulic jest wyłączona z ruchu. <strong>Klient, który tego nie sprawdzi, przyjedzie raz i nie wróci</strong>, a często zostawi negatywną opinię o czymś, na co nie masz wpływu.
+      </p>
+      <p>
+        Rozwiązanie jest proste i prawie nikt go nie stosuje: opisz dojazd i parkowanie wprost. W opisie firmy, w sekcji pytań i odpowiedzi, na zdjęciach. Jedno zdjęcie wejścia z widoczną ulicą i jedno zdanie „najbliższy parking podziemny w odległości 200 metrów" oszczędza Ci połowę reklamacji. Mechanikę sekcji Q&A opisaliśmy w tekście o <Link href="/pytania-odpowiedzi-wizytowka-google">pytaniach i odpowiedziach w wizytówce</Link>.
+      </p>
+
+      <h2>Sezonowość, o której trzeba pamiętać</h2>
+      <p>
+        Ruch w Krakowie ma wyraźne szczyty: majówka, wakacje, długi weekend sierpniowy, okres świąteczny. Profil powinien to odzwierciedlać, a nie stać w miejscu. Przed każdym szczytem sprawdź godziny specjalne, dodaj post o dostępności i wrzuć świeże zdjęcia. To niewielka praca, która ma tę zaletę, że <strong>utrzymuje profil aktywny dokładnie wtedy, gdy zapytań jest najwięcej</strong>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy opinie po angielsku pomagają, czy szkodzą krakowskiej firmie?</h3>
+      <p>
+        Pomagają, jeśli obsługujesz ruch turystyczny, bo potwierdzają, że miejsce jest przygotowane na obcojęzycznego klienta. Nie mają negatywnego wpływu na wyniki w polskich zapytaniach. Odpowiadaj na nie w tym samym języku, w którym zostały napisane.
+      </p>
+
+      <h3>Czy nazwa dzielnicy w nazwie firmy pomoże?</h3>
+      <p>
+        Tylko jeśli firma faktycznie tak się nazywa. Dopisanie „Kazimierz" czy „Nowa Huta" wyłącznie w panelu jest naruszeniem wytycznych. Nazwę dzielnicy umieszczaj w opisie, w treściach na stronie i w odpowiedziach na opinie, gdzie działa legalnie.
+      </p>
+
+      <h3>Co zrobić, gdy turysta wystawia jedną gwiazdkę za brak parkingu?</h3>
+      <p>
+        Odpowiedzieć spokojnie, podać konkret o najbliższym parkingu i uzupełnić tę informację w profilu, żeby kolejny klient znalazł ją zawczasu. Taka opinia zwykle nie kwalifikuje się do usunięcia, ale dobra odpowiedź neutralizuje jej wpływ na kolejnych czytających. Więcej w tekście o tym, <Link href="/negatywna-opinia-google-co-zrobic">co zrobić z negatywną opinią</Link>.
+      </p>
+
+      <ul>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">Jakie zdjęcia w wizytówce naprawdę działają</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-torun">Pozycjonowanie wizytówki Google Toruń</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-czestochowa">Pozycjonowanie wizytówki Google Częstochowa</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Wrocław
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-wroclaw": (
+    <>
+      <p>
+        Wrocław, około 673 tysiące mieszkańców, leży na Odrze i jej kanałach, ma kilkanaście wysp i ponad sto mostów. Dla lokalnego SEO to nie jest ciekawostka turystyczna, tylko <strong>realny czynnik, który rozjeżdża odległość w linii prostej z czasem dojazdu</strong>.
+      </p>
+      <p>
+        Firma na Kleczkowie i klient na Ostrowie Tumskim mogą być od siebie o kilometr w linii prostej i o dwadzieścia minut jazdy w godzinach szczytu. Google liczy odległość, klient liczy czas. Ta różnica decyduje o tym, że część teoretycznie bliskich zapytań i tak do Ciebie nie trafi, a część teoretycznie dalekich, wzdłuż dobrej osi komunikacyjnej, trafi bez problemu.
+      </p>
+
+      <h2>Osiedla, nie dzielnice</h2>
+      <p>
+        Podział administracyjny Wrocławia obejmuje kilkadziesiąt osiedli i to właśnie ich nazwami posługują się mieszkańcy. Nikt nie mówi „szukam mechanika w dzielnicy Krzyki", tylko „mechanik Gaj", „mechanik Borek", „mechanik Ołtaszyn". <strong>Zapytania z nazwą osiedla są węższe, mniej oblegane i bliższe realnej intencji</strong> niż zapytania z nazwą miasta.
+      </p>
+      <p>
+        To jest praktyczna szansa dla mniejszej firmy. Walka o „fryzjer Wrocław" jest trudna i długa. Walka o „fryzjer Popowice" jest do wygrania w kilka tygodni, a klient z Popowic i tak jest tym, którego realnie obsłużysz. Wypisz trzy, cztery osiedla, z których przychodzi najwięcej klientów, i zbuduj wokół nich treści na stronie oraz język opisu firmy.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-violet-400 bg-violet-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-violet-700 mb-2">Test, który warto zrobić</p>
+        <p className="text-sm text-violet-900 leading-relaxed">
+          Sprawdź swoją frazę z nazwą miasta i tę samą frazę z nazwą swojego osiedla. Jeśli wyniki znacząco się różnią, a zwykle się różnią, masz przed sobą dwa osobne cele, a nie jeden. Zacznij od tego, który jest bliżej wygrania.
+        </p>
+      </div>
+
+      <h2>Obszar działania a rzeka</h2>
+      <p>
+        Firmy pracujące z dojazdem powinny we Wrocławiu wyznaczać obszar wzdłuż osi komunikacyjnych, a nie kołem na mapie. Koło o promieniu ośmiu kilometrów obejmie tereny, do których dojedziesz w czterdzieści minut przez trzy mosty, i pominie miejscowości, do których jedziesz kwadrans dobrą drogą wylotową.
+      </p>
+      <p>
+        Praktycznie: przejrzyj swoje ostatnie pięćdziesiąt zleceń, wypisz miejscowości i osiedla, posortuj po czasie dojazdu i dopiero z tej listy zbuduj obszar w profilu. To dziesięć minut pracy, które oszczędza miesiące wyświetlania się nie tam, gdzie trzeba.
+      </p>
+
+      <h2>Konkurencja: co realnie sprawdzić</h2>
+      <p>
+        Profil konkurenta jest w całości jawny i we Wrocławiu warto z tego korzystać, bo rynek jest na tyle duży, że intuicja zawodzi. Sprawdź u trzech firm stojących nad Tobą: kategorię główną, liczbę i datę ostatniej opinii, czy odpowiadają na recenzje, czy mają wypełnioną sekcję usług i do jakiego adresu prowadzi ich link. <strong>Cztery pierwsze pozycje dorównasz w jedno popołudnie, opinie wymagają miesięcy</strong> i to jest cała informacja, której potrzebujesz do zaplanowania pracy.
+      </p>
+
+      <h2>Rynek studencki i mobilny</h2>
+      <p>
+        Wrocław jest jednym z największych ośrodków akademickich w kraju, co oznacza dużą grupę klientów, którzy zmieniają miejsce zamieszkania co rok i szukają wyłącznie w telefonie, po nazwie osiedla albo najbliższego przystanku. Dla firmy usługowej to oznacza dwie rzeczy: <strong>profil musi wyglądać dobrze na małym ekranie</strong>, czyli mieć czytelne zdjęcia i aktualne godziny, oraz musi mieć świeże opinie, bo klient bez lokalnych znajomych opiera decyzję prawie wyłącznie na nich.
+      </p>
+      <p>
+        Wrzesień i październik są tu najważniejszymi miesiącami w roku. Warto na ten czas przygotować zdjęcia, posty i zapas świeżych recenzji, zamiast reagować, gdy sezon już trwa.
+      </p>
+
+      <h2>Strona internetowa</h2>
+      <p>
+        Przy tej wielkości rynku strona przestaje być ozdobą. Minimum, które ma sens: podstrony pod trzy, cztery osiedla lub rejony, w których pracujesz, dane strukturalne <code>LocalBusiness</code> zgodne z profilem i identyczny zapis adresu w stopce oraz w wizytówce. Rozbieżności w NAP są jednym z najczęstszych cichych hamulców, o czym piszemy w tekście o <Link href="/nap-wizytowka-google-co-to-jest">spójności NAP</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy warto robić osobne podstrony pod wrocławskie osiedla?</h3>
+      <p>
+        Tak, pod warunkiem że każda ma unikalną treść: realny czas dojazdu, konkretne ulice, przykłady zleceń z tego rejonu. Podstrony różniące się wyłącznie podmienioną nazwą osiedla to doorway pages i szkodzą całej domenie.
+      </p>
+
+      <h3>Jak daleko sięga widoczność profilu we Wrocławiu?</h3>
+      <p>
+        Zależy od gęstości konkurencji w Twojej kategorii. W centrum bywa to kilometr albo dwa, na obrzeżach znacznie więcej. Jedyny wiarygodny sposób, żeby to ustalić, to sprawdzenie własnej pozycji z kilkunastu punktów miasta w trybie incognito.
+      </p>
+
+      <h3>Czy rzeka faktycznie wpływa na wyniki w Mapach?</h3>
+      <p>
+        Nie bezpośrednio, bo Google liczy odległość, a nie przeprawy. Wpływa pośrednio i mocno: użytkownicy z drugiego brzegu rzadziej klikają i rzadziej dzwonią, a sygnały behawioralne mają znaczenie. W praktyce oznacza to, że warto koncentrować działania po swojej stronie miasta.
+      </p>
+
+      <ul>
+        <li><Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">Jak poprawić widoczność profilu firmy w Mapach</Link></li>
+        <li><Link href="/seo-lokalne-dla-firm">SEO lokalne dla firm usługowych</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-legnica">Pozycjonowanie wizytówki Google Legnica</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-opole">Pozycjonowanie wizytówki Google Opole</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Łódź
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-lodz": (
+    <>
+      <p>
+        Łódź, około 646 tysięcy mieszkańców, jest miastem kamienic z podwórkami, oficynami i przejściami bramnymi. Dla lokalnego SEO oznacza to problem, który w innych miastach prawie nie występuje: <strong>pinezka firmy potrafi wskazywać zupełnie inne miejsce niż wejście do lokalu</strong>.
+      </p>
+      <p>
+        Gabinet w oficynie pod tym samym numerem co pięć innych firm, wejście od podwórka, klatka bez oznaczenia. Google stawia pinezkę na środku budynku albo na ulicy, klient dochodzi pod adres, nie znajduje wejścia i dzwoni zdenerwowany albo wcale. To nie jest kosmetyka, tylko realna strata konwersji, która nie widać w żadnym raporcie pozycji.
+      </p>
+
+      <h2>Popraw lokalizację pinezki, zanim zaczniesz cokolwiek innego</h2>
+      <p>
+        W Google Business Profile wejdź w edycję adresu i skorzystaj z opcji ustawienia znacznika na mapie. Przesuń pinezkę dokładnie na wejście, z którego korzystają klienci, a nie na środek działki. Jeśli wejście jest od podwórka, postaw ją przy bramie wjazdowej, bo to tam kończy się nawigacja samochodowa.
+      </p>
+      <p>
+        Zmiana wchodzi zwykle w ciągu kilku dni i bywa jedną z najtańszych rzeczy o realnym wpływie na liczbę klientów, jakie można zrobić w łódzkim profilu.
+      </p>
+
+      <h2>Opisz dojście, bo nikt inny tego nie zrobi</h2>
+      <p>
+        Trzy miejsca, w których warto to zrobić, i wszystkie są darmowe. <strong>Opis firmy</strong>: jedno zdanie o tym, że wejście jest od podwórka i jak trafić. <strong>Zdjęcia</strong>: fotografia bramy z numerem, fotografia drzwi wejściowych, fotografia szyldu. <strong>Sekcja pytań i odpowiedzi</strong>: możesz sam zadać pytanie „jak trafić do gabinetu?" i sam na nie odpowiedzieć, co jest w pełni zgodne z zasadami i pojawia się wysoko w profilu.
+      </p>
+      <p>
+        Zdjęcie bramy z widocznym numerem posesji jest w Łodzi jednym z najbardziej niedocenianych elementów profilu. Kosztuje minutę, a rozwiązuje problem, który generuje telefony i negatywne opinie. Więcej o doborze zdjęć w tekście o <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">zdjęciach w wizytówce, które działają</Link>.
+      </p>
+
+      <h2>Miasto rozciągnięte z północy na południe</h2>
+      <p>
+        Łódź jest długa, a jej układ komunikacyjny prowadzi przez centrum. Bałuty i Górna to dwa różne rynki, a firma z jednego krańca praktycznie nie istnieje w wynikach na drugim. Podobnie jak w innych dużych miastach, <strong>realnym celem jest rejon, a nie całe miasto</strong>, a nazwy dzielnic działają w wyszukiwarce lepiej niż nazwa miasta.
+      </p>
+      <p>
+        Warto sprawdzić własną widoczność z kilku punktów: Bałuty, Widzew, Górna, Polesie, Śródmieście. Różnice będą duże i to one powinny wyznaczać, gdzie kierować budżet i uwagę.
+      </p>
+
+      <h2>Rewitalizacja i zmiany adresów</h2>
+      <p>
+        Łódzkie centrum przechodzi wieloletni proces remontów, a wraz z nim zmieniają się organizacje ruchu, dojazdy i numeracja wejść. Dla firmy oznacza to jedno: <strong>dane w profilu trzeba sprawdzać co jakiś czas, a nie ustawić raz</strong>. Zamknięta ulica dojazdowa, przeniesione wejście albo zmieniony parking to rzeczy, które klient odkryje na miejscu, jeśli nie odkryje ich w Mapach.
+      </p>
+      <p>
+        Jeśli firma faktycznie zmieniła adres, zaktualizuj go wszędzie naraz: w wizytówce, na stronie, w katalogach i w mediach społecznościowych. Rozjazd między źródłami osłabia rozpoznawalność firmy przez Google, o czym szerzej piszemy przy <Link href="/najwieksze-bledy-pozycjonowanie-wizytowki-google-2026">najczęstszych błędach w pozycjonowaniu wizytówki</Link>.
+      </p>
+
+      <h2>Czego nie robić</h2>
+      <p>
+        W Łodzi kuszące bywa zarejestrowanie profilu pod adresem w prestiżowej lokalizacji przy Piotrkowskiej, mimo że firma pracuje gdzie indziej. To jest naruszenie wytycznych, łatwe do zgłoszenia i kończy się zawieszeniem profilu, czyli utratą wszystkich opinii i pozycji naraz. Podobnie działają wirtualne biura. Więcej o tym, jak takie sytuacje wyglądają w praktyce, w tekście o <Link href="/wizytowka-google-popularne-oszustwa">popularnych oszustwach wokół wizytówki Google</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Jak przesunąć pinezkę wizytówki na właściwe wejście?</h3>
+      <p>
+        W panelu Google Business Profile otwórz edycję adresu, wybierz opcję poprawienia lokalizacji na mapie i przeciągnij znacznik na miejsce, w którym klient faktycznie wchodzi. Zmiana wymaga zwykle kilku dni na zatwierdzenie.
+      </p>
+
+      <h3>Czy mogę sam zadać pytanie w sekcji Q&A własnego profilu?</h3>
+      <p>
+        Tak. Google wprost dopuszcza dodawanie przez właściciela najczęstszych pytań wraz z odpowiedziami. To dobre miejsce na informację o dojściu, parkowaniu i płatnościach.
+      </p>
+
+      <h3>Czy adres w oficynie szkodzi pozycji?</h3>
+      <p>
+        Sam w sobie nie. Szkodzą jego konsekwencje: klienci, którzy nie trafiają, nie klikają w trasę i zostawiają gorsze opinie. Poprawna pinezka i opisane dojście neutralizują większość tego efektu.
+      </p>
+
+      <ul>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/sekcja-informacje-wizytowka-google">Sekcja Informacje w wizytówce Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-pabianice">Pozycjonowanie wizytówki Google Pabianice</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-piotrkow-trybunalski">Pozycjonowanie wizytówki Google Piotrków Trybunalski</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Poznań
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-poznan": (
+    <>
+      <p>
+        Poznań, około 536 tysięcy mieszkańców, ma strukturę zapytań lokalnych przechyloną w stronę biznesu bardziej niż jakiekolwiek inne duże polskie miasto. Silne otoczenie firm produkcyjnych i logistycznych, duży ośrodek akademicki i Międzynarodowe Targi Poznańskie w samym środku miasta składają się na rynek, w którym <strong>obok klienta indywidualnego stale funkcjonuje klient firmowy</strong>.
+      </p>
+      <p>
+        To zmienia sposób pracy nad profilem. Klient B2B szuka inaczej, klika inaczej i konwertuje inaczej niż osoba szukająca fryzjera przy domu.
+      </p>
+
+      <h2>Czym różni się zapytanie firmowe</h2>
+      <p>
+        Trzy różnice mają realne konsekwencje. Po pierwsze, <strong>zapytanie firmowe jest dłuższe i bardziej konkretne</strong>: nie „drukarnia Poznań", tylko „druk katalogów Poznań duży nakład". Po drugie, decyzja rzadko zapada od razu, więc liczy się nie tylko pozycja, ale i to, ile informacji profil daje bez konieczności dzwonienia. Po trzecie, <strong>godziny pracy mają znaczenie odwrotne niż w usługach konsumenckich</strong>, bo klient firmowy szuka w godzinach roboczych i oczekuje odbioru telefonu wtedy, gdy szuka.
+      </p>
+      <p>
+        Praktyczny wniosek: sekcja usług powinna być rozpisana szczegółowo, z nazwami procesów i technologii, a nie ogólnie. Mechanikę opisaliśmy w tekście o <Link href="/uslugi-wizytowka-google-business">sekcji usług w wizytówce</Link>.
+      </p>
+
+      <h2>Rytm targowy i co z nim zrobić</h2>
+      <p>
+        Kalendarz MTP zmienia strukturę zapytań w mieście kilka razy do roku. W tygodniach targowych rośnie liczba wyszukiwań usług okołobiznesowych, gastronomii, noclegów, transportu i drobnych usług serwisowych, a szuka ich osoba z zewnątrz, która nie zna miasta i decyduje w kilka minut.
+      </p>
+      <p>
+        Firma, która chce z tego skorzystać, potrzebuje trzech rzeczy: <strong>aktualnych godzin specjalnych na czas targów</strong>, posta informującego o dostępności w tych dniach i zdjęć, które wyglądają wiarygodnie dla kogoś, kto widzi firmę pierwszy raz. Post nie jest silnym czynnikiem rankingowym, ale w tygodniu targowym pełni rolę informacyjną i realnie zwiększa liczbę kontaktów. Jak używać postów sensownie, opisaliśmy przy <Link href="/posty-wizytowka-google">postach w wizytówce Google</Link>.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-amber-400 bg-amber-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-amber-700 mb-2">Częsty błąd</p>
+        <p className="text-sm text-amber-900 leading-relaxed">
+          Firmy ustawiają godziny specjalne na święta, a zapominają o tygodniach o zwiększonym ruchu. Jeśli w czasie targów pracujesz dłużej albo w sobotę, wpisz to jako godziny specjalne. Klient, który zobaczy „zamknięte", nie zadzwoni, żeby sprawdzić.
+        </p>
+      </div>
+
+      <h2>Dzielnice i osiedla</h2>
+      <p>
+        Dla klienta indywidualnego obowiązują w Poznaniu te same reguły co w innych dużych miastach: nazwy dzielnic i osiedli, Jeżyce, Grunwald, Wilda, Winogrady, Naramowice, są w wyszukiwarce bardziej precyzyjne niż nazwa miasta i łatwiejsze do wygrania. Warto wybrać dwa, trzy rejony, w których faktycznie masz klientów, i budować wokół nich treść na stronie.
+      </p>
+
+      <h2>Rynek akademicki</h2>
+      <p>
+        Wrzesień i październik to w Poznaniu miesiące, w których pula klientów częściowo się wymienia. Nowi mieszkańcy nie mają lokalnych rekomendacji i opierają decyzję prawie wyłącznie na profilu w Mapach. <strong>Świeże opinie ważą wtedy najwięcej w całym roku</strong>, bo są jedynym dostępnym dowodem.
+      </p>
+      <p>
+        Sensowne przygotowanie to zebranie serii recenzji w sierpniu, uzupełnienie zdjęć i sprawdzenie, czy wszystkie informacje w profilu są aktualne. Metodykę opisaliśmy w tekście o <Link href="/opinie-google-jak-zdobywac-skutecznie">zdobywaniu opinii Google</Link>.
+      </p>
+
+      <h2>Strona i dane strukturalne</h2>
+      <p>
+        Przy kliencie firmowym strona ma większe znaczenie niż w usługach konsumenckich, bo decyzja zapada po przejrzeniu oferty, a nie po jednym telefonie. Minimum: osobne podstrony pod główne usługi, spójne dane <code>LocalBusiness</code> i identyczny zapis nazwy oraz adresu wszędzie. Jak wgrać schemę poprawnie, opisaliśmy w poradniku o <Link href="/jak-dodac-local-schema-do-strony">dodawaniu Local Schema do strony</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy wizytówka Google ma sens dla firmy B2B?</h3>
+      <p>
+        Ma, choć działa inaczej. Klient firmowy rzadziej dzwoni prosto z Map, ale często sprawdza w nich wiarygodność dostawcy przed kontaktem. Kompletny profil z aktualnymi danymi i sensownymi opiniami działa wtedy jak weryfikacja, a jego brak budzi wątpliwości.
+      </p>
+
+      <h3>Jak ustawić godziny na czas targów?</h3>
+      <p>
+        W panelu wizytówki użyj godzin specjalnych, a nie zmieniaj godzin standardowych. Godziny specjalne dotyczą konkretnych dat i po ich upływie profil sam wraca do zwykłego grafiku.
+      </p>
+
+      <h3>Czy warto prowadzić posty poza sezonem targowym?</h3>
+      <p>
+        Warto, ale bez przesady. Jeden sensowny post tygodniowo utrzymuje profil w ruchu i daje miejsce na informacje, których nie ma gdzie indziej. Codzienne publikowanie nie przynosi proporcjonalnej korzyści.
+      </p>
+
+      <ul>
+        <li><Link href="/czynniki-rankingowe-wizytowki-google-2026">Czynniki rankingowe wizytówki Google w 2026</Link></li>
+        <li><Link href="/seo-lokalne-dla-firm">SEO lokalne dla firm usługowych</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-gniezno">Pozycjonowanie wizytówki Google Gniezno</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-leszno">Pozycjonowanie wizytówki Google Leszno</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Gdańsk
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-gdansk": (
+    <>
+      <p>
+        Gdańsk ma około 488 tysięcy mieszkańców, ale jego rynek lokalny trzeba czytać razem z Sopotem i Gdynią. Trójmiasto jest dla mieszkańca jednym organizmem: pracuje się w Gdańsku, mieszka w Gdyni, jeździ do Sopotu. <strong>Dla algorytmu Map to nadal trzy osobne miasta</strong> i ta rozbieżność jest źródłem większości nieporozumień przy pozycjonowaniu profilu na Pomorzu.
+      </p>
+      <p>
+        Praktyczny skutek: firma z Gdańska Oliwy realnie konkuruje o klienta z Sopotu, ale w zapytaniu „usługa Sopot" zwykle przegra z firmą, która ma sopocki adres. A w zapytaniu bez nazwy miasta, gdzie decyduje lokalizacja szukającego, wygra wtedy, gdy jest po prostu bliżej.
+      </p>
+
+      <h2>Gdańsk jest długi, a to zmienia zasięg</h2>
+      <p>
+        Miasto ciągnie się od Wyspy Sobieszewskiej po Osowę, a między tymi krańcami jest kilkadziesiąt minut jazdy. Profil z Chełmu i profil z Oliwy praktycznie nie widzą się nawzajem w wynikach. <strong>Realnym celem nie jest „Gdańsk", tylko pas dzielnic wzdłuż Twojej osi dojazdu</strong>: Śródmieście z Wrzeszczem, Wrzeszcz z Oliwą, Chełm z Orunią.
+      </p>
+      <p>
+        Pierwsze zadanie jest więc pomiarowe, nie optymalizacyjne. Sprawdź, z których punktów miasta w ogóle jesteś widoczny, zanim zaczniesz cokolwiek zmieniać. Jak to zrobić bez płatnych narzędzi, opisaliśmy w tekście o <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności w Mapach</Link>.
+      </p>
+
+      <h2>Obszar działania dla firm mobilnych w Trójmieście</h2>
+      <p>
+        Firma pracująca z dojazdem może w profilu wskazać obsługiwane miejscowości zamiast adresu i tu leży największa przewaga na Pomorzu: <strong>obszar może objąć Gdańsk, Sopot i Gdynię naraz</strong>, czego firma z lokalem nie zrobi. Ranking nadal liczy się od punktu, w którym fizycznie jesteś, ale sam fakt objęcia trzech miast otwiera pulę zapytań, do której inaczej nie masz dostępu.
+      </p>
+      <p>
+        Warunek: adres musi zostać ukryty, a firma faktycznie musi dojeżdżać. Profil z widocznym adresem domowym i deklarowanym obszarem trzech miast jest zgłaszany i zawieszany.
+      </p>
+
+      <h2>Sezon i turystyka</h2>
+      <p>
+        Lipiec i sierpień zmieniają w Gdańsku strukturę zapytań, zwłaszcza w Śródmieściu, na Głównym Mieście i w pasie nadmorskim. Pojawia się klient jednorazowy, obcojęzyczny, decydujący w kilka minut i filtrujący po atrybutach. Godziny otwarcia, płatność kartą i obsługa w języku angielskim przestają być kosmetyką, a stają się warunkiem wejścia do rozważanego zbioru.
+      </p>
+      <p>
+        Poza sezonem ten sam profil obsługuje mieszkańców, więc nie ma sensu przestawiać go całkowicie. Wystarczy, że informacje sezonowe są aktualne i że godziny specjalne odpowiadają rzeczywistości. Szerzej przy <Link href="/godziny-otwarcia-wizytowka-google">godzinach otwarcia w wizytówce</Link>.
+      </p>
+
+      <h2>Opinie w aglomeracji</h2>
+      <p>
+        W Trójmieście warto zwrócić uwagę na jedną rzecz, która umyka: <strong>treść opinii buduje widoczność w miejscowościach, o których wspominają klienci</strong>. Jeśli kilkanaście recenzji mówi „przyjechał do Sopotu" albo „obsługa w Gdyni", to jest sygnał, którego nie da się kupić żadnym ustawieniem. Nie dyktuj treści, ale prosząc o opinię, warto poprosić o opisanie, gdzie i co się działo.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy firma z Gdańska może wyświetlać się w Gdyni?</h3>
+      <p>
+        W zapytaniach z nazwą „Gdynia" jest to trudne, bo Google preferuje profile z adresem w danym mieście. W zapytaniach bez nazwy miasta, gdzie liczy się lokalizacja szukającego, jest to możliwe, jeśli jesteś realnie blisko. Firma mobilna może dodatkowo objąć Gdynię obszarem działania.
+      </p>
+
+      <h3>Czy warto mieć osobne wizytówki w Gdańsku i Gdyni?</h3>
+      <p>
+        Tylko wtedy, gdy masz w obu miastach realne, obsadzone lokalizacje. Sztucznie tworzone profile pod adresami wirtualnymi są zgłaszane i zawieszane, a ryzyko obejmuje także profil główny.
+      </p>
+
+      <h3>Jak przygotować profil na sezon letni?</h3>
+      <p>
+        Sprawdź godziny specjalne na lipiec i sierpień, uzupełnij atrybuty istotne dla klienta z zewnątrz, dodaj zdjęcia zrobione w sezonie i zadbaj o świeże opinie. To wystarczy, żeby profil odpowiadał na pytania, które klient zadaje sobie przed wejściem.
+      </p>
+
+      <ul>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/atrybuty-wizytowka-google">Atrybuty w wizytówce Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-gdynia">Pozycjonowanie wizytówki Google Gdynia</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-tczew">Pozycjonowanie wizytówki Google Tczew</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Szczecin
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-szczecin": (
+    <>
+      <p>
+        Szczecin, około 388 tysięcy mieszkańców, ma coś, czego nie ma żadne inne duże polskie miasto: <strong>realnego klienta zza zachodniej granicy w codziennym, a nie okazjonalnym ruchu</strong>. Odległość do granicy jest niewielka, a różnice cen w usługach zdrowotnych, kosmetycznych i motoryzacyjnych na tyle duże, że dla części szczecińskich firm klient niemiecki to stała pozycja w kalendarzu.
+      </p>
+      <p>
+        To otwiera pulę zapytań, o którą prawie nikt lokalnie nie walczy, i jednocześnie wymaga innych ustawień profilu, niż przyjęło się stosować.
+      </p>
+
+      <h2>Kiedy przygotowanie profilu pod klienta niemieckiego ma sens</h2>
+      <p>
+        Nie zawsze. Sprawdź najpierw, czy w Twojej branży ten ruch faktycznie istnieje, patrząc na własną bazę klientów i na to, czy konkurenci mają opinie po niemiecku. Jeśli tak, warto działać. Jeśli nie, lepiej włożyć tę samą pracę w rynek lokalny.
+      </p>
+      <p>
+        Branże, w których ten ruch jest zauważalny: stomatologia i medycyna estetyczna, fryzjerstwo i kosmetyka, warsztaty i wulkanizacja, usługi remontowe. W większości pozostałych zapytanie transgraniczne praktycznie nie występuje.
+      </p>
+
+      <h2>Co konkretnie ustawić</h2>
+      <p>
+        Profil Google Business Profile obsługuje jedną nazwę, więc <strong>nie tłumacz nazwy firmy</strong>. Zamiast tego użyj miejsc, które da się zlokalizować językowo: atrybut informujący o obsłudze w danym języku, opis firmy zawierający naturalne wzmianki o obsłudze klientów niemieckojęzycznych oraz strona internetowa z osobną wersją językową pod własnym adresem URL.
+      </p>
+      <p>
+        Opinie po niemiecku zostaw w oryginale i odpowiadaj w tym samym języku, choćby krótko. Dla algorytmu i dla kolejnego klienta to jest najsilniejszy dostępny sygnał, że firma faktycznie obsługuje taki ruch.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-blue-400 bg-blue-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">Uwaga praktyczna</p>
+        <p className="text-sm text-blue-900 leading-relaxed">
+          Wersja niemieckojęzyczna strony musi mieć własny adres URL i poprawne znaczniki języka. Tłumaczenie automatyczne wtyczką, które podmienia treść pod tym samym adresem, nie zostanie zaindeksowane jako osobna strona i nie da żadnej widoczności w niemieckich wynikach.
+        </p>
+      </div>
+
+      <h2>Układ miasta a zasięg profilu</h2>
+      <p>
+        Szczecin ma gwiaździsty układ ulic z placami, z których rozchodzą się promieniste aleje, oraz duże obszary zieleni i wody rozdzielające dzielnice. Efekt jest podobny jak we Wrocławiu: <strong>odległość w linii prostej rozmija się z czasem dojazdu</strong>, a intuicja o zasięgu profilu bywa myląca.
+      </p>
+      <p>
+        Praktycznie oznacza to, że Prawobrzeże i lewy brzeg funkcjonują jak dwa osobne rynki, mimo że administracyjnie to jedno miasto. Firma z Prawobrzeża rzadko wygrywa zapytania z centrum i odwrotnie. Zanim uznasz, że profil „nie działa", sprawdź, z których punktów miasta w ogóle jesteś widoczny.
+      </p>
+
+      <h2>Konkurencja: rynek mniej nasycony niż się wydaje</h2>
+      <p>
+        Szczecin jest dużym miastem o stosunkowo niskiej gęstości profili prowadzonych świadomie. W wielu kategoriach pierwsza trójka to firmy z kompletnym profilem, ale bez systematycznej pracy nad opiniami i bez odpowiedzi na recenzje. <strong>To jest przestrzeń, którą da się zająć w kilka miesięcy</strong>, a nie w kilka lat, jak w Warszawie czy Krakowie.
+      </p>
+      <p>
+        Sprawdzenie tego zajmuje kwadrans: otwórz trzy profile stojące nad Tobą i zobacz datę ostatniej opinii, obecność odpowiedzi właściciela i wypełnienie sekcji usług. Wnioski zwykle są zaskakująco optymistyczne.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy mogę mieć wizytówkę w dwóch językach?</h3>
+      <p>
+        Profil ma jedną nazwę i jeden opis podstawowy, ale Google wyświetla treści w zależności od ustawień użytkownika, a opinie pozostają w językach oryginalnych. Najskuteczniejsza droga do widoczności obcojęzycznej prowadzi przez osobną wersję językową strony internetowej.
+      </p>
+
+      <h3>Czy warto dopisać do nazwy słowo po niemiecku?</h3>
+      <p>
+        Nie. Nazwa ma odpowiadać rzeczywistej nazwie firmy. Informację o obsłudze w innym języku umieść w atrybutach i w opisie, gdzie działa zgodnie z wytycznymi.
+      </p>
+
+      <h3>Czy Prawobrzeże wymaga osobnej wizytówki?</h3>
+      <p>
+        Tylko jeśli masz tam realny, obsadzony punkt. Sam fakt, że chcesz być tam widoczny, nie jest podstawą do utworzenia drugiego profilu.
+      </p>
+
+      <ul>
+        <li><Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">Jak poprawić widoczność profilu firmy w Mapach</Link></li>
+        <li><Link href="/opis-firmy-google-business-profile-jak-napisac">Jak napisać opis firmy w Google Business Profile</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-stargard">Pozycjonowanie wizytówki Google Stargard</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-swinoujscie">Pozycjonowanie wizytówki Google Świnoujście</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Lublin
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-lublin": (
+    <>
+      <p>
+        Lublin, około 329 tysięcy mieszkańców, jest największym ośrodkiem akademickim wschodniej Polski i to nadaje jego rynkowi lokalnemu rytm, którego nie ma w miastach o podobnej wielkości. <strong>Dwa razy w roku część klienteli wymienia się niemal całkowicie</strong>, a w lipcu i sierpniu miasto wyraźnie pustoszeje.
+      </p>
+      <p>
+        Firma usługowa, która ustawi profil raz i zostawi go na cały rok, pracuje przez kilka miesięcy pod pustą salę, a przez inne kilka nie nadąża za zapytaniami.
+      </p>
+
+      <h2>Kalendarz, który warto mieć na ścianie</h2>
+      <p>
+        Wrzesień i pierwsza połowa października to najważniejszy moment roku dla większości lubelskich firm usługowych. Do miasta wracają studenci i przyjeżdżają nowi, którzy nie mają lokalnych rekomendacji i wybierają wyłącznie na podstawie tego, co widzą w Mapach.
+      </p>
+      <p>
+        Praktyczne przygotowanie robi się w sierpniu, nie we wrześniu: <strong>seria świeżych opinii, uzupełnione zdjęcia, sprawdzone godziny i cennik lub zakres usług w profilu</strong>. Nowy klient nie zadzwoni, żeby zapytać o cenę, tylko wybierze firmę, która ją podała. Jak rozpisać usługi, opisaliśmy w tekście o <Link href="/uslugi-wizytowka-google-business">sekcji usług w wizytówce</Link>.
+      </p>
+
+      <h2>Wakacje: co robić, zamiast czekać</h2>
+      <p>
+        Lipiec i sierpień to spadek ruchu w usługach studenckich i jednocześnie najlepszy moment na pracę, na którą nie ma czasu w sezonie. Zdjęcia, opis firmy, sekcja pytań i odpowiedzi, uporządkowanie danych w katalogach, budowa lub poprawa strony. <strong>Efekty tej pracy widać dopiero po kilku tygodniach</strong>, więc wykonana w wakacje trafia dokładnie na wrzesień.
+      </p>
+      <p>
+        To także dobry moment na przegląd profilu pod kątem błędów, które narastają latami. Lista najczęstszych jest w tekście o <Link href="/najwieksze-bledy-pozycjonowanie-wizytowki-google-2026">największych błędach w pozycjonowaniu wizytówki</Link>.
+      </p>
+
+      <h2>Klient ukraińskojęzyczny</h2>
+      <p>
+        Lublin ma dużą społeczność ukraińskojęzyczną, w tym studentów i pracowników, i w wielu branżach jest to realna, stała grupa klientów. Zasada jest ta sama co przy każdym innym języku: <strong>nie tłumacz nazwy firmy, ale zaznacz obsługę w atrybutach, wspomnij o niej naturalnie w opisie i zostaw opinie w językach oryginalnych</strong>.
+      </p>
+      <p>
+        Jeśli obsługa w danym języku jest istotną częścią oferty, warto mieć osobną wersję językową strony pod własnym adresem URL. Tłumaczenie podmieniane w locie pod tym samym adresem nie daje widoczności.
+      </p>
+
+      <h2>Dzielnice i realny zasięg</h2>
+      <p>
+        Lublin jest zwarty, ale różnice między rejonami są wyraźne: Śródmieście, Czechów, Kalinowszczyzna, LSM, Węglin czy Felin to osobne konteksty zakupowe. Mieszkańcy posługują się tymi nazwami i wpisują je w wyszukiwarkę, więc <strong>zapytania z nazwą dzielnicy są łatwiejsze do wygrania niż zapytania z nazwą miasta</strong> i często bliższe realnej intencji.
+      </p>
+
+      <h2>Region</h2>
+      <p>
+        Lublin obsługuje szerokie zaplecze, w którym nie ma drugiego dużego miasta. Dla firm z dojazdem oznacza to naturalną możliwość rozszerzenia obszaru na Świdnik, Łęczną, Lubartów czy Kraśnik. Warunek jest jeden i wynika wprost z mechaniki Map: <strong>obszar działania nie zastępuje bliskości</strong>, więc im dalej od miasta, tym słabiej działa, a różnicę robi dopiero treść na stronie pod te miejscowości.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Kiedy najlepiej zacząć pracę nad profilem w Lublinie?</h3>
+      <p>
+        W lipcu albo sierpniu, żeby efekty zdążyły się ustabilizować na wrzesień. Zmiany w profilu potrzebują zwykle kilku tygodni, żeby przełożyć się na pozycję.
+      </p>
+
+      <h3>Czy opinie po ukraińsku wpływają na wyniki w polskich zapytaniach?</h3>
+      <p>
+        Nie obniżają ich. Zwiększają natomiast szansę na pojawienie się w wynikach dla użytkowników szukających w tym języku i są czytelnym sygnałem dla kolejnych klientów.
+      </p>
+
+      <h3>Czy firma z Lublina może obsługiwać cały region w profilu?</h3>
+      <p>
+        Może wskazać obsługiwane miejscowości, jeśli faktycznie dojeżdża, ale ranking nadal liczy się od jej fizycznej lokalizacji. Widoczność w odległych miejscowościach buduje się głównie treścią na stronie i wzmiankami lokalnymi.
+      </p>
+
+      <ul>
+        <li><Link href="/opinie-google-jak-zdobywac-skutecznie">Jak zdobywać opinie Google skutecznie</Link></li>
+        <li><Link href="/siedziba-mala-miejscowosc-local-seo">Siedziba w małej miejscowości a widoczność w mieście</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-swidnik">Pozycjonowanie wizytówki Google Świdnik</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-chelm">Pozycjonowanie wizytówki Google Chełm</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Bydgoszcz
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-bydgoszcz": (
+    <>
+      <p>
+        Bydgoszcz ma około 325 tysięcy mieszkańców, Toruń około 195 tysięcy, a dzieli je niecałe pięćdziesiąt kilometrów i jedno województwo. To układ, który w Polsce występuje rzadko i ma konkretne konsekwencje w Mapach Google: <strong>firmy z obu miast regularnie wchodzą sobie w wyniki na zapytaniach bez nazwy miasta</strong> i na zapytaniach wojewódzkich.
+      </p>
+      <p>
+        Właściciel firmy z Bydgoszczy widzi w statystykach wyświetlenia z Torunia, uznaje, że „jest widoczny w Toruniu", i zaczyna kierować tam działania. Zwykle jest to błąd kolejności, nie kierunku.
+      </p>
+
+      <h2>Najpierw wygraj u siebie</h2>
+      <p>
+        Zasada, która obowiązuje wszędzie, ale w tym układzie łamana jest szczególnie często: <strong>rozszerzanie zasięgu ma sens dopiero wtedy, gdy jesteś w pierwszej trójce we własnym mieście</strong>. Dopóki nie jesteś, każda złotówka wydana na widoczność w sąsiednim mieście pracuje przeciwko Tobie, bo rozprasza sygnały, które mogłyby domknąć rynek podstawowy.
+      </p>
+      <p>
+        Sprawdzenie jest proste. Wpisz swoją główną frazę z nazwą miasta w trybie incognito z kilku punktów Bydgoszczy: Śródmieście, Fordon, Szwederowo, Bartodzieje. Jeśli nie jesteś w top 3 w większości z nich, masz jasno wyznaczone zadanie na najbliższe miesiące.
+      </p>
+
+      <h2>Fordon i skala miasta</h2>
+      <p>
+        Bydgoszcz jest rozciągnięta, a Fordon leży na tyle daleko od centrum, że funkcjonuje jak osobne miasto z własnym rynkiem usług. Firma ze Śródmieścia w praktyce nie istnieje w wynikach dla mieszkańca Fordonu i odwrotnie.
+      </p>
+      <p>
+        Dla firmy usługowej oznacza to konkretną decyzję: albo koncentrujesz się na swoim rejonie i wygrywasz go w całości, albo, jeśli model biznesowy na to pozwala, otwierasz drugi punkt. Trzeciej drogi w postaci „bycia widocznym w całym mieście z jednego adresu" po prostu nie ma. Mechanikę drugiej lokalizacji opisaliśmy przy <Link href="/wiele-lokalizacji-google-business-profile">wielu lokalizacjach w Google Business Profile</Link>.
+      </p>
+
+      <h2>Kiedy warto realnie wejść na rynek toruński</h2>
+      <p>
+        Są dwie uczciwe drogi. Pierwsza to <strong>realny punkt w Toruniu</strong> z własnym personelem, godzinami i profilem. Druga to <strong>widoczność organiczna strony</strong> na frazach z nazwą Torunia, budowana osobną podstroną z unikalną treścią, a nie przez profil w Mapach.
+      </p>
+      <p>
+        Trzeciej drogi, czyli wirtualnego adresu w Toruniu, nie polecamy i nie ze względów moralnych. Takie profile są zgłaszane przez lokalną konkurencję, a zawieszenie dotyka zwykle także profilu głównego, czyli tracisz rynek, który już miałeś.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-red-400 bg-red-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-red-600 mb-2">Ryzyko, które się nie opłaca</p>
+        <p className="text-sm text-red-900 leading-relaxed">
+          Utrata profilu oznacza utratę wszystkich opinii zebranych przez lata. Opinie są jedynym elementem lokalnego SEO, którego nie da się odtworzyć w krótkim czasie ani kupić. Żadna dodatkowa widoczność w sąsiednim mieście nie jest warta tego ryzyka.
+        </p>
+      </div>
+
+      <h2>Sygnały, które w tym układzie ważą najwięcej</h2>
+      <p>
+        Gdy dwa podobne rynki sąsiadują, o pierwszeństwie decydują detale. Trzy, które najczęściej robią różnicę: <strong>kategoria główna dopasowana do frazy komercyjnej</strong>, a nie do tego, jak właściciel myśli o swojej firmie, <strong>regularność opinii</strong> zamiast ich jednorazowej liczby, oraz <strong>spójność danych</strong> między wizytówką, stroną i katalogami. Ten ostatni punkt rozpisaliśmy w tekście o <Link href="/nap-wizytowka-google-co-to-jest">spójności NAP</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Dlaczego widzę wyświetlenia z Torunia, ale nie mam stamtąd klientów?</h3>
+      <p>
+        Wyświetlenie oznacza, że profil pojawił się w wynikach, niekoniecznie wysoko i niekoniecznie w zapytaniu zakupowym. Część takich wyświetleń pochodzi z wyszukiwań markowych i szerokich. To nie jest sygnał, że rynek toruński jest w zasięgu.
+      </p>
+
+      <h3>Czy jedna wizytówka może obsłużyć Bydgoszcz i Toruń?</h3>
+      <p>
+        W praktyce nie. Firma z lokalem będzie widoczna głównie wokół swojego adresu. Firma z dojazdem może wskazać oba miasta jako obszar działania, ale ranking i tak liczy się od jej fizycznej lokalizacji, więc widoczność w drugim mieście będzie znacznie słabsza.
+      </p>
+
+      <h3>Od czego zacząć, mając profil bez opinii?</h3>
+      <p>
+        Od uzupełnienia profilu do końca i od procedury zbierania opinii po każdej obsłudze. To dwie rzeczy o najlepszym stosunku efektu do nakładu w pierwszych trzech miesiącach.
+      </p>
+
+      <ul>
+        <li><Link href="/czynniki-rankingowe-wizytowki-google-2026">Czynniki rankingowe wizytówki Google w 2026</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-torun">Pozycjonowanie wizytówki Google Toruń</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-inowroclaw">Pozycjonowanie wizytówki Google Inowrocław</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-grudziadz">Pozycjonowanie wizytówki Google Grudziądz</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Białystok
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-bialystok": (
+    <>
+      <p>
+        Białystok, około 290 tysięcy mieszkańców, jest największym polskim miastem, które nie ma innego dużego ośrodka w promieniu stu kilometrów. Warszawa jest daleko, Lublin jeszcze dalej, a najbliższe miasta wojewódzkie leżą poza zasięgiem codziennych dojazdów. <strong>To zmienia całą matematykę lokalnego SEO</strong> i zmienia ją na korzyść firm z Białegostoku.
+      </p>
+      <p>
+        W większości polskich miast tej wielkości walczysz nie tylko z lokalnymi firmami, ale i z sieciami oraz podmiotami z sąsiedniego ośrodka. Tutaj tej presji nie ma i to jest przewaga, którą warto policzyć i wykorzystać, zanim zrobi to konkurencja.
+      </p>
+
+      <h2>Co konkretnie oznacza brak dużego sąsiada</h2>
+      <p>
+        Trzy rzeczy. Po pierwsze, <strong>pula profili konkurujących o pierwszą trójkę jest mniejsza</strong> niż wynikałoby z liczby mieszkańców. Po drugie, firmy z Białegostoku naturalnie ciągną zapytania z całego województwa podlaskiego, bo nie ma alternatywy bliżej. Po trzecie, koszt wejścia do top 3 mierzony liczbą opinii i czasem jest niższy niż w porównywalnej Częstochowie czy Radomiu.
+      </p>
+      <p>
+        Praktyczny wniosek: <strong>tu opłaca się zacząć wcześnie i zająć miejsce</strong>, bo utrzymanie pozycji na rynku o niskiej presji jest tańsze niż jej zdobycie później, gdy konkurencja się obudzi.
+      </p>
+
+      <h2>Obsługa regionu bez rozmywania profilu</h2>
+      <p>
+        Kuszące jest ustawienie obszaru działania na całe województwo i opisanie firmy jako obsługującej „całe Podlasie". To zwykle nie działa. Obszar działania nie zastępuje bliskości, a zbyt szeroka deklaracja rozmywa to, na czym Google opiera trafność.
+      </p>
+      <p>
+        Skuteczniejsza droga jest dwuetapowa. W profilu wskazujesz miejscowości, do których faktycznie jeździsz, w rozsądnym promieniu. Widoczność w dalszych miejscowościach, takich jak Łomża, Sokółka, Bielsk Podlaski czy Hajnówka, budujesz <strong>osobnymi podstronami na własnej stronie internetowej</strong>, z unikalną treścią pod każdą z nich. Ta ścieżka opisana jest szerzej w tekście o <Link href="/siedziba-mala-miejscowosc-local-seo">siedzibie w małej miejscowości a widoczności w mieście</Link>.
+      </p>
+
+      <h2>Dzielnice</h2>
+      <p>
+        Białystok jest zwarty, ale nazwy osiedli, takie jak Antoniuk, Białostoczek, Dziesięciny, Wysoki Stoczek czy Nowe Miasto, funkcjonują w codziennym języku i pojawiają się w zapytaniach. W mieście tej wielkości różnice w wynikach między dzielnicami są mniejsze niż w Warszawie, ale nadal istnieją i warto je sprawdzić pomiarem, zanim uzna się je za nieistotne.
+      </p>
+
+      <h2>Gdzie najczęściej leży problem</h2>
+      <p>
+        W rynku o niższej presji konkurencyjnej najczęstszą przyczyną słabej pozycji nie jest silna konkurencja, tylko <strong>niedokończony profil</strong>. Pusta sekcja usług, brak odpowiedzi na opinie, kategoria główna dobrana zbyt szeroko, kilka zdjęć sprzed lat. To są rzeczy, które da się naprawić w jedno popołudnie i które tutaj przekładają się na pozycję szybciej niż w dużych miastach, właśnie dlatego, że konkurencja też ich nie zrobiła.
+      </p>
+      <p>
+        Kolejność prac ustawiliśmy w przewodniku o <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy w Białymstoku łatwiej wejść do top 3 niż w innych miastach wojewódzkich?</h3>
+      <p>
+        W większości kategorii tak, ze względu na mniejszą liczbę świadomie prowadzonych profili i brak presji z sąsiedniego dużego ośrodka. Nie jest to reguła bez wyjątków, więc zweryfikuj to w swojej branży, przeglądając profile pierwszej trójki.
+      </p>
+
+      <h3>Czy warto ustawić obszar działania na całe Podlasie?</h3>
+      <p>
+        Nie. Wpisuj tylko miejscowości, do których faktycznie dojeżdżasz. Szeroka deklaracja nie zwiększa zasięgu, a może osłabić trafność profilu w zapytaniach lokalnych.
+      </p>
+
+      <h3>Jak zbudować widoczność w mniejszych miejscowościach regionu?</h3>
+      <p>
+        Osobnymi podstronami na stronie internetowej, z realną treścią o obsłudze danej miejscowości, oraz wzmiankami na lokalnych portalach. Sam profil w Mapach tego nie załatwi.
+      </p>
+
+      <ul>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/kategorie-wizytowka-google">Kategorie w wizytówce Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-lomza">Pozycjonowanie wizytówki Google Łomża</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-suwalki">Pozycjonowanie wizytówki Google Suwałki</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Katowice
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-katowice": (
+    <>
+      <p>
+        Katowice mają około 279 tysięcy mieszkańców, ale otacza je konurbacja, w której na niewielkim obszarze mieszka kilka razy tyle osób. Sosnowiec, Chorzów, Siemianowice, Ruda Śląska i Mysłowice zaczynają się kilka przystanków od centrum. <strong>Dla mieszkańca granice miast są umowne, dla Google nie są</strong> i to jest fundamentalne napięcie całego lokalnego SEO na Górnym Śląsku.
+      </p>
+      <p>
+        Klient z Chorzowa wpisuje „mechanik Katowice", bo tam pracuje, ale jego telefon podaje lokalizację chorzowską. Wyniki, które zobaczy, będą inne niż wyniki dla tej samej frazy wpisanej w Katowicach. Praca nad profilem w tym rejonie polega w dużej mierze na zrozumieniu, którą z tych sytuacji obsługujesz.
+      </p>
+
+      <h2>Zapytanie z nazwą miasta kontra zapytanie bez niej</h2>
+      <p>
+        To rozróżnienie ma w konurbacji większe znaczenie niż gdziekolwiek indziej. W zapytaniu <strong>z nazwą miasta</strong> Google wyraźnie preferuje profile z adresem w tym mieście. W zapytaniu <strong>bez nazwy</strong>, gdzie decyduje lokalizacja szukającego, adres administracyjny schodzi na dalszy plan, a liczy się fizyczna odległość.
+      </p>
+      <p>
+        Praktyczna konsekwencja: firma z pogranicza Katowic i Chorzowa może realnie obsługiwać oba rynki w zapytaniach bez nazwy miasta, a w zapytaniach z nazwą wygra tylko w jednym. Warto wiedzieć, które z nich generują u Ciebie telefony, zanim ustawi się cele.
+      </p>
+
+      <h2>Obszar działania w metropolii</h2>
+      <p>
+        Dla firm z dojazdem konurbacja jest bardzo wdzięcznym rynkiem, bo odległości są małe, a gęstość klientów wysoka. Profil bez adresu, z listą obsługiwanych miast, może objąć kilkanaście ośrodków w promieniu, w którym w innym regionie mieściłoby się jedno miasto i kilka wsi.
+      </p>
+      <p>
+        Ograniczenie pozostaje to samo: <strong>ranking liczy się od punktu, w którym fizycznie jesteś</strong>. Obszar decyduje o tym, komu Google może Cię pokazać, nie o tym, jak wysoko. Dlatego przy wyborze bazy warto myśleć nie o prestiżu adresu, tylko o środku ciężkości Twoich zleceń.
+      </p>
+
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr className="bg-surface">
+              <th className="text-left p-3 border border-border font-bold text-ink">Sytuacja</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Co decyduje</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Co zrobić</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-3 border border-border">„usługa Katowice"</td>
+              <td className="p-3 border border-border">Adres w Katowicach</td>
+              <td className="p-3 border border-border">Realny lokal w mieście albo treść na stronie pod tę frazę</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">„usługa blisko mnie"</td>
+              <td className="p-3 border border-border">Fizyczna odległość od szukającego</td>
+              <td className="p-3 border border-border">Kompletny profil i opinie, adres administracyjny mniej istotny</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border">Firma z dojazdem</td>
+              <td className="p-3 border border-border">Obszar działania plus lokalizacja bazy</td>
+              <td className="p-3 border border-border">Ukryty adres, lista miast, baza blisko środka zleceń</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Konkurencja: więcej profili, mniej pracy nad nimi</h2>
+      <p>
+        Konurbacja ma dużo firm, ale odsetek profili prowadzonych systematycznie jest tu zauważalnie niższy niż w Warszawie czy Krakowie. W wielu kategoriach pierwsza trójka to profile kompletne, ale bez odpowiedzi na opinie i bez świeżych zdjęć. <strong>To jest przestrzeń do zajęcia w kilka miesięcy</strong>, a nie w kilka lat.
+      </p>
+
+      <h2>Dzielnice Katowic</h2>
+      <p>
+        Nazwy takie jak Ligota, Załęże, Giszowiec, Nikiszowiec, Brynów czy Panewniki funkcjonują w codziennym języku i w wyszukiwarce. Zapytania z nazwą dzielnicy są węższe i łatwiejsze do wygrania, a użytkownik, który ich używa, ma zwykle bardzo konkretną intencję. Warto wybrać dwie, trzy dzielnice, w których faktycznie masz klientów, i budować wokół nich treść.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy firma z Chorzowa może wyświetlać się na frazę z Katowicami?</h3>
+      <p>
+        W zapytaniach z nazwą miasta jest to trudne, bo Google preferuje profile z adresem w tym mieście. Realną drogą jest widoczność organiczna strony na tej frazie oraz obecność w zapytaniach bez nazwy miasta, gdzie liczy się odległość.
+      </p>
+
+      <h3>Gdzie ustawić bazę firmy mobilnej w metropolii?</h3>
+      <p>
+        Możliwie blisko środka ciężkości zleceń, a nie w najbardziej prestiżowej lokalizacji. Odległość od klienta wpływa na ranking, nazwa dzielnicy nie.
+      </p>
+
+      <h3>Czy warto mieć profile w kilku miastach konurbacji?</h3>
+      <p>
+        Tylko przy realnych, obsadzonych punktach. Profile pod adresami wirtualnymi są w tym rejonie często zgłaszane, a zawieszenie obejmuje zwykle także profil główny.
+      </p>
+
+      <ul>
+        <li><Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">Jak poprawić widoczność profilu firmy w Mapach</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-sosnowiec">Pozycjonowanie wizytówki Google Sosnowiec</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-gliwice">Pozycjonowanie wizytówki Google Gliwice</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-tychy">Pozycjonowanie wizytówki Google Tychy</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Gdynia
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-gdynia": (
+    <>
+      <p>
+        Gdynia, około 243 tysięcy mieszkańców, ma w Mapach Google specyficzny problem: <strong>jej mieszkańcy często nie wpisują nazwy własnego miasta</strong>. Wpisują „Trójmiasto" albo nie wpisują miasta wcale, licząc na lokalizację telefonu. W obu przypadkach do gry wchodzą firmy z Gdańska i Sopotu, a gdyńska firma konkuruje na obszarze trzykrotnie większym, niż wynikałoby z jej adresu.
+      </p>
+      <p>
+        To działa w obie strony i przy dobrym ustawieniu profilu jest przewagą, nie problemem.
+      </p>
+
+      <h2>Trzy typy zapytań i trzy różne strategie</h2>
+      <p>
+        <strong>Zapytanie „usługa Gdynia"</strong> jest najłatwiejsze do wygrania dla firmy z gdyńskim adresem, bo Google wyraźnie preferuje profile z adresem w tym mieście. To powinna być Twoja baza.
+      </p>
+      <p>
+        <strong>Zapytanie „usługa Trójmiasto"</strong> rządzi się innymi prawami. Nie jest przypisane do jednego miasta, więc decyduje kombinacja odległości, kompletności profilu i siły opinii. Tutaj firmy z Gdańska mają przewagę liczebną, ale nie systemową.
+      </p>
+      <p>
+        <strong>Zapytanie bez nazwy miasta</strong> rozstrzyga się prawie wyłącznie odległością od szukającego. Dla firmy z Gdyni oznacza to naturalną dominację w północnej części aglomeracji i praktyczny brak szans w Gdańsku Południe.
+      </p>
+
+      <h2>Gdzie leży realna granica</h2>
+      <p>
+        Sopot jest małym miastem między dwoma dużymi i to czyni go najciekawszym punktem na mapie. Firma z południowej Gdyni jest fizycznie blisko Sopotu, więc w zapytaniach bez nazwy miasta ma tam realną szansę. W zapytaniach „usługa Sopot" przegra z profilem o sopockim adresie.
+      </p>
+      <p>
+        Sprawdzenie tego zajmuje pół godziny i jest warte więcej niż jakakolwiek teoria: przejedź się z telefonem przez Orłowo, Sopot i Wrzeszcz, sprawdzając w trybie incognito swoją frazę. <strong>Zobaczysz dokładnie, gdzie kończy się Twoja widoczność</strong>, i to wyznaczy realny obszar działań.
+      </p>
+
+      <h2>Port, sezon i klient z zewnątrz</h2>
+      <p>
+        Gdynia ma port pasażerski, terminal promowy i wyraźny sezon letni w pasie nadmorskim. Klient z zewnątrz filtruje w Mapach po atrybutach: płatność kartą, godziny otwarcia, dostępność, język obsługi. To są rzeczy, które decydują o wejściu do rozważanego zbioru, zanim ktokolwiek spojrzy na ocenę. Szerzej opisaliśmy to przy <Link href="/atrybuty-wizytowka-google">atrybutach w wizytówce</Link>.
+      </p>
+
+      <h2>Dzielnice</h2>
+      <p>
+        Nazwy takie jak Orłowo, Redłowo, Witomino, Chylonia, Obłuże czy Karwiny są w codziennym użyciu i pojawiają się w zapytaniach. Różnice w wynikach między nimi bywają duże, bo Gdynia jest rozciągnięta wzdłuż wybrzeża i wchodzi w wysoczyznę. <strong>Zapytania z nazwą dzielnicy są węższe i łatwiejsze do wygrania</strong> niż zapytania z nazwą miasta, a klient, który ich używa, ma bardzo konkretną intencję.
+      </p>
+
+      <h2>Co robić, a czego nie</h2>
+      <p>
+        Warto: uzupełnić profil do końca, zbudować regularny strumień opinii, wspominać w odpowiedziach na nie nazwy dzielnic i sąsiednich miast, w których faktycznie obsługiwałeś klientów, oraz zbudować na stronie osobne podstrony pod Gdynię, Sopot i tę część Gdańska, którą realnie obsługujesz.
+      </p>
+      <p>
+        Nie warto: zakładać profilu pod adresem wirtualnym w Gdańsku ani dopisywać „Trójmiasto" do nazwy firmy. Oba rozwiązania są zgłaszane i kończą się zawieszeniem, a wraz z nim utratą opinii. Lista podobnych pułapek jest w tekście o <Link href="/najwieksze-bledy-pozycjonowanie-wizytowki-google-2026">największych błędach w pozycjonowaniu wizytówki</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy warto celować we frazę „Trójmiasto"?</h3>
+      <p>
+        Warto, ale jako uzupełnienie, nie jako podstawa. Zapytania z nazwą własnego miasta mają wyższą intencję zakupową i są łatwiejsze do wygrania. Frazę aglomeracyjną najlepiej obsługiwać treścią na stronie.
+      </p>
+
+      <h3>Czy gdyńska firma może wygrać w Sopocie?</h3>
+      <p>
+        W zapytaniach bez nazwy miasta i z bliskiej odległości tak. W zapytaniach z nazwą „Sopot" przewagę mają profile z sopockim adresem.
+      </p>
+
+      <h3>Jakie zdjęcia działają w mieście nadmorskim?</h3>
+      <p>
+        Takie, które pokazują realne miejsce i realną obsługę, a nie zdjęcia stockowe z morzem. Klient z zewnątrz szuka potwierdzenia, że lokal wygląda tak jak na zdjęciach i że łatwo do niego trafić.
+      </p>
+
+      <ul>
+        <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">Jakie zdjęcia w wizytówce naprawdę działają</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-gdansk">Pozycjonowanie wizytówki Google Gdańsk</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-wejherowo">Pozycjonowanie wizytówki Google Wejherowo</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-starogard-gdanski">Pozycjonowanie wizytówki Google Starogard Gdański</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Częstochowa
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-czestochowa": (
+    <>
+      <p>
+        Częstochowa ma około 208 tysięcy mieszkańców i najbardziej skrajną sezonowość ruchu ze wszystkich dużych polskich miast. Jasna Góra przyciąga pielgrzymki i ruch turystyczny przez cały rok, ale <strong>szczyt przypada na sierpień</strong>, a w okolicach 15 sierpnia liczba osób w mieście rośnie skokowo.
+      </p>
+      <p>
+        Dla firmy usługowej z centrum oznacza to, że przez kilkanaście dni w roku struktura zapytań wygląda inaczej niż przez pozostałe jedenaście miesięcy. Profil, który tego nie uwzględnia, traci najlepszy okres i jednocześnie zbiera negatywne opinie za rzeczy, których dało się uniknąć.
+      </p>
+
+      <h2>Godziny specjalne to podstawa, nie dodatek</h2>
+      <p>
+        Najczęstszy i najdroższy błąd w Częstochowie: firma pracuje dłużej w sierpniu, ale w profilu ma godziny standardowe. Klient widzi „zamknięte" i idzie dalej. Albo odwrotnie: firma jest zamknięta, bo właściciel wyjechał, a profil pokazuje otwarte, więc ktoś przyjeżdża pod zamknięte drzwi i zostawia jedną gwiazdkę.
+      </p>
+      <p>
+        Rozwiązanie zajmuje pięć minut. W panelu wizytówki ustaw <strong>godziny specjalne na konkretne daty</strong>, a nie zmieniaj godzin standardowych. Po upływie tych dat profil sam wraca do zwykłego grafiku. Mechanikę opisaliśmy w tekście o <Link href="/godziny-otwarcia-wizytowka-google">godzinach otwarcia w wizytówce Google</Link>.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-amber-400 bg-amber-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-amber-700 mb-2">Kalendarz do wpisania raz w roku</p>
+        <p className="text-sm text-amber-900 leading-relaxed">
+          Ustaw godziny specjalne na cały sierpień, majówkę, długi weekend czerwcowy i okres świąteczny za jednym razem, na początku roku. To jedna godzina pracy, która eliminuje najczęstszą przyczynę negatywnych opinii w mieście o dużym ruchu przyjezdnych.
+        </p>
+      </div>
+
+      <h2>Dwa profile klienta, jedna wizytówka</h2>
+      <p>
+        Częstochowska firma obsługuje w praktyce dwie grupy. <strong>Mieszkańcy</strong> szukają usług przy domu, wracają, znają miasto i nie potrzebują wskazówek dojazdowych. <strong>Przyjezdni</strong> nie znają miasta, decydują w kilka minut, filtrują po godzinach i płatnościach, a często szukają w promieniu spaceru od Jasnej Góry.
+      </p>
+      <p>
+        Profil trzeba ustawić tak, żeby odpowiadał obu, i to jest wykonalne. Kategoria i usługi pod stały biznes, atrybuty i zdjęcia pod klienta z zewnątrz, opis firmy zawierający jedno zdanie o lokalizacji względem punktu, który przyjezdny zna.
+      </p>
+
+      <h2>Zdjęcia i dojazd</h2>
+      <p>
+        W okresach wzmożonego ruchu centrum jest zatłoczone, a część ulic bywa wyłączona z ruchu. Klient z zewnątrz, który tego nie wie, przyjeżdża samochodem i utyka. Jedno zdjęcie wejścia z widoczną ulicą, jedno zdanie o najbliższym parkingu i wpis w sekcji pytań i odpowiedzi rozwiązują problem, który inaczej wraca do Ciebie jako negatywna opinia.
+      </p>
+      <p>
+        Sekcja Q&A jest tu szczególnie przydatna, bo właściciel może sam dodać najczęstsze pytanie wraz z odpowiedzią. Jak z niej korzystać, opisaliśmy przy <Link href="/pytania-odpowiedzi-wizytowka-google">pytaniach i odpowiedziach w wizytówce</Link>.
+      </p>
+
+      <h2>Reszta roku, czyli fundament</h2>
+      <p>
+        Sezon jest widoczny, ale to nie on utrzymuje firmę. Przez jedenaście miesięcy decyduje zwykła, systematyczna praca: kompletny profil, świeże opinie, odpowiedzi na wszystkie recenzje, aktualne zdjęcia i treść na stronie pod dzielnice, w których faktycznie masz klientów. Częstochowa jest miastem rozciągniętym wzdłuż Warty i alei NMP, a Raków, Tysiąclecie czy Północ funkcjonują jak osobne rynki.
+      </p>
+      <p>
+        Jeśli profil jest niedokończony, sezon tego nie naprawi. Kolejność prac opisaliśmy w tekście o <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Jak ustawić profil na okres pielgrzymkowy?</h3>
+      <p>
+        Godziny specjalne na konkretne daty, post informujący o dostępności, świeże zdjęcia i sprawdzone atrybuty dotyczące płatności i dostępności. To zestaw minimum, który zajmuje kilkadziesiąt minut.
+      </p>
+
+      <h3>Czy warto publikować posty tylko w sezonie?</h3>
+      <p>
+        Posty najlepiej prowadzić regularnie, mniej więcej raz w tygodniu, ale w sezonie ich rola rośnie, bo są jedynym miejscem, gdzie możesz przekazać informację o zmienionej dostępności.
+      </p>
+
+      <h3>Co zrobić z opinią za korki i brak parkingu?</h3>
+      <p>
+        Odpowiedzieć rzeczowo i uzupełnić informację w profilu, żeby kolejny klient znalazł ją zawczasu. Taka opinia zwykle nie kwalifikuje się do usunięcia, ale dobra odpowiedź neutralizuje jej wpływ.
+      </p>
+
+      <ul>
+        <li><Link href="/posty-wizytowka-google">Posty w wizytówce Google</Link></li>
+        <li><Link href="/negatywna-opinia-google-co-zrobic">Co zrobić z negatywną opinią Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-belchatow">Pozycjonowanie wizytówki Google Bełchatów</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-zawiercie">Pozycjonowanie wizytówki Google Zawiercie</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Radom
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-radom": (
+    <>
+      <p>
+        Radom ma około 198 tysięcy mieszkańców i leży około stu kilometrów od Warszawy. To odległość, przy której warszawska firma może obsłużyć radomskiego klienta, jeśli zlecenie jest odpowiednio duże, i regularnie to robi. <strong>Dla lokalnych firm oznacza to konkurencję, która nie jest widoczna na ulicy, tylko w wynikach wyszukiwania.</strong>
+      </p>
+      <p>
+        Ta konkurencja ma jednak konkretną słabość, którą da się wykorzystać, jeśli się ją rozumie.
+      </p>
+
+      <h2>Na czym polega przewaga firmy faktycznie obecnej w mieście</h2>
+      <p>
+        Google opiera wyniki lokalne na trafności, odległości i popularności. Firma z Warszawy przegrywa na odległości i to jest przewaga, której nie da się kupić. Ale przegrywa tylko wtedy, gdy lokalna firma <strong>tę odległość faktycznie potwierdza sygnałami</strong>, a nie tylko ma adres w mieście.
+      </p>
+      <p>
+        Sygnały, które to potwierdzają: opinie od radomskich klientów, w których pada nazwa dzielnicy, zdjęcia zrobione w mieście, wzmianki na lokalnych portalach, spójny adres we wszystkich źródłach i treść na stronie odnosząca się do konkretnych rejonów. To brzmi jak lista oczywistości, ale w praktyce większość lokalnych profili ma z tego może dwa punkty.
+      </p>
+
+      <h2>Gdzie warszawskie firmy naprawdę wygrywają</h2>
+      <p>
+        Nie w Mapach, tylko w wynikach organicznych. Duża agencja czy sieć ma stronę z setkami podstron, mocnym profilem linków i budżetem na treść. Na frazie „usługa Radom" wpisanej w wyszukiwarkę, poza blokiem map, taka strona często stoi wyżej niż lokalna firma z jednostronicową wizytówką internetową.
+      </p>
+      <p>
+        Wniosek jest praktyczny: <strong>lokalna firma powinna walczyć przede wszystkim o Local Pack</strong>, bo tam ma przewagę systemową, a w wynikach organicznych budować obecność stopniowo, osobnymi podstronami pod usługi i dzielnice. Zasady tej struktury opisaliśmy w tekście o <Link href="/seo-lokalne-dla-firm">SEO lokalnym dla firm usługowych</Link>.
+      </p>
+
+      <h2>Dzielnice Radomia</h2>
+      <p>
+        Ustronie, Michałów, Gołębiów, Planty, Śródmieście, Żakowice. Te nazwy są w codziennym użyciu i pojawiają się w zapytaniach, a zapytanie z nazwą dzielnicy jest łatwiejsze do wygrania niż zapytanie z nazwą miasta i bliższe realnej intencji. Dla firmy zaczynającej pracę nad widocznością to najtańsze wejście: wybierz dwie, trzy dzielnice, w których faktycznie masz klientów, i zbuduj wokół nich treść oraz język opisu.
+      </p>
+
+      <h2>Opinie jako dowód lokalności</h2>
+      <p>
+        W rywalizacji z firmą spoza miasta opinie mają dodatkową funkcję poza zwykłą. <strong>Treść recenzji jest dla Google jednym z niewielu dowodów, że obsługujesz konkretne miejsca.</strong> Kilkanaście opinii, w których klienci wspominają radomskie dzielnice i ulice, buduje lokalność skuteczniej niż jakikolwiek tekst, który sam napiszesz o sobie.
+      </p>
+      <p>
+        Nie dyktuj treści, bo to widać i kończy się filtrem. Poproś o opisanie, co i gdzie było robione. Metodykę rozpisaliśmy przy <Link href="/opinie-google-jak-zdobywac-skutecznie">zdobywaniu opinii Google</Link>.
+      </p>
+
+      <h2>Wzmianki lokalne</h2>
+      <p>
+        Radom ma własne portale informacyjne i katalogi firm o realnym ruchu z miasta. Wzmianka z linkiem na takim portalu robi dwie rzeczy naraz: daje sygnał lokalności i przyprowadza ruch od osób, które faktycznie mieszkają w mieście. To kanał, którego warszawska konkurencja zwykle nie obsługuje, bo nie opłaca jej się schodzić do tego poziomu szczegółowości.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Dlaczego firma z Warszawy stoi wyżej na frazie z Radomiem?</h3>
+      <p>
+        Najczęściej dlatego, że wynik, który widzisz, jest wynikiem organicznym, a nie Local Packiem. W bloku map przewagę ma bliskość, w wynikach organicznych siła strony. To dwa różne rankingi na jednej stronie wyników.
+      </p>
+
+      <h3>Czy warto walczyć z dużą firmą spoza miasta?</h3>
+      <p>
+        W Local Packu tak, bo masz tam przewagę wynikającą z odległości. W wynikach organicznych na ogólnych frazach walka jest długa, więc lepiej celować w frazy węższe, z nazwą dzielnicy albo konkretnej usługi.
+      </p>
+
+      <h3>Co daje najszybszy efekt w Radomiu?</h3>
+      <p>
+        Uzupełnienie profilu do końca i uruchomienie systematycznego zbierania opinii. Te dwie rzeczy mają najlepszy stosunek efektu do nakładu w pierwszych trzech miesiącach.
+      </p>
+
+      <ul>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/linki-do-wizytowki-google">Linki do wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-warszawa">Pozycjonowanie wizytówki Google Warszawa</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-starachowice">Pozycjonowanie wizytówki Google Starachowice</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Rzeszów
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-rzeszow": (
+    <>
+      <p>
+        Rzeszów, około 197 tysięcy mieszkańców, jest jednym z najszybciej rozbudowujących się miast w Polsce. Nowe osiedla powstają na terenach przyłączanych do miasta, a wraz z nimi nowe ulice i nowe numery. <strong>Mapy Google nie nadążają za tym tempem</strong> i to tworzy sytuację, której nie ma w miastach o ustabilizowanej zabudowie.
+      </p>
+      <p>
+        Firma, która otwiera lokal na nowym osiedlu, potrafi przez tygodnie nie mieć poprawnego adresu w Mapach, a klienci trafiają w puste pole albo pod inny numer. To jest problem, ale też jedna z najtańszych dostępnych przewag, jeśli się go rozwiąże, zanim zrobi to konkurencja.
+      </p>
+
+      <h2>Co zrobić, gdy Twojego adresu nie ma w Mapach</h2>
+      <p>
+        Google pozwala zgłaszać brakujące adresy i miejsca. Procedura jest prosta: w Mapach Google wybierasz opcję dodania brakującego miejsca albo zgłoszenia poprawki adresu, wskazujesz dokładny punkt na mapie i podajesz dane. Zgłoszenie przechodzi weryfikację, która trwa zwykle od kilku dni do kilku tygodni.
+      </p>
+      <p>
+        Do czasu zatwierdzenia warto zrobić dwie rzeczy. Po pierwsze, <strong>ustawić pinezkę profilu ręcznie</strong> w miejscu, w którym faktycznie jest wejście, nawet jeśli adres tekstowy jeszcze nie istnieje. Po drugie, opisać dojazd wprost: w opisie firmy, na zdjęciach i w sekcji pytań i odpowiedzi.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-sky-400 bg-sky-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-2">Dlaczego to jest przewaga</p>
+        <p className="text-sm text-sky-900 leading-relaxed">
+          Na nowym osiedlu konkurencja w Mapach jest zerowa albo bliska zeru. Profil, który jako pierwszy poprawnie się tam zlokalizuje i zbierze pierwsze opinie, zajmuje pozycję, o którą później trzeba by walczyć miesiącami. Koszt tego ruchu to jedno zgłoszenie i godzina pracy.
+        </p>
+      </div>
+
+      <h2>Nowe osiedla jako osobny rynek</h2>
+      <p>
+        Osiedla takie jak Budziwój, Przybyszówka, Zwięczyca, Miłocin czy Załęże funkcjonują w codziennym języku i w zapytaniach. Mieszkańcy nowych osiedli mają dodatkową cechę: <strong>nie mają lokalnych przyzwyczajeń</strong>, bo dopiero się wprowadzili, więc wybierają wyłącznie na podstawie tego, co znajdą w Mapach.
+      </p>
+      <p>
+        To jest najbardziej podatna grupa klientów, jaka istnieje w lokalnym SEO. Świeże opinie, komplet zdjęć i kompletny profil mają tu nieproporcjonalnie duży wpływ na decyzję.
+      </p>
+
+      <h2>Lotnisko i klient z zewnątrz</h2>
+      <p>
+        Port lotniczy Rzeszów-Jasionka generuje ruch osób, które nie znają miasta i szukają usług w telefonie, często poza standardowymi godzinami. Dla części branż, transportu, gastronomii, noclegów i usług serwisowych, to jest realna pula zapytań.
+      </p>
+      <p>
+        Warunek wejścia jest ten sam co przy każdym kliencie z zewnątrz: aktualne godziny, jasne atrybuty i zdjęcia pokazujące realne miejsce. Klient, który nie zna miasta, filtruje po tym, zanim spojrzy na ocenę.
+      </p>
+
+      <h2>Fundament, którego nie zastąpi żaden trik</h2>
+      <p>
+        Wszystko powyżej działa tylko przy kompletnym profilu. Precyzyjna kategoria główna, wypełniona sekcja usług, opis firmy, atrybuty, komplet godzin, regularne zdjęcia i odpowiedzi na wszystkie opinie. To jest baza, na której osadza się cała reszta i jednocześnie miejsce, w którym w Rzeszowie wciąż wiele profili ma luki. Listę kontrolną znajdziesz w tekście o <Link href="/sekcja-informacje-wizytowka-google">sekcji Informacje w wizytówce Google</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Jak zgłosić brakujący adres do Google?</h3>
+      <p>
+        W aplikacji Map Google skorzystaj z opcji dodania brakującego miejsca lub zgłoszenia poprawki danych, wskaż dokładny punkt i podaj adres. Weryfikacja trwa zwykle od kilku dni do kilku tygodni.
+      </p>
+
+      <h3>Co zrobić, zanim adres zostanie zatwierdzony?</h3>
+      <p>
+        Ustawić pinezkę profilu ręcznie na wejściu, opisać dojazd w opisie firmy i w sekcji pytań i odpowiedzi oraz dodać zdjęcie budynku z widocznym numerem.
+      </p>
+
+      <h3>Czy warto zakładać profil zanim lokal ruszy?</h3>
+      <p>
+        Profil można utworzyć przed otwarciem i oznaczyć datę rozpoczęcia działalności. Nie należy natomiast pokazywać go jako otwartego, zanim faktycznie obsługujesz klientów, bo generuje to negatywne opinie na starcie.
+      </p>
+
+      <ul>
+        <li><Link href="/weryfikacja-wizytowki-google">Weryfikacja wizytówki Google</Link></li>
+        <li><Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">Jak poprawić widoczność profilu firmy w Mapach</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-przemysl">Pozycjonowanie wizytówki Google Przemyśl</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-stalowa-wola">Pozycjonowanie wizytówki Google Stalowa Wola</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Toruń
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-torun": (
+    <>
+      <p>
+        Toruń, około 195 tysięcy mieszkańców, ma zespół staromiejski wpisany na listę światowego dziedzictwa UNESCO. Dla firmy działającej w tym rejonie to jednocześnie największy atut i największa komplikacja operacyjna: <strong>ruch pieszy jest ogromny, ale dojazd samochodem jest utrudniony, a parkowanie kosztowne i ograniczone</strong>.
+      </p>
+      <p>
+        Klient sprawdza to w Mapach przed wyjściem z domu. Jeśli nie znajdzie odpowiedzi, wybierze firmę, która ją podała.
+      </p>
+
+      <h2>Dojazd i parking jako element profilu</h2>
+      <p>
+        To jest rzecz, którą w Toruniu warto potraktować poważniej niż gdzie indziej. Trzy darmowe miejsca, w których możesz odpowiedzieć na pytanie o dojazd, zanim ktokolwiek je zada:
+      </p>
+      <ul>
+        <li><strong>Atrybuty</strong> dotyczące parkingu i dostępności, ustawiane w panelu wizytówki.</li>
+        <li><strong>Opis firmy</strong>, w którym jedno zdanie mówi, gdzie zaparkować i ile stąd idzie się pieszo.</li>
+        <li><strong>Sekcja pytań i odpowiedzi</strong>, gdzie właściciel może sam dodać najczęstsze pytanie wraz z odpowiedzią.</li>
+      </ul>
+      <p>
+        Do tego zdjęcie wejścia z widoczną ulicą. W wąskich uliczkach starówki, gdzie wiele lokali dzieli jedną kamienicę, to bywa różnica między klientem, który wchodzi, a klientem, który krąży i rezygnuje. Więcej o doborze atrybutów w tekście o <Link href="/atrybuty-wizytowka-google">atrybutach w wizytówce Google</Link>.
+      </p>
+
+      <h2>Dwa rynki: starówka i reszta miasta</h2>
+      <p>
+        Toruń leży po obu stronach Wisły, a Bydgoskie Przedmieście, Rubinkowo, Na Skarpie czy Podgórz to rejony o własnym rytmie i własnych zapytaniach. Firma z Rubinkowa i firma ze starówki praktycznie się nie widzą w wynikach, mimo że dzieli je kilka kilometrów.
+      </p>
+      <p>
+        Wniosek jest ten sam co w innych miastach tej wielkości, ale w Toruniu wyraźniejszy z powodu rzeki: <strong>celuj w rejon, nie w miasto</strong>, i sprawdź pomiarem, gdzie kończy się Twoja widoczność, zanim zaczniesz cokolwiek zmieniać.
+      </p>
+
+      <h2>Klient obcojęzyczny</h2>
+      <p>
+        Ruch turystyczny w Toruniu jest znaczący i częściowo zagraniczny. Dla firm w rejonie starówki oznacza to opinie w językach obcych i zapytania od osób, które filtrują po atrybutach. Zasada jest prosta: <strong>zostaw opinie w językach oryginalnych i odpowiadaj w tym samym języku</strong>, choćby jednym zdaniem. To sygnał zarówno dla algorytmu, jak i dla kolejnego czytającego.
+      </p>
+
+      <h2>Sezonowość</h2>
+      <p>
+        Szczyty ruchu przypadają na majówkę, wakacje, długie weekendy i okres jarmarków. Przed każdym z nich warto sprawdzić godziny specjalne i dodać post o dostępności. To niewielka praca, która trafia dokładnie w moment, gdy zapytań jest najwięcej.
+      </p>
+      <p>
+        Poza sezonem profil obsługuje mieszkańców, więc nie ma sensu przestawiać go całkowicie. Chodzi tylko o to, żeby informacje odpowiadały rzeczywistości w obu trybach.
+      </p>
+
+      <h2>Uczelnia i wrzesień</h2>
+      <p>
+        Toruń jest silnym ośrodkiem akademickim, co oznacza wymianę części klienteli na przełomie września i października. Nowi mieszkańcy nie mają lokalnych rekomendacji i decydują na podstawie profilu. Przygotowanie robi się w sierpniu: świeże opinie, uzupełnione zdjęcia, sprawdzone godziny i widoczny zakres usług.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Jak opisać parkowanie, żeby to pomogło?</h3>
+      <p>
+        Konkretnie i bez ogólników: nazwa najbliższego parkingu, przybliżony czas dojścia i informacja o strefie płatnej. Taka informacja w opisie i w sekcji Q&A odpowiada na pytanie, które klient i tak sobie zada.
+      </p>
+
+      <h3>Czy opinie po angielsku szkodzą w polskich wynikach?</h3>
+      <p>
+        Nie. Zwiększają natomiast szansę na pojawienie się w wynikach dla użytkowników szukających w tym języku i są czytelnym sygnałem, że miejsce obsługuje klienta z zewnątrz.
+      </p>
+
+      <h3>Czy warto mieć osobne treści pod dzielnice Torunia?</h3>
+      <p>
+        Tak, jeśli każda ma unikalną treść. Podstrony różniące się wyłącznie podmienioną nazwą dzielnicy są traktowane jako doorway pages i szkodzą całej domenie.
+      </p>
+
+      <ul>
+        <li><Link href="/pytania-odpowiedzi-wizytowka-google">Pytania i odpowiedzi w wizytówce Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-bydgoszcz">Pozycjonowanie wizytówki Google Bydgoszcz</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-wloclawek">Pozycjonowanie wizytówki Google Włocławek</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-brodnica">Pozycjonowanie wizytówki Google Brodnica</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Sosnowiec
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-sosnowiec": (
+    <>
+      <p>
+        Sosnowiec, około 189 tysięcy mieszkańców, powstał ze zrośnięcia kilku osad i do dziś nie ma jednego oczywistego centrum w takim sensie, w jakim ma je Kraków czy Lublin. <strong>Mieszkańcy identyfikują się z dzielnicami, nie z miastem</strong>, i dokładnie tak też szukają w wyszukiwarce.
+      </p>
+      <p>
+        „Fryzjer Zagórze", „mechanik Środula", „dentysta Milowice", „kosmetyczka Pogoń". To są realne zapytania i mają zupełnie inne wyniki niż te same frazy z nazwą miasta. Firma, która pracuje wyłącznie na frazie „Sosnowiec", ignoruje sposób, w jaki jej klienci naprawdę szukają.
+      </p>
+
+      <h2>Zacznij od tego, jak nazywa Twoją okolicę klient</h2>
+      <p>
+        To brzmi banalnie, ale jest podstawą pracy w takim mieście. Wypisz nazwy dzielnic, z których faktycznie przychodzą klienci, i sprawdź w wyszukiwarce, jak wyglądają wyniki dla każdej z nich. Zobaczysz trzy rzeczy naraz: kto jest Twoją realną konkurencją w danym rejonie, jak trudne jest wejście do trójki i czy w ogóle ktoś tam pracuje nad profilem.
+      </p>
+      <p>
+        Bardzo często odpowiedź brzmi: nikt. <strong>Zapytania dzielnicowe w miastach konurbacji są rynkiem prawie nietkniętym</strong>, bo firmy walczą o frazę miejską, a klienci wpisują dzielnicową.
+      </p>
+
+      <h2>Gdzie postawić pinezkę i dlaczego to ma znaczenie</h2>
+      <p>
+        W mieście bez jednego centrum lokalizacja profilu decyduje o zasięgu bardziej niż gdzie indziej. Nie ma tu punktu, który byłby „blisko wszystkiego". Jeśli wybierasz lokal albo bazę dla firmy z dojazdem, patrz nie na prestiż adresu, tylko na <strong>środek ciężkości swoich zleceń</strong>.
+      </p>
+      <p>
+        Jeśli lokal już masz, sprawdź pomiarem, dokąd sięga Twoja widoczność. Przejedź się przez kilka dzielnic z telefonem, sprawdzając frazę w trybie incognito. Wynik będzie mapą Twojego realnego rynku i podstawą do wszystkich dalszych decyzji. Jak taki pomiar prowadzić, opisaliśmy przy <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+      </p>
+
+      <h2>Sąsiedzi, którzy zaczynają się za rogiem</h2>
+      <p>
+        Sosnowiec graniczy z Katowicami, Będzinem, Dąbrową Górniczą, Czeladzią i Mysłowicami, a granice te przebiegają w środku zabudowy. W zapytaniach <strong>bez nazwy miasta</strong>, gdzie decyduje odległość, firma z pogranicza obsługuje kilka miast naraz. W zapytaniach <strong>z nazwą miasta</strong> wygra tylko w tym, w którym ma adres.
+      </p>
+      <p>
+        To rozróżnienie jest w konurbacji kluczowe i warto sprawdzić, które z tych zapytań generują u Ciebie telefony, zanim ustawi się cele na kolejne miesiące.
+      </p>
+
+      <h2>Rynek studencki</h2>
+      <p>
+        Sosnowiec ma zaplecze akademickie, więc wrzesień i październik przynoszą wymianę części klienteli. Nowi mieszkańcy nie mają lokalnych rekomendacji i wybierają wyłącznie na podstawie profilu. Świeże opinie i komplet informacji ważą wtedy najwięcej w całym roku.
+      </p>
+
+      <h2>Praktyczny plan na pierwsze trzy miesiące</h2>
+      <p>
+        Miesiąc pierwszy: uzupełnienie profilu do końca, precyzyjna kategoria główna, komplet usług, atrybuty, opis, dwadzieścia zdjęć. Miesiąc drugi: procedura zbierania opinii po każdej obsłudze i odpowiedzi na wszystkie recenzje, z naturalnym wplataniem nazw dzielnic. Miesiąc trzeci: treść na stronie pod dwie, trzy dzielnice, w których faktycznie masz klientów, plus wzmianki na lokalnych portalach.
+      </p>
+      <p>
+        Ta kolejność nie jest przypadkowa. Każdy kolejny krok wzmacnia poprzedni, a odwrócenie jej sprawia, że pierwsze dwa etapy nie mają na czym się oprzeć.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy warto celować we frazy z nazwami dzielnic?</h3>
+      <p>
+        W Sosnowcu tak, bo mieszkańcy realnie ich używają, a konkurencja o nie jest mniejsza niż o frazę miejską. Nazwę dzielnicy umieszczaj w opisie, w treści na stronie i w odpowiedziach na opinie.
+      </p>
+
+      <h3>Czy mogę dopisać nazwę dzielnicy do nazwy firmy?</h3>
+      <p>
+        Tylko jeśli firma faktycznie tak się nazywa i jest tak oznaczona w terenie oraz w dokumentach. Dopisek wyłącznie w panelu jest naruszeniem wytycznych i bywa zgłaszany przez konkurencję.
+      </p>
+
+      <h3>Czy jedna wizytówka obsłuży cały Sosnowiec?</h3>
+      <p>
+        Nie w sensie równej widoczności. Profil będzie najmocniejszy w promieniu wokół swojego adresu, a w odległych dzielnicach znacznie słabszy. Szerszą obecność buduje się treścią na stronie.
+      </p>
+
+      <ul>
+        <li><Link href="/kategorie-wizytowka-google">Kategorie w wizytówce Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-katowice">Pozycjonowanie wizytówki Google Katowice</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-dabrowa-gornicza">Pozycjonowanie wizytówki Google Dąbrowa Górnicza</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-zawiercie">Pozycjonowanie wizytówki Google Zawiercie</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Kielce
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-kielce": (
+    <>
+      <p>
+        Kielce mają około 184 tysięcy mieszkańców i pełnią rolę, którą w większych województwach dzieli kilka ośrodków: <strong>są jedynym dużym miastem w regionie</strong>. Ostrowiec Świętokrzyski, Starachowice, Skarżysko, Jędrzejów i Busko to miasta, dla których Kielce są naturalnym punktem odniesienia w usługach specjalistycznych.
+      </p>
+      <p>
+        Dla kieleckiej firmy oznacza to, że profil naturalnie ciągnie zapytania z całego województwa. Ale ta grawitacja działa tylko do pewnego stopnia i warto wiedzieć, gdzie leży jej granica.
+      </p>
+
+      <h2>Gdzie kończy się naturalna grawitacja</h2>
+      <p>
+        Google opiera wyniki lokalne między innymi na odległości od szukającego. Klient z Ostrowca, który wpisze frazę bez nazwy miasta, zobaczy przede wszystkim firmy z Ostrowca. Kielecka firma pojawi się u niego wtedy, gdy w jego mieście nie ma odpowiedniej alternatywy, albo gdy wpisze frazę z nazwą „Kielce".
+      </p>
+      <p>
+        Praktyczny wniosek: <strong>region obsługuje się w dwóch trybach jednocześnie</strong>. Profil w Mapach pracuje na Kielce i najbliższe okolice. Widoczność w dalszych miastach buduje się osobnymi podstronami na stronie internetowej, z realną treścią pod każde z nich, i wzmiankami na tamtejszych portalach lokalnych. Ta ścieżka jest opisana szerzej w tekście o <Link href="/siedziba-mala-miejscowosc-local-seo">siedzibie w małej miejscowości a widoczności w mieście</Link>.
+      </p>
+
+      <h2>Targi Kielce i rytm roku</h2>
+      <p>
+        Kielce mają jedno z największych centrów wystawienniczych w Polsce, a kalendarz targowy generuje w mieście okresy wzmożonego ruchu osób z zewnątrz. To dotyczy przede wszystkim gastronomii, noclegów, transportu i usług serwisowych, ale pośrednio także innych branż.
+      </p>
+      <p>
+        Przygotowanie jest to samo, co przy każdym ruchu przyjezdnych: <strong>godziny specjalne na konkretne daty</strong>, post o dostępności, sprawdzone atrybuty i zdjęcia pokazujące realne miejsce. Klient z zewnątrz filtruje po tym, zanim spojrzy na ocenę. Mechanikę godzin opisaliśmy przy <Link href="/godziny-otwarcia-wizytowka-google">godzinach otwarcia w wizytówce</Link>.
+      </p>
+
+      <h2>Konkurencja: rynek mniej nasycony, niż sugeruje wielkość miasta</h2>
+      <p>
+        W Kielcach, podobnie jak w innych miastach wojewódzkich bez silnego sąsiada, odsetek profili prowadzonych systematycznie jest niższy niż w aglomeracjach. W wielu kategoriach pierwsza trójka to profile kompletne, ale bez odpowiedzi na opinie, bez świeżych zdjęć i z pustą sekcją usług.
+      </p>
+      <p>
+        Sprawdzenie tego zajmuje kwadrans i jest najlepiej wydanym czasem na początku pracy. Otwórz trzy profile stojące nad Tobą i zanotuj: kategorię główną, liczbę i datę ostatniej opinii, obecność odpowiedzi właściciela, wypełnienie sekcji usług, liczbę zdjęć. <strong>Cztery pierwsze pozycje dorównasz w jedno popołudnie, opinie wymagają miesięcy</strong> i to jest cała informacja potrzebna do zaplanowania pracy.
+      </p>
+
+      <h2>Dzielnice</h2>
+      <p>
+        Ślichowice, Barwinek, Bocianek, Czarnów, Herby, Baranówek. Te nazwy są w codziennym użyciu i pojawiają się w zapytaniach. Kielce leżą w kotlinie, między wzgórzami, więc rejony są wyraźnie oddzielone, a różnice w widoczności między nimi bywają większe, niż sugerowałaby odległość w kilometrach.
+      </p>
+
+      <h2>Co daje najszybszy efekt</h2>
+      <p>
+        Trzy rzeczy, w tej kolejności. <strong>Precyzyjna kategoria główna</strong> dopasowana do frazy, z której przychodzą pieniądze, a nie do tego, jak myślisz o swojej firmie. <strong>Wypełniona sekcja usług</strong>, bo to darmowe miejsce na frazy, którego prawie nikt nie wykorzystuje. <strong>Systematyczne opinie</strong> z odpowiedziami, bo to jedyny element, którego nie da się nadrobić w krótkim czasie.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy firma z Kielc może obsługiwać całe województwo w profilu?</h3>
+      <p>
+        Może wskazać obsługiwane miejscowości, jeśli faktycznie dojeżdża, ale ranking nadal liczy się od jej fizycznej lokalizacji. W odległych miastach widoczność buduje się treścią na stronie i wzmiankami lokalnymi.
+      </p>
+
+      <h3>Jak przygotować profil na okres targowy?</h3>
+      <p>
+        Godziny specjalne na konkretne daty, post informujący o dostępności i sprawdzone atrybuty. Nie zmieniaj godzin standardowych, bo po zakończeniu targów trzeba by je cofać ręcznie.
+      </p>
+
+      <h3>Od czego zacząć, jeśli profil istnieje, ale nic z niego nie ma?</h3>
+      <p>
+        Od audytu kompletności: kategoria, usługi, atrybuty, opis, godziny, zdjęcia. W miastach o mniejszej presji konkurencyjnej to zwykle wystarcza, żeby zobaczyć ruch w ciągu kilku tygodni.
+      </p>
+
+      <ul>
+        <li><Link href="/uslugi-wizytowka-google-business">Sekcja usług w wizytówce Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-ostrowiec-swietokrzyski">Pozycjonowanie wizytówki Google Ostrowiec Świętokrzyski</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-starachowice">Pozycjonowanie wizytówki Google Starachowice</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-radom">Pozycjonowanie wizytówki Google Radom</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Gliwice
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-gliwice": (
+    <>
+      <p>
+        Gliwice, około 171 tysięcy mieszkańców, leżą na zachodnim krańcu konurbacji górnośląskiej, przy węźle autostrad A1 i A4. Mają silną uczelnię techniczną i duże zaplecze przemysłowe. To połączenie tworzy rynek, w którym <strong>obok klienta mieszkającego w mieście funkcjonuje klient przejezdny</strong>, szukający usługi przy trasie.
+      </p>
+      <p>
+        Te dwie intencje wymagają innych ustawień i warto je w profilu rozdzielić, zamiast obsługiwać jednym zestawem treści.
+      </p>
+
+      <h2>Klient przy trasie kontra klient przy domu</h2>
+      <p>
+        <strong>Klient przejezdny</strong> szuka natychmiast, nie zna miasta, decyduje w minutę i filtruje po godzinach, dostępności i płatnościach. Interesuje go, czy jesteś otwarty teraz, czy zaparkuje i ile to potrwa. Cena i opinie mają dla niego mniejsze znaczenie niż dostępność.
+      </p>
+      <p>
+        <strong>Klient miejscowy</strong> szuka z wyprzedzeniem, porównuje, czyta opinie i wraca. Interesuje go zakres usług, doświadczenie i to, czy ktoś odpowiada na recenzje.
+      </p>
+      <p>
+        Praktyczny wniosek: jeśli obsługujesz oba, sekcja usług powinna zawierać zarówno usługi szybkie, doraźne, jak i pełne, planowane, opisane osobno. To darmowe miejsce na frazy, którego większość profili nie wykorzystuje. Szerzej przy <Link href="/uslugi-wizytowka-google-business">sekcji usług w wizytówce</Link>.
+      </p>
+
+      <h2>Godziny jako czynnik konkurencyjny</h2>
+      <p>
+        Przy ruchu tranzytowym godziny otwarcia przestają być informacją, a stają się przewagą. Firma otwarta w sobotę albo dłużej w tygodniu wygrywa zapytania, do których konkurencja w ogóle nie startuje, bo jej profil pokazuje „zamknięte".
+      </p>
+      <p>
+        Zasada jest jednak bezwzględna: <strong>godziny muszą być prawdziwe</strong>. Klient, który przyjedzie pod zamknięte drzwi, zostawi jedną gwiazdkę, a to kosztuje więcej niż pozycja, którą chciało się ugrać. Jeśli pracujesz nieregularnie, użyj godzin specjalnych zamiast deklarować szeroką dostępność na stałe.
+      </p>
+
+      <h2>Konurbacja i granice</h2>
+      <p>
+        Gliwice graniczą z Zabrzem, a dalej ciągnie się pas miast aż po Sosnowiec. W zapytaniach <strong>bez nazwy miasta</strong> decyduje odległość, więc firma z pogranicza obsługuje dwa miasta naraz. W zapytaniach <strong>z nazwą miasta</strong> wygrywa profil z adresem w tym mieście.
+      </p>
+      <p>
+        Warto sprawdzić, które z tych zapytań generują u Ciebie telefony. To rozróżnienie decyduje o tym, czy warto inwestować w treść pod sąsiednie miasto, czy raczej domknąć własne. Kolejność jest zawsze ta sama: najpierw wygraj u siebie.
+      </p>
+
+      <h2>Rynek akademicki i wrzesień</h2>
+      <p>
+        Politechnika Śląska sprawia, że na przełomie września i października część klienteli w mieście się wymienia. Nowi mieszkańcy nie mają lokalnych rekomendacji i wybierają wyłącznie na podstawie profilu w Mapach. <strong>Świeże opinie ważą wtedy najwięcej w całym roku</strong>, bo są jedynym dostępnym dowodem.
+      </p>
+      <p>
+        Przygotowanie robi się w sierpniu, nie we wrześniu, bo zmiany w profilu potrzebują kilku tygodni na przełożenie się na pozycję.
+      </p>
+
+      <h2>Dzielnice</h2>
+      <p>
+        Sośnica, Łabędy, Trynek, Sikornik, Zatorze, Ostropa. Nazwy dzielnic są w Gliwicach w codziennym użyciu i pojawiają się w zapytaniach. Łabędy leżą na tyle daleko od centrum, że funkcjonują jak osobny rynek, co warto sprawdzić pomiarem, zanim uzna się miasto za jednolite.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy warto ustawić godziny 24 godziny na dobę?</h3>
+      <p>
+        Tylko jeśli faktycznie odbierasz telefon i obsługujesz klientów o każdej porze. W przeciwnym razie zyskujesz pozycję i tracisz oceny, co w bilansie wychodzi na minus.
+      </p>
+
+      <h3>Czy firma z Gliwic może wyświetlać się w Zabrzu?</h3>
+      <p>
+        W zapytaniach bez nazwy miasta i z niewielkiej odległości tak. W zapytaniach z nazwą „Zabrze" przewagę mają profile z zabrzańskim adresem.
+      </p>
+
+      <h3>Jak obsłużyć klienta z autostrady?</h3>
+      <p>
+        Aktualnymi godzinami, jasnymi atrybutami dotyczącymi parkingu i płatności oraz zdjęciami pokazującymi realne miejsce i dojazd. Ten klient decyduje na podstawie dostępności, nie na podstawie opisu.
+      </p>
+
+      <ul>
+        <li><Link href="/godziny-otwarcia-wizytowka-google">Godziny otwarcia w wizytówce Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-zabrze">Pozycjonowanie wizytówki Google Zabrze</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-katowice">Pozycjonowanie wizytówki Google Katowice</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-raciborz">Pozycjonowanie wizytówki Google Racibórz</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Bielsko-Biała
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-bielsko-biala": (
+    <>
+      <p>
+        Bielsko-Biała, około 167 tysięcy mieszkańców, powstała z połączenia dwóch miast leżących po dwóch stronach rzeki Białej, które przez wieki należały do różnych organizmów państwowych. Ten podział jest do dziś widoczny w układzie miasta i, co ważniejsze dla lokalnego SEO, <strong>w tym, jak mieszkańcy nazywają swoje rejony</strong>.
+      </p>
+      <p>
+        Do tego dochodzi druga cecha: miasto jest bramą w Beskidy, więc jego rynek zmienia się nie tylko geograficznie, ale i sezonowo.
+      </p>
+
+      <h2>Geografia, która realnie wpływa na zasięg</h2>
+      <p>
+        Bielsko-Biała leży w dolinie, wchodzi w stoki i ma rejony oddzielone wzniesieniami. Odległość w linii prostej rozmija się tu z czasem dojazdu bardziej niż w miastach na płaskim terenie. Google liczy odległość, klient liczy czas, a sygnały behawioralne, czyli to, czy ludzie klikają i dzwonią, uwzględniają już tę drugą perspektywę.
+      </p>
+      <p>
+        Praktycznie: sprawdź pomiarem, dokąd sięga Twoja widoczność, zamiast zakładać, że obejmuje całe miasto. Kilka punktów z telefonem w trybie incognito powie Ci więcej niż jakiekolwiek narzędzie w abonamencie.
+      </p>
+
+      <h2>Obszar działania w stronę gór</h2>
+      <p>
+        Dla firm z dojazdem naturalnym rozszerzeniem jest pas w stronę Szczyrku, Wisły, Żywca i Andrychowa. To rejony o wyraźnym ruchu turystycznym i o realnym zapotrzebowaniu na usługi, zwłaszcza w sezonie.
+      </p>
+      <p>
+        Ograniczenie jest to samo co zawsze: <strong>obszar działania nie zastępuje bliskości</strong>. Wskazanie Szczyrku w profilu nie sprawi, że wyskoczysz tam w pierwszej trójce, bo ranking liczy się od punktu, w którym fizycznie jesteś. Realną widoczność w tych miejscowościach buduje się osobnymi podstronami na stronie internetowej, z unikalną treścią pod każdą z nich, oraz wzmiankami na tamtejszych portalach.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-violet-400 bg-violet-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-violet-700 mb-2">Co robi różnicę w rejonie turystycznym</p>
+        <p className="text-sm text-violet-900 leading-relaxed">
+          Klient przyjezdny prawie nigdy nie zna nazwy firmy. Wpisuje usługę i miejscowość, patrzy na godziny, ocenę i zdjęcia, po czym dzwoni do pierwszej firmy, która wygląda na dostępną. Aktualne godziny są w tym rejonie ważniejsze niż liczba opinii.
+        </p>
+      </div>
+
+      <h2>Sezon zimowy i letni</h2>
+      <p>
+        Bielsko-Biała ma dwa sezony o różnym charakterze. Zimowy, związany z ruchem narciarskim w Beskidach, i letni, związany z turystyką pieszą i rowerową. Dla wielu firm usługowych oznacza to zmienne obłożenie i zmienne godziny pracy.
+      </p>
+      <p>
+        Profil powinien to odzwierciedlać. <strong>Godziny specjalne ustawione z wyprzedzeniem</strong> na okresy świąteczne, ferie i długie weekendy eliminują najczęstszą przyczynę negatywnych opinii w rejonach turystycznych: klienta, który przyjechał pod zamknięte drzwi.
+      </p>
+
+      <h2>Dzielnice i nazwy</h2>
+      <p>
+        Wapienica, Aleksandrowice, Komorowice, Lipnik, Straconka, Złote Łany, Osiedle Karpackie. Te nazwy są w codziennym użyciu i pojawiają się w zapytaniach. Zapytanie z nazwą dzielnicy jest węższe, mniej oblegane i bliższe realnej intencji niż zapytanie z nazwą miasta, więc dla firmy zaczynającej pracę nad widocznością to najtańsze wejście.
+      </p>
+
+      <h2>Fundament</h2>
+      <p>
+        Wszystko powyżej działa tylko przy kompletnym profilu: precyzyjna kategoria główna, wypełniona sekcja usług, atrybuty, opis, komplet godzin, regularne zdjęcia i odpowiedzi na wszystkie opinie. Listę kontrolną i kolejność prac opisaliśmy w tekście o <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy warto wskazać Szczyrk i Wisłę w obszarze działania?</h3>
+      <p>
+        Tak, jeśli faktycznie tam jeździsz. Pamiętaj jednak, że sam obszar nie daje pozycji w tych miejscowościach, bo ranking liczy się od Twojej fizycznej lokalizacji. Widoczność buduje się tam treścią na stronie.
+      </p>
+
+      <h3>Jak przygotować profil na sezon zimowy?</h3>
+      <p>
+        Ustaw godziny specjalne na ferie i okres świąteczny, dodaj post o dostępności, uzupełnij zdjęcia zrobione w sezonie i sprawdź atrybuty dotyczące parkingu i płatności.
+      </p>
+
+      <h3>Czy dzielnice Bielska-Białej mają osobne wyniki?</h3>
+      <p>
+        Tak, i różnice bywają duże ze względu na ukształtowanie terenu. Warto to zweryfikować pomiarem z kilku punktów miasta, zanim uzna się rynek za jednolity.
+      </p>
+
+      <ul>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-cieszyn">Pozycjonowanie wizytówki Google Cieszyn</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-oswiecim">Pozycjonowanie wizytówki Google Oświęcim</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-tychy">Pozycjonowanie wizytówki Google Tychy</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Zabrze
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-zabrze": (
+    <>
+      <p>
+        Zabrze, około 154 tysięcy mieszkańców, graniczy bezpośrednio z Gliwicami, Bytomiem, Rudą Śląską i Zbrosławicami. Zabudowa przechodzi jedna w drugą bez wyraźnej cezury, a <strong>mieszkaniec przekracza granice miast, nie zauważając ich</strong>. Dla lokalnego SEO to znaczy jedno: zapytania bez nazwy miasta są tu ważniejsze niż gdziekolwiek indziej.
+      </p>
+      <p>
+        Jest też druga rzecz, którą warto policzyć na samym początku: Zabrze jest rynkiem mniej zatłoczonym niż sąsiednie Gliwice, mimo porównywalnej liczby mieszkańców.
+      </p>
+
+      <h2>Dlaczego wejście do top 3 bywa tu tańsze</h2>
+      <p>
+        Gliwice mają silną uczelnię, duże zaplecze biznesowe i wyższą koncentrację firm prowadzących marketing świadomie. W Zabrzu odsetek profili z systematyczną pracą nad opiniami i treścią jest zauważalnie niższy. <strong>W wielu kategoriach pierwsza trójka to profile kompletne, ale bez odpowiedzi na recenzje i bez świeżych zdjęć.</strong>
+      </p>
+      <p>
+        Sprawdzenie tego zajmuje kwadrans i warto zrobić to przed jakąkolwiek decyzją budżetową. Otwórz trzy profile stojące nad Tobą i zanotuj: kategorię główną, liczbę i datę ostatniej opinii, obecność odpowiedzi właściciela, wypełnienie sekcji usług, liczbę zdjęć. Cztery pierwsze pozycje dorównasz w jedno popołudnie. Opinie wymagają miesięcy i to one wyznaczają realny horyzont.
+      </p>
+
+      <h2>Zapytania bez nazwy miasta</h2>
+      <p>
+        W konurbacji rozróżnienie jest fundamentalne. W zapytaniu <strong>z nazwą miasta</strong> Google wyraźnie preferuje profile z adresem w tym mieście. W zapytaniu <strong>bez nazwy</strong> decyduje fizyczna odległość od szukającego, a granice administracyjne schodzą na dalszy plan.
+      </p>
+      <p>
+        Dla firmy z Zabrza oznacza to konkretną szansę: jeśli jesteś blisko granicy z Gliwicami czy Rudą Śląską, w zapytaniach bez nazwy miasta obsługujesz oba rynki. Nie potrzebujesz do tego żadnego ustawienia, tylko kompletnego profilu i opinii, bo to one rozstrzygają, gdy odległość jest porównywalna.
+      </p>
+
+      <h2>Dzielnice</h2>
+      <p>
+        Zaborze, Biskupice, Rokitnica, Mikulczyce, Helenka, Maciejów, Kończyce. Nazwy dzielnic są w Zabrzu w codziennym użyciu i pojawiają się w wyszukiwarce. Rokitnica i Mikulczyce leżą na tyle daleko od centrum, że funkcjonują jak osobne rynki, więc firma z jednego krańca miasta praktycznie nie istnieje w wynikach na drugim.
+      </p>
+      <p>
+        To jest argument za tym, żeby celować w rejon, a nie w miasto, i sprawdzić pomiarem, gdzie kończy się widoczność. Jak taki pomiar prowadzić bez płatnych narzędzi, opisaliśmy przy <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+      </p>
+
+      <h2>Plan na pierwsze sto dni</h2>
+      <p>
+        W rynku o niższej presji konkurencyjnej kolejność prac ma większe znaczenie niż budżet. Najpierw <strong>kompletność profilu</strong>: precyzyjna kategoria główna, wszystkie usługi, atrybuty, opis, komplet godzin, dwadzieścia zdjęć. Potem <strong>opinie</strong>: procedura po każdej obsłudze i odpowiedź na każdą recenzję w ciągu doby. Na końcu <strong>treść na stronie</strong> pod dwie, trzy dzielnice, w których faktycznie masz klientów.
+      </p>
+      <p>
+        Ta kolejność nie jest przypadkowa. Opinie zbierane na niedokończonym profilu pracują słabiej, a treść na stronie bez wsparcia profilu w Mapach nie domyka zapytań lokalnych.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy firma z Zabrza może wyświetlać się w Gliwicach?</h3>
+      <p>
+        W zapytaniach bez nazwy miasta i z niewielkiej odległości tak. W zapytaniach z nazwą „Gliwice" przewagę mają profile z gliwickim adresem, a realną drogą jest wtedy widoczność organiczna strony.
+      </p>
+
+      <h3>Ile opinii potrzeba, żeby wejść do top 3 w Zabrzu?</h3>
+      <p>
+        Nie ma progu, który działa wszędzie. Zamiast szukać liczby, sprawdź, ile mają profile stojące nad Tobą i jak świeże są ich recenzje. To jest jedyny wiarygodny punkt odniesienia w Twojej kategorii.
+      </p>
+
+      <h3>Czy warto zaczynać od strony, czy od wizytówki?</h3>
+      <p>
+        Od wizytówki. Daje efekty szybciej, nic nie kosztuje i buduje bazę, na której strona później pracuje mocniej.
+      </p>
+
+      <ul>
+        <li><Link href="/czynniki-rankingowe-wizytowki-google-2026">Czynniki rankingowe wizytówki Google w 2026</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-gliwice">Pozycjonowanie wizytówki Google Gliwice</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-bytom">Pozycjonowanie wizytówki Google Bytom</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-ruda-slaska">Pozycjonowanie wizytówki Google Ruda Śląska</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Bytom
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-bytom": (
+    <>
+      <p>
+        Bytom, około 149 tysięcy mieszkańców, od dekad traci ludność i przechodzi trudną transformację gospodarczą. Dla lokalnego SEO ma to jedną, bardzo konkretną konsekwencję, o której nikt nie pisze: <strong>w Mapach Google zostało po zamkniętych firmach mnóstwo martwych wizytówek</strong>, które nadal istnieją, nadal zbierają wyświetlenia i nadal zajmują miejsce w wynikach.
+      </p>
+      <p>
+        To wygląda jak konkurencja, a nie jest nią. I to jest sytuacja, którą da się wykorzystać, jeśli poświęci się na to jedno popołudnie.
+      </p>
+
+      <h2>Jak rozpoznać martwy profil</h2>
+      <p>
+        Sygnały są dość jednoznaczne i wszystkie są jawne. Ostatnia opinia sprzed dwóch lat albo dawniej. Brak jakiejkolwiek odpowiedzi właściciela. Zdjęcia wyłącznie z Street View albo dodane przez użytkowników, żadnych własnych. Pusta sekcja usług. Strona internetowa, która nie działa albo prowadzi do wygasłej domeny. Numer telefonu, pod którym nikt nie odbiera.
+      </p>
+      <p>
+        Jeśli profil ma trzy z tych cech naraz, prawie na pewno nikt się nim nie zajmuje. <strong>Konkurent, który nie pracuje nad profilem, nie jest konkurentem, tylko przeszkodą do usunięcia z drogi.</strong>
+      </p>
+
+      <h2>Co z tym zrobić zgodnie z zasadami</h2>
+      <p>
+        Google udostępnia mechanizm zgłaszania nieaktualnych danych. W profilu, który wygląda na martwy, możesz zasugerować zmianę, w tym oznaczenie miejsca jako trwale zamkniętego, jeśli faktycznie zostało zamknięte. Zgłoszenie przechodzi weryfikację, a Google zwykle sprawdza je krzyżowo z innymi źródłami.
+      </p>
+      <p>
+        Zasada, której nie wolno przekraczać: <strong>zgłaszaj wyłącznie to, co jest prawdą</strong>. Zgłaszanie działających firm jako zamkniętych jest nadużyciem, łatwo wykrywalnym i kończy się konsekwencjami dla zgłaszającego. Jeśli lokal stoi pusty od dwóch lat i wiesz to na pewno, zgłoszenie jest porządkowaniem danych, a nie atakiem.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-blue-400 bg-blue-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">Sprawdź także własne podwórko</p>
+        <p className="text-sm text-blue-900 leading-relaxed">
+          Duplikaty własnych wizytówek są w miastach o dużej rotacji firm bardzo częste: profile po byłych pracownikach, po starych weryfikacjach, po poprzednich agencjach. Wyszukaj w Mapach swój stary numer telefonu i warianty nazwy firmy. Duplikat rozmywa sygnały, nawet jeśli publicznie prawie nie jest widoczny.
+        </p>
+      </div>
+
+      <h2>Realna konkurencja jest mniejsza, niż wygląda</h2>
+      <p>
+        Po odjęciu martwych profili obraz rynku zwykle zmienia się diametralnie. Kategoria, w której na pierwszy rzut oka jest dwadzieścia firm, po weryfikacji ma pięć aktywnych. <strong>To zmienia horyzont czasowy z lat na miesiące</strong> i jest najważniejszą informacją, jaką można zdobyć przed rozpoczęciem pracy.
+      </p>
+      <p>
+        Warto zrobić z tego prostą tabelkę: nazwa profilu, data ostatniej opinii, czy właściciel odpowiada, czy strona działa. Po godzinie masz mapę realnego rynku.
+      </p>
+
+      <h2>Dzielnice</h2>
+      <p>
+        Miechowice, Szombierki, Karb, Łagiewniki, Stroszek, Rozbark. W Bytomiu nazwy dzielnic są mocno zakorzenione i pojawiają się w zapytaniach częściej niż nazwa miasta w wielu kategoriach usług codziennych. Miechowice leżą na tyle daleko, że funkcjonują jak osobny rynek.
+      </p>
+
+      <h2>Fundament, który tu wystarcza</h2>
+      <p>
+        W rynku o niskiej presji konkurencyjnej nie trzeba wyrafinowanych działań. Wystarczy zrobić dobrze rzeczy podstawowe, których konkurencja nie zrobiła: precyzyjna kategoria główna, wypełniona sekcja usług, atrybuty, opis, komplet godzin, regularne zdjęcia i odpowiedź na każdą opinię. Listę kontrolną znajdziesz w tekście o <Link href="/sekcja-informacje-wizytowka-google">sekcji Informacje w wizytówce Google</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Jak zgłosić nieaktualną wizytówkę konkurencji?</h3>
+      <p>
+        W Mapach Google otwórz profil, wybierz opcję sugerowania zmiany i wskaż, że miejsce jest trwale zamknięte lub że dane są nieaktualne. Zgłaszaj wyłącznie zgodnie z prawdą, bo Google weryfikuje takie zgłoszenia krzyżowo.
+      </p>
+
+      <h3>Jak sprawdzić, czy mam duplikat własnej wizytówki?</h3>
+      <p>
+        Wyszukaj w Mapach stare numery telefonów firmy i warianty jej nazwy. Duplikaty można zgłosić do scalenia w panelu Google Business Profile. Więcej w tekście o <Link href="/jak-odzyskac-dostep-do-wizytowki-google">odzyskiwaniu dostępu do wizytówki</Link>.
+      </p>
+
+      <h3>Czy w kurczącym się mieście warto inwestować w lokalne SEO?</h3>
+      <p>
+        Tak, i często bardziej niż gdzie indziej, bo koszt zdobycia pozycji jest niski, a udział w mniejszym rynku łatwiejszy do utrzymania. Kluczowe jest tylko realistyczne oszacowanie wielkości tego rynku przed startem.
+      </p>
+
+      <ul>
+        <li><Link href="/najwieksze-bledy-pozycjonowanie-wizytowki-google-2026">Największe błędy w pozycjonowaniu wizytówki</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-zabrze">Pozycjonowanie wizytówki Google Zabrze</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-tarnowskie-gory">Pozycjonowanie wizytówki Google Tarnowskie Góry</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-ruda-slaska">Pozycjonowanie wizytówki Google Ruda Śląska</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Zielona Góra
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-zielona-gora": (
+    <>
+      <p>
+        Zielona Góra ma około 139 tysięcy mieszkańców, ale po połączeniu z sąsiednią gminą wiejską stała się jednym z największych powierzchniowo miast w Polsce. <strong>W jej granicach mieszczą się rozległe lasy i kilkanaście dawnych wsi</strong>, między którymi są kilometry drogi.
+      </p>
+      <p>
+        To tworzy sytuację, w której intuicja o zasięgu profilu zawodzi całkowicie. Adres administracyjny brzmi „Zielona Góra", ale firma z Ochli i firma z centrum obsługują dwa różne rynki i nie widzą się nawzajem w wynikach.
+      </p>
+
+      <h2>Miasto zwarte i miasto rozproszone</h2>
+      <p>
+        Warto myśleć o Zielonej Górze jak o dwóch osobnych organizmach. Pierwszy to zwarte miasto: Śródmieście, Zastalowskie, Piastowskie, Chynów, Jędrzychów. Konkurencja jest tam normalna, odległości małe, a reguły takie jak w każdym mieście tej wielkości.
+      </p>
+      <p>
+        Drugi to <strong>dawne sołectwa włączone w granice miasta</strong>: Racula, Drzonków, Ochla, Zawada, Przylep, Krępa. Konkurencja jest tam minimalna, ale i liczba zapytań mniejsza. Dla firmy z dojazdem to jest rynek do wzięcia niemal bez walki, pod warunkiem że nazwy tych miejscowości znajdą się w treści na stronie.
+      </p>
+
+      <h2>Obszar działania, który odpowiada rzeczywistości</h2>
+      <p>
+        Firmy usługowe z dojazdem powinny tu wyznaczać obszar po nazwach miejscowości, nie po promieniu. Koło o promieniu piętnastu kilometrów wokół centrum obejmie lasy, a pominie miejscowości, do których jedzie się kwadrans dobrą drogą.
+      </p>
+      <p>
+        Praktycznie: przejrzyj ostatnie pięćdziesiąt zleceń, wypisz miejscowości i posortuj je po czasie dojazdu. Dopiero z tej listy buduj obszar w profilu. To dziesięć minut pracy, które oszczędza miesiące wyświetlania się nie tam, gdzie trzeba.
+      </p>
+
+      <h2>Zaplecze regionalne</h2>
+      <p>
+        Zielona Góra dzieli funkcje wojewódzkie z Gorzowem Wielkopolskim, a między nimi jest ponad sto kilometrów. Dla firmy usługowej oznacza to, że <strong>południowa część województwa lubuskiego naturalnie ciąży do Zielonej Góry</strong>: Nowa Sól, Sulechów, Świebodzin, Żary, Żagań.
+      </p>
+      <p>
+        Widoczność w tych miastach buduje się jednak inaczej niż w samym mieście. Profil w Mapach pracuje na Zieloną Górę i najbliższe okolice, a dalsze miejscowości obsługuje się osobnymi podstronami na stronie internetowej z unikalną treścią oraz wzmiankami na tamtejszych portalach. Ta ścieżka jest opisana w tekście o <Link href="/siedziba-mala-miejscowosc-local-seo">siedzibie w małej miejscowości a widoczności w mieście</Link>.
+      </p>
+
+      <h2>Winobranie i rytm roku</h2>
+      <p>
+        Wrześniowe Winobranie jest największym wydarzeniem w kalendarzu miasta i generuje wyraźny wzrost ruchu przyjezdnych. Dla gastronomii, noclegów, transportu i usług serwisowych to okres, w którym struktura zapytań wygląda inaczej niż przez resztę roku.
+      </p>
+      <p>
+        Przygotowanie jest standardowe, ale trzeba je zrobić z wyprzedzeniem: godziny specjalne na konkretne daty, post o dostępności, sprawdzone atrybuty. Godziny specjalne wracają same po upływie dat, więc nie trzeba niczego cofać.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy firma z Ochli będzie widoczna w centrum Zielonej Góry?</h3>
+      <p>
+        W zapytaniach z nazwą miasta może się pojawiać, bo adres administracyjny jest ten sam, ale w zapytaniach bez nazwy miasta i przy dużej odległości znacznie słabiej. Ranking uwzględnia fizyczną odległość, nie granice administracyjne.
+      </p>
+
+      <h3>Jak ustawić obszar działania w tak dużym mieście?</h3>
+      <p>
+        Po nazwach miejscowości i dzielnic, do których faktycznie dojeżdżasz, a nie promieniem. Google pozwala wskazać do dwudziestu obszarów, więc limit zwykle wystarcza.
+      </p>
+
+      <h3>Czy warto robić podstrony pod dawne sołectwa?</h3>
+      <p>
+        Tak, jeśli faktycznie tam pracujesz i każda podstrona ma unikalną treść. Konkurencja o te frazy jest minimalna, więc efekt bywa szybki.
+      </p>
+
+      <ul>
+        <li><Link href="/seo-lokalne-dla-firm">SEO lokalne dla firm usługowych</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-gorzow-wielkopolski">Pozycjonowanie wizytówki Google Gorzów Wielkopolski</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-nowa-sol">Pozycjonowanie wizytówki Google Nowa Sól</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-glogow">Pozycjonowanie wizytówki Google Głogów</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Rybnik
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-rybnik": (
+    <>
+      <p>
+        Rybnik, około 134 tysięcy mieszkańców, składa się z niewielkiego centrum i kilkunastu dzielnic, które przez większość swojej historii były osobnymi wsiami i do dziś tak funkcjonują. <strong>Boguszowice, Niedobczyce, Chwałowice, Niewiadom, Kamień, Golejów</strong> to nie są osiedla w rozumieniu miejskim, tylko odrębne miejscowości z własną tożsamością i własnym rynkiem usług.
+      </p>
+      <p>
+        Dla firmy usługowej oznacza to, że jedna pinezka nie obsłuży miasta. To brzmi jak ograniczenie, ale przy dobrym rozpoznaniu jest szansą.
+      </p>
+
+      <h2>Jak wygląda tu rynek zapytań</h2>
+      <p>
+        Mieszkaniec Boguszowic nie wpisuje „fryzjer Rybnik", tylko „fryzjer Boguszowice", bo do centrum ma kilkanaście minut jazdy i nie widzi powodu, żeby tam jechać. <strong>Zapytania dzielnicowe są w Rybniku bardziej naturalne niż zapytanie miejskie</strong> i mają zupełnie inne wyniki.
+      </p>
+      <p>
+        Konkurencja o te frazy jest zwykle minimalna, bo firmy walczą o frazę z nazwą miasta. Sprawdzenie tego zajmuje kilka minut: wpisz swoją główną usługę z nazwą trzech dzielnic i zobacz, ile profili w ogóle się pojawia.
+      </p>
+
+      <h2>Gdzie postawić bazę</h2>
+      <p>
+        Dla firmy z dojazdem to jest decyzja o największych konsekwencjach. Ranking w Mapach liczy się od punktu, w którym fizycznie jesteś, więc baza w centrum daje inną mapę widoczności niż baza w dzielnicy peryferyjnej.
+      </p>
+      <p>
+        Kryterium jest jedno i praktyczne: <strong>środek ciężkości Twoich zleceń</strong>, a nie prestiż adresu. Przejrzyj ostatnie pięćdziesiąt zleceń, wypisz dzielnice i zobacz, gdzie realnie leży Twój rynek. Adres w centrum, gdy 70 procent zleceń jest po jednej stronie miasta, to strata, której nie widać w żadnym raporcie.
+      </p>
+
+      <h2>Obszar działania</h2>
+      <p>
+        Profil bez adresu, z wskazanymi obsługiwanymi miejscowościami, jest w Rybniku szczególnie sensowny, bo pozwala objąć zarówno dzielnice, jak i sąsiednie miasta Rybnickiego Okręgu Węglowego: Żory, Jastrzębie-Zdrój, Rydułtowy, Czerwionkę-Leszczyny, Knurów.
+      </p>
+      <p>
+        Ograniczenie pozostaje standardowe: <strong>obszar działania decyduje o tym, komu Google może Cię pokazać, nie o tym, jak wysoko</strong>. Widoczność w odległych miejscowościach buduje się osobnymi podstronami na stronie internetowej z realną treścią, a nie samym wpisem w panelu.
+      </p>
+
+      <h2>Treść, która faktycznie różnicuje podstrony</h2>
+      <p>
+        Jeśli budujesz podstrony pod dzielnice i sąsiednie miasta, muszą się od siebie realnie różnić, bo dwadzieścia podstron z podmienioną nazwą to doorway pages i szkodzą całej domenie. W Rybniku różnicowanie jest akurat łatwe, bo naprawdę wiesz o tych miejscach rzeczy, których nie wie nikt inny: czas dojazdu, konkretne ulice i osiedla, charakter zabudowy, typowe zlecenia z danego rejonu.
+      </p>
+      <p>
+        Realistyczne minimum to 400 do 700 słów unikalnej treści na podstronę plus dwa zdjęcia z okolicy. Nie musisz pisać eseju, musisz napisać coś, czego nie ma na pozostałych.
+      </p>
+
+      <h2>Fundament</h2>
+      <p>
+        Wszystko powyżej działa dopiero przy kompletnym profilu: precyzyjna kategoria główna, wypełniona sekcja usług, atrybuty, opis, komplet godzin, regularne zdjęcia i odpowiedź na każdą opinię. W miastach o niskiej presji konkurencyjnej ten fundament zwykle wystarcza, żeby zobaczyć ruch w ciągu kilku tygodni. Kolejność prac opisaliśmy przy <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy warto celować we frazy z nazwami rybnickich dzielnic?</h3>
+      <p>
+        Tak. Mieszkańcy realnie ich używają, a konkurencja o te frazy jest zwykle znikoma. To najtańsze wejście dla firmy zaczynającej pracę nad widocznością.
+      </p>
+
+      <h3>Czy jedna wizytówka obsłuży cały Rybnik?</h3>
+      <p>
+        Nie w sensie równej widoczności. Profil będzie najmocniejszy wokół swojego adresu, a w odległych dzielnicach znacznie słabszy. Firma z dojazdem może objąć je obszarem działania, ale nie zastąpi to bliskości.
+      </p>
+
+      <h3>Gdzie ustawić bazę firmy mobilnej?</h3>
+      <p>
+        Możliwie blisko środka ciężkości zleceń. Odległość od klienta wpływa na ranking, prestiż adresu nie.
+      </p>
+
+      <ul>
+        <li><Link href="/uslugi-wizytowka-google-business">Sekcja usług w wizytówce Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-zory">Pozycjonowanie wizytówki Google Żory</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-raciborz">Pozycjonowanie wizytówki Google Racibórz</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-gliwice">Pozycjonowanie wizytówki Google Gliwice</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Ruda Śląska
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-ruda-slaska": (
+    <>
+      <p>
+        Ruda Śląska, około 132 tysięcy mieszkańców, jest miastem, które powstało z połączenia kilkunastu samodzielnych gmin i osad. <strong>Nie ma tu jednego rynku, jednej głównej ulicy ani jednego centrum</strong>, do którego zjeżdżają wszyscy. Są za to dzielnice o mocnej, odrębnej tożsamości: Nowy Bytom, Wirek, Halemba, Bielszowica, Kochłowice, Godula, Orzegów, Bykowina.
+      </p>
+      <p>
+        Dla lokalnego SEO to jest sytuacja graniczna: miasto, w którym praca na frazie miejskiej jest w wielu kategoriach po prostu nieefektywna, bo mieszkańcy tak nie szukają.
+      </p>
+
+      <h2>Mieszkańcy szukają po dzielnicach</h2>
+      <p>
+        „Fryzjer Halemba", „mechanik Wirek", „dentysta Nowy Bytom". To są realne zapytania i mają zupełnie inne wyniki niż te same frazy z nazwą miasta. Osoba z Halemby nie pojedzie do Orzegowa po usługę, którą znajdzie u siebie, bo dzieli je kilkanaście minut jazdy przez tereny poprzemysłowe.
+      </p>
+      <p>
+        Praktyczny wniosek: <strong>wybierz dwie, trzy dzielnice, w których faktycznie masz klientów, i zbuduj wokół nich całą pracę</strong>. Nazwy tych dzielnic powinny pojawiać się w opisie firmy, w odpowiedziach na opinie i w treści na stronie internetowej.
+      </p>
+
+      <h2>Gdzie postawić pinezkę</h2>
+      <p>
+        W mieście bez centrum lokalizacja profilu decyduje o zasięgu bardziej niż gdziekolwiek indziej, bo nie ma punktu, który byłby blisko wszystkiego. Jeśli dopiero wybierasz lokal albo bazę dla firmy z dojazdem, kryterium jest jedno: <strong>środek ciężkości Twoich zleceń</strong>.
+      </p>
+      <p>
+        Jeśli lokal już masz, zrób pomiar. Przejedź się przez cztery, pięć dzielnic z telefonem i sprawdzaj swoją frazę w trybie incognito. Wynik będzie mapą realnego rynku i podstawą wszystkich dalszych decyzji. Jak taki pomiar prowadzić, opisaliśmy przy <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+      </p>
+
+      <h2>Sąsiedzi za rogiem</h2>
+      <p>
+        Ruda Śląska graniczy z Zabrzem, Bytomiem, Chorzowem, Świętochłowicami, Katowicami i Mikołowem. W zapytaniach <strong>bez nazwy miasta</strong>, gdzie decyduje odległość, firma z pogranicza obsługuje kilka miast naraz. W zapytaniach <strong>z nazwą miasta</strong> wygra tylko w tym, w którym ma adres.
+      </p>
+      <p>
+        To rozróżnienie warto sprawdzić w praktyce, zanim ustawi się cele. Statystyki profilu w panelu Google Business Profile pokazują, jakie zapytania doprowadziły do wyświetleń, więc masz to z pierwszej ręki.
+      </p>
+
+      <h2>Konkurencja</h2>
+      <p>
+        W miastach konurbacji o profilu przemysłowym odsetek firm prowadzących profil systematycznie jest niski. W wielu kategoriach pierwsza trójka to profile kompletne, ale bez odpowiedzi na opinie, bez świeżych zdjęć i z pustą sekcją usług.
+      </p>
+      <p>
+        Kwadrans na sprawdzenie trzech profili nad Tobą daje odpowiedź, ile pracy dzieli Cię od pierwszej trójki. Cztery elementy, kategorię, usługi, opis i adres docelowy linku, dorównasz w jedno popołudnie. Opinie i ich świeżość wymagają miesięcy i to one wyznaczają realny horyzont.
+      </p>
+
+      <h2>Plan minimum</h2>
+      <p>
+        Kompletny profil: precyzyjna kategoria główna, wszystkie usługi rozpisane osobno, atrybuty, opis z nazwami dzielnic, komplet godzin, dwadzieścia zdjęć z realnych zleceń. Potem procedura opinii po każdej obsłudze i odpowiedź na każdą recenzję w ciągu doby. Na końcu treść na stronie pod wybrane dzielnice.
+      </p>
+      <p>
+        W mieście o tej strukturze taki plan zwykle wystarcza, żeby zająć pierwszą trójkę w swojej dzielnicy w ciągu kilku miesięcy.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy warto walczyć o frazę z nazwą miasta?</h3>
+      <p>
+        Warto, ale nie w pierwszej kolejności. W Rudzie Śląskiej zapytania dzielnicowe mają wyższy udział i mniejszą konkurencję, więc dają szybszy zwrot.
+      </p>
+
+      <h3>Czy mogę mieć kilka wizytówek w różnych dzielnicach?</h3>
+      <p>
+        Tylko przy realnych, obsadzonych punktach z własnymi godzinami i personelem. Profile pod adresami, pod którymi nikt nie obsługuje klientów, są zgłaszane i zawieszane.
+      </p>
+
+      <h3>Jak sprawdzić, z jakich zapytań przychodzą wyświetlenia?</h3>
+      <p>
+        W panelu Google Business Profile, w sekcji statystyk, znajdziesz frazy, które doprowadziły do wyświetlenia profilu. To najlepsze dostępne źródło informacji o tym, jak faktycznie szukają Twoi klienci.
+      </p>
+
+      <ul>
+        <li><Link href="/kategorie-wizytowka-google">Kategorie w wizytówce Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-zabrze">Pozycjonowanie wizytówki Google Zabrze</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-bytom">Pozycjonowanie wizytówki Google Bytom</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-katowice">Pozycjonowanie wizytówki Google Katowice</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Opole
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-opole": (
+    <>
+      <p>
+        Opole, około 127 tysięcy mieszkańców, jest najmniejszym miastem wojewódzkim w Polsce, a województwo opolskie najmniejszym województwem. Ta skala ma konkretne przełożenie na lokalne SEO: <strong>opolska firma naturalnie obsługuje znaczną część regionu</strong>, bo nie ma w nim drugiego ośrodka porównywalnej wielkości.
+      </p>
+      <p>
+        Kędzierzyn-Koźle, Nysa, Brzeg, Kluczbork, Strzelce Opolskie i Prudnik ciążą do Opola w usługach specjalistycznych. Pytanie brzmi, jak z tej grawitacji skorzystać, nie rozmywając profilu.
+      </p>
+
+      <h2>Profil pracuje lokalnie, strona pracuje regionalnie</h2>
+      <p>
+        To jest podział, którego warto się trzymać. <strong>Wizytówka w Mapach</strong> daje widoczność w Opolu i najbliższych okolicach, bo Google opiera wyniki lokalne między innymi na odległości od szukającego. Rozszerzanie obszaru działania na całe województwo nie zwiększa zasięgu, a bywa, że osłabia trafność.
+      </p>
+      <p>
+        <strong>Strona internetowa</strong> obsługuje region. Osobne podstrony pod Kędzierzyn-Koźle, Nysę czy Brzeg, każda z realną, unikalną treścią, dają widoczność w wynikach organicznych na frazach z nazwą tych miast. Warunek: podstrony różniące się wyłącznie podmienioną nazwą miejscowości to doorway pages i szkodzą całej domenie. Zasady tej struktury opisaliśmy w tekście o <Link href="/seo-lokalne-dla-firm">SEO lokalnym dla firm usługowych</Link>.
+      </p>
+
+      <h2>Dwujęzyczność Opolszczyzny</h2>
+      <p>
+        Województwo opolskie jest jedynym regionem w Polsce, w którym w części gmin funkcjonują urzędowo dodatkowe nazwy miejscowości w języku niemieckim, a mniejszość niemiecka jest istotną częścią lokalnej społeczności.
+      </p>
+      <p>
+        Dla większości firm usługowych nie ma to praktycznego przełożenia na profil. Ma natomiast wtedy, gdy obsługujesz klientów niemieckojęzycznych albo działasz w gminach, gdzie ta społeczność jest liczna. Wtedy warto: zaznaczyć obsługę w danym języku w atrybutach, wspomnieć o niej naturalnie w opisie firmy i zostawić opinie w językach oryginalnych, odpowiadając w tym samym języku. <strong>Nazwy firmy nie tłumaczy się</strong>, bo profil ma jedną nazwę, która musi odpowiadać rzeczywistej.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-sky-400 bg-sky-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-2">O czym warto pamiętać</p>
+        <p className="text-sm text-sky-900 leading-relaxed">
+          Jeśli obsługa w innym języku jest realną częścią oferty, potrzebna jest osobna wersja językowa strony pod własnym adresem URL i z poprawnymi znacznikami języka. Tłumaczenie podmieniane w locie pod tym samym adresem nie zostanie zaindeksowane osobno i nie da żadnej widoczności.
+        </p>
+      </div>
+
+      <h2>Konkurencja w małym mieście wojewódzkim</h2>
+      <p>
+        Opole ma cechę wspólną z Białymstokiem i Kielcami: mniejszą presję konkurencyjną, niż wynikałoby ze statusu miasta wojewódzkiego. W wielu kategoriach pierwsza trójka to profile kompletne, ale bez systematycznej pracy nad opiniami.
+      </p>
+      <p>
+        To oznacza, że <strong>koszt wejścia do top 3 jest niższy, a horyzont krótszy</strong> niż w aglomeracjach. Sprawdzenie zajmuje kwadrans: otwórz trzy profile nad Tobą i zanotuj datę ostatniej opinii, obecność odpowiedzi właściciela i wypełnienie sekcji usług.
+      </p>
+
+      <h2>Dzielnice</h2>
+      <p>
+        Zaodrze, Chabry, Armii Krajowej, Bierkowice, Gosławice, Grudzice, Nowa Wieś Królewska. Opole jest zwarte, więc różnice w widoczności między dzielnicami są mniejsze niż w dużych miastach, ale nadal istnieją i warto je sprawdzić pomiarem, zanim uzna się je za nieistotne.
+      </p>
+
+      <h2>Fundament</h2>
+      <p>
+        Precyzyjna kategoria główna dopasowana do frazy, z której przychodzą pieniądze. Wypełniona sekcja usług, bo to darmowe miejsce na frazy, którego prawie nikt nie wykorzystuje. Komplet atrybutów, opis, godziny, zdjęcia. Odpowiedź na każdą opinię. Lista kontrolna jest w tekście o <Link href="/sekcja-informacje-wizytowka-google">sekcji Informacje w wizytówce Google</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy warto ustawić obszar działania na całe województwo opolskie?</h3>
+      <p>
+        Nie. Wpisuj tylko miejscowości, do których faktycznie dojeżdżasz. Szeroka deklaracja nie zwiększa zasięgu, a widoczność w dalszych miastach buduje się treścią na stronie.
+      </p>
+
+      <h3>Czy opinie po niemiecku pomagają opolskiej firmie?</h3>
+      <p>
+        Jeśli obsługujesz klientów niemieckojęzycznych, tak, bo są czytelnym sygnałem dla algorytmu i dla kolejnych klientów. Nie obniżają widoczności w polskich zapytaniach.
+      </p>
+
+      <h3>Ile trwa wejście do top 3 w Opolu?</h3>
+      <p>
+        W większości kategorii krócej niż w aglomeracjach, bo konkurencja o pierwszą trójkę jest mniejsza. Realny horyzont wyznacza liczba i świeżość opinii profili, które stoją nad Tobą.
+      </p>
+
+      <ul>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-kedzierzyn-kozle">Pozycjonowanie wizytówki Google Kędzierzyn-Koźle</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-nysa">Pozycjonowanie wizytówki Google Nysa</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-brzeg">Pozycjonowanie wizytówki Google Brzeg</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Tychy
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-tychy": (
+    <>
+      <p>
+        Tychy, około 122 tysięcy mieszkańców, są jednym z niewielu polskich miast zaprojektowanych od zera w drugiej połowie XX wieku. Ma to konsekwencję, która brzmi jak ciekawostka, a jest realnym czynnikiem w lokalnym SEO: <strong>osiedla mają litery zamiast nazw</strong>, a mieszkańcy posługują się nimi na co dzień.
+      </p>
+      <p>
+        Osiedle A, B, C, D, aż po litery dalsze, plus nazwy własne, takie jak Paprocany, Wilkowyje, Czułów, Żwaków czy Mąkołowiec. Ten sposób nazywania przestrzeni przekłada się bezpośrednio na to, jak ludzie szukają.
+      </p>
+
+      <h2>Jak to zmienia zapytania</h2>
+      <p>
+        Nazwy jednoliterowe są trudne do wykorzystania jako fraza wyszukiwania i mieszkańcy zwykle nie wpisują ich w Google, choć używają ich w mowie. W praktyce <strong>zapytania w Tychach są bardziej „miejskie" niż w miastach o historycznym układzie dzielnic</strong>: częściej „fryzjer Tychy", rzadziej „fryzjer osiedle B".
+      </p>
+      <p>
+        Wyjątkiem są dzielnice o nazwach własnych. „Mechanik Paprocany" czy „usługa Wilkowyje" to zapytania realne i mniej oblegane. Warto sprawdzić, które z nich mają w Twojej kategorii jakikolwiek wolumen, bo tam wejście jest najtańsze.
+      </p>
+
+      <h2>Problem z adresami w osiedlach</h2>
+      <p>
+        W zabudowie osiedlowej z lat sześćdziesiątych i siedemdziesiątych numeracja bywa nieoczywista, a bloki stoją w układach, w których nawigacja prowadzi pod niewłaściwą stronę budynku. Lokal usługowy w parterze bloku potrafi mieć pinezkę na środku budynku albo na drodze dojazdowej.
+      </p>
+      <p>
+        Rozwiązanie zajmuje kilka minut i jest jedną z najtańszych rzeczy o realnym wpływie na liczbę klientów. W panelu Google Business Profile otwórz edycję adresu, wybierz poprawienie lokalizacji na mapie i <strong>przesuń pinezkę dokładnie na wejście</strong>, z którego korzystają klienci. Do tego zdjęcie wejścia z widocznym otoczeniem i jedno zdanie o dojściu w opisie firmy.
+      </p>
+
+      <h2>Sąsiedztwo Katowic</h2>
+      <p>
+        Tychy leżą na południowym skraju konurbacji, kilkanaście kilometrów od Katowic. W zapytaniach <strong>z nazwą miasta</strong> przewagę ma profil z tyskim adresem. W zapytaniach <strong>bez nazwy</strong> decyduje odległość, więc firma z północnych Tychów realnie konkuruje z profilami z Mikołowa czy Bierunia.
+      </p>
+      <p>
+        Sytuacja jest korzystniejsza niż w środku konurbacji, bo Tychy mają wyraźniejsze granice i mniej sąsiadów bezpośrednich. Rynek jest bardziej „własny" niż w Zabrzu czy Rudzie Śląskiej.
+      </p>
+
+      <h2>Zakład, uczelnia, ruch dzienny</h2>
+      <p>
+        Duży zakład przemysłowy i związane z nim zaplecze generują w Tychach ruch osób, które pracują w mieście, a mieszkają poza nim. Dla firm usługowych oznacza to zapytania w godzinach okołopracowych i w drodze do domu.
+      </p>
+      <p>
+        Praktycznie: <strong>godziny otwarcia obejmujące wczesne popołudnie i wczesny wieczór</strong> mają tu większą wartość niż w miastach o innym rytmie. Jeśli faktycznie pracujesz w tych godzinach, upewnij się, że profil to pokazuje. Jak zarządzać godzinami, opisaliśmy przy <Link href="/godziny-otwarcia-wizytowka-google">godzinach otwarcia w wizytówce Google</Link>.
+      </p>
+
+      <h2>Fundament</h2>
+      <p>
+        Kompletny profil pozostaje bazą: precyzyjna kategoria główna, wszystkie usługi rozpisane osobno, atrybuty, opis, komplet godzin, regularne zdjęcia i odpowiedź na każdą opinię. W mieście tej wielkości, przy umiarkowanej konkurencji, to zwykle wystarcza, żeby zobaczyć ruch w ciągu kilku tygodni.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Jak poprawić pinezkę lokalu w bloku?</h3>
+      <p>
+        W panelu Google Business Profile otwórz edycję adresu, wybierz poprawienie lokalizacji na mapie i przeciągnij znacznik na wejście dla klientów. Zmiana wymaga zwykle kilku dni na zatwierdzenie.
+      </p>
+
+      <h3>Czy warto używać nazw osiedli w treściach?</h3>
+      <p>
+        Nazw własnych, takich jak Paprocany czy Wilkowyje, tak, bo pojawiają się w zapytaniach. Oznaczeń literowych raczej nie, bo mieszkańcy używają ich w mowie, a nie w wyszukiwarce.
+      </p>
+
+      <h3>Czy tyska firma konkuruje z Katowicami?</h3>
+      <p>
+        W zapytaniach z nazwą miasta nie. W zapytaniach bez nazwy, przy niewielkiej odległości, częściowo tak, zwłaszcza w północnej części miasta.
+      </p>
+
+      <ul>
+        <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">Jakie zdjęcia w wizytówce naprawdę działają</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-katowice">Pozycjonowanie wizytówki Google Katowice</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-bielsko-biala">Pozycjonowanie wizytówki Google Bielsko-Biała</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-rybnik">Pozycjonowanie wizytówki Google Rybnik</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SEO lokalne: Dąbrowa Górnicza
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-dabrowa-gornicza": (
+    <>
+      <p>
+        Dąbrowa Górnicza, około 114 tysięcy mieszkańców, jest jednym z największych powierzchniowo miast w Polsce. <strong>W jej granicach mieszczą się lasy, jeziora Pogorii i dawne wsie</strong>, a między krańcami miasta jest kilkanaście kilometrów. Gęstość zaludnienia jest tu wielokrotnie niższa niż w sąsiednim Sosnowcu.
+      </p>
+      <p>
+        Dla lokalnego SEO to znaczy jedno: <strong>nie da się objąć tego miasta jedną pinezką</strong>, a intuicja o zasięgu profilu, przeniesiona z miasta o zwartej zabudowie, prowadzi tu do złych decyzji.
+      </p>
+
+      <h2>Trzy różne rynki w jednym mieście</h2>
+      <p>
+        Warto myśleć o Dąbrowie jako o trzech osobnych obszarach. <strong>Centrum i Gołonóg</strong>, czyli zwarta zabudowa z największą liczbą mieszkańców i normalną konkurencją. <strong>Rejon Pogorii i Błędowa</strong>, o charakterze rekreacyjnym, z ruchem sezonowym. <strong>Dawne wsie i osiedla peryferyjne</strong>: Ząbkowice, Strzemieszyce, Łosień, Tucznawa, Okradzionów, gdzie konkurencja jest minimalna, ale i zapytań mniej.
+      </p>
+      <p>
+        Firma usługowa powinna wybrać, który z tych obszarów jest jej rynkiem, zamiast próbować obsłużyć wszystkie jednym profilem.
+      </p>
+
+      <h2>Obszar działania po nazwach, nie po promieniu</h2>
+      <p>
+        Dla firm z dojazdem to jest decyzja praktyczna o dużych konsekwencjach. Koło o promieniu dziesięciu kilometrów wokół centrum obejmie w Dąbrowie lasy i tereny poprzemysłowe, a pominie miejscowości, do których jedzie się kwadrans dobrą drogą.
+      </p>
+      <p>
+        Skuteczniejsza metoda: przejrzyj ostatnie pięćdziesiąt zleceń, wypisz dzielnice i miejscowości, posortuj po czasie dojazdu i dopiero z tej listy buduj obszar w profilu. Google pozwala wskazać do dwudziestu obszarów, więc limit zwykle wystarcza z zapasem.
+      </p>
+
+      <h2>Sąsiedztwo w konurbacji</h2>
+      <p>
+        Dąbrowa graniczy z Sosnowcem, Będzinem, Sławkowem i Olkuszem. W zapytaniach <strong>bez nazwy miasta</strong>, gdzie decyduje odległość, firma z zachodniej części miasta realnie obsługuje Będzin i Sosnowiec. W zapytaniach <strong>z nazwą miasta</strong> wygra tylko tam, gdzie ma adres.
+      </p>
+      <p>
+        To warto sprawdzić w statystykach profilu w panelu Google Business Profile, gdzie widać frazy prowadzące do wyświetleń. Dane z pierwszej ręki są lepszym punktem wyjścia niż jakiekolwiek założenie.
+      </p>
+
+      <h2>Sezonowość rekreacyjna</h2>
+      <p>
+        Jeziora Pogorii i Pustynia Błędowska generują latem ruch przyjezdnych z całej aglomeracji. Dla gastronomii, wypożyczalni, usług serwisowych i noclegów to jest realny sezon, w którym struktura zapytań wygląda inaczej niż przez resztę roku.
+      </p>
+      <p>
+        Przygotowanie jest standardowe i warto je zrobić z wyprzedzeniem: godziny specjalne na weekendy i wakacje, post o dostępności, sprawdzone atrybuty dotyczące parkingu i płatności, świeże zdjęcia z sezonu. Klient z zewnątrz filtruje po tym, zanim spojrzy na ocenę.
+      </p>
+
+      <h2>Fundament, którego nie zastąpi geografia</h2>
+      <p>
+        Cała powyższa analiza ma sens dopiero przy kompletnym profilu. Precyzyjna kategoria główna, wszystkie usługi rozpisane osobno, atrybuty, opis z nazwami dzielnic, komplet godzin, regularne zdjęcia, odpowiedź na każdą opinię. W mieście o niskiej gęstości i umiarkowanej konkurencji ten fundament zwykle wystarcza, żeby zająć pierwszą trójkę w swoim rejonie w ciągu kilku miesięcy. Kolejność prac opisaliśmy przy <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+      </p>
+
+      <h2>FAQ</h2>
+
+      <h3>Czy firma ze Strzemieszyc będzie widoczna w centrum Dąbrowy?</h3>
+      <p>
+        W zapytaniach z nazwą miasta może się pojawiać, bo adres administracyjny jest ten sam, ale w zapytaniach bez nazwy miasta i przy dużej odległości znacznie słabiej. Ranking uwzględnia fizyczną odległość, nie granice administracyjne.
+      </p>
+
+      <h3>Jak ustawić obszar działania w tak rozległym mieście?</h3>
+      <p>
+        Po nazwach dzielnic i miejscowości, do których faktycznie dojeżdżasz, nie promieniem. Lista powinna wynikać z historii zleceń, a nie z ambicji.
+      </p>
+
+      <h3>Czy warto robić podstrony pod dzielnice Dąbrowy?</h3>
+      <p>
+        Tak, jeśli każda ma unikalną treść: czas dojazdu, konkretne ulice, przykłady zleceń z tego rejonu. Konkurencja o te frazy jest zwykle minimalna, więc efekt bywa szybki.
+      </p>
+
+      <ul>
+        <li><Link href="/seo-lokalne-dla-firm">SEO lokalne dla firm usługowych</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-sosnowiec">Pozycjonowanie wizytówki Google Sosnowiec</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-zawiercie">Pozycjonowanie wizytówki Google Zawiercie</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google-katowice">Pozycjonowanie wizytówki Google Katowice</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      Poradnik: Mobilna wulkanizacja - jak zwiększyć zasięg
   ───────────────────────────────────────────────────────────────────────── */
   "mobilna-wulkanizacja-jak-zwiekszyc-zasieg": (
