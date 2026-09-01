@@ -27,6 +27,17 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "mobilna-wulkanizacja-jak-zwiekszyc-zasieg",
+    title: "Mobilna wulkanizacja - jak zwiększyć zasięg",
+    excerpt: "Cztery etapy, które w usłudze z dojazdem realnie poszerzają obszar wyświetlania: wizytówka Google wypełniona na 100% z obszarem działania zamiast adresu, strona z podstronami lokalizacyjnymi zamiast onepage'a, mapy i wzmianki na lokalnych portalach, a dopiero na końcu płatne linki. Z harmonogramem tygodniowym, przykładami i wyliczeniem, kiedy to się zwraca.",
+    category: "Poradnik",
+    date: "2026-09-01",
+    readTime: 18,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-mobilna-wulkanizacja.svg",
+    published: true,
+  },
+  {
     slug: "pozycjonowanie-wizytowki-google-olsztyn",
     title: "Pozycjonowanie wizytówki Google Olsztyn — także metody z szarej strefy i ich cena",
     excerpt: "Co ustawić w profilu firmy z Olsztyna, żeby wejść do top 3 w Mapach. Plus uczciwy przegląd metod z szarej strefy — fraza w nazwie, całodobowe godziny, wirtualne biuro — z opisem tego, czym kończą się w praktyce i co robić zamiast nich.",

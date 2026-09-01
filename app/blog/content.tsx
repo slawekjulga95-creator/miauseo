@@ -3,6 +3,520 @@ import Link from "next/link";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     Poradnik: Mobilna wulkanizacja - jak zwiększyć zasięg
+  ───────────────────────────────────────────────────────────────────────── */
+  "mobilna-wulkanizacja-jak-zwiekszyc-zasieg": (
+    <>
+      {/* Spis treści */}
+      <div className="not-prose mt-2 mb-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Spis treści</p>
+        <ol className="space-y-1.5 text-sm">
+          <li><a href="#inna-gra" className="font-semibold text-ink hover:text-brand transition-colors">Mobilna wulkanizacja to inna gra niż warsztat</a></li>
+          <li><a href="#etap-1" className="font-semibold text-ink hover:text-brand transition-colors">Etap 1: wizytówka Google wypełniona na 100%</a></li>
+          <li><a href="#nazwa" className="font-semibold text-ink hover:text-brand transition-colors">Słowo kluczowe w nazwie: co daje i czym ryzykujesz</a></li>
+          <li><a href="#opinie" className="font-semibold text-ink hover:text-brand transition-colors">Opinie ze słowami kluczowymi w treści</a></li>
+          <li><a href="#profile" className="font-semibold text-ink hover:text-brand transition-colors">Profile firmowe podpięte do wizytówki</a></li>
+          <li><a href="#etap-2" className="font-semibold text-ink hover:text-brand transition-colors">Etap 2: strona z podstronami lokalizacyjnymi, nie onepage</a></li>
+          <li><a href="#miejscowosci" className="font-semibold text-ink hover:text-brand transition-colors">Jak dobrać miejscowości i ile ich zrobić</a></li>
+          <li><a href="#etap-3" className="font-semibold text-ink hover:text-brand transition-colors">Etap 3: mapy i wzmianki na lokalnych portalach</a></li>
+          <li><a href="#konkurencja" className="font-semibold text-ink hover:text-brand transition-colors">Jak sprawdzić, gdzie linkuje konkurencja</a></li>
+          <li><a href="#etap-4" className="font-semibold text-ink hover:text-brand transition-colors">Etap 4: linki do strony, WhitePress i LinkHouse</a></li>
+          <li><a href="#harmonogram" className="font-semibold text-ink hover:text-brand transition-colors">Harmonogram: co robisz w którym tygodniu</a></li>
+          <li><a href="#zwrot" className="font-semibold text-ink hover:text-brand transition-colors">Ile to kosztuje i kiedy się zwraca</a></li>
+          <li><a href="#bledy" className="font-semibold text-ink hover:text-brand transition-colors">Siedem błędów, które cofają cały plan</a></li>
+          <li><a href="#faq-wulkanizacja" className="font-semibold text-ink hover:text-brand transition-colors">FAQ</a></li>
+        </ol>
+      </div>
+
+      <h2 id="inna-gra">Mobilna wulkanizacja to inna gra niż warsztat</h2>
+      <p>
+        Stacjonarna wulkanizacja walczy o jedno miasto. Ty walczysz o wszystko, co jesteś w stanie objechać w trzydzieści minut, i to jest jednocześnie Twoja największa przewaga i największy problem marketingowy. Przewaga, bo klient z przebitą oponą na krajówce pod Kościanem nie ma alternatywy: albo Ty przyjedziesz, albo on czeka na lawetę. Problem, bo <strong>Google domyślnie pokaże Cię tylko tam, gdzie masz adres</strong>, a Twój adres to najczęściej dom albo garaż w jednej miejscowości.
+      </p>
+      <p>
+        Zapytania w tej branży są krótkie i panikarskie. „Wulkanizacja dojazd", „mobilna wulkanizacja 24h", „wymiana opony na miejscu", „pomoc drogowa opona". Nikt tego nie wpisuje z ciekawości. To są ludzie, którzy stoją na poboczu i klikną w pierwszy numer, który się wyświetli. Dlatego cały ten poradnik sprowadza się do jednego celu: <strong>żebyś wyświetlał się na tym poboczu, a nie tylko we własnej wsi</strong>.
+      </p>
+      <p>
+        Dobra wiadomość jest taka, że większość z tych rzeczy zrobisz sam, wieczorami, przez telefon i laptopa. Poniżej rozkładamy to na cztery etapy w kolejności, w jakiej faktycznie mają sens. Kolejność nie jest ozdobna: jeśli zrobisz etap czwarty przed pierwszym, przepalisz pieniądze.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-sky-400 bg-sky-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-2">W skrócie</p>
+        <p className="text-sm text-sky-900 leading-relaxed">
+          <strong>Etap 1</strong> to wizytówka Google wypełniona do końca, z obszarem działania zamiast adresu i z opiniami, w których pada nazwa usługi i miejscowość. <strong>Etap 2</strong> to strona z osobną podstroną pod każdą miejscowość, którą obsługujesz. <strong>Etap 3</strong> to mapy i wzmianki na lokalnych portalach, robione równolegle ze stroną. <strong>Etap 4</strong>, dopiero na końcu, to płatne linki z WhitePress albo LinkHouse. Pierwsze trzy etapy zrobisz sam. Czwarty kosztuje.
+        </p>
+      </div>
+
+      <h2 id="etap-1">Etap 1: wizytówka Google wypełniona na 100%</h2>
+      <p>
+        Wizytówka jest w tej branży ważniejsza od strony. Klient z przebitą oponą nie czyta ofert, tylko patrzy na trzy wyniki w Mapach i dzwoni. Kompletność profilu jest jednym z sygnałów, które Google wprost wymienia w swoich wytycznych, i jednocześnie jedyną rzeczą w całym lokalnym SEO, którą masz w 100% pod kontrolą i którą domkniesz w jedno popołudnie.
+      </p>
+      <p>
+        Zasada jest brutalnie prosta: <strong>nie zostawiasz ani jednego pustego pola</strong>. Nie dlatego, że każde pole waży tyle samo, tylko dlatego, że każde puste pole to informacja, której Google o Tobie nie ma, a Twój konkurent ma.
+      </p>
+
+      <h3>Obszar działania zamiast adresu</h3>
+      <p>
+        To jest ustawienie, które w mobilnej wulkanizacji rozstrzyga najwięcej, a które większość firm ma źle. W Google Business Profile wybierasz typ firmy <strong>„świadczę usługi z dojazdem do klienta"</strong> (service area business). Wtedy adres zostaje ukryty, a zamiast niego definiujesz obszar obsługi.
+      </p>
+      <p>
+        Obszar dodajesz po nazwach miejscowości albo po kodach pocztowych. Wpisujesz wszystko, dokąd realnie jeździsz: miasto powiatowe, gminy dookoła, wsie przy trasach. Google pozwala dodać do 20 obszarów i <strong>warto wykorzystać limit do końca</strong>. Ważne: obszar działania nie sprawia, że wyskoczysz w top 3 w każdej z tych miejscowości. Twój ranking nadal liczy się od punktu, w którym fizycznie jesteś. Obszar mówi Google, komu w ogóle wolno Cię pokazać, i bez niego jesteś odcięty od połowy rynku.
+      </p>
+      <p>
+        Jeśli prowadzisz jednoosobową działalność z domu, ukrycie adresu jest dodatkowo obowiązkowe. Wizytówka z adresem domowym, pod którym nikt nie przyjmuje klientów, to <Link href="/wizytowka-google-popularne-oszustwa">klasyczny powód zawieszenia profilu</Link>.
+      </p>
+
+      <h3>Kategorie</h3>
+      <p>
+        Kategoria główna to najmocniejszy pojedynczy przełącznik w Mapach. Dla mobilnej wulkanizacji naturalnym wyborem jest <strong>„Warsztat wulkanizacyjny"</strong> albo <strong>„Sklep z oponami"</strong>, zależnie od tego, skąd realnie przychodzą pieniądze. Jeśli 90% zleceń to wymiana i naprawa na miejscu, ustaw wulkanizację, nie sklep.
+      </p>
+      <p>
+        Do tego dorzucasz kategorie dodatkowe: pomoc drogowa, serwis samochodowy, mechanik samochodowy, przechowalnia opon, jeśli faktycznie ją oferujesz. Zasada jest jedna: <strong>kategoria dodatkowa musi odpowiadać usłudze, którą naprawdę wykonujesz</strong>. Dosypywanie kategorii „na wszelki wypadek" rozmywa profil i potrafi obniżyć pozycję na frazie, na której zależy Ci najbardziej. Mechanikę doboru rozpisaliśmy w osobnym tekście o <Link href="/kategorie-wizytowka-google">kategoriach w wizytówce Google</Link>.
+      </p>
+
+      <h3>Usługi, atrybuty, godziny</h3>
+      <p>
+        Sekcja usług to darmowe miejsce na słowa kluczowe, którego prawie nikt w tej branży nie wypełnia. Wpisujesz każdą pozycję osobno, z krótkim opisem: wymiana opony na miejscu, naprawa przebitej opony, wulkanizacja na drodze, wymiana kół sezonowa u klienta, dopompowanie kół, uszczelnienie felgi, wyważanie kół z dojazdem, opony ciężarowe, opony do busów, wymiana opon w rolnictwie. <strong>Każda taka pozycja to fraza, na którą możesz się wyświetlić.</strong> Więcej o tym w poradniku o <Link href="/uslugi-wizytowka-google-business">sekcji usług w wizytówce</Link>.
+      </p>
+      <p>
+        Godziny otwarcia wpisujesz zgodnie z prawdą. To brzmi banalnie, ale w mobilnej wulkanizacji jest tu największa pokusa całego lokalnego SEO: ustawić 24 godziny na dobę, siedem dni w tygodniu, bo „przecież czasem odbieram w nocy". Jeżeli realnie odbierasz w nocy i realnie wtedy jedziesz, ustaw 24h i to jest ogromna przewaga, bo połowa zapytań w tej branży leci po zmroku. Jeżeli nie odbierasz, <strong>nie ustawiaj</strong>. Klient, który dzwoni o drugiej w nocy i trafia na pocztę głosową, wystawia jedną gwiazdkę, a jedna gwiazdka kosztuje Cię więcej niż pozycja, którą chciałeś ugrać.
+      </p>
+      <p>
+        Do tego atrybuty (płatność kartą, płatność BLIK, faktura VAT, obsługa w języku ukraińskim, jeśli dotyczy) i opis firmy na 750 znaków, w którym naturalnie pada nazwa usługi i najważniejsze miejscowości. Jak go napisać, żeby nie brzmiał jak spam, <Link href="/opis-firmy-google-business-profile-jak-napisac">pokazujemy tutaj</Link>.
+      </p>
+
+      <h3>Zdjęcia i posty</h3>
+      <p>
+        Zdjęcia w tej branży są łatwe, bo robisz je i tak przy każdym zleceniu. Wrzucaj: bus z logo w terenie, opona przed naprawą i po, sprzęt rozłożony przy aucie, wymiana koła na poboczu, praca po zmroku z latarką. <strong>Zdjęcie z pobocza o dwudziestej drugiej sprzedaje lepiej niż każdy tekst</strong>, bo pokazuje dokładnie tę sytuację, w której klient właśnie jest.
+      </p>
+      <p>
+        Rób zdjęcia telefonem, bez filtrów, z włączoną geolokalizacją. Wrzucaj dwa, trzy tygodniowo, a nie trzydzieści raz na pół roku. Posty ustaw na jeden tygodniowo: sezon zmiany opon, dyżur weekendowy, informacja o obsłudze konkretnej gminy, promocja na komplet. Post nie jest sygnałem rankingowym pierwszej wagi, ale utrzymuje profil w ruchu i zajmuje miejsce, którego nie zajmie konkurent.
+      </p>
+
+      <h2 id="nazwa">Słowo kluczowe w nazwie: co daje i czym ryzykujesz</h2>
+      <p>
+        Teraz najbardziej kontrowersyjny punkt całego etapu pierwszego, i chcemy go opisać uczciwie, a nie owijając w bawełnę.
+      </p>
+      <p>
+        <strong>Nazwa firmy w wizytówce jest jednym z najsilniejszych sygnałów rankingowych w Mapach Google.</strong> Profil o nazwie „Mobilna Wulkanizacja Leszno" ma na frazie „mobilna wulkanizacja Leszno" przewagę nad profilem „P.H.U. Kowalski", której nie nadrobisz ani opiniami, ani zdjęciami. To nie jest teoria, to widać w każdej lokalnej niszy w pierwszej trójce.
+      </p>
+      <p>
+        I teraz druga strona. Wytyczne Google mówią jasno: nazwa w wizytówce ma odpowiadać <strong>rzeczywistej nazwie firmy</strong>, tej z szyldu, z busa, z faktury, ze strony. Dopisywanie słów kluczowych i miejscowości do nazwy jest naruszeniem, a konsekwencje idą stopniowo: najpierw ktoś zgłasza poprawkę i Google po cichu przywraca starą nazwę, potem profil trafia do ponownej weryfikacji, a w najgorszym wariancie zostaje zawieszony. Zgłoszenie w praktyce robi zawsze konkurencja, nie Google.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-amber-400 bg-amber-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-amber-700 mb-2">Jak to zrobić i nie oberwać</p>
+        <p className="text-sm text-amber-900 leading-relaxed">
+          Nie dopisuj słowa kluczowego do nazwy. <strong>Zmień rzeczywistą nazwę firmy</strong> tak, żeby słowo kluczowe było jej naturalną częścią, i wyrównaj to wszędzie: w CEIDG jako nazwa firmy albo jako oznaczenie działalności, na oklejeniu busa, w stopce strony, na fakturach, na wizytówkach papierowych, na Facebooku. Nazwa „Mobilna Wulkanizacja Kowalski" jest w pełni legalna, jeśli tak faktycznie nazywa się Twoja firma. Wtedy przy zgłoszeniu masz czym się bronić, bo dowodem jest zdjęcie busa, a nie tłumaczenie.
+        </p>
+      </div>
+
+      <p>
+        Ryzyko jest realne, ale asymetryczne. Jeśli zmieniasz nazwę na papierze i w terenie, ryzyko spada prawie do zera, a zysk zostaje. Jeśli tylko dopisujesz frazę w panelu, grasz w rosyjską ruletkę profilem, który generuje Ci większość telefonów. <strong>Nasza rekomendacja: rób to, ale rób od strony rzeczywistości, nie od strony panelu.</strong>
+      </p>
+      <p>
+        Jedno zastrzeżenie na koniec: nie wpisuj do nazwy dwóch miejscowości ani listy usług. „Mobilna Wulkanizacja Leszno Kościan Gostyń 24h" to profil, który zniknie. Jedno słowo kluczowe, ewentualnie jedna miejscowość, i tyle.
+      </p>
+
+      <h2 id="opinie">Opinie ze słowami kluczowymi w treści</h2>
+      <p>
+        Opinie w Mapach robią dwie rzeczy naraz: przekonują człowieka i informują algorytm. Ta druga część jest niedoceniana. <strong>Google czyta treść recenzji</strong> i wyłapuje z niej nazwy usług oraz lokalizacji. Dwadzieścia opinii, w których pada „przyjechał w nocy pod Rawicz i naprawił oponę", buduje Ci widoczność pod Rawiczem skuteczniej niż każdy tekst, który sam napiszesz.
+      </p>
+      <p>
+        W tej branży zbieranie opinii jest łatwiejsze niż gdziekolwiek indziej, bo <strong>ratujesz ludzi w najgorszym momencie ich dnia</strong>. Wdzięczność jest świeża przez mniej więcej godzinę. Wykorzystaj to.
+      </p>
+
+      <h3>Procedura, która działa</h3>
+      <ul>
+        <li>Wygeneruj krótki link do opinii w panelu wizytówki (<code>Poproś o opinie</code>) i zapisz go w notatkach telefonu.</li>
+        <li>Wysyłaj SMS-a <strong>od razu po zakończeniu zlecenia</strong>, jeszcze zanim odjedziesz. Nie wieczorem, nie następnego dnia.</li>
+        <li>W SMS-ie napisz jedno zdanie: „Dziękuję za zaufanie. Jeśli wszystko było w porządku, będę wdzięczny za krótką opinię: [link]".</li>
+        <li>Jeśli klient pyta, co napisać, powiedz: „najlepiej to, co się działo, gdzie i o której". Nie dyktuj treści.</li>
+        <li>Odpowiadaj na <strong>każdą</strong> opinię w ciągu doby, wplatając nazwę usługi i miejscowość: „Cieszę się, że wymiana opony pod Osieczną poszła sprawnie".</li>
+      </ul>
+      <p>
+        Kluczowa granica: <strong>nie wolno Ci napisać klientowi gotowej treści opinii ani jej kupić</strong>. To działa krótko i kończy się filtrem albo utratą wszystkich recenzji naraz. Możesz natomiast pytać w sposób, który naturalnie naprowadza na konkret. Różnica między „proszę o opinię" a „proszę napisz, gdzie i o której przyjechałem" to różnica między recenzją „polecam" a recenzją, która realnie pozycjonuje. Szerzej rozpisaliśmy to w tekście o <Link href="/opinie-google-jak-zdobywac-skutecznie">skutecznym zbieraniu opinii Google</Link>.
+      </p>
+      <p>
+        Badanie <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">Local Consumer Review Survey 2026</a> firmy BrightLocal, przeprowadzone na próbie 1002 dorosłych konsumentów w USA, pokazało, że 97% czyta opinie przed wyborem lokalnej firmy, a około 81% robi to w Google. To dane z rynku amerykańskiego, więc traktuj je jako wskazanie kierunku, a nie polski benchmark, ale kierunek jest jednoznaczny: profil bez świeżych opinii przegrywa, zanim ktokolwiek zadzwoni.
+      </p>
+
+      <h2 id="profile">Profile firmowe podpięte do wizytówki</h2>
+      <p>
+        Dla Google Twoja firma to <strong>encja</strong>, czyli obiekt, o którym wyszukiwarka zbiera informacje z wielu źródeł naraz. Im więcej niezależnych miejsc mówi to samo (ta sama nazwa, ten sam numer, ten sam adres strony), tym pewniej Google tę encję rozpoznaje i tym chętniej ją pokazuje. Jeżeli masz tylko wizytówkę i nic poza nią, jesteś dla algorytmu firmą bez potwierdzenia.
+      </p>
+      <p>
+        Dlatego zakładasz i uzupełniasz komplet profili firmowych, nawet jeśli nie planujesz na nich publikować. To nie jest praca pod ruch, tylko pod potwierdzenie tożsamości.
+      </p>
+
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr className="bg-surface">
+              <th className="text-left p-3 border border-border font-bold text-ink">Profil</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Po co</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Nakład pracy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-3 border border-border">Facebook (strona firmowa)</td>
+              <td className="p-3 border border-border">Najsilniejsze potwierdzenie encji w Polsce, realne zapytania przez Messenger</td>
+              <td className="p-3 border border-border text-brand font-semibold">30 min + posty</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">LinkedIn (strona firmy)</td>
+              <td className="p-3 border border-border">Mocny wynik na nazwę firmy, wejście w klientów flotowych i transport</td>
+              <td className="p-3 border border-border text-brand font-semibold">20 min</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border">YouTube</td>
+              <td className="p-3 border border-border">Miejsce na filmy z wymiany na drodze, które potem osadzasz na stronie</td>
+              <td className="p-3 border border-border text-orange-600 font-semibold">20 min</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Instagram i TikTok</td>
+              <td className="p-3 border border-border">Wideo z terenu, zasięg lokalny, materiał do wizytówki</td>
+              <td className="p-3 border border-border text-orange-600 font-semibold">15 min + treści</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border">Panorama Firm, PKT, Aleo, katalogi branżowe</td>
+              <td className="p-3 border border-border">Klasyczne cytowania NAP, wspierają spójność danych</td>
+              <td className="p-3 border border-border text-orange-600 font-semibold">1 h łącznie</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border">Apple Business Connect, Bing Places</td>
+              <td className="p-3 border border-border">Klienci z iPhone&apos;ów i asystentów, wciąż prawie pusta konkurencja</td>
+              <td className="p-3 border border-border text-orange-600 font-semibold">40 min</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border">OLX i lokalne ogłoszenia</td>
+              <td className="p-3 border border-border">Realne zapytania w sezonie zmiany opon, dodatkowa wzmianka o firmie</td>
+              <td className="p-3 border border-border text-yellow-600 font-semibold">30 min</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Trzy warunki, bez których to nie zadziała. Po pierwsze, <strong>we wszystkich profilach ta sama nazwa, ten sam numer telefonu w tym samym formacie i ten sam adres strony</strong>. Po drugie, każdy profil linkuje do strony. Po trzecie, na swojej stronie dodajesz do danych strukturalnych <code>LocalBusiness</code> pole <code>sameAs</code> z listą adresów tych profili, żeby Google mógł skleić je w jedną tożsamość. Jak wgrać schemę, opisaliśmy krok po kroku w tekście o <Link href="/jak-dodac-local-schema-do-strony">dodawaniu Local Schema do strony</Link>.
+      </p>
+      <p>
+        Same profile podpinasz też w wizytówce, w sekcji linków społecznościowych. Google Business Profile pozwala dodać odnośniki do Facebooka, Instagrama, LinkedIna, YouTube&apos;a i X. <strong>To pole jest puste u zdecydowanej większości firm usługowych</strong>, a wypełnienie zajmuje pięć minut.
+      </p>
+
+      <h2 id="etap-2">Etap 2: strona z podstronami lokalizacyjnymi, nie onepage</h2>
+      <p>
+        Tu przegrywa najwięcej firm z tej branży, i to nie dlatego, że nie mają strony, tylko dlatego, że mają złą stronę.
+      </p>
+      <p>
+        Typowy scenariusz: właściciel zamawia „nowoczesną stronę", dostaje jeden przewijany onepage z hasłem, sekcją „o nas", galerią i formularzem. Wygląda dobrze. I <strong>rankuje na dokładnie jedną frazę w dokładnie jednej miejscowości</strong>, bo Google ma tylko jeden adres URL, który może komukolwiek pokazać. Nie da się jedną podstroną wygrać dwudziestu zapytań o dwudziestu różnych miejscowościach.
+      </p>
+      <p>
+        Rozwiązanie jest strukturalne. Budujesz stronę wielopodstronową, w której <strong>każda obsługiwana miejscowość dostaje własny adres</strong>:
+      </p>
+
+      <div className="not-prose my-8 rounded-2xl border border-border bg-white p-6">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Struktura adresów</p>
+        <div className="font-mono text-sm text-zinc-700 space-y-2">
+          <p>twojafirma.pl/</p>
+          <p className="pl-4">twojafirma.pl/mobilna-wulkanizacja-leszno</p>
+          <p className="pl-4">twojafirma.pl/mobilna-wulkanizacja-koscian</p>
+          <p className="pl-4">twojafirma.pl/mobilna-wulkanizacja-gostyn</p>
+          <p className="pl-4">twojafirma.pl/mobilna-wulkanizacja-rawicz</p>
+          <p className="pl-4">twojafirma.pl/mobilna-wulkanizacja-osieczna</p>
+          <p className="pl-4 text-zinc-400">…i tak dalej, jedna podstrona na miejscowość</p>
+          <p className="pt-2">twojafirma.pl/wymiana-opon-z-dojazdem</p>
+          <p>twojafirma.pl/naprawa-opon-ciezarowych</p>
+          <p>twojafirma.pl/kontakt</p>
+        </div>
+        <p className="text-xs text-zinc-500 mt-4 leading-relaxed">Schemat <strong>usługa + miejscowość</strong> w adresie odpowiada dokładnie temu, co klient wpisuje w wyszukiwarkę. Do tego osobne podstrony usługowe pod frazy bez miejscowości.</p>
+      </div>
+
+      <h3>Co musi być na podstronie lokalizacyjnej</h3>
+      <p>
+        I teraz najważniejsze ostrzeżenie tego rozdziału. <strong>Dwadzieścia podstron, które różnią się wyłącznie nazwą miasta podmienioną w tym samym tekście, to nie jest strategia SEO, tylko doorway pages.</strong> Google rozpoznaje to od lat i takie podstrony albo nie wchodzą do indeksu, albo obniżają ocenę całej domeny. Podmiana zmiennej nie wystarczy.
+      </p>
+      <p>
+        Każda podstrona musi mieć w sobie coś, czego nie mają pozostałe. W mobilnej wulkanizacji to akurat proste, bo naprawdę wiesz o tych miejscowościach rzeczy, których nie wie nikt inny:
+      </p>
+      <ul>
+        <li><strong>Czas dojazdu</strong> z Twojej bazy do centrum tej miejscowości, podany szczerze: „w Kościanie jesteśmy zwykle w 25 minut, przy trasie S5 szybciej".</li>
+        <li><strong>Konkretne drogi i miejsca</strong>, które obsługujesz: numery dróg krajowych i wojewódzkich, węzły, parkingi, strefy przemysłowe, odcinki, na których najczęściej dostajesz zgłoszenia.</li>
+        <li><strong>Lokalna specyfika zleceń</strong>: pod Gostyniem więcej opon rolniczych, na S5 więcej busów kurierskich, w mieście więcej wymiany sezonowej pod blokiem.</li>
+        <li><strong>Realne przykłady</strong>: „w listopadzie wymiana kompletu na parkingu przy markecie w Rawiczu, 40 minut od telefonu do wyjazdu".</li>
+        <li><strong>Zdjęcia z tej okolicy</strong>, choćby dwa. Rozpoznawalny kawałek drogi robi robotę, której nie zrobi zdjęcie ze stocka.</li>
+        <li><strong>Osobny tytuł, opis meta i nagłówek H1</strong> z nazwą miejscowości, plus dane strukturalne <code>LocalBusiness</code> z polem <code>areaServed</code> wskazującym tę miejscowość.</li>
+        <li><strong>Opinie klientów właśnie stamtąd</strong>, jeśli je masz. To domyka koło: opinia w Mapach zbiera frazę, a przeklejona na podstronę wzmacnia ją drugi raz.</li>
+      </ul>
+      <p>
+        Realistycznie: od 400 do 700 słów unikalnego tekstu na podstronę. Nie musisz pisać eseju, musisz napisać coś, czego nie ma na pozostałych dziewiętnastu.
+      </p>
+
+      <h3>Linkowanie wewnętrzne</h3>
+      <p>
+        Podstrony lokalizacyjne nie mogą wisieć w próżni. Ze strony głównej robisz sekcję „Obszar działania" z listą wszystkich miejscowości i linkiem do każdej. Każda podstrona lokalizacyjna linkuje do dwóch, trzech sąsiednich („obsługujemy też Śmigiel i Osieczną") oraz do podstron usługowych. <strong>Anchor to nazwa miejscowości z usługą, nigdy „czytaj więcej".</strong> Dzięki temu Google przechodzi po całej strukturze i rozumie, że to jedna firma obsługująca konkretny obszar, a nie zbiór przypadkowych stron.
+      </p>
+
+      <h2 id="miejscowosci">Jak dobrać miejscowości i ile ich zrobić</h2>
+      <p>
+        Nie bierz wszystkiego, co jest w promieniu 50 km, bo utoniesz w pisaniu, a połowa podstron nigdy nie zarobi. Zrób to na trzech kryteriach.
+      </p>
+      <p>
+        <strong>Kryterium pierwsze: czas dojazdu.</strong> Wypisz każdą miejscowość, do której realnie dojedziesz w 40 minut i przy której zlecenie nadal Ci się opłaca. To Twój prawdziwy rynek, a wszystko poza nim to fikcja, którą klient zweryfikuje przy pierwszym telefonie.
+      </p>
+      <p>
+        <strong>Kryterium drugie: liczba mieszkańców i ruch.</strong> Miasto powiatowe z 20 tysiącami mieszkańców ma inną wagę niż wieś z 800. Ale uwaga na specyfikę tej branży: <strong>odcinek drogi krajowej albo ekspresowej bywa wart więcej niż miasteczko</strong>, bo tam zdarzają się awarie u ludzi, którzy nie mają żadnego lokalnego kontaktu i szukają na ślepo w telefonie.
+      </p>
+      <p>
+        <strong>Kryterium trzecie: konkurencja.</strong> Wpisz „mobilna wulkanizacja [miejscowość]" i zobacz, co jest. Jeżeli w wynikach są tylko stacjonarne warsztaty i katalogi firm, ta podstrona wejdzie wysoko w kilka tygodni. Jeżeli ktoś już ma dedykowaną podstronę i sto opinii, odłóż to miejsce na później i zacznij od dziur.
+      </p>
+
+      <div className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6">
+          <svg viewBox="0 0 470 250" width="100%" role="img" aria-labelledby="wulk-plan-tytul wulk-plan-opis">
+            <title id="wulk-plan-tytul">Kolejność prac i czas do pierwszych efektów w mobilnej wulkanizacji</title>
+            <desc id="wulk-plan-opis">Cztery etapy z orientacyjnym czasem do pierwszych widocznych efektów: wizytówka od 2 do 4 tygodni, podstrony lokalizacyjne od 6 do 12 tygodni, wzmianki i mapy od 8 do 16 tygodni, linki płatne od 12 do 24 tygodni.</desc>
+            <rect x="0" y="0" width="470" height="250" fill="#ffffff"/>
+            <g fontFamily="sans-serif">
+              <text x="20" y="24" fontSize="11.5" fontWeight="700" fill="#71717a">ETAP</text>
+              <text x="220" y="24" fontSize="11.5" fontWeight="700" fill="#c2410c">CZAS DO PIERWSZYCH EFEKTÓW</text>
+              <text x="20" y="58" fontSize="12" fill="#3f3f46">1. Wizytówka na 100%</text>
+              <rect x="220" y="46" width="46" height="16" rx="8" fill="#FF6A00" opacity="0.95"/>
+              <text x="292" y="58" fontSize="11.5" fontWeight="700" fill="#3f3f46">2–4 tygodnie</text>
+              <text x="20" y="96" fontSize="12" fill="#3f3f46">2. Podstrony lokalizacyjne</text>
+              <rect x="220" y="84" width="92" height="16" rx="8" fill="#FF6A00" opacity="0.75"/>
+              <text x="330" y="96" fontSize="11.5" fontWeight="700" fill="#3f3f46">6–12 tyg.</text>
+              <text x="20" y="134" fontSize="12" fill="#3f3f46">3. Mapy i wzmianki lokalne</text>
+              <rect x="220" y="122" width="120" height="16" rx="8" fill="#FF6A00" opacity="0.6"/>
+              <text x="356" y="134" fontSize="11.5" fontWeight="700" fill="#3f3f46">8–16 tyg.</text>
+              <text x="20" y="172" fontSize="12" fill="#3f3f46">4. Linki płatne</text>
+              <rect x="220" y="160" width="170" height="16" rx="8" fill="#FF6A00" opacity="0.42"/>
+              <text x="398" y="172" fontSize="11.5" fontWeight="700" fill="#3f3f46">12–24 tyg.</text>
+              <line x1="20" y1="196" x2="450" y2="196" stroke="#e4e4e7" strokeWidth="1"/>
+              <text x="20" y="218" fontSize="11" fill="#a1a1aa">Etapy 2 i 3 robisz równolegle. Etap 4 ma sens dopiero wtedy, gdy strona ma już do czego linkować.</text>
+              <text x="20" y="236" fontSize="11" fill="#a1a1aa">Widełki orientacyjne, z naszych wdrożeń w usługach z dojazdem. Słaba konkurencja potrafi je skrócić o połowę.</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <p>
+        Praktyczna liczba na start: <strong>od 8 do 15 podstron</strong>. Jedno miasto powiatowe, cztery lub pięć gmin dookoła, reszta to wsie i odcinki dróg o dużym ruchu. Dokładasz kolejne co miesiąc, po dwie, trzy. Lepiej mieć dziesięć konkretnych podstron niż czterdzieści sklonowanych.
+      </p>
+
+      <h2 id="etap-3">Etap 3: mapy i wzmianki na lokalnych portalach</h2>
+      <p>
+        Ten etap robisz <strong>równolegle ze stroną</strong>, a nie po niej. Chodzi o to, żeby w momencie, w którym Google zaindeksuje podstrony lokalizacyjne, znalazł jednocześnie w sieci potwierdzenia, że ta firma faktycznie w tych miejscowościach działa.
+      </p>
+
+      <h3>Mapa obszaru działania</h3>
+      <p>
+        Wejdź w <strong>Moje Mapy Google</strong> (mymaps.google.com) i zbuduj własną mapę: pinezka bazy, pinezki wszystkich obsługiwanych miejscowości, obrysowany obszar dojazdu. Każdej pinezce dajesz nazwę w formacie „Mobilna wulkanizacja Kościan, dojazd 25 min" i opis z linkiem do odpowiedniej podstrony. <strong>Gotową mapę osadzasz na stronie w sekcji „Obszar działania"</strong>, a link do niej wrzucasz w profilach firmowych.
+      </p>
+      <p>
+        To robi trzy rzeczy naraz: daje klientowi natychmiastową odpowiedź na pytanie „czy do mnie dojedziecie", daje Google jednoznaczny sygnał geograficzny i tworzy publiczny obiekt w ekosystemie Google, który linkuje do Twoich podstron.
+      </p>
+
+      <h3>Wzmianki na lokalnych portalach</h3>
+      <p>
+        Tu jest rzecz, której prawie nikt w tej branży nie wykorzystuje, a która na małych rynkach potrafi zadziałać mocniej niż wszystko inne. Prawie każde polskie miasto powiatowe ma <strong>własny portal informacyjno-ogłoszeniowy</strong>: „Leszno Nasze Miasto", „Życie Rawicza", „Kościan info", „Nasze Miasto [nazwa]", lokalne katalogi firm przy portalach gminnych. To są strony ze starą domeną, realnym ruchem z okolicy i słabą konkurencją o miejsce.
+      </p>
+      <p>
+        Jak je znaleźć: wpisz w Google <code>nasze miasto [miejscowość]</code>, <code>[miejscowość] portal informacyjny</code>, <code>[miejscowość] ogłoszenia firmy</code>, <code>katalog firm [powiat]</code>, <code>[miejscowość] wiadomości lokalne</code>. Przejrzyj dwie pierwsze strony wyników i zrób listę.
+      </p>
+      <p>
+        Co z nimi robisz. Dodajesz firmę do katalogu, jeśli portal go ma. Wykupujesz albo dodajesz bezpłatne ogłoszenie usługowe. Piszesz do redakcji z propozycją krótkiego materiału praktycznego, nie reklamy: „co robić, gdy złapiesz gumę na S5", „kiedy naprawa opony ma sens, a kiedy trzeba wymieniać", „jak przygotować auto na sezon zimowy". <strong>Redakcje małych portali chronicznie potrzebują treści</strong> i taki tekst często wchodzi za darmo albo za symboliczną kwotę, z linkiem do Twojej podstrony lokalizacyjnej.
+      </p>
+      <p>
+        Zasada linkowania: <strong>link prowadzi do podstrony miejscowości, której dotyczy portal</strong>, a nie do strony głównej. Portal z Rawicza linkuje do <code>/mobilna-wulkanizacja-rawicz</code>. To jest cała różnica między wzmianką ozdobną a wzmianką, która przesuwa pozycję.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-blue-400 bg-blue-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">Wskazówka</p>
+        <p className="text-sm text-blue-900 leading-relaxed">
+          Grupy na Facebooku typu „Kupię, sprzedam, zamienię [gmina]" albo „Uwaga drogi [powiat]" generują w tej branży realne telefony, ale nie dają linków. Traktuj je jako kanał sprzedaży, nie jako SEO. Sensowny rytm to jeden pomocny wpis tygodniowo w kilku grupach, bez zasypywania ofertą. Najlepiej działa krótki post po wykonanym zleceniu w danej okolicy.
+        </p>
+      </div>
+
+      <h2 id="konkurencja">Jak sprawdzić, gdzie linkuje konkurencja</h2>
+      <p>
+        Nie musisz zgadywać, gdzie umieścić wzmianki. Konkurent, który jest nad Tobą, już to przetestował za Ciebie, a wszystko jest jawne.
+      </p>
+      <p>
+        <strong>Metoda darmowa.</strong> Weź nazwę firmy konkurenta i wpisz ją w Google w cudzysłowie: <code>&quot;Wulkanizacja Nowak&quot;</code>. Przejrzyj pierwsze trzy strony wyników. Wszystko, co nie jest jego stroną ani jego wizytówką, to miejsce, w którym ktoś o nim wspomniał: katalog, portal, forum, grupa, artykuł. Zrób z tego listę i po kolei dopisz się w tych samych miejscach. Powtórz to samo z jego numerem telefonu w cudzysłowie, bo numer wyłapuje wpisy, w których nazwa jest zapisana inaczej.
+      </p>
+      <p>
+        <strong>Metoda z narzędziem.</strong> Ahrefs udostępnia bezpłatny <em>Backlink Checker</em>, który pokazuje kilkadziesiąt najmocniejszych linków dowolnej domeny. Podobnie działają darmowe limity w Ubersuggest i Semrush. Dla lokalnej firmy z kilkudziesięcioma linkami to zwykle wystarczy, żeby zobaczyć cały obraz. Wpisz domenę konkurenta, wyeksportuj listę, odsiej katalogi śmieciowe, resztę potraktuj jako listę zadań.
+      </p>
+      <p>
+        <strong>Metoda na Mapach.</strong> Otwórz wizytówki trzech firm, które są nad Tobą, i sprawdź: jaką mają kategorię główną, ile mają opinii i z jakiego okresu, czy mają wypełnioną sekcję usług, do jakiego adresu prowadzi ich link (strona główna czy podstrona), ile mają zdjęć. To zajmuje kwadrans i mówi Ci dokładnie, ile pracy dzieli Cię od pierwszej trójki. Rozpisaliśmy tę analizę szczegółowo w tekście o <Link href="/czynniki-rankingowe-wizytowki-google-2026">czynnikach rankingowych wizytówki</Link>.
+      </p>
+
+      <h2 id="etap-4">Etap 4: linki do strony, WhitePress i LinkHouse</h2>
+      <p>
+        Dochodzimy do etapu, który kosztuje pieniądze, i dlatego jest ostatni. <strong>Kupowanie linków do strony, która ma jedną podstronę i zero treści, to przepalanie budżetu.</strong> Link wzmacnia to, co już istnieje. Jeśli nie ma czego wzmacniać, nic się nie stanie.
+      </p>
+      <p>
+        Kiedy więc wchodzić w linki. Wtedy, gdy masz komplet podstron lokalizacyjnych, każda z unikalnym tekstem, wszystkie zaindeksowane, i widzisz w Search Console, że część z nich wyświetla się na frazach, ale utknęła na drugiej stronie wyników. To jest dokładnie moment, w którym link przesuwa.
+      </p>
+      <p>
+        <strong>WhitePress</strong> i <strong>LinkHouse</strong> to dwie największe polskie platformy pośredniczące w publikacji artykułów sponsorowanych. Model jest prosty: wybierasz portal z bazy, widzisz jego parametry i cenę, zamawiasz publikację artykułu z linkiem. W portalach lokalnych i tematycznych motoryzacyjnych ceny zaczynają się zwykle od kilkuset złotych za publikację, w mocniejszych serwisach idą w tysiące.
+      </p>
+
+      <h3>Zasady, które decydują, czy to zadziała</h3>
+      <ul>
+        <li><strong>Dywersyfikuj anchory.</strong> To najważniejsza rzecz w tym rozdziale: nie linkuj wszystkiego frazą z jedną miejscowością. Jeżeli dziesięć artykułów prowadzi anchorem „mobilna wulkanizacja Leszno", wygląda to sztucznie i zamiast pomóc, ściąga filtr. Mieszaj: „mobilna wulkanizacja Leszno", „wulkanizacja z dojazdem w powiecie kościańskim", „wymiana opon na miejscu", nazwa firmy, goły adres strony, „sprawdź ofertę".</li>
+        <li><strong>Rozkładaj linki na różne podstrony.</strong> Część na stronę główną, część na podstrony usługowe, część na konkretne miejscowości. Profil, w którym wszystko celuje w jeden adres, wygląda nienaturalnie.</li>
+        <li><strong>Wybieraj tematycznie i geograficznie blisko.</strong> Portal motoryzacyjny albo regionalny serwis z Twojego województwa jest wart więcej niż ogólnopolski portal lifestyle&apos;owy z lepszymi parametrami.</li>
+        <li><strong>Rozłóż w czasie.</strong> Dwa, trzy linki miesięcznie przez pół roku działają lepiej i bezpieczniej niż piętnaście w jednym tygodniu.</li>
+        <li><strong>Pisz artykuł, który ktoś przeczyta.</strong> Tekst o tym, jak rozpoznać oponę do naprawy, a jaką trzeba wymienić, ma szansę sam rankować i przyprowadzać ruch. Trzysta słów lania wody z linkiem w środku to wyłącznie koszt.</li>
+      </ul>
+      <p>
+        Uczciwie: to jest etap opcjonalny. Wiele firm mobilnej wulkanizacji dochodzi do pełnego kalendarza na samej wizytówce i podstronach lokalizacyjnych, bez wydawania złotówki na linki. Linki są przyspieszaczem tam, gdzie rynek jest zatłoczony, albo tam, gdzie chcesz wejść do większego miasta.
+      </p>
+
+      <h2 id="harmonogram">Harmonogram: co robisz w którym tygodniu</h2>
+      <p>
+        Cała powyższa lista naraz wygląda przytłaczająco, więc rozbijamy ją na tygodnie. To plan dla kogoś, kto ma na to <strong>dwie, trzy godziny tygodniowo</strong> po pracy.
+      </p>
+
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr className="bg-surface">
+              <th className="text-left p-3 border border-border font-bold text-ink">Okres</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Co robisz</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Efekt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-3 border border-border font-semibold">Tydzień 1</td>
+              <td className="p-3 border border-border">Wizytówka: typ „z dojazdem", obszar działania do limitu, kategorie, wszystkie usługi, atrybuty, opis, godziny, 20 zdjęć</td>
+              <td className="p-3 border border-border text-brand font-semibold">Wchodzisz w wyniki poza własną miejscowością</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border font-semibold">Tydzień 2</td>
+              <td className="p-3 border border-border">Profile firmowe: Facebook, LinkedIn, YouTube, Panorama Firm, Apple Business Connect, Bing Places. Wszędzie identyczny NAP</td>
+              <td className="p-3 border border-border text-brand font-semibold">Google zaczyna widzieć spójną encję</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border font-semibold">Tydzień 3</td>
+              <td className="p-3 border border-border">Procedura opinii: link w telefonie, SMS po każdym zleceniu, odpowiedź na każdą recenzję w ciągu doby</td>
+              <td className="p-3 border border-border text-orange-600 font-semibold">Pierwsze opinie z nazwami miejscowości</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border font-semibold">Tydzień 4</td>
+              <td className="p-3 border border-border">Lista miejscowości i analiza konkurencji. Mapa obszaru w Moich Mapach Google</td>
+              <td className="p-3 border border-border text-orange-600 font-semibold">Wiesz, co budować i w jakiej kolejności</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border font-semibold">Tygodnie 5–10</td>
+              <td className="p-3 border border-border">Strona: pierwsze 8–10 podstron lokalizacyjnych z unikalną treścią, Local Schema, linkowanie wewnętrzne</td>
+              <td className="p-3 border border-border text-orange-600 font-semibold">Wejście do wyników organicznych w kilku gminach</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border font-semibold">Tygodnie 5–12 (równolegle)</td>
+              <td className="p-3 border border-border">Wzmianki: lokalne portale, katalogi gminne, materiał do redakcji, dopisanie się tam, gdzie jest konkurencja</td>
+              <td className="p-3 border border-border text-orange-600 font-semibold">Potwierdzenia obecności w regionie</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border font-semibold">Miesiąc 4+</td>
+              <td className="p-3 border border-border">Kolejne 2–3 podstrony miesięcznie, posty, zdjęcia, ewentualnie pierwsze linki z WhitePress lub LinkHouse</td>
+              <td className="p-3 border border-border text-yellow-600 font-semibold">Rozszerzanie zasięgu i wypychanie konkurencji</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div className="not-prose my-10 rounded-2xl bg-ink p-8 text-center">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Zamień zasięg dojazdu w telefony</p>
+        <p className="text-white text-lg font-bold mb-3">Zrobimy to za Ciebie, od wizytówki po podstrony lokalizacyjne</p>
+        <p className="text-zinc-300 text-sm leading-relaxed max-w-xl mx-auto mb-6">
+          Sprawdzimy, w których miejscowościach jesteś dziś widoczny, a w których nie istniejesz, ułożymy listę podstron i zajmiemy się wizytówką. Bez obietnic cudów, konkretny plan na Twój obszar dojazdu.
+        </p>
+        <Link href="/kontakt" className="inline-block bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200">
+          Umów bezpłatną konsultację
+        </Link>
+      </div>
+
+      <h2 id="zwrot">Ile to kosztuje i kiedy się zwraca</h2>
+      <p>
+        Policzmy to na liczbach z tej branży, bo bez tego cały plan jest tylko listą zadań.
+      </p>
+      <p>
+        Średnie zlecenie mobilnej wulkanizacji to, zależnie od regionu i pory, mniej więcej od 120 do 350 zł, a wyjazd do busa czy auta ciężarowego bywa dwa, trzy razy droższy. Przyjmijmy ostrożnie 180 zł. Etap pierwszy, czyli wizytówka i profile, kosztuje Cię <strong>tylko czas</strong>, jakieś sześć do ośmiu godzin łącznie. Jeśli po miesiącu wizytówka daje choćby cztery dodatkowe telefony miesięcznie, a w tej branży telefon konwertuje bardzo wysoko, bo klient nie ma czasu porównywać ofert, to około 720 zł miesięcznie przy zerowym wydatku.
+      </p>
+      <p>
+        Strona z kilkunastoma podstronami lokalizacyjnymi to koszt jednorazowy, mieszczący się przy typowych stawkach w widełkach kilku tysięcy złotych. Rozpisaliśmy je szerzej w tekście o <Link href="/ile-kosztuje-pozycjonowanie-strony-internetowej">kosztach pozycjonowania strony</Link>. Żeby taka inwestycja zwróciła się w rok, potrzebujesz mniej więcej dwóch dodatkowych zleceń miesięcznie. <strong>Dwa zlecenia miesięcznie z dziesięciu miejscowości to próg bardzo niski</strong>, i to jest sedno tego, dlaczego podstrony lokalizacyjne w usługach z dojazdem mają sens.
+      </p>
+      <p>
+        Etap czwarty, linki, liczysz osobno i tylko wtedy, gdy pierwsze trzy już pracują. Jeśli kilkaset złotych za publikację ma przynieść zwrot, musi przesunąć podstronę, która realnie generuje zapytania. Dlatego nie kupuje się linków na starcie.
+      </p>
+
+      <h2 id="bledy">Siedem błędów, które cofają cały plan</h2>
+      <ul>
+        <li><strong>Onepage zamiast podstron.</strong> Najczęstszy i najdroższy. Ładna strona, która rankuje na jedną frazę w jednym mieście.</li>
+        <li><strong>Sklonowane podstrony z podmienioną nazwą miasta.</strong> Google to widzi. Efekt jest gorszy niż brak podstron.</li>
+        <li><strong>Adres domowy widoczny w wizytówce.</strong> Przy usłudze z dojazdem to prosta droga do zawieszenia profilu.</li>
+        <li><strong>Godziny 24h bez odbierania telefonu w nocy.</strong> Kupujesz pozycję i płacisz za nią jedną gwiazdką.</li>
+        <li><strong>Fraza dopisana do nazwy tylko w panelu.</strong> Zmieniaj nazwę firmy naprawdę albo nie zmieniaj wcale.</li>
+        <li><strong>Linki kupowane przed zbudowaniem treści.</strong> Wzmacniasz coś, czego nie ma.</li>
+        <li><strong>Jeden anchor na wszystko.</strong> Dziesięć linków z tą samą frazą i miejscowością wygląda dokładnie tak, jak wygląda.</li>
+      </ul>
+      <p>
+        Osobna kategoria to <Link href="/wizytowka-google-nie-wygasa-oszustwo">telefony o „wygasającej wizytówce"</Link>, które w sezonie zmiany opon lecą do warsztatów falami. Wizytówka Google nie wygasa i nic nie kosztuje.
+      </p>
+
+      <h2 id="faq-wulkanizacja">FAQ</h2>
+
+      <h3>Czy mobilna wulkanizacja może mieć wizytówkę Google bez adresu?</h3>
+      <p>
+        Tak, i powinna. Przy rejestracji albo w edycji profilu wybierasz opcję świadczenia usług z dojazdem do klienta. Adres zostaje wtedy ukryty, a Ty definiujesz obszar obsługi. Weryfikacja przebiega normalnie, najczęściej przez nagranie wideo, w którym pokazujesz sprzęt, pojazd i dokumenty firmy.
+      </p>
+
+      <h3>Ile miejscowości mogę dodać do obszaru działania?</h3>
+      <p>
+        Google Business Profile pozwala dodać do 20 obszarów. Warto wykorzystać limit, ale wpisuj tylko miejsca, do których faktycznie dojeżdżasz. Sam obszar nie gwarantuje pozycji w każdej z tych miejscowości, bo ranking nadal liczy się od Twojej fizycznej lokalizacji. Obszar decyduje o tym, komu Google w ogóle może Cię pokazać.
+      </p>
+
+      <h3>Czy warto wpisać miasto do nazwy firmy w wizytówce?</h3>
+      <p>
+        Działa to bardzo mocno i jednocześnie łamie wytyczne Google, jeśli firma tak naprawdę się nie nazywa. Bezpieczny wariant to zmiana rzeczywistej nazwy firmy i wyrównanie jej wszędzie: w CEIDG, na busie, na fakturach, na stronie i w profilach. Wtedy nazwa w wizytówce jest zgodna z rzeczywistością, a zgłoszenie od konkurencji nie ma podstaw. Samo dopisanie frazy w panelu kończy się przywróceniem starej nazwy albo zawieszeniem profilu.
+      </p>
+
+      <h3>Ile podstron lokalizacyjnych zrobić na start?</h3>
+      <p>
+        Od 8 do 15, każda z co najmniej 400 słowami unikalnej treści, czasem dojazdu, konkretnymi drogami i realnymi przykładami zleceń z tej okolicy. Potem dokładasz po dwie, trzy miesięcznie. Dziesięć konkretnych podstron bije czterdzieści sklonowanych, bo te sklonowane albo nie wejdą do indeksu, albo zaszkodzą całej domenie.
+      </p>
+
+      <h3>Po jakim czasie zobaczę efekty?</h3>
+      <p>
+        Zmiany w wizytówce potrafią być widoczne po dwóch, czterech tygodniach, bo profil aktualizuje się szybko. Podstrony lokalizacyjne potrzebują zwykle sześciu do dwunastu tygodni, żeby się zaindeksować i zacząć rankować. Wzmianki i linki działają w perspektywie kwartału. To widełki z naszych wdrożeń w usługach z dojazdem, a nie gwarancja, bo rynek lokalny potrafi je skrócić o połowę albo wydłużyć, jeśli konkurencja jest mocna.
+      </p>
+
+      <h3>Czy muszę kupować linki?</h3>
+      <p>
+        Nie. Wiele firm mobilnej wulkanizacji zapełnia kalendarz na samej wizytówce, podstronach lokalizacyjnych i wzmiankach na lokalnych portalach, bez wydawania złotówki na linki. WhitePress czy LinkHouse mają sens wtedy, gdy podstrony już rankują, ale utknęły na drugiej stronie wyników, albo gdy wchodzisz do większego, zatłoczonego miasta.
+      </p>
+
+      <h2>Na koniec</h2>
+      <p>
+        Cała przewaga mobilnej wulkanizacji polega na tym, że Twój rynek jest dokładnie tak duży, jak Twój zasięg dojazdu. Zadaniem SEO jest wyłącznie to, żeby Google o tym wiedział. <strong>Wizytówka mówi mu, gdzie jeździsz. Podstrony mówią, co tam robisz. Wzmianki potwierdzają, że to prawda. Linki to wzmacniają.</strong> W tej kolejności, nie w żadnej innej.
+      </p>
+      <p>
+        Etap pierwszy zrobisz w jeden weekend i to on daje najwięcej za najmniej. Zacznij od niego jeszcze dziś, zanim zaczniesz myśleć o stronie.
+      </p>
+      <ul>
+        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/siedziba-mala-miejscowosc-local-seo">Firma z siedzibą w małej miejscowości a widoczność w większym mieście</Link></li>
+        <li><Link href="/jak-promowac-warsztat-samochodowy-google">Jak promować warsztat samochodowy w Google</Link></li>
+        <li><Link href="/najwieksze-bledy-pozycjonowanie-wizytowki-google-2026">Największe błędy w pozycjonowaniu wizytówki Google</Link></li>
+      </ul>
+    </>
+  ),
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SEO: Pozycjonowanie wizytówki Google Legnica
   ───────────────────────────────────────────────────────────────────────── */
   "pozycjonowanie-wizytowki-google-legnica": (
