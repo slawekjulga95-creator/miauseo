@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { Post, Category } from "@/app/blog/posts";
+import { cityPopulation, cityTiers, cityNameFromTitle } from "@/app/blog/posts";
 
 const CATEGORIES: Category[] = ["SEO", "Opinie", "Poradnik", "Wizytówka", "WordPress", "Sztuczna Inteligencja"];
 
@@ -105,7 +106,7 @@ export default function BlogFilter({ posts }: { posts: Post[] }) {
                       <CityIndex posts={lokalne} />
                     </div>
                   )}
-                  <PostGrid posts={lokalne} />
+                  <CityTiers posts={lokalne} />
                 </>
               )}
             </>
@@ -116,11 +117,48 @@ export default function BlogFilter({ posts }: { posts: Post[] }) {
   );
 }
 
+// Wpisy lokalizacyjne pogrupowane przedziałami wielkości miasta,
+// wewnątrz każdej grupy alfabetycznie. Miasto spoza mapy ludności
+// trafia do najniższego przedziału, więc nowe wpisy nie znikają.
+function CityTiers({ posts }: { posts: Post[] }) {
+  const groups = cityTiers.map((tier) => ({
+    label: tier.label,
+    posts: posts
+      .filter((p) => {
+        const pop = cityPopulation[p.slug] ?? 0;
+        const higher = cityTiers.find((t) => t.min > tier.min && pop >= t.min);
+        return pop >= tier.min && !higher;
+      })
+      .sort((a, b) =>
+        cityNameFromTitle(a.title).localeCompare(cityNameFromTitle(b.title), "pl"),
+      ),
+  }));
+
+  return (
+    <>
+      {groups.map((group, i) =>
+        group.posts.length === 0 ? null : (
+          <div key={group.label} className={i === 0 ? "" : "mt-16"}>
+            <div className="flex items-baseline gap-3 mb-6">
+              <h3 className="text-sm font-bold uppercase tracking-widest text-zinc-400">
+                {group.label}
+              </h3>
+              <span className="text-xs font-bold text-brand">{group.posts.length}</span>
+              <span className="flex-1 h-px bg-border" />
+            </div>
+            <PostGrid posts={group.posts} />
+          </div>
+        ),
+      )}
+    </>
+  );
+}
+
 // Spis miejscowości nad siatką wpisów lokalizacyjnych. Nazwę bierzemy z tytułu,
 // więc kolejne miasta pojawiają się tu same, bez ruszania komponentu.
 function CityIndex({ posts }: { posts: Post[] }) {
   const cities = posts
-    .map((p) => ({ slug: p.slug, name: p.title.replace(/^Pozycjonowanie wizytówki Google\s*/i, "").split(/\s+[–—-]\s+/)[0].trim() }))
+    .map((p) => ({ slug: p.slug, name: cityNameFromTitle(p.title) }))
     .filter((c) => c.name.length > 0)
     .sort((a, b) => a.name.localeCompare(b.name, "pl"));
 
