@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import HeroLeadForm from "@/components/home/HeroLeadForm";
 
@@ -167,29 +166,6 @@ export default function HeroSection() {
               </svg>
             </Link>
           </div>
-
-          {/* Dowód: prawdziwy wynik z panelu klienta */}
-          <figure className="mt-12 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 rounded-2xl border border-border bg-white/85 backdrop-blur-sm p-4 sm:pr-7 max-w-[600px] shadow-[0_18px_40px_-30px_rgba(17,17,17,0.45)]">
-            <Image
-              src="/ProtetykPila.png"
-              alt="Wykres połączeń telefonicznych z wizytówki Google gabinetu protetycznego"
-              width={1168}
-              height={449}
-              sizes="(max-width: 640px) 90vw, 200px"
-              className="w-full sm:w-[200px] h-auto rounded-lg border border-border shrink-0"
-            />
-            <figcaption>
-              <p className="text-ink" style={{ fontSize: "1.05rem", fontWeight: 700, lineHeight: 1.3 }}>
-                62 telefony z wizytówki w 30 dni
-              </p>
-              <p className="text-sm text-zinc-500 mt-1">
-                Branża protetyczna.{" "}
-                <Link href="/referencje" className="font-semibold text-ink underline underline-offset-4 decoration-border hover:text-brand hover:decoration-brand transition-colors">
-                  Zobacz kolejne wyniki
-                </Link>
-              </p>
-            </figcaption>
-          </figure>
         </div>
 
         {/* Formularz */}
