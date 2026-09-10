@@ -36,7 +36,7 @@ export default function ZdjeciaWWizytowceGoogleJakiWplywNaPozycje() {
       </InfoBox>
 
       <h2>Regularność uploadowania — częstotliwość ma znaczenie</h2>
-      <p>Jednorazowe dodanie dwudziestu zdjęć przy zakładaniu profilu jest lepsze niż nic, ale gorsza strategia niż systematyczne dodawanie jednego lub dwóch zdjęć co tydzień lub co dwa tygodnie. Google docenia aktywność rozłożoną w czasie — świadczy ona że firma działa i regularnie ją ktoś zarządza. Zdjęcia na profilu możesz też linkować z nowymi postami Google My Business — to podwójny sygnał aktywności. Jak posty wpływają na profil: <Link href="/pytania/posty-google-my-business-jak-dzialaja">posty Google My Business — jak działają</Link>.</p>
+      <p>Jednorazowe dodanie dwudziestu zdjęć przy zakładaniu profilu jest lepsze niż nic, ale gorsza strategia niż systematyczne dodawanie jednego lub dwóch zdjęć co tydzień lub co dwa tygodnie. Google docenia aktywność rozłożoną w czasie — świadczy ona że firma działa i regularnie ją ktoś zarządza. Zdjęcia na profilu możesz też linkować z nowymi postami w Profilu Firmy w Google — to podwójny sygnał aktywności. Jak posty wpływają na profil: <Link href="/pytania/posty-google-my-business-jak-dzialaja">posty Google My Business — jak działają</Link>.</p>
     </div>
   );
 }

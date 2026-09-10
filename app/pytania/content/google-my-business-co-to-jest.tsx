@@ -82,7 +82,7 @@ export default function GoogleMyBusinessCoToJest() {
         Bardzo ważną funkcją jest zarządzanie opiniami klientów. Przez panel odpowiadasz na recenzje – zarówno pozytywne jak i negatywne. Odpowiedzi są publiczne i widoczne dla każdego kto przegląda profil. Google premiuje właścicieli aktywnie angażujących się w opinie, a klienci czytają odpowiedzi firmy zanim podejmą decyzję o kontakcie.
       </p>
 
-      <h2>Google My Business a Google Ads – jaka różnica?</h2>
+      <h2>Profil Firmy w Google a Google Ads – jaka różnica?</h2>
 
       <Img
         alt="Porównanie organicznego profilu firmy i reklamy Google Ads w wynikach wyszukiwania – oznaczenia reklama i wyniki lokalne"
@@ -90,7 +90,7 @@ export default function GoogleMyBusinessCoToJest() {
       />
 
       <p>
-        To pytanie pojawia się często. Google My Business (Profil Firmy) i Google Ads to dwa zupełnie różne produkty. Profil Firmy jest <strong>bezpłatny</strong> i generuje tzw. ruch organiczny – pojawia się w wynikach wyszukiwania i na mapach bez żadnych opłat, na podstawie jakości profilu i algorytmu lokalnego. Im lepiej uzupełniony profil i im więcej pozytywnych opinii, tym wyżej trafia w wynikach.
+        To pytanie pojawia się często. Profil Firmy w Google (dawniej Google My Business) i Google Ads to dwa zupełnie różne produkty. Profil Firmy jest <strong>bezpłatny</strong> i generuje tzw. ruch organiczny – pojawia się w wynikach wyszukiwania i na mapach bez żadnych opłat, na podstawie jakości profilu i algorytmu lokalnego. Im lepiej uzupełniony profil i im więcej pozytywnych opinii, tym wyżej trafia w wynikach.
       </p>
 
       <p>
@@ -107,7 +107,7 @@ export default function GoogleMyBusinessCoToJest() {
         Firmy działające wyłącznie online, bez żadnego fizycznego kontaktu z klientem, nie kwalifikują się do profilu lokalnego. Google aktywnie weryfikuje profile i usuwa te, które nie spełniają kryteriów. Warto upewnić się że rozumiesz zasady zanim zainwestujesz czas w konfigurację. Szczegóły wymagań opisujemy w artykule <Link href="/pytania/wizytowka-google-moja-firma-jak-zalozyc">wizytówka Google Moja Firma – jak założyć</Link>.
       </p>
 
-      <h2>Ile kosztuje Google My Business?</h2>
+      <h2>Ile kosztuje Profil Firmy w Google (dawniej Google My Business)?</h2>
 
       <p>
         Profil Firmy w Google jest całkowicie bezpłatny. Google nie pobiera żadnych opłat za założenie, weryfikację ani utrzymanie profilu. Funkcje podstawowe – informacje o firmie, zdjęcia, opinie, posty, statystyki – są dostępne bez żadnych ograniczeń i bez konieczności wykupienia jakiegokolwiek planu. Jeśli ktokolwiek prosi Cię o opłatę za „rejestrację w Google Maps" lub „zakup wizytówki Google" – to próba wyłudzenia, nie mają z Google nic wspólnego.
