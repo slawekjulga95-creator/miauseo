@@ -1,0 +1,30 @@
+# LISTA NIETYKALNA — strony brandowe miauseo.pl
+# Zakaz: zmiany slugów, tytułów, meta description, H1, treści, dat, kategorii,
+# przenoszenia do katalogów, włączania do konsolidacji i deduplikacji.
+# Dozwolone: linkowanie DO nich z innych stron; dodanie Review/Article schema
+# wyłącznie po osobnej, pisemnej zgodzie dla każdej strony z osobna.
+
+# --- wzorce URL ---
+/miauseo-opinie-*
+/miauseo-*
+/referencje
+
+# --- konkretne URL-e (stan na 2026-09-10) ---
+/miauseo-opinie-protetyk
+/miauseo-opinie-skup-aut
+/miauseo-opinie-skup
+/miauseo-opinie-mobilny-masaz
+/referencje
+
+# --- UWAGA ARCHITEKTONICZNA ---
+# Te strony NIE są osobnymi plikami. To rekordy wewnątrz plików współdzielonych:
+#   app/blog/posts.ts      — metadane (slug, title, excerpt, category, date)
+#   app/blog/content.tsx   — treść artykułu (klucz = slug)
+# Filtrowanie "po ścieżce pliku" NIE chroni ich. Każda operacja masowa na tych
+# dwóch plikach musi pomijać bloki o kluczach z listy SLUGS w
+# scripts/seo/protected-hash.mjs. Wyjątkiem jest /referencje — osobna trasa
+# app/referencje/page.tsx.
+
+# --- WERYFIKACJA ---
+# Hash bazowy bloków: docs/seo/protected-baseline.json
+# Sprawdzenie: node scripts/seo/protected-hash.mjs  (porównaj z baseline)

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EncjaGBP from "@/components/seo/EncjaGBP";
 
 export const articleContent: Record<string, React.ReactNode> = {
 
@@ -22952,6 +22953,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   ───────────────────────────────────────────────────────────────────────── */
   "nap-wizytowka-google-co-to-jest": (
     <>
+      <EncjaGBP />
       <h2>Czym jest NAP i dlaczego to fundament local SEO?</h2>
       <p>
         NAP to skrót od angielskich słów <strong>Name, Address, Phone</strong> — nazwa firmy,
@@ -23103,6 +23105,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   ───────────────────────────────────────────────────────────────────────── */
   "wizytowka-google-popularne-oszustwa": (
     <>
+      <EncjaGBP />
       <h2>Dlaczego oszustwa związane z GBP są tak powszechne?</h2>
       <p>
         Google Business Profile to jeden z najważniejszych kanałów pozyskiwania klientów dla małych
@@ -24116,6 +24119,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   ───────────────────────────────────────────────────────────────────────── */
   "czynniki-rankingowe-wizytowki-google-2026": (
     <>
+      <EncjaGBP />
       <h2>Dlaczego znanie czynników rankingowych ma realne znaczenie</h2>
       <p>
         W 2026 roku <strong>ponad 46% wszystkich wyszukiwań w Google nosi charakter lokalny</strong>.
@@ -25812,6 +25816,7 @@ define( 'DB_HOST', 'localhost' );</code></pre>
         }}
       />
 
+      <EncjaGBP />
       <h2>Czym jest pozycjonowanie wizytówki Google?</h2>
       <p>
         Gdy ktoś wpisuje w Google „hydraulik Warszawa" albo „fryzjer na Mokotowie", nie widzi tylko listy stron internetowych. Na górze ekranu pojawia się mapa z pinezkami i trzy wyróżnione firmy — to właśnie <strong>Local Pack</strong>, zwany też Map Pack. Ten blok generuje od 30 do 50% wszystkich kliknięć dla fraz lokalnych. Walka o te trzy miejsca to właśnie pozycjonowanie wizytówki Google.
@@ -27636,6 +27641,7 @@ description: Uruchamia serwer dev i weryfikuje stronę główną w przeglądarce
         </ol>
       </div>
 
+      <EncjaGBP />
       <h2 id="dlaczego-2026">Dlaczego w 2026 roku wizytówki przegrywają inaczej niż kiedyś</h2>
       <p>
         Jeszcze kilka lat temu <strong>pozycjonowanie wizytówki Google</strong> dało się sprowadzić do prostej listy: uzupełnij pola, zbieraj opinie, dodawaj zdjęcia. Te porady nadal są prawdziwe — i nadal znajdziesz je w 90% artykułów o lokalnym SEO. Problem w tym, że w 2026 roku to już tylko bilet wstępu, a nie przewaga. Wizytówki przegrywają dziś na poziomie, którego nie widać w panelu Google Business Profile.

@@ -6,6 +6,7 @@ import BlogLeadForm from "@/components/BlogLeadForm";
 import { getPostBySlug, getPublishedPosts, formatDate } from "@/app/blog/posts";
 import type { Category } from "@/app/blog/posts";
 import { articleContent } from "@/app/blog/content";
+import { articleSchema, breadcrumbSchema } from "@/lib/seo/schema";
 import { terms, getTermBySlug, getTermsByLetter } from "@/app/slownik/terms";
 import { termContentMap } from "@/app/slownik/content";
 
@@ -336,45 +337,20 @@ export default async function BlogPostPage({ params }: Props) {
             type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify([
-                {
-                  "@context": "https://schema.org",
-                  "@type": "Article",
-                  "headline": post.title,
-                  "description": post.excerpt,
-                  "image": post.coverImage ? `https://miauseo.pl${post.coverImage}` : "https://miauseo.pl/logo.png",
-                  "datePublished": post.date,
-                  "dateModified": post.date,
-                  "url": `https://miauseo.pl/${post.slug}`,
-                  "mainEntityOfPage": {
-                    "@type": "WebPage",
-                    "@id": `https://miauseo.pl/${post.slug}`,
-                  },
-                  "author": {
-                    "@type": "Organization",
-                    "name": "MiauSEO",
-                    "url": "https://miauseo.pl",
-                  },
-                  "publisher": {
-                    "@type": "Organization",
-                    "name": "MiauSEO",
-                    "url": "https://miauseo.pl",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://miauseo.pl/logo.png",
-                      "width": 224,
-                      "height": 64,
-                    },
-                  },
-                },
-                {
-                  "@context": "https://schema.org",
-                  "@type": "BreadcrumbList",
-                  "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://miauseo.pl" },
-                    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://miauseo.pl/blog" },
-                    { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://miauseo.pl/${post.slug}` },
-                  ],
-                },
+                articleSchema({
+                  url: `https://miauseo.pl/${post.slug}`,
+                  headline: post.title,
+                  description: post.excerpt,
+                  datePublished: post.date,
+                  image: post.coverImage
+                    ? `https://miauseo.pl${post.coverImage}`
+                    : "https://miauseo.pl/logo.png",
+                }),
+                breadcrumbSchema([
+                  { name: "Strona główna", url: "https://miauseo.pl" },
+                  { name: "Blog", url: "https://miauseo.pl/blog" },
+                  { name: post.title, url: `https://miauseo.pl/${post.slug}` },
+                ]),
                 // Rich snippet z oceną — dotyczy KLIENTA opisanego w case study
                 // (opinie klienta publikowane przez MiauSEO jako stronę trzecią).
                 ...(post.caseRating
