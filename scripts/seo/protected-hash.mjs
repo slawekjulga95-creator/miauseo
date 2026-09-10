@@ -11,7 +11,13 @@ export const SLUGS = [
   "miauseo-opinie-protetyk",
 ];
 
-const h = (s) => crypto.createHash("sha256").update(s).digest("hex").slice(0, 16);
+/**
+ * Hash liczony po normalizacji końców linii. Bez tego git (autocrlf) przy
+ * każdym przełączeniu gałęzi podmienia LF na CRLF i kontrola zgłasza
+ * naruszenie tam, gdzie treść nie drgnęła.
+ */
+const h = (s) =>
+  crypto.createHash("sha256").update(s.replace(/\r/g, "")).digest("hex").slice(0, 16);
 
 function block(file, startRe, nextRe) {
   const lines = fs.readFileSync(file, "utf8").split("\n");

@@ -3348,14 +3348,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Legnica" },
@@ -3575,14 +3567,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Bolesławiec" },
@@ -3793,14 +3777,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Kalisz" },
@@ -4030,14 +4006,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Września" },
@@ -4271,14 +4239,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Tarnów" },
@@ -4501,14 +4461,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Chrzanów" },
@@ -4726,14 +4678,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Przemyśl" },
@@ -4968,14 +4912,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Dębica" },
@@ -5200,14 +5136,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Puławy" },
@@ -5431,14 +5359,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Świdnik" },
@@ -5685,14 +5605,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Bełchatów" },
@@ -5914,14 +5826,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Sieradz" },
@@ -6137,14 +6041,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Kutno" },
@@ -6377,14 +6273,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Płock" },
@@ -6613,14 +6501,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Ciechanów" },
@@ -6841,14 +6721,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Mińsk Mazowiecki" },
@@ -7082,14 +6954,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Chojnice" },
@@ -7322,14 +7186,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Kwidzyn" },
@@ -7555,14 +7411,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Malbork" },
@@ -7787,14 +7635,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Elbląg" },
@@ -8017,14 +7857,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Iława" },
@@ -8268,14 +8100,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Gorzów Wielkopolski" },
@@ -8515,14 +8339,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Nowa Sól" },
@@ -8752,14 +8568,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Brzeg" },
@@ -8981,14 +8789,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Tarnowskie Góry" },
@@ -9225,14 +9025,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Zawiercie" },
@@ -9458,14 +9250,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Cieszyn" },
@@ -9708,14 +9492,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Starachowice" },
@@ -9941,14 +9717,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Koszalin" },
@@ -10187,14 +9955,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Brodnica" },
@@ -10398,14 +10158,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Ełk" },
@@ -10602,14 +10354,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Leszno" },
@@ -10795,14 +10539,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Gniezno" },
@@ -10990,14 +10726,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Ostrów Wielkopolski" },
@@ -11185,14 +10913,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Krosno" },
@@ -11391,14 +11111,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Stalowa Wola" },
@@ -11578,14 +11290,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Chełm" },
@@ -11775,14 +11479,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Biała Podlaska" },
@@ -11971,14 +11667,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Skierniewice" },
@@ -12163,14 +11851,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Tomaszów Mazowiecki" },
@@ -12370,14 +12050,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Pabianice" },
@@ -12592,14 +12264,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Kołobrzeg" },
@@ -12790,14 +12454,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Szczecinek" },
@@ -12979,14 +12635,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Świnoujście" },
@@ -13215,14 +12863,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Grudziądz" },
@@ -13421,14 +13061,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Włocławek" },
@@ -13627,14 +13259,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Starogard Gdański" },
@@ -13822,14 +13446,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Tczew" },
@@ -14025,14 +13641,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Wejherowo" },
@@ -14226,14 +13834,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Nysa" },
@@ -14424,14 +14024,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Kędzierzyn-Koźle" },
@@ -14617,14 +14209,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Jelenia Góra" },
@@ -14827,14 +14411,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Lubin" },
@@ -15029,14 +14605,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Głogów" },
@@ -15219,14 +14787,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Nowy Sącz" },
@@ -15424,14 +14984,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Oświęcim" },
@@ -15625,14 +15177,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Racibórz" },
@@ -15825,14 +15369,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Żory" },
@@ -16031,14 +15567,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Ostrołęka" },
@@ -16224,14 +15752,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Łomża" },
@@ -16427,14 +15947,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Konin" },
@@ -16634,14 +16146,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Inowrocław" },
@@ -16818,14 +16322,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Stargard" },
@@ -17022,14 +16518,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Piotrków Trybunalski" },
@@ -17222,14 +16710,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Siedlce" },
@@ -17402,14 +16882,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Suwałki" },
@@ -17608,14 +17080,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Ostrowiec Świętokrzyski" },
@@ -17813,14 +17277,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Świdnica" },
@@ -17997,14 +17453,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Zamość" },
@@ -18196,14 +17644,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Mielec" },
@@ -18475,14 +17915,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Olsztyn" },
@@ -18822,14 +18254,6 @@ export const articleContent: Record<string, React.ReactNode> = {
               "@type": "ProfessionalService",
               "name": "MiauSEO",
               "url": "https://miauseo.pl",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ul. Klaudyny Potockiej 25",
-                "addressLocality": "Poznań",
-                "postalCode": "60-211",
-                "addressRegion": "wielkopolskie",
-                "addressCountry": "PL",
-              },
             },
             "areaServed": [
               { "@type": "City", "name": "Piła" },

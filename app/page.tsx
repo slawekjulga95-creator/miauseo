@@ -17,7 +17,7 @@ const schemaOrg = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Organization", "LocalBusiness"],
+      "@type": "Organization",
       "@id": "https://miauseo.pl/#organization",
       name: "MiauSEO",
       url: "https://miauseo.pl",
@@ -33,12 +33,7 @@ const schemaOrg = {
       email: "slawomir@miauseo.pl",
       vatID: "PL6070100514",
       taxID: "6070100514",
-      address: {
-        "@type": "PostalAddress",
-        addressCountry: "PL",
-      },
       areaServed: "PL",
-      priceRange: "$$",
     },
     {
       "@type": "WebSite",
