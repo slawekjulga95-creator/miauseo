@@ -11,6 +11,9 @@ export async function GET() {
       'Content-Type': 'application/pdf',
       'Content-Disposition': 'inline; filename="wzor-umowy-miauseo.pdf"',
       'Cache-Control': 'public, max-age=86400',
+      // Umowa zawiera dane rejestrowe. Tresc zostaje bez zmian, ale plik ma byc
+      // poza indeksem. Metadata robots z layout.tsx nie obejmuje route handlera.
+      'X-Robots-Tag': 'noindex, nofollow, noarchive',
     },
   })
 }

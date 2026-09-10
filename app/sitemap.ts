@@ -23,7 +23,6 @@ const staticRoutes: { url: string; priority: number; changeFrequency: MetadataRo
   { url: "/kontakt",                       priority: 0.7, changeFrequency: "monthly" },
   { url: "/checklista-wizytowki-google",   priority: 0.6, changeFrequency: "monthly" },
   { url: "/gbp-score",                     priority: 0.6, changeFrequency: "monthly" },
-  { url: "/polityka-prywatnosci",          priority: 0.3, changeFrequency: "yearly" },
 ];
 
 function getPytaniaSlugs(): string[] {

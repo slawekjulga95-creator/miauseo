@@ -4,6 +4,7 @@ import CatWatermark from "@/components/ui/CatWatermark";
 export const metadata: Metadata = {
   title: "Polityka prywatności – MiauSEO",
   description: "Polityka prywatności serwisu MiauSEO. Informacje o przetwarzaniu danych osobowych zgodnie z RODO.",
+  robots: { index: false, follow: true },
 };
 
 const sections = [
