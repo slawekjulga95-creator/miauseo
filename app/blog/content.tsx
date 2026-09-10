@@ -459,7 +459,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         <strong>Praktyczny wniosek na dziś jest jeden.</strong> Zanim dodasz kolejne zdjęcia, kolejny post i kolejny katalog, wpisz nazwę swojej firmy w cudzysłowie w Google i przejrzyj trzydzieści pierwszych wyników. Wszystko, co tam znajdziesz i co mówi coś innego niż Twoja wizytówka, jest pracą do wykonania przed jakąkolwiek dalszą optymalizacją.
       </p>
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
         <li><Link href="/nap-wizytowka-google-co-to-jest">Czym jest NAP i dlaczego decyduje o spójności danych</Link></li>
         <li><Link href="/jak-dodac-local-schema-do-strony">Jak dodać Local Schema do strony</Link></li>
         <li><Link href="/czynniki-rankingowe-wizytowki-google-2026">Czynniki rankingowe wizytówki Google w 2026</Link></li>
@@ -488,7 +488,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         I tu leży specyfika Warszawy. W Sieradzu fryzjer w promieniu dwóch kilometrów ma trzech konkurentów. Na Mokotowie ma ich pięćdziesięciu. Ta sama fizyczna odległość oznacza w Warszawie zupełnie inną pozycję, bo między Tobą a użytkownikiem mieści się dziesięć razy więcej alternatyw. Efekt praktyczny: <strong>zasięg profilu w centrum Warszawy potrafi kończyć się po kilometrze</strong>, podczas gdy w mieście powiatowym obejmuje całą gminę.
       </p>
       <p>
-        Wniosek nie jest przygnębiający, tylko porządkujący. Przestań mierzyć się z „Warszawą" i zacznij mierzyć się z obszarem, w którym realnie możesz wygrać. Jak mierzyć widoczność punkt po punkcie, opisaliśmy w tekście o <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+        Wniosek nie jest przygnębiający, tylko porządkujący. Przestań mierzyć się z „Warszawą" i zacznij mierzyć się z obszarem, w którym realnie możesz wygrać. Jak mierzyć widoczność punkt po punkcie, opisaliśmy w tekście o <Link href="/pozycjonowanie-wizytowki-google">poprawianiu widoczności profilu w Mapach</Link>.
       </p>
 
       <h2>Jak wyznaczyć swój realny rynek</h2>
@@ -553,7 +553,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
 
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
         <li><Link href="/czynniki-rankingowe-wizytowki-google-2026">Czynniki rankingowe wizytówki Google w 2026</Link></li>
         <li><Link href="/najwieksze-bledy-pozycjonowanie-wizytowki-google-2026">Największe błędy w pozycjonowaniu wizytówki</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-radom">Pozycjonowanie wizytówki Google Radom</Link></li>
@@ -631,7 +631,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
 
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
         <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">Jakie zdjęcia w wizytówce naprawdę działają</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-torun">Pozycjonowanie wizytówki Google Toruń</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-czestochowa">Pozycjonowanie wizytówki Google Częstochowa</Link></li>
@@ -710,7 +710,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
 
       <ul>
-        <li><Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">Jak poprawić widoczność profilu firmy w Mapach</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Jak poprawić widoczność profilu firmy w Mapach</Link></li>
         <li><Link href="/seo-lokalne-dla-firm">SEO lokalne dla firm usługowych</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-legnica">Pozycjonowanie wizytówki Google Legnica</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-opole">Pozycjonowanie wizytówki Google Opole</Link></li>
@@ -785,7 +785,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
 
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
         <li><Link href="/sekcja-informacje-wizytowka-google">Sekcja Informacje w wizytówce Google</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-pabianice">Pozycjonowanie wizytówki Google Pabianice</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-piotrkow-trybunalski">Pozycjonowanie wizytówki Google Piotrków Trybunalski</Link></li>
@@ -889,7 +889,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Miasto ciągnie się od Wyspy Sobieszewskiej po Osowę, a między tymi krańcami jest kilkadziesiąt minut jazdy. Profil z Chełmu i profil z Oliwy praktycznie nie widzą się nawzajem w wynikach. <strong>Realnym celem nie jest „Gdańsk", tylko pas dzielnic wzdłuż Twojej osi dojazdu</strong>: Śródmieście z Wrzeszczem, Wrzeszcz z Oliwą, Chełm z Orunią.
       </p>
       <p>
-        Pierwsze zadanie jest więc pomiarowe, nie optymalizacyjne. Sprawdź, z których punktów miasta w ogóle jesteś widoczny, zanim zaczniesz cokolwiek zmieniać. Jak to zrobić bez płatnych narzędzi, opisaliśmy w tekście o <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności w Mapach</Link>.
+        Pierwsze zadanie jest więc pomiarowe, nie optymalizacyjne. Sprawdź, z których punktów miasta w ogóle jesteś widoczny, zanim zaczniesz cokolwiek zmieniać. Jak to zrobić bez płatnych narzędzi, opisaliśmy w tekście o <Link href="/pozycjonowanie-wizytowki-google">poprawianiu widoczności w Mapach</Link>.
       </p>
 
       <h2>Obszar działania dla firm mobilnych w Trójmieście</h2>
@@ -931,7 +931,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
 
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
         <li><Link href="/atrybuty-wizytowka-google">Atrybuty w wizytówce Google</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-gdynia">Pozycjonowanie wizytówki Google Gdynia</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-tczew">Pozycjonowanie wizytówki Google Tczew</Link></li>
@@ -1008,7 +1008,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
 
       <ul>
-        <li><Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">Jak poprawić widoczność profilu firmy w Mapach</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Jak poprawić widoczność profilu firmy w Mapach</Link></li>
         <li><Link href="/opis-firmy-google-business-profile-jak-napisac">Jak napisać opis firmy w Google Business Profile</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-stargard">Pozycjonowanie wizytówki Google Stargard</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-swinoujscie">Pozycjonowanie wizytówki Google Świnoujście</Link></li>
@@ -1200,7 +1200,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         W rynku o niższej presji konkurencyjnej najczęstszą przyczyną słabej pozycji nie jest silna konkurencja, tylko <strong>niedokończony profil</strong>. Pusta sekcja usług, brak odpowiedzi na opinie, kategoria główna dobrana zbyt szeroko, kilka zdjęć sprzed lat. To są rzeczy, które da się naprawić w jedno popołudnie i które tutaj przekładają się na pozycję szybciej niż w dużych miastach, właśnie dlatego, że konkurencja też ich nie zrobiła.
       </p>
       <p>
-        Kolejność prac ustawiliśmy w przewodniku o <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+        Kolejność prac ustawiliśmy w przewodniku o <Link href="/pozycjonowanie-wizytowki-google">poprawianiu widoczności profilu w Mapach</Link>.
       </p>
 
       <h2>FAQ</h2>
@@ -1221,7 +1221,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
 
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
         <li><Link href="/kategorie-wizytowka-google">Kategorie w wizytówce Google</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-lomza">Pozycjonowanie wizytówki Google Łomża</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-suwalki">Pozycjonowanie wizytówki Google Suwałki</Link></li>
@@ -1314,7 +1314,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
 
       <ul>
-        <li><Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">Jak poprawić widoczność profilu firmy w Mapach</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Jak poprawić widoczność profilu firmy w Mapach</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-sosnowiec">Pozycjonowanie wizytówki Google Sosnowiec</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-gliwice">Pozycjonowanie wizytówki Google Gliwice</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-tychy">Pozycjonowanie wizytówki Google Tychy</Link></li>
@@ -1445,7 +1445,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Sezon jest widoczny, ale to nie on utrzymuje firmę. Przez jedenaście miesięcy decyduje zwykła, systematyczna praca: kompletny profil, świeże opinie, odpowiedzi na wszystkie recenzje, aktualne zdjęcia i treść na stronie pod dzielnice, w których faktycznie masz klientów. Częstochowa jest miastem rozciągniętym wzdłuż Warty i alei NMP, a Raków, Tysiąclecie czy Północ funkcjonują jak osobne rynki.
       </p>
       <p>
-        Jeśli profil jest niedokończony, sezon tego nie naprawi. Kolejność prac opisaliśmy w tekście o <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+        Jeśli profil jest niedokończony, sezon tego nie naprawi. Kolejność prac opisaliśmy w tekście o <Link href="/pozycjonowanie-wizytowki-google">poprawianiu widoczności profilu w Mapach</Link>.
       </p>
 
       <h2>FAQ</h2>
@@ -1538,7 +1538,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
 
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
         <li><Link href="/linki-do-wizytowki-google">Linki do wizytówki Google</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-warszawa">Pozycjonowanie wizytówki Google Warszawa</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-starachowice">Pozycjonowanie wizytówki Google Starachowice</Link></li>
@@ -1613,7 +1613,7 @@ export const articleContent: Record<string, React.ReactNode> = {
 
       <ul>
         <li><Link href="/weryfikacja-wizytowki-google">Weryfikacja wizytówki Google</Link></li>
-        <li><Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">Jak poprawić widoczność profilu firmy w Mapach</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Jak poprawić widoczność profilu firmy w Mapach</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-przemysl">Pozycjonowanie wizytówki Google Przemyśl</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-stalowa-wola">Pozycjonowanie wizytówki Google Stalowa Wola</Link></li>
       </ul>
@@ -1722,7 +1722,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         W mieście bez jednego centrum lokalizacja profilu decyduje o zasięgu bardziej niż gdzie indziej. Nie ma tu punktu, który byłby „blisko wszystkiego". Jeśli wybierasz lokal albo bazę dla firmy z dojazdem, patrz nie na prestiż adresu, tylko na <strong>środek ciężkości swoich zleceń</strong>.
       </p>
       <p>
-        Jeśli lokal już masz, sprawdź pomiarem, dokąd sięga Twoja widoczność. Przejedź się przez kilka dzielnic z telefonem, sprawdzając frazę w trybie incognito. Wynik będzie mapą Twojego realnego rynku i podstawą do wszystkich dalszych decyzji. Jak taki pomiar prowadzić, opisaliśmy przy <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+        Jeśli lokal już masz, sprawdź pomiarem, dokąd sięga Twoja widoczność. Przejedź się przez kilka dzielnic z telefonem, sprawdzając frazę w trybie incognito. Wynik będzie mapą Twojego realnego rynku i podstawą do wszystkich dalszych decyzji. Jak taki pomiar prowadzić, opisaliśmy przy <Link href="/pozycjonowanie-wizytowki-google">poprawianiu widoczności profilu w Mapach</Link>.
       </p>
 
       <h2>Sąsiedzi, którzy zaczynają się za rogiem</h2>
@@ -1972,7 +1972,7 @@ export const articleContent: Record<string, React.ReactNode> = {
 
       <h2>Fundament</h2>
       <p>
-        Wszystko powyżej działa tylko przy kompletnym profilu: precyzyjna kategoria główna, wypełniona sekcja usług, atrybuty, opis, komplet godzin, regularne zdjęcia i odpowiedzi na wszystkie opinie. Listę kontrolną i kolejność prac opisaliśmy w tekście o <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+        Wszystko powyżej działa tylko przy kompletnym profilu: precyzyjna kategoria główna, wypełniona sekcja usług, atrybuty, opis, komplet godzin, regularne zdjęcia i odpowiedzi na wszystkie opinie. Listę kontrolną i kolejność prac opisaliśmy w tekście o <Link href="/pozycjonowanie-wizytowki-google">poprawianiu widoczności profilu w Mapach</Link>.
       </p>
 
       <h2>FAQ</h2>
@@ -1993,7 +1993,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
 
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-cieszyn">Pozycjonowanie wizytówki Google Cieszyn</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-oswiecim">Pozycjonowanie wizytówki Google Oświęcim</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-tychy">Pozycjonowanie wizytówki Google Tychy</Link></li>
@@ -2034,7 +2034,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Zaborze, Biskupice, Rokitnica, Mikulczyce, Helenka, Maciejów, Kończyce. Nazwy dzielnic są w Zabrzu w codziennym użyciu i pojawiają się w wyszukiwarce. Rokitnica i Mikulczyce leżą na tyle daleko od centrum, że funkcjonują jak osobne rynki, więc firma z jednego krańca miasta praktycznie nie istnieje w wynikach na drugim.
       </p>
       <p>
-        To jest argument za tym, żeby celować w rejon, a nie w miasto, i sprawdzić pomiarem, gdzie kończy się widoczność. Jak taki pomiar prowadzić bez płatnych narzędzi, opisaliśmy przy <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+        To jest argument za tym, żeby celować w rejon, a nie w miasto, i sprawdzić pomiarem, gdzie kończy się widoczność. Jak taki pomiar prowadzić bez płatnych narzędzi, opisaliśmy przy <Link href="/pozycjonowanie-wizytowki-google">poprawianiu widoczności profilu w Mapach</Link>.
       </p>
 
       <h2>Plan na pierwsze sto dni</h2>
@@ -2266,7 +2266,7 @@ export const articleContent: Record<string, React.ReactNode> = {
 
       <h2>Fundament</h2>
       <p>
-        Wszystko powyżej działa dopiero przy kompletnym profilu: precyzyjna kategoria główna, wypełniona sekcja usług, atrybuty, opis, komplet godzin, regularne zdjęcia i odpowiedź na każdą opinię. W miastach o niskiej presji konkurencyjnej ten fundament zwykle wystarcza, żeby zobaczyć ruch w ciągu kilku tygodni. Kolejność prac opisaliśmy przy <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+        Wszystko powyżej działa dopiero przy kompletnym profilu: precyzyjna kategoria główna, wypełniona sekcja usług, atrybuty, opis, komplet godzin, regularne zdjęcia i odpowiedź na każdą opinię. W miastach o niskiej presji konkurencyjnej ten fundament zwykle wystarcza, żeby zobaczyć ruch w ciągu kilku tygodni. Kolejność prac opisaliśmy przy <Link href="/pozycjonowanie-wizytowki-google">poprawianiu widoczności profilu w Mapach</Link>.
       </p>
 
       <h2>FAQ</h2>
@@ -2320,7 +2320,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         W mieście bez centrum lokalizacja profilu decyduje o zasięgu bardziej niż gdziekolwiek indziej, bo nie ma punktu, który byłby blisko wszystkiego. Jeśli dopiero wybierasz lokal albo bazę dla firmy z dojazdem, kryterium jest jedno: <strong>środek ciężkości Twoich zleceń</strong>.
       </p>
       <p>
-        Jeśli lokal już masz, zrób pomiar. Przejedź się przez cztery, pięć dzielnic z telefonem i sprawdzaj swoją frazę w trybie incognito. Wynik będzie mapą realnego rynku i podstawą wszystkich dalszych decyzji. Jak taki pomiar prowadzić, opisaliśmy przy <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+        Jeśli lokal już masz, zrób pomiar. Przejedź się przez cztery, pięć dzielnic z telefonem i sprawdzaj swoją frazę w trybie incognito. Wynik będzie mapą realnego rynku i podstawą wszystkich dalszych decyzji. Jak taki pomiar prowadzić, opisaliśmy przy <Link href="/pozycjonowanie-wizytowki-google">poprawianiu widoczności profilu w Mapach</Link>.
       </p>
 
       <h2>Sąsiedzi za rogiem</h2>
@@ -2444,7 +2444,7 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
 
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-kedzierzyn-kozle">Pozycjonowanie wizytówki Google Kędzierzyn-Koźle</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-nysa">Pozycjonowanie wizytówki Google Nysa</Link></li>
         <li><Link href="/pozycjonowanie-wizytowki-google-brzeg">Pozycjonowanie wizytówki Google Brzeg</Link></li>
@@ -2573,7 +2573,7 @@ export const articleContent: Record<string, React.ReactNode> = {
 
       <h2>Fundament, którego nie zastąpi geografia</h2>
       <p>
-        Cała powyższa analiza ma sens dopiero przy kompletnym profilu. Precyzyjna kategoria główna, wszystkie usługi rozpisane osobno, atrybuty, opis z nazwami dzielnic, komplet godzin, regularne zdjęcia, odpowiedź na każdą opinię. W mieście o niskiej gęstości i umiarkowanej konkurencji ten fundament zwykle wystarcza, żeby zająć pierwszą trójkę w swoim rejonie w ciągu kilku miesięcy. Kolejność prac opisaliśmy przy <Link href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach">poprawianiu widoczności profilu w Mapach</Link>.
+        Cała powyższa analiza ma sens dopiero przy kompletnym profilu. Precyzyjna kategoria główna, wszystkie usługi rozpisane osobno, atrybuty, opis z nazwami dzielnic, komplet godzin, regularne zdjęcia, odpowiedź na każdą opinię. W mieście o niskiej gęstości i umiarkowanej konkurencji ten fundament zwykle wystarcza, żeby zająć pierwszą trójkę w swoim rejonie w ciągu kilku miesięcy. Kolejność prac opisaliśmy przy <Link href="/pozycjonowanie-wizytowki-google">poprawianiu widoczności profilu w Mapach</Link>.
       </p>
 
       <h2>FAQ</h2>
@@ -3073,7 +3073,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         <li><strong>Jeden anchor na wszystko.</strong> Dziesięć linków z tą samą frazą i miejscowością wygląda dokładnie tak, jak wygląda.</li>
       </ul>
       <p>
-        Osobna kategoria to <Link href="/wizytowka-google-nie-wygasa-oszustwo">telefony o „wygasającej wizytówce"</Link>, które w sezonie zmiany opon lecą do warsztatów falami. Wizytówka Google nie wygasa i nic nie kosztuje.
+        Osobna kategoria to <Link href="/wizytowka-google-popularne-oszustwa">telefony o „wygasającej wizytówce"</Link>, które w sezonie zmiany opon lecą do warsztatów falami. Wizytówka Google nie wygasa i nic nie kosztuje.
       </p>
 
       <h2 id="faq-wulkanizacja">FAQ</h2>
@@ -3116,7 +3116,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Etap pierwszy zrobisz w jeden weekend i to on daje najwięcej za najmniej. Zacznij od niego jeszcze dziś, zanim zaczniesz myśleć o stronie.
       </p>
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
         <li><Link href="/siedziba-mala-miejscowosc-local-seo">Firma z siedzibą w małej miejscowości a widoczność w większym mieście</Link></li>
         <li><Link href="/jak-promowac-warsztat-samochodowy-google">Jak promować warsztat samochodowy w Google</Link></li>
         <li><Link href="/najwieksze-bledy-pozycjonowanie-wizytowki-google-2026">Największe błędy w pozycjonowaniu wizytówki Google</Link></li>
@@ -3232,7 +3232,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Wypisz w tabeli trzy profile stojące nad Tobą i osiem punktów z rysunku powyżej. Zaznacz, gdzie masz gorzej. Potem posortuj różnice według czasu potrzebnego na ich zniwelowanie.
       </p>
       <p>
-        Zrób najpierw wszystko z górnej części listy, bo to jest jedno popołudnie i <strong>przy trzech konkurentach z pustymi usługami wystarcza, żeby przeskoczyć o kilka pozycji</strong>. Dopiero potem zabieraj się za opinie, bo tam liczy się rytm, a nie zryw. Kolejność prac i sposób mierzenia efektów rozpisaliśmy przy <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>, a pełną listę sygnałów z oceną wagi przy <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>.
+        Zrób najpierw wszystko z górnej części listy, bo to jest jedno popołudnie i <strong>przy trzech konkurentach z pustymi usługami wystarcza, żeby przeskoczyć o kilka pozycji</strong>. Dopiero potem zabieraj się za opinie, bo tam liczy się rytm, a nie zryw. Kolejność prac i sposób mierzenia efektów rozpisaliśmy przy <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>, a pełną listę sygnałów z oceną wagi przy <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>.
       </p>
 
       <h2>Powtarzaj to raz na kwartał</h2>
@@ -9571,7 +9571,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         To jest najskuteczniejsza odpowiedź i najczęściej pomijana. <strong>Zamiast walczyć o frazę porównawczą, zabezpiecz frazy z intencją natychmiastową</strong>, bo tam agregator nie sięga.
       </p>
       <p>
-        Praktycznie oznacza to całą zwykłą pracę nad profilem: kategoria, kompletność, usługi, opinie, świeżość, godziny. <strong>Nudne i skuteczne.</strong> Kolejność prac rozpisaliśmy przy <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>, a pełną listę sygnałów przy <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>.
+        Praktycznie oznacza to całą zwykłą pracę nad profilem: kategoria, kompletność, usługi, opinie, świeżość, godziny. <strong>Nudne i skuteczne.</strong> Kolejność prac rozpisaliśmy przy <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>, a pełną listę sygnałów przy <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>.
       </p>
       <p>
         Warto też sprawdzić, ile ruchu naprawdę idzie przez frazy porównawcze. Bywa, że firma walczy miesiącami o frazę, która daje ułamek zapytań w porównaniu z prostym zapytaniem o usługę. Sposób oceny opłacalności frazy rozłożyliśmy przy <a href="/pozycjonowanie-wizytowki-google-kedzierzyn-kozle" className="text-brand font-semibold hover:underline">Kędzierzynie-Koźlu</a>.
@@ -15903,7 +15903,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Powtórz siatkę po miesiącu, w tych samych dziewięciu punktach i na tej samej frazie. Dopiero różnica między dwoma odczytami mówi cokolwiek o skuteczności. Pojedynczy pomiar to zdjęcie, dopiero dwa robią wykres.
       </p>
       <p>
-        Realistyczny obraz w Koninie wygląda tak: w branżach, w których konkurencja ma profile pozostawione same sobie, przesunięcie o kilka pozycji widać po dwóch, trzech tygodniach. Tam, gdzie ktoś nad profilami pracuje świadomie, horyzont to kilka miesięcy, głównie przez opinie, których świeżość buduje się w czasie. Pełną listę sygnałów z oceną wagi zebraliśmy w tekście o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>, a kolejność prac w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
+        Realistyczny obraz w Koninie wygląda tak: w branżach, w których konkurencja ma profile pozostawione same sobie, przesunięcie o kilka pozycji widać po dwóch, trzech tygodniach. Tam, gdzie ktoś nad profilami pracuje świadomie, horyzont to kilka miesięcy, głównie przez opinie, których świeżość buduje się w czasie. Pełną listę sygnałów z oceną wagi zebraliśmy w tekście o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>, a kolejność prac w artykule o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
       </p>
 
       <h2>Trzy pytania, które padają najczęściej</h2>
@@ -16290,7 +16290,7 @@ export const articleContent: Record<string, React.ReactNode> = {
 
       <h2>Podsumowanie</h2>
       <p>
-        W Stargardzie nie walczysz o to, żeby być bliżej, bo bliżej już jesteś. Walczysz o to, żeby bliskość zaczęła się liczyć, a do tego potrzebujesz kompletnego profilu, widocznego adresu i stałego napływu opinii od stargardzian. Podobny układ, tylko z inną osią problemu, opisaliśmy w tekstach o <a href="/pozycjonowanie-wizytowki-google-inowroclaw" className="text-brand font-semibold hover:underline">Inowrocławiu</a> i <a href="/pozycjonowanie-wizytowki-google-piotrkow-trybunalski" className="text-brand font-semibold hover:underline">Piotrkowie Trybunalskim</a>. Kolejność prac i sposób mierzenia efektów znajdziesz w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
+        W Stargardzie nie walczysz o to, żeby być bliżej, bo bliżej już jesteś. Walczysz o to, żeby bliskość zaczęła się liczyć, a do tego potrzebujesz kompletnego profilu, widocznego adresu i stałego napływu opinii od stargardzian. Podobny układ, tylko z inną osią problemu, opisaliśmy w tekstach o <a href="/pozycjonowanie-wizytowki-google-inowroclaw" className="text-brand font-semibold hover:underline">Inowrocławiu</a> i <a href="/pozycjonowanie-wizytowki-google-piotrkow-trybunalski" className="text-brand font-semibold hover:underline">Piotrkowie Trybunalskim</a>. Kolejność prac i sposób mierzenia efektów znajdziesz w artykule o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
@@ -16682,7 +16682,7 @@ export const articleContent: Record<string, React.ReactNode> = {
 
       <h2>Podsumowanie</h2>
       <p>
-        W Siedlcach nie wygrywa się odległością, bo wszyscy są blisko. Wygrywa się szerokością puli zapytań: dobrze dobrana kategoria główna, trzy sensowne kategorie dodatkowe, kompletna lista usług nazwanych językiem klienta i opis, który mówi wprost, gdzie pracujesz. To jedna godzina pracy w panelu i zwykle największa pojedyncza zmiana, jaką da się zrobić za darmo. Inne osie problemu opisaliśmy w tekstach o <a href="/pozycjonowanie-wizytowki-google-piotrkow-trybunalski" className="text-brand font-semibold hover:underline">Piotrkowie Trybunalskim</a> i <a href="/pozycjonowanie-wizytowki-google-suwalki" className="text-brand font-semibold hover:underline">Suwałkach</a>. Kolejność prac znajdziesz w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
+        W Siedlcach nie wygrywa się odległością, bo wszyscy są blisko. Wygrywa się szerokością puli zapytań: dobrze dobrana kategoria główna, trzy sensowne kategorie dodatkowe, kompletna lista usług nazwanych językiem klienta i opis, który mówi wprost, gdzie pracujesz. To jedna godzina pracy w panelu i zwykle największa pojedyncza zmiana, jaką da się zrobić za darmo. Inne osie problemu opisaliśmy w tekstach o <a href="/pozycjonowanie-wizytowki-google-piotrkow-trybunalski" className="text-brand font-semibold hover:underline">Piotrkowie Trybunalskim</a> i <a href="/pozycjonowanie-wizytowki-google-suwalki" className="text-brand font-semibold hover:underline">Suwałkach</a>. Kolejność prac znajdziesz w artykule o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
@@ -17048,7 +17048,7 @@ export const articleContent: Record<string, React.ReactNode> = {
 
       <h2>Podsumowanie</h2>
       <p>
-        W Ostrowcu opinie są najmocniejszą dźwignią, jaką masz, i jedyną, której nie da się przyspieszyć bez ryzyka. Poproś osobiście, ułatw drogę linkiem, odpowiadaj na wszystko w ciągu doby i rozłóż to na miesiące zamiast na tydzień. Reszta profilu ma być kompletna, ale to opinie zdecydują o kolejności. Inne osie tego samego problemu opisaliśmy w tekstach o <a href="/pozycjonowanie-wizytowki-google-suwalki" className="text-brand font-semibold hover:underline">Suwałkach</a> i <a href="/pozycjonowanie-wizytowki-google-swidnica" className="text-brand font-semibold hover:underline">Świdnicy</a>. Kolejność prac znajdziesz w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
+        W Ostrowcu opinie są najmocniejszą dźwignią, jaką masz, i jedyną, której nie da się przyspieszyć bez ryzyka. Poproś osobiście, ułatw drogę linkiem, odpowiadaj na wszystko w ciągu doby i rozłóż to na miesiące zamiast na tydzień. Reszta profilu ma być kompletna, ale to opinie zdecydują o kolejności. Inne osie tego samego problemu opisaliśmy w tekstach o <a href="/pozycjonowanie-wizytowki-google-suwalki" className="text-brand font-semibold hover:underline">Suwałkach</a> i <a href="/pozycjonowanie-wizytowki-google-swidnica" className="text-brand font-semibold hover:underline">Świdnicy</a>. Kolejność prac znajdziesz w artykule o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
@@ -17249,7 +17249,7 @@ export const articleContent: Record<string, React.ReactNode> = {
 
       <h2>Podsumowanie</h2>
       <p>
-        W Świdnicy odległość jest tak mała, że przestaje być argumentem, a decyzję klienta rozstrzyga wygląd karty: zdjęcie z ulicy, wiarygodna liczba opinii, prawdziwy status otwarcia i przyciski, które działają. To wszystko robisz sam, w jedno popołudnie, bez budżetu. Warstwę reputacyjną tego samego problemu opisaliśmy w tekście o <a href="/pozycjonowanie-wizytowki-google-ostrowiec-swietokrzyski" className="text-brand font-semibold hover:underline">Ostrowcu Świętokrzyskim</a>, a warstwę danych dla modeli AI w artykule o <a href="/pozycjonowanie-wizytowki-google-zamosc" className="text-brand font-semibold hover:underline">Zamościu</a>. Aktualną listę działań na 2026 rok zebraliśmy w tekście o <a href="/jak-pozycjonowac-wizytowke-google-2026" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google w 2026</a>.
+        W Świdnicy odległość jest tak mała, że przestaje być argumentem, a decyzję klienta rozstrzyga wygląd karty: zdjęcie z ulicy, wiarygodna liczba opinii, prawdziwy status otwarcia i przyciski, które działają. To wszystko robisz sam, w jedno popołudnie, bez budżetu. Warstwę reputacyjną tego samego problemu opisaliśmy w tekście o <a href="/pozycjonowanie-wizytowki-google-ostrowiec-swietokrzyski" className="text-brand font-semibold hover:underline">Ostrowcu Świętokrzyskim</a>, a warstwę danych dla modeli AI w artykule o <a href="/pozycjonowanie-wizytowki-google-zamosc" className="text-brand font-semibold hover:underline">Zamościu</a>. Aktualną listę działań na 2026 rok zebraliśmy w tekście o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google w 2026</a>.
       </p>
 
       <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
@@ -17696,7 +17696,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         <strong>Godziny otwarcia</strong> wpływają na pozycję, bo to, czy firma jest otwarta w momencie wyszukiwania, jest osobnym sygnałem. <strong>Usługi</strong> z własnymi opisami poszerzają pulę fraz bez naruszania czegokolwiek i to jest najtańsza dźwignia, jaka istnieje — szczegóły w tekście o <a href="/uslugi-wizytowka-google-business" className="text-brand font-semibold hover:underline">usługach w wizytówce</a>. <strong>Opinie</strong> pracują na czterech osobnych poziomach: średnia, liczba, świeżość i stały napływ; sposoby zgodne z regulaminem zebraliśmy w tekście o <a href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">zdobywaniu opinii</a>.
       </p>
       <p>
-        Kolejność prac i sposób mierzenia efektów rozpisaliśmy osobno w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
+        Kolejność prac i sposób mierzenia efektów rozpisaliśmy osobno w artykule o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>.
       </p>
 
       <h2>Zasięg poza Olsztyn</h2>
@@ -18215,7 +18215,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Pilski rynek jest na tyle mały, że dobrze poprowadzony profil daje realną przewagę, i na tyle rozproszony, że nie wystarczy „być w Google". Zacznij od godziny pracy w panelu: kategoria, pinezka, godziny, adres, usługi. Dopiero potem opinie, zdjęcia, Local Schema i podstrony dla Ujścia, Kaczor czy Wyrzyska.
       </p>
       <p>
-        Jeśli chcesz zobaczyć całą listę sygnałów z oceną ważności, zebraliśmy ją w tekście o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>, a kolejność działań i sposób mierzenia efektów — w artykule o <a href="/jak-poprawic-widocznosc-profilu-firmy-w-mapach" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>. Całość procesu opisuje przewodnik o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
+        Jeśli chcesz zobaczyć całą listę sygnałów z oceną ważności, zebraliśmy ją w tekście o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>, a kolejność działań i sposób mierzenia efektów — w artykule o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">poprawianiu widoczności profilu w mapach</a>. Całość procesu opisuje przewodnik o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
       </p>
       <p>
         Ten sam rozbiór rynku zrobiliśmy dla innych miast tej wielkości. Pomiar siatką punktów opisaliśmy przy <a href="/pozycjonowanie-wizytowki-google-konin" className="text-brand font-semibold hover:underline">Koninie</a>, rytm sezonu przy <a href="/pozycjonowanie-wizytowki-google-inowroclaw" className="text-brand font-semibold hover:underline">Inowrocławiu</a>, sąsiedztwo dużego miasta przy <a href="/pozycjonowanie-wizytowki-google-stargard" className="text-brand font-semibold hover:underline">Stargardzie</a>, a firmy z dojazdem przy <a href="/pozycjonowanie-wizytowki-google-piotrkow-trybunalski" className="text-brand font-semibold hover:underline">Piotrkowie Trybunalskim</a>.
@@ -18275,312 +18275,6 @@ export const articleContent: Record<string, React.ReactNode> = {
   /* ─────────────────────────────────────────────────────────────────────────
      SEO: Jak poprawić widoczność profilu firmy w mapach
   ───────────────────────────────────────────────────────────────────────── */
-  "jak-poprawic-widocznosc-profilu-firmy-w-mapach": (
-    <>
-      <p>
-        Widoczność w Mapach Google rozstrzyga się na kilkunastu konkretnych sygnałach, a nie na „aktywności" w ogóle. Poniżej opisujemy każdy z nich po kolei: co robi, ile realnie waży i co dokładnie masz z nim zrobić. Kolejność nie jest przypadkowa — odpowiada wadze, jaką przypisali tym czynnikom praktycy w badaniu <a href="https://whitespark.ca/local-search-ranking-factors/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">Whitespark Local Search Ranking Factors 2026</a>, zestawionej z oficjalnymi wytycznymi Google.
-      </p>
-      <p>
-        Zakładamy, że profil już istnieje i jest potwierdzony. Jeśli nie przeszedł jeszcze <a href="/weryfikacja-wizytowki-google" className="text-brand font-semibold hover:underline">weryfikacji</a>, to jest pierwszy i jedyny krok, jaki ma teraz sens — niezweryfikowana wizytówka nie konkuruje o nic.
-      </p>
-
-      <h2>Czym właściwie jest widoczność w mapach</h2>
-      <p>
-        Trzeba rozdzielić trzy powierzchnie, bo mylenie ich prowadzi do złych wniosków przy ocenie efektów.
-      </p>
-      <p>
-        <strong>Local Pack</strong> to blok trzech firm z mapką, który pokazuje się w zwykłych wynikach wyszukiwania Google. To tu trafia największy ruch i o te trzy miejsca toczy się realna walka. <strong>Mapy Google</strong> — aplikacja i maps.google.com — pokazują dłuższą listę wyników i użytkownik zwykle przewija ją dalej niż do trzeciej pozycji. <strong>Odpowiedzi generowane przez AI</strong> — od 2026 roku w Mapach działa przycisk „Ask", który odpowiada na pytania o firmę na podstawie profilu, strony i źródeł publicznych.
-      </p>
-      <p>
-        Konsekwencja praktyczna jest taka, że nie istnieje jedna „pozycja w mapach". Ta sama firma może być trzecia dla kogoś stojącego przy jej siedzibie i niewidoczna dla kogoś z drugiego końca miasta. Dlatego pytanie „na którym jestem miejscu" jest źle postawione — poprawne brzmi „na jakim obszarze jestem w pierwszej trójce".
-      </p>
-
-      <h2>Na czym Google opiera wyniki lokalne</h2>
-      <p>
-        Google opisuje to wprost w dokumentacji Business Profile i warto zacząć od tego, zanim sięgnie się po dane branżowe. Wyniki lokalne opierają się na trzech rzeczach.
-      </p>
-      <p>
-        <strong>Trafność (relevance)</strong> — na ile profil odpowiada temu, czego szuka użytkownik. To obszar, na który masz największy wpływ: kategorie, usługi, opis, treść strony. <strong>Odległość (distance)</strong> — jak daleko firma znajduje się od miejsca wyszukiwania albo od lokalizacji wskazanej w zapytaniu. <strong>Popularność (prominence)</strong> — jak bardzo firma jest znana, w czym Google wymienia między innymi linki prowadzące do strony i liczbę opinii.
-      </p>
-      <p>
-        W tej samej dokumentacji Google zamieszcza zdanie, które warto zapamiętać przed rozmową z każdym sprzedawcą usług SEO: nie ma sposobu, żeby poprosić o lepszą pozycję lokalną ani za nią zapłacić. Wszystko, co poniżej, to praca na sygnałach, a nie na dostępie.
-      </p>
-
-      <h2>Zanim cokolwiek zmienisz — zmierz punkt wyjścia</h2>
-      <p>
-        Bez pomiaru nie odróżnisz efektu swojej pracy od zwykłej fluktuacji. Potrzebujesz dwóch rzeczy.
-      </p>
-      <p>
-        <strong>Siatka geograficzna</strong> — narzędzia typu Local Falcon, Whitespark GeoGrid czy BrightLocal sprawdzają Twoją pozycję na dziesiątkach punktów rozmieszczonych na mapie miasta i pokazują ją jako kolorową kratę. To jedyny sensowny sposób na zmierzenie zasięgu, bo pokazuje, gdzie kończy się Twoja widoczność. Zrób pierwszy pomiar przed zmianami i powtarzaj co miesiąc, zawsze na tych samych frazach.
-      </p>
-
-      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
-        <div className="p-6 flex justify-center">
-          <svg viewBox="0 0 340 300" width="100%" style={{maxWidth: '420px'}} role="img" aria-labelledby="siatka-tytul siatka-opis">
-            <title id="siatka-tytul">Siatka geograficzna widoczności wizytówki w Mapach Google</title>
-            <desc id="siatka-opis">Kwadratowa siatka 5 na 5 punktów pomiarowych wokół siedziby firmy. Pozycje od 1 do 3 występują tylko w bezpośrednim otoczeniu adresu, na obrzeżach siatki firma spada poza pierwszą dwudziestkę.</desc>
-            <rect x="0" y="0" width="340" height="300" fill="#ffffff"/>
-            <g fontFamily="sans-serif" fontSize="13" fontWeight="700" textAnchor="middle">
-              <circle cx="50" cy="50" r="20" fill="#f4f4f5"/><text x="50" y="55" fill="#a1a1aa">20+</text>
-              <circle cx="120" cy="50" r="20" fill="#fef3c7"/><text x="120" y="55" fill="#a16207">12</text>
-              <circle cx="190" cy="50" r="20" fill="#fef3c7"/><text x="190" y="55" fill="#a16207">9</text>
-              <circle cx="260" cy="50" r="20" fill="#fef3c7"/><text x="260" y="55" fill="#a16207">14</text>
-              <circle cx="50" cy="110" r="20" fill="#fef3c7"/><text x="50" y="115" fill="#a16207">15</text>
-              <circle cx="120" cy="110" r="20" fill="#ffedd5"/><text x="120" y="115" fill="#c2410c">6</text>
-              <circle cx="190" cy="110" r="20" fill="#ffedd5"/><text x="190" y="115" fill="#c2410c">4</text>
-              <circle cx="260" cy="110" r="20" fill="#fef3c7"/><text x="260" y="115" fill="#a16207">8</text>
-              <circle cx="50" cy="170" r="20" fill="#fef3c7"/><text x="50" y="175" fill="#a16207">11</text>
-              <circle cx="120" cy="170" r="20" fill="#FF6A00"/><text x="120" y="175" fill="#ffffff">2</text>
-              <circle cx="190" cy="170" r="20" fill="#FF6A00"/><text x="190" y="175" fill="#ffffff">1</text>
-              <circle cx="260" cy="170" r="20" fill="#ffedd5"/><text x="260" y="175" fill="#c2410c">5</text>
-              <circle cx="50" cy="230" r="20" fill="#f4f4f5"/><text x="50" y="235" fill="#a1a1aa">20+</text>
-              <circle cx="120" cy="230" r="20" fill="#fef3c7"/><text x="120" y="235" fill="#a16207">10</text>
-              <circle cx="190" cy="230" r="20" fill="#ffedd5"/><text x="190" y="235" fill="#c2410c">7</text>
-              <circle cx="260" cy="230" r="20" fill="#fef3c7"/><text x="260" y="235" fill="#a16207">13</text>
-            </g>
-            <path d="M155 152c-6.6 0-12 5.4-12 12 0 9 12 21.5 12 21.5s12-12.5 12-21.5c0-6.6-5.4-12-12-12z" fill="#18181b"/>
-            <circle cx="155" cy="164" r="4.4" fill="#ffffff"/>
-            <text x="170" y="285" fontFamily="sans-serif" fontSize="11" fill="#71717a" textAnchor="middle">Czarna pinezka — adres firmy. Liczby — pozycja w wynikach z danego punktu.</text>
-          </svg>
-        </div>
-        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
-          <strong className="text-ink">Tak wygląda realna widoczność</strong> — jedna firma ma jednocześnie pozycję 1 i pozycję poza dwudziestką, zależnie od tego, gdzie stoi wyszukujący. Schemat poglądowy ilustrujący układ pomiaru siatką geograficzną.
-        </figcaption>
-      </figure>
-
-      <p>
-        <strong>Statystyki profilu</strong> — panel wyników w Google Business Profile pokazuje, ile było wyświetleń w Wyszukiwarce i w Mapach osobno, jakimi frazami ludzie trafiali na profil oraz ile było telefonów, kliknięć w stronę i próśb o trasę. To dane o działaniach, a nie o pozycji, i właśnie dlatego są ważniejsze niż ranking sam w sobie: pozycja bez telefonów niczego nie załatwia.
-      </p>
-      <p>
-        Zapisz punkt wyjścia. Bez tego za trzy miesiące będziesz zgadywać, czy cokolwiek zadziałało.
-      </p>
-
-      <h2>Które sygnały ważą najwięcej</h2>
-      <p>
-        Poniższa tabela to dwadzieścia najwyżej ocenionych czynników rankingowych dla Local Pack i Map z badania Whitespark 2026, w którym 47 specjalistów lokalnego SEO oceniało wagę poszczególnych sygnałów. Liczba przy czynniku to jego wynik punktowy w rankingu — im wyższy, tym większa przypisywana waga. To opinia praktyków, nie dokument Google, ale jest to najlepsze dostępne przybliżenie i wystarczające, żeby ustawić kolejność prac.
-      </p>
-      <div className="overflow-x-auto my-6 rounded-xl border border-zinc-200">
-        <table className="w-full text-sm border-collapse">
-          <thead>
-            <tr style={{backgroundColor: '#18181b'}}>
-              <th className="text-left px-4 py-3 text-white font-semibold w-12">#</th>
-              <th className="text-left px-4 py-3 text-white font-semibold">Czynnik</th>
-              <th className="text-left px-4 py-3 text-white font-semibold w-24">Wynik</th>
-              <th className="text-left px-4 py-3 text-white font-semibold w-44">Czy masz na to wpływ</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">1</td><td className="px-4 py-3 font-semibold text-ink">Kategoria główna profilu</td><td className="px-4 py-3 text-zinc-600">227</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
-            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">2</td><td className="px-4 py-3 font-semibold text-ink">Bliskość do punktu wyszukiwania</td><td className="px-4 py-3 text-zinc-600">225</td><td className="px-4 py-3 text-zinc-600">Żaden</td></tr>
-            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">3</td><td className="px-4 py-3 font-semibold text-ink">Słowa kluczowe w nazwie firmy</td><td className="px-4 py-3 text-zinc-600">223</td><td className="px-4 py-3 text-zinc-600">Ograniczony regulaminem</td></tr>
-            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">4</td><td className="px-4 py-3 font-semibold text-ink">Adres fizyczny w wyszukiwanym mieście</td><td className="px-4 py-3 text-zinc-600">213</td><td className="px-4 py-3 text-zinc-600">Częściowy</td></tr>
-            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">5</td><td className="px-4 py-3 font-semibold text-ink">Firma otwarta w momencie wyszukiwania</td><td className="px-4 py-3 text-zinc-600">189</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
-            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">6</td><td className="px-4 py-3 font-semibold text-ink">Wysoka średnia ocen</td><td className="px-4 py-3 text-zinc-600">181</td><td className="px-4 py-3 text-zinc-600">Pośredni</td></tr>
-            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">7</td><td className="px-4 py-3 font-semibold text-ink">Widoczny adres na profilu</td><td className="px-4 py-3 text-zinc-600">176</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
-            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">8</td><td className="px-4 py-3 font-semibold text-ink">Kategorie dodatkowe</td><td className="px-4 py-3 text-zinc-600">173</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
-            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">9</td><td className="px-4 py-3 font-semibold text-ink">Liczba opinii natywnych Google</td><td className="px-4 py-3 text-zinc-600">170</td><td className="px-4 py-3 text-zinc-600">Pośredni</td></tr>
-            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">10</td><td className="px-4 py-3 font-semibold text-ink">Poprawne umiejscowienie pinezki</td><td className="px-4 py-3 text-zinc-600">165</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
-            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">11</td><td className="px-4 py-3 font-semibold text-ink">Świeżość opinii</td><td className="px-4 py-3 text-zinc-600">164</td><td className="px-4 py-3 text-zinc-600">Pośredni</td></tr>
-            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">12</td><td className="px-4 py-3 font-semibold text-ink">Bliskość do centrum obszaru wyszukiwania</td><td className="px-4 py-3 text-zinc-600">157</td><td className="px-4 py-3 text-zinc-600">Żaden</td></tr>
-            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">13</td><td className="px-4 py-3 font-semibold text-ink">Klikalność wyniku w Local Pack</td><td className="px-4 py-3 text-zinc-600">156</td><td className="px-4 py-3 text-zinc-600">Pośredni</td></tr>
-            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">14</td><td className="px-4 py-3 font-semibold text-ink">Stały napływ nowych opinii</td><td className="px-4 py-3 text-zinc-600">154</td><td className="px-4 py-3 text-zinc-600">Pośredni</td></tr>
-            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">15</td><td className="px-4 py-3 font-semibold text-ink">Dane firmy na stronie zgodne z profilem</td><td className="px-4 py-3 text-zinc-600">153</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
-            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">16</td><td className="px-4 py-3 font-semibold text-ink">Kompletność profilu</td><td className="px-4 py-3 text-zinc-600">147</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
-            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">17</td><td className="px-4 py-3 font-semibold text-ink">Słowa kluczowe w tytule strony docelowej</td><td className="px-4 py-3 text-zinc-600">146</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
-            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">18</td><td className="px-4 py-3 font-semibold text-ink">Trafność geograficzna treści</td><td className="px-4 py-3 text-zinc-600">142</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
-            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">19</td><td className="px-4 py-3 font-semibold text-ink">Zgłaszanie spamu konkurencji</td><td className="px-4 py-3 text-zinc-600">137</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
-            <tr><td className="px-4 py-3 text-zinc-400">20</td><td className="px-4 py-3 font-semibold text-ink">Słowa kluczowe w nagłówkach strony</td><td className="px-4 py-3 text-zinc-600">135</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p className="text-xs text-zinc-400">
-        Źródło: Whitespark, Local Search Ranking Factors 2026 — badanie wśród 47 specjalistów lokalnego SEO, publikacja 6 listopada 2025. Kolumna „Czy masz na to wpływ" jest naszą oceną redakcyjną.
-      </p>
-      <p>
-        Z tej listy płynie wniosek, który zmienia priorytety u większości firm. Trzy z pięciu najważniejszych czynników — kategoria, nazwa i godziny otwarcia — to ustawienia w panelu, które da się poprawić w kwadrans. Dwa pozostałe to bliskość, na którą nie masz wpływu. Dopiero potem zaczyna się praca długoterminowa: opinie, treść, linki. Jeśli robisz to w odwrotnej kolejności, płacisz za linki, mając źle ustawioną kategorię.
-      </p>
-
-      <h2>Kategoria główna — pojedynczy najważniejszy przełącznik</h2>
-      <p>
-        Kategoria główna decyduje o tym, na jaką pulę zapytań profil w ogóle wchodzi do rywalizacji. Nie jest to etykieta opisowa, tylko przypisanie do zbioru fraz. Zła kategoria oznacza, że przy najważniejszych dla Ciebie zapytaniach nie przegrywasz — po prostu nie startujesz.
-      </p>
-      <p>
-        Ustal ją na podstawie jednej frazy, która przynosi Ci pieniądze, a nie na podstawie tego, jak opisujesz firmę na wizytówce papierowej. Warsztat, który głównie wymienia opony, ma inną kategorię główną niż warsztat robiący naprawy blacharskie, mimo że oba to „warsztat samochodowy". Sprawdź też, jakie kategorie mają trzy firmy stojące dziś w Local Packu na Twoją frazę — jeśli wszystkie trzy mają tę samą, a Ty inną, masz odpowiedź.
-      </p>
-      <p>
-        Kategorie dodatkowe (czynnik 8. na liście) dokładają kolejne pule zapytań, ale nie wzmacniają głównej. Dodawaj tylko te, które opisują usługi faktycznie świadczone — nadmiar rozmywa profil i bywa powodem zawieszenia. Cały mechanizm doboru rozpisaliśmy w osobnym tekście o <a href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">kategoriach w wizytówce Google</a>.
-      </p>
-
-      <h2>Bliskość, adres i pinezka</h2>
-      <p>
-        Bliskość to drugi najsilniejszy czynnik i jednocześnie jedyny, którego nie zmienisz bez przeprowadzki. Warto to powiedzieć wprost, bo połowa rozczarowań efektami lokalnego SEO bierze się z niezrozumienia tej jednej rzeczy: firma z obrzeży nie będzie w top 3 w centrum, choćby zrobiła wszystko idealnie.
-      </p>
-      <p>
-        Są jednak trzy rzeczy w tym obszarze, które faktycznie kontrolujesz.
-      </p>
-      <p>
-        <strong>Umiejscowienie pinezki</strong> (czynnik 10.) — sprawdź, czy pinezka stoi dokładnie na wejściu do firmy, a nie na środku działki, na sąsiedniej ulicy albo na dachu budynku obok. Przy gęstej zabudowie to potrafi przesunąć wynik o kilka pozycji. Poprawia się to przez przeciągnięcie pinezki w edycji profilu.
-      </p>
-      <p>
-        <strong>Adres widoczny na profilu</strong> (czynnik 7.) — profile z ukrytym adresem, typowe dla firm z dojazdem, wypadają słabiej niż te z adresem widocznym. Jeśli masz lokal, do którego klient może wejść, pokaż adres. Ukrywaj go tylko wtedy, gdy Google tego wymaga, czyli przy działalności czysto mobilnej.
-      </p>
-      <p>
-        <strong>Obszar działania</strong> — ustawienie obszaru obsługi nie sprawia, że pokazujesz się w całym zaznaczonym rejonie. To informacja dla klienta, nie dźwignia rankingowa. Firmom działającym poza własną miejscowością zostaje praca na stronie: osobne podstrony lokalizacyjne, o czym piszemy w tekście o <a href="/siedziba-mala-miejscowosc-local-seo" className="text-brand font-semibold hover:underline">siedzibie w małej miejscowości</a>. Jak ten sam mechanizm wygląda na konkretnym, niewielkim rynku, rozkładamy na czynniki w tekście o <a href="/pozycjonowanie-wizytowki-google-pila" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google w Pile</a>. Ten sam mechanizm wykorzystaliśmy przy <a href="/miauseo-opinie-skup-aut" className="text-brand font-semibold hover:underline">wizytówce skupu aut</a>, gdzie obszar odbioru samochodów wykraczał daleko poza adres rejestrowy.
-      </p>
-
-      <h2>Nazwa firmy — czynnik, który działa i łamie regulamin</h2>
-      <p>
-        Trzeci najsilniejszy czynnik na liście to słowa kluczowe w nazwie firmy. Jednocześnie wytyczne Google dotyczące nazwy mówią jednoznacznie, że nazwa ma odzwierciedlać rzeczywistą nazwę firmy, używaną konsekwentnie na szyldzie, stronie i w dokumentach — a hasła marketingowe oraz informacje o usługach i produktach są niedozwolone. Google podaje wprost odrzucane przykłady: „TD Bank, America's Most Convenient Bank" zamiast „TD Bank" czy „Midas Auto Service Experts" zamiast „Midas".
-      </p>
-      <p>
-        Trzeba więc powiedzieć dwie rzeczy naraz, bo obie są prawdziwe. Dopisanie frazy do nazwy realnie podnosi pozycję — dlatego konkurencja to robi i dlatego ten czynnik jest tak wysoko. I jednocześnie jest to naruszenie regulaminu, które kończy się edycją nazwy przez Google, zawieszeniem profilu albo skutecznym zgłoszeniem od konkurenta, zwykle w najgorszym możliwym momencie.
-      </p>
-      <p>
-        Praktyczne rozwiązanie: jeśli fraza faktycznie występuje na szyldzie i w rejestrze — używaj pełnej, prawdziwej nazwy, łącznie z nią. „Auto-Serwis Kowalski" to nazwa, „Kowalski — Naprawa Samochodów Warszawa Najtaniej" to naruszenie. Zamiast dopisywać słowa do nazwy, zgłaszaj konkurentów, którzy to robią. To czynnik 19. na liście i jedyna zgodna z zasadami metoda wykorzystania tego mechanizmu na swoją korzyść. Podobne pułapki opisaliśmy w tekście o <a href="/wizytowka-google-popularne-oszustwa" className="text-brand font-semibold hover:underline">najpopularniejszych oszustwach wokół wizytówki</a>.
-      </p>
-
-      <h2>Godziny otwarcia — najbardziej niedoceniany sygnał</h2>
-      <p>
-        Czynnik „firma otwarta w momencie wyszukiwania" wskoczył w edycji 2026 na piąte miejsce. To znaczy tyle, że ta sama wizytówka ma inną pozycję o 11:00 i o 20:00. Dla firm usługowych z telefonem jako głównym kanałem to bardzo dużo.
-      </p>
-      <p>
-        Wnioski są konkretne. Godziny w profilu muszą być prawdziwe, bo rozbieżność między nimi a rzeczywistością generuje opinie w stylu „zamknięte mimo otwartych godzin", a te kosztują podwójnie. Jeśli faktycznie odbierasz telefon do 20:00, ustaw 20:00, a nie 16:00 przepisane z ulotki sprzed pięciu lat. Godziny świąteczne uzupełniaj z wyprzedzeniem — Google osobno o nie prosi, a profile bez nich w dni świąteczne wypadają gorzej.
-      </p>
-      <p>
-        Nie ustawiaj natomiast pracy całodobowej, jeśli nie odbierasz w nocy. Zysk rankingowy w godzinach, w których i tak nikt nie szuka, nie zrekompensuje strat z nieodebranych połączeń i ocen jednogwiazdkowych. Szerzej rozpisaliśmy ten temat przy <a href="/godziny-otwarcia-wizytowka-google" className="text-brand font-semibold hover:underline">godzinach otwarcia w wizytówce Google</a>.
-      </p>
-
-      <h2>Opinie — cztery osobne czynniki, nie jeden</h2>
-      <p>
-        Opinie występują na liście czterokrotnie i są to cztery różne rzeczy, wymagające różnych działań: średnia ocena (181), liczba opinii (170), świeżość (164) i stały napływ nowych (154). Firma ze stoma opiniami sprzed trzech lat wypada gorzej niż firma z trzydziestoma, z których pięć jest z ostatniego miesiąca.
-      </p>
-      <p>
-        To zmienia sposób pracy z opiniami. Nie chodzi o jednorazową akcję zbierania, tylko o stały, powtarzalny proces proszenia po każdej zrealizowanej usłudze. Cztery opinie miesięcznie przez rok dają lepszy efekt niż pięćdziesiąt w jednym tygodniu, a dodatkowo nagły skok wygląda dla Google podejrzanie.
-      </p>
-      <p>
-        Po stronie klienta liczby są jednoznaczne. Badanie <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">Local Consumer Review Survey 2026</a> firmy BrightLocal, przeprowadzone na próbie 1002 dorosłych konsumentów w Stanach Zjednoczonych, pokazało, że 97% czyta opinie przed wyborem lokalnej firmy, a 41% robi to zawsze — rok wcześniej było to 29%. Około 81% czyta opinie właśnie w Google. Zmieniły się też oczekiwania wobec odpowiedzi: 19% badanych oczekuje reakcji tego samego dnia, wobec 6% rok wcześniej, a 32% do dnia następnego, wobec 18%. To dane z rynku amerykańskiego, więc traktuj je jako wskazanie kierunku, nie jako polski benchmark — ale kierunek jest wyraźny.
-      </p>
-      <p>
-        Uwaga na zmianę regulaminu z 2026 roku. Google doprecyzowało zasady zbierania opinii i zabroniło wymagania od pracowników określonej liczby zebranych opinii oraz proszenia o opinie zawierające konkretną treść, w tym wskazujące pracownika z imienia. Popularne w Polsce „proszę napisać, że obsługiwał Pana Marek" jest dziś naruszeniem zasad. Techniki zgodne z regulaminem opisaliśmy w tekście o <a href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">skutecznym zdobywaniu opinii</a>, a co robić z negatywną — w artykule <a href="/negatywna-opinia-google-co-zrobic" className="text-brand font-semibold hover:underline">negatywna opinia w Google</a>.
-      </p>
-      <p>
-        Odpowiadaj na wszystkie opinie, także pozytywne. Google wymienia odpowiadanie na opinie wprost wśród zalecanych działań poprawiających pozycję lokalną, a odpowiedź to jedyne miejsce, w którym możesz naturalnie użyć nazwy usługi i miejscowości bez ryzyka.
-      </p>
-
-      <h2>Kompletność profilu i sekcje, które faktycznie coś robią</h2>
-      <p>
-        Kompletność profilu to czynnik 16., ale jego wartość jest wyższa, niż wskazuje pozycja, bo poszczególne sekcje działają też na trafność zapytań.
-      </p>
-      <p>
-        <strong>Usługi</strong> to najbardziej niedoceniana sekcja. Każda pozycja z listy usług, z własnym opisem, poszerza pulę zapytań, na które profil może się pokazać — bez naruszania czegokolwiek. Rozpisz je szczegółowo, tak jak nazywa je klient, a nie tak jak brzmią w cenniku. Szczegóły w tekście o <a href="/uslugi-wizytowka-google-business" className="text-brand font-semibold hover:underline">usługach w wizytówce Google</a>.
-      </p>
-      <p>
-        <strong>Opis firmy</strong> ma niewielką wagę rankingową, ale od 2026 roku ma nową funkcję: jest jednym ze źródeł, z których AI generuje odpowiedzi o Twojej firmie. Napisz go konkretnie, z nazwami usług i obszarem działania — poradnik w tekście o <a href="/opis-firmy-google-business-profile-jak-napisac" className="text-brand font-semibold hover:underline">opisie firmy w Google Business Profile</a>. <strong>Atrybuty</strong> — parking, dostępność dla wózków, płatność kartą — Google wymienia je wśród danych, które warto uzupełnić; więcej w tekście o <a href="/atrybuty-wizytowka-google" className="text-brand font-semibold hover:underline">atrybutach</a>. <strong>Produkty</strong> mają sens w handlu i przy usługach pakietowych, opisaliśmy je osobno w artykule o <a href="/produkty-wizytowka-google-business" className="text-brand font-semibold hover:underline">produktach w wizytówce</a>. Komplet pól przechodzimy po kolei w tekście o <a href="/sekcja-informacje-wizytowka-google" className="text-brand font-semibold hover:underline">sekcji informacje</a>.
-      </p>
-      <p>
-        <strong>Posty</strong> nie są na liście dwudziestu najsilniejszych czynników i nie należy oczekiwać po nich skoku pozycji. Mają natomiast wpływ na to, czy ktoś kliknie w Twój wynik, a klikalność w Local Packu to czynnik 13. Publikuj je, ale nie kosztem opinii i usług — szerzej w tekście o <a href="/posty-wizytowka-google" className="text-brand font-semibold hover:underline">postach w wizytówce</a>.
-      </p>
-
-      <h2>Zdjęcia</h2>
-      <p>
-        Google wymienia dodawanie zdjęć i filmów wprost wśród działań poprawiających pozycję lokalną. Niezależnie od rankingu zdjęcia decydują o tym, czy z trzech firm w Local Packu klient wybierze Twoją — a to wraca do algorytmu jako sygnał behawioralny.
-      </p>
-      <p>
-        Praktycznie: zdjęcia własne, nie ze stocku, robione telefonem w dobrym świetle. Zdjęcie zewnętrzne budynku od strony, z której klient nadjeżdża, bo służy do rozpoznania miejsca. Zdjęcia efektów pracy, nie logotypów i grafik z tekstem. Dokładaj kilka sztuk co miesiąc zamiast wrzucać sto naraz. Które typy zdjęć realnie pracują, sprawdziliśmy w tekście o <a href="/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-brand font-semibold hover:underline">zdjęciach w wizytówce Google</a>.
-      </p>
-
-      <h2>Sygnały behawioralne</h2>
-      <p>
-        Klikalność wyniku w Local Packu to czynnik 13., a Whitespark odnotowuje w edycji 2026 wzrost znaczenia całej grupy sygnałów behawioralnych: kliknięć, telefonów, próśb o trasę. Tego nie da się optymalizować bezpośrednio — nie ma tu przełącznika w panelu.
-      </p>
-      <p>
-        Da się jednak wpłynąć na wszystko, co decyduje o kliknięciu: ocenę i liczbę opinii widoczne przy wyniku, pierwsze zdjęcie, nazwę, dopasowanie kategorii do zapytania oraz informację, że firma jest teraz otwarta. To zamyka pętlę i tłumaczy, dlaczego wcześniejsze punkty z tej listy pracują podwójnie — najpierw jako sygnał rankingowy, potem jako powód kliknięcia.
-      </p>
-
-      <h2>Strona internetowa jako zaplecze profilu</h2>
-      <p>
-        Cztery czynniki z pierwszej dwudziestki dotyczą strony, a nie profilu: zgodność danych firmowych ze stroną (153), słowa kluczowe w tytule strony docelowej (146), trafność geograficzna treści (142) i słowa kluczowe w nagłówkach (135).
-      </p>
-      <p>
-        Zacznij od <strong>spójności NAP</strong>, czyli nazwy, adresu i telefonu. Muszą być identyczne na stronie i w profilu — ta sama forma skrótu ulicy, ten sam format numeru telefonu. Rozjeżdżające się warianty osłabiają zaufanie do wizytówki, o czym pisaliśmy szerzej przy <a href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">spójności NAP</a>.
-      </p>
-      <p>
-        Dalej: profil ma prowadzić do konkretnej podstrony usługi z nazwą miejscowości w tytule, a nie do strony głównej. Dodaj dane strukturalne LocalBusiness, co pokazujemy krok po kroku w tekście o <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">wdrożeniu Local Schema</a>. Całość podejścia do strony wspierającej wizytówkę opisaliśmy w tekście o <a href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">lokalnym SEO dla firm</a>.
-      </p>
-
-      <h2>Linki i cytowania</h2>
-      <p>
-        Google wymienia linki prowadzące do strony jako jeden ze składników popularności. Whitespark odnotowuje jednocześnie, że znaczenie cytowań w katalogach spada kolejny rok z rzędu, tracąc w edycji 2026 około pół punktu procentowego — ale pozostają one w pierwszej piątce czynników wpływających na widoczność w wyszukiwarkach opartych na AI.
-      </p>
-      <p>
-        Praktyczny wniosek jest taki, że masowe wpisy do setek katalogów nie mają dziś sensu jako działanie rankingowe, natomiast obecność w kilkunastu wiarygodnych, branżowych i lokalnych źródłach, ze spójnym NAP-em, ma sens podwójny — dla Google i dla modeli AI. Techniki linkowania do samego profilu opisaliśmy w tekście o <a href="/linki-do-wizytowki-google" className="text-brand font-semibold hover:underline">linkach do wizytówki Google</a>.
-      </p>
-
-      <h2>Co zmieniło się w 2026 — koniec sekcji Pytania i odpowiedzi</h2>
-      <p>
-        Google wycofuje z Map klasyczną sekcję Pytania i odpowiedzi. W jej miejsce pojawił się przycisk „Ask", który generuje odpowiedzi z użyciem AI, korzystając z profilu firmy, jej strony i źródeł publicznych. Równolegle Google udostępniło możliwość połączenia profilu firmy z aplikacją Gemini, która uzyskuje wtedy dostęp między innymi do opinii, pytań klientów i danych o wynikach.
-      </p>
-      <p>
-        Dla widoczności oznacza to jedno: pola, które dotąd traktowano jako kosmetykę — opis firmy, lista usług z opisami, treść strony docelowej — stały się materiałem źródłowym dla odpowiedzi, które klient zobaczy zamiast Twojego profilu. Jeśli w opisie nie ma informacji o obszarze działania, model weźmie ją skądinąd albo nie poda jej wcale. Kontekst i historię sekcji Q&A zostawiliśmy w tekście o <a href="/pytania-odpowiedzi-wizytowka-google" className="text-brand font-semibold hover:underline">pytaniach i odpowiedziach w wizytówce</a>.
-      </p>
-
-      <h2>Czego nie robić</h2>
-      <p>
-        <strong>Nie dopisuj fraz do nazwy firmy</strong> — działa, dopóki nie zostanie zgłoszone, a wtedy tracisz profil w środku sezonu. <strong>Nie kupuj opinii</strong> — filtry Google wykrywają nagłe skoki, a skutkiem bywa usunięcie recenzji razem z tymi prawdziwymi. <strong>Nie zakładaj drugiego profilu pod tym samym adresem</strong>, żeby zająć więcej miejsca w wynikach — duplikaty są łączone lub zawieszane; sposób na wiele lokalizacji opisaliśmy w tekście o <a href="/wiele-lokalizacji-google-business-profile" className="text-brand font-semibold hover:underline">wielu lokalizacjach</a>. <strong>Nie rejestruj adresu wirtualnego biura</strong> w mieście, w którym chcesz się pokazywać — to jedno z najczęściej zgłaszanych naruszeń. <strong>Nie oceniaj efektów po pozycji z własnego telefonu</strong> — widzisz wynik spersonalizowany, spod swojej lokalizacji i historii; do tego służy siatka geograficzna.
-      </p>
-
-      <h2>Kolejność prac</h2>
-      <p>
-        <strong>Tydzień pierwszy</strong> — pomiar startowy siatką, weryfikacja kategorii głównej i dodatkowych, sprawdzenie pinezki, uzupełnienie prawdziwych godzin otwarcia wraz ze świątecznymi, ujawnienie adresu jeśli klient może przyjść. To jest ta część, która daje najwięcej za najmniej pracy.
-      </p>
-      <p>
-        <strong>Miesiąc pierwszy</strong> — pełna lista usług z opisami, opis firmy napisany pod realne frazy i pod odpowiedzi AI, komplet atrybutów, kilkanaście własnych zdjęć, uporządkowanie NAP na stronie, podpięcie profilu do konkretnej podstrony usługowej zamiast strony głównej.
-      </p>
-      <p>
-        <strong>Praca ciągła</strong> — stały proces zbierania opinii po każdej usłudze, odpowiedzi na wszystkie opinie w ciągu doby, kilka nowych zdjęć miesięcznie, posty, zgłaszanie naruszeń u konkurencji, powtarzany co miesiąc pomiar siatką na tych samych frazach.
-      </p>
-
-      <h2>Podsumowanie</h2>
-      <p>
-        Widoczność w mapach poprawia się w dwóch ruchach o zupełnie różnym charakterze. Pierwszy to godzina pracy w panelu: kategoria, pinezka, godziny, adres, usługi — cztery z pięciu najsilniejszych czynników, na które masz pełny wpływ, i miejsce, w którym najczęściej leży problem. Drugi to praca ciągła na opiniach, treści i sygnałach behawioralnych, gdzie efekty przychodzą miesiącami i nie da się ich przyspieszyć zakupem.
-      </p>
-      <p>
-        Czego nie da się obejść, to bliskość. Jeśli po uporządkowaniu wszystkiego powyżej nadal nie ma Cię w centrum miasta, to nie jest błąd wdrożenia — to geografia, a odpowiedzią na nią jest strona z podstronami lokalizacyjnymi, a nie kolejna próba obejścia algorytmu nazwą firmy. Pełną listę sygnałów z oceną ważności zebraliśmy w tekście o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>, a całość procesu — w przewodniku o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
-      </p>
-
-      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
-        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
-        <p className="text-sm text-zinc-500 leading-relaxed">
-          Google Business Profile Help — poprawa pozycji firmy w Google: trafność, odległość, popularność.{" "}
-          <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
-        </p>
-        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
-          Google Business Profile Help — wytyczne dotyczące nazwy firmy.{" "}
-          <a href="https://support.google.com/business/answer/3038177" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/3038177 →</a>
-        </p>
-        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
-          Whitespark — Local Search Ranking Factors 2026. Badanie wśród 47 specjalistów lokalnego SEO, publikacja 6 listopada 2025.{" "}
-          <a href="https://whitespark.ca/local-search-ranking-factors/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">whitespark.ca/local-search-ranking-factors →</a>
-        </p>
-        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
-          BrightLocal — Local Consumer Review Survey 2026. Próba 1002 dorosłych konsumentów w USA.{" "}
-          <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com/research/local-consumer-review-survey →</a>
-        </p>
-        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
-          Search Engine Roundtable — Google zastępuje sekcję Pytania i odpowiedzi w Mapach przyciskiem „Ask".{" "}
-          <a href="https://www.seroundtable.com/google-maps-qa-feature-ask-40594.html" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">seroundtable.com/google-maps-qa-feature-ask-40594.html →</a>
-        </p>
-        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
-          Search Engine Roundtable — zmiana zasad Google dotyczących pozyskiwania opinii i wskazywania pracowników.{" "}
-          <a href="https://www.seroundtable.com/google-reviews-policy-staff-mentions-solicitations-41175.html" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">seroundtable.com/google-reviews-policy-staff-mentions-solicitations-41175.html →</a>
-        </p>
-      </div>
-    </>
-  ),
-
-  /* ─────────────────────────────────────────────────────────────────────────
-     OPINIE / CASE STUDY: skup aut — wizytówka Google, 77 połączeń w lipcu 2026
-  ───────────────────────────────────────────────────────────────────────── */
   "miauseo-opinie-skup-aut": (
     <>
       <p>
@@ -18614,7 +18308,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Osobnej pracy wymagał <a href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">dobór kategorii</a>. W tej branży to nie jest formalność, bo skup aut, kasacja pojazdów i złomowanie to z punktu widzenia Google bliskie, ale nie identyczne rzeczy, a od kategorii głównej zależy, przy jakich zapytaniach profil ma w ogóle szansę się pokazać. Do tego doszły opisy usług i opis działalności napisany pod realne frazy, którymi ludzie szukają tej usługi, a nie pod branżowy żargon.
       </p>
       <p>
-        Efekt tej warstwy pracy jest niewidoczny na pierwszy rzut oka, ale bez niej reszta nie ma się o co oprzeć. Kompletny, uporządkowany profil to dla algorytmu sygnał, że firma jest aktywna i konkretna, a dla człowieka powód, żeby zadzwonić akurat tutaj. Zebraliśmy to szerzej w artykule o <a href="/jak-pozycjonowac-wizytowke-google-2026" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
+        Efekt tej warstwy pracy jest niewidoczny na pierwszy rzut oka, ale bez niej reszta nie ma się o co oprzeć. Kompletny, uporządkowany profil to dla algorytmu sygnał, że firma jest aktywna i konkretna, a dla człowieka powód, żeby zadzwonić akurat tutaj. Zebraliśmy to szerzej w artykule o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
       </p>
 
       <h2>Weryfikacja wideo</h2>
@@ -19581,7 +19275,7 @@ export const articleContent: Record<string, React.ReactNode> = {
           <li><Link href="/sekcja-informacje-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Sekcja Informacje w wizytówce Google – kompletny przewodnik</Link></li>
           <li><Link href="/atrybuty-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Atrybuty wizytówki Google – czym są i jak je wypełnić?</Link></li>
           <li><Link href="/czynniki-rankingowe-wizytowki-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czynniki rankingowe wizytówki Google w 2026</Link></li>
-          <li><Link href="/jak-pozycjonowac-wizytowke-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
+          <li><Link href="/pozycjonowanie-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
         </ul>
       </div>
     </>
@@ -20540,7 +20234,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Google często rozpoznaje intencję lokalną i wyświetla Local Pack z firmami w pobliżu —
         bez podania miasta. W takim przypadku kluczowe jest pozycjonowanie wizytówki Google,
         a nie tylko strony www. Przeczytaj więcej w artykule o{" "}
-        <Link href="/jak-pozycjonowac-wizytowke-google-2026">pozycjonowaniu wizytówki Google</Link>.
+        <Link href="/pozycjonowanie-wizytowki-google">pozycjonowaniu wizytówki Google</Link>.
       </p>
 
       <h3>Frazy „near me"</h3>
@@ -20675,7 +20369,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Gdy masz już listę słów kluczowych, kolejny krok to ich implementacja:
       </p>
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google — sygnały lokalne w 2026 roku</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Jak pozycjonować wizytówkę Google — sygnały lokalne w 2026 roku</Link></li>
         <li><Link href="/jak-dodac-local-schema-do-strony">Jak dodać local schema markup — wzmocnij sygnały SEO strukturą danych</Link></li>
         <li><Link href="/ile-kosztuje-pozycjonowanie-strony-internetowej">Ile kosztuje pozycjonowanie strony — jak liczyć ROI z SEO</Link></li>
         <li><Link href="/siedziba-mala-miejscowosc-local-seo">Firma z małej miejscowości — strategia słów lokalnych dla dużego miasta</Link></li>
@@ -21222,7 +20916,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         połącz schema markup z silnym profilem GBP:
       </p>
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik</Link></li>
         <li><Link href="/nap-wizytowka-google-co-to-jest">NAP w wizytówce Google — czym jest i jak zadbać o spójność danych</Link></li>
         <li><Link href="/siedziba-mala-miejscowosc-local-seo">Siedziba w małej miejscowości — jak zdobyć klientów z dużego miasta</Link></li>
       </ul>
@@ -21335,7 +21029,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         Gdy odzyskasz dostęp, od razu zadbaj o bezpieczeństwo profilu i zacznij go rozwijać:
       </p>
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
         <li><Link href="/nap-wizytowka-google-co-to-jest">NAP — fundament każdego profilu GBP</Link></li>
       </ul>
     </>
@@ -21343,114 +21037,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   /* ─────────────────────────────────────────────────────────────────────────
      Pozycjonowanie wizytówki Google dla hoteli
-  ───────────────────────────────────────────────────────────────────────── */
-  "pozycjonowanie-wizytowki-google-hotel": (
-    <>
-      <h2>Dlaczego GBP jest kluczowy dla każdego hotelu?</h2>
-      <p>
-        Podróżni szukający hotelu w danym mieście w ponad 60% przypadków zaczynają od wyszukiwarki
-        Google, a nie bezpośrednio od Bookinga czy TripAdvisora. Profil Google Business Profile
-        hotelu pojawia się zanim użytkownik dotrze do jakiejkolwiek strony rezerwacyjnej — razem
-        ze zdjęciami, oceną, ceną za noc i przyciskiem „Sprawdź dostępność".
-      </p>
-      <p>
-        Co więcej, Google Hotels (panel wyszukiwania hoteli) zasilany jest właśnie danymi z GBP.
-        Hotele z niekompletnym lub słabo zoptymalizowanym profilem wypadają z tego widoku
-        na rzecz konkurencji, która poświęciła czas na konfigurację.
-      </p>
-
-      <h2>Kategorie i atrybuty — branżowa specyfika hoteli</h2>
-      <p>
-        W kategorii głównej wybierz tę, która najdokładniej opisuje Twój obiekt: „Hotel",
-        „Hotel butikowy", „Aparthotel", „Pensjonat", „Hostel" itp. Następnie dodaj kategorie
-        dodatkowe: „Restauracja", „Bar", „Spa", „Sala konferencyjna" — jeśli te usługi
-        faktycznie oferujesz.
-      </p>
-      <p>
-        Atrybuty to goldmine dla hoteli — Google oferuje dla tej branży kilkadziesiąt opcji,
-        które wpływają na filtrowanie wyników przez użytkowników. Koniecznie uzupełnij:
-      </p>
-      <ul>
-        <li>Dostępność: winda, podjazd dla wózków, pokoje przystosowane dla niepełnosprawnych</li>
-        <li>Udogodnienia: basen, sauna, siłownia, parking (płatny/bezpłatny), WiFi</li>
-        <li>Zwierzęta: czy akceptujesz psy/koty</li>
-        <li>Obsługa: recepcja 24h, concierge, transfer z lotniska</li>
-        <li>Wyżywienie: śniadanie w cenie, restauracja na miejscu, minibar</li>
-        <li>Lokalizacja: blisko centrum, przy morzu, blisko lotniska (gdzie to prawda)</li>
-      </ul>
-
-      <h2>Zdjęcia — standard dla hoteli jest wyższy</h2>
-      <p>
-        W branży hotelarskiej zdjęcia mają znacznie większy wpływ na decyzje klientów niż
-        w jakiejkolwiek innej kategorii. Gość chce zobaczyć pokój zanim go zarezerwuje.
-        Minimum dla hotelu to:
-      </p>
-      <ul>
-        <li><strong>Lobby i recepcja</strong> — pierwsze wrażenie po wejściu</li>
-        <li><strong>Każdy typ pokoju</strong> — standard, superior, suite: łóżko, łazienka, widok</li>
-        <li><strong>Restauracja i bar</strong> — jedzenie w hotelu to często czynnik decyzyjny</li>
-        <li><strong>Basen, spa, siłownia</strong> — jeśli masz, to kluczowe zdjęcia</li>
-        <li><strong>Elewacja i otoczenie</strong> — drogowa widoczność i wejście główne</li>
-        <li><strong>Widok z okna</strong> — dla hoteli z atrakcyjną lokalizacją to czynnik premium</li>
-      </ul>
-      <p>
-        Minimalny standard fotografii: naturalne oświetlenie dzienne, poziome kadry (nie pionowe
-        smartfonowe), rozdzielczość minimum 1920×1080 px. Warto inwestować w profesjonalnego
-        fotografa wnętrz — różnica w jakości jest widoczna i przekłada się na rezerwacje.
-      </p>
-
-      <h2>Integracja z systemami rezerwacji</h2>
-      <p>
-        Google Business Profile dla hoteli pozwala na bezpośrednią integrację z systemami OTA
-        (Online Travel Agencies) i silnikami rezerwacji. Jeśli Twój hotel korzysta z Bookinga,
-        Expedia, HRS lub własnego silnika rezerwacji (np. Profitroom, Beds24), możesz wyświetlać
-        aktualne ceny i dostępność bezpośrednio w wynikach Google.
-      </p>
-      <p>
-        To tzw. <strong>Google Hotel Ads</strong> — płatna opcja wyświetlania cen w panelu Google
-        Hotels, ale wdrożenie jej wymaga integracji przez partnera. Bezpłatna alternatywa to
-        „Free Booking Links" — link do rezerwacji widoczny w profilu bez kosztów CPC.
-      </p>
-
-      <h2>Opinie — kluczowe dla hoteli bardziej niż dla kogokolwiek</h2>
-      <p>
-        92% podróżnych czyta opinie przed rezerwacją hotelu. Średnia ocena ma bezpośredni wpływ
-        na widoczność w Google Hotels — algorytm faworyzuje hotele z oceną powyżej 4,2 i
-        regularnie napływającymi recenzjami.
-      </p>
-      <p>
-        Strategia dla hoteli: wyślij prośbę o opinię przez PMS (Property Management System)
-        automatycznie po wymeldowaniu. Email powinien być wysłany 24–48h po wyjeździe gościa,
-        kiedy emocje są jeszcze świeże. <Link href="/opinie-google-jak-zdobywac-skutecznie">Więcej o zbieraniu opinii bez nachalnego proszenia.</Link>
-      </p>
-      <p>
-        Odpowiadaj na każdą opinię — zarówno pozytywną, jak i negatywną. W odpowiedzi na
-        negatywną: nie kłóć się, przeproś za złe doświadczenie, zaproponuj kontakt bezpośredni.
-        Potencjalni goście czytają odpowiedzi tak samo uważnie jak same recenzje.
-      </p>
-
-      <h2>Posty Google dla hoteli — jak je używać?</h2>
-      <p>
-        Używaj postów do promowania: pakietów sezonowych, ofert last minute, wydarzeń (wesela,
-        konferencje, Sylwester), a także do informowania o tymczasowych zamknięciach czy remontach.
-        Posty z wyraźnym CTA i zdjęciem generują kliknięcia bezpośrednio do systemu rezerwacji.
-      </p>
-
-      <h2>Podsumowanie</h2>
-      <p>
-        Hotel z kompletnym, aktywnym profilem GBP jest widoczny we wszystkich kluczowych punktach
-        styku z potencjalnym gościem: wyszukiwarka, Maps, Google Hotels. To bezpłatne narzędzie,
-        które może zmniejszyć zależność od pośredników pobierających prowizje.
-      </p>
-      <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik</Link></li>
-        <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">Jakie zdjęcia w wizytówce Google naprawdę pomagają?</Link></li>
-      </ul>
-    </>
-  ),
-
-  /* ─────────────────────────────────────────────────────────────────────────
-     Jak usunąć negatywne opinie z Google?
   ───────────────────────────────────────────────────────────────────────── */
   "jak-usunac-negatywne-opinie-z-google": (
     <>
@@ -21677,7 +21263,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <p>
         Jeśli ktoś próbuje Ci sprzedać „pakiet GBP", „odnowienie wizytówki" albo „płatną
         weryfikację Google" — to oszustwo. Więcej o tym schemacie w artykule:{" "}
-        <Link href="/wizytowka-google-nie-wygasa-oszustwo">Czy wizytówka Google wygasa? NIE — to oszustwo.</Link>
+        <Link href="/wizytowka-google-popularne-oszustwa">Czy wizytówka Google wygasa? NIE — to oszustwo.</Link>
       </p>
 
       <h2>Za co naprawdę płacisz w ekosystemie Google?</h2>
@@ -21756,7 +21342,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         dla lokalnych firm — niezależnie od budżetu. Jeśli chcesz wycisnąć z niego maksimum:
       </p>
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
         <li><Link href="/opis-firmy-google-business-profile-jak-napisac">Jak napisać opis firmy w GBP, który przyciąga klientów?</Link></li>
       </ul>
     </>
@@ -21764,99 +21350,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   /* ─────────────────────────────────────────────────────────────────────────
      Opłata administracyjna za wizytówkę Google
-  ───────────────────────────────────────────────────────────────────────── */
-  "oplata-administracyjna-wizytowka-google": (
-    <>
-      <h2>„Opłata administracyjna za wizytówkę Google" — to przekręt</h2>
-      <p>
-        Jeśli trafiłeś na tę stronę po tym, jak dostałeś fakturę lub telefon z żądaniem
-        uiszczenia „opłaty administracyjnej" za utrzymanie, weryfikację lub aktywację wizytówki
-        Google — mamy dla Ciebie ważną informację: <strong>nie istnieje żadna opłata
-        administracyjna za Google Business Profile.</strong> Nigdy nie istniała i nie zostanie
-        wprowadzona.
-      </p>
-      <p>
-        To wariant klasycznego oszustwa, które od ponad dekady atakuje właścicieli małych firm.
-        Sama nazwa „opłata administracyjna" jest celowo neutralna i brzmi urzędowo, żeby
-        ofiara nie rozpoznała przekrętu. Jest to sformułowanie stosowane przez oszustów w Polsce
-        i na świecie w setkach podobnych schematów.
-      </p>
-
-      <h2>Jak wygląda ten schemat w praktyce?</h2>
-      <p>
-        Schemat ma kilka wariantów, ale każdy działa na tej samej zasadzie:
-      </p>
-
-      <h3>Wariant faktura pocztowa lub email</h3>
-      <p>
-        Przychodzi dokument wyglądający jak oficjalna faktura. Nagłówek może brzmieć: „Rejestr
-        Wizytówek Google", „Panel Google Business", „Centrum Firm Google", „Usługi Google Maps"
-        lub podobnie. Na dokumencie widnieje kwota (najczęściej 300–1200 zł), termin płatności
-        i numer konta bankowego.
-      </p>
-      <p>
-        Kluczowy detal, który zdradzają wszystkie te faktury: <strong>nie są wystawione przez
-        Google LLC</strong>. Są wystawione przez fikcyjne lub prawdziwe polskie spółki o
-        mylących nazwach. Google nie wystawia faktur za GBP, bo GBP jest bezpłatne.
-      </p>
-
-      <h3>Wariant telefoniczny</h3>
-      <p>
-        Dzwoni osoba podająca się za „konsultanta", „weryfikatora" lub „pracownika działu
-        technicznego Google". Informuje, że musi pobrać opłatę administracyjną, żeby
-        Twój profil pozostał aktywny lub żeby przejść obowiązkową aktualizację systemu.
-        Często podaje szczegóły Twojej firmy (publicznie dostępne z GBP), żeby brzmieć
-        wiarygodnie.
-      </p>
-
-      <h2>Jak odróżnić prawdziwą komunikację od Google?</h2>
-      <p>
-        Google komunikuje się z właścicielami GBP wyłącznie:
-      </p>
-      <ul>
-        <li>Przez powiadomienia w panelu GBP (business.google.com)</li>
-        <li>Przez email na adres powiązany z kontem Google — zawsze z domeny <strong>@google.com</strong></li>
-        <li>Przez fizyczną kartę pocztową (tylko podczas procesu weryfikacji nowego profilu)</li>
-      </ul>
-      <p>
-        Google <strong>nigdy</strong> nie dzwoni proaktywnie, nie wysyła faktur za GBP i nie
-        korzysta z zewnętrznych agentów do pobierania „opłat administracyjnych".
-      </p>
-
-      <h2>Co zrobić z taką fakturą?</h2>
-      <ul>
-        <li><strong>Nie płać</strong> — nawet jeśli faktura wydaje się oficjalna</li>
-        <li><strong>Nie dzwoń pod podany numer</strong> — rozmowa może być nagrywana jako „potwierdzenie zamówienia"</li>
-        <li><strong>Zachowaj dokument</strong> jako dowód i zgłoś sprawę na policję lub do UOKiK</li>
-        <li><strong>Sprawdź w CEIDG/KRS</strong> — pod jakimi danymi jest zarejestrowana firma wystawiająca fakturę. Jeśli znajdziesz — kontakt z firmą i żądanie wyjaśnień (w Polsce sprzedaż usług, których świadomie się nie zamawiało, jest nielegalna)</li>
-        <li><strong>Ostrzeż innych</strong> — na forach branżowych, w grupach na Facebooku, przez recenzje — Twoje zgłoszenie może uchronić inne firmy</li>
-      </ul>
-
-      <h2>A jeśli już zapłaciłeś?</h2>
-      <p>
-        Natychmiast skontaktuj się z bankiem i zgłoś przelew jako potencjalne oszustwo. W
-        przypadku przelewów krajowych bank może wstrzymać operację, jeśli zadzwonisz szybko.
-        Złóż zawiadomienie na policji o możliwości popełnienia przestępstwa z artykułu 286
-        Kodeksu Karnego (oszustwo). Kwota może się wydawać mała, żeby nie warto było działać —
-        ale właśnie na to liczą sprawcy. Każde zgłoszenie pomaga.
-      </p>
-
-      <h2>Podsumowanie</h2>
-      <p>
-        Opłata administracyjna za wizytówkę Google nie istnieje. Każda faktura lub telefon
-        z takim żądaniem to oszustwo. Google Business Profile jest bezpłatny — bez wyjątków,
-        bez ukrytych kosztów, bez dat wygaśnięcia. Więcej o bezpieczeństwie profilu GBP:
-      </p>
-      <ul>
-        <li><Link href="/wizytowka-google-nie-wygasa-oszustwo">Czy wizytówka Google wygasa? Nie — to oszustwo działające od lat</Link></li>
-        <li><Link href="/wizytowka-google-popularne-oszustwa">Inne popularne oszustwa związane z GBP</Link></li>
-        <li><Link href="/czy-wizytowka-google-jest-platna">Czy wizytówka Google jest płatna? Szczegółowe porównanie</Link></li>
-      </ul>
-    </>
-  ),
-
-  /* ─────────────────────────────────────────────────────────────────────────
-     Gdzie pozyskiwać linki do wizytówki Google?
   ───────────────────────────────────────────────────────────────────────── */
   "linki-do-wizytowki-google": (
     <>
@@ -21962,7 +21455,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li><Link href="/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google bez nachalnego proszenia</Link></li>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
       </ul>
     </>
   ),
@@ -22060,7 +21553,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <h2>SEO wizytówki Google vs SEO strony — co najpierw?</h2>
       <p>
         Dla lokalnych firm odpowiedź jest prosta: najpierw{" "}
-        <Link href="/jak-pozycjonowac-wizytowke-google-2026">optymalizacja wizytówki Google</Link>{" "}
+        <Link href="/pozycjonowanie-wizytowki-google">optymalizacja wizytówki Google</Link>{" "}
         (bezpłatna, szybsze efekty), potem SEO strony www (płatne, długoterminowe). GBP
         przynosi klientów lokalnych bez budżetu. SEO strony skaluje widoczność na szerszy rynek.
       </p>
@@ -22072,7 +21565,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         co robi i pokazać rzeczywiste efekty poprzednich projektów.
       </p>
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google — bezpłatny punkt startowy</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Jak pozycjonować wizytówkę Google — bezpłatny punkt startowy</Link></li>
         <li><Link href="/siedziba-mala-miejscowosc-local-seo">Local SEO dla firm z siedzibą poza dużym miastem</Link></li>
       </ul>
     </>
@@ -22156,7 +21649,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         wartości klienta.
       </p>
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google — podstawy dla każdej branży</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Jak pozycjonować wizytówkę Google — podstawy dla każdej branży</Link></li>
         <li><Link href="/opis-firmy-google-business-profile-jak-napisac">Jak napisać opis kancelarii w GBP zgodnie z zasadami etyki</Link></li>
       </ul>
     </>
@@ -22250,7 +21743,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         żeby wejść do Local Pack i odbierać klientów bez kosztów reklamowych.
       </p>
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Pełny przewodnik po pozycjonowaniu wizytówki Google</Link></li>
         <li><Link href="/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google skutecznie</Link></li>
         <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">Jakie zdjęcia w GBP naprawdę pomagają?</Link></li>
       </ul>
@@ -22366,7 +21859,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         profil Google:
       </p>
       <ul>
-        <li><Link href="/jak-pozycjonowac-wizytowke-google-2026">Jak pozycjonować wizytówkę Google — dla salonów i usług lokalnych</Link></li>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Jak pozycjonować wizytówkę Google — dla salonów i usług lokalnych</Link></li>
         <li><Link href="/opinie-google-jak-zdobywac-skutecznie">Jak zbierać opinie Google od klientek salonu?</Link></li>
       </ul>
     </>
@@ -22506,7 +21999,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/pozycjonowanie-wizytowki-google">
             Pełny przewodnik po pozycjonowaniu wizytówki Google w 2026 roku
           </Link>
         </li>
@@ -22554,7 +22047,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <strong>Fakty:</strong> Google nigdy nie dzwoni proaktywnie do właścicieli profili GBP
         w sprawie płatności ani weryfikacji. Google Business Profile jest i zawsze był bezpłatny.
         Więcej o tym schemacie piszemy szczegółowo w artykule{" "}
-        <Link href="/wizytowka-google-nie-wygasa-oszustwo">
+        <Link href="/wizytowka-google-popularne-oszustwa">
           „Czy wizytówka Google wygasa?"
         </Link>
         .
@@ -22652,12 +22145,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </ul>
       <ul>
         <li>
-          <Link href="/wizytowka-google-nie-wygasa-oszustwo">
+          <Link href="/wizytowka-google-popularne-oszustwa">
             Czy wizytówka Google wygasa? Nie — to oszustwo działające od lat
           </Link>
         </li>
         <li>
-          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/pozycjonowanie-wizytowki-google">
             Jak pozycjonować wizytówkę Google w 2026 roku — uczciwy przewodnik
           </Link>
         </li>
@@ -22667,6 +22160,420 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </Link>
         </li>
       </ul>
+
+      {/* ── wchłonięte z /telefon-wizytowka-google-wygasnie-oszustwo (konsolidacja kanibalizacji) — do scalenia redakcyjnego ── */}
+      <h2>Wizytówka Google nie wygasa — to fakt, nie opinia</h2>
+      <p>
+        Google Business Profile jest usługą bezpłatną i nie ma żadnego okresu ważności. Wizytówka nie wygasa po roku, dwóch ani nigdy — dopóki Google nie zmieni swoich zasad lub właściciel sam jej nie usunie. Telefon z informacją o zbliżającym się wygaśnięciu profilu jest oszustwem, niezależnie od tego, jak profesjonalnie brzmi rozmówca i jak pilnie prosi o płatność.
+      </p>
+      <p>
+        To nie jest nowy przekręt. Działa od ponad dekady, ewoluuje i wciąż zbiera ofiary — bo jest skuteczny. Właściciele firm są zajęci, zagrożenie brzmi wiarygodnie, a kwoty żądane przez oszustów są na tyle małe, że wielu woli zapłacić niż ryzykować utratę widoczności w Google. Poniżej wyjaśniam dokładnie, jak ten schemat działa i co zrobić, gdy Cię dotknął.
+      </p>
+      <h2>Jak brzmi ten telefon — dokładny scenariusz</h2>
+      <p>
+        Oszuści telefoniczni w tym schemacie posługują się skryptem, który jest niemal identyczny u setek firm działających na terenie całej Polski. Znajomość scenariusza rozmowy to najszybszy sposób, żeby rozpoznać przekręt zanim zdążysz się zaangażować emocjonalnie.
+      </p>
+      <p>Typowy przebieg rozmowy wygląda tak:</p>
+      <ul>
+        <li><strong>Wstęp:</strong> „Dzień dobry, dzwonię w imieniu partnera Google / działu wsparcia Google / centrum obsługi klienta Google." Rozmówca mówi pewnie, często z lekkim akcentem lub przez firmową centralę, która ma dodać wiarygodności.</li>
+        <li><strong>Komunikat o zagrożeniu:</strong> „Widzimy, że Pana/Pani wizytówka Google wygaśnie za [3–14] dni. Jeśli nie odnowi Pan/Pani abonamentu, profil zostanie usunięty z wyników wyszukiwania i map."</li>
+        <li><strong>Presja czasu:</strong> „Mamy dla Pana/Pani jeszcze aktywną ofertę odnowienia, ale ważna jest tylko do dziś / do końca tygodnia."</li>
+        <li><strong>Kwota:</strong> Zazwyczaj między 150 a 600 zł — wystarczająco mało, żeby nie wzbudzić podejrzeń, wystarczająco dużo, żeby zarobić.</li>
+        <li><strong>Dane do płatności:</strong> Przelew na konto osoby fizycznej lub firmy z enigmatyczną nazwą, szybki przelew BLIK albo link do płatności przez zewnętrzny serwis.</li>
+      </ul>
+      <p>
+        Jeśli zaczniesz pytać o szczegóły — numer klienta, potwierdzenie od Google, fakturę — rozmówca stanie się coraz bardziej natrętny lub po prostu rozłączy się. Prawdziwy pracownik Google tak się nie zachowuje. Zresztą — Google nie prowadzi sprzedaży telefonicznej usług GBP w Polsce.
+      </p>
+      <h2>Dlaczego ten przekręt działa tak skutecznie</h2>
+      <p>
+        Schemat „wygasającej wizytówki" jest efektywny, bo łączy trzy elementy psychologiczne: autorytet (Google to wielka firma, której się ufa), pilność (za kilka dni profil zniknie) i niską barierę wejścia (relatywnie mała kwota). Właściciele firm, którzy zainwestowali czas w budowanie wizytówki i zdobywanie opinii, naturalnie boją się jej utraty.
+      </p>
+      <p>
+        Dodatkowym czynnikiem jest to, że Google rzeczywiście wysyła e-maile z przypomnieniami o aktualizacji danych, co oswaja z myślą, że „coś od Google" może wymagać działania. Oszuści celowo naśladują styl komunikacji korporacyjnej — by zamazać granicę między legalnym powiadomieniem a przekrętem.
+      </p>
+      <h2>Co konkretnie Google nigdy nie robi</h2>
+      <p>
+        Google nie kontaktuje się z właścicielami firm telefonicznie w celu pobierania opłat za wizytówkę. Nie ma takiej usługi, takiego działu i takiego numeru telefonu. Poniżej lista rzeczy, których Google nie robi — a które są stałymi elementami tego oszustwa.
+      </p>
+      <ul>
+        <li><strong>Google nie dzwoni, żeby przypomnieć o „odnowieniu" GBP</strong> — bo nie ma czego odnawiać. Profil nie ma abonamentu ani okresu ważności.</li>
+        <li><strong>Google nie wysyła faktur za prowadzenie wizytówki</strong> — GBP jest bezpłatny. Faktury od Google mogą dotyczyć wyłącznie płatnych usług: Google Ads, Google Workspace, Google Cloud.</li>
+        <li><strong>Google nie grozi usunięciem profilu za brak płatności</strong> — profil może zostać zawieszony za naruszenie zasad (np. fałszywe dane, opinie), ale nie za brak opłaty, bo opłat nie ma.</li>
+        <li><strong>Google nie prosi o płatność BLIK-iem, przelewem na konto osoby fizycznej ani przez WhatsApp</strong>.</li>
+        <li><strong>Google nie oferuje „specjalnych pakietów odnowienia" przez telefon</strong> — wszelkie płatne produkty Google dostępne są wyłącznie przez oficjalne panele (ads.google.com, workspace.google.com).</li>
+      </ul>
+      <h2>Już zapłaciłem — co teraz?</h2>
+      <p>
+        Jeśli przelałeś pieniądze zanim zorientowałeś się, że to oszustwo, działaj szybko — im szybciej, tym większe szanse na odzyskanie środków. Nie ma gwarancji powodzenia, ale cztery kroki poniżej zwiększają prawdopodobieństwo.
+      </p>
+      <ol>
+        <li>
+          <strong>Zadzwoń do banku natychmiast</strong> — poproś o blokadę przelewu lub uruchomienie procedury RECALL. Banki mają możliwość cofnięcia transakcji, jeśli środki jeszcze nie opuściły rachunku docelowego. Każda minuta ma znaczenie.
+        </li>
+        <li>
+          <strong>Zgłoś oszustwo na Policję</strong> — złóż zawiadomienie o podejrzeniu popełnienia przestępstwa (art. 286 Kodeksu karnego — oszustwo). Możesz to zrobić online przez platformę ePUAP lub osobiście na komisariacie. Zachowaj wszelkie dowody: numer telefonu, nagranie rozmowy, potwierdzenie przelewu, korespondencję.
+        </li>
+        <li>
+          <strong>Zgłoś incydent do CERT Polska</strong> — pod adresem <strong>incydent.cert.pl</strong>. CERT Polska monitoruje tego typu schematy i może przyczynić się do zablokowania numerów używanych przez oszustów.
+        </li>
+        <li>
+          <strong>Zgłoś do UOKiK</strong> — jeśli firma, która dzwoniła, działa legalnie pod polskim adresem i wystawiała faktury za fikcyjne usługi, Urząd Ochrony Konkurencji i Konsumentów może wszcząć postępowanie.
+        </li>
+      </ol>
+      <p>
+        Nie wstydź się zgłaszać. Oszuści liczą na to, że ofiary zamilczą z wstydu. Każde zgłoszenie pomaga w identyfikacji sprawców i chroni kolejne osoby.
+      </p>
+      <h2>Jak rozpoznać inne warianty tego przekrętu</h2>
+      <p>
+        Schemat „wygasającej wizytówki" ma kilka mutacji, które krążą w Polsce od lat. Wspólny mianownik to zawsze ta sama logika: podszywanie się pod autorytet (Google, urząd, operator), tworzenie fikcyjnego zagrożenia i żądanie płatności. Znaj ich wszystkie, żeby nie dać się zaskoczyć w innej formie.
+      </p>
+      <ul>
+        <li><strong>Faktura za „opłatę administracyjną"</strong> — przychodzi pocztą lub e-mailem, wygląda jak oficjalny dokument Google. Piszemy o tym osobno w artykule{" "}
+          <Link href="/wizytowka-google-popularne-oszustwa">opłata administracyjna za wizytówkę Google — to oszustwo</Link>.
+        </li>
+        <li><strong>SMS o „konieczności aktualizacji danych"</strong> — z linkiem do fałszywego panelu logowania, który kradnie dane dostępowe do konta Google.</li>
+        <li><strong>E-mail o „naruszeniu zasad" wymagający natychmiastowej opłaty</strong> — Google wysyła powiadomienia o naruszeniach, ale nigdy nie żąda opłaty w celu ich rozwiązania.</li>
+        <li><strong>Telefon od „firmy SEO" oferującej pozycjonowanie wizytówki za drobną opłatę z góry</strong> — część takich firm jest legalna, część nie. Zasada jest prosta: prawdziwa agencja SEO nigdy nie żąda przedpłaty przez telefon bez umowy.</li>
+      </ul>
+      <p>
+        Przegląd najpopularniejszych przekrętów związanych z GBP znajdziesz w artykule{" "}
+        <Link href="/wizytowka-google-popularne-oszustwa">wizytówka Google — najpopularniejsze oszustwa</Link>.
+      </p>
+      <h2>Co powiedzieć, gdy znów zadzwonią</h2>
+      <p>
+        Najskuteczniejsza odpowiedź jest krótka. Nie wdawaj się w dyskusję, nie podawaj żadnych danych, nie pytaj o szczegóły oferty — bo każda odpowiedź przedłuża rozmowę i daje oszustowi kolejną szansę na wywieranie presji.
+      </p>
+      <p>
+        Wystarczy jedno zdanie: <strong>„Google Business Profile jest bezpłatny i nie wygasa. Rozłączam się."</strong>
+      </p>
+      <p>
+        Możesz też dodać numer do blokady w telefonie. Wiele numerów używanych w tym schemacie jest już zgłoszonych w bazie <strong>KtoZadzwonil.pl</strong> — warto tam sprawdzić, zanim oddzwonisz na nieznany numer.
+      </p>
+      <h2>Jak sprawdzić prawdziwy stan swojej wizytówki Google</h2>
+      <p>
+        Jedynym wiarygodnym miejscem do sprawdzenia stanu wizytówki Google jest Twój własny panel — dostępny po zalogowaniu na konto Google powiązane z profilem. Jeśli profil jest aktywny, widoczny i nie ma żadnych alertów w panelu, wizytówka działa prawidłowo.
+      </p>
+      <p>
+        Wejdź na <strong>business.google.com</strong> lub wpisz w Google nazwę swojej firmy będąc zalogowanym — zobaczysz kafelek z przyciskami zarządzania. Jeśli profil wymaga uwagi, Google pokaże ostrzeżenie bezpośrednio tam — nie przez telefon od nieznanej osoby.
+      </p>
+      <p>
+        Jeśli rzeczywiście masz problem z dostępem do wizytówki, przyczyny są zupełnie inne niż brak opłaty. Pomaga w takich sytuacjach poradnik{" "}
+        <Link href="/jak-odzyskac-dostep-do-wizytowki-google">jak odzyskać dostęp do wizytówki Google</Link>.
+      </p>
+      <h2>FAQ — często zadawane pytania</h2>
+      <h3>Czy wizytówka Google naprawdę wygasa?</h3>
+      <p>
+        Nie. Google Business Profile jest bezpłatny i nie ma żadnego okresu ważności ani abonamentu. Wizytówka może zostać zawieszona przez Google wyłącznie za naruszenie zasad użytkowania (np. fałszywe dane, nieautentyczne opinie) — nigdy za brak opłaty, bo opłat nie ma.
+      </p>
+      <h3>Czy Google dzwoni do firm w sprawie wizytówki?</h3>
+      <p>
+        Google nie prowadzi sprzedaży telefonicznej usług Google Business Profile w Polsce. Jeśli ktoś dzwoni jako „przedstawiciel Google" z informacją o wygasaniu profilu lub konieczności opłaty — to nie jest pracownik Google. To oszust.
+      </p>
+      <h3>Zapłaciłem. Czy odzyskam pieniądze?</h3>
+      <p>
+        Szanse zależą od szybkości reakcji. Zadzwoń do banku natychmiast po zorientowaniu się — możliwa jest blokada przelewu. Złóż też zawiadomienie na Policję i zgłoszenie do CERT Polska (incydent.cert.pl). Im więcej osób zgłasza ten sam numer, tym szybciej można zablokować działalność oszustów.
+      </p>
+      <h3>Jak sprawdzić, czy numer, który zadzwonił, jest znany jako oszukańczy?</h3>
+      <p>
+        Wpisz numer w wyszukiwarce lub sprawdź na stronie <strong>KtoZadzwonil.pl</strong> — użytkownicy zgłaszają tam numery używane przez telemarketerów i oszustów. Numery używane w schemacie „wygasającej wizytówki" pojawiają się tam regularnie z opisami ostrzegającymi innych.
+      </p>
+      <h3>Firma wystawiła mi fakturę za „utrzymanie wizytówki". Czy muszę ją opłacić?</h3>
+      <p>
+        Nie — jeśli nie podpisałeś żadnej umowy z tą firmą. Faktura bez umowy nie jest prawnie wiążącym dokumentem. Skonsultuj się z prawnikiem lub zgłoś sprawę do UOKiK, jeśli firma nalega na płatność lub grozi konsekwencjami prawnymi.
+      </p>
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
+        <ul className="space-y-2">
+          <li><Link href="/wizytowka-google-popularne-oszustwa" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czy wizytówka Google wygasa? Nie — to oszustwo działające od lat</Link></li>
+          <li><Link href="/wizytowka-google-popularne-oszustwa" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opłata administracyjna za wizytówkę Google – to oszustwo</Link></li>
+          <li><Link href="/wizytowka-google-popularne-oszustwa" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Wizytówka Google – najpopularniejsze oszustwa</Link></li>
+          <li><Link href="/jak-odzyskac-dostep-do-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak odzyskać dostęp do wizytówki Google?</Link></li>
+          <li><Link href="/czy-wizytowka-google-jest-platna" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czy wizytówka Google jest płatna?</Link></li>
+        </ul>
+      </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Czy wizytówka Google naprawdę wygasa?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nie. Google Business Profile jest bezpłatny i nie ma żadnego okresu ważności ani abonamentu. Wizytówka może zostać zawieszona przez Google wyłącznie za naruszenie zasad użytkowania — nigdy za brak opłaty, bo opłat nie ma.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Czy Google dzwoni do firm w sprawie wizytówki Google Business Profile?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Google nie prowadzi sprzedaży telefonicznej usług Google Business Profile w Polsce. Jeśli ktoś dzwoni jako 'przedstawiciel Google' z informacją o wygasaniu profilu lub konieczności opłaty — to oszust, nie pracownik Google.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Co zrobić jeśli zapłaciłem za rzekome odnowienie wizytówki Google?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Zadzwoń do banku natychmiast — możliwa jest blokada przelewu. Złóż zawiadomienie na Policję i zgłoszenie do CERT Polska pod adresem incydent.cert.pl. Im szybciej działasz, tym większe szanse na odzyskanie środków.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Firma wystawiła mi fakturę za utrzymanie wizytówki Google. Czy muszę ją opłacić?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nie — jeśli nie podpisałeś żadnej umowy z tą firmą. Faktura bez umowy nie jest prawnie wiążącym dokumentem. Skonsultuj się z prawnikiem lub zgłoś sprawę do UOKiK.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Jak sprawdzić prawdziwy stan swojej wizytówki Google?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Wejdź na business.google.com lub wpisz w Google nazwę swojej firmy będąc zalogowanym. Jeśli profil jest aktywny i nie ma alertów w panelu — wizytówka działa prawidłowo. Google nigdy nie informuje o problemach przez telefon od zewnętrznej firmy.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+  ),
+  /* ─────────────────────────────────────────────────────────────────────────
+     PORADNIK: Prawa menedżerskie do wizytówki Google
+
+
+      {/* ── wchłonięte z /wizytowka-google-nie-wygasa-oszustwo (konsolidacja kanibalizacji) — do scalenia redakcyjnego ── */}
+      <h2>Odpowiedź na pytanie z tytułu: NIE, wizytówka Google nie wygasa</h2>
+      <p>
+        Google Business Profile (dawniej Google Moja Firma) <strong>nigdy nie wygasa</strong>.
+        Jest bezpłatny, nie ma subskrypcji, nie ma rocznego odnowienia i nigdy żadnego nie będzie.
+        Jeśli ktoś twierdzi inaczej — próbuje Cię oszukać. Koniec, kropka.
+      </p>
+      <p>
+        To zdanie chcemy żebyś zapamiętał, zanim przejdziemy dalej. Poniżej wyjaśniamy,
+        skąd bierze się ten przekręt, jak działa, jak go rozpoznać i co zrobić, jeśli już go
+        doświadczyłeś.
+      </p>
+      <h2>Skąd wziął się ten schemat? Historia sięga ponad dekady</h2>
+      <p>
+        Pierwsze przypadki firm podszywających się pod Google i straszących właścicieli
+        biznesów wygaśnięciem wizytówki pojawiły się już około <strong>2012–2014 roku</strong>,
+        gdy Google Places (poprzednik Google Moja Firma i Google Business Profile) stawało się
+        coraz popularniejsze wśród małych firm.
+      </p>
+      <p>
+        Schemat działa na tej samej zasadzie od lat i nigdy nie przestał być skuteczny, bo
+        stale pojawiają się nowi właściciele firm, którzy nie wiedzą, jak działa GBP. Firmy
+        stosujące ten przekręt zmieniają tylko szatę graficzną i numery telefonów — schemat
+        pozostaje identyczny od ponad dekady.
+      </p>
+      <p>
+        W Polsce schemat ten funkcjonuje pod różnymi nazwami: „odnowienie wizytówki Google",
+        „aktualizacja profilu Google", „weryfikacja biznesu Google", „aktywacja wpisu w Google
+        Maps". Wszystko to to warianty tego samego oszustwa.
+      </p>
+      <h2>Jak dokładnie działa ten przekręt?</h2>
+      <h3>Wariant 1 – Telefon od „konsultanta Google"</h3>
+      <p>
+        Dzwoni osoba podająca się za pracownika lub „autoryzowanego partnera" Google. Informuje
+        Cię, że Twoja wizytówka „wkrótce wygaśnie", „zostanie usunięta z wyników" albo „wymaga
+        pilnej aktualizacji". Następuje próba sprzedaży pakietu usług: „optymalizacja",
+        „weryfikacja premium", „gwarantowana widoczność".
+      </p>
+      <p>
+        Brzmi przekonująco, bo osoba po drugiej stronie zna Twój adres, numer telefonu i branżę
+        — wszystkie te dane są publicznie dostępne w Twojej wizytówce Google.
+      </p>
+      <h3>Wariant 2 – Faktura pocztą lub emailem</h3>
+      <p>
+        Przychodzi faktura proforma lub faktura z logo łudząco podobnym do Google, z kwotą
+        kilkuset lub kilku tysięcy złotych za „roczne utrzymanie wizytówki". Druk wygląda
+        oficjalnie, zawiera termin płatności i numer konta bankowego.
+      </p>
+      <p>
+        Kluczowy detal: te faktury prawie nigdy nie twierdzą wprost, że są od Google. Używają
+        sformułowań takich jak „Usługi Google Business", „Panel Google Maps" albo nazw
+        firm-krzaków brzmiących jak coś związanego z Google.
+      </p>
+      <h3>Wariant 3 – Email z linkiem „weryfikacyjnym"</h3>
+      <p>
+        Email podszywający się pod Google z prośbą o „ponowną weryfikację konta" lub „aktualizację
+        danych rozliczeniowych". Link prowadzi do fałszywej strony logowania Google. To klasyczny
+        phishing — celem jest przejęcie konta Google Twojej firmy.
+      </p>
+      <h2>Czego Google nigdy nie robi</h2>
+      <p>
+        Zapamiętaj tę listę i wróć do niej za każdym razem, gdy ktoś kontaktuje się z Tobą
+        „od Google":
+      </p>
+      <ul>
+        <li>Google <strong>nigdy nie dzwoni proaktywnie</strong> do właścicieli profili GBP w celu sprzedaży, odnowienia lub weryfikacji</li>
+        <li>Google <strong>nigdy nie wysyła faktur</strong> za utrzymanie profilu Google Business Profile</li>
+        <li>Google Business Profile <strong>nigdy nie wygasa</strong> i nie wymaga opłat za utrzymanie</li>
+        <li>Google <strong>nie ma autoryzowanych partnerów</strong> sprzedających odnowienia GBP</li>
+        <li>Weryfikacja GBP <strong>zawsze odbywa się bezpłatnie</strong> przez oficjalny panel na business.google.com</li>
+      </ul>
+      <h2>Co Google faktycznie może zrobić z Twoim profilem?</h2>
+      <p>
+        Profil GBP może zostać ograniczony lub zawieszony, ale tylko z konkretnych powodów
+        i zawsze przez sam Google — nie przez osoby trzecie:
+      </p>
+      <ul>
+        <li><strong>Zawieszenie za naruszenie regulaminu</strong> — keyword stuffing w nazwie, fałszywy adres, fałszywe recenzje. Dostajesz wtedy powiadomienie z wyjaśnieniem przez panel GBP.</li>
+        <li><strong>Profil niezweryfikowany</strong> — jeśli nigdy nie przeszedłeś weryfikacji, profil może mieć ograniczoną widoczność. Rozwiązanie: zweryfikuj przez business.google.com.</li>
+        <li><strong>Duplikaty profili</strong> — Google może scalić lub ukryć zduplikowane profile tej samej firmy.</li>
+      </ul>
+      <p>
+        W każdym z powyższych przypadków Google komunikuje się z Tobą <strong>przez oficjalny
+        panel Google Business Profile lub przez adres email powiązany z kontem Google</strong>
+        — nie przez telefon, nie przez zewnętrzne faktury.
+      </p>
+      <h2>Co zrobić jeśli już zapłaciłeś?</h2>
+      <p>
+        Jeśli padłeś ofiarą tego oszustwa:
+      </p>
+      <ol>
+        <li>
+          <strong>Zgłoś przelew jako oszustwo</strong> w swoim banku — w przypadku przelewów
+          krajowych możliwe jest wstrzymanie operacji lub odwołanie przelewu, jeśli działa szybko.
+        </li>
+        <li>
+          <strong>Złóż zawiadomienie na policję</strong> — to przestępstwo, nawet jeśli kwota
+          była mała. Każde zgłoszenie pomaga ścigać sprawców.
+        </li>
+        <li>
+          <strong>Zgłoś oszustwo do Google</strong> — przez formularz na support.google.com.
+          Google ma zespół zajmujący się tego typu nadużyciami.
+        </li>
+        <li>
+          <strong>Ostrzeż innych</strong> — zamieść opinię lub wpis na lokalnych grupach
+          branżowych. Twoja historia może uchronić kolejną osobę.
+        </li>
+      </ol>
+      <h2>Jak zabezpieczyć się na przyszłość?</h2>
+      <ul>
+        <li>Zaloguj się do <strong>business.google.com</strong> i sprawdź status swojego profilu — to jedyne oficjalne miejsce do zarządzania GBP</li>
+        <li>Dodaj oficjalny panel GBP do zakładek i korzystaj tylko z niego</li>
+        <li>Poinformuj pracowników odbierających telefony, że Google nie dzwoni w takich sprawach</li>
+        <li>Każdy podejrzany email od „Google" sprawdź bezpośrednio logując się na konto — nie klikaj linków z emaila</li>
+      </ul>
+      <h2>Podsumowanie</h2>
+      <p>
+        Ten schemat działa od ponad dekady i wciąż zbiera ofiary — bo stale przybywa nowych
+        właścicieli firm tworzących wizytówki Google. Najlepsza ochrona to wiedza: Google
+        Business Profile jest bezpłatny, nie wygasa i nigdy nie wymaga telefonu od konsultanta.
+        Jeśli chcesz rozwijać swój profil legalnie i skutecznie, zacznij od podstaw:
+      </p>
+      <ul>
+        <li>
+          <Link href="/pozycjonowanie-wizytowki-google">
+            Jak pozycjonować wizytówkę Google w 2026 roku — uczciwy przewodnik
+          </Link>
+        </li>
+        <li>
+          <Link href="/wizytowka-google-popularne-oszustwa">
+            Wizytówka Google — inne popularne oszustwa, na które warto uważać
+          </Link>
+        </li>
+        <li>
+          <Link href="/nap-wizytowka-google-co-to-jest">
+            NAP w wizytówce Google — fundament, od którego zaczynają wszyscy
+          </Link>
+        </li>
+      </ul>
+  ),
+  /* ─────────────────────────────────────────────────────────────────────────
+     1. Jak pozycjonować wizytówkę Google w 2026 roku?
+
+
+      {/* ── wchłonięte z /oplata-administracyjna-wizytowka-google (konsolidacja kanibalizacji) — do scalenia redakcyjnego ── */}
+      <h2>„Opłata administracyjna za wizytówkę Google" — to przekręt</h2>
+      <p>
+        Jeśli trafiłeś na tę stronę po tym, jak dostałeś fakturę lub telefon z żądaniem
+        uiszczenia „opłaty administracyjnej" za utrzymanie, weryfikację lub aktywację wizytówki
+        Google — mamy dla Ciebie ważną informację: <strong>nie istnieje żadna opłata
+        administracyjna za Google Business Profile.</strong> Nigdy nie istniała i nie zostanie
+        wprowadzona.
+      </p>
+      <p>
+        To wariant klasycznego oszustwa, które od ponad dekady atakuje właścicieli małych firm.
+        Sama nazwa „opłata administracyjna" jest celowo neutralna i brzmi urzędowo, żeby
+        ofiara nie rozpoznała przekrętu. Jest to sformułowanie stosowane przez oszustów w Polsce
+        i na świecie w setkach podobnych schematów.
+      </p>
+      <h2>Jak wygląda ten schemat w praktyce?</h2>
+      <p>
+        Schemat ma kilka wariantów, ale każdy działa na tej samej zasadzie:
+      </p>
+      <h3>Wariant faktura pocztowa lub email</h3>
+      <p>
+        Przychodzi dokument wyglądający jak oficjalna faktura. Nagłówek może brzmieć: „Rejestr
+        Wizytówek Google", „Panel Google Business", „Centrum Firm Google", „Usługi Google Maps"
+        lub podobnie. Na dokumencie widnieje kwota (najczęściej 300–1200 zł), termin płatności
+        i numer konta bankowego.
+      </p>
+      <p>
+        Kluczowy detal, który zdradzają wszystkie te faktury: <strong>nie są wystawione przez
+        Google LLC</strong>. Są wystawione przez fikcyjne lub prawdziwe polskie spółki o
+        mylących nazwach. Google nie wystawia faktur za GBP, bo GBP jest bezpłatne.
+      </p>
+      <h3>Wariant telefoniczny</h3>
+      <p>
+        Dzwoni osoba podająca się za „konsultanta", „weryfikatora" lub „pracownika działu
+        technicznego Google". Informuje, że musi pobrać opłatę administracyjną, żeby
+        Twój profil pozostał aktywny lub żeby przejść obowiązkową aktualizację systemu.
+        Często podaje szczegóły Twojej firmy (publicznie dostępne z GBP), żeby brzmieć
+        wiarygodnie.
+      </p>
+      <h2>Jak odróżnić prawdziwą komunikację od Google?</h2>
+      <p>
+        Google komunikuje się z właścicielami GBP wyłącznie:
+      </p>
+      <ul>
+        <li>Przez powiadomienia w panelu GBP (business.google.com)</li>
+        <li>Przez email na adres powiązany z kontem Google — zawsze z domeny <strong>@google.com</strong></li>
+        <li>Przez fizyczną kartę pocztową (tylko podczas procesu weryfikacji nowego profilu)</li>
+      </ul>
+      <p>
+        Google <strong>nigdy</strong> nie dzwoni proaktywnie, nie wysyła faktur za GBP i nie
+        korzysta z zewnętrznych agentów do pobierania „opłat administracyjnych".
+      </p>
+      <h2>Co zrobić z taką fakturą?</h2>
+      <ul>
+        <li><strong>Nie płać</strong> — nawet jeśli faktura wydaje się oficjalna</li>
+        <li><strong>Nie dzwoń pod podany numer</strong> — rozmowa może być nagrywana jako „potwierdzenie zamówienia"</li>
+        <li><strong>Zachowaj dokument</strong> jako dowód i zgłoś sprawę na policję lub do UOKiK</li>
+        <li><strong>Sprawdź w CEIDG/KRS</strong> — pod jakimi danymi jest zarejestrowana firma wystawiająca fakturę. Jeśli znajdziesz — kontakt z firmą i żądanie wyjaśnień (w Polsce sprzedaż usług, których świadomie się nie zamawiało, jest nielegalna)</li>
+        <li><strong>Ostrzeż innych</strong> — na forach branżowych, w grupach na Facebooku, przez recenzje — Twoje zgłoszenie może uchronić inne firmy</li>
+      </ul>
+      <h2>A jeśli już zapłaciłeś?</h2>
+      <p>
+        Natychmiast skontaktuj się z bankiem i zgłoś przelew jako potencjalne oszustwo. W
+        przypadku przelewów krajowych bank może wstrzymać operację, jeśli zadzwonisz szybko.
+        Złóż zawiadomienie na policji o możliwości popełnienia przestępstwa z artykułu 286
+        Kodeksu Karnego (oszustwo). Kwota może się wydawać mała, żeby nie warto było działać —
+        ale właśnie na to liczą sprawcy. Każde zgłoszenie pomaga.
+      </p>
+      <h2>Podsumowanie</h2>
+      <p>
+        Opłata administracyjna za wizytówkę Google nie istnieje. Każda faktura lub telefon
+        z takim żądaniem to oszustwo. Google Business Profile jest bezpłatny — bez wyjątków,
+        bez ukrytych kosztów, bez dat wygaśnięcia. Więcej o bezpieczeństwie profilu GBP:
+      </p>
+      <ul>
+        <li><Link href="/wizytowka-google-popularne-oszustwa">Czy wizytówka Google wygasa? Nie — to oszustwo działające od lat</Link></li>
+        <li><Link href="/wizytowka-google-popularne-oszustwa">Inne popularne oszustwa związane z GBP</Link></li>
+        <li><Link href="/czy-wizytowka-google-jest-platna">Czy wizytówka Google jest płatna? Szczegółowe porównanie</Link></li>
+      </ul>
+  ),
+  /* ─────────────────────────────────────────────────────────────────────────
+     Gdzie pozyskiwać linki do wizytówki Google?
+
     </>
   ),
 
@@ -22806,7 +22713,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </Link>
         </li>
         <li>
-          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/pozycjonowanie-wizytowki-google">
             Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik
           </Link>
         </li>
@@ -22821,323 +22728,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   /* ─────────────────────────────────────────────────────────────────────────
      8. Czy wizytówka Google wygasa? Nie — to oszustwo działające od lat
-  ───────────────────────────────────────────────────────────────────────── */
-  "wizytowka-google-nie-wygasa-oszustwo": (
-    <>
-      <h2>Odpowiedź na pytanie z tytułu: NIE, wizytówka Google nie wygasa</h2>
-      <p>
-        Google Business Profile (dawniej Google Moja Firma) <strong>nigdy nie wygasa</strong>.
-        Jest bezpłatny, nie ma subskrypcji, nie ma rocznego odnowienia i nigdy żadnego nie będzie.
-        Jeśli ktoś twierdzi inaczej — próbuje Cię oszukać. Koniec, kropka.
-      </p>
-      <p>
-        To zdanie chcemy żebyś zapamiętał, zanim przejdziemy dalej. Poniżej wyjaśniamy,
-        skąd bierze się ten przekręt, jak działa, jak go rozpoznać i co zrobić, jeśli już go
-        doświadczyłeś.
-      </p>
-
-      <h2>Skąd wziął się ten schemat? Historia sięga ponad dekady</h2>
-      <p>
-        Pierwsze przypadki firm podszywających się pod Google i straszących właścicieli
-        biznesów wygaśnięciem wizytówki pojawiły się już około <strong>2012–2014 roku</strong>,
-        gdy Google Places (poprzednik Google Moja Firma i Google Business Profile) stawało się
-        coraz popularniejsze wśród małych firm.
-      </p>
-      <p>
-        Schemat działa na tej samej zasadzie od lat i nigdy nie przestał być skuteczny, bo
-        stale pojawiają się nowi właściciele firm, którzy nie wiedzą, jak działa GBP. Firmy
-        stosujące ten przekręt zmieniają tylko szatę graficzną i numery telefonów — schemat
-        pozostaje identyczny od ponad dekady.
-      </p>
-      <p>
-        W Polsce schemat ten funkcjonuje pod różnymi nazwami: „odnowienie wizytówki Google",
-        „aktualizacja profilu Google", „weryfikacja biznesu Google", „aktywacja wpisu w Google
-        Maps". Wszystko to to warianty tego samego oszustwa.
-      </p>
-
-      <h2>Jak dokładnie działa ten przekręt?</h2>
-
-      <h3>Wariant 1 – Telefon od „konsultanta Google"</h3>
-      <p>
-        Dzwoni osoba podająca się za pracownika lub „autoryzowanego partnera" Google. Informuje
-        Cię, że Twoja wizytówka „wkrótce wygaśnie", „zostanie usunięta z wyników" albo „wymaga
-        pilnej aktualizacji". Następuje próba sprzedaży pakietu usług: „optymalizacja",
-        „weryfikacja premium", „gwarantowana widoczność".
-      </p>
-      <p>
-        Brzmi przekonująco, bo osoba po drugiej stronie zna Twój adres, numer telefonu i branżę
-        — wszystkie te dane są publicznie dostępne w Twojej wizytówce Google.
-      </p>
-
-      <h3>Wariant 2 – Faktura pocztą lub emailem</h3>
-      <p>
-        Przychodzi faktura proforma lub faktura z logo łudząco podobnym do Google, z kwotą
-        kilkuset lub kilku tysięcy złotych za „roczne utrzymanie wizytówki". Druk wygląda
-        oficjalnie, zawiera termin płatności i numer konta bankowego.
-      </p>
-      <p>
-        Kluczowy detal: te faktury prawie nigdy nie twierdzą wprost, że są od Google. Używają
-        sformułowań takich jak „Usługi Google Business", „Panel Google Maps" albo nazw
-        firm-krzaków brzmiących jak coś związanego z Google.
-      </p>
-
-      <h3>Wariant 3 – Email z linkiem „weryfikacyjnym"</h3>
-      <p>
-        Email podszywający się pod Google z prośbą o „ponowną weryfikację konta" lub „aktualizację
-        danych rozliczeniowych". Link prowadzi do fałszywej strony logowania Google. To klasyczny
-        phishing — celem jest przejęcie konta Google Twojej firmy.
-      </p>
-
-      <h2>Czego Google nigdy nie robi</h2>
-      <p>
-        Zapamiętaj tę listę i wróć do niej za każdym razem, gdy ktoś kontaktuje się z Tobą
-        „od Google":
-      </p>
-      <ul>
-        <li>Google <strong>nigdy nie dzwoni proaktywnie</strong> do właścicieli profili GBP w celu sprzedaży, odnowienia lub weryfikacji</li>
-        <li>Google <strong>nigdy nie wysyła faktur</strong> za utrzymanie profilu Google Business Profile</li>
-        <li>Google Business Profile <strong>nigdy nie wygasa</strong> i nie wymaga opłat za utrzymanie</li>
-        <li>Google <strong>nie ma autoryzowanych partnerów</strong> sprzedających odnowienia GBP</li>
-        <li>Weryfikacja GBP <strong>zawsze odbywa się bezpłatnie</strong> przez oficjalny panel na business.google.com</li>
-      </ul>
-
-      <h2>Co Google faktycznie może zrobić z Twoim profilem?</h2>
-      <p>
-        Profil GBP może zostać ograniczony lub zawieszony, ale tylko z konkretnych powodów
-        i zawsze przez sam Google — nie przez osoby trzecie:
-      </p>
-      <ul>
-        <li><strong>Zawieszenie za naruszenie regulaminu</strong> — keyword stuffing w nazwie, fałszywy adres, fałszywe recenzje. Dostajesz wtedy powiadomienie z wyjaśnieniem przez panel GBP.</li>
-        <li><strong>Profil niezweryfikowany</strong> — jeśli nigdy nie przeszedłeś weryfikacji, profil może mieć ograniczoną widoczność. Rozwiązanie: zweryfikuj przez business.google.com.</li>
-        <li><strong>Duplikaty profili</strong> — Google może scalić lub ukryć zduplikowane profile tej samej firmy.</li>
-      </ul>
-      <p>
-        W każdym z powyższych przypadków Google komunikuje się z Tobą <strong>przez oficjalny
-        panel Google Business Profile lub przez adres email powiązany z kontem Google</strong>
-        — nie przez telefon, nie przez zewnętrzne faktury.
-      </p>
-
-      <h2>Co zrobić jeśli już zapłaciłeś?</h2>
-      <p>
-        Jeśli padłeś ofiarą tego oszustwa:
-      </p>
-      <ol>
-        <li>
-          <strong>Zgłoś przelew jako oszustwo</strong> w swoim banku — w przypadku przelewów
-          krajowych możliwe jest wstrzymanie operacji lub odwołanie przelewu, jeśli działa szybko.
-        </li>
-        <li>
-          <strong>Złóż zawiadomienie na policję</strong> — to przestępstwo, nawet jeśli kwota
-          była mała. Każde zgłoszenie pomaga ścigać sprawców.
-        </li>
-        <li>
-          <strong>Zgłoś oszustwo do Google</strong> — przez formularz na support.google.com.
-          Google ma zespół zajmujący się tego typu nadużyciami.
-        </li>
-        <li>
-          <strong>Ostrzeż innych</strong> — zamieść opinię lub wpis na lokalnych grupach
-          branżowych. Twoja historia może uchronić kolejną osobę.
-        </li>
-      </ol>
-
-      <h2>Jak zabezpieczyć się na przyszłość?</h2>
-      <ul>
-        <li>Zaloguj się do <strong>business.google.com</strong> i sprawdź status swojego profilu — to jedyne oficjalne miejsce do zarządzania GBP</li>
-        <li>Dodaj oficjalny panel GBP do zakładek i korzystaj tylko z niego</li>
-        <li>Poinformuj pracowników odbierających telefony, że Google nie dzwoni w takich sprawach</li>
-        <li>Każdy podejrzany email od „Google" sprawdź bezpośrednio logując się na konto — nie klikaj linków z emaila</li>
-      </ul>
-
-      <h2>Podsumowanie</h2>
-      <p>
-        Ten schemat działa od ponad dekady i wciąż zbiera ofiary — bo stale przybywa nowych
-        właścicieli firm tworzących wizytówki Google. Najlepsza ochrona to wiedza: Google
-        Business Profile jest bezpłatny, nie wygasa i nigdy nie wymaga telefonu od konsultanta.
-        Jeśli chcesz rozwijać swój profil legalnie i skutecznie, zacznij od podstaw:
-      </p>
-      <ul>
-        <li>
-          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
-            Jak pozycjonować wizytówkę Google w 2026 roku — uczciwy przewodnik
-          </Link>
-        </li>
-        <li>
-          <Link href="/wizytowka-google-popularne-oszustwa">
-            Wizytówka Google — inne popularne oszustwa, na które warto uważać
-          </Link>
-        </li>
-        <li>
-          <Link href="/nap-wizytowka-google-co-to-jest">
-            NAP w wizytówce Google — fundament, od którego zaczynają wszyscy
-          </Link>
-        </li>
-      </ul>
-    </>
-  ),
-
-  /* ─────────────────────────────────────────────────────────────────────────
-     1. Jak pozycjonować wizytówkę Google w 2026 roku?
-  ───────────────────────────────────────────────────────────────────────── */
-  "jak-pozycjonowac-wizytowke-google-2026": (
-    <>
-      <h2>Dlaczego wizytówka Google jest ważniejsza niż Twoja strona internetowa?</h2>
-      <p>
-        Kiedy potencjalny klient wpisuje w Google „hydraulik Warszawa" lub „fryzjer Kraków Krowodrza",
-        pierwsze co widzi — zanim dotrze do jakiejkolwiek strony www — to tzw. Local Pack: trzy firmy
-        wyróżnione na mapie. Badania pokazują, że ponad <strong>46% wszystkich wyszukiwań w Google ma
-        lokalny charakter</strong>, a użytkownicy mobilni klikają bezpośrednio w przycisk „Zadzwoń"
-        lub „Wyznacz trasę, nie odwiedzając strony firmy.
-      </p>
-      <p>
-        Wizytówka Google (Google Business Profile, w skrócie GBP) to w praktyce Twoja najważniejsza
-        strona w sieci. Dobrze zoptymalizowana może przyciągnąć klientów szybciej i taniej niż
-        jakakolwiek reklama. Zaniedbana — oddaje klientów konkurencji, która poświęciła kilka godzin
-        na konfigurację profilu.
-      </p>
-
-      <h2>Jak działa algorytm Local Pack w 2026 roku?</h2>
-      <p>
-        Google nie ujawnia szczegółów swojego algorytmu, ale na podstawie setek audytów profili wiemy,
-        że decyzja o tym, które firmy trafiają do Local Pack, opiera się na trzech głównych sygnałach:
-      </p>
-
-      <h3>Trafność (relevance) – czy profil pasuje do zapytania?</h3>
-      <p>
-        Google sprawdza, czy Twoja wizytówka odpowiada na to, czego szuka użytkownik. Im dokładniej
-        wypełnisz kategorie, usługi, <Link href="/opis-firmy-google-business-profile-jak-napisac">opis firmy</Link> i atrybuty —
-        tym wyżej pojawisz się przy trafnych zapytaniach. Nie chodzi o upychanie słów kluczowych,
-        ale o precyzyjne opisanie tego, czym naprawdę się zajmujesz.
-      </p>
-
-      <h3>Odległość (distance) – jak blisko jest firma?</h3>
-      <p>
-        Lokalizacji fizycznej nie zmienisz, ale możesz skonfigurować <strong>obszar obsługi</strong> (service area),
-        jeśli dojeżdżasz do klientów. Firmy bez stałego adresu (np. hydraulicy, elektrycy, firmy
-        cateringowe) powinny wyraźnie wskazać obszar działania zamiast ukrywać adres.
-      </p>
-
-      <h3>Pozycja (prominence) – jak ważna jest firma w sieci?</h3>
-      <p>
-        To najszerszy sygnał. Google bierze pod uwagę: liczbę i jakość <Link href="/opinie-google-jak-zdobywac-skutecznie">opinii Google</Link>,
-        wzmianki o firmie na innych stronach (cytowania), jakość Twojej strony www oraz aktywność
-        na samym profilu GBP. Im bardziej „widoczna" firma w internecie, tym wyżej w Local Pack.
-      </p>
-
-      <h2>7 czynników rankingowych, które mają dziś największe znaczenie</h2>
-      <ol>
-        <li>
-          <strong>Kategoria główna</strong> — wybierz ją bardzo starannie. To pojedynczy najsilniejszy
-          czynnik trafności. Jeśli jesteś dentystą, kategoria „Dentysta" bije ogólne „Usługi medyczne".
-        </li>
-        <li>
-          <strong>Kompletność profilu</strong> — Google nagradza w pełni wypełnione profile. Uzupełnij
-          godziny otwarcia (w tym godziny świąteczne), numer telefonu, stronę www, opis, zdjęcia i usługi.
-        </li>
-        <li>
-          <strong>Opinie — liczba i średnia ocena</strong> — profile z ponad 50 opiniami i oceną powyżej
-          4,5 mają wyraźną przewagę. Ważna jest też regularność: nowe opinie pojawiające się co tydzień
-          sygnalizują aktywność.{" "}
-          <Link href="/opinie-google-jak-zdobywac-skutecznie">
-            Przeczytaj, jak zbierać opinie bez nachalnego proszenia.
-          </Link>
-        </li>
-        <li>
-          <strong>Odpowiedzi na opinie</strong> — firmom, które odpowiadają na każdą recenzję (zarówno
-          pozytywną, jak i negatywną), Google wystawia wyższe noty za zaangażowanie.
-        </li>
-        <li>
-          <strong>Zdjęcia dodawane regularnie</strong> — statycznie wgrane zdjęcia sprzed 2 lat pomagają
-          mniej niż świeże fotografie. Dodawaj przynajmniej 2–3 nowe co miesiąc.{" "}
-          <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">
-            Dowiedz się, które zdjęcia Google naprawdę premiuje.
-          </Link>
-        </li>
-        <li>
-          <strong>Posty Google</strong> — regularne wpisy (raz na tydzień) sygnalizują algorytmowi, że
-          profil jest aktywny. Możesz promować oferty, aktualności lub wydarzenia.
-        </li>
-        <li>
-          <strong>Opis firmy z słowami kluczowymi</strong> — 750 znaków, które mogą zdecydowanie poprawić
-          trafność profilu. To Twoja szansa na naturalne umieszczenie fraz, na które chcesz być widoczny.{" "}
-          <Link href="/opis-firmy-google-business-profile-jak-napisac">
-            Sprawdź, jak napisać opis firmy, który działa.
-          </Link>
-        </li>
-      </ol>
-
-      <h2>Kompletność profilu – praktyczna checklista</h2>
-      <p>Uzupełnij każdy z tych elementów, zanim zaczniesz myśleć o zaawansowanych strategiach:</p>
-      <ul>
-        <li>Nazwa firmy (dokładnie taka jak w rejestrze, bez „słów kluczowych" w nazwie)</li>
-        <li>Kategoria główna + kategorie dodatkowe (max 9)</li>
-        <li>Adres lub obszar obsługi</li>
-        <li>Numer telefonu — lokalny, nie 0800</li>
-        <li>Strona internetowa</li>
-        <li>Godziny otwarcia (w tym dni świąteczne i specjalne)</li>
-        <li>Opis firmy (750 znaków)</li>
-        <li>Usługi i produkty z cenami lub opisami</li>
-        <li>Atrybuty (np. dostępność dla niepełnosprawnych, płatność kartą, parking)</li>
-        <li>Minimum 10 zdjęć (logo, okładka, wnętrze, zewnętrze, zespół)</li>
-        <li>Sekcja Q&amp;A — dodaj własne pytania i odpowiedzi</li>
-      </ul>
-
-      <h2>Posty Google — czy warto tracić na nie czas?</h2>
-      <p>
-        Tak, ale tylko jeśli robisz to regularnie. Jednorazowy post sprzed 6 miesięcy nie robi
-        żadnej różnicy. Algorytm nagrądza <strong>aktywność tygodniową</strong>. Post nie musi być
-        rozbudowany — wystarczy zdjęcie + 150–200 słów opisujących aktualną ofertę, poradę lub
-        wydarzenie. Posty z wyraźnym wezwaniem do działania (np. „Zadzwoń i umów wizytę") generują
-        też kliknięcia bezpośrednio z wyników Google.
-      </p>
-
-      <h2>Plan działania na pierwsze 30 dni</h2>
-      <p>
-        Nie musisz robić wszystkiego naraz. Oto konkretny harmonogram, który da efekty:
-      </p>
-      <ul>
-        <li><strong>Tydzień 1:</strong> Uzupełnij profil zgodnie z checklistą powyżej. Zweryfikuj dane NAP (nazwa, adres, telefon) — muszą być identyczne na stronie www i w GBP.</li>
-        <li><strong>Tydzień 2:</strong> Wyślij prośbę o opinię do 10–20 ostatnich klientów. Użyj skróconego linku do strony opinii.</li>
-        <li><strong>Tydzień 3:</strong> Dodaj 10 nowych zdjęć — wnętrze, zewnętrze, produkt lub usługa w akcji, zdjęcie zespołu.</li>
-        <li><strong>Tydzień 4:</strong> Opublikuj pierwszy post. Zaplanuj pisanie jednego posta tygodniowo przez kolejne 3 miesiące.</li>
-      </ul>
-
-      <h2>Kiedy widać pierwsze efekty?</h2>
-      <p>
-        Pozycjonowanie wizytówki Google to maraton, nie sprint. Pierwsze zmiany pozycji zauważysz
-        zazwyczaj po <strong>4–8 tygodniach</strong> systematycznej pracy. Profile całkowicie zaniedbane
-        mogą potrzebować 3–4 miesięcy, żeby wskoczyć do Local Pack. Kluczem jest konsekwencja —
-        firmy, które regularnie zbierają opinie, dodają zdjęcia i publikują posty, utrzymują pozycję
-        długoterminowo bez kosztów reklamowych.
-      </p>
-
-      <h2>Podsumowanie</h2>
-      <p>
-        Wizytówka Google to bezpłatne narzędzie, które — właściwie skonfigurowane — może być Twoim
-        głównym źródłem klientów z internetu. Skup się na kompletności profilu, regularnym zbieraniu
-        opinii i aktywności na profilu. Jeśli chcesz pójść krok dalej, zadbaj o szczegóły:
-      </p>
-      <ul>
-        <li>
-          <Link href="/opis-firmy-google-business-profile-jak-napisac">
-            Napisz opis firmy, który działa na klientów i algorytm
-          </Link>
-        </li>
-        <li>
-          <Link href="/opinie-google-jak-zdobywac-skutecznie">
-            Zbieraj opinie Google skutecznie, bez nachalnego proszenia
-          </Link>
-        </li>
-        <li>
-          <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">
-            Dodaj zdjęcia, które Google naprawdę premiuje
-          </Link>
-        </li>
-      </ul>
-    </>
-  ),
-
-  /* ─────────────────────────────────────────────────────────────────────────
-     2. Opinie w Google – jak zbierać je bez nachalnego proszenia?
   ───────────────────────────────────────────────────────────────────────── */
   "opinie-google-jak-zdobywac-skutecznie": (
     <>
@@ -23258,7 +22848,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/pozycjonowanie-wizytowki-google">
             Kompletny przewodnik po pozycjonowaniu wizytówki Google w 2026 roku
           </Link>
         </li>
@@ -23372,7 +22962,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/pozycjonowanie-wizytowki-google">
             Pełny przewodnik po pozycjonowaniu wizytówki Google w 2026 roku
           </Link>
         </li>
@@ -23520,7 +23110,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/pozycjonowanie-wizytowki-google">
             Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik
           </Link>
         </li>
@@ -24232,7 +23822,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </p>
       <ul>
         <li>
-          <Link href="/jak-pozycjonowac-wizytowke-google-2026">
+          <Link href="/pozycjonowanie-wizytowki-google">
             Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik
           </Link>
         </li>
@@ -24698,7 +24288,7 @@ php_value max_execution_time 300</code></pre>
       </p>
       <p>
         Szybka strona to też lepsza widoczność w lokalnych wynikach Google. Jeśli prowadzisz firmę lokalną, sprawdź{" "}
-        <Link href="/jak-pozycjonowac-wizytowke-google-2026">jak pozycjonować wizytówkę Google w 2026 roku</Link> — Core Web Vitals są jednym z sygnałów rankingowych. Warto też zadbać o{" "}
+        <Link href="/pozycjonowanie-wizytowki-google">jak pozycjonować wizytówkę Google w 2026 roku</Link> — Core Web Vitals są jednym z sygnałów rankingowych. Warto też zadbać o{" "}
         <Link href="/konflikt-wtyczek-wordpress-jak-zdiagnozowac">regularne sprawdzanie konfliktów między wtyczkami</Link>, które potrafią drastycznie spowalniać stronę.
       </p>
 
@@ -24707,7 +24297,7 @@ php_value max_execution_time 300</code></pre>
         <ul className="space-y-2">
           <li><Link href="/konflikt-wtyczek-wordpress-jak-zdiagnozowac" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Konflikt wtyczek WordPress – jak zdiagnozować i naprawić?</Link></li>
           <li><Link href="/aktualizacja-wordpress-zepsuta-strone-co-zrobic" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Aktualizacja WordPressa zepsuła stronę – co zrobić?</Link></li>
-          <li><Link href="/jak-pozycjonowac-wizytowke-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
+          <li><Link href="/pozycjonowanie-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
         </ul>
       </div>
     </>
@@ -25782,11 +25372,443 @@ define( 'DB_HOST', 'localhost' );</code></pre>
           <li><Link href="/opinie-google-jak-zdobywac-skutecznie" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opinie w Google – jak zbierać je bez nachalnego proszenia?</Link></li>
           <li><Link href="/nap-wizytowka-google-co-to-jest" className="text-sm font-semibold text-ink hover:text-brand transition-colors">NAP w wizytówce Google – czym jest i jak poprawnie skonfigurować?</Link></li>
           <li><Link href="/kategorie-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Kategorie w wizytówce Google – jak wybrać właściwe i dlaczego to kluczowe?</Link></li>
-          <li><Link href="/jak-pozycjonowac-wizytowke-google-2026" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
+          <li><Link href="/pozycjonowanie-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak pozycjonować wizytówkę Google w 2026 roku?</Link></li>
           <li><Link href="/jak-dodac-local-schema-do-strony" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak dodać local schema markup do swojej strony?</Link></li>
           <li><Link href="/linki-do-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Gdzie pozyskiwać linki do wizytówki Google i po co to robić?</Link></li>
         </ul>
       </div>
+
+      {/* ── wchłonięte z /jak-pozycjonowac-wizytowke-google-2026 (konsolidacja kanibalizacji) — do scalenia redakcyjnego ── */}
+      <h2>Dlaczego wizytówka Google jest ważniejsza niż Twoja strona internetowa?</h2>
+      <p>
+        Kiedy potencjalny klient wpisuje w Google „hydraulik Warszawa" lub „fryzjer Kraków Krowodrza",
+        pierwsze co widzi — zanim dotrze do jakiejkolwiek strony www — to tzw. Local Pack: trzy firmy
+        wyróżnione na mapie. Badania pokazują, że ponad <strong>46% wszystkich wyszukiwań w Google ma
+        lokalny charakter</strong>, a użytkownicy mobilni klikają bezpośrednio w przycisk „Zadzwoń"
+        lub „Wyznacz trasę, nie odwiedzając strony firmy.
+      </p>
+      <p>
+        Wizytówka Google (Google Business Profile, w skrócie GBP) to w praktyce Twoja najważniejsza
+        strona w sieci. Dobrze zoptymalizowana może przyciągnąć klientów szybciej i taniej niż
+        jakakolwiek reklama. Zaniedbana — oddaje klientów konkurencji, która poświęciła kilka godzin
+        na konfigurację profilu.
+      </p>
+      <h2>Jak działa algorytm Local Pack w 2026 roku?</h2>
+      <p>
+        Google nie ujawnia szczegółów swojego algorytmu, ale na podstawie setek audytów profili wiemy,
+        że decyzja o tym, które firmy trafiają do Local Pack, opiera się na trzech głównych sygnałach:
+      </p>
+      <h3>Trafność (relevance) – czy profil pasuje do zapytania?</h3>
+      <p>
+        Google sprawdza, czy Twoja wizytówka odpowiada na to, czego szuka użytkownik. Im dokładniej
+        wypełnisz kategorie, usługi, <Link href="/opis-firmy-google-business-profile-jak-napisac">opis firmy</Link> i atrybuty —
+        tym wyżej pojawisz się przy trafnych zapytaniach. Nie chodzi o upychanie słów kluczowych,
+        ale o precyzyjne opisanie tego, czym naprawdę się zajmujesz.
+      </p>
+      <h3>Odległość (distance) – jak blisko jest firma?</h3>
+      <p>
+        Lokalizacji fizycznej nie zmienisz, ale możesz skonfigurować <strong>obszar obsługi</strong> (service area),
+        jeśli dojeżdżasz do klientów. Firmy bez stałego adresu (np. hydraulicy, elektrycy, firmy
+        cateringowe) powinny wyraźnie wskazać obszar działania zamiast ukrywać adres.
+      </p>
+      <h3>Pozycja (prominence) – jak ważna jest firma w sieci?</h3>
+      <p>
+        To najszerszy sygnał. Google bierze pod uwagę: liczbę i jakość <Link href="/opinie-google-jak-zdobywac-skutecznie">opinii Google</Link>,
+        wzmianki o firmie na innych stronach (cytowania), jakość Twojej strony www oraz aktywność
+        na samym profilu GBP. Im bardziej „widoczna" firma w internecie, tym wyżej w Local Pack.
+      </p>
+      <h2>7 czynników rankingowych, które mają dziś największe znaczenie</h2>
+      <ol>
+        <li>
+          <strong>Kategoria główna</strong> — wybierz ją bardzo starannie. To pojedynczy najsilniejszy
+          czynnik trafności. Jeśli jesteś dentystą, kategoria „Dentysta" bije ogólne „Usługi medyczne".
+        </li>
+        <li>
+          <strong>Kompletność profilu</strong> — Google nagradza w pełni wypełnione profile. Uzupełnij
+          godziny otwarcia (w tym godziny świąteczne), numer telefonu, stronę www, opis, zdjęcia i usługi.
+        </li>
+        <li>
+          <strong>Opinie — liczba i średnia ocena</strong> — profile z ponad 50 opiniami i oceną powyżej
+          4,5 mają wyraźną przewagę. Ważna jest też regularność: nowe opinie pojawiające się co tydzień
+          sygnalizują aktywność.{" "}
+          <Link href="/opinie-google-jak-zdobywac-skutecznie">
+            Przeczytaj, jak zbierać opinie bez nachalnego proszenia.
+          </Link>
+        </li>
+        <li>
+          <strong>Odpowiedzi na opinie</strong> — firmom, które odpowiadają na każdą recenzję (zarówno
+          pozytywną, jak i negatywną), Google wystawia wyższe noty za zaangażowanie.
+        </li>
+        <li>
+          <strong>Zdjęcia dodawane regularnie</strong> — statycznie wgrane zdjęcia sprzed 2 lat pomagają
+          mniej niż świeże fotografie. Dodawaj przynajmniej 2–3 nowe co miesiąc.{" "}
+          <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">
+            Dowiedz się, które zdjęcia Google naprawdę premiuje.
+          </Link>
+        </li>
+        <li>
+          <strong>Posty Google</strong> — regularne wpisy (raz na tydzień) sygnalizują algorytmowi, że
+          profil jest aktywny. Możesz promować oferty, aktualności lub wydarzenia.
+        </li>
+        <li>
+          <strong>Opis firmy z słowami kluczowymi</strong> — 750 znaków, które mogą zdecydowanie poprawić
+          trafność profilu. To Twoja szansa na naturalne umieszczenie fraz, na które chcesz być widoczny.{" "}
+          <Link href="/opis-firmy-google-business-profile-jak-napisac">
+            Sprawdź, jak napisać opis firmy, który działa.
+          </Link>
+        </li>
+      </ol>
+      <h2>Kompletność profilu – praktyczna checklista</h2>
+      <p>Uzupełnij każdy z tych elementów, zanim zaczniesz myśleć o zaawansowanych strategiach:</p>
+      <ul>
+        <li>Nazwa firmy (dokładnie taka jak w rejestrze, bez „słów kluczowych" w nazwie)</li>
+        <li>Kategoria główna + kategorie dodatkowe (max 9)</li>
+        <li>Adres lub obszar obsługi</li>
+        <li>Numer telefonu — lokalny, nie 0800</li>
+        <li>Strona internetowa</li>
+        <li>Godziny otwarcia (w tym dni świąteczne i specjalne)</li>
+        <li>Opis firmy (750 znaków)</li>
+        <li>Usługi i produkty z cenami lub opisami</li>
+        <li>Atrybuty (np. dostępność dla niepełnosprawnych, płatność kartą, parking)</li>
+        <li>Minimum 10 zdjęć (logo, okładka, wnętrze, zewnętrze, zespół)</li>
+        <li>Sekcja Q&amp;A — dodaj własne pytania i odpowiedzi</li>
+      </ul>
+      <h2>Posty Google — czy warto tracić na nie czas?</h2>
+      <p>
+        Tak, ale tylko jeśli robisz to regularnie. Jednorazowy post sprzed 6 miesięcy nie robi
+        żadnej różnicy. Algorytm nagrądza <strong>aktywność tygodniową</strong>. Post nie musi być
+        rozbudowany — wystarczy zdjęcie + 150–200 słów opisujących aktualną ofertę, poradę lub
+        wydarzenie. Posty z wyraźnym wezwaniem do działania (np. „Zadzwoń i umów wizytę") generują
+        też kliknięcia bezpośrednio z wyników Google.
+      </p>
+      <h2>Plan działania na pierwsze 30 dni</h2>
+      <p>
+        Nie musisz robić wszystkiego naraz. Oto konkretny harmonogram, który da efekty:
+      </p>
+      <ul>
+        <li><strong>Tydzień 1:</strong> Uzupełnij profil zgodnie z checklistą powyżej. Zweryfikuj dane NAP (nazwa, adres, telefon) — muszą być identyczne na stronie www i w GBP.</li>
+        <li><strong>Tydzień 2:</strong> Wyślij prośbę o opinię do 10–20 ostatnich klientów. Użyj skróconego linku do strony opinii.</li>
+        <li><strong>Tydzień 3:</strong> Dodaj 10 nowych zdjęć — wnętrze, zewnętrze, produkt lub usługa w akcji, zdjęcie zespołu.</li>
+        <li><strong>Tydzień 4:</strong> Opublikuj pierwszy post. Zaplanuj pisanie jednego posta tygodniowo przez kolejne 3 miesiące.</li>
+      </ul>
+      <h2>Kiedy widać pierwsze efekty?</h2>
+      <p>
+        Pozycjonowanie wizytówki Google to maraton, nie sprint. Pierwsze zmiany pozycji zauważysz
+        zazwyczaj po <strong>4–8 tygodniach</strong> systematycznej pracy. Profile całkowicie zaniedbane
+        mogą potrzebować 3–4 miesięcy, żeby wskoczyć do Local Pack. Kluczem jest konsekwencja —
+        firmy, które regularnie zbierają opinie, dodają zdjęcia i publikują posty, utrzymują pozycję
+        długoterminowo bez kosztów reklamowych.
+      </p>
+      <h2>Podsumowanie</h2>
+      <p>
+        Wizytówka Google to bezpłatne narzędzie, które — właściwie skonfigurowane — może być Twoim
+        głównym źródłem klientów z internetu. Skup się na kompletności profilu, regularnym zbieraniu
+        opinii i aktywności na profilu. Jeśli chcesz pójść krok dalej, zadbaj o szczegóły:
+      </p>
+      <ul>
+        <li>
+          <Link href="/opis-firmy-google-business-profile-jak-napisac">
+            Napisz opis firmy, który działa na klientów i algorytm
+          </Link>
+        </li>
+        <li>
+          <Link href="/opinie-google-jak-zdobywac-skutecznie">
+            Zbieraj opinie Google skutecznie, bez nachalnego proszenia
+          </Link>
+        </li>
+        <li>
+          <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">
+            Dodaj zdjęcia, które Google naprawdę premiuje
+          </Link>
+        </li>
+      </ul>
+  ),
+  /* ─────────────────────────────────────────────────────────────────────────
+     2. Opinie w Google – jak zbierać je bez nachalnego proszenia?
+
+
+      {/* ── wchłonięte z /jak-poprawic-widocznosc-profilu-firmy-w-mapach (konsolidacja kanibalizacji) — do scalenia redakcyjnego ── */}
+      <p>
+        Widoczność w Mapach Google rozstrzyga się na kilkunastu konkretnych sygnałach, a nie na „aktywności" w ogóle. Poniżej opisujemy każdy z nich po kolei: co robi, ile realnie waży i co dokładnie masz z nim zrobić. Kolejność nie jest przypadkowa — odpowiada wadze, jaką przypisali tym czynnikom praktycy w badaniu <a href="https://whitespark.ca/local-search-ranking-factors/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">Whitespark Local Search Ranking Factors 2026</a>, zestawionej z oficjalnymi wytycznymi Google.
+      </p>
+      <p>
+        Zakładamy, że profil już istnieje i jest potwierdzony. Jeśli nie przeszedł jeszcze <a href="/weryfikacja-wizytowki-google" className="text-brand font-semibold hover:underline">weryfikacji</a>, to jest pierwszy i jedyny krok, jaki ma teraz sens — niezweryfikowana wizytówka nie konkuruje o nic.
+      </p>
+      <h2>Czym właściwie jest widoczność w mapach</h2>
+      <p>
+        Trzeba rozdzielić trzy powierzchnie, bo mylenie ich prowadzi do złych wniosków przy ocenie efektów.
+      </p>
+      <p>
+        <strong>Local Pack</strong> to blok trzech firm z mapką, który pokazuje się w zwykłych wynikach wyszukiwania Google. To tu trafia największy ruch i o te trzy miejsca toczy się realna walka. <strong>Mapy Google</strong> — aplikacja i maps.google.com — pokazują dłuższą listę wyników i użytkownik zwykle przewija ją dalej niż do trzeciej pozycji. <strong>Odpowiedzi generowane przez AI</strong> — od 2026 roku w Mapach działa przycisk „Ask", który odpowiada na pytania o firmę na podstawie profilu, strony i źródeł publicznych.
+      </p>
+      <p>
+        Konsekwencja praktyczna jest taka, że nie istnieje jedna „pozycja w mapach". Ta sama firma może być trzecia dla kogoś stojącego przy jej siedzibie i niewidoczna dla kogoś z drugiego końca miasta. Dlatego pytanie „na którym jestem miejscu" jest źle postawione — poprawne brzmi „na jakim obszarze jestem w pierwszej trójce".
+      </p>
+      <h2>Na czym Google opiera wyniki lokalne</h2>
+      <p>
+        Google opisuje to wprost w dokumentacji Business Profile i warto zacząć od tego, zanim sięgnie się po dane branżowe. Wyniki lokalne opierają się na trzech rzeczach.
+      </p>
+      <p>
+        <strong>Trafność (relevance)</strong> — na ile profil odpowiada temu, czego szuka użytkownik. To obszar, na który masz największy wpływ: kategorie, usługi, opis, treść strony. <strong>Odległość (distance)</strong> — jak daleko firma znajduje się od miejsca wyszukiwania albo od lokalizacji wskazanej w zapytaniu. <strong>Popularność (prominence)</strong> — jak bardzo firma jest znana, w czym Google wymienia między innymi linki prowadzące do strony i liczbę opinii.
+      </p>
+      <p>
+        W tej samej dokumentacji Google zamieszcza zdanie, które warto zapamiętać przed rozmową z każdym sprzedawcą usług SEO: nie ma sposobu, żeby poprosić o lepszą pozycję lokalną ani za nią zapłacić. Wszystko, co poniżej, to praca na sygnałach, a nie na dostępie.
+      </p>
+      <h2>Zanim cokolwiek zmienisz — zmierz punkt wyjścia</h2>
+      <p>
+        Bez pomiaru nie odróżnisz efektu swojej pracy od zwykłej fluktuacji. Potrzebujesz dwóch rzeczy.
+      </p>
+      <p>
+        <strong>Siatka geograficzna</strong> — narzędzia typu Local Falcon, Whitespark GeoGrid czy BrightLocal sprawdzają Twoją pozycję na dziesiątkach punktów rozmieszczonych na mapie miasta i pokazują ją jako kolorową kratę. To jedyny sensowny sposób na zmierzenie zasięgu, bo pokazuje, gdzie kończy się Twoja widoczność. Zrób pierwszy pomiar przed zmianami i powtarzaj co miesiąc, zawsze na tych samych frazach.
+      </p>
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-6 flex justify-center">
+          <svg viewBox="0 0 340 300" width="100%" style={{maxWidth: '420px'}} role="img" aria-labelledby="siatka-tytul siatka-opis">
+            <title id="siatka-tytul">Siatka geograficzna widoczności wizytówki w Mapach Google</title>
+            <desc id="siatka-opis">Kwadratowa siatka 5 na 5 punktów pomiarowych wokół siedziby firmy. Pozycje od 1 do 3 występują tylko w bezpośrednim otoczeniu adresu, na obrzeżach siatki firma spada poza pierwszą dwudziestkę.</desc>
+            <rect x="0" y="0" width="340" height="300" fill="#ffffff"/>
+            <g fontFamily="sans-serif" fontSize="13" fontWeight="700" textAnchor="middle">
+              <circle cx="50" cy="50" r="20" fill="#f4f4f5"/><text x="50" y="55" fill="#a1a1aa">20+</text>
+              <circle cx="120" cy="50" r="20" fill="#fef3c7"/><text x="120" y="55" fill="#a16207">12</text>
+              <circle cx="190" cy="50" r="20" fill="#fef3c7"/><text x="190" y="55" fill="#a16207">9</text>
+              <circle cx="260" cy="50" r="20" fill="#fef3c7"/><text x="260" y="55" fill="#a16207">14</text>
+              <circle cx="50" cy="110" r="20" fill="#fef3c7"/><text x="50" y="115" fill="#a16207">15</text>
+              <circle cx="120" cy="110" r="20" fill="#ffedd5"/><text x="120" y="115" fill="#c2410c">6</text>
+              <circle cx="190" cy="110" r="20" fill="#ffedd5"/><text x="190" y="115" fill="#c2410c">4</text>
+              <circle cx="260" cy="110" r="20" fill="#fef3c7"/><text x="260" y="115" fill="#a16207">8</text>
+              <circle cx="50" cy="170" r="20" fill="#fef3c7"/><text x="50" y="175" fill="#a16207">11</text>
+              <circle cx="120" cy="170" r="20" fill="#FF6A00"/><text x="120" y="175" fill="#ffffff">2</text>
+              <circle cx="190" cy="170" r="20" fill="#FF6A00"/><text x="190" y="175" fill="#ffffff">1</text>
+              <circle cx="260" cy="170" r="20" fill="#ffedd5"/><text x="260" y="175" fill="#c2410c">5</text>
+              <circle cx="50" cy="230" r="20" fill="#f4f4f5"/><text x="50" y="235" fill="#a1a1aa">20+</text>
+              <circle cx="120" cy="230" r="20" fill="#fef3c7"/><text x="120" y="235" fill="#a16207">10</text>
+              <circle cx="190" cy="230" r="20" fill="#ffedd5"/><text x="190" y="235" fill="#c2410c">7</text>
+              <circle cx="260" cy="230" r="20" fill="#fef3c7"/><text x="260" y="235" fill="#a16207">13</text>
+            </g>
+            <path d="M155 152c-6.6 0-12 5.4-12 12 0 9 12 21.5 12 21.5s12-12.5 12-21.5c0-6.6-5.4-12-12-12z" fill="#18181b"/>
+            <circle cx="155" cy="164" r="4.4" fill="#ffffff"/>
+            <text x="170" y="285" fontFamily="sans-serif" fontSize="11" fill="#71717a" textAnchor="middle">Czarna pinezka — adres firmy. Liczby — pozycja w wynikach z danego punktu.</text>
+          </svg>
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">
+          <strong className="text-ink">Tak wygląda realna widoczność</strong> — jedna firma ma jednocześnie pozycję 1 i pozycję poza dwudziestką, zależnie od tego, gdzie stoi wyszukujący. Schemat poglądowy ilustrujący układ pomiaru siatką geograficzną.
+        </figcaption>
+      </figure>
+      <p>
+        <strong>Statystyki profilu</strong> — panel wyników w Google Business Profile pokazuje, ile było wyświetleń w Wyszukiwarce i w Mapach osobno, jakimi frazami ludzie trafiali na profil oraz ile było telefonów, kliknięć w stronę i próśb o trasę. To dane o działaniach, a nie o pozycji, i właśnie dlatego są ważniejsze niż ranking sam w sobie: pozycja bez telefonów niczego nie załatwia.
+      </p>
+      <p>
+        Zapisz punkt wyjścia. Bez tego za trzy miesiące będziesz zgadywać, czy cokolwiek zadziałało.
+      </p>
+      <h2>Które sygnały ważą najwięcej</h2>
+      <p>
+        Poniższa tabela to dwadzieścia najwyżej ocenionych czynników rankingowych dla Local Pack i Map z badania Whitespark 2026, w którym 47 specjalistów lokalnego SEO oceniało wagę poszczególnych sygnałów. Liczba przy czynniku to jego wynik punktowy w rankingu — im wyższy, tym większa przypisywana waga. To opinia praktyków, nie dokument Google, ale jest to najlepsze dostępne przybliżenie i wystarczające, żeby ustawić kolejność prac.
+      </p>
+      <div className="overflow-x-auto my-6 rounded-xl border border-zinc-200">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr style={{backgroundColor: '#18181b'}}>
+              <th className="text-left px-4 py-3 text-white font-semibold w-12">#</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Czynnik</th>
+              <th className="text-left px-4 py-3 text-white font-semibold w-24">Wynik</th>
+              <th className="text-left px-4 py-3 text-white font-semibold w-44">Czy masz na to wpływ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">1</td><td className="px-4 py-3 font-semibold text-ink">Kategoria główna profilu</td><td className="px-4 py-3 text-zinc-600">227</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">2</td><td className="px-4 py-3 font-semibold text-ink">Bliskość do punktu wyszukiwania</td><td className="px-4 py-3 text-zinc-600">225</td><td className="px-4 py-3 text-zinc-600">Żaden</td></tr>
+            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">3</td><td className="px-4 py-3 font-semibold text-ink">Słowa kluczowe w nazwie firmy</td><td className="px-4 py-3 text-zinc-600">223</td><td className="px-4 py-3 text-zinc-600">Ograniczony regulaminem</td></tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">4</td><td className="px-4 py-3 font-semibold text-ink">Adres fizyczny w wyszukiwanym mieście</td><td className="px-4 py-3 text-zinc-600">213</td><td className="px-4 py-3 text-zinc-600">Częściowy</td></tr>
+            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">5</td><td className="px-4 py-3 font-semibold text-ink">Firma otwarta w momencie wyszukiwania</td><td className="px-4 py-3 text-zinc-600">189</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">6</td><td className="px-4 py-3 font-semibold text-ink">Wysoka średnia ocen</td><td className="px-4 py-3 text-zinc-600">181</td><td className="px-4 py-3 text-zinc-600">Pośredni</td></tr>
+            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">7</td><td className="px-4 py-3 font-semibold text-ink">Widoczny adres na profilu</td><td className="px-4 py-3 text-zinc-600">176</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">8</td><td className="px-4 py-3 font-semibold text-ink">Kategorie dodatkowe</td><td className="px-4 py-3 text-zinc-600">173</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
+            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">9</td><td className="px-4 py-3 font-semibold text-ink">Liczba opinii natywnych Google</td><td className="px-4 py-3 text-zinc-600">170</td><td className="px-4 py-3 text-zinc-600">Pośredni</td></tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">10</td><td className="px-4 py-3 font-semibold text-ink">Poprawne umiejscowienie pinezki</td><td className="px-4 py-3 text-zinc-600">165</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
+            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">11</td><td className="px-4 py-3 font-semibold text-ink">Świeżość opinii</td><td className="px-4 py-3 text-zinc-600">164</td><td className="px-4 py-3 text-zinc-600">Pośredni</td></tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">12</td><td className="px-4 py-3 font-semibold text-ink">Bliskość do centrum obszaru wyszukiwania</td><td className="px-4 py-3 text-zinc-600">157</td><td className="px-4 py-3 text-zinc-600">Żaden</td></tr>
+            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">13</td><td className="px-4 py-3 font-semibold text-ink">Klikalność wyniku w Local Pack</td><td className="px-4 py-3 text-zinc-600">156</td><td className="px-4 py-3 text-zinc-600">Pośredni</td></tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">14</td><td className="px-4 py-3 font-semibold text-ink">Stały napływ nowych opinii</td><td className="px-4 py-3 text-zinc-600">154</td><td className="px-4 py-3 text-zinc-600">Pośredni</td></tr>
+            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">15</td><td className="px-4 py-3 font-semibold text-ink">Dane firmy na stronie zgodne z profilem</td><td className="px-4 py-3 text-zinc-600">153</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">16</td><td className="px-4 py-3 font-semibold text-ink">Kompletność profilu</td><td className="px-4 py-3 text-zinc-600">147</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
+            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">17</td><td className="px-4 py-3 font-semibold text-ink">Słowa kluczowe w tytule strony docelowej</td><td className="px-4 py-3 text-zinc-600">146</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50"><td className="px-4 py-3 text-zinc-400">18</td><td className="px-4 py-3 font-semibold text-ink">Trafność geograficzna treści</td><td className="px-4 py-3 text-zinc-600">142</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
+            <tr className="border-b border-zinc-100"><td className="px-4 py-3 text-zinc-400">19</td><td className="px-4 py-3 font-semibold text-ink">Zgłaszanie spamu konkurencji</td><td className="px-4 py-3 text-zinc-600">137</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
+            <tr><td className="px-4 py-3 text-zinc-400">20</td><td className="px-4 py-3 font-semibold text-ink">Słowa kluczowe w nagłówkach strony</td><td className="px-4 py-3 text-zinc-600">135</td><td className="px-4 py-3 text-zinc-600">Pełny</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="text-xs text-zinc-400">
+        Źródło: Whitespark, Local Search Ranking Factors 2026 — badanie wśród 47 specjalistów lokalnego SEO, publikacja 6 listopada 2025. Kolumna „Czy masz na to wpływ" jest naszą oceną redakcyjną.
+      </p>
+      <p>
+        Z tej listy płynie wniosek, który zmienia priorytety u większości firm. Trzy z pięciu najważniejszych czynników — kategoria, nazwa i godziny otwarcia — to ustawienia w panelu, które da się poprawić w kwadrans. Dwa pozostałe to bliskość, na którą nie masz wpływu. Dopiero potem zaczyna się praca długoterminowa: opinie, treść, linki. Jeśli robisz to w odwrotnej kolejności, płacisz za linki, mając źle ustawioną kategorię.
+      </p>
+      <h2>Kategoria główna — pojedynczy najważniejszy przełącznik</h2>
+      <p>
+        Kategoria główna decyduje o tym, na jaką pulę zapytań profil w ogóle wchodzi do rywalizacji. Nie jest to etykieta opisowa, tylko przypisanie do zbioru fraz. Zła kategoria oznacza, że przy najważniejszych dla Ciebie zapytaniach nie przegrywasz — po prostu nie startujesz.
+      </p>
+      <p>
+        Ustal ją na podstawie jednej frazy, która przynosi Ci pieniądze, a nie na podstawie tego, jak opisujesz firmę na wizytówce papierowej. Warsztat, który głównie wymienia opony, ma inną kategorię główną niż warsztat robiący naprawy blacharskie, mimo że oba to „warsztat samochodowy". Sprawdź też, jakie kategorie mają trzy firmy stojące dziś w Local Packu na Twoją frazę — jeśli wszystkie trzy mają tę samą, a Ty inną, masz odpowiedź.
+      </p>
+      <p>
+        Kategorie dodatkowe (czynnik 8. na liście) dokładają kolejne pule zapytań, ale nie wzmacniają głównej. Dodawaj tylko te, które opisują usługi faktycznie świadczone — nadmiar rozmywa profil i bywa powodem zawieszenia. Cały mechanizm doboru rozpisaliśmy w osobnym tekście o <a href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">kategoriach w wizytówce Google</a>.
+      </p>
+      <h2>Bliskość, adres i pinezka</h2>
+      <p>
+        Bliskość to drugi najsilniejszy czynnik i jednocześnie jedyny, którego nie zmienisz bez przeprowadzki. Warto to powiedzieć wprost, bo połowa rozczarowań efektami lokalnego SEO bierze się z niezrozumienia tej jednej rzeczy: firma z obrzeży nie będzie w top 3 w centrum, choćby zrobiła wszystko idealnie.
+      </p>
+      <p>
+        Są jednak trzy rzeczy w tym obszarze, które faktycznie kontrolujesz.
+      </p>
+      <p>
+        <strong>Umiejscowienie pinezki</strong> (czynnik 10.) — sprawdź, czy pinezka stoi dokładnie na wejściu do firmy, a nie na środku działki, na sąsiedniej ulicy albo na dachu budynku obok. Przy gęstej zabudowie to potrafi przesunąć wynik o kilka pozycji. Poprawia się to przez przeciągnięcie pinezki w edycji profilu.
+      </p>
+      <p>
+        <strong>Adres widoczny na profilu</strong> (czynnik 7.) — profile z ukrytym adresem, typowe dla firm z dojazdem, wypadają słabiej niż te z adresem widocznym. Jeśli masz lokal, do którego klient może wejść, pokaż adres. Ukrywaj go tylko wtedy, gdy Google tego wymaga, czyli przy działalności czysto mobilnej.
+      </p>
+      <p>
+        <strong>Obszar działania</strong> — ustawienie obszaru obsługi nie sprawia, że pokazujesz się w całym zaznaczonym rejonie. To informacja dla klienta, nie dźwignia rankingowa. Firmom działającym poza własną miejscowością zostaje praca na stronie: osobne podstrony lokalizacyjne, o czym piszemy w tekście o <a href="/siedziba-mala-miejscowosc-local-seo" className="text-brand font-semibold hover:underline">siedzibie w małej miejscowości</a>. Jak ten sam mechanizm wygląda na konkretnym, niewielkim rynku, rozkładamy na czynniki w tekście o <a href="/pozycjonowanie-wizytowki-google-pila" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google w Pile</a>. Ten sam mechanizm wykorzystaliśmy przy <a href="/miauseo-opinie-skup-aut" className="text-brand font-semibold hover:underline">wizytówce skupu aut</a>, gdzie obszar odbioru samochodów wykraczał daleko poza adres rejestrowy.
+      </p>
+      <h2>Nazwa firmy — czynnik, który działa i łamie regulamin</h2>
+      <p>
+        Trzeci najsilniejszy czynnik na liście to słowa kluczowe w nazwie firmy. Jednocześnie wytyczne Google dotyczące nazwy mówią jednoznacznie, że nazwa ma odzwierciedlać rzeczywistą nazwę firmy, używaną konsekwentnie na szyldzie, stronie i w dokumentach — a hasła marketingowe oraz informacje o usługach i produktach są niedozwolone. Google podaje wprost odrzucane przykłady: „TD Bank, America's Most Convenient Bank" zamiast „TD Bank" czy „Midas Auto Service Experts" zamiast „Midas".
+      </p>
+      <p>
+        Trzeba więc powiedzieć dwie rzeczy naraz, bo obie są prawdziwe. Dopisanie frazy do nazwy realnie podnosi pozycję — dlatego konkurencja to robi i dlatego ten czynnik jest tak wysoko. I jednocześnie jest to naruszenie regulaminu, które kończy się edycją nazwy przez Google, zawieszeniem profilu albo skutecznym zgłoszeniem od konkurenta, zwykle w najgorszym możliwym momencie.
+      </p>
+      <p>
+        Praktyczne rozwiązanie: jeśli fraza faktycznie występuje na szyldzie i w rejestrze — używaj pełnej, prawdziwej nazwy, łącznie z nią. „Auto-Serwis Kowalski" to nazwa, „Kowalski — Naprawa Samochodów Warszawa Najtaniej" to naruszenie. Zamiast dopisywać słowa do nazwy, zgłaszaj konkurentów, którzy to robią. To czynnik 19. na liście i jedyna zgodna z zasadami metoda wykorzystania tego mechanizmu na swoją korzyść. Podobne pułapki opisaliśmy w tekście o <a href="/wizytowka-google-popularne-oszustwa" className="text-brand font-semibold hover:underline">najpopularniejszych oszustwach wokół wizytówki</a>.
+      </p>
+      <h2>Godziny otwarcia — najbardziej niedoceniany sygnał</h2>
+      <p>
+        Czynnik „firma otwarta w momencie wyszukiwania" wskoczył w edycji 2026 na piąte miejsce. To znaczy tyle, że ta sama wizytówka ma inną pozycję o 11:00 i o 20:00. Dla firm usługowych z telefonem jako głównym kanałem to bardzo dużo.
+      </p>
+      <p>
+        Wnioski są konkretne. Godziny w profilu muszą być prawdziwe, bo rozbieżność między nimi a rzeczywistością generuje opinie w stylu „zamknięte mimo otwartych godzin", a te kosztują podwójnie. Jeśli faktycznie odbierasz telefon do 20:00, ustaw 20:00, a nie 16:00 przepisane z ulotki sprzed pięciu lat. Godziny świąteczne uzupełniaj z wyprzedzeniem — Google osobno o nie prosi, a profile bez nich w dni świąteczne wypadają gorzej.
+      </p>
+      <p>
+        Nie ustawiaj natomiast pracy całodobowej, jeśli nie odbierasz w nocy. Zysk rankingowy w godzinach, w których i tak nikt nie szuka, nie zrekompensuje strat z nieodebranych połączeń i ocen jednogwiazdkowych. Szerzej rozpisaliśmy ten temat przy <a href="/godziny-otwarcia-wizytowka-google" className="text-brand font-semibold hover:underline">godzinach otwarcia w wizytówce Google</a>.
+      </p>
+      <h2>Opinie — cztery osobne czynniki, nie jeden</h2>
+      <p>
+        Opinie występują na liście czterokrotnie i są to cztery różne rzeczy, wymagające różnych działań: średnia ocena (181), liczba opinii (170), świeżość (164) i stały napływ nowych (154). Firma ze stoma opiniami sprzed trzech lat wypada gorzej niż firma z trzydziestoma, z których pięć jest z ostatniego miesiąca.
+      </p>
+      <p>
+        To zmienia sposób pracy z opiniami. Nie chodzi o jednorazową akcję zbierania, tylko o stały, powtarzalny proces proszenia po każdej zrealizowanej usłudze. Cztery opinie miesięcznie przez rok dają lepszy efekt niż pięćdziesiąt w jednym tygodniu, a dodatkowo nagły skok wygląda dla Google podejrzanie.
+      </p>
+      <p>
+        Po stronie klienta liczby są jednoznaczne. Badanie <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">Local Consumer Review Survey 2026</a> firmy BrightLocal, przeprowadzone na próbie 1002 dorosłych konsumentów w Stanach Zjednoczonych, pokazało, że 97% czyta opinie przed wyborem lokalnej firmy, a 41% robi to zawsze — rok wcześniej było to 29%. Około 81% czyta opinie właśnie w Google. Zmieniły się też oczekiwania wobec odpowiedzi: 19% badanych oczekuje reakcji tego samego dnia, wobec 6% rok wcześniej, a 32% do dnia następnego, wobec 18%. To dane z rynku amerykańskiego, więc traktuj je jako wskazanie kierunku, nie jako polski benchmark — ale kierunek jest wyraźny.
+      </p>
+      <p>
+        Uwaga na zmianę regulaminu z 2026 roku. Google doprecyzowało zasady zbierania opinii i zabroniło wymagania od pracowników określonej liczby zebranych opinii oraz proszenia o opinie zawierające konkretną treść, w tym wskazujące pracownika z imienia. Popularne w Polsce „proszę napisać, że obsługiwał Pana Marek" jest dziś naruszeniem zasad. Techniki zgodne z regulaminem opisaliśmy w tekście o <a href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">skutecznym zdobywaniu opinii</a>, a co robić z negatywną — w artykule <a href="/negatywna-opinia-google-co-zrobic" className="text-brand font-semibold hover:underline">negatywna opinia w Google</a>.
+      </p>
+      <p>
+        Odpowiadaj na wszystkie opinie, także pozytywne. Google wymienia odpowiadanie na opinie wprost wśród zalecanych działań poprawiających pozycję lokalną, a odpowiedź to jedyne miejsce, w którym możesz naturalnie użyć nazwy usługi i miejscowości bez ryzyka.
+      </p>
+      <h2>Kompletność profilu i sekcje, które faktycznie coś robią</h2>
+      <p>
+        Kompletność profilu to czynnik 16., ale jego wartość jest wyższa, niż wskazuje pozycja, bo poszczególne sekcje działają też na trafność zapytań.
+      </p>
+      <p>
+        <strong>Usługi</strong> to najbardziej niedoceniana sekcja. Każda pozycja z listy usług, z własnym opisem, poszerza pulę zapytań, na które profil może się pokazać — bez naruszania czegokolwiek. Rozpisz je szczegółowo, tak jak nazywa je klient, a nie tak jak brzmią w cenniku. Szczegóły w tekście o <a href="/uslugi-wizytowka-google-business" className="text-brand font-semibold hover:underline">usługach w wizytówce Google</a>.
+      </p>
+      <p>
+        <strong>Opis firmy</strong> ma niewielką wagę rankingową, ale od 2026 roku ma nową funkcję: jest jednym ze źródeł, z których AI generuje odpowiedzi o Twojej firmie. Napisz go konkretnie, z nazwami usług i obszarem działania — poradnik w tekście o <a href="/opis-firmy-google-business-profile-jak-napisac" className="text-brand font-semibold hover:underline">opisie firmy w Google Business Profile</a>. <strong>Atrybuty</strong> — parking, dostępność dla wózków, płatność kartą — Google wymienia je wśród danych, które warto uzupełnić; więcej w tekście o <a href="/atrybuty-wizytowka-google" className="text-brand font-semibold hover:underline">atrybutach</a>. <strong>Produkty</strong> mają sens w handlu i przy usługach pakietowych, opisaliśmy je osobno w artykule o <a href="/produkty-wizytowka-google-business" className="text-brand font-semibold hover:underline">produktach w wizytówce</a>. Komplet pól przechodzimy po kolei w tekście o <a href="/sekcja-informacje-wizytowka-google" className="text-brand font-semibold hover:underline">sekcji informacje</a>.
+      </p>
+      <p>
+        <strong>Posty</strong> nie są na liście dwudziestu najsilniejszych czynników i nie należy oczekiwać po nich skoku pozycji. Mają natomiast wpływ na to, czy ktoś kliknie w Twój wynik, a klikalność w Local Packu to czynnik 13. Publikuj je, ale nie kosztem opinii i usług — szerzej w tekście o <a href="/posty-wizytowka-google" className="text-brand font-semibold hover:underline">postach w wizytówce</a>.
+      </p>
+      <h2>Zdjęcia</h2>
+      <p>
+        Google wymienia dodawanie zdjęć i filmów wprost wśród działań poprawiających pozycję lokalną. Niezależnie od rankingu zdjęcia decydują o tym, czy z trzech firm w Local Packu klient wybierze Twoją — a to wraca do algorytmu jako sygnał behawioralny.
+      </p>
+      <p>
+        Praktycznie: zdjęcia własne, nie ze stocku, robione telefonem w dobrym świetle. Zdjęcie zewnętrzne budynku od strony, z której klient nadjeżdża, bo służy do rozpoznania miejsca. Zdjęcia efektów pracy, nie logotypów i grafik z tekstem. Dokładaj kilka sztuk co miesiąc zamiast wrzucać sto naraz. Które typy zdjęć realnie pracują, sprawdziliśmy w tekście o <a href="/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-brand font-semibold hover:underline">zdjęciach w wizytówce Google</a>.
+      </p>
+      <h2>Sygnały behawioralne</h2>
+      <p>
+        Klikalność wyniku w Local Packu to czynnik 13., a Whitespark odnotowuje w edycji 2026 wzrost znaczenia całej grupy sygnałów behawioralnych: kliknięć, telefonów, próśb o trasę. Tego nie da się optymalizować bezpośrednio — nie ma tu przełącznika w panelu.
+      </p>
+      <p>
+        Da się jednak wpłynąć na wszystko, co decyduje o kliknięciu: ocenę i liczbę opinii widoczne przy wyniku, pierwsze zdjęcie, nazwę, dopasowanie kategorii do zapytania oraz informację, że firma jest teraz otwarta. To zamyka pętlę i tłumaczy, dlaczego wcześniejsze punkty z tej listy pracują podwójnie — najpierw jako sygnał rankingowy, potem jako powód kliknięcia.
+      </p>
+      <h2>Strona internetowa jako zaplecze profilu</h2>
+      <p>
+        Cztery czynniki z pierwszej dwudziestki dotyczą strony, a nie profilu: zgodność danych firmowych ze stroną (153), słowa kluczowe w tytule strony docelowej (146), trafność geograficzna treści (142) i słowa kluczowe w nagłówkach (135).
+      </p>
+      <p>
+        Zacznij od <strong>spójności NAP</strong>, czyli nazwy, adresu i telefonu. Muszą być identyczne na stronie i w profilu — ta sama forma skrótu ulicy, ten sam format numeru telefonu. Rozjeżdżające się warianty osłabiają zaufanie do wizytówki, o czym pisaliśmy szerzej przy <a href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">spójności NAP</a>.
+      </p>
+      <p>
+        Dalej: profil ma prowadzić do konkretnej podstrony usługi z nazwą miejscowości w tytule, a nie do strony głównej. Dodaj dane strukturalne LocalBusiness, co pokazujemy krok po kroku w tekście o <a href="/jak-dodac-local-schema-do-strony" className="text-brand font-semibold hover:underline">wdrożeniu Local Schema</a>. Całość podejścia do strony wspierającej wizytówkę opisaliśmy w tekście o <a href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">lokalnym SEO dla firm</a>.
+      </p>
+      <h2>Linki i cytowania</h2>
+      <p>
+        Google wymienia linki prowadzące do strony jako jeden ze składników popularności. Whitespark odnotowuje jednocześnie, że znaczenie cytowań w katalogach spada kolejny rok z rzędu, tracąc w edycji 2026 około pół punktu procentowego — ale pozostają one w pierwszej piątce czynników wpływających na widoczność w wyszukiwarkach opartych na AI.
+      </p>
+      <p>
+        Praktyczny wniosek jest taki, że masowe wpisy do setek katalogów nie mają dziś sensu jako działanie rankingowe, natomiast obecność w kilkunastu wiarygodnych, branżowych i lokalnych źródłach, ze spójnym NAP-em, ma sens podwójny — dla Google i dla modeli AI. Techniki linkowania do samego profilu opisaliśmy w tekście o <a href="/linki-do-wizytowki-google" className="text-brand font-semibold hover:underline">linkach do wizytówki Google</a>.
+      </p>
+      <h2>Co zmieniło się w 2026 — koniec sekcji Pytania i odpowiedzi</h2>
+      <p>
+        Google wycofuje z Map klasyczną sekcję Pytania i odpowiedzi. W jej miejsce pojawił się przycisk „Ask", który generuje odpowiedzi z użyciem AI, korzystając z profilu firmy, jej strony i źródeł publicznych. Równolegle Google udostępniło możliwość połączenia profilu firmy z aplikacją Gemini, która uzyskuje wtedy dostęp między innymi do opinii, pytań klientów i danych o wynikach.
+      </p>
+      <p>
+        Dla widoczności oznacza to jedno: pola, które dotąd traktowano jako kosmetykę — opis firmy, lista usług z opisami, treść strony docelowej — stały się materiałem źródłowym dla odpowiedzi, które klient zobaczy zamiast Twojego profilu. Jeśli w opisie nie ma informacji o obszarze działania, model weźmie ją skądinąd albo nie poda jej wcale. Kontekst i historię sekcji Q&A zostawiliśmy w tekście o <a href="/pytania-odpowiedzi-wizytowka-google" className="text-brand font-semibold hover:underline">pytaniach i odpowiedziach w wizytówce</a>.
+      </p>
+      <h2>Czego nie robić</h2>
+      <p>
+        <strong>Nie dopisuj fraz do nazwy firmy</strong> — działa, dopóki nie zostanie zgłoszone, a wtedy tracisz profil w środku sezonu. <strong>Nie kupuj opinii</strong> — filtry Google wykrywają nagłe skoki, a skutkiem bywa usunięcie recenzji razem z tymi prawdziwymi. <strong>Nie zakładaj drugiego profilu pod tym samym adresem</strong>, żeby zająć więcej miejsca w wynikach — duplikaty są łączone lub zawieszane; sposób na wiele lokalizacji opisaliśmy w tekście o <a href="/wiele-lokalizacji-google-business-profile" className="text-brand font-semibold hover:underline">wielu lokalizacjach</a>. <strong>Nie rejestruj adresu wirtualnego biura</strong> w mieście, w którym chcesz się pokazywać — to jedno z najczęściej zgłaszanych naruszeń. <strong>Nie oceniaj efektów po pozycji z własnego telefonu</strong> — widzisz wynik spersonalizowany, spod swojej lokalizacji i historii; do tego służy siatka geograficzna.
+      </p>
+      <h2>Kolejność prac</h2>
+      <p>
+        <strong>Tydzień pierwszy</strong> — pomiar startowy siatką, weryfikacja kategorii głównej i dodatkowych, sprawdzenie pinezki, uzupełnienie prawdziwych godzin otwarcia wraz ze świątecznymi, ujawnienie adresu jeśli klient może przyjść. To jest ta część, która daje najwięcej za najmniej pracy.
+      </p>
+      <p>
+        <strong>Miesiąc pierwszy</strong> — pełna lista usług z opisami, opis firmy napisany pod realne frazy i pod odpowiedzi AI, komplet atrybutów, kilkanaście własnych zdjęć, uporządkowanie NAP na stronie, podpięcie profilu do konkretnej podstrony usługowej zamiast strony głównej.
+      </p>
+      <p>
+        <strong>Praca ciągła</strong> — stały proces zbierania opinii po każdej usłudze, odpowiedzi na wszystkie opinie w ciągu doby, kilka nowych zdjęć miesięcznie, posty, zgłaszanie naruszeń u konkurencji, powtarzany co miesiąc pomiar siatką na tych samych frazach.
+      </p>
+      <h2>Podsumowanie</h2>
+      <p>
+        Widoczność w mapach poprawia się w dwóch ruchach o zupełnie różnym charakterze. Pierwszy to godzina pracy w panelu: kategoria, pinezka, godziny, adres, usługi — cztery z pięciu najsilniejszych czynników, na które masz pełny wpływ, i miejsce, w którym najczęściej leży problem. Drugi to praca ciągła na opiniach, treści i sygnałach behawioralnych, gdzie efekty przychodzą miesiącami i nie da się ich przyspieszyć zakupem.
+      </p>
+      <p>
+        Czego nie da się obejść, to bliskość. Jeśli po uporządkowaniu wszystkiego powyżej nadal nie ma Cię w centrum miasta, to nie jest błąd wdrożenia — to geografia, a odpowiedzią na nią jest strona z podstronami lokalizacyjnymi, a nie kolejna próba obejścia algorytmu nazwą firmy. Pełną listę sygnałów z oceną ważności zebraliśmy w tekście o <a href="/czynniki-rankingowe-wizytowki-google-2026" className="text-brand font-semibold hover:underline">czynnikach rankingowych wizytówki Google</a>, a całość procesu — w przewodniku o <a href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniu wizytówki Google</a>.
+      </p>
+      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <p className="text-sm text-zinc-500 leading-relaxed">
+          Google Business Profile Help — poprawa pozycji firmy w Google: trafność, odległość, popularność.{" "}
+          <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/7091 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Google Business Profile Help — wytyczne dotyczące nazwy firmy.{" "}
+          <a href="https://support.google.com/business/answer/3038177" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com/business/answer/3038177 →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Whitespark — Local Search Ranking Factors 2026. Badanie wśród 47 specjalistów lokalnego SEO, publikacja 6 listopada 2025.{" "}
+          <a href="https://whitespark.ca/local-search-ranking-factors/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">whitespark.ca/local-search-ranking-factors →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          BrightLocal — Local Consumer Review Survey 2026. Próba 1002 dorosłych konsumentów w USA.{" "}
+          <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com/research/local-consumer-review-survey →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Search Engine Roundtable — Google zastępuje sekcję Pytania i odpowiedzi w Mapach przyciskiem „Ask".{" "}
+          <a href="https://www.seroundtable.com/google-maps-qa-feature-ask-40594.html" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">seroundtable.com/google-maps-qa-feature-ask-40594.html →</a>
+        </p>
+        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
+          Search Engine Roundtable — zmiana zasad Google dotyczących pozyskiwania opinii i wskazywania pracowników.{" "}
+          <a href="https://www.seroundtable.com/google-reviews-policy-staff-mentions-solicitations-41175.html" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">seroundtable.com/google-reviews-policy-staff-mentions-solicitations-41175.html →</a>
+        </p>
+      </div>
+  ),
+  /* ─────────────────────────────────────────────────────────────────────────
+     OPINIE / CASE STUDY: skup aut — wizytówka Google, 77 połączeń w lipcu 2026
+
     </>
   ),
 
@@ -25997,209 +26019,6 @@ define( 'DB_HOST', 'localhost' );</code></pre>
 
   /* ─────────────────────────────────────────────────────────────────────────
      OSZUSTWO: Telefon że wizytówka wygaśnie
-  ───────────────────────────────────────────────────────────────────────── */
-  "telefon-wizytowka-google-wygasnie-oszustwo": (
-    <>
-      <h2>Wizytówka Google nie wygasa — to fakt, nie opinia</h2>
-      <p>
-        Google Business Profile jest usługą bezpłatną i nie ma żadnego okresu ważności. Wizytówka nie wygasa po roku, dwóch ani nigdy — dopóki Google nie zmieni swoich zasad lub właściciel sam jej nie usunie. Telefon z informacją o zbliżającym się wygaśnięciu profilu jest oszustwem, niezależnie od tego, jak profesjonalnie brzmi rozmówca i jak pilnie prosi o płatność.
-      </p>
-      <p>
-        To nie jest nowy przekręt. Działa od ponad dekady, ewoluuje i wciąż zbiera ofiary — bo jest skuteczny. Właściciele firm są zajęci, zagrożenie brzmi wiarygodnie, a kwoty żądane przez oszustów są na tyle małe, że wielu woli zapłacić niż ryzykować utratę widoczności w Google. Poniżej wyjaśniam dokładnie, jak ten schemat działa i co zrobić, gdy Cię dotknął.
-      </p>
-
-      <h2>Jak brzmi ten telefon — dokładny scenariusz</h2>
-      <p>
-        Oszuści telefoniczni w tym schemacie posługują się skryptem, który jest niemal identyczny u setek firm działających na terenie całej Polski. Znajomość scenariusza rozmowy to najszybszy sposób, żeby rozpoznać przekręt zanim zdążysz się zaangażować emocjonalnie.
-      </p>
-      <p>Typowy przebieg rozmowy wygląda tak:</p>
-      <ul>
-        <li><strong>Wstęp:</strong> „Dzień dobry, dzwonię w imieniu partnera Google / działu wsparcia Google / centrum obsługi klienta Google." Rozmówca mówi pewnie, często z lekkim akcentem lub przez firmową centralę, która ma dodać wiarygodności.</li>
-        <li><strong>Komunikat o zagrożeniu:</strong> „Widzimy, że Pana/Pani wizytówka Google wygaśnie za [3–14] dni. Jeśli nie odnowi Pan/Pani abonamentu, profil zostanie usunięty z wyników wyszukiwania i map."</li>
-        <li><strong>Presja czasu:</strong> „Mamy dla Pana/Pani jeszcze aktywną ofertę odnowienia, ale ważna jest tylko do dziś / do końca tygodnia."</li>
-        <li><strong>Kwota:</strong> Zazwyczaj między 150 a 600 zł — wystarczająco mało, żeby nie wzbudzić podejrzeń, wystarczająco dużo, żeby zarobić.</li>
-        <li><strong>Dane do płatności:</strong> Przelew na konto osoby fizycznej lub firmy z enigmatyczną nazwą, szybki przelew BLIK albo link do płatności przez zewnętrzny serwis.</li>
-      </ul>
-      <p>
-        Jeśli zaczniesz pytać o szczegóły — numer klienta, potwierdzenie od Google, fakturę — rozmówca stanie się coraz bardziej natrętny lub po prostu rozłączy się. Prawdziwy pracownik Google tak się nie zachowuje. Zresztą — Google nie prowadzi sprzedaży telefonicznej usług GBP w Polsce.
-      </p>
-
-      <h2>Dlaczego ten przekręt działa tak skutecznie</h2>
-      <p>
-        Schemat „wygasającej wizytówki" jest efektywny, bo łączy trzy elementy psychologiczne: autorytet (Google to wielka firma, której się ufa), pilność (za kilka dni profil zniknie) i niską barierę wejścia (relatywnie mała kwota). Właściciele firm, którzy zainwestowali czas w budowanie wizytówki i zdobywanie opinii, naturalnie boją się jej utraty.
-      </p>
-      <p>
-        Dodatkowym czynnikiem jest to, że Google rzeczywiście wysyła e-maile z przypomnieniami o aktualizacji danych, co oswaja z myślą, że „coś od Google" może wymagać działania. Oszuści celowo naśladują styl komunikacji korporacyjnej — by zamazać granicę między legalnym powiadomieniem a przekrętem.
-      </p>
-
-      <h2>Co konkretnie Google nigdy nie robi</h2>
-      <p>
-        Google nie kontaktuje się z właścicielami firm telefonicznie w celu pobierania opłat za wizytówkę. Nie ma takiej usługi, takiego działu i takiego numeru telefonu. Poniżej lista rzeczy, których Google nie robi — a które są stałymi elementami tego oszustwa.
-      </p>
-      <ul>
-        <li><strong>Google nie dzwoni, żeby przypomnieć o „odnowieniu" GBP</strong> — bo nie ma czego odnawiać. Profil nie ma abonamentu ani okresu ważności.</li>
-        <li><strong>Google nie wysyła faktur za prowadzenie wizytówki</strong> — GBP jest bezpłatny. Faktury od Google mogą dotyczyć wyłącznie płatnych usług: Google Ads, Google Workspace, Google Cloud.</li>
-        <li><strong>Google nie grozi usunięciem profilu za brak płatności</strong> — profil może zostać zawieszony za naruszenie zasad (np. fałszywe dane, opinie), ale nie za brak opłaty, bo opłat nie ma.</li>
-        <li><strong>Google nie prosi o płatność BLIK-iem, przelewem na konto osoby fizycznej ani przez WhatsApp</strong>.</li>
-        <li><strong>Google nie oferuje „specjalnych pakietów odnowienia" przez telefon</strong> — wszelkie płatne produkty Google dostępne są wyłącznie przez oficjalne panele (ads.google.com, workspace.google.com).</li>
-      </ul>
-
-      <h2>Już zapłaciłem — co teraz?</h2>
-      <p>
-        Jeśli przelałeś pieniądze zanim zorientowałeś się, że to oszustwo, działaj szybko — im szybciej, tym większe szanse na odzyskanie środków. Nie ma gwarancji powodzenia, ale cztery kroki poniżej zwiększają prawdopodobieństwo.
-      </p>
-      <ol>
-        <li>
-          <strong>Zadzwoń do banku natychmiast</strong> — poproś o blokadę przelewu lub uruchomienie procedury RECALL. Banki mają możliwość cofnięcia transakcji, jeśli środki jeszcze nie opuściły rachunku docelowego. Każda minuta ma znaczenie.
-        </li>
-        <li>
-          <strong>Zgłoś oszustwo na Policję</strong> — złóż zawiadomienie o podejrzeniu popełnienia przestępstwa (art. 286 Kodeksu karnego — oszustwo). Możesz to zrobić online przez platformę ePUAP lub osobiście na komisariacie. Zachowaj wszelkie dowody: numer telefonu, nagranie rozmowy, potwierdzenie przelewu, korespondencję.
-        </li>
-        <li>
-          <strong>Zgłoś incydent do CERT Polska</strong> — pod adresem <strong>incydent.cert.pl</strong>. CERT Polska monitoruje tego typu schematy i może przyczynić się do zablokowania numerów używanych przez oszustów.
-        </li>
-        <li>
-          <strong>Zgłoś do UOKiK</strong> — jeśli firma, która dzwoniła, działa legalnie pod polskim adresem i wystawiała faktury za fikcyjne usługi, Urząd Ochrony Konkurencji i Konsumentów może wszcząć postępowanie.
-        </li>
-      </ol>
-      <p>
-        Nie wstydź się zgłaszać. Oszuści liczą na to, że ofiary zamilczą z wstydu. Każde zgłoszenie pomaga w identyfikacji sprawców i chroni kolejne osoby.
-      </p>
-
-      <h2>Jak rozpoznać inne warianty tego przekrętu</h2>
-      <p>
-        Schemat „wygasającej wizytówki" ma kilka mutacji, które krążą w Polsce od lat. Wspólny mianownik to zawsze ta sama logika: podszywanie się pod autorytet (Google, urząd, operator), tworzenie fikcyjnego zagrożenia i żądanie płatności. Znaj ich wszystkie, żeby nie dać się zaskoczyć w innej formie.
-      </p>
-      <ul>
-        <li><strong>Faktura za „opłatę administracyjną"</strong> — przychodzi pocztą lub e-mailem, wygląda jak oficjalny dokument Google. Piszemy o tym osobno w artykule{" "}
-          <Link href="/oplata-administracyjna-wizytowka-google">opłata administracyjna za wizytówkę Google — to oszustwo</Link>.
-        </li>
-        <li><strong>SMS o „konieczności aktualizacji danych"</strong> — z linkiem do fałszywego panelu logowania, który kradnie dane dostępowe do konta Google.</li>
-        <li><strong>E-mail o „naruszeniu zasad" wymagający natychmiastowej opłaty</strong> — Google wysyła powiadomienia o naruszeniach, ale nigdy nie żąda opłaty w celu ich rozwiązania.</li>
-        <li><strong>Telefon od „firmy SEO" oferującej pozycjonowanie wizytówki za drobną opłatę z góry</strong> — część takich firm jest legalna, część nie. Zasada jest prosta: prawdziwa agencja SEO nigdy nie żąda przedpłaty przez telefon bez umowy.</li>
-      </ul>
-      <p>
-        Przegląd najpopularniejszych przekrętów związanych z GBP znajdziesz w artykule{" "}
-        <Link href="/wizytowka-google-popularne-oszustwa">wizytówka Google — najpopularniejsze oszustwa</Link>.
-      </p>
-
-      <h2>Co powiedzieć, gdy znów zadzwonią</h2>
-      <p>
-        Najskuteczniejsza odpowiedź jest krótka. Nie wdawaj się w dyskusję, nie podawaj żadnych danych, nie pytaj o szczegóły oferty — bo każda odpowiedź przedłuża rozmowę i daje oszustowi kolejną szansę na wywieranie presji.
-      </p>
-      <p>
-        Wystarczy jedno zdanie: <strong>„Google Business Profile jest bezpłatny i nie wygasa. Rozłączam się."</strong>
-      </p>
-      <p>
-        Możesz też dodać numer do blokady w telefonie. Wiele numerów używanych w tym schemacie jest już zgłoszonych w bazie <strong>KtoZadzwonil.pl</strong> — warto tam sprawdzić, zanim oddzwonisz na nieznany numer.
-      </p>
-
-      <h2>Jak sprawdzić prawdziwy stan swojej wizytówki Google</h2>
-      <p>
-        Jedynym wiarygodnym miejscem do sprawdzenia stanu wizytówki Google jest Twój własny panel — dostępny po zalogowaniu na konto Google powiązane z profilem. Jeśli profil jest aktywny, widoczny i nie ma żadnych alertów w panelu, wizytówka działa prawidłowo.
-      </p>
-      <p>
-        Wejdź na <strong>business.google.com</strong> lub wpisz w Google nazwę swojej firmy będąc zalogowanym — zobaczysz kafelek z przyciskami zarządzania. Jeśli profil wymaga uwagi, Google pokaże ostrzeżenie bezpośrednio tam — nie przez telefon od nieznanej osoby.
-      </p>
-      <p>
-        Jeśli rzeczywiście masz problem z dostępem do wizytówki, przyczyny są zupełnie inne niż brak opłaty. Pomaga w takich sytuacjach poradnik{" "}
-        <Link href="/jak-odzyskac-dostep-do-wizytowki-google">jak odzyskać dostęp do wizytówki Google</Link>.
-      </p>
-
-      <h2>FAQ — często zadawane pytania</h2>
-
-      <h3>Czy wizytówka Google naprawdę wygasa?</h3>
-      <p>
-        Nie. Google Business Profile jest bezpłatny i nie ma żadnego okresu ważności ani abonamentu. Wizytówka może zostać zawieszona przez Google wyłącznie za naruszenie zasad użytkowania (np. fałszywe dane, nieautentyczne opinie) — nigdy za brak opłaty, bo opłat nie ma.
-      </p>
-
-      <h3>Czy Google dzwoni do firm w sprawie wizytówki?</h3>
-      <p>
-        Google nie prowadzi sprzedaży telefonicznej usług Google Business Profile w Polsce. Jeśli ktoś dzwoni jako „przedstawiciel Google" z informacją o wygasaniu profilu lub konieczności opłaty — to nie jest pracownik Google. To oszust.
-      </p>
-
-      <h3>Zapłaciłem. Czy odzyskam pieniądze?</h3>
-      <p>
-        Szanse zależą od szybkości reakcji. Zadzwoń do banku natychmiast po zorientowaniu się — możliwa jest blokada przelewu. Złóż też zawiadomienie na Policję i zgłoszenie do CERT Polska (incydent.cert.pl). Im więcej osób zgłasza ten sam numer, tym szybciej można zablokować działalność oszustów.
-      </p>
-
-      <h3>Jak sprawdzić, czy numer, który zadzwonił, jest znany jako oszukańczy?</h3>
-      <p>
-        Wpisz numer w wyszukiwarce lub sprawdź na stronie <strong>KtoZadzwonil.pl</strong> — użytkownicy zgłaszają tam numery używane przez telemarketerów i oszustów. Numery używane w schemacie „wygasającej wizytówki" pojawiają się tam regularnie z opisami ostrzegającymi innych.
-      </p>
-
-      <h3>Firma wystawiła mi fakturę za „utrzymanie wizytówki". Czy muszę ją opłacić?</h3>
-      <p>
-        Nie — jeśli nie podpisałeś żadnej umowy z tą firmą. Faktura bez umowy nie jest prawnie wiążącym dokumentem. Skonsultuj się z prawnikiem lub zgłoś sprawę do UOKiK, jeśli firma nalega na płatność lub grozi konsekwencjami prawnymi.
-      </p>
-
-      <div className="not-prose mt-8 border border-border rounded-2xl p-6 bg-surface">
-        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Powiązane artykuły</p>
-        <ul className="space-y-2">
-          <li><Link href="/wizytowka-google-nie-wygasa-oszustwo" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czy wizytówka Google wygasa? Nie — to oszustwo działające od lat</Link></li>
-          <li><Link href="/oplata-administracyjna-wizytowka-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Opłata administracyjna za wizytówkę Google – to oszustwo</Link></li>
-          <li><Link href="/wizytowka-google-popularne-oszustwa" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Wizytówka Google – najpopularniejsze oszustwa</Link></li>
-          <li><Link href="/jak-odzyskac-dostep-do-wizytowki-google" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Jak odzyskać dostęp do wizytówki Google?</Link></li>
-          <li><Link href="/czy-wizytowka-google-jest-platna" className="text-sm font-semibold text-ink hover:text-brand transition-colors">Czy wizytówka Google jest płatna?</Link></li>
-        </ul>
-      </div>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Czy wizytówka Google naprawdę wygasa?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Nie. Google Business Profile jest bezpłatny i nie ma żadnego okresu ważności ani abonamentu. Wizytówka może zostać zawieszona przez Google wyłącznie za naruszenie zasad użytkowania — nigdy za brak opłaty, bo opłat nie ma.",
-                },
-              },
-              {
-                "@type": "Question",
-                "name": "Czy Google dzwoni do firm w sprawie wizytówki Google Business Profile?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Google nie prowadzi sprzedaży telefonicznej usług Google Business Profile w Polsce. Jeśli ktoś dzwoni jako 'przedstawiciel Google' z informacją o wygasaniu profilu lub konieczności opłaty — to oszust, nie pracownik Google.",
-                },
-              },
-              {
-                "@type": "Question",
-                "name": "Co zrobić jeśli zapłaciłem za rzekome odnowienie wizytówki Google?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Zadzwoń do banku natychmiast — możliwa jest blokada przelewu. Złóż zawiadomienie na Policję i zgłoszenie do CERT Polska pod adresem incydent.cert.pl. Im szybciej działasz, tym większe szanse na odzyskanie środków.",
-                },
-              },
-              {
-                "@type": "Question",
-                "name": "Firma wystawiła mi fakturę za utrzymanie wizytówki Google. Czy muszę ją opłacić?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Nie — jeśli nie podpisałeś żadnej umowy z tą firmą. Faktura bez umowy nie jest prawnie wiążącym dokumentem. Skonsultuj się z prawnikiem lub zgłoś sprawę do UOKiK.",
-                },
-              },
-              {
-                "@type": "Question",
-                "name": "Jak sprawdzić prawdziwy stan swojej wizytówki Google?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Wejdź na business.google.com lub wpisz w Google nazwę swojej firmy będąc zalogowanym. Jeśli profil jest aktywny i nie ma alertów w panelu — wizytówka działa prawidłowo. Google nigdy nie informuje o problemach przez telefon od zewnętrznej firmy.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-    </>
-  ),
-
-  /* ─────────────────────────────────────────────────────────────────────────
-     PORADNIK: Prawa menedżerskie do wizytówki Google
   ───────────────────────────────────────────────────────────────────────── */
   "jak-nadac-prawa-menedzerskie-wizytowka-google": (
     <>
@@ -26708,6 +26527,106 @@ define( 'DB_HOST', 'localhost' );</code></pre>
           }),
         }}
       />
+
+      {/* ── wchłonięte z /pozycjonowanie-wizytowki-google-hotel (konsolidacja kanibalizacji) — do scalenia redakcyjnego ── */}
+      <h2>Dlaczego GBP jest kluczowy dla każdego hotelu?</h2>
+      <p>
+        Podróżni szukający hotelu w danym mieście w ponad 60% przypadków zaczynają od wyszukiwarki
+        Google, a nie bezpośrednio od Bookinga czy TripAdvisora. Profil Google Business Profile
+        hotelu pojawia się zanim użytkownik dotrze do jakiejkolwiek strony rezerwacyjnej — razem
+        ze zdjęciami, oceną, ceną za noc i przyciskiem „Sprawdź dostępność".
+      </p>
+      <p>
+        Co więcej, Google Hotels (panel wyszukiwania hoteli) zasilany jest właśnie danymi z GBP.
+        Hotele z niekompletnym lub słabo zoptymalizowanym profilem wypadają z tego widoku
+        na rzecz konkurencji, która poświęciła czas na konfigurację.
+      </p>
+      <h2>Kategorie i atrybuty — branżowa specyfika hoteli</h2>
+      <p>
+        W kategorii głównej wybierz tę, która najdokładniej opisuje Twój obiekt: „Hotel",
+        „Hotel butikowy", „Aparthotel", „Pensjonat", „Hostel" itp. Następnie dodaj kategorie
+        dodatkowe: „Restauracja", „Bar", „Spa", „Sala konferencyjna" — jeśli te usługi
+        faktycznie oferujesz.
+      </p>
+      <p>
+        Atrybuty to goldmine dla hoteli — Google oferuje dla tej branży kilkadziesiąt opcji,
+        które wpływają na filtrowanie wyników przez użytkowników. Koniecznie uzupełnij:
+      </p>
+      <ul>
+        <li>Dostępność: winda, podjazd dla wózków, pokoje przystosowane dla niepełnosprawnych</li>
+        <li>Udogodnienia: basen, sauna, siłownia, parking (płatny/bezpłatny), WiFi</li>
+        <li>Zwierzęta: czy akceptujesz psy/koty</li>
+        <li>Obsługa: recepcja 24h, concierge, transfer z lotniska</li>
+        <li>Wyżywienie: śniadanie w cenie, restauracja na miejscu, minibar</li>
+        <li>Lokalizacja: blisko centrum, przy morzu, blisko lotniska (gdzie to prawda)</li>
+      </ul>
+      <h2>Zdjęcia — standard dla hoteli jest wyższy</h2>
+      <p>
+        W branży hotelarskiej zdjęcia mają znacznie większy wpływ na decyzje klientów niż
+        w jakiejkolwiek innej kategorii. Gość chce zobaczyć pokój zanim go zarezerwuje.
+        Minimum dla hotelu to:
+      </p>
+      <ul>
+        <li><strong>Lobby i recepcja</strong> — pierwsze wrażenie po wejściu</li>
+        <li><strong>Każdy typ pokoju</strong> — standard, superior, suite: łóżko, łazienka, widok</li>
+        <li><strong>Restauracja i bar</strong> — jedzenie w hotelu to często czynnik decyzyjny</li>
+        <li><strong>Basen, spa, siłownia</strong> — jeśli masz, to kluczowe zdjęcia</li>
+        <li><strong>Elewacja i otoczenie</strong> — drogowa widoczność i wejście główne</li>
+        <li><strong>Widok z okna</strong> — dla hoteli z atrakcyjną lokalizacją to czynnik premium</li>
+      </ul>
+      <p>
+        Minimalny standard fotografii: naturalne oświetlenie dzienne, poziome kadry (nie pionowe
+        smartfonowe), rozdzielczość minimum 1920×1080 px. Warto inwestować w profesjonalnego
+        fotografa wnętrz — różnica w jakości jest widoczna i przekłada się na rezerwacje.
+      </p>
+      <h2>Integracja z systemami rezerwacji</h2>
+      <p>
+        Google Business Profile dla hoteli pozwala na bezpośrednią integrację z systemami OTA
+        (Online Travel Agencies) i silnikami rezerwacji. Jeśli Twój hotel korzysta z Bookinga,
+        Expedia, HRS lub własnego silnika rezerwacji (np. Profitroom, Beds24), możesz wyświetlać
+        aktualne ceny i dostępność bezpośrednio w wynikach Google.
+      </p>
+      <p>
+        To tzw. <strong>Google Hotel Ads</strong> — płatna opcja wyświetlania cen w panelu Google
+        Hotels, ale wdrożenie jej wymaga integracji przez partnera. Bezpłatna alternatywa to
+        „Free Booking Links" — link do rezerwacji widoczny w profilu bez kosztów CPC.
+      </p>
+      <h2>Opinie — kluczowe dla hoteli bardziej niż dla kogokolwiek</h2>
+      <p>
+        92% podróżnych czyta opinie przed rezerwacją hotelu. Średnia ocena ma bezpośredni wpływ
+        na widoczność w Google Hotels — algorytm faworyzuje hotele z oceną powyżej 4,2 i
+        regularnie napływającymi recenzjami.
+      </p>
+      <p>
+        Strategia dla hoteli: wyślij prośbę o opinię przez PMS (Property Management System)
+        automatycznie po wymeldowaniu. Email powinien być wysłany 24–48h po wyjeździe gościa,
+        kiedy emocje są jeszcze świeże. <Link href="/opinie-google-jak-zdobywac-skutecznie">Więcej o zbieraniu opinii bez nachalnego proszenia.</Link>
+      </p>
+      <p>
+        Odpowiadaj na każdą opinię — zarówno pozytywną, jak i negatywną. W odpowiedzi na
+        negatywną: nie kłóć się, przeproś za złe doświadczenie, zaproponuj kontakt bezpośredni.
+        Potencjalni goście czytają odpowiedzi tak samo uważnie jak same recenzje.
+      </p>
+      <h2>Posty Google dla hoteli — jak je używać?</h2>
+      <p>
+        Używaj postów do promowania: pakietów sezonowych, ofert last minute, wydarzeń (wesela,
+        konferencje, Sylwester), a także do informowania o tymczasowych zamknięciach czy remontach.
+        Posty z wyraźnym CTA i zdjęciem generują kliknięcia bezpośrednio do systemu rezerwacji.
+      </p>
+      <h2>Podsumowanie</h2>
+      <p>
+        Hotel z kompletnym, aktywnym profilem GBP jest widoczny we wszystkich kluczowych punktach
+        styku z potencjalnym gościem: wyszukiwarka, Maps, Google Hotels. To bezpłatne narzędzie,
+        które może zmniejszyć zależność od pośredników pobierających prowizje.
+      </p>
+      <ul>
+        <li><Link href="/pozycjonowanie-wizytowki-google">Jak pozycjonować wizytówkę Google w 2026 roku — pełny przewodnik</Link></li>
+        <li><Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja">Jakie zdjęcia w wizytówce Google naprawdę pomagają?</Link></li>
+      </ul>
+  ),
+  /* ─────────────────────────────────────────────────────────────────────────
+     Jak usunąć negatywne opinie z Google?
+
     </>
   ),
 

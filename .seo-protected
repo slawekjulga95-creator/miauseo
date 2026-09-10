@@ -28,3 +28,14 @@
 # --- WERYFIKACJA ---
 # Hash bazowy bloków: docs/seo/protected-baseline.json
 # Sprawdzenie: node scripts/seo/protected-hash.mjs  (porównaj z baseline)
+
+# --- UDOKUMENTOWANY WYJĄTEK (2026-09-10, Etap 3) ---
+# /miauseo-opinie-skup-aut: przepisany JEDEN atrybut href w treści.
+#   przed: <a href="/jak-pozycjonowac-wizytowke-google-2026" …>
+#   po:    <a href="/pozycjonowanie-wizytowki-google" …>
+# Powód: strona docelowa została wchłonięta i jej URL zwraca 308. Bez tej
+# zmiany strona chroniona linkowałaby do przekierowania, czego zakazuje
+# reguła 6 z Etapu 6. Zmiana nie dotyka slugu, tytułu, H1, treści widocznej
+# dla czytelnika ani daty — wyłącznie celu odnośnika, i to na URL o mocniejszym
+# profilu linkowym. Anchor text bez zmian.
+# Baseline zaktualizowany po tej zmianie.
