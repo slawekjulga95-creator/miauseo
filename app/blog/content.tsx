@@ -4,6 +4,306 @@ import EncjaGBP from "@/components/seo/EncjaGBP";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     Wizytówka: Firma remontowa a wizytówka Google. Jak może pomóc
+  ───────────────────────────────────────────────────────────────────────── */
+  "firma-remontowa-wizytowka-google": (
+    <>
+      {/* Spis treści */}
+      <div className="not-prose mt-2 mb-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Spis treści</p>
+        <ol className="space-y-1.5 text-sm">
+          <li><a href="#droga-klienta" className="font-semibold text-ink hover:text-brand transition-colors">Jak wygląda droga klienta od zepsutej kabiny do telefonu</a></li>
+          <li><a href="#telefon-vs-formularz" className="font-semibold text-ink hover:text-brand transition-colors">Dlaczego telefon jest lepszym leadem niż formularz</a></li>
+          <li><a href="#portale" className="font-semibold text-ink hover:text-brand transition-colors">Portal ogłoszeniowy sprzedaje ten sam kontakt kilku firmom</a></li>
+          <li><a href="#ile-telefonow" className="font-semibold text-ink hover:text-brand transition-colors">Ile połączeń realnie generuje wizytówka</a></li>
+          <li><a href="#lazienka-zaufanie" className="font-semibold text-ink hover:text-brand transition-colors">Łazienka to zakup nieodwracalny, więc liczy się dowód</a></li>
+          <li><a href="#co-decyduje" className="font-semibold text-ink hover:text-brand transition-colors">Co w profilu decyduje, że telefon zadzwoni u Ciebie</a></li>
+          <li><a href="#czego-nie-zrobi" className="font-semibold text-ink hover:text-brand transition-colors">Czego wizytówka nie zrobi</a></li>
+          <li><a href="#od-czego-zaczac" className="font-semibold text-ink hover:text-brand transition-colors">Od czego zacząć, jeśli profil już istnieje</a></li>
+        </ol>
+      </div>
+
+      <p>
+        Wieczór, kobieta po czterdziestce siedzi w salonie z telefonem w ręku i po raz setny myśli o łazience.
+        Płytki pamiętają poprzedniego właściciela, silikon przy brodziku czernieje mimo szorowania, a kabina
+        przecieka na tyle, że pod panelami w korytarzu zaczyna coś pracować. Decyzja zapada gdzieś między jednym
+        a drugim odcinkiem serialu. Kobieta wpisuje w wyszukiwarkę „remont łazienki" i nazwę swojego miasta.
+      </p>
+      <p>
+        To, co dzieje się przez kolejne trzy minuty, rozstrzyga, kto zarobi na zleceniu wartym od kilkunastu do
+        kilkudziesięciu tysięcy złotych. I prawie nigdy nie wygląda to tak, jak wyobraża sobie większość firm
+        remontowych. Ona nie przegląda dziesięciu stron internetowych, nie czyta zakładki „o nas" i nie wypełnia
+        formularza kontaktowego. <strong>Patrzy na trzy firmy z mapki, przewija zdjęcia realizacji, rzuca okiem na
+        oceny i dzwoni.</strong> Zwykle do jednej. Czasem do dwóch.
+      </p>
+      <p>
+        Poniżej rozkładam ten mechanizm na części: dlaczego połączenie z wizytówki Google jest najcenniejszym
+        kontaktem, jaki może trafić do firmy remontowej, czym różni się od zapytania z portalu ogłoszeniowego i co
+        konkretnie w profilu przesądza o tym, że dzwoni akurat u Ciebie.
+      </p>
+
+      <h2 id="droga-klienta">Jak wygląda droga klienta od zepsutej kabiny do telefonu</h2>
+      <p>
+        Remont łazienki należy do usług, w których decyzja dojrzewa miesiącami, ale sam wybór wykonawcy zapada
+        błyskawicznie. Klient najpierw przez pół roku ogląda inspiracje, liczy, odkłada, pyta znajomych. W momencie,
+        w którym wpisuje frazę w wyszukiwarkę, ma już to za sobą. <strong>Nie szuka pomysłu na łazienkę, szuka
+        wykonawcy.</strong> To zasadnicza różnica, bo cała dotychczasowa faza researchu wydarzyła się bez Ciebie
+        i bez Twojej reklamy.
+      </p>
+      <p>
+        Google od lat opisuje ten wzorzec jako zachowanie lokalne o wysokiej intencji. W badaniu firmowanym przez
+        Google 76% osób, które wyszukują coś w pobliżu na telefonie, kontaktuje się z firmą lub odwiedza ją w ciągu
+        doby, a 28% takich wyszukiwań kończy się zakupem (Think with Google,{" "}
+        <a href="https://www.thinkwithgoogle.com/intl/en-emea/marketing-strategies/app-and-mobile/mobile-world/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">thinkwithgoogle.com</a>,
+        dane z 2016 roku, dostęp 11 września 2026). Dane mają swoje lata, ale kierunek potwierdza każdy panel
+        wizytówki, do którego zaglądam: <strong>między wyszukaniem a kontaktem mija zwykle kilka minut, nie kilka
+        dni.</strong>
+      </p>
+      <p>
+        Dla firmy remontowej wniosek jest niewygodny, ale prosty. Nie ma znaczenia, jak dobrze pracujesz, jeśli
+        w tych trzech minutach nie istniejesz na ekranie. Klient nie zawiesi decyzji, żeby Cię znaleźć. Zadzwoni
+        do kogoś, kto tam był.
+      </p>
+
+      <h2 id="telefon-vs-formularz">Dlaczego telefon jest lepszym leadem niż formularz</h2>
+      <p>
+        Właściciele firm remontowych często traktują wszystkie zapytania jako jeden worek: telefon, mail, formularz,
+        wiadomość na Facebooku. W praktyce to cztery różne poziomy gotowości do podpisania umowy, a rozrzut między
+        nimi jest ogromny.
+      </p>
+      <p>
+        Invoca przeanalizowała ponad 60 milionów połączeń przychodzących do firm i w raporcie z 2025 roku podaje,
+        że <strong>37% leadów telefonicznych konwertuje jeszcze w trakcie rozmowy</strong>, a w usługach dla domu
+        wskaźnik sięga 46%, czyli najwięcej ze wszystkich analizowanych branż (za{" "}
+        <a href="https://www.pmmag.com/articles/106597-home-services-call-performance-report-46-lead-conversion-rate-segment-benchmarks" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">pmmag.com</a>,
+        dostęp 11 września 2026). Prawie co druga rozmowa kończy się umówieniem konkretu. Żaden formularz nie
+        zbliża się do takiego wyniku, i to z powodu, który nie ma nic wspólnego z marketingiem.
+      </p>
+      <p>
+        Osoba, która dzwoni, <strong>podjęła już decyzję o rozmowie z człowiekiem</strong>. Zgodziła się na to, że
+        za chwilę będzie musiała opisać metraż, powiedzieć, czy kuje do surowego muru, i usłyszeć widełki cenowe,
+        które mogą jej się nie spodobać. To wysoki próg wejścia i właśnie dlatego przechodzą przez niego tylko ci,
+        którzy naprawdę chcą remontu. Osoba wypełniająca formularz ponosi koszt bliski zeru. Zostawia dane
+        w pięciu miejscach naraz, często „na wszelki wypadek", i wraca do oglądania płytek.
+      </p>
+      <p>
+        Do tego dochodzi czynnik czasu. Klasyczna analiza z „Harvard Business Review", oparta na audycie 2241 firm
+        i 1,25 miliona leadów, pokazała, że <strong>firmy odpowiadające na zapytanie w ciągu godziny mają blisko
+        siedem razy większą szansę na realną rozmowę z klientem</strong> niż te, które odzywają się później, a
+        średni czas reakcji wynosił wtedy 42 godziny (Oldroyd, McElheran, Elkington,{" "}
+        <a href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">hbr.org</a>,
+        2011, dostęp 11 września 2026). Formularz z natury wprowadza opóźnienie. Telefon je likwiduje, bo rozmowa
+        dzieje się w sekundzie, w której klient jest najbardziej zdecydowany.
+      </p>
+      <p>
+        W branży remontowej dochodzi jeszcze jedno. Wycena łazienki bez rozmowy jest fikcją. Nie wiesz, czy jest
+        kanalizacja w podłodze czy w ścianie, czy sufit jest do obniżenia, czy klient chce kratkę liniową, czy
+        standardowy odpływ punktowy. <strong>Telefon pozwala zadać pięć pytań, które oszczędzają dwie godziny
+        jazdy na wycenę, która i tak by się nie wydarzyła.</strong>
+      </p>
+
+      <h2 id="portale">Portal ogłoszeniowy sprzedaje ten sam kontakt kilku firmom</h2>
+      <p>
+        Najczęstsza alternatywa, jaką słyszę od wykonawców, to portale z ogłoszeniami i giełdy zleceń. Płacisz za
+        dostęp do zapytania albo za pakiet kontaktów, portal dostarcza leady, wszystko wydaje się policzalne. Problem
+        polega na tym, że kupujesz kontakt, który w tej samej chwili kupuje trzech albo pięciu innych wykonawców.
+      </p>
+      <p>
+        Skutek jest przewidywalny. Klient odbiera pięć telefonów w ciągu dwóch dni, a ponieważ nie ma żadnego powodu,
+        by którykolwiek z nich wyróżnić, <strong>zaczyna porównywać jedyne kryterium, które rozumie bez wiedzy
+        technicznej, czyli cenę</strong>. Wchodzisz w rozmowę z pozycji jednego z pięciu, zanim w ogóle otworzysz
+        usta. Wykonawca, który nie chce schodzić z ceny, przegrywa taką licytację z automatu, i to nie dlatego,
+        że pracuje gorzej.
+      </p>
+      <p>
+        Telefon z wizytówki działa odwrotnie. Klient najpierw zobaczył Twoją ocenę, przewinął zdjęcia realizacji,
+        przeczytał dwie opinie i dopiero potem wybrał numer. <strong>Wybór już się dokonał, zanim odebrałeś.</strong>
+        Rozmowa zaczyna się od zakresu prac, a nie od pytania „ile najtaniej". To zupełnie inny punkt startu
+        negocjacji i zupełnie inna marża na końcu.
+      </p>
+      <p>
+        Jest jeszcze kwestia własności kanału. Profil w portalu jest dzierżawą. Przestajesz płacić, znikasz, a
+        zebrane tam opinie zostają na cudzym serwerze. Wizytówka Google jest darmowa, przypisana do Twojej firmy
+        i to Ty nią zarządzasz. Widoczność, którą zbudujesz przez rok, pracuje dalej także w miesiącu, w którym
+        nie wydasz na marketing ani złotówki.
+      </p>
+
+      <h2 id="ile-telefonow">Ile połączeń realnie generuje wizytówka</h2>
+      <p>
+        Tu trzeba oddzielić fakty od obietnic, bo w tej branży obietnic jest za dużo. Najszerszy publicznie dostępny
+        zbiór danych o profilach firmowych publikuje BrightLocal, które przeanalizowało około 45 tysięcy wizytówek
+        z 36 branż. Z ich zestawienia wynika, że <strong>przeciętny profil małej firmy notuje około 1000 wyświetleń
+        w wyszukiwarce miesięcznie</strong>, z czego zdecydowana większość to wyświetlenia odkrywcze, czyli od osób,
+        które nie znały nazwy firmy i trafiły na nią po zapytaniu o usługę (
+        <a href="https://www.brightlocal.com/research/google-my-business-insights-study/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>,
+        dostęp 11 września 2026).
+      </p>
+      <p>
+        Ciekawszy jest rozrzut po stronie telefonów. Według tego samego opracowania <strong>około 16% profili
+        generuje ponad sto połączeń miesięcznie, a blisko jedna czwarta przekracza pięćdziesiąt</strong>. Reszta
+        siedzi znacznie niżej. Ta różnica to nie loteria. Wśród zmiennych, które BrightLocal wiąże z liczbą
+        połączeń, najmocniej wybija się kompletność profilu, w tym zdjęcia: wizytówki z ponad setką zdjęć notują
+        wielokrotnie więcej telefonów niż profil przeciętny.
+      </p>
+      <p>
+        Dwa zastrzeżenia, żeby było uczciwie. Po pierwsze, to dane globalne i obejmują branże, w których nikt nie
+        dzwoni, bo załatwia sprawę online, co zaniża średnią względem usług remontowych. Po drugie, <strong>żadna
+        z tych liczb nie mówi, ile telefonów dostanie akurat Twoja firma</strong>, bo to zależy od wielkości miasta,
+        liczby konkurentów w promieniu kilku kilometrów i stanu samego profilu. Traktuj je jako skalę zjawiska, nie
+        jako prognozę.
+      </p>
+      <p>
+        Sensowna droga jest inna niż zgadywanie. Panel wizytówki pokazuje liczbę połączeń z podziałem na dni
+        i godziny. Wystarczy zestawić ją z liczbą podpisanych umów z ostatniego kwartału, żeby wiedzieć, ile jest
+        wart jeden telefon z tego kanału. Przy remontach łazienek nawet <strong>kilka rozmów miesięcznie potrafi
+        pokryć roczny koszt prowadzenia profilu z dużym zapasem</strong>, bo pojedyncze zlecenie waży tyle, co
+        kilkadziesiąt drobnych usług w innych branżach.
+      </p>
+
+      <h2 id="lazienka-zaufanie">Łazienka to zakup nieodwracalny, więc liczy się dowód</h2>
+      <p>
+        Remont łazienki różni się od większości usług lokalnych jedną rzeczą: <strong>błędów praktycznie nie da się
+        cofnąć bez kucia wszystkiego od nowa</strong>. Źle zrobiona hydroizolacja pod płytkami odezwie się u sąsiada
+        pod sufitem po kilku miesiącach. Zły spadek pod brodzikiem oznacza wodę stojącą pod ścianą do końca życia
+        tej łazienki. Zbita fuga przy gresie wielkoformatowym to wymiana całej płaszczyzny, nie jednej płytki.
+      </p>
+      <p>
+        Klient zwykle nie potrafi ocenić żadnej z tych rzeczy przed podpisaniem umowy, więc ocenia to, co jest
+        dostępne: jak firma wygląda i co mówią o niej inni. Do tego dochodzi kontekst, o którym rzadko się mówi
+        wprost. <strong>Wpuszcza obcych ludzi do mieszkania na kilka tygodni</strong>, często przy dzieciach,
+        z jedną łazienką wyłączoną z użytku. Zaufanie nie jest tu miękkim dodatkiem, tylko warunkiem rozmowy.
+      </p>
+      <p>
+        Dlatego opinie w wizytówce ważą w tej branży więcej niż gdziekolwiek indziej. W badaniu konsumenckim
+        BrightLocal z 2026 roku <strong>97% respondentów deklaruje, że czyta opinie przed wyborem lokalnej firmy</strong>,
+        85% chętniej skorzysta z usług firmy po pozytywnych recenzjach, a 31% w ogóle nie bierze pod uwagę firm
+        z oceną niższą niż 4,5 (
+        <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>,
+        badanie na panelu 1002 konsumentów, dostęp 11 września 2026). Ten ostatni wynik jest dla firm remontowych
+        najbardziej praktyczny: <strong>ocena 4,3 wycina Cię z krótkiej listy jeszcze przed pierwszym kontaktem</strong>,
+        choć w realnej pracy różnica między 4,3 a 4,7 to zwykle dwie nieudane rozmowy sprzed dwóch lat.
+      </p>
+      <p>
+        Drugim dowodem są zdjęcia, i to nie renderingi z katalogu producenta płytek. Klient chce zobaczyć łazienki
+        podobne do swojej, najlepiej w bloku z wielkiej płyty, jeśli sam mieszka w takim bloku. Zdjęcie stanu
+        surowego obok zdjęcia po zakończeniu prac robi więcej niż akapit tekstu o doświadczeniu, bo pokazuje
+        zakres, a nie deklarację. <strong>Profil z trzydziestoma realizacjami sprzedaje sam</strong>, zanim ktokolwiek
+        odbierze telefon.
+      </p>
+
+      <h2 id="co-decyduje">Co w profilu decyduje, że telefon zadzwoni u Ciebie</h2>
+      <p>
+        Google opisuje trzy czynniki lokalnego rankingu: trafność profilu względem zapytania, odległość od
+        wyszukującego i popularność firmy (
+        <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com</a>,
+        dostęp 11 września 2026). Odległości nie zmienisz bez przeprowadzki, ale na dwa pozostałe wpływasz wprost.
+        W wizytówkach firm remontowych najczęściej widzę te same, powtarzalne braki.
+      </p>
+      <h3>Kategoria główna ustawiona zbyt szeroko</h3>
+      <p>
+        „Usługi budowlane" albo „wykonawca" to kategorie, w których konkurujesz ze wszystkimi, od dekarza po firmę
+        elewacyjną. Jeśli robisz łazienki, kategoria główna powinna to odzwierciedlać, a pozostałe specjalizacje
+        wchodzą jako kategorie dodatkowe. <strong>Zmiana samej kategorii głównej potrafi przestawić profil na zupełnie
+        inny zestaw zapytań</strong>, bo Google traktuje ją jako najmocniejszą deklarację tego, czym firma się zajmuje.
+      </p>
+      <h3>Obszar działania zamiast adresu warsztatu</h3>
+      <p>
+        Większość ekip remontowych pracuje u klienta, a nie w siedzibie. To profil typu usługowego, w którym
+        ustawia się obszar obsługi i ukrywa adres. Wpisanie adresu domowego bez ustawienia obszaru sprawia, że
+        wypadasz z wyników w dzielnicach, w których realnie pracujesz.
+      </p>
+      <h3>Zdjęcia dodawane raz, przy zakładaniu profilu</h3>
+      <p>
+        Wizytówka nie jest folderem, tylko kanałem. Kilka zdjęć po każdej skończonej łazience, robionych telefonem
+        przy dziennym świetle, po roku daje bibliotekę, z którą nie konkuruje żaden lokalny rywal.
+        <strong>Najważniejsze jest zdjęcie główne</strong>, bo to ono decyduje o kliknięciu w wynikach z mapką.
+      </p>
+      <h3>Opinie zbierane przypadkowo</h3>
+      <p>
+        Ekipa schodzi z placu i nikt o opinię nie prosi, bo „głupio". Tymczasem moment zejścia z placu to jedyna
+        chwila, w której klient jest naprawdę zadowolony i ma to świeżo w głowie. Link do wystawienia opinii wysłany
+        SMS-em tego samego dnia zamienia część klientów w recenzje. Odpowiadanie na opinie, również te słabsze,
+        jest widoczne dla kolejnych czytelników i mówi o firmie więcej niż sama ocena.
+      </p>
+      <h3>Nieodebrane telefony</h3>
+      <p>
+        Najdroższy błąd w całym tym łańcuchu. Ekipa jest na budowie, wierci, telefon leży w kurtce. Klient dzwoni
+        do następnej firmy z listy i nikt nigdy się o tym nie dowie, bo w panelu widać połączenie, a nie to, że
+        nikt nie odebrał. <strong>Jeśli nie odbierasz w trakcie pracy, oddzwanianie tego samego dnia musi być
+        czyimś obowiązkiem, nie dobrą chęcią.</strong>
+      </p>
+
+      <h2 id="czego-nie-zrobi">Czego wizytówka nie zrobi</h2>
+      <p>
+        Uczciwie, żeby nie budować złych oczekiwań. Wizytówka nie sprawi, że firma z ceną wyższą o czterdzieści
+        procent od rynku nagle zacznie wygrywać, bo w rozmowie i tak padnie pytanie o kwotę. Nie naprawi ekipy,
+        która nie dowozi terminów, bo to wróci w opiniach ze zdwojoną siłą. Nie zadziała w tydzień, bo Google
+        potrzebuje kilku tygodni sygnałów, żeby przestawić profil wyżej, a opinie zbiera się miesiącami.
+      </p>
+      <p>
+        Nie zastąpi też strony internetowej, choć bywa od niej ważniejsza. Klient, który dzwoni z wizytówki, często
+        wchodzi jeszcze na stronę, żeby zobaczyć więcej realizacji. <strong>Wizytówka wygrywa pierwsze trzy minuty,
+        strona domyka wątpliwości</strong> przy zleceniu za kilkadziesiąt tysięcy.
+      </p>
+      <p>
+        I rzecz najważniejsza: wizytówka nie działa raz na zawsze. Konkurencja w miastach powyżej stu tysięcy
+        mieszkańców dodaje zdjęcia i zbiera opinie co tydzień. Profil zostawiony samemu sobie na pół roku spada,
+        nawet jeśli nic w nim nie popsuto.
+      </p>
+
+      <h2 id="od-czego-zaczac">Od czego zacząć, jeśli profil już istnieje</h2>
+      <p>
+        Większość firm remontowych ma wizytówkę założoną kilka lat temu, często przez kogoś z rodziny, i od tego
+        czasu nietkniętą. Zanim wyda się złotówkę na reklamę, warto sprawdzić stan tego, co już jest. Trzy rzeczy
+        do zrobienia w kwadrans: wejdź w panel i zobacz liczbę połączeń z ostatnich trzech miesięcy, sprawdź, jaką
+        masz ustawioną kategorię główną, i policz, ile zdjęć dodano w tym roku.
+      </p>
+      <p>
+        Jeśli któraś z tych odpowiedzi Cię zaskoczy, pełny przegląd profilu punkt po punkcie znajdziesz w naszej{" "}
+        <Link href="/checklista-wizytowki-google" className="text-brand font-semibold hover:underline">checkliście pozycjonowania wizytówki</Link>,
+        a szybki wynik optymalizacji policzy{" "}
+        <Link href="/gbp-score" className="text-brand font-semibold hover:underline">darmowy audyt wizytówki Google</Link>.
+        Obie rzeczy są bezpłatne i nie wymagają kontaktu z nikim.
+      </p>
+      <p>
+        Jeżeli po takim przeglądzie okaże się, że profil wymaga systematycznej pracy, a Ty wolisz w tym czasie
+        kłaść płytki, tym zajmujemy się na co dzień w ramach{" "}
+        <Link href="/uslugi/wizytowka-google" className="text-brand font-semibold hover:underline">pozycjonowania wizytówki Google</Link>.
+        Bez zobowiązania i bez presji, bo w tej branży i tak wszystko weryfikuje liczba telefonów po trzech
+        miesiącach.
+      </p>
+
+      <h2>Źródła</h2>
+      <p>
+        Invoca, <em>Call Performance Report</em> 2025, analiza ponad 60 milionów połączeń, omówienie w{" "}
+        <a href="https://www.pmmag.com/articles/106597-home-services-call-performance-report-46-lead-conversion-rate-segment-benchmarks" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">„Plumbing &amp; Mechanical"</a>.
+      </p>
+      <p>
+        BrightLocal, <em>Google My Business Insights Study</em>, analiza około 45 tysięcy profili z 36 branż,{" "}
+        <a href="https://www.brightlocal.com/research/google-my-business-insights-study/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>.
+      </p>
+      <p>
+        BrightLocal, <em>Local Consumer Review Survey 2026</em>, panel 1002 konsumentów,{" "}
+        <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>.
+      </p>
+      <p>
+        J. B. Oldroyd, K. McElheran, D. Elkington, <em>The Short Life of Online Sales Leads</em>, „Harvard Business
+        Review" 2011,{" "}
+        <a href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">hbr.org</a>.
+      </p>
+      <p>
+        Think with Google, dane o zachowaniach w wyszukiwaniu lokalnym,{" "}
+        <a href="https://www.thinkwithgoogle.com/intl/en-emea/marketing-strategies/app-and-mobile/mobile-world/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">thinkwithgoogle.com</a>.
+      </p>
+      <p>
+        Google, <em>Jak poprawić pozycję firmy w Google</em>, dokumentacja pomocy,{" "}
+        <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com</a>.
+      </p>
+    </>
+  ),
+
+
+  /* ─────────────────────────────────────────────────────────────────────────
      SEO: Czym są encje? Wizytówka Google i przykłady
   ───────────────────────────────────────────────────────────────────────── */
   "czym-sa-encje-wizytowka-google-przyklady": (
