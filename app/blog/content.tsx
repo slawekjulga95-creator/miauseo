@@ -55,7 +55,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Google 76% osób, które wyszukują coś w pobliżu na telefonie, kontaktuje się z firmą lub odwiedza ją w ciągu
         doby, a 28% takich wyszukiwań kończy się zakupem (Think with Google,{" "}
         <a href="https://www.thinkwithgoogle.com/intl/en-emea/marketing-strategies/app-and-mobile/mobile-world/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">thinkwithgoogle.com</a>,
-        dane z 2016 roku, dostęp 11 września 2026). Dane mają swoje lata, ale kierunek potwierdza każdy panel
+        dane z 2016 roku, dostęp 1 września 2026). Dane mają swoje lata, ale kierunek potwierdza każdy panel
         wizytówki, do którego zaglądam: <strong>między wyszukaniem a kontaktem mija zwykle kilka minut, nie kilka
         dni.</strong>
       </p>
@@ -76,7 +76,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         że <strong>37% leadów telefonicznych konwertuje jeszcze w trakcie rozmowy</strong>, a w usługach dla domu
         wskaźnik sięga 46%, czyli najwięcej ze wszystkich analizowanych branż (za{" "}
         <a href="https://www.pmmag.com/articles/106597-home-services-call-performance-report-46-lead-conversion-rate-segment-benchmarks" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">pmmag.com</a>,
-        dostęp 11 września 2026). Prawie co druga rozmowa kończy się umówieniem konkretu. Żaden formularz nie
+        dostęp 1 września 2026). Prawie co druga rozmowa kończy się umówieniem konkretu. Żaden formularz nie
         zbliża się do takiego wyniku, i to z powodu, który nie ma nic wspólnego z marketingiem.
       </p>
       <p>
@@ -92,7 +92,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         siedem razy większą szansę na realną rozmowę z klientem</strong> niż te, które odzywają się później, a
         średni czas reakcji wynosił wtedy 42 godziny (Oldroyd, McElheran, Elkington,{" "}
         <a href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">hbr.org</a>,
-        2011, dostęp 11 września 2026). Formularz z natury wprowadza opóźnienie. Telefon je likwiduje, bo rozmowa
+        2011, dostęp 1 września 2026). Formularz z natury wprowadza opóźnienie. Telefon je likwiduje, bo rozmowa
         dzieje się w sekundzie, w której klient jest najbardziej zdecydowany.
       </p>
       <p>
@@ -136,7 +136,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         w wyszukiwarce miesięcznie</strong>, z czego zdecydowana większość to wyświetlenia odkrywcze, czyli od osób,
         które nie znały nazwy firmy i trafiły na nią po zapytaniu o usługę (
         <a href="https://www.brightlocal.com/research/google-my-business-insights-study/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>,
-        dostęp 11 września 2026).
+        dostęp 1 września 2026).
       </p>
       <p>
         Ciekawszy jest rozrzut po stronie telefonów. Według tego samego opracowania <strong>około 16% profili
@@ -179,7 +179,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         85% chętniej skorzysta z usług firmy po pozytywnych recenzjach, a 31% w ogóle nie bierze pod uwagę firm
         z oceną niższą niż 4,5 (
         <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>,
-        badanie na panelu 1002 konsumentów, dostęp 11 września 2026). Ten ostatni wynik jest dla firm remontowych
+        badanie na panelu 1002 konsumentów, dostęp 1 września 2026). Ten ostatni wynik jest dla firm remontowych
         najbardziej praktyczny: <strong>ocena 4,3 wycina Cię z krótkiej listy jeszcze przed pierwszym kontaktem</strong>,
         choć w realnej pracy różnica między 4,3 a 4,7 to zwykle dwie nieudane rozmowy sprzed dwóch lat.
       </p>
@@ -196,7 +196,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         Google opisuje trzy czynniki lokalnego rankingu: trafność profilu względem zapytania, odległość od
         wyszukującego i popularność firmy (
         <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com</a>,
-        dostęp 11 września 2026). Odległości nie zmienisz bez przeprowadzki, ale na dwa pozostałe wpływasz wprost.
+        dostęp 1 września 2026). Odległości nie zmienisz bez przeprowadzki, ale na dwa pozostałe wpływasz wprost.
         W wizytówkach firm remontowych najczęściej widzę te same, powtarzalne braki.
       </p>
       <h3>Kategoria główna ustawiona zbyt szeroko</h3>

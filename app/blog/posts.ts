@@ -32,7 +32,7 @@ export const posts: Post[] = [
     excerpt:
       "Klient, który planuje remont łazienki, nie wypełnia formularzy. Wpisuje frazę w telefon i dzwoni do jednej, dwóch firm z góry wyników. Rozkładam na części, dlaczego telefon z wizytówki Google jest lepszym leadem niż zapytanie z portalu ogłoszeniowego, ile połączeń realnie generują profile firm lokalnych i co w profilu decyduje o tym, że ten telefon trafia akurat do Ciebie.",
     category: "Wizytówka",
-    date: "2026-09-11",
+    date: "2026-09-01",
     readTime: 12,
     coverColor: "#FF6A00",
     coverImage: "/blog/cover-firma-remontowa-wizytowka.svg",
