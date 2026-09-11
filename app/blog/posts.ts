@@ -27,6 +27,18 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "jak-zwiekszyc-jakosc-polaczen-uslugi-dekarskie",
+    title: "Jak zwiększyć jakość połączeń w usługach dekarskich",
+    excerpt:
+      "Trzydzieści osiem telefonów w czerwcu i trzy podpisane zlecenia to typowy miesiąc firmy dekarskiej. Pokazuję, dlaczego tylko część połączeń ma sens sprzedażowy, jak ustawić wizytówkę Google, żeby odsiewała pytania o cenę za metr i zapytania spoza obszaru dojazdu, oraz co zrobić w pierwszej minucie rozmowy, żeby nie jeździć na wyceny, z których nic nie wychodzi.",
+    category: "Wizytówka",
+    date: "2026-09-07",
+    readTime: 13,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-jakosc-polaczen-dekarskie.svg",
+    published: true,
+  },
+  {
     slug: "firma-remontowa-wizytowka-google",
     title: "Firma remontowa a wizytówka Google. Jak może pomóc",
     excerpt:

@@ -4,6 +4,286 @@ import EncjaGBP from "@/components/seo/EncjaGBP";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     Wizytówka: Jak zwiększyć jakość połączeń w usługach dekarskich
+  ───────────────────────────────────────────────────────────────────────── */
+  "jak-zwiekszyc-jakosc-polaczen-uslugi-dekarskie": (
+    <>
+      {/* Spis treści */}
+      <div className="not-prose mt-2 mb-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Spis treści</p>
+        <ol className="space-y-1.5 text-sm">
+          <li><a href="#problem" className="font-semibold text-ink hover:text-brand transition-colors">Więcej telefonów nie znaczy więcej zleceń</a></li>
+          <li><a href="#kto-dzwoni" className="font-semibold text-ink hover:text-brand transition-colors">Kto naprawdę dzwoni do dekarza</a></li>
+          <li><a href="#profil-filtruje" className="font-semibold text-ink hover:text-brand transition-colors">Wizytówka jako filtr, nie tylko jako wabik</a></li>
+          <li><a href="#uslugi-i-opis" className="font-semibold text-ink hover:text-brand transition-colors">Lista usług i opis, czyli miejsce na „czego nie robimy"</a></li>
+          <li><a href="#obszar" className="font-semibold text-ink hover:text-brand transition-colors">Obszar działania liczony w kilometrach, nie w województwach</a></li>
+          <li><a href="#cena" className="font-semibold text-ink hover:text-brand transition-colors">Jak rozmawiać o cenie, zanim ktoś zadzwoni</a></li>
+          <li><a href="#zdjecia-opinie" className="font-semibold text-ink hover:text-brand transition-colors">Zdjęcia i opinie przesuwają rozmowę z ceny na zakres</a></li>
+          <li><a href="#pierwsze-60-sekund" className="font-semibold text-ink hover:text-brand transition-colors">Pierwsze sześćdziesiąt sekund rozmowy</a></li>
+          <li><a href="#pomiar" className="font-semibold text-ink hover:text-brand transition-colors">Jak zmierzyć, czy jakość faktycznie rośnie</a></li>
+        </ol>
+      </div>
+
+      <p>
+        Trzydzieści osiem połączeń z wizytówki Google w czerwcu brzmi jak dobry miesiąc. Rozpisz je jednak po
+        kolei, a obraz zwykle wygląda inaczej: siedem wyjazdów na wycenę, trzy podpisane zlecenia, a reszta to
+        pytania o cenę za metr bez podanego adresu, handlowcy z hurtowni, ktoś z drugiego końca województwa, pan
+        szukający kogoś do odśnieżenia garażu w środku lata i kilka telefonów, w których po drugiej stronie nikt
+        się nie odezwał. Taki rozkład zna każdy, kto prowadzi ekipę dekarską i sam odbiera telefon.
+      </p>
+      <p>
+        To jest typowy rozkład w usługach dekarskich i mało kto o nim mówi, bo w marketingu wygodniej sprzedaje się
+        liczbę połączeń niż ich jakość. <strong>Telefon, który zajmuje kwadrans i nie prowadzi do wyceny, kosztuje
+        Cię dokładnie tyle samo czasu, co ten, który kończy się umową.</strong> W sezonie, kiedy ekipa jest na dachu
+        od siódmej, to jest realny koszt, nie teoretyczny.
+      </p>
+      <p>
+        Ten tekst jest o tym, jak przesunąć proporcje. Nie o tym, jak dzwoniło więcej osób, tylko jak sprawić, żeby
+        dzwonili ci, z którymi warto rozmawiać, i żeby rozmowa od pierwszego zdania szła w stronę zakresu prac,
+        a nie licytacji na cenę za metr kwadratowy.
+      </p>
+
+      <h2 id="problem">Więcej telefonów nie znaczy więcej zleceń</h2>
+      <p>
+        Skala zjawiska jest lepiej udokumentowana, niż się wydaje. Invoca przeanalizowała ponad 60 milionów
+        połączeń przychodzących do firm i w benchmarkach dla usług dla domu podaje, że{" "}
+        <strong>zaledwie 37% połączeń pochodzących z działań marketingowych to realne zapytania sprzedażowe</strong>,
+        a 55% dzwoniących w ogóle dochodzi do rozmowy z człowiekiem (
+        <a href="https://www.invoca.com/reports/the-invoca-call-conversion-benchmarks-report-for-the-home-services-industry-2025" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">invoca.com</a>,
+        dostęp 7 września 2026). Dobra wiadomość jest w trzeciej liczbie z tego samego zestawienia:{" "}
+        <strong>46% rozmów zakwalifikowanych jako lead kończy się konwersją jeszcze w trakcie połączenia</strong>.
+      </p>
+      <p>
+        Te trzy liczby układają się w prostą diagnozę. Prawie dwie trzecie ruchu telefonicznego to szum, blisko
+        połowa dzwoniących odbija się od nieodebranego telefonu, ale kiedy właściwa osoba dodzwoni się do właściwej
+        firmy, sprawa domyka się od razu. Cała gra o rentowność dzieje się więc <strong>przed odebraniem
+        słuchawki</strong>, w tym, co klient zobaczył, zanim wybrał numer.
+      </p>
+      <p>
+        W dekarstwie ten efekt jest mocniejszy niż w innych fachach z dwóch powodów. Po pierwsze, zlecenia są duże
+        i nieporównywalne między sobą, więc pytanie „ile kosztuje dach" nie ma sensownej odpowiedzi bez obejrzenia
+        obiektu. Po drugie, sezon jest krótki, a piki popytu bywają gwałtowne. Po nocnej wichurze telefon dzwoni
+        w kółko i wtedy najłatwiej stracić dwa dobre zlecenia, bo linia była zajęta przez kogoś, kto i tak dzwonił
+        do pięciu firm po cenę.
+      </p>
+
+      <h2 id="kto-dzwoni">Kto naprawdę dzwoni do dekarza</h2>
+      <p>
+        Zanim zacznie się cokolwiek zmieniać, warto nazwać typy rozmów, bo każdy z nich wymaga innego ruchu
+        w profilu. Z wizytówek firm dekarskich wracają zwykle cztery kategorie.
+      </p>
+      <p>
+        <strong>Awaria.</strong> Przecieka, leci po ścianie, jest wiadro na strychu. To najlepszy telefon, jaki
+        może przyjść, bo decyzja jest natychmiastowa i cena schodzi na drugi plan. Klient dzwoni do pierwszej firmy,
+        która odbierze, i praktycznie nie oddzwania do pozostałych.
+      </p>
+      <p>
+        <strong>Planowana wymiana pokrycia.</strong> Dach po trzydziestu latach, właściciel zbiera wyceny od marca.
+        Rozmowa jest rzeczowa, ale konkurencyjna, bo dzwoni do trzech, czterech firm i porównuje. Tutaj wygrywa się
+        wiarygodnością i tym, jak wygląda pierwsza rozmowa.
+      </p>
+      <p>
+        <strong>Szukający ceny.</strong> „Ile bierzecie za metr blachodachówki?" bez adresu, bez zdjęć, bez
+        gotowości na wizytę. Część z nich to realni klienci na wczesnym etapie, część zbiera dane do arkusza,
+        w którym i tak wygra najtańszy. <strong>To właśnie ta grupa zjada najwięcej czasu przy najniższej
+        skuteczności.</strong>
+      </p>
+      <p>
+        <strong>Szum.</strong> Handlowcy z hurtowni, pośrednicy sprzedający leady, podwykonawcy szukający pracy,
+        pomyłki i automaty. Nie da się ich wyzerować, ale da się je odsunąć od numeru głównego.
+      </p>
+      <p>
+        Celem nie jest wycięcie trzeciej i czwartej grupy do zera, tylko przesunięcie proporcji. Jeśli w czerwcu
+        z trzydziestu ośmiu telefonów dziesięć to awarie i wymiany, a dwadzieścia osiem to reszta, to przy tej samej
+        liczbie połączeń da się dojść do proporcji odwrotnej. Narzędziem jest profil, bo <strong>to on decyduje,
+        kto uzna Twoją firmę za odpowiednią do swojej sprawy</strong>.
+      </p>
+
+      <h2 id="profil-filtruje">Wizytówka jako filtr, nie tylko jako wabik</h2>
+      <p>
+        Większość poradników o wizytówce Google kończy się na tym, jak zdobyć więcej wyświetleń. Dla dekarza
+        ciekawsze jest drugie zastosowanie: profil dobrze ustawiony <strong>odsiewa zapytania, których i tak byś
+        nie przyjął</strong>, zanim ktokolwiek wybierze numer.
+      </p>
+      <p>
+        Zaczyna się od kategorii. Google opisuje trzy czynniki lokalnego rankingu, czyli trafność, odległość
+        i popularność (
+        <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com</a>,
+        dostęp 7 września 2026). Trafność liczy się od kategorii głównej. Profil z kategorią „usługi budowlane"
+        pokaże się na zapytania od ocieplania po elewacje i telefon będzie dzwonił w sprawach, których nie robisz.
+        Kategoria „dekarz" zawęża ekspozycję do ludzi, którzy mają problem z dachem, i to jest pierwszy, najtańszy
+        filtr w całym systemie.
+      </p>
+      <p>
+        Drugą warstwą są kategorie dodatkowe. Jeśli robisz też rynny i podbitki, dodaj je świadomie, bo każda
+        z nich otwiera osobny strumień zapytań. Jeśli nie robisz papy na płaskich dachach garażowych, nie dodawaj
+        kategorii, która je przyciąga, nawet jeśli raz na rok taka robota Ci się trafi. <strong>Każda kategoria
+        w profilu to zgoda na telefony z tego zakresu przez cały sezon.</strong>
+      </p>
+
+      <h2 id="uslugi-i-opis">Lista usług i opis, czyli miejsce na „czego nie robimy"</h2>
+      <p>
+        Sekcja usług w wizytówce jest w tej branży niedoceniana. Wpisane pozycje pokazują się w profilu i pomagają
+        Google zrozumieć zakres firmy, ale najważniejsze dzieje się po stronie klienta. Człowiek, który widzi listę
+        z pozycjami „wymiana pokrycia z dachówki ceramicznej", „papa termozgrzewalna", „montaż rynien" i „naprawa
+        po wichurze", sam ocenia, czy jego sprawa tam pasuje.
+      </p>
+      <p>
+        Opis firmy to jedyne miejsce w profilu, gdzie można napisać wprost, czego nie robicie, i to zdanie potrafi
+        zdjąć z grafiku kilka telefonów tygodniowo. Zamiast uniwersalnego „kompleksowe usługi dekarskie dla
+        wymagających klientów" działa konkret: jakie pokrycia, jaki typ obiektów, jaki minimalny zakres zlecenia,
+        jaki obszar. <strong>Zdanie „nie wykonujemy drobnych napraw poniżej pół dnia pracy" jest niewygodne do
+        napisania i bezcenne w skutkach</strong>, bo rozmowa o wymianie dwóch dachówek nie zaczyna się w ogóle.
+      </p>
+      <p>
+        Ten sam mechanizm działa w sekcji pytań i odpowiedzi. Nikt nie zabrania zadać pytania we własnym profilu
+        i samemu na nie odpowiedzieć. Trzy pytania, które w dekarstwie zbierają najwięcej zapytań bez potencjału,
+        to termin realizacji, minimalny zakres i sposób wyceny. Odpowiedziane z góry, oszczędzają kwadrans przy
+        każdym telefonie, a przy okazji ustawiają Cię w oczach czytającego jako firmę, która wie, co robi.
+      </p>
+
+      <h2 id="obszar">Obszar działania liczony w kilometrach, nie w województwach</h2>
+      <p>
+        Najczęstszy błąd, jaki widzę w profilach firm dekarskich, to obszar obsługi ustawiony na całe województwo,
+        czasem na dwa. Intencja jest zrozumiała, bo przy dużym zleceniu opłaca się dojechać i sto kilometrów.
+        Skutek jest odwrotny od zamierzonego: <strong>profil pokazuje się ludziom, do których nie pojedziesz przy
+        standardowej robocie</strong>, więc rośnie liczba rozmów kończących się zdaniem „to za daleko".
+      </p>
+      <p>
+        Rozsądniej jest ustawić obszar odpowiadający realnemu, codziennemu dojazdowi ekipy, a duże zlecenia spoza
+        niego i tak przyjdą, bo przy wymianie całego dachu klient szuka szerzej i trafi na Ciebie przez polecenie
+        albo przez stronę. Profil usługowy bez adresu ma tu jeszcze jedną zaletę, o której warto wiedzieć: firmy
+        pracujące u klienta ustawiają w wizytówce obszar obsługi i ukrywają adres, co jest zgodne z wytycznymi
+        Google dla działalności bez siedziby odwiedzanej przez klientów.
+      </p>
+
+      <h2 id="cena">Jak rozmawiać o cenie, zanim ktoś zadzwoni</h2>
+      <p>
+        Dekarze zwykle nie chcą podawać cen publicznie i mają ku temu dobre powody, bo zakres bywa nieporównywalny,
+        a konkurencja podbiera stawki. Problem w tym, że brak jakiejkolwiek informacji o poziomie cen nie eliminuje
+        rozmów o cenie, tylko przenosi je wszystkie na telefon.
+      </p>
+      <p>
+        Kompromis, który działa, to nie cennik, lecz <strong>widełki albo próg</strong>. Zdanie w opisie lub
+        w odpowiedzi na pytanie w profilu, że typowa wymiana pokrycia na domu jednorodzinnym to zlecenie od
+        kilkudziesięciu tysięcy złotych, a wyceny robicie po obejrzeniu obiektu, załatwia dwie rzeczy naraz.
+        Klient, dla którego to za dużo, nie dzwoni. Klient, który to akceptuje, dzwoni już po to, żeby umówić
+        oględziny, a nie żeby pytać o cenę. <strong>Rozmowa startuje o jeden etap dalej.</strong>
+      </p>
+      <p>
+        Ten sam zabieg warto powtórzyć w sposobie wyceny. Jeśli wycena jest bezpłatna, napisz to. Jeśli jest
+        płatna przy dojeździe powyżej pewnej odległości albo jeśli przy ekspertyzie po wichurze pobierasz opłatę,
+        napisz i to. Informacja o tym, że coś kosztuje, jest najskuteczniejszym filtrem, jaki masz.
+      </p>
+
+      <h2 id="zdjecia-opinie">Zdjęcia i opinie przesuwają rozmowę z ceny na zakres</h2>
+      <p>
+        Kiedy klient nie ma czym ocenić firmy poza ceną, oceni ją ceną. Zdjęcia i opinie są jedynym materiałem,
+        który daje mu inną oś porównania, i to widać potem w tonie pierwszej rozmowy.
+      </p>
+      <p>
+        W danych BrightLocal, opartych na analizie około 45 tysięcy profili firmowych z 36 branż, kompletność
+        profilu i liczba zdjęć idą w parze z liczbą kontaktów, a <strong>profile z bardzo dużą liczbą zdjęć notują
+        wielokrotnie więcej połączeń niż przeciętne</strong> (
+        <a href="https://www.brightlocal.com/research/google-my-business-insights-study/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>,
+        dostęp 7 września 2026). Dla dekarza sens mają zdjęcia pokazujące typ roboty, a nie ładny dach z lotu
+        ptaka: stan przed, konstrukcja w trakcie, obróbki blacharskie przy kominie, gotowe pokrycie. Klient z domem
+        z lat siedemdziesiątych szuka w tych zdjęciach swojego dachu.
+      </p>
+      <p>
+        Opinie działają jak drugi filtr, tyle że po stronie klienta. W badaniu konsumenckim BrightLocal z 2026 roku
+        97% respondentów deklaruje czytanie opinii przed wyborem lokalnej firmy, a <strong>31% w ogóle nie
+        rozważa firm z oceną poniżej 4,5</strong> (
+        <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>,
+        panel 1002 konsumentów, dostęp 7 września 2026). Dla jakości połączeń ważniejsza od samej średniej jest
+        treść. Opinia opisująca wymianę dachu z papy na blachę przyciąga kolejne takie zlecenia, bo ludzie szukają
+        w recenzjach swojego przypadku. Warto więc prosić o opinię tak, żeby klient napisał, co dokładnie było
+        robione, zamiast zostawić samo „polecam".
+      </p>
+
+      <h2 id="pierwsze-60-sekund">Pierwsze sześćdziesiąt sekund rozmowy</h2>
+      <p>
+        Profil doprowadza właściwego człowieka do wybrania numeru, ale o jakości zlecenia rozstrzyga początek
+        rozmowy. W dekarstwie działa ten sam schemat co w każdej usłudze wyjazdowej: <strong>cztery pytania zadane
+        w pierwszej minucie decydują, czy jedziesz na wycenę, czy kończysz uprzejmie</strong>. Adres, typ i wiek
+        pokrycia, czy aktualnie przecieka oraz czy sprawa idzie z ubezpieczenia. Dwie minuty rozmowy oszczędzają
+        dwie godziny jazdy.
+      </p>
+      <p>
+        Druga rzecz to sam fakt odebrania. Z danych Invoki wynika, że tylko 55% dzwoniących dociera do rozmowy
+        z człowiekiem, a w dekarstwie sytuacja jest trudniejsza niż średnio, bo ekipa jest na dachu i telefon leży
+        w aucie. Klasyczna analiza z „Harvard Business Review", oparta na audycie 2241 firm i 1,25 miliona leadów,
+        pokazała, że <strong>odpowiedź w ciągu godziny daje blisko siedmiokrotnie większą szansę na realną rozmowę
+        z klientem</strong> niż reakcja późniejsza (Oldroyd, McElheran, Elkington,{" "}
+        <a href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">hbr.org</a>,
+        2011, dostęp 7 września 2026). Przy awarii dachu ta godzina jest jeszcze krótsza, bo klient z wiadrem na
+        strychu dzwoni po kolei.
+      </p>
+      <p>
+        Rozwiązania są nudne i skuteczne. Osoba do odbierania w sezonie, choćby na pół etatu. Przekierowanie po
+        czterech sygnałach zamiast poczty głosowej, bo <strong>klient z przeciekiem nie nagrywa się na
+        sekretarkę</strong>. Oddzwanianie w blokach, na przykład w porze obiadu i po zejściu z dachu, ale zawsze
+        tego samego dnia. Numer w wizytówce ustawiony na telefon, który ktoś naprawdę odbiera, a nie na prywatną
+        komórkę szefa, który akurat kładzie blachę.
+      </p>
+
+      <h2 id="pomiar">Jak zmierzyć, czy jakość faktycznie rośnie</h2>
+      <p>
+        Bez pomiaru to wszystko pozostaje opowieścią. Panel wizytówki pokazuje liczbę połączeń z podziałem na dni
+        i godziny, ale nie powie Ci, ile z nich było coś warte. Najprostszy system mieści się w zeszycie przy
+        telefonie i ma trzy kolumny: data, skąd dzwonił, kategoria rozmowy. Kategorie wystarczą cztery, te opisane
+        wyżej.
+      </p>
+      <p>
+        Po miesiącu masz surową, ale uczciwą miarę: <strong>udział rozmów kończących się umówieniem oględzin
+        w łącznej liczbie połączeń</strong>. To jedyny wskaźnik, który w tej branży warto poprawiać. Liczba
+        telefonów sama w sobie potrafi rosnąć w tym samym czasie, w którym rentowność spada, bo profil przyciąga
+        coraz szersze i coraz gorzej dopasowane zapytania.
+      </p>
+      <p>
+        Jeśli chcesz sprawdzić, na ile Twój profil dziś filtruje, a na ile tylko zbiera ruch, przejdź przez niego
+        z naszą{" "}
+        <Link href="/checklista-wizytowki-google" className="text-brand font-semibold hover:underline">checklistą pozycjonowania wizytówki</Link>{" "}
+        albo policz wynik w{" "}
+        <Link href="/gbp-score" className="text-brand font-semibold hover:underline">darmowym audycie wizytówki Google</Link>.
+        Jedno i drugie zajmuje kilkanaście minut i nie wymaga kontaktu z nikim.
+      </p>
+      <p>
+        A jeśli po takim przeglądzie okaże się, że profil wymaga systematycznej pracy przez cały sezon, kiedy Ty
+        jesteś na dachu, to jest dokładnie ta robota, którą wykonujemy w ramach{" "}
+        <Link href="/uslugi/wizytowka-google" className="text-brand font-semibold hover:underline">pozycjonowania wizytówki Google</Link>.
+        Bez zobowiązań, bo w usługach dekarskich i tak wszystko weryfikuje jedna liczba: ile wyjazdów na wycenę
+        wyszło z telefonów w tym miesiącu.
+      </p>
+
+      <h2>Źródła</h2>
+      <p>
+        Invoca, <em>Call Conversion Benchmarks Report for the Home Services Industry</em> 2025, analiza ponad
+        60 milionów połączeń,{" "}
+        <a href="https://www.invoca.com/reports/the-invoca-call-conversion-benchmarks-report-for-the-home-services-industry-2025" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">invoca.com</a>.
+      </p>
+      <p>
+        BrightLocal, <em>Google My Business Insights Study</em>, analiza około 45 tysięcy profili z 36 branż,{" "}
+        <a href="https://www.brightlocal.com/research/google-my-business-insights-study/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>.
+      </p>
+      <p>
+        BrightLocal, <em>Local Consumer Review Survey 2026</em>, panel 1002 konsumentów,{" "}
+        <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>.
+      </p>
+      <p>
+        J. B. Oldroyd, K. McElheran, D. Elkington, <em>The Short Life of Online Sales Leads</em>, „Harvard Business
+        Review" 2011,{" "}
+        <a href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">hbr.org</a>.
+      </p>
+      <p>
+        Google, <em>Jak poprawić pozycję firmy w Google</em>, dokumentacja pomocy,{" "}
+        <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com</a>.
+      </p>
+    </>
+  ),
+
+
+  /* ─────────────────────────────────────────────────────────────────────────
      Wizytówka: Firma remontowa a wizytówka Google. Jak może pomóc
   ───────────────────────────────────────────────────────────────────────── */
   "firma-remontowa-wizytowka-google": (
