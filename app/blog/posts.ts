@@ -27,6 +27,18 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "ile-jest-adwokatow-w-polsce",
+    title: "Ile jest adwokatów w Polsce",
+    excerpt:
+      "Na koniec 2025 roku zawód adwokata wykonywało 23 613 osób, a na listach adwokackich figurowało 29 349. Pokazuję pełne dane z Naczelnej Rady Adwokackiej i samorządu radcowskiego, wyjaśniam, dlaczego źródła podają różne liczby, rozkładam adwokaturę na 24 izby i liczę, ilu prawników przypada dziś na jednego mieszkańca Polski.",
+    category: "Poradnik",
+    date: "2026-09-11",
+    readTime: 11,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-ile-adwokatow-w-polsce.svg",
+    published: true,
+  },
+  {
     slug: "jak-zwiekszyc-jakosc-polaczen-uslugi-dekarskie",
     title: "Jak zwiększyć jakość połączeń w usługach dekarskich",
     excerpt:

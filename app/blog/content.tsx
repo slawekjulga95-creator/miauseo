@@ -4,6 +4,277 @@ import EncjaGBP from "@/components/seo/EncjaGBP";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     Poradnik: Ile jest adwokatów w Polsce
+  ───────────────────────────────────────────────────────────────────────── */
+  "ile-jest-adwokatow-w-polsce": (
+    <>
+      {/* Spis treści */}
+      <div className="not-prose mt-2 mb-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Spis treści</p>
+        <ol className="space-y-1.5 text-sm">
+          <li><a href="#odpowiedz" className="font-semibold text-ink hover:text-brand transition-colors">Krótka odpowiedź i pełne dane</a></li>
+          <li><a href="#rozne-liczby" className="font-semibold text-ink hover:text-brand transition-colors">Dlaczego różne źródła podają różne liczby</a></li>
+          <li><a href="#izby" className="font-semibold text-ink hover:text-brand transition-colors">Dwadzieścia cztery izby i bardzo nierówny rozkład</a></li>
+          <li><a href="#dwadziescia-lat" className="font-semibold text-ink hover:text-brand transition-colors">Dwadzieścia lat, prawie czterokrotny wzrost</a></li>
+          <li><a href="#radcowie" className="font-semibold text-ink hover:text-brand transition-colors">Adwokaci to mniejszość wśród prawników</a></li>
+          <li><a href="#na-mieszkanca" className="font-semibold text-ink hover:text-brand transition-colors">Ilu prawników przypada na mieszkańca</a></li>
+          <li><a href="#aplikanci" className="font-semibold text-ink hover:text-brand transition-colors">Co pokazują aplikacje, czyli następne pięć lat</a></li>
+          <li><a href="#co-z-tego" className="font-semibold text-ink hover:text-brand transition-colors">Co te liczby znaczą dla pojedynczej kancelarii</a></li>
+        </ol>
+      </div>
+
+      <h2 id="odpowiedz">Krótka odpowiedź i pełne dane</h2>
+      <p>
+        <strong>Na koniec 2025 roku zawód adwokata wykonywało w Polsce 23 613 osób, a na listach adwokackich
+        figurowało łącznie 29 349 osób</strong>, licząc razem z tymi, które mają uprawnienia, ale zawodu nie
+        wykonują. Dane pochodzą z zestawienia opublikowanego przez samorząd radcowski na podstawie danych obu
+        samorządów prawniczych (
+        <a href="https://radcaprawny.kirp.pl/numery/aplikacje-prawnicze-2025-utrwalone-wybory-na-zmieniajacym-sie-rynku/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">radcaprawny.kirp.pl</a>,
+        dostęp 11 września 2026).
+      </p>
+      <p>
+        Nieco wcześniejszy, ale bardziej szczegółowy obraz daje sprawozdanie organów Adwokatury za kadencję
+        2021–2025, przygotowane na Krajowy Zjazd Adwokatury. Według stanu <strong>na 31 marca 2025 roku</strong>{" "}
+        wyglądało to tak:
+      </p>
+
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr className="bg-surface">
+              <th className="text-left p-3 border border-border font-bold text-ink">Kategoria</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Liczba osób</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-3 border border-border font-semibold">Adwokaci wykonujący zawód</td>
+              <td className="p-3 border border-border">22 912</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border font-semibold">Adwokaci niewykonujący zawodu</td>
+              <td className="p-3 border border-border">5 518</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border font-semibold">Razem na listach adwokackich</td>
+              <td className="p-3 border border-border">28 430</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border font-semibold">Aplikanci adwokaccy</td>
+              <td className="p-3 border border-border">5 421</td>
+            </tr>
+            <tr>
+              <td className="p-3 border border-border font-semibold">Prawnicy zagraniczni</td>
+              <td className="p-3 border border-border">125</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Jeśli ktoś pyta „ilu jest adwokatów w Polsce" i oczekuje jednej liczby, najuczciwsza odpowiedź brzmi:{" "}
+        <strong>ponad dwadzieścia trzy tysiące praktykujących, blisko trzydzieści tysięcy z uprawnieniami
+        i drugie pięć tysięcy w drodze do zawodu</strong>.
+      </p>
+
+      <h2 id="rozne-liczby">Dlaczego różne źródła podają różne liczby</h2>
+      <p>
+        Rozbieżności, na które trafia się w internecie, w większości nie biorą się z błędów, tylko z trzech
+        różnych rzeczy liczonych pod tą samą nazwą.
+      </p>
+      <p>
+        <strong>Wykonujący zawód a wpisani na listę.</strong> Adwokat, który przeszedł do sądu, prokuratury,
+        administracji albo do działu prawnego spółki, zostaje na liście, ale zawodu nie wykonuje. Ta grupa to
+        w marcu 2025 roku 5 518 osób, czyli <strong>niemal jedna piąta wszystkich wpisanych</strong>. Kto liczy
+        listę, dostanie 28 430. Kto liczy praktykę, dostanie o prawie sześć tysięcy mniej.
+      </p>
+      <p>
+        <strong>Data.</strong> Liczba rośnie z każdym ślubowaniem. Między marcem a grudniem 2025 roku przybyło
+        około siedmiuset praktykujących adwokatów, więc dwa poprawne źródła różniące się o kwartał podadzą dwie
+        różne liczby i oba będą aktualne na swoją datę.
+      </p>
+      <p>
+        <strong>Adwokat a prawnik.</strong> Potocznie „prawnik" bywa synonimem adwokata, a w rzeczywistości jest
+        pojęciem szerszym i obejmuje między innymi radców prawnych, których jest prawie dwa razy więcej. Do tego
+        wracam niżej, bo to najczęstsze źródło nieporozumień w rozmowach o rynku usług prawnych.
+      </p>
+      <p>
+        Najpewniejsze źródło do sprawdzenia konkretnej osoby to{" "}
+        <a href="https://rejestradwokatow.pl/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">Krajowy Rejestr Adwokatów i Aplikantów Adwokackich</a>{" "}
+        prowadzony przez Naczelną Radę Adwokacką. Rejestr pozwala filtrować po statusie, więc widać w nim różnicę
+        między wykonującym zawód a wpisanym na listę.
+      </p>
+
+      <h2 id="izby">Dwadzieścia cztery izby i bardzo nierówny rozkład</h2>
+      <p>
+        Adwokatura dzieli się na <strong>24 izby adwokackie</strong>, z siedzibami w Białymstoku, Bielsku-Białej,
+        Bydgoszczy, Częstochowie, Gdańsku, Katowicach, Kielcach, Koszalinie, Krakowie, Lublinie, Łodzi, Olsztynie,
+        Opolu, Płocku, Poznaniu, Radomiu, Rzeszowie, Siedlcach, Szczecinie, Toruniu, Wałbrzychu, Warszawie,
+        Wrocławiu i Zielonej Górze (
+        <a href="https://www.adwokatura.pl/izby-adwokackie/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">adwokatura.pl</a>,
+        dostęp 11 września 2026).
+      </p>
+      <p>
+        Ten podział nie ma nic wspólnego z równomiernym rozłożeniem zawodu po kraju. <strong>Izba warszawska jest
+        zdecydowanie największa w kraju.</strong> Na koniec 2022 roku należało do niej 6 102 adwokatów wykonujących
+        zawód i 2 232 niewykonujących, czyli więcej osób, niż liczy razem kilka najmniejszych izb. Dla porównania izby takie jak Płock, Siedlce czy Wałbrzych obsługują obszary,
+        na których cała palestra zmieściłaby się na jednej sali rozpraw.
+      </p>
+      <p>
+        Praktyczny wniosek z tej dysproporcji jest taki, że <strong>krajowa liczba adwokatów niewiele mówi
+        o konkurencji w konkretnym mieście</strong>. Kancelaria z Rzeszowa i kancelaria z Mokotowa działają na
+        rynkach różniących się gęstością kilkukrotnie, a klient i jednej, i drugiej szuka w promieniu kilku
+        kilometrów od siebie.
+      </p>
+
+      <h2 id="dwadziescia-lat">Dwadzieścia lat, prawie czterokrotny wzrost</h2>
+      <p>
+        Najciekawsze w tych danych jest tempo. W 2005 roku, przed otwarciem zawodów prawniczych, zawód adwokata
+        wykonywało <strong>6 179 osób</strong>, a na listach było ich 8 051. Dwadzieścia lat później mamy 23 613
+        praktykujących i 29 349 wpisanych. To <strong>prawie czterokrotny wzrost liczby praktykujących adwokatów
+        w ciągu dwóch dekad</strong>, przy jednoczesnym spadku liczby ludności Polski.
+      </p>
+      <p>
+        Wzrost nie zatrzymał się też w ostatnich latach. Sprawozdanie Adwokatury pokazuje, że w samej kadencji
+        2021–2025 liczba wykonujących zawód poszła w górę z 19 936 do 22 912, czyli o 14,9%, a liczba
+        niewykonujących z 4 400 do 5 518, czyli o 25,4%. <strong>Szybciej rośnie więc grupa, która ma uprawnienia,
+        ale nie praktykuje</strong>, i to jest jedna z ciekawszych obserwacji z tego dokumentu.
+      </p>
+
+      <h2 id="radcowie">Adwokaci to mniejszość wśród prawników</h2>
+      <p>
+        Pytanie o adwokatów prawie zawsze wraca w rozmowie jako pytanie o prawników, a to nie to samo. Zawód
+        radcy prawnego, dopuszczony od 2015 roku do obrony w sprawach karnych, jest dziś w Polsce liczniejszy.
+      </p>
+
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr className="bg-surface">
+              <th className="text-left p-3 border border-border font-bold text-ink">Zawód</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Wykonujący zawód (2025)</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Ogółem na listach (2025)</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Wykonujący w 2005</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-3 border border-border font-semibold">Adwokaci</td>
+              <td className="p-3 border border-border">23 613</td>
+              <td className="p-3 border border-border">29 349</td>
+              <td className="p-3 border border-border">6 179</td>
+            </tr>
+            <tr className="bg-surface">
+              <td className="p-3 border border-border font-semibold">Radcowie prawni</td>
+              <td className="p-3 border border-border">43 546</td>
+              <td className="p-3 border border-border">56 415</td>
+              <td className="p-3 border border-border">17 501</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Razem daje to <strong>67 159 osób wykonujących zawód adwokata albo radcy prawnego</strong> i blisko
+        86 tysięcy z uprawnieniami. Dla klienta szukającego pomocy prawnej różnica między tymi tytułami jest
+        dziś w większości spraw formalna, bo zakres uprawnień procesowych w praktyce się pokrywa. Dla rynku
+        oznacza to jednak, że <strong>konkurencja o tego samego klienta jest prawie trzy razy większa, niż
+        sugeruje sama liczba adwokatów</strong>.
+      </p>
+
+      <h2 id="na-mieszkanca">Ilu prawników przypada na mieszkańca</h2>
+      <p>
+        Ludność Polski na koniec września 2025 roku wynosiła około 37,38 miliona osób (
+        <a href="https://stat.gov.pl/podstawowe-dane/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">GUS</a>,
+        dostęp 11 września 2026). Po podzieleniu przez liczbę praktykujących wychodzą dwie liczby warte
+        zapamiętania.
+      </p>
+      <p>
+        <strong>Jeden adwokat wykonujący zawód przypada na mniej więcej 1 580 mieszkańców.</strong> Jeśli doliczyć
+        radców prawnych, <strong>jeden prawnik z uprawnieniami procesowymi przypada na około 560 osób</strong>.
+        Dwadzieścia lat wcześniej, przy ludności przekraczającej 38 milionów i łącznej liczbie niecałych
+        24 tysięcy praktykujących, ten drugi wskaźnik wynosił mniej więcej 1 600 osób na jednego prawnika.
+      </p>
+      <p>
+        Nasycenie rynku wzrosło więc blisko trzykrotnie w dwie dekady. To jest właściwy kontekst dla wszystkich
+        rozmów o tym, że <strong>o klienta w usługach prawnych jest dziś trudniej niż kiedykolwiek</strong>,
+        i to niezależnie od jakości samej obsługi.
+      </p>
+
+      <h2 id="aplikanci">Co pokazują aplikacje, czyli następne pięć lat</h2>
+      <p>
+        Liczba adwokatów za kilka lat jest dziś w dużej mierze przesądzona, bo widać ją w aplikacjach.
+        Do egzaminu wstępnego na aplikację adwokacką w 2025 roku przystąpiło <strong>2 097 osób, zdało
+        1 483</strong>, czyli 70,7%. Na aplikację radcowską przystąpiło 2 642 kandydatów, zdało 1 864, a zdawalność
+        była praktycznie identyczna. Łącznie na wszystkie aplikacje prawnicze zdawało 5 317 osób.
+      </p>
+      <p>
+        Na listach aplikanckich Adwokatury było w marcu 2025 roku 5 421 osób. Przy takiej liczbie i typowym
+        trzyletnim cyklu szkolenia <strong>rynek będzie wchłaniał grubo ponad tysiąc nowych adwokatów rocznie</strong>,
+        zakładając, że zdawalność egzaminu zawodowego utrzyma się na dotychczasowym poziomie. Liczba praktykujących
+        będzie więc rosła dalej, choć wolniej niż w dekadzie po otwarciu zawodów.
+      </p>
+
+      <h2 id="co-z-tego">Co te liczby znaczą dla pojedynczej kancelarii</h2>
+      <p>
+        Dla klienta te dane są ciekawostką. Dla kancelarii są opisem warunków pracy. Trzy wnioski wydają mi się
+        najważniejsze.
+      </p>
+      <p>
+        <strong>Po pierwsze, konkurencja jest lokalna, a nie krajowa.</strong> Klient z Bydgoszczy nie porównuje
+        67 tysięcy prawników, tylko tych kilkunastu czy kilkudziesięciu, których znajdzie w swojej okolicy.
+        Dlatego liczbą, która realnie dotyczy Twojej kancelarii, nie jest 23 613, tylko to, ilu adwokatów
+        i radców pokazuje się na tych samych zapytaniach w Twoim mieście.
+      </p>
+      <p>
+        <strong>Po drugie, przy takim nasyceniu wygrywa widoczność, a nie sama kompetencja.</strong> Przy dwóch
+        kancelariach o porównywalnym dorobku klient wybierze tę, którą znajdzie, i to zwykle w Mapach Google albo
+        w pierwszych wynikach wyszukiwania na frazę z nazwą miasta. To brutalne, ale liczby o gęstości rynku
+        mówią dokładnie to samo.
+      </p>
+      <p>
+        <strong>Po trzecie, specjalizacja przestała być dodatkiem.</strong> Przy 6 tysiącach adwokatów w kraju
+        można było być prawnikiem od wszystkiego. Przy 67 tysiącach prawników procesowych klient szuka kogoś od
+        rozwodów, od frankowiczów, od spadków albo od spraw gospodarczych, i dokładnie tak formułuje zapytanie
+        w wyszukiwarce.
+      </p>
+      <p>
+        Jeżeli prowadzisz kancelarię i chcesz sprawdzić, jak wypadasz na tle tej lokalnej konkurencji, zacznij od
+        własnego profilu w Google. Punkt po punkcie przechodzi przez to nasza{" "}
+        <Link href="/checklista-wizytowki-google" className="text-brand font-semibold hover:underline">checklista pozycjonowania wizytówki</Link>,
+        a szybki wynik policzy{" "}
+        <Link href="/gbp-score" className="text-brand font-semibold hover:underline">darmowy audyt wizytówki Google</Link>.
+        Obie rzeczy są bezpłatne i nie wymagają kontaktu z nikim.
+      </p>
+
+      <h2>Źródła</h2>
+      <p>
+        Naczelna Rada Adwokacka, <em>Sprawozdania Organów Adwokatury, kadencja 2021–2025</em>, dane na 31 marca
+        2025,{" "}
+        <a href="https://kza2025.adwokatura.pl/wp-content/uploads/2025/06/Sprawozdania-Organow-Adwokatury_kadencja-2021-2025.pdf" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">kza2025.adwokatura.pl</a>.
+      </p>
+      <p>
+        „Radca Prawny", <em>Aplikacje prawnicze 2025, utrwalone wybory na zmieniającym się rynku</em>, Krajowa
+        Izba Radców Prawnych,{" "}
+        <a href="https://radcaprawny.kirp.pl/numery/aplikacje-prawnicze-2025-utrwalone-wybory-na-zmieniajacym-sie-rynku/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">radcaprawny.kirp.pl</a>.
+      </p>
+      <p>
+        Naczelna Rada Adwokacka, <em>Krajowy Rejestr Adwokatów i Aplikantów Adwokackich</em>,{" "}
+        <a href="https://rejestradwokatow.pl/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">rejestradwokatow.pl</a>.
+      </p>
+      <p>
+        Naczelna Rada Adwokacka, wykaz izb adwokackich,{" "}
+        <a href="https://www.adwokatura.pl/izby-adwokackie/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">adwokatura.pl</a>.
+      </p>
+      <p>
+        Główny Urząd Statystyczny, podstawowe dane o ludności Polski,{" "}
+        <a href="https://stat.gov.pl/podstawowe-dane/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">stat.gov.pl</a>.
+      </p>
+    </>
+  ),
+
+
+  /* ─────────────────────────────────────────────────────────────────────────
      Wizytówka: Jak zwiększyć jakość połączeń w usługach dekarskich
   ───────────────────────────────────────────────────────────────────────── */
   "jak-zwiekszyc-jakosc-polaczen-uslugi-dekarskie": (
