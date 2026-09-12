@@ -140,7 +140,7 @@ export default function ProfilFirmyWGoogleJakSkonfigurowac() {
       </p>
 
       <p>
-        Jeśli wolisz skupić się na prowadzeniu firmy zamiast na samodzielnym zgłębianiu algorytmów Google, sprawdź naszą usługę <Link href="/uslugi/wizytowka-google">pozycjonowania wizytówki Google</Link>. Zajmujemy się konfiguracją, optymalizacją i bieżącym zarządzaniem profilem, a Ty dostajesz raport z efektów co miesiąc.
+        Jeśli wolisz skupić się na prowadzeniu firmy zamiast na samodzielnym zgłębianiu algorytmów Google, sprawdź naszą usługę <Link href="/pozycjonowanie-wizytowki-google">pozycjonowania wizytówki Google</Link>. Zajmujemy się konfiguracją, optymalizacją i bieżącym zarządzaniem profilem, a Ty dostajesz raport z efektów co miesiąc.
       </p>
 
       <h2>Podsumowanie</h2>

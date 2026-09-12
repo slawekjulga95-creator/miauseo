@@ -39,7 +39,7 @@ export default function WizytowkaGoogleAWynikiOrganiczneRoznica() {
 
       <h2>Co wybrać — wizytówkę czy SEO strony?</h2>
       <p>To pytanie z fałszywą alternatywą. Oba kanały są komplementarne i razem działają lepiej niż każdy z osobna. Firma z silnym profilem w Google Maps i dobrze zoptymalizowaną stroną jest widoczna zarówno w Local Pack jak i w wynikach organicznych — podwajając szansę że klient kliknie właśnie w nią. Google traktuje taką obecność jako dodatkowy sygnał wiarygodności.</p>
-      <p>Jeśli jednak budżet i czas są ograniczone, dla większości firm lokalnych lepszym punktem startowym jest wizytówka Google — ze względu na szybszy zwrot z inwestycji i bezpośrednie przełożenie na telefony od klientów. Sprawdź naszą usługę <Link href="/uslugi/wizytowka-google">pozycjonowania wizytówki Google</Link>, a jeśli szukasz też SEO strony — mamy ofertę <Link href="/uslugi/pozycjonowanie-strony">pozycjonowania strony internetowej</Link>.</p>
+      <p>Jeśli jednak budżet i czas są ograniczone, dla większości firm lokalnych lepszym punktem startowym jest wizytówka Google — ze względu na szybszy zwrot z inwestycji i bezpośrednie przełożenie na telefony od klientów. Sprawdź naszą usługę <Link href="/pozycjonowanie-wizytowki-google">pozycjonowania wizytówki Google</Link>, a jeśli szukasz też SEO strony — mamy ofertę <Link href="/uslugi/pozycjonowanie-strony">pozycjonowania strony internetowej</Link>.</p>
     </div>
   );
 }

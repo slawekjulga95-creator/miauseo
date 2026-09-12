@@ -25,7 +25,7 @@ const services = [
   },
   {
     title: "Wizytówka Google",
-    href: "/uslugi/wizytowka-google",
+    href: "/pozycjonowanie-wizytowki-google",
     badge: null,
     desc: (
       <>
@@ -34,7 +34,7 @@ const services = [
         także bez własnej strony internetowej.
       </>
     ),
-    photo: "/uslugi/wizytowka-google.jpg",
+    photo: "/pozycjonowanie-wizytowki-google.jpg",
     logo: null,
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">

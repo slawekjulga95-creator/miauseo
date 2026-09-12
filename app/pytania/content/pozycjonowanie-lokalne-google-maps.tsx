@@ -38,7 +38,7 @@ export default function PozycjonowanieLokalneGoogleMaps() {
 
       <h2>Jak mierzyć efekty pozycjonowania lokalnego?</h2>
       <p>Efekty pozycjonowania lokalnego mierzysz przede wszystkim przez statystyki dostępne bezpośrednio w panelu Google Business Profile. Widać tam liczbę wyświetleń profilu, liczbę kliknięć w numer telefonu, liczbę zapytań o trasę i wejść na stronę internetową. To dane bezpośrednio pokazujące ile klientów przyszło do Ciebie z Google Maps. Jak czytać te statystyki opisujemy w artykule <Link href="/pytania/jak-sprawdzic-statystyki-wizytowki-google">jak sprawdzić statystyki wizytówki Google</Link>.</p>
-      <p>Poza statystykami profilu możesz śledzić pozycję swojej firmy na konkretne frazy przy pomocy zewnętrznych narzędzi do monitorowania pozycji lokalnych — BrightLocal, Whitespark, Moz Local. Takie narzędzia pokazują nie tylko czy jesteś w top 3, ale też jak Twoja pozycja zmienia się w czasie i jak wypadasz w poszczególnych dzielnicach miasta. Jeśli zależy Ci na profesjonalnym podejściu do tematu, sprawdź naszą usługę <Link href="/uslugi/wizytowka-google">pozycjonowania wizytówki Google</Link>.</p>
+      <p>Poza statystykami profilu możesz śledzić pozycję swojej firmy na konkretne frazy przy pomocy zewnętrznych narzędzi do monitorowania pozycji lokalnych — BrightLocal, Whitespark, Moz Local. Takie narzędzia pokazują nie tylko czy jesteś w top 3, ale też jak Twoja pozycja zmienia się w czasie i jak wypadasz w poszczególnych dzielnicach miasta. Jeśli zależy Ci na profesjonalnym podejściu do tematu, sprawdź naszą usługę <Link href="/pozycjonowanie-wizytowki-google">pozycjonowania wizytówki Google</Link>.</p>
     </div>
   );
 }

@@ -170,7 +170,7 @@ export default function PozycjonowanieStronyPage() {
             </p>
             <p className="text-zinc-500 leading-relaxed border-l-2 border-brand/20 pl-5">
               Dla firm lokalnych pozycjonowanie strony internetowej najlepiej działa w połączeniu
-              z <Link href="/uslugi/wizytowka-google" className="text-brand font-semibold hover:underline">pozycjonowaniem wizytówki Google</Link>.
+              z <Link href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniem wizytówki Google</Link>.
               Wizytówka generuje szybkie połączenia i zapytania o trasę, a strona buduje{" "}
               <strong className="font-semibold text-ink">autorytet i konwertuje ruch</strong> na
               zapytania ofertowe i sprzedaż.
@@ -393,7 +393,7 @@ export default function PozycjonowanieStronyPage() {
             </p>
             <p className="leading-relaxed">
               Dla firm lokalnych najlepszy efekt daje połączenie pozycjonowania strony
-              z <Link href="/uslugi/wizytowka-google" className="text-brand font-semibold hover:underline">pozycjonowaniem wizytówki Google</Link>.
+              z <Link href="/pozycjonowanie-wizytowki-google" className="text-brand font-semibold hover:underline">pozycjonowaniem wizytówki Google</Link>.
               Oba kanały wzajemnie się wzmacniają i razem budują dominującą obecność w lokalnych wynikach wyszukiwania.
             </p>
             <p className="leading-relaxed">

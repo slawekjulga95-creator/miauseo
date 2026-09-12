@@ -14,7 +14,7 @@ const serviceGroups = [
     heading: "Rynek lokalny",
     items: [
       {
-        href: "/uslugi/wizytowka-google",
+        href: "/pozycjonowanie-wizytowki-google",
         label: "Wizytówka Google",
         desc: "Pozycjonowanie GBP w Mapach",
         icon: (

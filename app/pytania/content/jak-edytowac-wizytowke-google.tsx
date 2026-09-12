@@ -104,7 +104,7 @@ export default function JakEdytowacWizytowkeGoogle() {
       </p>
 
       <p>
-        Jeśli chcesz żeby Twój profil nie tylko był aktualny, ale faktycznie pojawiał się wysoko w wynikach lokalnych, sama edycja danych to za mało. Potrzebna jest szersza strategia pozycjonowania. Jak wygląda taki proces opisujemy w poradniku <Link href="/pytania/jak-wypozycjonowac-wizytowke-google">jak wypozycjonować wizytówkę Google</Link>, a profesjonalną pomoc oferujemy w ramach usługi <Link href="/uslugi/wizytowka-google">pozycjonowania wizytówki Google</Link>.
+        Jeśli chcesz żeby Twój profil nie tylko był aktualny, ale faktycznie pojawiał się wysoko w wynikach lokalnych, sama edycja danych to za mało. Potrzebna jest szersza strategia pozycjonowania. Jak wygląda taki proces opisujemy w poradniku <Link href="/pytania/jak-wypozycjonowac-wizytowke-google">jak wypozycjonować wizytówkę Google</Link>, a profesjonalną pomoc oferujemy w ramach usługi <Link href="/pozycjonowanie-wizytowki-google">pozycjonowania wizytówki Google</Link>.
       </p>
 
       <h2>Podsumowanie</h2>

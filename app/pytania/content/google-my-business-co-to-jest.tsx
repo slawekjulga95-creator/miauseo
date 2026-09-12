@@ -114,7 +114,7 @@ export default function GoogleMyBusinessCoToJest() {
       </p>
 
       <p>
-        Kosztem są ewentualnie czas i praca potrzebna do prawidłowego skonfigurowania i utrzymania profilu. Możesz zrobić to samodzielnie lub zlecić specjaliście. Jeśli chcesz osiągnąć konkretne efekty w postaci wyższej pozycji w mapach i większego ruchu klientów, warto rozważyć profesjonalną usługę <Link href="/uslugi/wizytowka-google">pozycjonowania wizytówki Google</Link>.
+        Kosztem są ewentualnie czas i praca potrzebna do prawidłowego skonfigurowania i utrzymania profilu. Możesz zrobić to samodzielnie lub zlecić specjaliście. Jeśli chcesz osiągnąć konkretne efekty w postaci wyższej pozycji w mapach i większego ruchu klientów, warto rozważyć profesjonalną usługę <Link href="/pozycjonowanie-wizytowki-google">pozycjonowania wizytówki Google</Link>.
       </p>
 
       <h2>Podsumowanie</h2>

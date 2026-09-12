@@ -39,7 +39,7 @@ export default function WizytowkaGoogleAPozycjaWWyszukiwarce() {
 
       <h2>Jak mierzyć widoczność w obu kanałach?</h2>
       <p>Widoczność wizytówki mierzysz przez statystyki w Google Business Profile — wyświetlenia, kliknięcia w telefon, zapytania o trasę. Jak je odczytywać: <Link href="/pytania/jak-sprawdzic-statystyki-wizytowki-google">jak sprawdzić statystyki wizytówki Google</Link>. Widoczność strony internetowej mierzysz przez Google Search Console — kliknięcia i wyświetlenia organiczne. Oba narzędzia są bezpłatne i dają obraz dwóch różnych kanałów, które razem tworzą pełną lokalną obecność w Google.</p>
-      <p>Jeśli chcesz rozwinąć oba kanały jednocześnie, sprawdź nasze usługi: <Link href="/uslugi/wizytowka-google">pozycjonowanie wizytówki Google</Link> i <Link href="/uslugi/pozycjonowanie-strony">pozycjonowanie strony internetowej</Link>.</p>
+      <p>Jeśli chcesz rozwinąć oba kanały jednocześnie, sprawdź nasze usługi: <Link href="/pozycjonowanie-wizytowki-google">pozycjonowanie wizytówki Google</Link> i <Link href="/uslugi/pozycjonowanie-strony">pozycjonowanie strony internetowej</Link>.</p>
     </div>
   );
 }
