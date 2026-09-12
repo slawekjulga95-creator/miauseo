@@ -182,7 +182,7 @@ export default function HeroLeadForm() {
             </label>
 
             {error && (
-              <p className="text-red-500 text-xs text-center">Błąd wysyłki. Zadzwoń: +48 455 571 349</p>
+              <p className="text-red-500 text-xs text-center">Błąd wysyłki. Napisz: slawomir@miauseo.pl</p>
             )}
             <button
               type="submit"

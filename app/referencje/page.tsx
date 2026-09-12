@@ -82,52 +82,62 @@ export default function ReferencjePage() {
       {/* Realizacje – portfolio */}
       <section className="pt-12 pb-24 px-6 bg-surface">
         <div className="max-w-6xl mx-auto">
-          <div className="max-w-2xl mb-12">
+          <div className="max-w-3xl mb-14">
             <h1 className="text-3xl md:text-4xl font-bold text-ink leading-tight">
               Referencje
             </h1>
+            <p className="mt-6 text-[17px] text-zinc-600 leading-relaxed">
+              Poniżej znajdziesz realizacje, przy których pracowaliśmy od początku do końca. Nie są to przypadkowe zlecenia, tylko <strong className="text-ink">firmy lokalne walczące o klienta w swojej okolicy</strong>, gdzie każdy telefon i każde zapytanie z wizytówki Google przekłada się wprost na przychód. Przy każdej realizacji opisujemy, co dokładnie zostało zrobione, żebyś wiedział, za co się płaci.
+            </p>
+            <p className="mt-4 text-[17px] text-zinc-600 leading-relaxed">
+              Pracujemy tylko wtedy, gdy widzimy realny potencjał do wzrostu, dlatego portfolio rośnie powoli i świadomie. Zamiast obiecywać cuda, pokazujemy <strong className="text-ink">zakres działań i efekty</strong>, a resztę zostawiamy ocenie klientów. Kliknij w wybraną realizację, aby zobaczyć pełną historię współpracy razem z opinią.
+            </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 lg:grid-rows-[auto_auto_auto_auto_1fr_auto] gap-6 items-stretch">
+          <div className="flex flex-col gap-6">
             {portfolio.map((p) => (
               <article
                 key={p.href}
-                className="flex flex-col lg:grid lg:grid-rows-subgrid lg:row-span-6 rounded-2xl p-7 bg-white border border-border hover:border-brand/40 transition-colors duration-200"
+                className="grid md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-8 md:gap-12 rounded-2xl p-7 md:p-9 bg-white border border-border hover:border-brand/40 transition-colors duration-200"
               >
-                <Image
-                  src="/logo.png"
-                  alt="MiauSEO"
-                  width={224}
-                  height={64}
-                  sizes="112px"
-                  className="self-start justify-self-start h-8 w-auto mb-5"
-                />
-                <h3 className="text-xl font-bold text-ink mb-3">
-                  {p.title}
-                  <span className="block text-sm font-semibold text-brand mt-1">{p.client}</span>
-                </h3>
-                <p className="text-[15px] text-zinc-600 leading-relaxed mb-6">{p.description}</p>
+                <div className="flex flex-col">
+                  <Image
+                    src="/logo.png"
+                    alt="MiauSEO"
+                    width={224}
+                    height={64}
+                    sizes="112px"
+                    className="self-start h-8 w-auto mb-5"
+                  />
+                  <h2 className="text-xl font-bold text-ink mb-3">
+                    {p.title}
+                    <span className="block text-sm font-semibold text-brand mt-1">{p.client}</span>
+                  </h2>
+                  <p className="text-[15px] text-zinc-600 leading-relaxed mb-7">{p.description}</p>
 
-                <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-3">Zakres działań</p>
-                <ul className="space-y-2.5 mb-8">
-                  {p.scope.map((s, j) => (
-                    <li key={j} className="flex items-center gap-2.5 text-sm text-zinc-600 leading-relaxed whitespace-nowrap">
-                      <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-brand" />
-                      {s}
-                    </li>
-                  ))}
-                </ul>
+                  <Link
+                    href={p.href}
+                    aria-label={`Zobacz pełną realizację: ${p.title}`}
+                    className="mt-auto self-start inline-flex items-center justify-center gap-2 text-sm font-bold px-5 py-3 rounded-xl border border-border text-ink hover:border-brand hover:text-brand transition-colors duration-200"
+                  >
+                    Zobacz pełną realizację
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                  </Link>
+                </div>
 
-                <Link
-                  href={p.href}
-                  aria-label={`Zobacz pełną realizację — ${p.title}`}
-                  className="mt-auto inline-flex items-center justify-center gap-2 text-sm font-bold px-5 py-3 rounded-xl border border-border text-ink hover:border-brand hover:text-brand transition-colors duration-200"
-                >
-                  Zobacz pełną realizację
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
-                  </svg>
-                </Link>
+                <div className="md:border-l md:border-border md:pl-10">
+                  <p className="text-xs font-bold tracking-widest uppercase text-zinc-400 mb-4">Zakres działań</p>
+                  <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-2.5">
+                    {p.scope.map((s, j) => (
+                      <li key={j} className="flex items-start gap-2.5 text-sm text-zinc-600 leading-relaxed">
+                        <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-brand mt-2" />
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </article>
             ))}
           </div>
