@@ -21,7 +21,7 @@ type Wpis = { url: string; priority: number; changeFrequency: MetadataRoute.Site
 const USLUGI: Wpis[] = [
   { url: "/",                            priority: 1.0, changeFrequency: "weekly" },
   { url: "/uslugi",                      priority: 0.9, changeFrequency: "monthly" },
-  { url: "/pozycjonowanie-wizytowki-google",     priority: 0.9, changeFrequency: "monthly" },
+  { url: "/uslugi/wizytowka-google",     priority: 0.9, changeFrequency: "monthly" },
   { url: "/uslugi/pozycjonowanie-strony",priority: 0.9, changeFrequency: "monthly" },
   { url: "/uslugi/google-ads",           priority: 0.9, changeFrequency: "monthly" },
   { url: "/uslugi/meta-ads",             priority: 0.9, changeFrequency: "monthly" },

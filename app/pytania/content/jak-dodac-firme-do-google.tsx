@@ -203,7 +203,7 @@ export default function JakDodacFirmeDoGoogle() {
         <li>Po weryfikacji uzupełnij profil w 100% i zbierz pierwsze opinie.</li>
       </ul>
       <p>
-        Sama wizytówka to dopiero punkt startowy. Jeśli chcesz faktycznie pojawiać się wyżej niż konkurencja w Google Maps, potrzebujesz aktywnej pracy nad <Link href="/pozycjonowanie-wizytowki-google">pozycjonowaniem wizytówki Google</Link>. Sprawdź też: <Link href="/pytania/jak-wypozycjonowac-wizytowke-google">jak wypozycjonować wizytówkę Google</Link> – kompleksowy przewodnik po czynnikach rankingowych.
+        Sama wizytówka to dopiero punkt startowy. Jeśli chcesz faktycznie pojawiać się wyżej niż konkurencja w Google Maps, potrzebujesz aktywnej pracy nad <Link href="/uslugi/wizytowka-google">pozycjonowaniem wizytówki Google</Link>. Sprawdź też: <Link href="/pytania/jak-wypozycjonowac-wizytowke-google">jak wypozycjonować wizytówkę Google</Link> – kompleksowy przewodnik po czynnikach rankingowych.
       </p>
 
     </div>

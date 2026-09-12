@@ -193,7 +193,7 @@ export default function ProfilFirmyWGooglePage() {
               nie ma się na co powołać przy trudniejszych zapytaniach, a strona bez
               profilu nie istnieje w wynikach lokalnych, które klient widzi jako
               pierwsze. Jak to wygląda w liczbach i co robić najpierw, opisujemy przy{" "}
-              <Link href="/pozycjonowanie-wizytowki-google" className="text-brand hover:underline">
+              <Link href="/uslugi/wizytowka-google" className="text-brand hover:underline">
                 prowadzeniu wizytówki Google
               </Link>
               .

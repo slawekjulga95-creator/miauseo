@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const services = [
-  { href: "/pozycjonowanie-wizytowki-google", label: "Wizytówka Google" },
+  { href: "/uslugi/wizytowka-google", label: "Wizytówka Google" },
   { href: "/uslugi/pozycjonowanie-strony", label: "Pozycjonowanie strony" },
   { href: "/uslugi/google-ads", label: "Google Ads" },
 ];

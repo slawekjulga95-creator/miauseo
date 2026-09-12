@@ -239,7 +239,7 @@ export default function KontaktPage() {
                   jakie rezultaty osiągamy dla firm podobnych do Twojej.
                 </p>
                 <Link
-                  href="/pozycjonowanie-wizytowki-google"
+                  href="/uslugi/wizytowka-google"
                   className="inline-flex items-center gap-2.5 bg-brand hover:bg-brand-dark text-white font-bold px-6 py-4 rounded-xl transition-colors duration-200 text-sm"
                 >
                   Pozycjonowanie wizytówki Google

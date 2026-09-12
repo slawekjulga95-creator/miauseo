@@ -42,7 +42,7 @@ export default function CytowaniaLokalneSeoJakBudowac() {
       <p>Masowe dodawanie do setek bezwartościowych katalogów nie pomaga i może zaszkodzić. Google ocenia jakość źródeł — wpis w zaufanym branżowym katalogu jest wart więcej niż dziesięć wpisów w anonimowych agregatorsach bez ruchu.</p>
 
       <h2>Jak monitorować cytowania?</h2>
-      <p>Cytowania raz zbudowane nie wymagają codziennego monitorowania, ale warto raz na kwartał sprawdzić czy dane w kluczowych katalogach są aktualne — szczególnie po zmianie numeru telefonu lub adresu. Narzędzia takie jak BrightLocal, Moz Local czy Whitespark pozwalają na automatyczny audyt cytowań i pokazują gdzie dane są niezgodne z profilem głównym. Jeśli szukasz kompleksowego wsparcia w budowaniu lokalnej widoczności, sprawdź naszą ofertę <Link href="/pozycjonowanie-wizytowki-google">pozycjonowania wizytówki Google</Link>.</p>
+      <p>Cytowania raz zbudowane nie wymagają codziennego monitorowania, ale warto raz na kwartał sprawdzić czy dane w kluczowych katalogach są aktualne — szczególnie po zmianie numeru telefonu lub adresu. Narzędzia takie jak BrightLocal, Moz Local czy Whitespark pozwalają na automatyczny audyt cytowań i pokazują gdzie dane są niezgodne z profilem głównym. Jeśli szukasz kompleksowego wsparcia w budowaniu lokalnej widoczności, sprawdź naszą ofertę <Link href="/uslugi/wizytowka-google">pozycjonowania wizytówki Google</Link>.</p>
     </div>
   );
 }

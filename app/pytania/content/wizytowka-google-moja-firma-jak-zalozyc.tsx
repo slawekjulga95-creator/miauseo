@@ -161,7 +161,7 @@ export default function WizytowkaGoogleMojaFirmaJakZalozyc() {
       </p>
 
       <p>
-        Jeśli zależy Ci na pojawianiu się wysoko w wynikach dla konkretnych fraz w Twoim mieście lub regionie, warto zapoznać się z pełnym przewodnikiem <Link href="/pytania/jak-wypozycjonowac-wizytowke-google">jak wypozycjonować wizytówkę Google</Link>. Alternatywnie możesz skorzystać z profesjonalnej usługi – sprawdź ofertę <Link href="/pozycjonowanie-wizytowki-google">pozycjonowania wizytówki Google</Link> i dowiedz się jak wygląda współpraca.
+        Jeśli zależy Ci na pojawianiu się wysoko w wynikach dla konkretnych fraz w Twoim mieście lub regionie, warto zapoznać się z pełnym przewodnikiem <Link href="/pytania/jak-wypozycjonowac-wizytowke-google">jak wypozycjonować wizytówkę Google</Link>. Alternatywnie możesz skorzystać z profesjonalnej usługi – sprawdź ofertę <Link href="/uslugi/wizytowka-google">pozycjonowania wizytówki Google</Link> i dowiedz się jak wygląda współpraca.
       </p>
 
       <h2>Podsumowanie</h2>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    href: "/pozycjonowanie-wizytowki-google",
+    href: "/uslugi/wizytowka-google",
     title: "Wizytówka Google",
     tagline: "Lokalna widoczność bez budżetu reklamowego",
     description:

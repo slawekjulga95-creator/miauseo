@@ -57,7 +57,7 @@ export default function JakWypozycjonowacWizytowkeGoogle() {
       <p>Google obserwuje czy właściciel jest aktywny na profilu. Regularne dodawanie zdjęć, odpowiadanie na opinie w ciągu kilku dni, publikowanie postów z aktualnościami — to wszystko sygnały, że profil jest żywy i aktualny. Profile porzucone po weryfikacji stopniowo tracą pozycję na rzecz aktywnie zarządzanych konkurentów, nawet jeśli kiedyś miały lepszą historię. Jak zwiększyć zasięg przez aktywność opisujemy w artykule <Link href="/pytania/jak-zwiekszyc-zasieg-wizytowki-google">jak zwiększyć zasięg wizytówki Google</Link>.</p>
 
       <h2>Kiedy warto zlecić pozycjonowanie specjaliście?</h2>
-      <p>Samodzielne pozycjonowanie wizytówki jest możliwe — wszystkie narzędzia są bezpłatne, wiedza jest dostępna. Problem w tym że wymaga regularności i czasu, który większość właścicieli firm woli poświęcić na prowadzenie biznesu. Jeśli Twoja firma działa na rynku z realną konkurencją w Google Maps i chcesz pojawiać się w top 3, warto rozważyć profesjonalne wsparcie. Sprawdź naszą ofertę <Link href="/pozycjonowanie-wizytowki-google">pozycjonowania wizytówki Google</Link> i dowiedz się jak wygląda współpraca.</p>
+      <p>Samodzielne pozycjonowanie wizytówki jest możliwe — wszystkie narzędzia są bezpłatne, wiedza jest dostępna. Problem w tym że wymaga regularności i czasu, który większość właścicieli firm woli poświęcić na prowadzenie biznesu. Jeśli Twoja firma działa na rynku z realną konkurencją w Google Maps i chcesz pojawiać się w top 3, warto rozważyć profesjonalne wsparcie. Sprawdź naszą ofertę <Link href="/uslugi/wizytowka-google">pozycjonowania wizytówki Google</Link> i dowiedz się jak wygląda współpraca.</p>
     </div>
   );
 }

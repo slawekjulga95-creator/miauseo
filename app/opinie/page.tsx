@@ -109,7 +109,7 @@ export default function OpiniePage() {
                   Porozmawiajmy o Twoim biznesie
                 </Link>
                 <Link
-                  href="/pozycjonowanie-wizytowki-google"
+                  href="/uslugi/wizytowka-google"
                   className="inline-block border border-border text-ink hover:border-brand hover:text-brand font-semibold px-8 py-4 rounded-xl transition-colors duration-200"
                 >
                   Sprawdź ofertę
