@@ -474,6 +474,18 @@ export const posts: Post[] = [
     pinBottom: true,
   },
   {
+    slug: "miauseo-opinie-kasacja-aut",
+    title: "miauSEO Opinie - kasacja aut: 12, 77 i 95 połączeń",
+    excerpt: "Trzy zrzuty ze statystyk wizytówki Google klienta z branży kasacji i skupu aut, miesiąc po miesiącu: czerwiec 12 połączeń, lipiec 77, sierpień 95. Rozpisujemy kolejność wdrożenia - ujednolicenie danych NAP, uzupełnienie wszystkich pól profilu, opisy usług pod realne zapytania, weryfikację wideo, podstrony lokalizacyjne z linkowaniem wewnętrznym, katalogi NAP i lokalne wzmianki oraz proces zbierania opinii.",
+    category: "Opinie",
+    date: "2026-09-12",
+    readTime: 13,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-miauseo-opinie-kasacja-aut.svg",
+    published: true,
+    popular: true,
+  },
+  {
     slug: "miauseo-opinie-skup-aut",
     title: "SEO i opinie Google - wizytówka skupu aut, 77 połączeń",
     excerpt: "Współpracę nad wizytówką Google skupu aut zaczęliśmy w czerwcu. W lipcu, pierwszym pełnym miesiącu działań, profil wygenerował 77 połączeń telefonicznych. Pokazujemy cały zakres: przygotowanie i optymalizację wizytówki, weryfikację wideo, stronę z podstronami lokalizacyjnymi wspierającą profil, zaplecze linkowe, narzędzia do zbierania opinii Google oraz walkę z zapytaniami o części samochodowe.",

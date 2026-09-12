@@ -19126,6 +19126,156 @@ export const articleContent: Record<string, React.ReactNode> = {
   /* ─────────────────────────────────────────────────────────────────────────
      SEO: Jak poprawić widoczność profilu firmy w mapach
   ───────────────────────────────────────────────────────────────────────── */
+  /* ─────────────────────────────────────────────────────────────────────────
+     OPINIE / CASE STUDY: miauSEO — kasacja i skup aut, trzy miesiące statystyk
+  ───────────────────────────────────────────────────────────────────────── */
+  "miauseo-opinie-kasacja-aut": (
+    <>
+      <p>
+        Ten tekst jest zapisem trzech pierwszych miesięcy pracy nad profilem firmy zajmującej się kasacją, złomowaniem i skupem pojazdów. Zamiast opisu zakresu usługi pokazujemy przebieg w czasie: co robiliśmy w danym miesiącu i co w tym samym miesiącu pokazywał panel statystyk wizytówki klienta. Trzy zrzuty, trzy liczby — <strong>czerwiec 12 połączeń</strong>, <strong>lipiec 77</strong>, <strong>sierpień 95</strong>.
+      </p>
+      <p>
+        Rynek to miasto liczące <strong>około 70 tysięcy mieszkańców</strong>. Decyzja o oddaniu auta zapada tu szybko i kończy się telefonem, nie formularzem — ktoś ma samochód po kolizji albo bez ważnych badań i chce się go pozbyć dziś. Firm realnie konkurujących jest kilka, ale klient nie zna żadnej z polecenia, więc o tym, do kogo zadzwoni, rozstrzyga kolejność wyników w Google. Szerszy opis samego zakresu współpracy z tym klientem zebraliśmy w osobnym tekście o <a href="/miauseo-opinie-skup-aut" className="text-brand font-semibold hover:underline">wizytówce skupu aut</a>; tutaj skupiamy się na chronologii i liczbach.
+      </p>
+
+      <h2>Czerwiec: punkt wyjścia i pierwsze 12 połączeń</h2>
+      <p>
+        Firma działała, ale w wyszukiwarce praktycznie jej nie było. Nie chodziło o to, że wizytówka wypadała słabo na tle konkurencji — nie miała jeszcze potwierdzonej, uzupełnionej obecności, na której dałoby się cokolwiek budować. Nie było też strony, do której można skierować kogoś, kto chce sprawdzić firmę przed telefonem.
+      </p>
+      <p>
+        Pierwsze tygodnie poszły na pracę, której nie widać w danych: weryfikację, uzupełnianie profilu i porządkowanie danych firmy. Wykres z czerwca pokazuje to dosłownie — przez trzy tygodnie płaska linia przy zerze, pierwsze telefony dopiero w ostatnim tygodniu miesiąca, po tym jak wizytówka zaczęła się pokazywać.
+      </p>
+
+      <div className="not-prose my-6">
+        <figure className="overflow-hidden rounded-2xl border border-border bg-white">
+          <img src="/blog/skup-aut/skup-aut-czerwiec-2026.png" alt="Statystyki wizytówki Google firmy zajmującej się kasacją aut — czerwiec 2026, 12 połączeń wykonanych z profilu firmy" loading="lazy" className="w-full" />
+          <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600"><strong className="text-ink">Czerwiec 2026</strong> — 12 połączeń. Cała aktywność mieści się w ostatnim tygodniu miesiąca, wcześniej profil nie był jeszcze widoczny. Źródło: panel statystyk wizytówki klienta.</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        Te 12 połączeń to nie jest wynik działań marketingowych, tylko moment, w którym wizytówka w ogóle zaczęła istnieć w wynikach. Traktujemy je jako linię bazową, względem której czytamy kolejne miesiące.
+      </p>
+
+      <h2>Kolejność wdrożenia</h2>
+      <p>
+        Zakres ustaliliśmy jako obsługę obecności firmy w Google, nie pojedynczą optymalizację. Kolejność miała znaczenie, bo część działań nie ma sensu przed innymi — linkowanie do danych, które się rozjeżdżają, utrwala bałagan zamiast go naprawiać.
+      </p>
+
+      <h3>1. Ujednolicenie danych NAP</h3>
+      <p>
+        Zaczęliśmy od nazwy, adresu i telefonu. Zebraliśmy wszystkie miejsca, w których firma już gdzieś figurowała, i sprowadziliśmy zapis do jednego formatu — ten sam człon nazwy, ten sam zapis ulicy i numeru, ten sam numer telefonu w tej samej postaci. Różnice w rodzaju „ul." kontra brak „ul.", dwa warianty nazwy albo stary numer w jednym katalogu to nie kosmetyka: dla Google to sygnał niepewności co do tego, czy chodzi o ten sam podmiot. Szerzej rozkładamy to w tekście o <a href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">spójności NAP</a>.
+      </p>
+      <p>
+        Dopiero ustalony wzorzec danych pozwolił ruszyć dalej. Wszystko, co powstawało później — profil, strona, wpisy w katalogach — dostawało dokładnie ten sam zapis.
+      </p>
+
+      <h3>2. Wizytówka Google, wszystkie dostępne pola</h3>
+      <p>
+        Profil uzupełniliśmy w komplecie, łącznie z polami, które właściciele zwykle pomijają, bo wyglądają na drugorzędne: godziny otwarcia z uwzględnieniem świąt, atrybuty, obszar obsługi, sposób kontaktu, zdjęcia. Kompletny profil to dla algorytmu sygnał, że firma jest aktywna, a dla człowieka powód, żeby nie szukać dalej.
+      </p>
+      <p>
+        Osobnej pracy wymagał <a href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">dobór kategorii</a>. Skup aut, kasacja pojazdów i złomowanie to z punktu widzenia Google rzeczy bliskie, ale nie identyczne, a od kategorii głównej zależy, przy jakich zapytaniach profil ma w ogóle szansę się pokazać. Kategoria główna poszła pod frazę o największym wolumenie, reszta jako dodatkowe.
+      </p>
+
+      <h3>3. Opisy usług napisane pod realne zapytania</h3>
+      <p>
+        Opis działalności i opisy poszczególnych usług przepisaliśmy pod to, jak ludzie faktycznie szukają — „kasacja auta bez przeglądu", „złomowanie samochodu z zaświadczeniem", „odbiór samochodu z lawetą" — zamiast branżowego żargonu i formułek o wieloletnim doświadczeniu. Każda usługa dostała osobny wpis z własnym opisem, zamiast jednego zbiorczego akapitu obejmującego wszystko.
+      </p>
+      <p>
+        Ta warstwa ma jeszcze jedno zadanie, do którego wrócimy niżej: precyzyjne opisy odsiewają część zapytań, które firmie nie są do niczego potrzebne.
+      </p>
+
+      <h3>4. Weryfikacja wideo</h3>
+      <p>
+        Google coraz częściej wymaga potwierdzenia nagraniem zamiast kodu pocztowego i to moment, w którym łatwo utknąć — trzeba wiedzieć, co ma znaleźć się w nagraniu i w jakiej kolejności. Przygotowaliśmy profil pod weryfikację i przeprowadziliśmy klienta przez cały proces. Nieudane podejście oznacza kolejne dni bez widocznej wizytówki, więc to trzeba zrobić poprawnie za pierwszym razem. Rozpisaliśmy ten proces krok po kroku w tekście o <a href="/weryfikacja-wizytowki-google" className="text-brand font-semibold hover:underline">weryfikacji wizytówki Google</a>.
+      </p>
+
+      <h3>5. Strona z podstronami lokalizacyjnymi i linkowanie wewnętrzne</h3>
+      <p>
+        Równolegle powstała strona internetowa z <strong>podstronami lokalizacyjnymi</strong> odpowiadającymi obszarowi, na którym klient realnie odbiera samochody. Każda miejscowość dostała własny adres i własną treść — nie podmienioną nazwę miasta w tym samym szablonie, tylko informacje o dojeździe, zasięgu i tym, co firma w danym miejscu robi.
+      </p>
+      <p>
+        Podstrony spięliśmy <strong>linkowaniem wewnętrznym</strong>: strona usługi prowadzi do lokalizacji, w których jest świadczona, podstrony sąsiadujących miejscowości linkują do siebie, a wszystkie wracają do strony głównej z pełnym zestawem danych NAP. Dzięki temu żadna z nich nie jest osieroconym adresem, do którego nic nie prowadzi.
+      </p>
+      <p>
+        Warto postawić sprawę jasno, bo bywa mylona: <strong>strony nie pozycjonujemy osobno</strong>. Nie prowadzimy dla niej odrębnych działań i nie walczymy nią o pozycje organiczne. Jest zapleczem treściowym wizytówki — miejscem, do którego profil prowadzi, i punktem odniesienia dla danych firmy. Zależność opisujemy szerzej przy okazji <a href="/seo-lokalne-dla-firm" className="text-brand font-semibold hover:underline">lokalnego SEO dla firm</a>.
+      </p>
+
+      <h3>6. Katalogi NAP i lokalne wzmianki</h3>
+      <p>
+        Ostatnia warstwa to obecność firmy poza Google. Wpisy w katalogach branżowych i lokalnych serwisach, każdy z tym samym zapisem nazwy, adresu i telefonu, plus odnośniki prowadzące do strony. Chodzi o potwierdzenie z wielu niezależnych źródeł, że podmiot o tych danych faktycznie działa pod tym adresem.
+      </p>
+      <p>
+        Wpisy dodajemy stopniowo, razem z rozszerzaniem obszaru działań, a nie jednorazowym zrywem na starcie — ma to wyglądać jak naturalnie rosnąca obecność firmy, bo w istocie tym jest. Selekcja jest tu ważniejsza od liczby: kilkanaście miejsc, które ktoś odwiedza, robi więcej niż kilkaset wpisów w katalogach założonych wyłącznie pod linki.
+      </p>
+
+      <h3>7. Proces zbierania opinii</h3>
+      <p>
+        Klient dostał narzędzia ułatwiające zbieranie <a href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">opinii Google</a> — gotowy link, kod QR i moment w obsłudze, w którym wypada o opinię poprosić. Nie chodzi o sztuczne generowanie ocen, tylko o usunięcie tarcia z drogi zadowolonego klienta, który sam z siebie nie wejdzie w Google szukać miejsca na wystawienie opinii.
+      </p>
+
+      <h2>Lipiec: 77 połączeń</h2>
+      <p>
+        Lipiec to pierwszy pełny miesiąc działającej wizytówki. Wykres zmienia charakter — zamiast płaskiej linii z pojedynczym skokiem mamy telefony praktycznie każdego dnia, z wyraźnym zagęszczeniem w ostatniej dekadzie miesiąca.
+      </p>
+
+      <div className="not-prose my-6">
+        <figure className="overflow-hidden rounded-2xl border border-border bg-white">
+          <img src="/blog/skup-aut/skup-aut-lipiec-2026.png" alt="Statystyki wizytówki Google firmy zajmującej się kasacją aut — lipiec 2026, 77 połączeń wykonanych z profilu firmy" loading="lazy" className="w-full" />
+          <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600"><strong className="text-ink">Lipiec 2026</strong> — 77 połączeń, rozłożonych na cały miesiąc. Źródło: panel statystyk wizytówki klienta.</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        Rozkład jest tu ważniejszy od samej sumy. Połączenia rozłożone na wszystkie dni miesiąca oznaczają stałą widoczność przy codziennych zapytaniach, a nie jednorazowy skok po jakiejś zmianie. To zachowanie profilu, który wszedł do wyników na dobre.
+      </p>
+
+      <h2>Sierpień: 95 połączeń</h2>
+      <p>
+        W sierpniu profil wygenerował 95 połączeń, czyli o 18 więcej niż w lipcu. Wzrost przypada na miesiąc, w którym nie uruchamialiśmy żadnego nowego kanału — pracowała ta sama wizytówka, ta sama strona i rosnące zaplecze wpisów NAP.
+      </p>
+
+      <div className="not-prose my-6">
+        <figure className="overflow-hidden rounded-2xl border border-border bg-white">
+          <img src="/blog/skup-aut/skup-aut-sierpien-2026.png" alt="Statystyki wizytówki Google firmy zajmującej się kasacją aut — sierpień 2026, 95 połączeń wykonanych z profilu firmy" loading="lazy" className="w-full" />
+          <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600"><strong className="text-ink">Sierpień 2026</strong> — 95 połączeń, dni bez żadnego telefonu praktycznie znikają z wykresu. Źródło: panel statystyk wizytówki klienta.</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        Trzy miesiące obok siebie układają się w <strong>12, 77 i 95 połączeń</strong>. Największy przeskok jest między czerwcem a lipcem i to naturalne, bo czerwiec był w większości okresem bez widocznej wizytówki. Istotniejszy jest przyrost lipiec–sierpień: pokazuje, że pozycja się utrzymała i dalej rosła bez dokładania nowych działań, co w lokalnym SEO jest lepszym sygnałem niż pojedynczy skok.
+      </p>
+
+      <h2>Problem z zapytaniami o części samochodowe</h2>
+      <p>
+        Klient zgłosił konkretny problem, który dotyczy całej tej branży. Przy frazach <strong>kasacja aut</strong>, <strong>złomowanie aut</strong> czy <strong>skup aut</strong> dzwonią nie tylko osoby chcące oddać samochód, ale też szukające <strong>części samochodowych</strong> — do konkretnego modelu, konkretnego rocznika.
+      </p>
+      <p>
+        Skojarzenie jest logiczne: skoro firma przyjmuje auta do kasacji, to w głowie części użytkowników jest też miejscem, gdzie można z nich kupić części. Ograniczaliśmy to przez precyzowanie opisów usług i tego, jak profil komunikuje, czym firma się zajmuje, a czym nie. Liczba nietrafionych kontaktów spadła, ale trzeba powiedzieć wprost: <strong>przy tych frazach pewien odsetek takich telefonów zostanie zawsze</strong>. Da się to ograniczać, nie da się wyeliminować.
+      </p>
+
+      <h2>Jak czytać te liczby</h2>
+      <p>
+        Połączenia to jeden z najkonkretniejszych wskaźników wartości wizytówki, znacznie lepszy niż pozycje czy wyświetlenia. Pozycja mówi, gdzie firma stoi na liście. Połączenie mówi, że ktoś sięgnął po telefon.
+      </p>
+      <p>
+        Trzeba to jednak czytać dokładnie: <strong>95 połączeń to 95 interakcji telefonicznych wygenerowanych przez wizytówkę, a nie 95 odebranych samochodów</strong>. Mieści się w tym również część zapytań o części, o których pisaliśmy wyżej. Nie mamy danych o tym, ile z tych rozmów zakończyło się transakcją, więc tego nie podajemy.
+      </p>
+      <p>
+        Nie twierdzimy też, że ten wynik powtórzy się w każdej firmie i każdym mieście. Złożyły się na niego branża o wysokiej intencji telefonicznej, rynek tej wielkości i konkretny zestaw działań prowadzonych równolegle. W innej branży ta sama praca daje inny rozkład — w <a href="/miauseo-opinie-protetyk" className="text-brand font-semibold hover:underline">gabinecie protetycznym</a> te same fundamenty dały ponad 180 połączeń w cztery miesiące, przy zupełnie innym tempie narastania.
+      </p>
+
+      <h2>Co dalej</h2>
+      <p>
+        Praca nad profilem trwa. Rozwijamy widoczność na kolejne frazy i poszerzamy obszar, w którym wizytówka ma się pokazywać — najpierw ugruntowana pozycja tam, gdzie firma fizycznie jest, potem sąsiednie miejscowości. Odwrotna kolejność zwykle kończy się tym, że profil jest wszędzie po trochu i nigdzie mocno; rozkładamy to na czynniki w tekście o <a href="/siedziba-mala-miejscowosc-local-seo" className="text-brand font-semibold hover:underline">siedzibie w małej miejscowości</a>.
+      </p>
+      <p>
+        Równolegle rośnie liczba wpisów NAP i podstron lokalizacyjnych, biegnie proces zbierania opinii i dostrajanie opisów pod zapytania o części. Wynik z sierpnia jest kolejnym punktem odniesienia, nie zamknięciem tematu — profil zostawiony w spokoju po pierwszym dobrym miesiącu zaczyna cofać się względem konkurencji, która swojego nie zostawiła.
+      </p>
+    </>
+  ),
+
   "miauseo-opinie-skup-aut": (
     <>
       <p>
