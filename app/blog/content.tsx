@@ -29905,4 +29905,661 @@ $response = wp_remote_post('https://api.anthropic.com/v1/messages', [
       />
     </>
   ),
+  /* ─────────────────────────────────────────────────────────────────────────
+     Sztuczna Inteligencja: Claude Code montaż video
+  ───────────────────────────────────────────────────────────────────────── */
+  "claude-code-montaz-video": (
+    <>
+      {/* Spis treści */}
+      <div className="not-prose mt-2 mb-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Spis treści</p>
+        <ol className="space-y-1.5 text-sm">
+          <li><a href="#mechanizm" className="font-semibold text-ink hover:text-brand transition-colors">Dlaczego agent nie ogląda Twojego filmu</a></li>
+          <li><a href="#narzedzia" className="font-semibold text-ink hover:text-brand transition-colors">Trzy rozwiązania, które robią to dzisiaj</a></li>
+          <li><a href="#wymagania" className="font-semibold text-ink hover:text-brand transition-colors">Co musisz mieć, zanim zaczniesz</a></li>
+          <li><a href="#instalacja" className="font-semibold text-ink hover:text-brand transition-colors">Instalacja krok po kroku</a></li>
+          <li><a href="#folder" className="font-semibold text-ink hover:text-brand transition-colors">Jak ułożyć folder z materiałem</a></li>
+          <li><a href="#prompt" className="font-semibold text-ink hover:text-brand transition-colors">Jak napisać polecenie montażu</a></li>
+          <li><a href="#pipeline" className="font-semibold text-ink hover:text-brand transition-colors">Co dzieje się pod maską</a></li>
+          <li><a href="#efekty" className="font-semibold text-ink hover:text-brand transition-colors">Napisy, kolor, nakładki i twarde zasady</a></li>
+          <li><a href="#brandbook" className="font-semibold text-ink hover:text-brand transition-colors">Brandbook, czyli spójność bez klikania</a></li>
+          <li><a href="#kontrola" className="font-semibold text-ink hover:text-brand transition-colors">Co sprawdzić po renderze</a></li>
+          <li><a href="#poprawki" className="font-semibold text-ink hover:text-brand transition-colors">Poprawki i pamięć między sesjami</a></li>
+          <li><a href="#recykling" className="font-semibold text-ink hover:text-brand transition-colors">Jeden film, dziesięć publikacji</a></li>
+          <li><a href="#koszty" className="font-semibold text-ink hover:text-brand transition-colors">Ile to realnie kosztuje</a></li>
+          <li><a href="#ograniczenia" className="font-semibold text-ink hover:text-brand transition-colors">Kiedy to się nie sprawdzi</a></li>
+          <li><a href="#bledy" className="font-semibold text-ink hover:text-brand transition-colors">Najczęstsze błędy</a></li>
+          <li><a href="#faq" className="font-semibold text-ink hover:text-brand transition-colors">Pytania i odpowiedzi</a></li>
+        </ol>
+      </div>
+
+      <div className="not-prose mt-6 mb-8 rounded-2xl border-l-4 border-purple-400 bg-purple-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-purple-700 mb-2">W skrócie</p>
+        <p className="text-sm text-purple-900 leading-relaxed">
+          Agent montażowy nie analizuje klatek wideo. Zamienia ścieżkę dźwiękową na transkrypcję ze znacznikami czasu dla
+          każdego słowa, czyta ją jak scenariusz i na tej podstawie generuje listę cięć, którą wykonuje FFmpeg. Dzięki temu
+          mieści się w oknie kontekstowym modelu i tnie w granicach słów, a nie w losowych klatkach. Wkładasz surowy materiał
+          do folderu, opisujesz w kilku zdaniach, jaki film chcesz dostać, zatwierdzasz zaproponowaną strategię i odbierasz
+          gotowy plik. Największy projekt tego typu, <strong>video-use</strong>, jest na licencji MIT i ma 24,9 tys. gwiazdek
+          na GitHubie (dostęp 14 września 2026).
+        </p>
+      </div>
+
+      <h2 id="mechanizm">Dlaczego agent nie ogląda Twojego filmu</h2>
+      <p>
+        Pierwszy odruch jest taki: skoro model potrafi opisać zdjęcie, to pewnie obejrzy nagranie i powie, gdzie ciąć.
+        W praktyce to droga donikąd. Cztery minuty materiału w trzydziestu klatkach na sekundę to ponad siedem tysięcy
+        klatek. Nawet gdyby agent dostał co dziesiątą, zużyje na to cały kontekst i nadal nie będzie wiedział, w której
+        milisekundzie kończy się wyraz, w środku którego właśnie zamierza przeciąć zdanie.
+      </p>
+      <p>
+        Rozwiązania, które faktycznie działają, odwracają problem. <strong>Nośnikiem sensu w gadającej głowie jest dźwięk,
+        nie obraz.</strong> Jeżeli zamienisz ścieżkę audio na transkrypcję, w której każde słowo ma własny znacznik
+        początku i końca, dostajesz coś, co model rozumie doskonale: tekst. Kilkanaście kilobajtów zamiast gigabajtów.
+        Z takiego tekstu da się wyciąć powtórzone ujęcie, przestój między zdaniami albo przejęzyczenie, bo dokładnie
+        widać, gdzie się zaczyna i gdzie kończy.
+      </p>
+      <p>
+        Dokumentacja projektu video-use opisuje to jako dwie warstwy odczytu. Pierwsza to jedno wywołanie modelu
+        rozpoznawania mowy na każde źródło, które zwraca znaczniki czasu dla pojedynczych słów, rozdzielenie mówców
+        i zdarzenia dźwiękowe w rodzaju śmiechu czy oklasków. Druga warstwa to obraz <em>na żądanie</em>: kiedy agent
+        musi zobaczyć, co dzieje się w konkretnym miejscu, generuje sobie pasek klatek zestawiony z wykresem fali
+        dźwiękowej i podpisami słów. Nie ogląda całości, tylko zagląda w punkty decyzyjne
+        (<a href="https://github.com/browser-use/video-use/blob/main/SKILL.md" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">SKILL.md, browser-use/video-use</a>, dostęp 14 września 2026).
+      </p>
+      <p>
+        Cała reszta to inżynieria, a nie magia. Decyzje montażowe lądują w pliku z listą cięć, a wykonaniem zajmuje się{" "}
+        <a href="https://ffmpeg.org/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">FFmpeg</a> —
+        ten sam otwarty silnik, który od lat siedzi pod spodem w połowie narzędzi wideo na rynku. Agent jest tu
+        montażystą, który pisze notatki dla operatora. Operatorem jest FFmpeg.
+      </p>
+
+      <h2 id="narzedzia">Trzy rozwiązania, które robią to dzisiaj</h2>
+      <p>
+        Na wrzesień 2026 ekosystem wygląda tak, że nie wybierasz między „jednym narzędziem AI" a klasycznym edytorem.
+        Wybierasz między trzema różnymi filozofiami pracy, z których każda ma otwarty kod i inne zastosowanie.
+      </p>
+
+      <div className="overflow-x-auto my-6 rounded-xl border border-zinc-200">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr style={{backgroundColor: '#18181b'}}>
+              <th className="text-left px-4 py-3 text-white font-semibold">Projekt</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Do czego służy</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Licencja</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Wymagania</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">video-use</td>
+              <td className="px-4 py-3 text-zinc-600">Montaż istniejącego materiału: cięcia, napisy, korekcja koloru, nakładki, formaty pionowe</td>
+              <td className="px-4 py-3 text-zinc-600">MIT</td>
+              <td className="px-4 py-3 text-zinc-600">Python, FFmpeg, klucz API do transkrypcji</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">OpenMontage</td>
+              <td className="px-4 py-3 text-zinc-600">Pełna produkcja od researchu i scenariusza po render, także bez własnego materiału</td>
+              <td className="px-4 py-3 text-zinc-600">AGPL-3.0</td>
+              <td className="px-4 py-3 text-zinc-600">Python 3.10+, FFmpeg, Node.js 18+</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-semibold text-ink">Skille oparte o Remotion</td>
+              <td className="px-4 py-3 text-zinc-600">Motion design i animowane plansze renderowane z komponentów React</td>
+              <td className="px-4 py-3 text-zinc-600">Otwarte repozytoria</td>
+              <td className="px-4 py-3 text-zinc-600">Node.js, Remotion</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        <strong>video-use</strong> to projekt zespołu stojącego za browser-use. Opis w repozytorium jest bezczelnie
+        prosty: wrzuć surowy materiał do folderu, porozmawiaj z agentem, odbierz <code>final.mp4</code>. Na dzień
+        14 września 2026 repozytorium ma <strong>24,9 tys. gwiazdek i 3 tys. forków</strong>, jest napisane w Pythonie
+        i udostępnione na licencji MIT
+        (<a href="https://github.com/browser-use/video-use" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">github.com/browser-use/video-use</a>).
+        To punkt startowy dla kogoś, kto ma już nagrany materiał i chce go zmontować.
+      </p>
+      <p>
+        <strong>OpenMontage</strong> celuje wyżej i dalej. Zamiast montować to, co nagrałeś, prowadzi cały proces
+        produkcyjny w etapach: research, propozycja tematu, scenariusz, plan scen, zasoby, montaż, kompozycja. Każdy
+        etap ma własny manifest i własne instrukcje, a agent zatrzymuje się przed decyzjami kreatywnymi i pyta
+        o zatwierdzenie. Da się go używać w wariancie bez płatnych kluczy API, sięgając po syntezator mowy działający
+        lokalnie i materiały archiwalne z domeny publicznej
+        (<a href="https://www.explainx.ai/blog/openmontage-agentic-video-production-claude-code-2026" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">explainx.ai</a>, dostęp 14 września 2026).
+        Uwaga na licencję: AGPL-3.0 nakłada obowiązki, których MIT nie nakłada, więc przy komercyjnym wdrożeniu
+        przeczytaj ją, zanim wpleciesz projekt w płatną usługę.
+      </p>
+      <p>
+        <strong>Skille oparte o Remotion</strong> rozwiązują inny problem. Remotion renderuje wideo z komponentów
+        React, więc animowana plansza to po prostu kod. Otwarty skill uczący agenta tej biblioteki obsługuje między
+        innymi animacje sprężynowe, efekt Kena Burnsa na zdjęciach, ziarno filmowe i napisy zsynchronizowane ze słowami
+        (<a href="https://github.com/haidrrrry/claude-remotion-skill" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">haidrrrry/claude-remotion-skill</a>, 153 gwiazdki, dostęp 14 września 2026).
+        Istnieje też zbiorczy zestaw narzędzi do produkcji wideo w Claude Code, spinający Remotion, animacje
+        matematyczne Manim, nagrywanie ekranu i klipowanie filmów z YouTube
+        (<a href="https://github.com/wilwaldon/Claude-Code-Video-Toolkit" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">Claude-Code-Video-Toolkit</a>).
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-blue-400 bg-blue-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">Od czego zacząć</p>
+        <p className="text-sm text-blue-900 leading-relaxed">
+          Masz nagraną gadającą głowę i chcesz ją skrócić, ubrać w napisy i wypuścić? Bierz video-use. Chcesz, żeby agent
+          wymyślił temat i zbudował film od zera z materiałów archiwalnych? To OpenMontage. Potrzebujesz animowanych
+          plansz w identyfikacji swojej marki? Dokładasz Remotion do jednego z powyższych.
+        </p>
+      </div>
+
+      <h2 id="wymagania">Co musisz mieć, zanim zaczniesz</h2>
+      <p>
+        Lista jest krótka i nie ma w niej żadnej subskrypcji na oprogramowanie do montażu. Instrukcja instalacji
+        video-use wymienia cztery pozycje
+        (<a href="https://github.com/browser-use/video-use/blob/main/install.md" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">install.md</a>, dostęp 14 września 2026):
+      </p>
+      <ul>
+        <li><strong>FFmpeg wraz z ffprobe</strong> dostępne w zmiennej PATH — obowiązkowo, bez tego nic się nie zrenderuje ani nawet nie odczyta parametrów plików.</li>
+        <li><strong>yt-dlp</strong> — opcjonalnie, jeżeli chcesz, żeby agent sam pobierał materiały źródłowe z adresów URL.</li>
+        <li><strong>Klucz API do transkrypcji</strong> — w domyślnej konfiguracji ElevenLabs, bo stamtąd biorą się znaczniki czasu na poziomie słów.</li>
+        <li><strong>Agent z obsługą skilli</strong> — Claude Code, choć repozytorium wspomina też o innych agentach terminalowych.</li>
+      </ul>
+      <p>
+        Do tego dochodzi Python z menedżerem pakietów. Instalator ściąga między innymi bibliotekę do analizy dźwięku
+        i bibliotekę do generowania wykresów, bo to z nich powstają paski klatek z falą dźwiękową, którymi agent
+        sprawdza własną robotę.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-amber-400 bg-amber-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">Uwaga dla Windowsa</p>
+        <p className="text-sm text-amber-900 leading-relaxed">
+          Oficjalna instrukcja podaje komendy dla macOS (Homebrew), Debiana/Ubuntu i Arch Linuksa. Na Windowsie
+          najmniej bolesna droga to WSL2 z Ubuntu: instalujesz FFmpeg i Pythona wewnątrz dystrybucji, tam też klonujesz
+          repozytorium i tam odpalasz agenta. Materiały trzymaj w systemie plików Linuksa, a nie na dysku C przez
+          most sieciowy, bo renderowanie kilkugigabajtowych plików przez tę warstwę potrafi być dramatycznie wolne.
+        </p>
+      </div>
+
+      <h2 id="instalacja">Instalacja krok po kroku</h2>
+      <p>
+        Repozytorium przewiduje dwie ścieżki. Pierwsza polega na wklejeniu do agenta gotowego polecenia, które samo
+        sklonuje kod, doinstaluje zależności i podepnie skill. Druga to zrobienie tego ręcznie, co warto znać, żeby
+        wiedzieć, co właściwie wylądowało na dysku.
+      </p>
+
+      <div className="my-6 rounded-xl overflow-x-auto bg-zinc-950 border border-zinc-800">
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`# 1. Kod projektu
+git clone https://github.com/browser-use/video-use ~/Developer/video-use
+cd ~/Developer/video-use
+
+# 2. Zaleznosci Pythona
+uv sync          # albo: pip install -e .
+
+# 3. Silnik renderujacy
+sudo apt-get update && sudo apt-get install -y ffmpeg
+pip install yt-dlp            # opcjonalnie
+
+# 4. Rejestracja skilla w Claude Code
+mkdir -p ~/.claude/skills
+ln -sfn ~/Developer/video-use ~/.claude/skills/video-use
+
+# 5. Klucz do transkrypcji
+printf 'ELEVENLABS_API_KEY=%s\\n' "TWOJ_KLUCZ" > ~/Developer/video-use/.env
+chmod 600 ~/Developer/video-use/.env`}</pre>
+      </div>
+
+      <p>
+        Krok czwarty to sedno integracji. Claude Code szuka umiejętności w katalogu <code>~/.claude/skills/</code> dla
+        całego konta oraz w <code>.claude/skills/</code> wewnątrz konkretnego repozytorium, a każda z nich to katalog
+        z plikiem <code>SKILL.md</code>, w którym nagłówek YAML opisuje nazwę i przeznaczenie, a treść markdown zawiera
+        instrukcje dla modelu
+        (<a href="https://code.claude.com/docs/en/skills" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">dokumentacja Claude Code</a>, dostęp 14 września 2026).
+        Dowiązanie symboliczne sprawia, że aktualizujesz projekt jednym <code>git pull</code>, bez kopiowania plików
+        w tę i z powrotem. Jeżeli mechanizm umiejętności jest dla Ciebie nowy, rozbierałem go na części w osobnym
+        tekście o <Link href="/claude-code-skills-jak-dzialaja">tym, czym są Skills w Claude Code i jak napisać własny</Link>.
+      </p>
+      <p>
+        Weryfikacja jest banalna: <code>ffprobe -version</code> ma zwrócić numer wersji, a zapytanie do API transkrypcji
+        z Twoim kluczem ma odpowiedzieć kodem 200. Jeżeli oba warunki są spełnione, instalacja jest skończona.
+        W samym Claude Code komenda <code>/skills</code> pokaże listę aktywnych umiejętności, a <code>video-use</code>{" "}
+        powinien być na niej widoczny.
+      </p>
+
+      <h2 id="folder">Jak ułożyć folder z materiałem</h2>
+      <p>
+        Agent pracuje na katalogu, nie na pojedynczym pliku. To ważna różnica, bo pozwala mu wybierać najlepsze
+        z kilku podejść do tej samej kwestii. Nagrałeś to samo zdanie trzy razy? Zostaw wszystkie trzy pliki —
+        transkrypcja pokaże, które ujęcie jest czyste, a które kończy się westchnięciem.
+      </p>
+
+      <div className="my-6 rounded-xl overflow-x-auto bg-zinc-950 border border-zinc-800">
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`nagrania-odcinek-12/
+├── kamera-ujecie-01.mp4      <- surowe zrodla, agent ich nie rusza
+├── kamera-ujecie-02.mp4
+├── kamera-ujecie-03.mp4
+├── screen-demo.mp4
+├── zdjecia/
+│   ├── wykres-sprzedaz.png
+│   └── zespol-2026.jpg
+├── muzyka/
+│   └── podklad.mp3
+├── brandbook.md              <- kolory, czcionki, zasady
+└── edit/                     <- to tworzy agent, nie Ty`}</pre>
+      </div>
+
+      <p>
+        Nazwy plików nie są kosmetyką, tylko metadanymi. Zdjęcie o nazwie <code>wykres-sprzedaz.png</code> agent
+        powiąże z fragmentem narracji, w którym mówisz o sprzedaży. Plik <code>IMG_4471.png</code> nie powie mu nic.
+        To najtańsza możliwa optymalizacja całego procesu: pięć minut na sensowne nazwanie materiałów oszczędza
+        potem całą rundę poprawek.
+      </p>
+      <p>
+        Wszystkie wyniki pracy trafiają do podkatalogu <code>edit/</code> i to jest twarda zasada zapisana
+        w instrukcjach skilla. Twoje oryginały pozostają nietknięte, więc każdy nieudany montaż wyrzucasz jednym
+        usunięciem katalogu i zaczynasz od nowa.
+      </p>
+
+      <h2 id="prompt">Jak napisać polecenie montażu</h2>
+      <p>
+        Najczęstszy błąd początkujących polega na pisaniu instrukcji technicznych zamiast redakcyjnych.
+        „Utnij od 00:14 do 00:22" to praca, którą i tak wykonasz sam. Agent jest mocny w czymś innym: w rozumieniu,
+        <strong> po co</strong> powstaje ten film i dla kogo.
+      </p>
+      <p>
+        Dobre polecenie odpowiada na pięć pytań: co to za materiał, jak długi ma być efekt, w jakim formacie, jaki ma
+        być ton oraz czego absolutnie nie wolno wyciąć. Reszta to już decyzje, które spokojnie możesz oddać.
+      </p>
+
+      <div className="my-6 rounded-xl overflow-x-auto bg-zinc-950 border border-zinc-800">
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`Zmontuj material z tego folderu w odcinek na YouTube.
+
+KONTEKST: to case study wdrozenia dla klienta z branzy dekarskiej.
+Widz to wlasciciel malej firmy uslugowej, nie marketingowiec.
+
+DLUGOSC: 5-6 minut, poziomo 1920x1080, 30 kl./s.
+
+WYBOR UJEC: mam trzy podejscia do tego samego wprowadzenia,
+wybierz najczystsze. Wytnij przejezyczenia, powtorzone zdania
+i przestoje dluzsze niz sekunda, ale nie tnij w polowie mysli.
+
+ZOSTAW KONIECZNIE: fragment o liczbie telefonow w czerwcu
+oraz cale zakonczenie z podsumowaniem.
+
+OPRAWA: napisy wypalone na stale, kolory i czcionka wedlug
+brandbook.md. Podklad z muzyka/podklad.mp3 sciszony tak,
+zeby nie walczyl z glosem. Zdjecia z folderu zdjecia/ wstaw
+tam, gdzie narracja o nich mowi.
+
+Zaproponuj najpierw strategie montazu. Tnij dopiero, gdy ja
+zatwierdze.`}</pre>
+      </div>
+
+      <p>
+        Ostatnie zdanie jest najważniejsze i nie jest moim wymysłem. Instrukcje video-use zawierają regułę, że agent
+        opisuje materiał zwykłym językiem, proponuje strategię w kilku zdaniach i <strong>czeka na potwierdzenie,
+        zanim cokolwiek utnie</strong>. Ten moment kosztuje trzydzieści sekund i ratuje pół godziny renderowania
+        w złym kierunku.
+      </p>
+
+      <h2 id="pipeline">Co dzieje się pod maską</h2>
+      <p>
+        Warto rozumieć kolejność etapów, bo kiedy coś pójdzie nie tak, od razu wiadomo, na którym kroku szukać.
+      </p>
+
+      <div className="overflow-x-auto my-6 rounded-xl border border-zinc-200">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr style={{backgroundColor: '#18181b'}}>
+              <th className="text-left px-4 py-3 text-white font-semibold">Etap</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Co powstaje</th>
+              <th className="text-left px-4 py-3 text-white font-semibold">Po co</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Inwentaryzacja</td>
+              <td className="px-4 py-3 text-zinc-600">Odczyt parametrów wszystkich plików</td>
+              <td className="px-4 py-3 text-zinc-600">Agent wie, co ma: rozdzielczości, długości, ścieżki audio</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Transkrypcja</td>
+              <td className="px-4 py-3 text-zinc-600">Plik JSON na każde źródło, buforowany</td>
+              <td className="px-4 py-3 text-zinc-600">Znaczniki czasu słów, rozdzielenie mówców, zdarzenia dźwiękowe</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Pakowanie</td>
+              <td className="px-4 py-3 text-zinc-600"><code>takes_packed.md</code></td>
+              <td className="px-4 py-3 text-zinc-600">Transkrypcja zwinięta do fraz z zakresami czasu, główny widok modelu</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Prześwietlenie</td>
+              <td className="px-4 py-3 text-zinc-600">Lista przejęzyczeń i fragmentów do unikania</td>
+              <td className="px-4 py-3 text-zinc-600">Brief dla podagenta montażysty</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Strategia</td>
+              <td className="px-4 py-3 text-zinc-600">Kilka zdań opisu planu</td>
+              <td className="px-4 py-3 text-zinc-600">Punkt zatwierdzenia przez człowieka</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Wybór ujęć</td>
+              <td className="px-4 py-3 text-zinc-600">Lista wybranych fragmentów z uzasadnieniem</td>
+              <td className="px-4 py-3 text-zinc-600">Osobny podagent wybiera najlepsze podejście do każdego wątku</td>
+            </tr>
+            <tr className="border-b border-zinc-100">
+              <td className="px-4 py-3 font-semibold text-ink">Lista cięć</td>
+              <td className="px-4 py-3 text-zinc-600"><code>edl.json</code></td>
+              <td className="px-4 py-3 text-zinc-600">Źródła, zakresy, korekcja koloru, nakładki, napisy, długość</td>
+            </tr>
+            <tr className="border-b border-zinc-100 bg-zinc-50">
+              <td className="px-4 py-3 font-semibold text-ink">Render</td>
+              <td className="px-4 py-3 text-zinc-600"><code>preview.mp4</code>, potem <code>final.mp4</code></td>
+              <td className="px-4 py-3 text-zinc-600">Wycinanie fragmentów, sklejanie, nakładki, napisy</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-semibold text-ink">Autokontrola</td>
+              <td className="px-4 py-3 text-zinc-600">Klatki kontrolne w katalogu <code>verify/</code></td>
+              <td className="px-4 py-3 text-zinc-600">Agent ogląda własny wynik na każdym cięciu, maksymalnie trzy podejścia</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Zwróć uwagę na dwa miejsca. Transkrypcje są buforowane na źródło, więc druga i trzecia wersja montażu tego
+        samego materiału nie kosztują już nic po stronie rozpoznawania mowy. A autokontrola to nie ozdobnik:
+        agent renderuje wynik, generuje z niego klatki wokół każdego cięcia i sprawdza, czy nie ma przeskoku
+        obrazu, trzasku w dźwięku ani napisu przykrytego przez grafikę. Jeżeli po trzech próbach czegoś nie da
+        się naprawić, ma zgłosić to użytkownikowi, zamiast kręcić się w pętli.
+      </p>
+
+      <h2 id="efekty">Napisy, kolor, nakładki i twarde zasady</h2>
+      <p>
+        Lista możliwych efektów jest długa, ale ciekawsze są reguły, które ją porządkują, bo to one odróżniają montaż
+        wyglądający profesjonalnie od takiego, który zdradza automat.
+      </p>
+      <p>
+        <strong>Napisy nakładane są zawsze na samym końcu</strong>, po wszystkich grafikach. Odwrotna kolejność
+        kończy się tym, że efektowna plansza przykrywa tekst i widz nie ma go jak przeczytać.
+      </p>
+      <p>
+        <strong>Na każdym cięciu dokładane jest trzydziestomilisekundowe wyciszenie i wzmocnienie dźwięku.</strong>{" "}
+        To zabezpieczenie przed słyszalnym trzaskiem na sklejce. Kosztuje ułamek sekundy, a różnica w odbiorze
+        jest natychmiastowa.
+      </p>
+      <p>
+        <strong>Cięcia nigdy nie zapadają w środku słowa</strong>, a jako kandydaci preferowane są ciszej trwające
+        dłużej niż cztery dziesiąte sekundy. Krawędzie fragmentów dostają niewielki zapas, żeby montaż nie brzmiał
+        jak seria urwanych sylab.
+      </p>
+      <p>
+        <strong>Korekcja koloru wykonywana jest osobno na każdym fragmencie, w momencie jego wycinania</strong>,
+        a nie na sklejonej całości. Dzięki temu ujęcie z okna i ujęcie spod lampy można wyrównać, zamiast przeciągać
+        jeden filtr przez cały materiał. Instrukcje ostrzegają przy okazji, żeby przed agresywnym stopniowaniem
+        sprawdzić, jak wygląda skóra na twarzy. To najszybszy test, czy korekcja nie poszła za daleko.
+      </p>
+      <p>
+        Animowane nakładki renderowane są <strong>równolegle</strong>, każda jako osobne zadanie z własnym opisem celu,
+        paletą i rozkładem w czasie, a potem wstawiane w oś czasu z przesunięciem, żeby pierwsza klatka animacji
+        trafiła dokładnie w początek swojego okna. Formaty wyjściowe obejmują standardowe 1920×1080, pionowe
+        1080×1920 pod materiały społecznościowe, kwadratowe 1080×1080 oraz 4K.
+      </p>
+
+      <h2 id="brandbook">Brandbook, czyli spójność bez klikania</h2>
+      <p>
+        Największa przewaga tego podejścia nad ręcznym montażem ujawnia się dopiero przy dziesiątym filmie. Ręcznie
+        za każdym razem od nowa dobierasz kolor napisów, wielkość czcionki i pozycję logo. Agentowi wystarczy raz
+        napisać, jak ma to wyglądać.
+      </p>
+      <p>
+        Nie potrzebujesz do tego żadnego specjalnego formatu — wystarczy zwykły plik tekstowy w katalogu projektu.
+        Im konkretniej, tym mniej poprawek:
+      </p>
+
+      <div className="my-6 rounded-xl overflow-x-auto bg-zinc-950 border border-zinc-800">
+        <pre className="text-sm text-zinc-100 font-mono p-5 leading-relaxed overflow-x-auto whitespace-pre">{`# Brandbook wideo — MiauSEO
+
+## Kolory
+Akcent glowny:  #FF6A00
+Tlo plansz:     #0F1115
+Tekst na tle:   #FFFFFF
+Kolor ostrzezen: #EF4444
+
+## Napisy
+Kroj: Inter Bold, wersaliki tylko w hookach
+Wielkosc: ok. 5% wysokosci kadru
+Pozycja: 8% od dolu w poziomie, 22% od dolu w pionie
+Obrys: czarny 3 px, bez cienia
+
+## Plansze
+Rogi zaokraglone 16 px, wejscie 250 ms, wyjscie 180 ms
+Logo: prawy gorny rog, margines 48 px, nigdy na twarzy
+
+## Czego nie robimy
+Bez efektow dzwiekowych typu "swoosh"
+Bez zoomu na kazdym zdaniu, maksymalnie raz na 30 sekund
+Bez emoji w napisach`}</pre>
+      </div>
+
+      <p>
+        Sekcja „czego nie robimy" jest w praktyce najbardziej wartościowa. Modele mają skłonność do przesady:
+        dostaniesz zoom przy co drugim zdaniu i efekt dźwiękowy przy każdym przejściu, jeżeli tego wprost nie
+        zabronisz. Lista zakazów działa lepiej niż lista życzeń.
+      </p>
+      <p>
+        Jeżeli nie masz jeszcze spisanej identyfikacji, wyciągnij kolory ze swojej strony internetowej. To naturalny
+        punkt odniesienia, a przy okazji film i witryna zaczynają wyglądać jak jedna marka. O tym, jak postawić taką
+        stronę bez agencji, pisałem przy okazji{" "}
+        <Link href="/jak-podpiac-domene-vercel-claude-code">podpinania domeny pod stronę zrobioną w Claude Code</Link>.
+      </p>
+
+      <h2 id="kontrola">Co sprawdzić po renderze</h2>
+      <p>
+        Agent sprawdza siebie, ale sprawdza to, co umie zmierzyć. Kilku rzeczy nie wyłapie, bo wymagają kontekstu,
+        którego nie ma. Zanim opublikujesz, przejdź przez tę listę:
+      </p>
+      <ol>
+        <li><strong>Obejrzyj pierwsze dziesięć sekund w całości.</strong> Tu decyduje się oglądalność i tu najbardziej boli nieudana sklejka.</li>
+        <li><strong>Sprawdź, czy nie wyleciało zdanie niosące sens.</strong> Skracanie do zadanej długości potrafi usunąć zastrzeżenie, bez którego zdanie obok staje się nieprawdziwe.</li>
+        <li><strong>Przeczytaj napisy przy nazwach własnych.</strong> Rozpoznawanie mowy myli nazwy firm, marek i nazwiska częściej niż resztę tekstu. To najczęstsze źródło kompromitacji.</li>
+        <li><strong>Posłuchaj w słuchawkach, na małej głośności.</strong> Trzaski na sklejkach i podkład zagłuszający głos słychać wtedy najlepiej.</li>
+        <li><strong>Zatrzymaj obraz na każdej planszy.</strong> Czy logo nie zasłania twarzy, czy tekst mieści się w kadrze, czy kolory zgadzają się z brandbookiem.</li>
+        <li><strong>W pionie sprawdź bezpieczny obszar.</strong> Interfejs aplikacji społecznościowych zjada dół i prawą krawędź kadru, więc napisy przy samej krawędzi znikają pod przyciskami.</li>
+        <li><strong>Porównaj długość pliku z zamówioną.</strong> Rozjazd oznacza, że coś poszło nie tak przy sklejaniu.</li>
+      </ol>
+
+      <h2 id="poprawki">Poprawki i pamięć między sesjami</h2>
+      <p>
+        Pierwszy render rzadko jest ostatni i tak ma być. Poprawki wydaje się tym samym językiem co polecenie
+        wyjściowe, bez wchodzenia w pliki konfiguracyjne:
+      </p>
+      <ul>
+        <li>„Wstęp jest za wolny, skróć go o jedną trzecią i wejdź od razu w liczbę telefonów."</li>
+        <li>„Napisy są za nisko, podnieś je o dwa procent wysokości kadru."</li>
+        <li>„Podkład zagłusza głos w trzeciej minucie, ścisz go tam mocniej."</li>
+        <li>„Wytnij fragment o cenniku, klient go nie zatwierdził."</li>
+        <li>„Zrób z tego dodatkowo wersję pionową na sześćdziesiąt sekund."</li>
+      </ul>
+      <p>
+        Ważne, żeby prosić o zmianę na liście cięć i ponowny render, a nie o „poprawienie filmu". Różnica jest taka,
+        że w pierwszym przypadku agent modyfikuje strukturę decyzji i renderuje od nowa, a w drugim może zacząć
+        kombinować z gotowym plikiem.
+      </p>
+      <p>
+        Między sesjami kontekst przechowuje plik <code>project.md</code>, do którego dopisywane są strategia,
+        podjęte decyzje i rzeczy odłożone na później. Przy kolejnym uruchomieniu agent streszcza poprzednią sesję
+        i pyta, czy kontynuujecie. To ten sam pomysł, co plik <code>CLAUDE.md</code> w projektach programistycznych:
+        pamięć, która przeżywa zamknięcie terminala.
+      </p>
+
+      <h2 id="recykling">Jeden film, dziesięć publikacji</h2>
+      <p>
+        Tu ten sposób pracy zarabia naprawdę. Agent po transkrypcji <strong>wie, co padło w której sekundzie</strong>.
+        To znaczy, że wszystkie materiały towarzyszące może wyprodukować bez zgadywania.
+      </p>
+      <p>
+        Z jednego zmontowanego odcinka da się wyciągnąć w tej samej sesji: <strong>wersje pionowe</strong> wycięte
+        wokół najmocniejszych fragmentów, <strong>rozdziały ze znacznikami czasu</strong> liczonymi na osi gotowego
+        pliku, a nie surowego materiału, <strong>opis pod wyszukiwarkę YouTube</strong> oparty na tym, co faktycznie
+        zostało powiedziane, <strong>osobne zestawy hashtagów</strong> dla różnych platform, <strong>miniaturę</strong>{" "}
+        z hasłem wyciągniętym z najmocniejszego zdania oraz <strong>transkrypcję</strong>, która po redakcji staje się
+        wpisem blogowym.
+      </p>
+      <p>
+        Ostatni punkt bywa niedoceniany, a ma największy wpływ na widoczność. Film sam w sobie jest słabo
+        indeksowalny, natomiast oparty na nim artykuł już tak i to on przyprowadza ruch z wyszukiwarki miesiącami
+        po publikacji. Jeżeli publikujesz na WordPressie, cały ten cykl da się domknąć bez opuszczania terminala,
+        co opisałem w tekście o{" "}
+        <Link href="/jak-polaczyc-claude-code-z-wordpressem">łączeniu Claude Code z WordPressem</Link>.
+      </p>
+
+      <div className="not-prose mt-6 mb-6 rounded-2xl border-l-4 border-sky-400 bg-sky-50 p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-2">Praktyczna wskazówka</p>
+        <p className="text-sm text-sky-900 leading-relaxed">
+          Kolejność publikacji krótkich wersji ma znaczenie. Jako pierwszą wypuść tę, która zawiera najświeższą
+          informację albo najmocniejszą tezę, a nie tę, która jest chronologicznie pierwsza w materiale. Krótkie
+          formy nie mają czasu na rozbieg.
+        </p>
+      </div>
+
+      <h2 id="koszty">Ile to realnie kosztuje</h2>
+      <p>
+        Rachunek składa się z trzech pozycji i żadna z nich nie jest abonamentem na oprogramowanie montażowe.
+      </p>
+      <p>
+        <strong>Transkrypcja.</strong> W cenniku API ElevenLabs rozpoznawanie mowy w modelu Scribe kosztuje{" "}
+        <strong>0,22 dolara za godzinę nagrania</strong>, a wariant działający w czasie rzeczywistym 0,39 dolara
+        za godzinę; rozliczenie idzie w dolarach, za minutę materiału
+        (<a href="https://elevenlabs.io/pricing/api" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">elevenlabs.io/pricing/api</a>, dostęp 14 września 2026).
+        Dla pięciominutowego nagrania mówimy o kilku groszach, a wynik jest buforowany, więc kolejne wersje montażu
+        z tego samego źródła nie kosztują już nic.
+      </p>
+      <p>
+        <strong>Model.</strong> To zwykłe zużycie w ramach Twojego planu Claude Code. Zależy głównie od liczby rund
+        poprawek, a nie od długości filmu, bo model czyta tekst, nie obraz. Stąd wniosek praktyczny: precyzyjny
+        pierwszy prompt jest tańszy niż sześć rund „jeszcze tylko jedna zmiana".
+      </p>
+      <p>
+        <strong>Render.</strong> Zero złotych, ale nie zero czasu. FFmpeg liczy na Twoim procesorze i tu kilkuminutowy
+        materiał z nakładkami potrafi zająć kilkadziesiąt minut. Dla porządku: w omówieniu OpenMontage przykładowy
+        krótki materiał złożony z dwunastu generowanych ujęć wyceniono na około 0,15 dolara, a bardziej rozbudowane
+        warianty na 0,69–1,33 dolara
+        (<a href="https://www.explainx.ai/blog/openmontage-agentic-video-production-claude-code-2026" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">explainx.ai</a>, dostęp 14 września 2026),
+        ale to już koszt generowania obrazu, nie samego montażu.
+      </p>
+      <p>
+        Dla porównania: komercyjne narzędzia rozwiązują wycinek tego problemu w modelu abonamentowym. Descript opiera
+        się na edycji przez tekst, w której skasowanie zdania w transkrypcji usuwa odpowiadający mu fragment obrazu,
+        a Opus Clip automatycznie wykrawa z długiego materiału kilkanaście krótkich wersji z napisami i kadrem
+        pionowym. Oba robią swoją robotę dobrze i oba działają bez terminala. Różnica polega na tym, że nie
+        wpleciesz ich w skrypt ani nie każesz im trzymać się Twojego brandbooka co do piksela.
+      </p>
+
+      <h2 id="ograniczenia">Kiedy to się nie sprawdzi</h2>
+      <p>
+        Uczciwie: są sytuacje, w których montaż sterowany transkrypcją jest złym wyborem, i lepiej wiedzieć o tym
+        przed instalacją niż po trzech godzinach.
+      </p>
+      <p>
+        <strong>Materiał bez mowy.</strong> Teledysk, ujęcia z drona, film z hali produkcyjnej. Jeżeli nikt nic nie
+        mówi, znika cała podstawa decyzyjna, bo agent nie ma czego czytać.
+      </p>
+      <p>
+        <strong>Montaż rytmiczny do muzyki.</strong> Cięcia na uderzenie to zadanie dla analizy sygnału i ludzkiego
+        wyczucia, nie dla transkrypcji.
+      </p>
+      <p>
+        <strong>Pojedynczy krótki film raz na kwartał.</strong> Konfiguracja, klucze API i nauka promptowania zwrócą
+        się przy powtarzalnej produkcji. Przy jednym filmie rocznie taniej wyjdzie freelancer albo godzina w dowolnym
+        edytorze.
+      </p>
+      <p>
+        <strong>Materiał objęty ścisłą poufnością.</strong> Ścieżka dźwiękowa trafia do zewnętrznego dostawcy
+        transkrypcji. Przy nagraniach z danymi wrażliwymi to pytanie do działu prawnego, nie do montażysty.
+      </p>
+      <p>
+        <strong>Efekty wymagające precyzyjnej maski.</strong> Wycinanie obiektu klatka po klatce i zaawansowana
+        kompozycja to nadal domena programów do efektów wizualnych.
+      </p>
+
+      <h2 id="bledy">Najczęstsze błędy</h2>
+      <ul>
+        <li><strong>Brak punktu zatwierdzenia.</strong> Pominięcie prośby o strategię przed montażem to najdroższy błąd w całym procesie. Trzydzieści sekund czytania kontra pół godziny renderu.</li>
+        <li><strong>Pliki nazwane jak z aparatu.</strong> Bez sensownych nazw agent nie powiąże zdjęcia z fragmentem narracji. Nazwa jest instrukcją.</li>
+        <li><strong>Jedno zdanie zamiast briefu.</strong> „Zmontuj to ładnie" daje wynik, który trzeba poprawiać pięć razy. Pięć zdań kontekstu daje wynik do drobnych korekt.</li>
+        <li><strong>Brak listy zakazów.</strong> Bez wyraźnego „bez zoomu na każdym zdaniu" dostaniesz zoom na każdym zdaniu.</li>
+        <li><strong>Publikacja bez przeczytania napisów.</strong> Nazwy własne i branżowy żargon to miejsce, gdzie rozpoznawanie mowy zawodzi najczęściej.</li>
+        <li><strong>Renderowanie pełnej jakości przy każdej poprawce.</strong> Do oceny montażu wystarczy szybki podgląd w niższej rozdzielczości. Pełny render zostaw na koniec.</li>
+        <li><strong>Materiały trzymane poza folderem projektu.</strong> Agent pracuje na katalogu. Zdjęcie na pulpicie dla niego nie istnieje.</li>
+      </ul>
+
+      <h2 id="faq">Pytania i odpowiedzi</h2>
+
+      <h3>Czy to działa na Windowsie?</h3>
+      <p>
+        Oficjalna instrukcja instalacji podaje komendy dla macOS, Debiana/Ubuntu i Arch Linuksa. Na Windowsie
+        praktyczną drogą jest WSL2: instalujesz FFmpeg, Pythona i agenta wewnątrz dystrybucji Linuksa, a materiały
+        trzymasz w jej systemie plików, żeby nie tracić czasu na przenoszenie dużych plików przez most między
+        systemami.
+      </p>
+
+      <h3>Czy muszę umieć programować?</h3>
+      <p>
+        Do samego montażu nie. Musisz natomiast przejść przez instalację w terminalu, czyli sklonować repozytorium,
+        zainstalować zależności i zapisać klucz API. To kilkanaście minut wklejania komend z instrukcji. Późniejsza
+        praca to już wyłącznie pisanie poleceń po polsku.
+      </p>
+
+      <h3>Czy mogę użyć innego dostawcy transkrypcji?</h3>
+      <p>
+        Domyślna konfiguracja video-use opiera się na kluczu ElevenLabs, bo stamtąd biorą się znaczniki czasu na
+        poziomie pojedynczych słów, rozdzielenie mówców i zdarzenia dźwiękowe. Projekt jest otwarty i na licencji MIT,
+        więc podmiana warstwy transkrypcji jest technicznie możliwa, ale wymaga własnej pracy. Dokumentacja nie
+        opisuje gotowej alternatywy.
+      </p>
+
+      <h3>Jak długo trwa montaż czterominutowego filmu?</h3>
+      <p>
+        Zależy od liczby źródeł, nakładek i mocy komputera, więc jedna liczba byłaby zmyślona. Warto natomiast
+        wiedzieć, na co ten czas idzie: transkrypcja to minuty, rozumowanie modelu to sekundy, a lwia część zegara
+        to render po stronie FFmpeg i ewentualne ponowne podejścia po autokontroli. Dlatego szybki podgląd
+        w niższej rozdzielczości przy poprawkach oszczędza najwięcej.
+      </p>
+
+      <h3>Czy agent może pobrać materiał z YouTube i go zmontować?</h3>
+      <p>
+        Technicznie tak, bo instalacja przewiduje opcjonalne narzędzie do pobierania materiałów z adresów URL,
+        a w ekosystemie istnieją osobne skille do klipowania filmów z YouTube. Prawnie to zupełnie inna rozmowa:
+        cudzy materiał jest cudzy i decyduje licencja, a nie możliwość techniczna.
+      </p>
+
+      <h2>Podsumowanie</h2>
+      <p>
+        Przez lata montaż był wąskim gardłem, bo wymagał narzędzia, umiejętności i czasu naraz. Podejście, w którym
+        agent czyta transkrypcję zamiast oglądać klatki, przesuwa ten ciężar z obsługi programu na{" "}
+        <strong>opisanie, czego właściwie chcesz</strong>. Umiejętnością krytyczną przestaje być znajomość osi czasu,
+        a staje się nią precyzja briefu.
+      </p>
+      <p>
+        Jeżeli masz nagrany materiał i publikujesz regularnie, próg wejścia to kilkanaście minut instalacji i grosze
+        za transkrypcję. Zacznij od jednego, krótkiego filmu, którego nie szkoda. Napisz brief na pięć zdań, poproś
+        o strategię przed montażem, obejrzyj podgląd w niskiej jakości i dopiero potem zamów pełny render. Po drugim
+        albo trzecim podejściu będziesz wiedział, ile kontekstu trzeba dać, żeby pierwszy wynik nadawał się do
+        publikacji.
+      </p>
+
+      <div className="not-prose mt-8 mb-6 rounded-2xl border border-border bg-surface p-6">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Źródła</p>
+        <ul className="space-y-2 text-sm text-zinc-600 list-disc pl-5">
+          <li><a href="https://github.com/browser-use/video-use" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">browser-use/video-use</a> — repozytorium projektu, licencja MIT, 24,9 tys. gwiazdek (dostęp 14.09.2026)</li>
+          <li><a href="https://github.com/browser-use/video-use/blob/main/install.md" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">video-use, install.md</a> — wymagania i instalacja krok po kroku</li>
+          <li><a href="https://github.com/browser-use/video-use/blob/main/SKILL.md" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">video-use, SKILL.md</a> — pipeline, struktura katalogów, zasady montażu i autokontroli</li>
+          <li><a href="https://code.claude.com/docs/en/skills" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">Claude Code, dokumentacja Skills</a> — lokalizacje katalogów i format pliku SKILL.md</li>
+          <li><a href="https://elevenlabs.io/pricing/api" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">ElevenLabs, cennik API</a> — stawki za rozpoznawanie mowy (dostęp 14.09.2026)</li>
+          <li><a href="https://ffmpeg.org/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">FFmpeg</a> — silnik przetwarzania wideo używany przez wszystkie opisane rozwiązania</li>
+          <li><a href="https://github.com/haidrrrry/claude-remotion-skill" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">claude-remotion-skill</a> — skill do motion designu opartego na Remotion (153 gwiazdki, dostęp 14.09.2026)</li>
+          <li><a href="https://github.com/wilwaldon/Claude-Code-Video-Toolkit" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">Claude-Code-Video-Toolkit</a> — zbiorczy zestaw skilli i serwerów MCP do produkcji wideo</li>
+          <li><a href="https://www.explainx.ai/blog/openmontage-agentic-video-production-claude-code-2026" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">explainx.ai, OpenMontage</a> — omówienie pełnego pipeline'u produkcyjnego i przykładowych kosztów (dostęp 14.09.2026)</li>
+        </ul>
+      </div>
+    </>
+  ),
 };

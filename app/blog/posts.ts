@@ -27,6 +27,18 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "claude-code-montaz-video",
+    title: "Claude Code montaż video — jak zmontować film jednym poleceniem w 2026",
+    excerpt:
+      "Agent AI nie ogląda Twojego filmu. Czyta transkrypcję z dokładnością do pojedynczego słowa i na jej podstawie decyduje, gdzie ciąć. Rozkładam na części open source'owe rozwiązania, które montują wideo z poziomu Claude Code — instalacja, struktura folderów, gotowe prompty, koszt transkrypcji i lista rzeczy do sprawdzenia przed publikacją. Stan na wrzesień 2026, z linkami do repozytoriów i dokumentacji.",
+    category: "Sztuczna Inteligencja",
+    date: "2026-09-14",
+    readTime: 17,
+    coverColor: "#a855f7",
+    coverImage: "/blog/cover-claude-code-montaz-video.svg",
+    published: true,
+  },
+  {
     slug: "ile-jest-adwokatow-w-polsce",
     title: "Ile jest adwokatów w Polsce",
     excerpt:
