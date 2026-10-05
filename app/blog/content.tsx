@@ -4,6 +4,360 @@ import EncjaGBP from "@/components/seo/EncjaGBP";
 export const articleContent: Record<string, React.ReactNode> = {
 
   /* ─────────────────────────────────────────────────────────────────────────
+     Wizytówka: Pozycjonowanie wizytówki Google bez strony WWW
+  ───────────────────────────────────────────────────────────────────────── */
+  "pozycjonowanie-wizytowki-google-bez-strony-www": (
+    <>
+      {/* Spis treści */}
+      <div className="not-prose mt-2 mb-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Spis treści</p>
+        <ol className="space-y-1.5 text-sm">
+          <li><a href="#fundament" className="font-semibold text-ink hover:text-brand transition-colors">Wizytówka to fundament, strona to piętro</a></li>
+          <li><a href="#czy-sie-da" className="font-semibold text-ink hover:text-brand transition-colors">Czy wizytówka bez strony w ogóle może rankować</a></li>
+          <li><a href="#audyt" className="font-semibold text-ink hover:text-brand transition-colors">Krok 1. Audyt startowy i mapa pozycji</a></li>
+          <li><a href="#dane" className="font-semibold text-ink hover:text-brand transition-colors">Krok 2. Nazwa, adres, telefon i weryfikacja</a></li>
+          <li><a href="#kategorie" className="font-semibold text-ink hover:text-brand transition-colors">Krok 3. Kategoria główna i dodatkowe</a></li>
+          <li><a href="#uslugi" className="font-semibold text-ink hover:text-brand transition-colors">Krok 4. Usługi, opis i atrybuty, czyli treść zamiast strony</a></li>
+          <li><a href="#zdjecia" className="font-semibold text-ink hover:text-brand transition-colors">Krok 5. Zdjęcia z prawdziwych realizacji</a></li>
+          <li><a href="#opinie" className="font-semibold text-ink hover:text-brand transition-colors">Krok 6. Opinie, które opisują usługę</a></li>
+          <li><a href="#aktualizacje" className="font-semibold text-ink hover:text-brand transition-colors">Krok 7. Aktualizacje i pytania w profilu</a></li>
+          <li><a href="#cytowania" className="font-semibold text-ink hover:text-brand transition-colors">Krok 8. Cytowania NAP, które zastępują stronę</a></li>
+          <li><a href="#pomiar" className="font-semibold text-ink hover:text-brand transition-colors">Krok 9. Pomiar, czyli co sprawdzam co miesiąc</a></li>
+          <li><a href="#bledy" className="font-semibold text-ink hover:text-brand transition-colors">Błędy, które kończą się zawieszeniem profilu</a></li>
+          <li><a href="#kiedy-strona" className="font-semibold text-ink hover:text-brand transition-colors">Kiedy bez strony dochodzisz do sufitu</a></li>
+        </ol>
+      </div>
+
+      <p>
+        Połowa firm, które trafiają do mnie z prośbą o „pozycjonowanie w Google", nie ma strony internetowej.
+        Hydraulik z powiatu, ekipa od kostki brukowej, mechanik z garażem na obrzeżach miasta, gabinet masażu
+        prowadzony przez jedną osobę. Pierwsze pytanie, jakie słyszę, brzmi zawsze tak samo: <strong>czy bez
+        strony w ogóle jest sens zaczynać?</strong>
+      </p>
+      <p>
+        Jest. I powiem więcej: nawet gdyby ta firma miała stronę, zacząłbym dokładnie od tego samego miejsca.
+        W lokalnym SEO <strong>wizytówka Google jest fundamentem, a strona WWW jest piętrem, które stawia się na
+        gotowych fundamentach</strong>. Odwrotna kolejność to najczęstszy sposób, w jaki małe firmy przepalają
+        pierwsze kilka tysięcy złotych na marketing.
+      </p>
+      <p>
+        Poniżej rozpisuję cały proces tak, jak prowadzę go u klientów bez strony. Krok po kroku, w kolejności,
+        w jakiej to robię, z tym, co sprawdzam po drodze, i z uczciwym opisem miejsca, w którym bez strony
+        zaczyna brakować paliwa.
+      </p>
+
+      <h2 id="fundament">Wizytówka to fundament, strona to piętro</h2>
+      <p>
+        Wpisz w telefon „mechanik" albo „hydraulik" w dowolnym polskim mieście. Zanim zobaczysz pierwszy wynik
+        organiczny, czyli czyjąś stronę, przewiniesz mapę z trzema firmami, ich ocenami, godzinami otwarcia
+        i przyciskiem „Zadzwoń". Dla zapytań usługowych z lokalną intencją <strong>to właśnie ta mapa zbiera
+        pierwsze kliknięcia i pierwsze telefony</strong>. Klient, który ma cieknący kran, nie czyta strony
+        o firmie. Patrzy na gwiazdki, odległość i dzwoni.
+      </p>
+      <p>
+        Dlatego mówię o fundamencie. Wszystko, co zrobisz później w internecie, czyli strona, artykuły, reklamy,
+        katalogi branżowe, będzie się odwoływać do danych z wizytówki: nazwy, adresu, numeru, kategorii, opinii.
+        Jeśli te dane są niespójne albo słabe, każda kolejna warstwa jest budowana na piasku. Jeśli są mocne,
+        strona dokładana po pół roku przyspiesza wyniki, zamiast je dopiero budować.
+      </p>
+      <p>
+        Jest też powód czysto praktyczny. <strong>Wizytówka jest za darmo i działa od dnia weryfikacji</strong>.
+        Strona kosztuje, wymaga treści, hostingu, domeny i miesięcy, zanim zacznie łapać ruch z wyszukiwarki.
+        Dla firmy jednoosobowej, która dopiero startuje, to nie jest dylemat. To jest kolejność.
+      </p>
+
+      <h2 id="czy-sie-da">Czy wizytówka bez strony w ogóle może rankować</h2>
+      <p>
+        Może, i to wysoko. Google wymienia trzy czynniki lokalnego rankingu: <strong>trafność, odległość
+        i popularność</strong> (
+        <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com</a>,
+        dostęp 5 października 2026). Strona WWW wpływa na dwa z nich, ale żaden nie wymaga jej istnienia.
+      </p>
+      <p>
+        Trafność Google ocenia po tym, jak dobrze profil pasuje do zapytania. Bez strony główną robotę robią
+        kategoria, lista usług, opis i treść opinii. Odległości nie zmienisz żadnym zabiegiem, bo to fizyczny
+        dystans między szukającym a firmą lub jej obszarem działania. Popularność to opinie, ich liczba i treść,
+        wzmianki o firmie w sieci, a także, jak pisze Google, linki i artykuły. <strong>Tu właśnie strona daje
+        najwięcej, bo zbiera linki i wzmianki</strong>, ale to samo częściowo da się zbudować bez niej.
+      </p>
+      <p>
+        Warto wiedzieć jedną rzecz historyczną. Google przez lata oferowało darmowe strony tworzone z poziomu
+        wizytówki, z adresem w domenie business.site. W marcu 2024 roku je wyłączyło, do 10 czerwca 2024 przekierowywało ruch
+        z tych adresów do profilu, a potem zostawiło w ich miejscu błąd „nie znaleziono strony" (
+        <a href="https://searchengineland.com/google-shutting-down-websites-business-profiles-436393" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">searchengineland.com</a>,
+        dostęp 5 października 2026). Jeśli w Twoim profilu nadal widnieje taki adres, usuń go. <strong>Martwy link
+        w polu „witryna" jest gorszy niż puste pole.</strong>
+      </p>
+
+      <h2 id="audyt">Krok 1. Audyt startowy i mapa pozycji</h2>
+      <p>
+        Zanim cokolwiek zmienię, robię zdjęcie stanu wyjściowego. Bez tego za trzy miesiące nie da się uczciwie
+        powiedzieć klientowi, co zadziałało, a co nie.
+      </p>
+      <p>
+        Pierwsza rzecz to <strong>mapa pozycji, czyli siatka punktów rozłożona na obszarze, który firma obsługuje</strong>.
+        Dla każdego punktu sprawdzam, na którym miejscu pojawia się wizytówka dla dwóch, trzech głównych fraz,
+        na przykład „hydraulik", „hydraulik [miasto]", „udrażnianie rur". Wynik zawsze jest ten sam w kształcie:
+        zielono tuż przy adresie, czerwono kilka kilometrów dalej. Pytanie tylko, jak daleko sięga ta zielona plama.
+      </p>
+      <p>
+        Druga rzecz to konkurencja. Biorę trzy firmy, które są w pierwszej trójce mapy dla głównej frazy, i spisuję:
+        kategorię główną, liczbę opinii, średnią, liczbę zdjęć, czy mają stronę, jak często publikują aktualizacje.
+        Bardzo często okazuje się, że <strong>w mniejszych miastach i na obrzeżach połowa liderów mapy też nie ma
+        strony albo ma wizytówkę z linkiem do Facebooka</strong>. To od razu mówi, że bariera wejścia jest niska.
+      </p>
+      <p>
+        Trzecia rzecz to panel samej wizytówki: zakładka skuteczności z liczbą połączeń, próśb o wskazówki dojazdu
+        i wyszukiwanymi frazami z ostatnich miesięcy. Jeśli profil jest nowy, zapisuję zera. Zera też są danymi.
+      </p>
+
+      <h2 id="dane">Krok 2. Nazwa, adres, telefon i weryfikacja</h2>
+      <p>
+        Dane podstawowe, w branży nazywane NAP od angielskiego name, address, phone, to element, na którym psuje
+        się najwięcej profili. Zasady Google są tu jednoznaczne: <strong>nazwa w wizytówce ma odpowiadać nazwie,
+        pod którą firma działa w realnym świecie</strong>, bez dopisywania fraz, miast i haseł reklamowych (
+        <a href="https://support.google.com/business/answer/3038177" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com</a>,
+        dostęp 5 października 2026).
+      </p>
+      <p>
+        Wiem, że „Hydraulik Kraków 24h Kowalski" rankuje lepiej niż „Kowalski Instalacje". Wiem też, ile takich
+        profili widziałem zawieszonych po zgłoszeniu konkurencji albo po zmianie, którą trzeba było zweryfikować
+        ponownie. Przy firmie bez strony zawieszenie wizytówki oznacza, że <strong>firma z dnia na dzień znika
+        z internetu całkowicie</strong>, bo nie ma żadnej innej obecności, która by ją podtrzymała. Ryzyko jest
+        nieproporcjonalne do zysku.
+      </p>
+      <p>
+        Adres to druga decyzja. Jeśli klienci przyjeżdżają do Ciebie, adres jest widoczny. Jeśli Ty jeździsz do
+        klientów, jak hydraulik, dekarz czy firma sprzątająca, ukrywasz adres i ustawiasz obszar działania. To
+        jest w pełni zgodne z wytycznymi i nie obniża pozycji, wbrew temu, co często się słyszy. Obszar ustawiam
+        na realny dojazd, nie na całe województwo, bo <strong>profil pokazywany ludziom, do których i tak nie
+        pojedziesz, generuje telefony bez zleceń</strong>.
+      </p>
+      <p>
+        Telefon ma być numerem, który ktoś odbiera w godzinach pracy. Najlepiej tym samym, który podajesz na
+        fakturach, w katalogach i na samochodzie. Spójność numeru we wszystkich miejscach w sieci wróci w kroku
+        ósmym jako jeden z głównych sygnałów dla firmy bez strony.
+      </p>
+
+      <h2 id="kategorie">Krok 3. Kategoria główna i dodatkowe</h2>
+      <p>
+        Gdybym miał wskazać jedno ustawienie, które najmocniej wpływa na widoczność wizytówki, wskazałbym
+        kategorię główną. <strong>To od niej Google zaczyna ocenę trafności</strong>, i to ona decyduje, na jakie
+        zapytania profil w ogóle wchodzi do gry.
+      </p>
+      <p>
+        Wybieram ją na podstawie dwóch rzeczy: z czego firma ma największy przychód i jakiej kategorii używają
+        liderzy mapy dla tej frazy. Jeśli trzech na trzech liderów dla „mycie kostki brukowej" ma kategorię
+        „usługi mycia ciśnieniowego", a mój klient ma „firma sprzątająca", wiem, od czego zacząć. Zmiana kategorii
+        głównej potrafi przesunąć profil o kilka pozycji w ciągu dwóch, trzech tygodni, bez żadnej innej pracy.
+      </p>
+      <p>
+        Kategorie dodatkowe dodaję świadomie, po jednej na każdą realną linię usług. Nie dodaję kategorii „na
+        zapas", bo każda z nich otwiera strumień zapytań, które potem trzeba obsłużyć albo odrzucić przez telefon.
+      </p>
+
+      <h2 id="uslugi">Krok 4. Usługi, opis i atrybuty, czyli treść zamiast strony</h2>
+      <p>
+        Tu jest serce pozycjonowania wizytówki bez strony. Firma, która ma stronę, opisuje swoje usługi na
+        podstronach i Google czyta te podstrony. Firma bez strony ma do dyspozycji tylko to, co wpisze w profil.
+        Dlatego <strong>sekcja usług i opis firmy muszą wykonać pracę, którą normalnie robi cała strona
+        internetowa</strong>.
+      </p>
+      <p>
+        Usługi wpisuję jako konkretne pozycje, tak jak klient je nazywa, a nie jak nazywa je branża. „Udrażnianie
+        kanalizacji", „wymiana baterii", „podłączenie zmywarki", „usuwanie wycieku pod zlewem". Do każdej pozycji
+        dodaję krótki opis: co obejmuje, jak długo trwa, czy wycena jest na miejscu. Te opisy są widoczne dla
+        klienta i są tekstem, który Google przypisuje do profilu.
+      </p>
+      <p>
+        Opis firmy, do 750 znaków, piszę jak krótką stronę „o nas": co robimy, gdzie, dla kogo i czego nie robimy.
+        Bez upychania fraz, bo opis nie jest bezpośrednim czynnikiem rankingu, za to jest czytany przez człowieka,
+        który za chwilę zdecyduje, czy zadzwonić. Atrybuty, czyli płatność kartą, faktura VAT, obsługa w weekendy,
+        zaznaczam wszystkie, które są prawdą. <strong>Każde wypełnione pole to odpowiedź na pytanie, którego
+        klient nie musi już zadawać przez telefon.</strong>
+      </p>
+      <p>
+        Godziny otwarcia ustawiam realne, razem z godzinami świątecznymi. Profil oznaczony jako otwarty w chwili
+        wyszukiwania ma przewagę nad zamkniętym, a klient, który dodzwoni się w godzinach z wizytówki i nikt nie
+        odbierze, zostawia potem opinię jedną gwiazdką.
+      </p>
+
+      <h2 id="zdjecia">Krok 5. Zdjęcia z prawdziwych realizacji</h2>
+      <p>
+        Przy firmie bez strony zdjęcia w wizytówce to jedyne portfolio, jakie klient zobaczy. Zasada, którą
+        stosuję, jest prosta: <strong>zero zdjęć stockowych, same zdjęcia z telefonu, z realnych zleceń</strong>.
+        Przed i po, w trakcie pracy, sprzęt, samochód z logo, ekipa. Klient szuka w nich swojego przypadku.
+      </p>
+      <p>
+        W danych BrightLocal, opartych na analizie około 45 tysięcy profili, <strong>profile z dużą liczbą zdjęć
+        notują wyraźnie więcej połączeń i próśb o wskazówki dojazdu niż przeciętne</strong> (
+        <a href="https://www.brightlocal.com/research/google-my-business-insights-study/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>,
+        dostęp 5 października 2026). Rytm, który działa u moich klientów, to kilka zdjęć tygodniowo, dodawanych
+        na bieżąco z realizacji, zamiast jednorazowego wrzucenia pięćdziesięciu zdjęć przy zakładaniu profilu.
+        Regularność pokazuje Google, że firma żyje.
+      </p>
+
+      <h2 id="opinie">Krok 6. Opinie, które opisują usługę</h2>
+      <p>
+        Opinie to najmocniejsza dźwignia, jaką ma firma bez strony, bo odpowiadają jednocześnie za popularność
+        i za trafność. W badaniu konsumenckim BrightLocal z 2026 roku <strong>97% respondentów deklaruje czytanie
+        opinii przed wyborem lokalnej firmy</strong>, a 31% w ogóle nie bierze pod uwagę firm z oceną poniżej 4,5 (
+        <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>,
+        dostęp 5 października 2026).
+      </p>
+      <p>
+        Liczy się nie tylko liczba, ale treść. Opinia „polecam" daje gwiazdkę. Opinia „pan szybko przyjechał
+        i udrożnił kanalizację w bloku na Podgórzu" daje gwiazdkę, frazę, usługę i lokalizację. Dlatego klientom
+        nie każę „prosić o opinię", tylko <strong>prosić o opinię z jednym zdaniem o tym, co było robione</strong>.
+        Link do wystawienia opinii wysyłam SMS-em tego samego dnia, kiedy klient jest jeszcze zadowolony.
+      </p>
+      <p>
+        Na każdą opinię odpowiadam, także na negatywne. Odpowiedź jest pisana dla następnego klienta, nie dla
+        autora opinii. Spokojna, rzeczowa odpowiedź na jedną gwiazdkę buduje więcej zaufania niż dziesięć
+        piątek bez komentarza.
+      </p>
+
+      <h2 id="aktualizacje">Krok 7. Aktualizacje i pytania w profilu</h2>
+      <p>
+        Aktualizacje, czyli posty publikowane w wizytówce, traktuję jak bloga dla firmy, która bloga nie ma.
+        Raz w tygodniu krótki wpis: zakończona realizacja ze zdjęciem, sezonowa usługa, informacja o wolnych
+        terminach. Nie oczekuję, że jeden post przesunie pozycję. Oczekuję, że <strong>profil, który regularnie
+        się zmienia, wygląda dla klienta i dla Google jak firma, która działa tu i teraz</strong>.
+      </p>
+      <p>
+        Do tego dochodzą pytania i odpowiedzi. Trzy, cztery pytania, które klienci najczęściej zadają przez
+        telefon, czyli dojazd, sposób wyceny, termin, płatność, zadaję i odpowiadam na nie sam. To jest uczciwe
+        i dozwolone, a jednocześnie wypełnia profil treścią, której przy stronie WWW szukałoby się w zakładce FAQ.
+      </p>
+
+      <h2 id="cytowania">Krok 8. Cytowania NAP, które zastępują stronę</h2>
+      <p>
+        To jest krok, który przy firmie bez strony robię staranniej niż przy jakiejkolwiek innej. Cytowanie to
+        każde miejsce w sieci, gdzie pojawia się nazwa firmy, adres i telefon: katalogi firm, portale branżowe,
+        mapy innych dostawców, profile społecznościowe. <strong>Kiedy firma nie ma strony, to właśnie cytowania
+        potwierdzają Google, że firma istnieje i że dane z wizytówki są prawdziwe</strong>.
+      </p>
+      <p>
+        Kluczowe jest słowo spójność. Ta sama nazwa, ten sam zapis adresu, ten sam numer, wszędzie. Jeśli
+        w jednym katalogu jest stary numer, w drugim nazwa z dopiskiem, a w trzecim adres sprzed przeprowadzki,
+        Google dostaje sprzeczne sygnały o tej samej firmie. Szerzej o tym, jak Google łączy te sygnały w jeden
+        obiekt, piszę w tekście o{" "}
+        <Link href="/blog/czym-sa-encje-wizytowka-google-przyklady" className="text-brand font-semibold hover:underline">encjach i wizytówce Google</Link>.
+      </p>
+      <p>
+        Zaczynam od kilkunastu najważniejszych miejsc: Apple Maps, Bing Places, profil na Facebooku, dwa, trzy
+        największe polskie katalogi firm i portale branżowe dla danej usługi. Lepiej piętnaście cytowań
+        spójnych i kompletnych niż sto przypadkowych wpisów z literówkami. Profile społecznościowe dodaję też
+        bezpośrednio w wizytówce, w polu na linki do mediów społecznościowych.
+      </p>
+      <p>
+        A pole „witryna"? Jeśli firma ma aktywny profil na Facebooku z aktualnymi danymi, wpisuję go tam
+        tymczasowo. Jeśli nie ma niczego sensownego, zostawiam pole puste. <strong>Nie wpisuję adresu wizytówki
+        w cudzym katalogu ogłoszeniowym</strong>, bo to oddaje kliknięcie platformie, na której obok wiszą
+        reklamy konkurencji.
+      </p>
+
+      <h2 id="pomiar">Krok 9. Pomiar, czyli co sprawdzam co miesiąc</h2>
+      <p>
+        Raz w miesiącu powtarzam mapę pozycji z kroku pierwszego, na tych samych punktach i tych samych frazach.
+        Zielona plama wokół adresu powinna się rozszerzać. Jeśli stoi w miejscu przez dwa miesiące, wracam do
+        kategorii i opinii, bo to tam najczęściej leży problem.
+      </p>
+      <p>
+        Drugi wskaźnik to panel skuteczności: połączenia, prośby o trasę, kliknięcia w profil. Trzeci, najważniejszy
+        dla właściciela, to zeszyt przy telefonie. <strong>Ile telefonów przyszło z wizytówki i ile z nich
+        skończyło się zleceniem</strong>. Pozycja w mapie jest środkiem, telefon z sensowną sprawą jest celem.
+      </p>
+      <p>
+        Realistyczne tempo, które widzę u klientów bez strony w średnich miastach, to pierwsze ruchy w mapie po
+        trzech, czterech tygodniach od uporządkowania kategorii i danych, a stabilne wejście do pierwszej trójki
+        dla głównej frazy w okolicy adresu po dwóch, trzech miesiącach systematycznej pracy. W dużych miastach
+        i w konkurencyjnych branżach trwa to dłużej, i tu dochodzimy do sufitu, o którym na końcu.
+      </p>
+
+      <h2 id="bledy">Błędy, które kończą się zawieszeniem profilu</h2>
+      <p>
+        Przy firmie bez strony zawieszenie wizytówki to najgorszy możliwy scenariusz, więc o ryzyku mówię
+        klientom wprost na starcie. Trzy rzeczy widuję najczęściej.
+      </p>
+      <p>
+        <strong>Frazy w nazwie firmy.</strong> Opisałem to w kroku drugim. Działa, dopóki ktoś nie zgłosi zmiany
+        albo nie przyjdzie ponowna weryfikacja.
+      </p>
+      <p>
+        <strong>Wirtualne biuro albo adres, pod którym firmy fizycznie nie ma.</strong> Wytyczne Google wymagają,
+        żeby adres był miejscem, w którym firma rzeczywiście działa albo obsługuje klientów. Adres z wirtualnego
+        biura w centrum miasta to klasyczny powód utraty profilu.
+      </p>
+      <p>
+        <strong>Kupowane albo pisane przez rodzinę opinie.</strong> Google je filtruje i usuwa, a w Polsce od
+        1 stycznia 2023 roku zamieszczanie fałszywych opinii albo zlecanie ich innym jest wprost wymienione jako
+        nieuczciwa praktyka rynkowa w ustawie o przeciwdziałaniu nieuczciwym praktykom rynkowym (
+        <a href="https://uokik.gov.pl/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">uokik.gov.pl</a>,
+        dostęp 5 października 2026). Kilkanaście prawdziwych opinii z treścią jest warte więcej niż setka
+        pustych piątek.
+      </p>
+
+      <h2 id="kiedy-strona">Kiedy bez strony dochodzisz do sufitu</h2>
+      <p>
+        Uczciwie: wizytówka bez strony ma swój sufit i lepiej o nim wiedzieć od początku. Widzę go w trzech
+        sytuacjach.
+      </p>
+      <p>
+        Pierwsza to <strong>duże miasto i konkurencyjna branża</strong>. Jeśli w pierwszej trójce mapy dla
+        „hydraulik Warszawa" stoją firmy z rozbudowanymi stronami, setkami opinii i linkami z lokalnych portali,
+        sama wizytówka nie wystarczy, bo strona dokłada popularność, której nie zbudujesz inaczej. Druga to
+        <strong> zasięg poza najbliższą okolicą</strong>. Odległość od adresu jest twardym ograniczeniem, a strona
+        z podstronami dla poszczególnych miejscowości pozwala łapać ruch organiczny tam, gdzie mapa już nie sięga.
+        Trzecia to <strong>usługi, przy których klient porównuje i czyta</strong>, jak remonty czy wykończenia
+        wnętrz. Tam ludzie chcą zobaczyć cennik, proces, galerię i dopiero potem dzwonią.
+      </p>
+      <p>
+        Dobra wiadomość jest taka, że kiedy dojdziesz do tego sufitu, fundament jest gotowy. Spójne dane,
+        dobra kategoria, kilkadziesiąt opinii z treścią i historia aktualizacji sprawiają, że <strong>strona
+        dokładana do mocnej wizytówki zaczyna działać tygodniami, a nie miesiącami</strong>. Kolejność, od której
+        zacząłem ten tekst, po prostu się opłaca.
+      </p>
+      <p>
+        Jeśli chcesz sprawdzić, na jakim etapie jest Twój profil, przejdź przez niego z naszą{" "}
+        <Link href="/checklista-wizytowki-google" className="text-brand font-semibold hover:underline">checklistą pozycjonowania wizytówki</Link>{" "}
+        albo policz wynik w{" "}
+        <Link href="/gbp-score" className="text-brand font-semibold hover:underline">darmowym audycie wizytówki Google</Link>.
+        A jeśli wolisz, żeby cały ten proces ktoś poprowadził za Ciebie, to dokładnie tym zajmujemy się w ramach{" "}
+        <Link href="/uslugi/wizytowka-google" className="text-brand font-semibold hover:underline">pozycjonowania wizytówki Google</Link>,
+        także dla firm, które strony jeszcze nie mają.
+      </p>
+
+      <h2>Źródła</h2>
+      <p>
+        Google, <em>Jak poprawić pozycję firmy w lokalnych wynikach wyszukiwania</em>, dokumentacja pomocy,{" "}
+        <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com</a>.
+      </p>
+      <p>
+        Google, <em>Wskazówki dotyczące reprezentowania firmy w Google</em>,{" "}
+        <a href="https://support.google.com/business/answer/3038177" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">support.google.com</a>.
+      </p>
+      <p>
+        Search Engine Land, <em>Google is shutting down websites made with Business Profiles</em>, 2024,{" "}
+        <a href="https://searchengineland.com/google-shutting-down-websites-business-profiles-436393" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">searchengineland.com</a>.
+      </p>
+      <p>
+        BrightLocal, <em>Google My Business Insights Study</em>, analiza około 45 tysięcy profili z 36 branż,{" "}
+        <a href="https://www.brightlocal.com/research/google-my-business-insights-study/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>.
+      </p>
+      <p>
+        BrightLocal, <em>Local Consumer Review Survey 2026</em>,{" "}
+        <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>.
+      </p>
+      <p>
+        Urząd Ochrony Konkurencji i Konsumentów, informacje o zmianach w prawie konsumenckim od 1 stycznia 2023,{" "}
+        <a href="https://uokik.gov.pl/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">uokik.gov.pl</a>.
+      </p>
+    </>
+  ),
+
+
+  /* ─────────────────────────────────────────────────────────────────────────
      Poradnik: Ile jest adwokatów w Polsce
   ───────────────────────────────────────────────────────────────────────── */
   "ile-jest-adwokatow-w-polsce": (

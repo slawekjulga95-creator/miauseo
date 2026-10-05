@@ -27,6 +27,18 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "pozycjonowanie-wizytowki-google-bez-strony-www",
+    title: "Pozycjonowanie wizytówki Google bez strony WWW",
+    excerpt:
+      "Połowa firm, które przychodzą do mnie po pozycjonowanie, nie ma strony internetowej. Pokazuję, dlaczego wizytówka Google jest fundamentem lokalnego SEO, a strona dopiero piętrem, i rozpisuję cały proces krok po kroku: audyt z mapą pozycji, dane NAP, kategorie, usługi zamiast podstron, zdjęcia, opinie, cytowania i pomiar. Do tego błędy, które kończą się zawieszeniem profilu, i moment, w którym bez strony dochodzisz do sufitu.",
+    category: "Wizytówka",
+    date: "2026-10-05",
+    readTime: 14,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-wizytowka-bez-strony-www.svg",
+    published: true,
+  },
+  {
     slug: "claude-code-montaz-video",
     title: "Claude Code montaż video — jak zmontować film jednym poleceniem w 2026",
     excerpt:
