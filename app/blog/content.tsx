@@ -136,7 +136,8 @@ export const articleContent: Record<string, React.ReactNode> = {
       <p>
         Telefon ma być numerem, który ktoś odbiera w godzinach pracy. Najlepiej tym samym, który podajesz na
         fakturach, w katalogach i na samochodzie. Spójność numeru we wszystkich miejscach w sieci wróci w kroku
-        ósmym jako jeden z głównych sygnałów dla firmy bez strony.
+        ósmym jako jeden z głównych sygnałów dla firmy bez strony. Więcej o samym pojęciu piszę w tekście{" "}
+        <Link href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">NAP w wizytówce Google, co to jest</Link>.
       </p>
 
       <h2 id="kategorie">Krok 3. Kategoria główna i dodatkowe</h2>
@@ -153,7 +154,9 @@ export const articleContent: Record<string, React.ReactNode> = {
       </p>
       <p>
         Kategorie dodatkowe dodaję świadomie, po jednej na każdą realną linię usług. Nie dodaję kategorii „na
-        zapas", bo każda z nich otwiera strumień zapytań, które potem trzeba obsłużyć albo odrzucić przez telefon.
+        zapas", bo każda z nich otwiera strumień zapytań, które potem trzeba obsłużyć albo odrzucić przez telefon. Jak dobierać kategorie krok po kroku, rozpisałem osobno
+        w artykule o{" "}
+        <Link href="/kategorie-wizytowka-google" className="text-brand font-semibold hover:underline">kategoriach w wizytówce Google</Link>.
       </p>
 
       <h2 id="uslugi">Krok 4. Usługi, opis i atrybuty, czyli treść zamiast strony</h2>
@@ -194,7 +197,9 @@ export const articleContent: Record<string, React.ReactNode> = {
         <a href="https://www.brightlocal.com/research/google-my-business-insights-study/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>,
         dostęp 5 października 2026). Rytm, który działa u moich klientów, to kilka zdjęć tygodniowo, dodawanych
         na bieżąco z realizacji, zamiast jednorazowego wrzucenia pięćdziesięciu zdjęć przy zakładaniu profilu.
-        Regularność pokazuje Google, że firma żyje.
+        Regularność pokazuje Google, że firma żyje. Jakie ujęcia sprawdzają się najlepiej, pokazuję w tekście
+        o{" "}
+        <Link href="/zdjecia-w-wizytowce-google-ktore-dzialaja" className="text-brand font-semibold hover:underline">zdjęciach w wizytówce Google, które działają</Link>.
       </p>
 
       <h2 id="opinie">Krok 6. Opinie, które opisują usługę</h2>
@@ -214,7 +219,8 @@ export const articleContent: Record<string, React.ReactNode> = {
       <p>
         Na każdą opinię odpowiadam, także na negatywne. Odpowiedź jest pisana dla następnego klienta, nie dla
         autora opinii. Spokojna, rzeczowa odpowiedź na jedną gwiazdkę buduje więcej zaufania niż dziesięć
-        piątek bez komentarza.
+        piątek bez komentarza. Cały system zbierania opinii opisałem w poradniku{" "}
+        <Link href="/opinie-google-jak-zdobywac-skutecznie" className="text-brand font-semibold hover:underline">jak skutecznie zdobywać opinie Google</Link>.
       </p>
 
       <h2 id="aktualizacje">Krok 7. Aktualizacje i pytania w profilu</h2>
@@ -242,7 +248,7 @@ export const articleContent: Record<string, React.ReactNode> = {
         w jednym katalogu jest stary numer, w drugim nazwa z dopiskiem, a w trzecim adres sprzed przeprowadzki,
         Google dostaje sprzeczne sygnały o tej samej firmie. Szerzej o tym, jak Google łączy te sygnały w jeden
         obiekt, piszę w tekście o{" "}
-        <Link href="/blog/czym-sa-encje-wizytowka-google-przyklady" className="text-brand font-semibold hover:underline">encjach i wizytówce Google</Link>.
+        <Link href="/czym-sa-encje-wizytowka-google-przyklady" className="text-brand font-semibold hover:underline">encjach i wizytówce Google</Link>.
       </p>
       <p>
         Zaczynam od kilkunastu najważniejszych miejsc: Apple Maps, Bing Places, profil na Facebooku, dwa, trzy
