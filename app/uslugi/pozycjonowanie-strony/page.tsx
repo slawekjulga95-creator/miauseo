@@ -4,6 +4,7 @@ import WizytowkaForm from "@/components/WizytowkaForm";
 import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://miauseo.pl/uslugi/pozycjonowanie-strony" },
   title: "Pozycjonowanie strony internetowej – MiauSEO | SEO dla firm lokalnych",
   description: "Pozycjonowanie strony internetowej dla małych i średnich firm. Audyt SEO, optymalizacja techniczna, treści i link building. Sprawdź co obejmuje usługa i ile kosztuje.",
 };

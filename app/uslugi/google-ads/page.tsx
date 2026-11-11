@@ -3,6 +3,7 @@ import Link from "next/link";
 import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://miauseo.pl/uslugi/google-ads" },
   title: "Google Ads – kampanie reklamowe | MiauSEO",
   description: "Kampanie Google Ads dla firm lokalnych i e-commerce. Płacisz tylko za kliknięcia, które mają sens. Bez przepalania budżetu, bez umów na rok.",
 };

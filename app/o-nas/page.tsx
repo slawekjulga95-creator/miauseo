@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://miauseo.pl/o-nas" },
   title: "O nas – MiauSEO",
   description: "Poznaj historię MiauSEO. 11 lat doświadczenia w marketingu lokalnym, pozycjonowaniu wizytówki Google i kampaniach reklamowych dla małych i średnich firm.",
 };

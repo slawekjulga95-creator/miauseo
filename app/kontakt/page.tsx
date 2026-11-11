@@ -4,6 +4,7 @@ import ContactFormWrapper from "@/components/ContactFormWrapper";
 import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://miauseo.pl/kontakt" },
   title: "Kontakt – MiauSEO | Bezpłatna konsultacja",
   description:
     "Skontaktuj się z MiauSEO. Bezpłatna konsultacja dotycząca pozycjonowania wizytówki Google, SEO strony, Google Ads i Meta Ads. Odpowiadamy w ciągu kilku godzin.",

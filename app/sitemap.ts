@@ -3,6 +3,7 @@ import { getPublishedPosts } from "@/app/blog/posts";
 import { terms } from "@/app/slownik/terms";
 import fs from "fs";
 import path from "path";
+import lastmod from "./sitemap-lastmod.json";
 
 const BASE_URL = "https://miauseo.pl";
 
@@ -16,6 +17,15 @@ const BASE_URL = "https://miauseo.pl";
  * Zasada: zero URL-i przekierowanych, zero noindex, zero 404.
  * /polityka-prywatnosci jest noindex, wiec nie wystepuje tutaj wcale.
  */
+/*
+ * Daty lastmod sa prawdziwe: dla stron i hasel pochodza z historii gita
+ * (app/sitemap-lastmod.json, generowany przez `npm run sitemap:lastmod`),
+ * dla wpisow z pola `date`. Gdy daty brak, pole jest pomijane zamiast wstawiac
+ * date builda, bo Google przestaje ufac lastmod, ktory zmienia sie przy kazdym wdrozeniu.
+ */
+const daty = lastmod as Record<string, string>;
+const dataDla = (url: string) => (daty[url] ? { lastModified: new Date(daty[url]) } : {});
+
 type Wpis = { url: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] };
 
 const USLUGI: Wpis[] = [
@@ -50,11 +60,10 @@ function slugiPytan(): string[] {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const now = new Date();
   const stat = (lista: Wpis[]) =>
     lista.map(({ url, priority, changeFrequency }) => ({
       url: `${BASE_URL}${url}`,
-      lastModified: now,
+      ...dataDla(url),
       changeFrequency,
       priority,
     }));
@@ -81,14 +90,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // slownik — 131 hasel, wczesniej w ogole nieobecnych w sitemapie
     ...terms.map((t) => ({
       url: `${BASE_URL}/${t.slug}`,
-      lastModified: now,
+      ...dataDla(`/${t.slug}`),
       changeFrequency: "yearly" as const,
       priority: 0.5,
     })),
     // pytania
     ...slugiPytan().map((slug) => ({
       url: `${BASE_URL}/pytania/${slug}`,
-      lastModified: now,
+      ...dataDla(`/pytania/${slug}`),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),

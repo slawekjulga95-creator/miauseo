@@ -4,6 +4,7 @@ import WizytowkaForm from "@/components/WizytowkaForm";
 import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://miauseo.pl/uslugi/wizytowka-google" },
   title: "Pozycjonowanie wizytówki Google – MiauSEO | Widoczność w Mapach",
   description: "Pozycjonowanie wizytówki Google dla firm lokalnych. Sprawdź co obejmuje usługa i jak działamy. Bezpłatna konsultacja i wycena dopasowana do Twojej branży.",
 };

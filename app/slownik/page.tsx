@@ -4,6 +4,7 @@ import { terms, LETTERS, getTermsByLetter } from "./terms";
 import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://miauseo.pl/slownik" },
   title: "Słownik SEO/SEM – MiauSEO | Pojęcia i definicje",
   description: `Kompletny słownik SEO i SEM. ${terms.length}+ pojęć z dziedziny pozycjonowania, Google Ads i marketingu w wyszukiwarkach — alfabetycznie, z definicjami.`,
 };

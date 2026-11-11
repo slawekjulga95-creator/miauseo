@@ -3,6 +3,7 @@ import Link from "next/link";
 import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://miauseo.pl/uslugi/tiktok-ads" },
   title: "TikTok Ads – reklamy na TikToku | MiauSEO",
   description: "Kampanie reklamowe na TikToku. Docierasz do młodszej grupy z kosztem za wyświetlenie niższym niż na jakiejkolwiek innej platformie. Zanim zrobi to konkurencja.",
 };

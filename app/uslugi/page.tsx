@@ -3,6 +3,7 @@ import Link from "next/link";
 import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://miauseo.pl/uslugi" },
   title: "Zakres usług – SEO, Google Ads, Meta Ads | MiauSEO",
   description:
     "Pomagamy małym i średnim firmom rosnąć w Google. Wizytówka Google, pozycjonowanie strony, Google Ads, Meta Ads i TikTok Ads – wszystko w jednym miejscu.",

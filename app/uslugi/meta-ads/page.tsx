@@ -3,6 +3,7 @@ import Link from "next/link";
 import CatWatermark from "@/components/ui/CatWatermark";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://miauseo.pl/uslugi/meta-ads" },
   title: "Meta Ads – reklamy Facebook i Instagram | MiauSEO",
   description: "Kampanie reklamowe na Facebooku i Instagramie. Docieramy do dokładnie tych osób, które powinny znać Twoją firmę — zanim zaczną szukać konkurencji.",
 };

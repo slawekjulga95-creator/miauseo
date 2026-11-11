@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://miauseo.pl/referencje" },
   title: "Referencje – MiauSEO | Szczere opinie ze współpracy",
   description:
     "Prawdziwe referencje klientów MiauSEO. Piszemy wprost co poszło dobrze, co było trudne i jakie efekty osiągnęliśmy razem. Żadnej ściemy.",

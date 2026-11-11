@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://miauseo.pl/opinie" },
   title: "Opinie klientów – MiauSEO | Szczere referencje ze współpracy",
   description:
     "Prawdziwe opinie klientów MiauSEO. Piszemy wprost co poszło dobrze, co było trudne i jakie efekty osiągnęliśmy razem. Żadnej ściemy.",

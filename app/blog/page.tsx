@@ -5,6 +5,7 @@ import CatWatermark from "@/components/ui/CatWatermark";
 import BlogFilter from "@/components/blog/BlogFilter";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://miauseo.pl/blog" },
   title: "Blog – MiauSEO | Wiedza o wizytówce Google i local SEO",
   description:
     "Praktyczne poradniki o pozycjonowaniu wizytówki Google, opiniach, Local Pack i local SEO. Bez teorii – tylko to, co działa.",

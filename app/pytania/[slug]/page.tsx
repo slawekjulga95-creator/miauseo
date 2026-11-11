@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const hasContent = Boolean(contentMap[slug]);
   return {
     title: `${q.question} – MiauSEO`,
+    alternates: { canonical: `https://miauseo.pl/pytania/${q.slug}` },
     description: hasContent
       ? `Kompletna odpowiedź: ${q.question}. Praktyczny poradnik o Google Business Profile od MiauSEO.`
       : `Odpowiedź na pytanie: ${q.question}. Praktyczna wiedza o wizytówce Google Business Profile od MiauSEO.`,
