@@ -27,6 +27,18 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "jak-dodac-lokalna-firme-do-chatgpt",
+    title: "Jak dodać swoją lokalną firmę do ChatGPT? Poradnik krok po kroku",
+    excerpt:
+      "Od 10 listopada 2026 OpenAI ma Business Hub, w którym firma może przejąć swój wpis w ChatGPT, ale lokalne firmy z Polski jeszcze nie mogą z niego skorzystać. Pokazuję, skąd ChatGPT bierze dane o lokalnych firmach i jak dodać swoją firmę pośrednio: test w czacie, robots.txt dla OAI-SearchBot, strona z NAP i schema LocalBusiness, Bing Places, katalogi, opinie i pomiar ruchu w GA4. Z planem na 30 dni i odpowiedziami na najczęstsze pytania.",
+    category: "Sztuczna Inteligencja",
+    date: "2026-11-24",
+    readTime: 12,
+    coverColor: "#FF6A00",
+    coverImage: "/blog/cover-firma-w-chatgpt.svg",
+    published: true,
+  },
+  {
     slug: "pozycjonowanie-wizytowki-google-bez-strony-www",
     title: "Pozycjonowanie wizytówki Google bez strony WWW",
     excerpt:

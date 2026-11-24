@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360" role="img" aria-labelledby="t d">
+  <title id="t">Plan na 30 dni: jak przygotować lokalną firmę do ChatGPT</title>
+  <desc id="d">Cztery etapy: dzień 1 test w ChatGPT i robots.txt, tydzień 1 strona z danymi NAP i schema LocalBusiness, tydzień 2 Bing Places i katalogi, tydzień 3 i 4 opinie, wzmianki i pomiar w GA4.</desc>
+  <rect width="900" height="360" fill="#ffffff"/>
+  <line x1="70" y1="120" x2="830" y2="120" stroke="#FF6A00" stroke-width="4" stroke-linecap="round" opacity="0.35"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <circle cx="110" cy="120" r="34" fill="#FF6A00"/><text x="110" y="128" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">1</text>
+    <circle cx="343" cy="120" r="34" fill="#FF6A00"/><text x="343" y="128" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">2</text>
+    <circle cx="576" cy="120" r="34" fill="#FF6A00"/><text x="576" y="128" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">3</text>
+    <circle cx="790" cy="120" r="34" fill="#16181d"/><text x="790" y="128" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">4</text>
+    <text x="110" y="60" text-anchor="middle" font-size="16" font-weight="800" fill="#c2410c">DZIEŃ 1</text>
+    <text x="343" y="60" text-anchor="middle" font-size="16" font-weight="800" fill="#c2410c">TYDZIEŃ 1</text>
+    <text x="576" y="60" text-anchor="middle" font-size="16" font-weight="800" fill="#c2410c">TYDZIEŃ 2</text>
+    <text x="790" y="60" text-anchor="middle" font-size="16" font-weight="800" fill="#16181d">TYDZIEŃ 3–4</text>
+    <g font-size="15" fill="#3f3f46" text-anchor="middle">
+      <text x="110" y="190">Test w ChatGPT</text><text x="110" y="214">robots.txt</text><text x="110" y="238">dla OAI-SearchBot</text>
+      <text x="343" y="190">Strona: NAP,</text><text x="343" y="214">usługi, FAQ,</text><text x="343" y="238">schema LocalBusiness</text>
+      <text x="576" y="190">Bing Places</text><text x="576" y="214">katalogi i Apple,</text><text x="576" y="238">jeden spójny NAP</text>
+      <text x="790" y="190">Opinie z treścią,</text><text x="790" y="214">wzmianki lokalne,</text><text x="790" y="238">pomiar w GA4</text>
+    </g>
+    <rect x="60" y="282" width="780" height="54" rx="16" fill="#fff4ec"/>
+    <text x="450" y="315" text-anchor="middle" font-size="16" fill="#3f3f46">Gdy Business Hub otworzy się dla firm lokalnych w Polsce, przejmujesz wpis w jeden dzień.</text>
+  </g>
+</svg>

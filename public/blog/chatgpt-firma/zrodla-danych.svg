@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" role="img" aria-labelledby="t d">
+  <title id="t">Skąd ChatGPT bierze dane o lokalnej firmie</title>
+  <desc id="d">ChatGPT w środku, wokół niego pięć źródeł: strona firmy czytana przez OAI-SearchBot, wyszukiwarka partnerska Microsoft Bing, katalogi i serwisy z opiniami, mapy i dane o miejscach oraz panel Business Hub.</desc>
+  <rect width="900" height="520" fill="#ffffff"/>
+  <g stroke="#FF6A00" stroke-width="3" stroke-dasharray="7 7" opacity="0.55" fill="none">
+    <path d="M450 260 L170 110"/><path d="M450 260 L730 110"/><path d="M450 260 L130 330"/><path d="M450 260 L770 330"/><path d="M450 260 L450 450"/>
+  </g>
+  <circle cx="450" cy="260" r="84" fill="#16181d"/>
+  <text x="450" y="254" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">ChatGPT</text>
+  <text x="450" y="282" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#ffb27a">odpowiedź o firmie</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="40" y="56" width="260" height="104" rx="18" fill="#fff4ec" stroke="#FF6A00" stroke-width="2"/>
+    <text x="62" y="92" font-size="19" font-weight="800" fill="#16181d">Twoja strona WWW</text>
+    <text x="62" y="118" font-size="15" fill="#52525b">czyta ją OAI-SearchBot,</text>
+    <text x="62" y="140" font-size="15" fill="#52525b">dostęp w robots.txt</text>
+    <rect x="600" y="56" width="260" height="104" rx="18" fill="#fff4ec" stroke="#FF6A00" stroke-width="2"/>
+    <text x="622" y="92" font-size="19" font-weight="800" fill="#16181d">Wyszukiwarka</text>
+    <text x="622" y="118" font-size="15" fill="#52525b">partnerzy wyszukiwania,</text>
+    <text x="622" y="140" font-size="15" fill="#52525b">m.in. Microsoft (Bing)</text>
+    <rect x="10" y="278" width="270" height="104" rx="18" fill="#fff4ec" stroke="#FF6A00" stroke-width="2"/>
+    <text x="32" y="314" font-size="19" font-weight="800" fill="#16181d">Katalogi i opinie</text>
+    <text x="32" y="340" font-size="15" fill="#52525b">Yelp, TripAdvisor, branżowe,</text>
+    <text x="32" y="362" font-size="15" fill="#52525b">spójny NAP wszędzie</text>
+    <rect x="620" y="278" width="270" height="104" rx="18" fill="#fff4ec" stroke="#FF6A00" stroke-width="2"/>
+    <text x="642" y="314" font-size="19" font-weight="800" fill="#16181d">Mapy i miejsca</text>
+    <text x="642" y="340" font-size="15" fill="#52525b">zewnętrzni dostawcy danych</text>
+    <text x="642" y="362" font-size="15" fill="#52525b">o firmach w okolicy</text>
+    <rect x="300" y="420" width="300" height="88" rx="18" fill="#16181d"/>
+    <text x="322" y="456" font-size="19" font-weight="800" fill="#ffffff">Business Hub (beta)</text>
+    <text x="322" y="482" font-size="15" fill="#ffb27a">wpis zarządzany przez firmę</text>
+  </g>
+</svg>

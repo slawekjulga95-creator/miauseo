@@ -1,7 +1,403 @@
+import Image from "next/image";
 import Link from "next/link";
 import EncjaGBP from "@/components/seo/EncjaGBP";
 
 export const articleContent: Record<string, React.ReactNode> = {
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     Sztuczna Inteligencja: Jak dodać swoją lokalną firmę do ChatGPT
+  ───────────────────────────────────────────────────────────────────────── */
+  "jak-dodac-lokalna-firme-do-chatgpt": (
+    <>
+      {/* Spis treści */}
+      <div className="not-prose mt-2 mb-8 border border-border rounded-2xl p-6 bg-surface">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-4">Spis treści</p>
+        <ol className="space-y-1.5 text-sm">
+          <li><a href="#krotko" className="font-semibold text-ink hover:text-brand transition-colors">Krótka odpowiedź</a></li>
+          <li><a href="#business-hub" className="font-semibold text-ink hover:text-brand transition-colors">Business Hub, czyli co OpenAI uruchomiło 10 listopada 2026</a></li>
+          <li><a href="#skad-dane" className="font-semibold text-ink hover:text-brand transition-colors">Skąd ChatGPT bierze dane o lokalnych firmach</a></li>
+          <li><a href="#krok-1" className="font-semibold text-ink hover:text-brand transition-colors">Krok 1. Sprawdź, co ChatGPT już wie o Twojej firmie</a></li>
+          <li><a href="#krok-2" className="font-semibold text-ink hover:text-brand transition-colors">Krok 2. Przejmij firmę w Business Hub albo przygotuj się do tego</a></li>
+          <li><a href="#krok-3" className="font-semibold text-ink hover:text-brand transition-colors">Krok 3. Wpuść OAI-SearchBot na stronę</a></li>
+          <li><a href="#krok-4" className="font-semibold text-ink hover:text-brand transition-colors">Krok 4. Strona, którą AI zrozumie bez zgadywania</a></li>
+          <li><a href="#krok-5" className="font-semibold text-ink hover:text-brand transition-colors">Krok 5. Bing Places for Business</a></li>
+          <li><a href="#krok-6" className="font-semibold text-ink hover:text-brand transition-colors">Krok 6. Katalogi, mapy Apple i spójny NAP</a></li>
+          <li><a href="#krok-7" className="font-semibold text-ink hover:text-brand transition-colors">Krok 7. Opinie i wzmianki z treścią</a></li>
+          <li><a href="#krok-8" className="font-semibold text-ink hover:text-brand transition-colors">Krok 8. Mierz ruch z ChatGPT w GA4</a></li>
+          <li><a href="#czego-unikac" className="font-semibold text-ink hover:text-brand transition-colors">Czego nie robić</a></li>
+          <li><a href="#faq" className="font-semibold text-ink hover:text-brand transition-colors">Najczęstsze pytania</a></li>
+        </ol>
+      </div>
+
+      <p>
+        Od kilku miesięcy najczęstsze pytanie, jakie słyszę od właścicieli lokalnych firm, brzmi:{" "}
+        <strong>jak dodać swoją firmę do ChatGPT?</strong> Mechanik widzi, że klient przyjechał „bo czat go polecił",
+        dentystka słyszy od pacjentki, że zapytała AI o gabinet w okolicy, a konkurencja z drugiej strony ulicy
+        chwali się, że „jest w ChatGPT". Wszyscy chcą wiedzieć, gdzie jest formularz.
+      </p>
+      <p>
+        Do niedawna odpowiedź brzmiała: nigdzie. Od 10 listopada 2026 roku formularz istnieje, ale ma ważne
+        ograniczenia, o których większość poradników nie mówi. Poniżej rozpisuję, <strong>co realnie możesz zrobić
+        dziś jako lokalna firma w Polsce</strong>, w jakiej kolejności i skąd ChatGPT w ogóle bierze informacje
+        o firmach, które poleca.
+      </p>
+
+      <h2 id="krotko">Krótka odpowiedź</h2>
+      <div className="not-prose my-6 rounded-2xl border-2 border-brand/40 bg-brand/5 p-6">
+        <p className="text-sm font-bold uppercase tracking-widest text-brand mb-3">W skrócie, stan na 24 listopada 2026</p>
+        <p className="text-ink leading-relaxed">
+          OpenAI uruchomiło <strong>Business Hub</strong> (chatgpt.com/business-hub), w którym firma może przejąć
+          swój wpis w ChatGPT. Dla firm lokalnych, takich jak sklepy, restauracje czy usługi z adresem, przejęcie
+          działa na razie <strong>tylko dla wpisów w USA</strong>. Sklepy internetowe i usługi online spoza USA
+          mogą to zrobić od 19 listopada 2026. Lokalna firma w Polsce dodaje się więc do ChatGPT pośrednio:
+          przez <strong>stronę dostępną dla OAI-SearchBot</strong>, <strong>Bing Places</strong>,{" "}
+          <strong>katalogi i serwisy z opiniami</strong> oraz <strong>spójne dane NAP</strong> w całej sieci.
+          To samo przygotowanie sprawi, że gdy Business Hub otworzy się dla Polski, przejmiesz wpis w jeden dzień.
+        </p>
+      </div>
+
+      <h2 id="business-hub">Business Hub, czyli co OpenAI uruchomiło 10 listopada 2026</h2>
+      <p>
+        10 listopada 2026 roku OpenAI ogłosiło program <strong>Businesses in ChatGPT</strong>, a jego panel nazywa się{" "}
+        <strong>Business Hub</strong>. To pierwsze oficjalne miejsce, w którym firma może przejąć swój wpis
+        w ChatGPT, poprawić dane i oglądać statystyki (
+        <a href="https://openai.com/index/introducing-businesses-chatgpt/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">openai.com</a>,
+        dostęp 24 listopada 2026). Program ma status beta.
+      </p>
+      <p>
+        Po zatwierdzeniu możesz według pomocy OpenAI zmienić między innymi <strong>adres strony, opis firmy,
+        kategorię produktów lub usług, logo</strong>, dodać zdjęcie w tle i inne opcjonalne informacje (
+        <a href="https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">help.openai.com</a>,
+        dostęp 24 listopada 2026). Do przejęcia wpisu nie jest potrzebne konto reklamowe ani umowa ChatGPT Enterprise.
+      </p>
+      <p>
+        Haczyk jest jeden i dla polskiego rynku kluczowy. Pomoc OpenAI mówi wprost, że{" "}
+        <strong>lokalne sklepy i restauracje mogą na razie przejąć tylko istniejący wpis w USA</strong>.
+        Aktualizacja z 19 listopada 2026 otworzyła program dla firm spoza USA, ale tylko dla{" "}
+        <strong>e-commerce i usług online</strong>. Jeśli prowadzisz warsztat, gabinet, salon czy firmę usługową
+        z dojazdem w Polsce, dziś jeszcze nie przejmiesz wpisu. Możesz za to zrobić wszystko, od czego zależy, czy
+        ChatGPT w ogóle wie, że istniejesz.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-4 sm:p-6 bg-white">
+          <Image src="/blog/chatgpt-firma/business-hub-kto-moze.svg" alt="Schemat: lokalna firma w Polsce nie może jeszcze przejąć wpisu w Business Hub ChatGPT, sklep internetowy lub usługa online może od 19 listopada 2026" width={900} height={470} className="w-full h-auto" unoptimized />
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">Kto może już przejąć firmę w Business Hub. Stan na 24 listopada 2026 według pomocy OpenAI.</figcaption>
+      </figure>
+
+      <h2 id="skad-dane">Skąd ChatGPT bierze dane o lokalnych firmach</h2>
+      <p>
+        Żeby dodać firmę do ChatGPT bez formularza, trzeba wiedzieć, skąd czat czerpie wiedzę. OpenAI nie publikuje
+        pełnej listy dostawców danych o firmach, ale z jego dokumentacji i z badań da się złożyć całkiem dokładny obraz.
+      </p>
+      <p>
+        Po pierwsze, <strong>Twoja strona</strong>. Za pokazywanie stron w wynikach wyszukiwania ChatGPT odpowiada
+        robot <strong>OAI-SearchBot</strong>. Według dokumentacji OpenAI strony, które go zablokują, nie będą
+        pokazywane w odpowiedziach wyszukiwania ChatGPT (
+        <a href="https://developers.openai.com/api/docs/bots" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">developers.openai.com</a>,
+        dostęp 24 listopada 2026).
+      </p>
+      <p>
+        Po drugie, <strong>partnerzy wyszukiwania</strong>. W artykule pomocy o wyszukiwaniu OpenAI wymienia
+        dostawców wyszukiwania, w tym Microsoft. Dlatego tak często mówi się o Bingu jako o furtce do ChatGPT.
+      </p>
+      <p>
+        Po trzecie, <strong>mapy i dane o miejscach</strong>. Na iOS i Androidzie odpowiedź może zawierać mapę,
+        a ChatGPT może przekazywać przybliżoną lokalizację zaufanym zewnętrznym dostawcom, którzy dostarczają
+        „informacje lokalne, takie jak firmy w pobliżu" (
+        <a href="https://help.openai.com/en/articles/9237897-chatgpt-search" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">help.openai.com</a>,
+        dostęp 24 listopada 2026). Tych dostawców OpenAI z nazwy nie wymienia.
+      </p>
+      <p>
+        Po czwarte, <strong>katalogi i serwisy z opiniami</strong>. BrightLocal przeanalizował 1,9 mln cytowań
+        w odpowiedziach AI dla 1355 lokalizacji w USA, Wielkiej Brytanii i Australii. W ChatGPT{" "}
+        <strong>Yelp pojawił się jako źródło w 80% odpowiedzi</strong>, a dalej były między innymi TripAdvisor,
+        OpenTable, BBB i Trustpilot (
+        <a href="https://www.brightlocal.com/resources/ai-directory-sources/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>,
+        sierpień 2026). To dane z rynków anglojęzycznych, w Polsce proporcje będą inne, ale mechanizm jest ten sam:{" "}
+        <strong>ChatGPT ufa firmie, o której zgodnie piszą niezależne serwisy</strong>.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-4 sm:p-6 bg-white">
+          <Image src="/blog/chatgpt-firma/zrodla-danych.svg" alt="Diagram: ChatGPT bierze dane o lokalnej firmie ze strony WWW, wyszukiwarki partnerskiej Microsoft Bing, katalogów i opinii, dostawców map oraz z Business Hub" width={900} height={520} className="w-full h-auto" unoptimized />
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">Pięć dróg, którymi informacja o firmie trafia do odpowiedzi ChatGPT.</figcaption>
+      </figure>
+
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr className="bg-surface">
+              <th className="text-left p-3 border border-border font-bold text-ink">Źródło</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Co robisz</th>
+              <th className="text-left p-3 border border-border font-bold text-ink">Ile to trwa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td className="p-3 border border-border font-semibold">Strona WWW</td><td className="p-3 border border-border">Wpuszczasz OAI-SearchBot, dodajesz NAP, usługi, FAQ i schema</td><td className="p-3 border border-border">1 dzień do 2 tygodni</td></tr>
+            <tr className="bg-surface"><td className="p-3 border border-border font-semibold">Bing Places</td><td className="p-3 border border-border">Importujesz wizytówkę Google</td><td className="p-3 border border-border">kilkanaście minut</td></tr>
+            <tr><td className="p-3 border border-border font-semibold">Katalogi i mapy</td><td className="p-3 border border-border">Zakładasz i ujednolicasz wpisy, ten sam NAP wszędzie</td><td className="p-3 border border-border">kilka dni</td></tr>
+            <tr className="bg-surface"><td className="p-3 border border-border font-semibold">Opinie i wzmianki</td><td className="p-3 border border-border">Prosisz klientów o opinie z treścią, zdobywasz lokalne wzmianki</td><td className="p-3 border border-border">ciągle</td></tr>
+            <tr><td className="p-3 border border-border font-semibold">Business Hub</td><td className="p-3 border border-border">Przejmujesz wpis (e-commerce i usługi online już teraz)</td><td className="p-3 border border-border">po otwarciu dla Polski</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="krok-1">Krok 1. Sprawdź, co ChatGPT już wie o Twojej firmie</h2>
+      <p>
+        Zanim cokolwiek zmienisz, zrób zdjęcie stanu wyjściowego. Otwórz ChatGPT z włączonym wyszukiwaniem,
+        najlepiej w oknie prywatnym albo bez zalogowania, i zadaj trzy rodzaje pytań. Pierwsze o samą firmę:
+        „co wiesz o [nazwa firmy] z [miasto]?". Drugie o usługę w okolicy, tak jak pyta klient: „polecisz dobrego
+        [mechanika, dentystę, dekarza] w [miasto]?". Trzecie porównawcze: „kto w [miasto] robi [usługa] i jakie ma opinie?".
+      </p>
+      <p>
+        Przy każdej odpowiedzi zapisz trzy rzeczy: <strong>czy firma się pojawia, czy dane są poprawne i jakie źródła
+        ChatGPT cytuje</strong>. Te cytowania to Twoja lista zadań. Jeśli czat podaje stary numer telefonu z jakiegoś
+        katalogu, to właśnie ten katalog trzeba poprawić w pierwszej kolejności. Powtórz test na telefonie, bo tylko
+        w aplikacji mobilnej odpowiedź może zawierać mapę z pinezkami.
+      </p>
+
+      <h2 id="krok-2">Krok 2. Przejmij firmę w Business Hub albo przygotuj się do tego</h2>
+      <p>
+        Jeśli prowadzisz <strong>sklep internetowy albo usługę świadczoną online</strong>, możesz już teraz wejść na
+        chatgpt.com/business-hub i przejąć firmę. Weryfikacja ma dwa etapy. Najpierw potwierdzasz kontakt jedną
+        z metod: kodem SMS lub telefonem na numer firmy, e-mailem firmowym, rekordem TXT w DNS domeny albo przez
+        sklep Shopify. Potem przechodzisz weryfikację tożsamości w serwisie Persona, która może wymagać dowodu
+        osobistego, danych rejestrowych firmy i potwierdzenia, że możesz ją reprezentować.
+      </p>
+      <p>
+        Jeśli masz <strong>firmę lokalną w Polsce</strong>, przygotuj wszystko, o co Business Hub zapyta, zanim
+        go otworzą. Firmowy e-mail w domenie strony, numer telefonu z wizytówki, dostęp do ustawień DNS domeny,
+        logo w dobrej jakości, zdjęcie w tle, opis firmy w dwóch, trzech zdaniach i listę kategorii usług.{" "}
+        <strong>Kto ma to gotowe, przejmie wpis pierwszego dnia</strong>, a nie po tygodniu szukania hasła do domeny.
+      </p>
+
+      <h2 id="krok-3">Krok 3. Wpuść OAI-SearchBot na stronę</h2>
+      <p>
+        To najprostszy krok i zaskakująco często zaniedbany. Część wtyczek bezpieczeństwa, ustawień hostingu i
+        gotowych plików robots.txt blokuje boty AI hurtem. Jeśli zablokujesz <strong>OAI-SearchBot</strong>, Twoja
+        strona nie pojawi się w odpowiedziach wyszukiwania ChatGPT. Sprawdź plik pod adresem twojadomena.pl/robots.txt
+        i upewnij się, że nie ma tam zakazu dla tego robota. Bezpieczny zapis wygląda tak:
+      </p>
+      <pre className="not-prose my-6 overflow-x-auto rounded-2xl bg-[#16181d] p-5 text-sm leading-relaxed text-[#f4f4f5]"><code>{`User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://twojadomena.pl/sitemap.xml`}</code></pre>
+      <p>
+        Dwie rzeczy warto wiedzieć. Zmiana w robots.txt dociera do systemów OpenAI po <strong>około 24 godzinach</strong>.
+        A <strong>GPTBot</strong> to inny robot, który zbiera dane do trenowania modeli. Możesz go zablokować, jeśli nie
+        chcesz, żeby treści trafiały do treningu, i nie wpływa to na pokazywanie strony w wyszukiwaniu ChatGPT.
+      </p>
+
+      <h2 id="krok-4">Krok 4. Strona, którą AI zrozumie bez zgadywania</h2>
+      <p>
+        ChatGPT nie zgaduje. Jeśli na stronie nie ma wprost napisane, <strong>co robisz, gdzie i dla kogo</strong>,
+        po prostu wybierze firmę, która to napisała. Na stronie lokalnej firmy muszą być w tekście, a nie tylko na
+        obrazku: pełna nazwa, adres, telefon, godziny otwarcia i obszar działania. Każda główna usługa powinna mieć
+        własną podstronę albo przynajmniej własny akapit z nazwą miasta, a często zadawane pytania warto zebrać
+        w sekcji FAQ, bo dokładnie w takiej formie ludzie pytają czat.
+      </p>
+      <p>
+        Do tego dochodzą <strong>dane strukturalne LocalBusiness</strong>, czyli opis firmy w formacie, który maszyny
+        czytają bez interpretacji. Minimalna wersja wygląda tak:
+      </p>
+      <pre className="not-prose my-6 overflow-x-auto rounded-2xl bg-[#16181d] p-5 text-sm leading-relaxed text-[#f4f4f5]"><code>{`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nazwa firmy",
+  "url": "https://twojadomena.pl",
+  "telephone": "+48 600 000 000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Przykładowa 1",
+    "postalCode": "00-000",
+    "addressLocality": "Miasto",
+    "addressCountry": "PL"
+  },
+  "openingHours": "Mo-Fr 08:00-17:00",
+  "areaServed": "Miasto i okolice do 30 km"
+}
+</script>`}</code></pre>
+      <p>
+        Zamiast ogólnego LocalBusiness użyj typu pasującego do branży, jeśli istnieje, na przykład AutoRepair,
+        Dentist czy Plumber. I pilnuj, żeby <strong>dane w schema były identyczne z danymi na stronie i w wizytówce
+        Google</strong>, co do przecinka w adresie.
+      </p>
+
+      <h2 id="krok-5">Krok 5. Bing Places for Business</h2>
+      <p>
+        Skoro Microsoft jest jednym z partnerów wyszukiwania ChatGPT, wpis w <strong>Bing Places for Business</strong>{" "}
+        to kilkanaście minut pracy, których nie warto odpuszczać. Nowa wersja Bing Places działa pod adresem
+        bing.com/forbusiness i pozwala zaimportować dane prosto z wizytówki Google (
+        <a href="https://blogs.bing.com/search/October-2025/Introducing-the-New-Bing-Places-for-Business-Built-for-Business-Owners,-Powered-by-Research" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">blogs.bing.com</a>,
+        dostęp 24 listopada 2026). Wpis zaimportowany ze zweryfikowanej wizytówki Google zwykle jest od razu
+        zweryfikowany, więc nie czekasz na kod pocztą. Po imporcie sprawdź kategorie i godziny, bo nie zawsze
+        przenoszą się jeden do jednego.
+      </p>
+
+      <h2 id="krok-6">Krok 6. Katalogi, mapy Apple i spójny NAP</h2>
+      <p>
+        Modele językowe porównują informacje z wielu źródeł. Jeśli w trzech miejscach masz jeden numer, a w czwartym
+        inny, <strong>firma wygląda dla nich na mniej pewną</strong> i rzadziej trafia do rekomendacji. Dlatego
+        porządek w danych NAP, czyli nazwie, adresie i telefonie, jest dziś ważniejszy niż kiedykolwiek. Więcej
+        o samym pojęciu piszę w tekście{" "}
+        <Link href="/nap-wizytowka-google-co-to-jest" className="text-brand font-semibold hover:underline">NAP w wizytówce Google, co to jest</Link>.
+      </p>
+      <p>
+        W praktyce zaczynam od miejsc, które ChatGPT cytuje najczęściej w Twojej branży, czyli od listy z kroku
+        pierwszego. Do tego dochodzą serwisy z opiniami: Yelp, a w gastronomii i turystyce TripAdvisor, oraz polskie
+        katalogi branżowe i lokalne portale. Warto też założyć wizytówkę w <strong>Apple Business</strong>, które
+        w kwietniu 2026 zastąpiło Apple Business Connect, bo dane z map Apple również pojawiają się wśród źródeł
+        odpowiedzi AI. Sprawdź tylko w ustawieniach, czy zarządzanie lokalizacjami jest już dostępne dla Polski.
+      </p>
+      <p>
+        Jeśli nie chcesz zakładać kilkudziesięciu wpisów samodzielnie, w MiauSEO robimy to w ramach budowania
+        cytowań NAP, z raportem i zrzutami z każdego portalu.
+      </p>
+
+      <h2 id="krok-7">Krok 7. Opinie i wzmianki z treścią</h2>
+      <p>
+        Gdy ktoś pyta czat o „dobrego mechanika", model szuka sygnałów, że ktoś inny uznał Cię za dobrego. Najmocniejsze
+        są <strong>opinie z treścią</strong>, w których klient pisze, jaką usługę zamówił, w jakim mieście i co mu się
+        spodobało. Pięć gwiazdek bez słowa mówi modelowi niewiele. Zdanie „szybka wymiana rozrządu w Koszalinie,
+        cena zgodna z wyceną" mówi bardzo dużo.
+      </p>
+      <p>
+        Drugi sygnał to <strong>wzmianki</strong>: artykuł w lokalnym portalu, sponsoring drużyny, udział w targach,
+        rozmowa w lokalnym radiu z tekstem na stronie. Każda taka publikacja z nazwą firmy i miastem to kolejne
+        niezależne źródło, z którego ChatGPT może złożyć obraz Twojej firmy.
+      </p>
+
+      <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
+        <div className="p-4 sm:p-6 bg-white">
+          <Image src="/blog/chatgpt-firma/plan-30-dni.svg" alt="Plan na 30 dni: dzień 1 test w ChatGPT i robots.txt, tydzień 1 strona z NAP i schema, tydzień 2 Bing Places i katalogi, tydzień 3 i 4 opinie, wzmianki i pomiar w GA4" width={900} height={360} className="w-full h-auto" unoptimized />
+        </div>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">Kolejność, w jakiej przygotowuję lokalną firmę do ChatGPT.</figcaption>
+      </figure>
+
+      <h2 id="krok-8">Krok 8. Mierz ruch z ChatGPT w GA4</h2>
+      <p>
+        Linki, które ChatGPT pokazuje w odpowiedziach, zwykle mają dopisany parametr <code>utm_source=chatgpt.com</code>.
+        Problem w tym, że brakuje drugiego parametru, medium, więc Google Analytics 4 często wrzuca te wizyty do
+        kategorii „Unassigned", a część trafia do ruchu bezpośredniego. W ustawieniach GA4 dodaj{" "}
+        <strong>własną grupę kanałów</strong>, na przykład „AI", z regułą „źródło zawiera chatgpt.com", i ustaw ją
+        nad regułami dla ruchu odsyłającego.
+      </p>
+      <p>
+        Pamiętaj, że GA4 pokaże tylko część tego ruchu. Klient, który przeczyta odpowiedź i zadzwoni, nie zostawi
+        śladu w analityce. Dlatego przy każdym nowym zleceniu warto zapytać: <strong>skąd Pan o nas wie?</strong>{" "}
+        Coraz częściej usłyszysz: „czat polecił".
+      </p>
+
+      <h2 id="czego-unikac">Czego nie robić</h2>
+      <p>
+        <strong>Nie płać za „dodanie do ChatGPT".</strong> Przejęcie wpisu w Business Hub jest bezpłatne i robisz je
+        sam, a nikt z zewnątrz nie ma specjalnego dostępu, który „wpisze" Cię do odpowiedzi czatu. Jeśli dostajesz
+        telefon z taką ofertą, to ta sama kategoria co telefony o „wygasającej wizytówce Google".
+      </p>
+      <p>
+        <strong>Nie dopisuj fraz do nazwy firmy.</strong> „Hydraulik Kraków 24h Kowalski" w katalogach rozjeżdża się
+        z nazwą rejestrową i z wizytówką Google, a ta niespójność działa przeciwko Tobie. Nazwa ma być wszędzie taka,
+        pod jaką firma działa naprawdę.
+      </p>
+      <p>
+        <strong>Nie kupuj opinii.</strong> Od 1 stycznia 2023 roku zamieszczanie fałszywych opinii albo zlecanie ich
+        jest wprost wymienione w polskim prawie jako nieuczciwa praktyka rynkowa (
+        <a href="https://uokik.gov.pl/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">uokik.gov.pl</a>).
+        Do tego modele coraz lepiej odróżniają opinie z treścią od seryjnych piątek bez słowa.
+      </p>
+
+      <h2 id="faq">Najczęstsze pytania</h2>
+      <h3>Czy dodanie firmy do ChatGPT jest płatne?</h3>
+      <p>
+        Nie. Przejęcie wpisu w Business Hub jest bezpłatne i według pomocy OpenAI nie wymaga konta reklamowego ani
+        umowy ChatGPT Enterprise. Bezpłatne są też wszystkie pozostałe kroki z tego poradnika, poza Twoim czasem.
+      </p>
+      <h3>Czy polska firma lokalna może już przejąć wpis w ChatGPT?</h3>
+      <p>
+        Stan na 24 listopada 2026: jeszcze nie. Lokalne sklepy i restauracje mogą przejąć tylko wpis w USA. Spoza USA
+        mogą to zrobić sklepy internetowe i usługi online, od 19 listopada 2026.
+      </p>
+      <h3>Czy wizytówka Google wystarczy, żeby pojawić się w ChatGPT?</h3>
+      <p>
+        Pomaga, bo z jej danych importujesz wpis do Bing Places i trzymasz się jednego NAP. Ale ChatGPT nie korzysta
+        z Map Google jako głównego źródła, więc sama wizytówka nie wystarczy. Potrzebujesz też strony, katalogów i opinii
+        w innych serwisach.
+      </p>
+      <h3>Jak szybko firma pojawi się w odpowiedziach ChatGPT?</h3>
+      <p>
+        Zmiana w robots.txt działa po około 24 godzinach, wpis w Bing Places po imporcie od razu, katalogi zwykle
+        w ciągu kilku dni do kilku tygodni. Pierwsze efekty w odpowiedziach czatu zwykle widać po kilku tygodniach,
+        a nie po kilku godzinach.
+      </p>
+      <h3>Czy blokada GPTBot usuwa firmę z ChatGPT?</h3>
+      <p>
+        Nie. GPTBot służy do zbierania danych do trenowania modeli. O pokazywaniu strony w wyszukiwaniu ChatGPT decyduje
+        OAI-SearchBot i to jego nie wolno blokować.
+      </p>
+
+      <p>
+        Jeśli chcesz sprawdzić, jak Twoja firma wypada dziś, zacznij od{" "}
+        <Link href="/gbp-score" className="text-brand font-semibold hover:underline">darmowego audytu wizytówki Google</Link>,
+        bo te same dane zasilają Bing i katalogi. A jeśli wolisz, żeby całą ścieżkę od wizytówki po katalogi i stronę
+        ktoś poprowadził za Ciebie, tym właśnie zajmujemy się w ramach{" "}
+        <Link href="/uslugi/wizytowka-google" className="text-brand font-semibold hover:underline">pozycjonowania wizytówki Google</Link>.
+      </p>
+
+      <h2>Źródła</h2>
+      <p>
+        OpenAI, <em>Introducing businesses in ChatGPT</em>, 10 listopada 2026, aktualizacja 19 listopada 2026,{" "}
+        <a href="https://openai.com/index/introducing-businesses-chatgpt/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">openai.com</a>.
+      </p>
+      <p>
+        OpenAI, <em>Setting up your business on ChatGPT</em>, pomoc,{" "}
+        <a href="https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">help.openai.com</a>.
+      </p>
+      <p>
+        OpenAI, <em>Searching the web with ChatGPT</em>, pomoc,{" "}
+        <a href="https://help.openai.com/en/articles/9237897-chatgpt-search" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">help.openai.com</a>.
+      </p>
+      <p>
+        OpenAI, <em>Overview of OpenAI Crawlers</em>, dokumentacja,{" "}
+        <a href="https://developers.openai.com/api/docs/bots" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">developers.openai.com</a>.
+      </p>
+      <p>
+        BrightLocal, <em>Top sources and directories for local AI search</em>, sierpień 2026,{" "}
+        <a href="https://www.brightlocal.com/resources/ai-directory-sources/" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">brightlocal.com</a>.
+      </p>
+      <p>
+        Microsoft Bing, <em>Introducing the New Bing Places for Business</em>, październik 2025,{" "}
+        <a href="https://blogs.bing.com/search/October-2025/Introducing-the-New-Bing-Places-for-Business-Built-for-Business-Owners,-Powered-by-Research" target="_blank" rel="noopener noreferrer" className="text-brand font-semibold hover:underline">blogs.bing.com</a>.
+      </p>
+      <p>
+        Wszystkie źródła: dostęp 24 listopada 2026.
+      </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Czy dodanie firmy do ChatGPT jest płatne?", "acceptedAnswer": { "@type": "Answer", "text": "Nie. Przejęcie wpisu w Business Hub jest bezpłatne i według pomocy OpenAI nie wymaga konta reklamowego ani umowy ChatGPT Enterprise." } },
+              { "@type": "Question", "name": "Czy polska firma lokalna może już przejąć wpis w ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Stan na 24 listopada 2026: jeszcze nie. Lokalne sklepy i restauracje mogą przejąć tylko wpis w USA. Spoza USA mogą to zrobić sklepy internetowe i usługi online, od 19 listopada 2026." } },
+              { "@type": "Question", "name": "Czy wizytówka Google wystarczy, żeby pojawić się w ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Pomaga, bo z jej danych importujesz wpis do Bing Places i trzymasz się jednego NAP, ale sama nie wystarczy. Potrzebujesz też strony dostępnej dla OAI-SearchBot, katalogów i opinii w innych serwisach." } },
+              { "@type": "Question", "name": "Jak szybko firma pojawi się w odpowiedziach ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Zmiana w robots.txt działa po około 24 godzinach, wpis w Bing Places po imporcie od razu, katalogi w ciągu kilku dni do kilku tygodni. Pierwsze efekty w odpowiedziach czatu zwykle widać po kilku tygodniach." } },
+              { "@type": "Question", "name": "Czy blokada GPTBot usuwa firmę z ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Nie. GPTBot zbiera dane do trenowania modeli. O pokazywaniu strony w wyszukiwaniu ChatGPT decyduje OAI-SearchBot i to jego nie wolno blokować." } }
+            ]
+          }),
+        }}
+      />
+    </>
+  ),
+
 
   /* ─────────────────────────────────────────────────────────────────────────
      Wizytówka: Pozycjonowanie wizytówki Google bez strony WWW
