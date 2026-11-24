@@ -17,7 +17,7 @@ export const articleContent: Record<string, React.ReactNode> = {
           <li><a href="#business-hub" className="font-semibold text-ink hover:text-brand transition-colors">Business Hub, czyli co OpenAI uruchomiło 10 listopada 2026</a></li>
           <li><a href="#skad-dane" className="font-semibold text-ink hover:text-brand transition-colors">Skąd ChatGPT bierze dane o lokalnych firmach</a></li>
           <li><a href="#krok-1" className="font-semibold text-ink hover:text-brand transition-colors">Krok 1. Sprawdź, co ChatGPT już wie o Twojej firmie</a></li>
-          <li><a href="#krok-2" className="font-semibold text-ink hover:text-brand transition-colors">Krok 2. Przejmij firmę w Business Hub albo przygotuj się do tego</a></li>
+          <li><a href="#krok-2" className="font-semibold text-ink hover:text-brand transition-colors">Krok 2. Przejmij firmę w Business Hub</a></li>
           <li><a href="#krok-3" className="font-semibold text-ink hover:text-brand transition-colors">Krok 3. Wpuść OAI-SearchBot na stronę</a></li>
           <li><a href="#krok-4" className="font-semibold text-ink hover:text-brand transition-colors">Krok 4. Strona, którą AI zrozumie bez zgadywania</a></li>
           <li><a href="#krok-5" className="font-semibold text-ink hover:text-brand transition-colors">Krok 5. Bing Places for Business</a></li>
@@ -36,8 +36,8 @@ export const articleContent: Record<string, React.ReactNode> = {
         chwali się, że „jest w ChatGPT". Wszyscy chcą wiedzieć, gdzie jest formularz.
       </p>
       <p>
-        Do niedawna odpowiedź brzmiała: nigdzie. Od 10 listopada 2026 roku formularz istnieje, ale ma ważne
-        ograniczenia, o których większość poradników nie mówi. Poniżej rozpisuję, <strong>co realnie możesz zrobić
+        Do niedawna odpowiedź brzmiała: nigdzie. Od 10 listopada 2026 roku formularz istnieje i polska firma
+        lokalna może z niego skorzystać już dziś, ale sam formularz to dopiero połowa pracy. Poniżej rozpisuję, <strong>co realnie możesz zrobić
         dziś jako lokalna firma w Polsce</strong>, w jakiej kolejności i skąd ChatGPT w ogóle bierze informacje
         o firmach, które poleca.
       </p>
@@ -47,12 +47,11 @@ export const articleContent: Record<string, React.ReactNode> = {
         <p className="text-sm font-bold uppercase tracking-widest text-brand mb-3">W skrócie, stan na 24 listopada 2026</p>
         <p className="text-ink leading-relaxed">
           OpenAI uruchomiło <strong>Business Hub</strong> (chatgpt.com/business-hub), w którym firma może przejąć
-          swój wpis w ChatGPT. Dla firm lokalnych, takich jak sklepy, restauracje czy usługi z adresem, przejęcie
-          działa na razie <strong>tylko dla wpisów w USA</strong>. Sklepy internetowe i usługi online spoza USA
-          mogą to zrobić od 19 listopada 2026. Lokalna firma w Polsce dodaje się więc do ChatGPT pośrednio:
-          przez <strong>stronę dostępną dla OAI-SearchBot</strong>, <strong>Bing Places</strong>,{" "}
-          <strong>katalogi i serwisy z opiniami</strong> oraz <strong>spójne dane NAP</strong> w całej sieci.
-          To samo przygotowanie sprawi, że gdy Business Hub otworzy się dla Polski, przejmiesz wpis w jeden dzień.
+          swój wpis w ChatGPT. <strong>Lokalna firma z Polski może to zrobić już teraz</strong>: wyszukujesz ją po nazwie
+          i potwierdzasz <strong>kodem SMS lub połączeniem na numer z wpisu</strong> (zwykle ten z wizytówki Google),
+          e-mailem firmowym albo <strong>rekordem TXT w DNS</strong> domeny, a potem tożsamość w Persona. Samo przejęcie
+          wpisu nie wystarczy, żeby czat Cię polecał. Liczy się też <strong>strona dostępna dla OAI-SearchBot</strong>,{" "}
+          <strong>Bing Places</strong>, <strong>katalogi i serwisy z opiniami</strong> oraz <strong>spójne dane NAP</strong>.
         </p>
       </div>
 
@@ -71,19 +70,19 @@ export const articleContent: Record<string, React.ReactNode> = {
         dostęp 24 listopada 2026). Do przejęcia wpisu nie jest potrzebne konto reklamowe ani umowa ChatGPT Enterprise.
       </p>
       <p>
-        Haczyk jest jeden i dla polskiego rynku kluczowy. Pomoc OpenAI mówi wprost, że{" "}
-        <strong>lokalne sklepy i restauracje mogą na razie przejąć tylko istniejący wpis w USA</strong>.
-        Aktualizacja z 19 listopada 2026 otworzyła program dla firm spoza USA, ale tylko dla{" "}
-        <strong>e-commerce i usług online</strong>. Jeśli prowadzisz warsztat, gabinet, salon czy firmę usługową
-        z dojazdem w Polsce, dziś jeszcze nie przejmiesz wpisu. Możesz za to zrobić wszystko, od czego zależy, czy
-        ChatGPT w ogóle wie, że istniejesz.
+        Ważne dla polskiego rynku: pomoc OpenAI w chwili pisania nadal podaje, że lokalne sklepy i restauracje
+        przejmują tylko wpisy w USA, a aktualizacja z 19 listopada 2026 wymienia firmy e-commerce i usługi online
+        spoza USA. <strong>W praktyce panel przepuszcza już polskie firmy lokalne</strong>: warsztat, gabinet czy firma
+        usługowa z dojazdem znajdzie się w wyszukiwarce Business Hub i przejdzie weryfikację numerem telefonu albo
+        DNS. OpenAI zastrzega, że dostępne metody zależą od wpisu, więc jeśli Twojej firmy nie ma na liście, zrób
+        najpierw kroki od 3 do 6, od których zależy, czy ChatGPT w ogóle wie, że istniejesz.
       </p>
 
       <figure className="not-prose my-8 rounded-2xl border border-border overflow-hidden bg-surface">
         <div className="p-4 sm:p-6 bg-white">
-          <Image src="/blog/chatgpt-firma/business-hub-kto-moze.svg" alt="Schemat: lokalna firma w Polsce nie może jeszcze przejąć wpisu w Business Hub ChatGPT, sklep internetowy lub usługa online może od 19 listopada 2026" width={900} height={470} className="w-full h-auto" unoptimized />
+          <Image src="/blog/chatgpt-firma/business-hub-jak-przejac.svg" alt="Jak dodać lokalną firmę do ChatGPT w Business Hub: wyszukanie firmy, weryfikacja SMS na numer z wizytówki, e-mailem albo rekordem TXT w DNS, weryfikacja Persona i uzupełnienie profilu" width={900} height={470} className="w-full h-auto" unoptimized />
         </div>
-        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">Kto może już przejąć firmę w Business Hub. Stan na 24 listopada 2026 według pomocy OpenAI.</figcaption>
+        <figcaption className="border-t border-border px-4 py-3 text-sm text-zinc-600">Cztery kroki przejęcia lokalnej firmy w Business Hub. Stan na 24 listopada 2026.</figcaption>
       </figure>
 
       <h2 id="skad-dane">Skąd ChatGPT bierze dane o lokalnych firmach</h2>
@@ -140,7 +139,7 @@ export const articleContent: Record<string, React.ReactNode> = {
             <tr className="bg-surface"><td className="p-3 border border-border font-semibold">Bing Places</td><td className="p-3 border border-border">Importujesz wizytówkę Google</td><td className="p-3 border border-border">kilkanaście minut</td></tr>
             <tr><td className="p-3 border border-border font-semibold">Katalogi i mapy</td><td className="p-3 border border-border">Zakładasz i ujednolicasz wpisy, ten sam NAP wszędzie</td><td className="p-3 border border-border">kilka dni</td></tr>
             <tr className="bg-surface"><td className="p-3 border border-border font-semibold">Opinie i wzmianki</td><td className="p-3 border border-border">Prosisz klientów o opinie z treścią, zdobywasz lokalne wzmianki</td><td className="p-3 border border-border">ciągle</td></tr>
-            <tr><td className="p-3 border border-border font-semibold">Business Hub</td><td className="p-3 border border-border">Przejmujesz wpis (e-commerce i usługi online już teraz)</td><td className="p-3 border border-border">po otwarciu dla Polski</td></tr>
+            <tr><td className="p-3 border border-border font-semibold">Business Hub</td><td className="p-3 border border-border">Przejmujesz wpis, weryfikacja SMS na numer z wizytówki albo DNS</td><td className="p-3 border border-border">kilkanaście minut</td></tr>
           </tbody>
         </table>
       </div>
@@ -159,19 +158,19 @@ export const articleContent: Record<string, React.ReactNode> = {
         w aplikacji mobilnej odpowiedź może zawierać mapę z pinezkami.
       </p>
 
-      <h2 id="krok-2">Krok 2. Przejmij firmę w Business Hub albo przygotuj się do tego</h2>
+      <h2 id="krok-2">Krok 2. Przejmij firmę w Business Hub</h2>
       <p>
-        Jeśli prowadzisz <strong>sklep internetowy albo usługę świadczoną online</strong>, możesz już teraz wejść na
-        chatgpt.com/business-hub i przejąć firmę. Weryfikacja ma dwa etapy. Najpierw potwierdzasz kontakt jedną
-        z metod: kodem SMS lub telefonem na numer firmy, e-mailem firmowym, rekordem TXT w DNS domeny albo przez
-        sklep Shopify. Potem przechodzisz weryfikację tożsamości w serwisie Persona, która może wymagać dowodu
+        Wejdź na <strong>chatgpt.com/business-hub</strong>, wpisz nazwę firmy i wybierz wpis, który do niej pasuje.
+        Weryfikacja ma dwa etapy. Najpierw potwierdzasz kontakt jedną z metod: <strong>kodem SMS albo automatycznym
+        połączeniem na numer pokazany we wpisie</strong>, czyli zwykle numer z wizytówki Google, kodem na e-mail
+        firmowy, <strong>rekordem TXT w DNS domeny</strong> albo przez sklep Shopify. Potem przechodzisz weryfikację tożsamości w serwisie Persona, która może wymagać dowodu
         osobistego, danych rejestrowych firmy i potwierdzenia, że możesz ją reprezentować.
       </p>
       <p>
-        Jeśli masz <strong>firmę lokalną w Polsce</strong>, przygotuj wszystko, o co Business Hub zapyta, zanim
-        go otworzą. Firmowy e-mail w domenie strony, numer telefonu z wizytówki, dostęp do ustawień DNS domeny,
-        logo w dobrej jakości, zdjęcie w tle, opis firmy w dwóch, trzech zdaniach i listę kategorii usług.{" "}
-        <strong>Kto ma to gotowe, przejmie wpis pierwszego dnia</strong>, a nie po tygodniu szukania hasła do domeny.
+        Najszybciej idzie weryfikacja SMS-em, jeśli <strong>telefon z wizytówki masz pod ręką</strong>. Gdy numer
+        we wpisie jest nieaktualny, wybierz DNS: dodajesz rekord TXT w panelu domeny i po chwili wracasz do Business Hub.
+        Zanim zaczniesz, przygotuj logo w dobrej jakości, zdjęcie w tle, opis firmy w dwóch, trzech zdaniach i listę
+        kategorii usług. <strong>Dane w profilu wpisz identycznie jak w wizytówce Google</strong>, żeby nie rozbić NAP.
       </p>
 
       <h2 id="krok-3">Krok 3. Wpuść OAI-SearchBot na stronę</h2>
@@ -321,8 +320,8 @@ Sitemap: https://twojadomena.pl/sitemap.xml`}</code></pre>
       </p>
       <h3>Czy polska firma lokalna może już przejąć wpis w ChatGPT?</h3>
       <p>
-        Stan na 24 listopada 2026: jeszcze nie. Lokalne sklepy i restauracje mogą przejąć tylko wpis w USA. Spoza USA
-        mogą to zrobić sklepy internetowe i usługi online, od 19 listopada 2026.
+        Tak. W Business Hub wyszukujesz firmę po nazwie i potwierdzasz ją kodem SMS lub połączeniem na numer z wpisu
+        (zwykle ten z wizytówki Google), e-mailem firmowym albo rekordem TXT w DNS domeny, a potem tożsamość w Persona.
       </p>
       <h3>Czy wizytówka Google wystarczy, żeby pojawić się w ChatGPT?</h3>
       <p>
@@ -387,7 +386,7 @@ Sitemap: https://twojadomena.pl/sitemap.xml`}</code></pre>
             "@type": "FAQPage",
             "mainEntity": [
               { "@type": "Question", "name": "Czy dodanie firmy do ChatGPT jest płatne?", "acceptedAnswer": { "@type": "Answer", "text": "Nie. Przejęcie wpisu w Business Hub jest bezpłatne i według pomocy OpenAI nie wymaga konta reklamowego ani umowy ChatGPT Enterprise." } },
-              { "@type": "Question", "name": "Czy polska firma lokalna może już przejąć wpis w ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Stan na 24 listopada 2026: jeszcze nie. Lokalne sklepy i restauracje mogą przejąć tylko wpis w USA. Spoza USA mogą to zrobić sklepy internetowe i usługi online, od 19 listopada 2026." } },
+              { "@type": "Question", "name": "Czy polska firma lokalna może już przejąć wpis w ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Tak. W Business Hub wyszukujesz firmę po nazwie i potwierdzasz ją kodem SMS lub połączeniem na numer z wpisu (zwykle ten z wizytówki Google), e-mailem firmowym albo rekordem TXT w DNS domeny, a potem tożsamość w Persona." } },
               { "@type": "Question", "name": "Czy wizytówka Google wystarczy, żeby pojawić się w ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Pomaga, bo z jej danych importujesz wpis do Bing Places i trzymasz się jednego NAP, ale sama nie wystarczy. Potrzebujesz też strony dostępnej dla OAI-SearchBot, katalogów i opinii w innych serwisach." } },
               { "@type": "Question", "name": "Jak szybko firma pojawi się w odpowiedziach ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Zmiana w robots.txt działa po około 24 godzinach, wpis w Bing Places po imporcie od razu, katalogi w ciągu kilku dni do kilku tygodni. Pierwsze efekty w odpowiedziach czatu zwykle widać po kilku tygodniach." } },
               { "@type": "Question", "name": "Czy blokada GPTBot usuwa firmę z ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Nie. GPTBot zbiera dane do trenowania modeli. O pokazywaniu strony w wyszukiwaniu ChatGPT decyduje OAI-SearchBot i to jego nie wolno blokować." } }
